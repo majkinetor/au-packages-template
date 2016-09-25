@@ -10,6 +10,8 @@
 <!-- REMOVE THE squiggles "~" surrounding this (this should not be a code block) -->
 ~~~
 
+This repository contains [chocolatey automatic packages](https://chocolatey.org/docs/automatic-packages).
+
 ## Prerequisites
 
 - Powershell 4+.
