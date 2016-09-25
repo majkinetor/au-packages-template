@@ -3,6 +3,7 @@
 version: '{build}'
 max_jobs: 1
 image: WMF 5
+clone_depth: 5
 branches:
   only:
   - master
@@ -10,32 +11,36 @@ branches:
 #  verbosity: minimal
 
 environment:
-  #Set au version to use or omit to use the latest. Specify branch name to use development version from Github
+  # Set au version to use or omit to use the latest. Specify branch name to use development version from Github
   au_version:
   au_push: true
 
-  #Github token to commit pushed packages to repository
+  # Github token to commit pushed packages to repository
   github_user_repo: {github_user}/{repository}
   github_api_key:
     secure: YOUR_GITHUB_API_KEY_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
 
 
-  #Mail credentials - for error notifications
+  # Mail credentials - for error notifications
   mail_user:
     secure: YOUR_EMAIL_ACCOUNT_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
   mail_pass:
     secure: YOUR_EMAIL_PASSWORD_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
+  mail_server: smtp.gmail.com
+  mail_port: 587
+  mail_enablessl: true
 
-  #ID of the gist used to save run results
+  # ID of the gist used to save run results - create a gist under the github_user (secret or not) and grab the id - https://gist.github.com/name/id
+  # Optional, leave empty to create anonymous gist
   gist_id:
 
-  #Chocolatey API key - to push updated packages
+  # Chocolatey API key - to push updated packages
   api_key:
     secure: YOUR_CHOCO_API_KEY_HERE_ENCRYPTED_STRING # https://ci.appveyor.com/tools/encrypt
 
 init:
 - git config --global user.email "chocolatey@realdimensions.net"
-- git config --global user.name  "Chocolatey AU"
+- git config --global user.name  "Chocolatey"
 - git config --global core.safecrlf false
 
 install:
@@ -56,7 +61,7 @@ install:
         Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
 
         $params = @{ Name = 'au' }
-        if ( $Env:au_version -ne $null ) { $params.Version = $Env:au_version }
+        if ( $Env:au_version -ne $null ) { $params.MinimumVersion = $Env:au_version }
         Install-Module @params
 
         Get-Module au -ListAvailable | select Name, Version

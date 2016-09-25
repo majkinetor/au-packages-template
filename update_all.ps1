@@ -39,11 +39,11 @@ $Options = [ordered]@{
     Mail = if ($Env:mail_user) {
             @{
                 To          = $Env:mail_user
-                Server      = 'smtp.gmail.com'
+                Server      = $Env:mail_server
                 UserName    = $Env:mail_user
                 Password    = $Env:mail_pass
-                Port        = 587
-                EnableSsl   = $true
+                Port        = $Env:mail_port
+                EnableSsl   = $Env:enable_ssl
                 Attachments = "$PSScriptRoot\update_info.xml"
                 UserMessage = ''
                 SendAlways  = $false                        #Send notifications every time
@@ -51,8 +51,7 @@ $Options = [ordered]@{
            } else {}
 }
 
-$global:au_NoPlugins = $false                              #Quickly enable or disable plugins here
-$global:au_Root      = "$PSScriptRoot"                     #Path to the AU packages
+$global:au_Root = "$PSScriptRoot"                           #Path to the AU packages
 $info = updateall -Name $Name -Options $Options
 
 #Uncomment to fail the build on AppVeyor on any package error
