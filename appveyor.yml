@@ -1,4 +1,4 @@
-# AU template: https://github.com/majkinetor/au/blob/master/appveyor_default.yml
+# AU template: https://github.com/majkinetor/au-packages-template
 
 version: '{build}'
 max_jobs: 1
