@@ -35,9 +35,9 @@ You can also call AU method `Update-AUPackages` (alias `updateall`) in the repos
 
 To use this system with your own packages do the following steps:
 
-* Fork this project and clone it locally.
+* Fork this project and clone it locally. If needed, rename it to `au-packages`.
 * Delete all existing packages:  
-In the root of the repository run: `ls | ? PSISContainer | ?  Name -notlike '_*' | rm -Recurse`.
+In the root of the repository run: `ls | ? PSISContainer | rm -Recurse`.
 * Set your environment variables. See [AU wiki](https://github.com/majkinetor/au/wiki/Plugins) for details.
 
 Add your own packages now, with this in mind:
