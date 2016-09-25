@@ -1,5 +1,4 @@
-# AU template: https://raw.githubusercontent.com/majkinetor/au/master/update_all_default.ps1
-#    env vars: https://raw.githubusercontent.com/majkinetor/au/master/update_vars_default.ps1
+# AU Packages Template: https://github.com/majkinetor/au-packages-template
 
 param($Name = $null)
 
@@ -52,7 +51,7 @@ $Options = [ordered]@{
            } else {}
 }
 
-$global:au_NoPlugins = $fasle                              #Quickly enable or disable plugins here
+$global:au_NoPlugins = $false                              #Quickly enable or disable plugins here
 $global:au_Root      = "$PSScriptRoot"                     #Path to the AU packages
 $info = updateall -Name $Name -Options $Options
 

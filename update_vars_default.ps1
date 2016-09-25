@@ -1,5 +1,4 @@
-# AU template: https://raw.githubusercontent.com/majkinetor/au/master/update_all_default.ps1
-#    env vars: https://raw.githubusercontent.com/majkinetor/au/master/update_vars_default.ps1
+# AU Packages Template: https://github.com/majkinetor/au-packages-template
 
 $Env:mail_user          = ''
 $Env:mail_pass          = ''
