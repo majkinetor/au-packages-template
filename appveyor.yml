@@ -20,7 +20,7 @@ environment:
     secure: YOUR_GITHUB_API_KEY_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
 
 
-  #Gmail credentials - for error notifications
+  #Mail credentials - for error notifications
   mail_user:
     secure: YOUR_EMAIL_ACCOUNT_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
   mail_pass:
