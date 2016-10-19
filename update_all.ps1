@@ -12,7 +12,7 @@ $Options = [ordered]@{
 
     Report = @{
         Type = 'markdown'                                   #Report type: markdown or text
-        Path = "$PSScriptRoot\Update-AUPacakges.md"         #Path where to save the report
+        Path = "$PSScriptRoot\Update-AUPackages.md"         #Path where to save the report
         Params= @{                                          #Report parameters:
             Github_UserRepo = $Env:github_user_repo         #  Markdown: shows user info in upper right corner
             NoAppVeyor  = $false                            #  Markdown: do not show AppVeyor build shield
@@ -23,7 +23,7 @@ $Options = [ordered]@{
     Gist = @{
         Id          = $Env:gist_id                          #Your gist id or leave empty for anonymous
         ApiKey      = $Env:github_api_key                   #Your github api key
-        Path        = "$PSScriptRoot\Update-AUPacakges.md"  #List of files to add to gist
+        Path        = "$PSScriptRoot\Update-AUPackages.md"  #List of files to add to gist
     }
 
     #Git = @{
