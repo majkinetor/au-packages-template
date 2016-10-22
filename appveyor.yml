@@ -69,7 +69,14 @@ install:
 
 build_script:
 - ps: |
-    ./update_all.ps1
+    if ( ($Env:APPVEYOR_REPO_COMMIT_MESSAGE -match '\[AU (.+?)\]') -and
+         ($Env:APPVEYOR_SCHEDULED_BUILD -ne 'true') -and
+         ($Env:APPVEYOR_FORCED_BUILD -ne 'true')
+    ) { $forced = $Matches[1] }
+
+    ./update_all.ps1 -Name * -ForcedPackages $forced
+
+    7z a au_temp.zip $Env:TEMP\chocolatey\au\*
 
 #on_finish:
 #- ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
@@ -77,6 +84,8 @@ build_script:
 artifacts:
 - path: update_info.xml
 - path: Update-AUPackages.md
+- path: au_temp.zip
+
 
 notifications:
 - provider: Email
