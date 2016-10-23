@@ -66,8 +66,10 @@ You can force package update and push using git commit message. AppVeyor build i
 If commit message includes `[AU <forced_packages>]` message on the first line, the `forced_packages` string will be sent to the updater.
 
 Examples:
-- `[AU pkg1 pkg2]` - force update ONLY packages `pkg1` and `pkg2`;
-- `[AU pkg1:ver1 pkg2 non_existent]` - force `pkg1` and use explicit version, force `pkg2` and ignore `non_existent`.
+- `[AU pkg1 pkg2]`  
+Force update ONLY packages `pkg1` and `pkg2`.
+- `[AU pkg1:ver1 pkg2 non_existent]`
+Force `pkg1` and use explicit version `ver1`, force `pkg2` and ignore `non_existent`.
 
 To see how versions behave when package update is forced see the [force documentation](https://github.com/majkinetor/au/blob/master/README.md#force-update).
 
