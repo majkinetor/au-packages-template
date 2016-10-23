@@ -15,6 +15,8 @@ The repository is setup so that you can manage your packages entirely from the G
 
 ## Prerequisites
 
+To run locally you will need:
+
 - Powershell 4+.
 - [Chocolatey Automatic Package Updater Module](https://github.com/majkinetor/au): `Install-Module au`
 
@@ -30,7 +32,7 @@ In a package directory run: `Test-Package`.
 
 ### Single package
 
-Run  from within the directory of the package to update that package:
+Run from within the directory of the package to update that package:
    
     cd <package_dir>
     ./update.ps1
