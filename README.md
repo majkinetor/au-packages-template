@@ -76,6 +76,8 @@ Force `pkg1` and use explicit version `ver1`, force `pkg2` and ignore `non_exist
 
 To see how versions behave when package update is forced see the [force documentation](https://github.com/majkinetor/au/blob/master/README.md#force-update).
 
+You can also push manual packages with command `[PUSH pkg1 ... pkgN]`. This works for any package anywhere in the file hierarchy and will not invoke AU updater at all.
+
 ## Start using AU with your own packages
 
 To use this system with your own packages do the following steps:
