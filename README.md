@@ -17,8 +17,8 @@ The repository is setup so that you can manage your packages entirely from the G
 
 To run locally you will need:
 
-- Powershell 4+.
-- [Chocolatey Automatic Package Updater Module](https://github.com/majkinetor/au): `Install-Module au`
+- Powershell 5+: `cinst powershell`
+- [Chocolatey Automatic Package Updater Module](https://github.com/majkinetor/au): `Install-Module au` or `cinst au`
 
 ## Create a package
 
@@ -26,7 +26,8 @@ To create a new package see [Creating the package updater script](https://github
 
 ## Testing the package
 
-In a package directory run: `Test-Package`.
+In a package directory run: `Test-Package`. This function can be used to start testing in [chocolatey-test-environment](https://github.com/majkinetor/chocolatey-test-environment) via `Vagrant` parameter or it can test packages locally.
+
 
 ## Automatic package update
 
