@@ -76,4 +76,4 @@ $global:au_Root = $Root                                    #Path to the AU packa
 $global:info = updateall -Name $Name -Options $Options
 
 #Uncomment to fail the build on AppVeyor on any package error
-#if ($global:info.error_count.total) { throw 'Errors during update' }
+if ($global:info.error_count.total) { throw 'Errors during update' }
