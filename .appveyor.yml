@@ -19,7 +19,7 @@ environment:
   au_test_groups: 1
 
   # Github token to commit pushed packages to repository
-  github_user_repo: arkane-systems/choco-packages
+  github_user_repo: {github_user}/{repository}
   github_api_key:
     secure: K2+5AcIYQ3dL+h5L6W/swaythrzQKL+J6KzfNEwdwwkOMcwvf/gu5WWoLTkqJ+Qf #https://ci.appveyor.com/tools/encrypt
 
