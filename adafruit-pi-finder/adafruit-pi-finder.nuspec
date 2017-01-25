@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>adafruit-pi-finder</id>
+    <title>Adafruit Raspberry Pi Finder</title>
+    <version>3.0.0</version>
+    <authors>Adafruit</authors>
+    <owners>Alistair Young</owners>
+    <summary>The Adafruit Raspberry Pi Finder is an application which finds the IP address of a new Raspberry Pi, updates it, sets up WiFi access and a hostname, and installs Occidentalis, a collection of useful tools.</summary>
+    <description>
+The Adafruit Raspberry Pi Finder is an application which finds the IP address of a new Raspberry Pi, updates it, sets up WiFi access and a hostname, and installs Occidentalis, a collection of useful tools.
+    </description>
+    <projectUrl>https://github.com/adafruit/Adafruit-Pi-Finder</projectUrl>
+    <tags>raspberry-pi</tags>
+    <copyright>Adafruit</copyright>
+    <licenseUrl>https://github.com/adafruit/Adafruit-Pi-Finder/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--<dependencies>
+      <dependency id="" version="" />
+    </dependencies>-->
+    <releaseNotes></releaseNotes>
+    <docsUrl>https://github.com/adafruit/Adafruit-Pi-Finder/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/adafruit/Adafruit-Pi-Finder/issues</bugTrackerUrl>
+    <projectSourceUrl>https://github.com/adafruit/Adafruit-Pi-Finder</projectSourceUrl>
+    <packageSourceUrl>https://github.com/arkane-systems/choco-packages/tree/master/adafruit-pi-finder</packageSourceUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
