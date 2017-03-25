@@ -13,6 +13,12 @@
 This repository contains [chocolatey automatic packages](https://chocolatey.org/docs/automatic-packages).  
 The repository is setup so that you can manage your packages entirely from the GitHub web interface (using AppVeyor to update and push packages) and/or using the local repository copy.
 
+## 権利について
+このレポジトリはWindowsにおいて人間が行うインストール作業を自動化する手順を記述ししたものです。  
+明示的な許可がある場合を除き、引用を超えた再配布は行っておらず、各種権利を侵害することを目的としたものでもありません。
+
+Chocolatey及びそちらでの取扱については[Chocolatey - The package manager for Windows](https://chocolatey.org/)を御覧ください。
+
 ## Prerequisites
 
 To run locally you will need:
