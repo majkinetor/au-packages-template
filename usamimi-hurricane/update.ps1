@@ -1,4 +1,4 @@
-$releases = 'http://www.vector.co.jp/download/file/win95/prog/fh682302.html'
+ï»¿$releases = 'http://www.vector.co.jp/download/file/win95/prog/fh682302.html'
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
@@ -7,7 +7,8 @@ function global:au_GetLatest {
     
     $download_page.RawContentStream.Position = 0
     $sjis = (New-Object IO.StreamReader($download_page.RawContentStream, [System.Text.Encoding]::GetEncoding("Shift_JIS"))).ReadToEnd()
-    $verregex = [regex]'title="Ú×ƒy[ƒW‚Ö">‚¤‚³‚İ‚İƒnƒŠƒP[ƒ“ (.*?)</a></h2>'
+    $verregex = [regex]'title="è©³ç´°ãƒšãƒ¼ã‚¸ã¸">ã†ã•ã¿ã¿ãƒãƒªã‚±ãƒ¼ãƒ³ (.*?)</a></h2>'
+
     $version = ($verregex.Match( $sjis ).Groups[1]).ToString()
     echo $url
     return @{ 

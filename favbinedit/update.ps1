@@ -1,16 +1,14 @@
-$releases = 'http://www.vector.co.jp/download/file/winnt/util/fh683392.html'
+ï»¿$releases = 'http://www.vector.co.jp/download/file/winnt/util/fh683392.html'
 
 function global:au_GetLatest {
-    Write-Host "au_GetLatest"
     $download_page = Invoke-WebRequest -Uri $releases
-    Write-Host "Invoked!"
-    Write-Host $download_page
     $regex   = 'http://ftp.vector.co.jp/.*?\.exe$'
     $url     = ($download_page.links | ? href -match $regex | select -First 1 -expand href)
     
     $download_page.RawContentStream.Position = 0
     $sjis = (New-Object IO.StreamReader($download_page.RawContentStream, [System.Text.Encoding]::GetEncoding("Shift_JIS"))).ReadToEnd()
-    $verregex = [regex]'title="Ú×ƒy[ƒW‚Ö">FavBinEdit (.*?)</a></h2>'
+    $verregex = [regex]'title="è©³ç´°ãƒšãƒ¼ã‚¸ã¸">FavBinEdit (.*?)</a></h2>'
+
     $version = ($verregex.Match( $sjis ).Groups[1]).ToString()
     echo $url
     return @{ 
