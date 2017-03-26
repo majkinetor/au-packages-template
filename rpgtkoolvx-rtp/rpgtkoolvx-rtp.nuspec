@@ -27,19 +27,19 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
     <version>202.0</version>
-    <!-- <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>-->
+    <packageSourceUrl>https://github.com/KageShiron/chocolatey-packages/tree/master/rpgtkoolvx-rtp</packageSourceUrl>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
-    <!--<owners>__REPLACE_YOUR_NAME__</owners>-->
+    <owners>KageShiron</owners>
     <!-- ============================== -->
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
     <title>rpgtkoolace-rtp (Install)</title>
-    <authors>__REPLACE_AUTHORS_OF_SOFTWARE_COMMA_SEPARATED__</authors>
+    <authors>KADOKAWA CORPORATION, enterbrain</authors>
     <!-- projectUrl is required for the community feed -->
-    <projectUrl>https://_Software_Location_REMOVE_OR_FILL_OUT_</projectUrl>
+    <projectUrl>https://tkool.jp/support/download/rpgvx/rtp</projectUrl>
     <iconUrl>https://rawgit.com/KageShiron/chocolatey-packages/master/rpgtkoolvx-rtp/icon.png</iconUrl>
-    <!-- <copyright>Year Software Vendor</copyright> -->
+    <copyright>2017 KADOKAWA CORPORATION, enterbrain</copyright>
     <!-- If there is a license Url available, it is is required for the community feed -->
     <!-- <licenseUrl>Software License Location __REMOVE_OR_FILL_OUT__</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>-->
@@ -47,9 +47,11 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
     <!--<mailingListUrl></mailingListUrl>-->
     <!--<bugTrackerUrl></bugTrackerUrl>-->
-    <tags>rpgtkoolace-rtp admin SPACE_SEPARATED</tags>
-    <summary>__REPLACE__</summary>
-    <description>__REPLACE__MarkDown_Okay 
+    <tags>rpg tkool game runtime</tags>
+    <summary>RPG Tkool VX(RPGツクールVX) Runtime package for Japanese</summary>
+    <description>RPG Tkool VX(RPGツクールVX) Runtime package for Japanese.
+Some games made by RPG Tkool VX (for Japanese) depends on this package.
+It contains graphics, musics, DLLs and so on.
 
 
 **Please Note**: This is an automatically updated package. If you find it is 
