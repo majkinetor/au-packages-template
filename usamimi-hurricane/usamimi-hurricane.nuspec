@@ -42,7 +42,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <copyright>	Copyright © 2001-2016　うさぴょん　Luca　ALL RIGHTS RESERVED.</copyright>
     <!-- If there is a license Url available, it is is required for the community feed -->
     <licenseUrl>http://www.k3.dion.ne.jp/~dt2/usamimihurricane/webhelp/_RESOURCE/EUL.html</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>-->
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
     <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
     <!--<mailingListUrl></mailingListUrl>-->
