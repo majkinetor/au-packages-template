@@ -8,6 +8,7 @@ image: WMF 5
 branches:
   only:
   - master
+  - appveyor
 #build:
 #  verbosity: minimal
 
