@@ -34,7 +34,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
-    <title>CubePDF</title>
+    <title>CubePDF*</title>
     <authors>CubeSoft</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.cube-soft.jp/cubepdf/</projectUrl>
