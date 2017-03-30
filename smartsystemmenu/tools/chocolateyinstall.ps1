@@ -4,7 +4,7 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
   packageName   = $packageName
-  unzipLocation = $toolsDir
+  destination   = $toolsDir
   fileType      = 'zip'
   fileFullPath  = Join-Path $toolsDir SmartSystemMenu.zip
   softwareName  = 'SmartSystemMenu*'
