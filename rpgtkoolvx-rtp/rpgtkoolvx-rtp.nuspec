@@ -34,7 +34,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
-    <title>rpgtkoolace-rtp (Install)</title>
+    <title>RPGTkool VX RTP</title>
     <authors>KADOKAWA CORPORATION, enterbrain</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://tkool.jp/support/download/rpgvx/rtp</projectUrl>
