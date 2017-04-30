@@ -1,5 +1,5 @@
 [![](https://ci.appveyor.com/api/projects/status/github/flcdrg/au-packages?svg=true)](https://ci.appveyor.com/project/flcdrg/au-packages)
-[Update status](https://gist.github.com/flcdrg/YOUR_GIST_ID_HERE)
+[Update status](https://gist.github.com/flcdrg/7d00c69c2cde8309a8594abaa897a9a6)
 [![](http://transparent-favicon.info/favicon.ico)](#)
 [chocolatey/flcdrg](https://chocolatey.org/profiles/flcdrg)
 
