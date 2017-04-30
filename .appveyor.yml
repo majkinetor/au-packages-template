@@ -19,14 +19,14 @@ environment:
   au_test_groups: 1
 
   # Github token to commit pushed packages to repository
-  github_user_repo: {github_user}/{repository}
+  github_user_repo: flcdrg/au-packages
   github_api_key:
-    secure: YOUR_GITHUB_API_KEY_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
+    secure: 188HyOnzK0SS3iFAqhLu0C+AcmGaoQh2O5FFCNByQU0cv8K5ejmuPSCOZ5TqKFrC
 
 
   # Mail credentials - for error notifications
   mail_user:
-    secure: YOUR_EMAIL_ACCOUNT_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
+    secure:
   mail_pass:
     secure: YOUR_EMAIL_PASSWORD_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
   mail_server: smtp.gmail.com
@@ -45,8 +45,8 @@ environment:
     secure: YOUR_CHOCO_API_KEY_HERE_ENCRYPTED_STRING # https://ci.appveyor.com/tools/encrypt
 
 init:
-- git config --global user.email "chocolatey@realdimensions.net"
-- git config --global user.name "Chocolatey"
+- git config --global user.email "david@gardiner.net.au"
+- git config --global user.name "flcdrg"
 - git config --global core.safecrlf false
 
 install:
