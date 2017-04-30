@@ -26,16 +26,16 @@ environment:
 
   # Mail credentials - for error notifications
   mail_user:
-    secure:
+    secure: DekrF4bCfy6smgRyo/QaOF6vVKMgUeQHaGH573bvIU8=
   mail_pass:
-    secure: YOUR_EMAIL_PASSWORD_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
+    secure: TtDG3OB+dZhFhBKwrEELJnD9qVPRRJY84qj3TcrONuI=
   mail_server: smtp.gmail.com
   mail_port: 587
   mail_enablessl: true
 
   # ID of the gist used to save run results - create a gist under the github_user (secret or not) and grab the id - https://gist.github.com/name/id
   # Optional, leave empty to create anonymous gist
-  gist_id:
+  gist_id: au-packages
 
   # Force test: gist id for test results
   gist_id_test:
