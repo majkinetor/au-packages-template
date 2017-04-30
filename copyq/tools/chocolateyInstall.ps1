@@ -1,27 +1,33 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName = 'copyq'
-$url32       = 'https://github.com/hluk/CopyQ/releases/download/v2.7.1/copyq-2.7.1-setup.exe'
-$checksum32  = '781787EF7DB6801A843DED62900380CCCF31A0E9917FA13A55B19932A8F35DAC'
-$running     = if (ps $packageName -ea 0) { $true } else { $false }
+
+$fileType      = 'exe'
+$toolsDir      = Split-Path $MyInvocation.MyCommand.Definition
+$embedded_path = gi "$toolsDir\*.$fileType"
+
+$pp = Get-PackageParameters
+$tasks=@()
+if (!$pp.NoStartup)     { Write-Host 'Automatically start with Windows'; $tasks += 'startup'}
+if (!$pp.NoDesktopIcon) { Write-Host 'Create desktop icon'; $tasks += 'desktopicon' }
 
 $packageArgs = @{
-  packageName            = $packageName
-  fileType               = 'EXE'
-  url                    = $url32
-  checksum               = $checksum32
-  checksumType           = 'sha256'
-  silentArgs             = '/VERYSILENT'
-  validExitCodes         = @(0)
-  registryUninstallerKey = $packageName
+  packageName    = $packageName
+  fileType       = $fileType
+  file           = $embedded_path
+  silentArgs     = '/VERYSILENT /TASKS=' + ($tasks -join ',')
+  validExitCodes = @(0)
+  softwareName   = $packageName
 }
-Install-ChocolateyPackage @packageArgs
+Install-ChocolateyInstallPackage @packageArgs
+rm $embedded_path -ea 0
 
-$installLocation = Get-AppInstallLocation $packageArgs.registryUninstallerKey
-if ($installLocation) { Write-Host "$packageName installed to '$installLocation'" }
-else { Write-Warning "Can't find $PackageName install location" }
+$packageName = $packageArgs.packageName
+$installLocation = Get-AppInstallLocation $packageName
+if (!$installLocation)  { Write-Warning "Can't find $packageName install location"; return }
+Write-Host "$packageName installed to '$installLocation'"
 
-if ($installLocation -and $running) {
-    Write-Host "CopyQ was running before update, starting it up again"
-    start "$installLocation\copyq.exe"
-}
+Register-Application "$installLocation\$packageName.exe"
+Write-Host "$packageName registered as $packageName"
+
+start "$installLocation\$packageName.exe"
