@@ -42,7 +42,7 @@ environment:
 
   # Chocolatey API key - to push updated packages
   api_key:
-    secure: YOUR_CHOCO_API_KEY_HERE_ENCRYPTED_STRING # https://ci.appveyor.com/tools/encrypt
+    secure: cGKnExzBjZmYPLqMSvydRjwR+jmNG8DqR4JxYcUtCABsCK2vXNj04sHRB26EcYjs
 
 init:
 - git config --global user.email "david@gardiner.net.au"
