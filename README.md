@@ -56,6 +56,19 @@ You can also call AU method `Update-AUPackages` (alias `updateall`) on its own i
 
     updateall -Options ([ordered]@{ Force = $true })
 
+To quickly test if all of the packages update force all with `test_all.ps1` script:
+
+```
+master~> .\test_all.ps1
+Updating 4 automatic packages at 2017-04-30 10:54:34 (forced)
+Push is disabled
+FORCE IS ENABLED. All packages will be updated
+   less is updated to 4.87.0.20170430
+   copyq is updated to 3.0.0.20170430
+   librecad is updated to 2.1.3.20170430
+   prey is updated to 1.6.6.20170430
+``` 
+
 ## Pushing To Community Repository Via Commit Message
 
 You can force package update and push using git commit message. AppVeyor build is set up to pass arguments from the commit message to the `./update_all.ps1` script.
