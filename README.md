@@ -1,14 +1,7 @@
-~~~
-<!-- EDIT ME-->
-
 [![](https://ci.appveyor.com/api/projects/status/github/flcdrg/au-packages?svg=true)](https://ci.appveyor.com/project/flcdrg/au-packages)
 [Update status](https://gist.github.com/flcdrg/YOUR_GIST_ID_HERE)
 [![](http://transparent-favicon.info/favicon.ico)](#)
 [chocolatey/flcdrg](https://chocolatey.org/profiles/flcdrg)
-
-<!-- EDIT ME-->
-<!-- REMOVE THE squiggles "~" surrounding this (this should not be a code block) -->
-~~~
 
 This repository contains [chocolatey automatic packages](https://chocolatey.org/docs/automatic-packages).  
 The repository is setup so that you can manage your packages entirely from the GitHub web interface (using AppVeyor to update and push packages) and/or using the local repository copy.
