@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>iguana</id>
+    <version>5.6.20</version>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages</packageSourceUrl>
+    <owners>flcdrg</owners>
+    <title>Interfaceware Iguana</title>
+    <authors>iNTERFACEWARE Inc.</authors>
+    <projectUrl>https://www.interfaceware.com/iguana.html</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/flcdrg/chocolatey-interfaceware/master/icons/iguana.png</iconUrl>
+    <copyright>2017 iNTERFACEWARE Inc.</copyright>
+    <licenseUrl>https://www.interfaceware.com/termsandconditions.html</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>http://www.interfaceware.com/manual/index.html</docsUrl>
+    <mailingListUrl>http://help.interfaceware.com/forums</mailingListUrl>
+    <tags>iguana trial EHR HL7 chameleon healthcare integration</tags>
+    <summary>Iguana interface engine</summary>
+    <description>The Iguana interface engine allows you to integrate with EHRs, Billing Systems, HIEs and any other healthcare application.
+
+It’s the only integration engine you need to create any healthcare interface.
+Try out a fully functional, 30 day trial of Iguana for free!
+</description>
+    <releaseNotes>http://help.interfaceware.com/v6/iguana-change-log</releaseNotes>
+    <dependencies>
+      <dependency id="iguana.install" version="[5.6.20]" />
+    </dependencies>
+  </metadata>
+</package>
