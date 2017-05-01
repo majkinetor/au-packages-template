@@ -1,18 +1,19 @@
 ﻿$ErrorActionPreference = 'Stop';
 $packageName= 'smartsystemmenu'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$url        = 'https://github.com//AlexanderPro/SmartSystemMenu/releases/download/v1.0.5336.20780/SmartSystemMenu_v1.0.5336.20780.zip'
 
 $packageArgs = @{
   packageName   = $packageName
   destination   = $toolsDir
   fileType      = 'zip'
-  fileFullPath  = Join-Path $toolsDir SmartSystemMenu.zip
+  url           = $url
   softwareName  = 'SmartSystemMenu*'
-  checksum      = '68A0F1B309BA7903DD0CD663DC391881B61BC63D02296621A0E930B7A695130B'
+  checksum      = '68a0f1b309ba7903dd0cd663dc391881b61bc63d02296621a0e930b7a695130b'
   checksumType  = 'sha256'
 }
-Get-ChocolateyUnzip @packageArgs
 
+Install-ChocolateyZipPackage @packageArgs
 
 
 
