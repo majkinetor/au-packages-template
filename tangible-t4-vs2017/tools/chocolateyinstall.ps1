@@ -3,7 +3,14 @@
 $packageName  = 'tangible-t4-vs2017'
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-# using chocolatey-visualstudio.extension
+# Import private function from chocolatey-visualstudio.extension
+Import-Module $Env:ChocolateyInstall\extensions\chocolatey-visualstudio\*.psm1
+
+$cmd = Get-Command -Name "Install-VisualStudio"
+$extensionPath = $cmd.Module.ModuleBase
+
+. ("$extensionPath\Get-WillowInstalledProducts.ps1")
+
 if (-not (Get-WillowInstalledProducts -VisualStudioYear 2017)) {
     Write-Error "Visual Studio 2017 installations not found on this computer"
 }

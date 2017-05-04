@@ -25,7 +25,7 @@
 	database schemas, xml files or other sources - Write less, achieve more.</description>
     <releaseNotes>http://t4-editor.tangible-engineering.com/forum/forum.aspx?g=posts&amp;t=1522</releaseNotes>
 	<dependencies>
-      <dependency id="chocolatey-visualstudio.extension" version="1.2.0" />
+      <dependency id="chocolatey-visualstudio.extension" version="[1.2.0]" />
     </dependencies>
   </metadata>
   <files>
