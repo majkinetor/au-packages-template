@@ -27,4 +27,7 @@ Try out a fully functional, 30 day trial of Iguana for free!
       <dependency id="iguana.install" version="[6.0.6]" />
     </dependencies>
   </metadata>
+   <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+  </files>
 </package>
