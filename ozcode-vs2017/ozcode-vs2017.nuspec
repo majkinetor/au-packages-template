@@ -44,6 +44,7 @@ Features include:
 
 This package supports Visual Studio 2017. Use the [OzCode](https://chocolatey.org/packages/ozcode) package for Visual Studio 2012, 2013 and 2015.
 
+The install script will install OzCode into all suitable instances of Visual Studio 2017.
 </description>
     <releaseNotes>http://ozcode.userecho.com/topics/641-version-history/</releaseNotes>
   <dependencies>
