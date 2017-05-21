@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>ozcode</id>
+    <version>2.0.0.1029</version>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/ozcode</packageSourceUrl>
+    <owners>flcdrg</owners>
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>OzCode Debugging extension for Visual Studio</title>
+    <authors>CodeValue LTD</authors>
+    <projectUrl>https://www.oz-code.com/</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/flcdrg/au-packages/master/ozcode/icons/ozcode.png</iconUrl>
+    <copyright>2016 CodeValue LTD</copyright>
+    <licenseUrl>http://o.oz-code.com/Media/Default/FaqPage/EULA.txt</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://ozcode.userecho.com/forums/4-ozcode-documentation/</docsUrl>
+    <mailingListUrl>https://ozcode.userecho.com/</mailingListUrl>
+    <bugTrackerUrl>https://oz-code.com/Support</bugTrackerUrl>
+    <tags>Debugging Extension admin vsix trial</tags>
+    <summary>Extension for Visual Studio that enhances debugging</summary>
+    <description>Debug like a magician.
+
+Cut debugging time in half with the legendary Visual Studio extension for C#
+
+Features include:
+
+* Linq Debugging
+* Export
+* Head-Up Display
+* Breakpoints
+* Exceptions
+* Trace
+* Quick Attach
+* Search
+* Foresee
+* Compare
+* Reveal
+* Custom Expressions
+* Filter Collections
+* Quick Actions
+* Show All Instances
+</description>
+    <releaseNotes>http://ozcode.userecho.com/topics/641-version-history/</releaseNotes>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+    <!--Building from Linux? You may need this instead: <file src="tools/**" target="tools" />-->
+  </files>
+</package>
