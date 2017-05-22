@@ -12,8 +12,9 @@ by backup and restore functions:
     ...
     
     backup 
-    update ...
-    restore
+    tru {
+        update ...
+    } finally { restore }
 
 #>
 
