@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>ubiquiti-unifi-controller</id>
-    <version>5.4.14</version>
+    <version>5.4.16</version>
     <packageSourceUrl>https://github.com/flcdrg/chocolatey-ubiquiti/tree/master/unifi-controller</packageSourceUrl>
     <owners>flcdrg</owners>
     <!-- ============================== -->
@@ -28,48 +28,7 @@
 UAP, UAP-AC, UAP-AC-EDU, UAP‑AC‑HD, UAP-AC-LITE, UAP-AC-LR, UAP-AC-M, UAP-AC-M-PRO, UAP-AC Outdoor, UAP-AC-PRO, UAP-IW, UAP-LR, UAP-Outdoor, UAP-Outdoor+, UAP-Outdoor5, UAP-PRO, US-16-150W, US‑16‑XG, US-24, US-24-250W, US-24-500W, US-48, US-48-500W, US-48-750W, US-8, US-8-150W, US-8-60W, USG, USG-PRO-4
 	Install script also configures appropriate Windows Firewall rules (for Windows 8/Server 2008 and above)
     </description>
-    <releaseNotes> https://community.ubnt.com/t5/UniFi-Updates-Blog/UniFi-5-4-11-Stable-has-been-released/ba-p/1828449
-#### Controller bugfixes/changes from 5.4.9:
--    Add Migrate Site (Export Site) Wizard.
--    Support concurrent L3 device adoption.
--    Improve dates in statistics page.
--    Fix slow database backup.
--    Fix RADIUS profile migration issue.
--    Fix database migration issue, causing the controller not to start after upgrading.
- -   Update port speed availability for 10GBASE-T ports.
-
-#### Controller bugfixes/changes backported from 5.5.3:
--    Add validation for USG/USW SNMP community string. 
--    Enable traffic-control for USG on supported firmware versions.
--    Various VPN and routing policy fixes.
-
-#### Controller Bugfixes/Changes specific to UniFi Elite:
-
--    Add chat_elite tag to chat in Elite Controllers.
--    Fix discovering devices on Windows machines.
--    Handle license registration error on device adopt.
--    Fix saving Controller Settings for Elite.
-
-#### Firmware changes from 3.7.34:
-
--    [UAPG3] Enable tinysnmp.
--    [UAPG3] Enable 802.1x identity support.
--    [UAPG3] Fix RX rate error.
--    [UAPG3] Update NSS offload firmware.
--    [UAPG3] Enable bonding in the firmware, controller support pending on some releases. 
--    [UAPG2] Fix spectral scanning causing some DFS frequencies to be skipped during the scan. 
--    [UAP] Fix an issue with wireless uplink connectivity.
--    [UAP] Fix an issue with wireless adoption.
--    [UAP] Fixed issue with random disconnects.
--    [UAP] Fixed issue where stations were improperly getting kicked while roaming subnets.
--    [UAP] Fix open SSIDs on 1st gen AC models. 
--    [UAP] Add broadcast filter support.*
--    [UAP] Add rate control framework.*
--    [UAP] Numerous backend fixes and changes.
--    [USW] Fix invalid BPDU hello time.
--    [USW] Fix broken PoE restart on US-8.
--    [USW] Fix LED handling when port running at 10/100M on US-8/US-8-60W.
-	</releaseNotes>
+    <releaseNotes>https://community.ubnt.com/t5/UniFi-Updates-Blog/UniFi-5-4-16-Stable-has-been-released/ba-p/1931619</releaseNotes>
     <!-- =============================== -->      
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
