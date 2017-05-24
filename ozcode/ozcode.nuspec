@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
@@ -12,7 +12,7 @@
     <authors>CodeValue LTD</authors>
     <projectUrl>https://www.oz-code.com/</projectUrl>
     <iconUrl>http://cdn.rawgit.com/flcdrg/au-packages/master/ozcode/icons/ozcode.png</iconUrl>
-    <copyright>2016 CodeValue LTD</copyright>
+    <copyright>2017 CodeValue LTD</copyright>
     <licenseUrl>http://o.oz-code.com/Media/Default/FaqPage/EULA.txt</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://ozcode.userecho.com/forums/4-ozcode-documentation/</docsUrl>
@@ -44,17 +44,14 @@ Features include:
 
 #### Supported versions
 
-This package supports Visual Studio 2012, 2013 and 2015.
+This package supports Visual Studio 2012, 2013 and 2015. Use the [OzCode-vs2017](https://chocolatey.org/packages/ozcode-vs2017) package for Visual Studio 2017.
 </description>
     <releaseNotes>http://ozcode.userecho.com/topics/641-version-history/</releaseNotes>
     <dependencies>
-		<dependency id="autohotkey.portable" version="1.1.25" />
-	</dependencies>
+        <dependency id="autohotkey.portable" version="1.1.25" />
+    </dependencies>
   </metadata>
-
   <files>
-    <!-- this section controls what actually gets packaged into the Chocolatey package -->
     <file src="tools\**" target="tools" />
-    <!--Building from Linux? You may need this instead: <file src="tools/**" target="tools" />-->
   </files>
 </package>
