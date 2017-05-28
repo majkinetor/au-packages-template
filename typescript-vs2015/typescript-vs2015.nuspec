@@ -18,7 +18,7 @@ This is a standalone, power tool release of TypeScript for Visual Studio 2015. I
 *TypeScript 2.2 for Visual Studio 2015 requires VS 2015 Update 3*
     </description>
     <projectUrl>https://www.typescriptlang.org/</projectUrl>
-    <packageSourceUrl>https://github.com/flcdrg/chocolatey-typescript-vs2015</packageSourceUrl>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/typescript-vs2015</packageSourceUrl>
     <projectSourceUrl>https://github.com/Microsoft/TypeScript</projectSourceUrl>
     <docsUrl>https://www.typescriptlang.org/docs/tutorial.html</docsUrl>    
     <bugTrackerUrl>https://github.com/Microsoft/TypeScript/issues</bugTrackerUrl>
