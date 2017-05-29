@@ -4,8 +4,8 @@ $packageName  = 'ozcode'
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $download_dir = "$Env:TEMP\chocolatey\$packageName\$Env:ChocolateyPackageVersion".Replace("chocolatey\chocolatey", "chocolatey")
 $fileLocation = ''
-$filename = 'OzCode_3.0.0.3887.exe'
-$checksum = '62644763e15a760d4d80fd07043b3c3129c150b09159265cd28dc12ab5404541'
+$filename = 'OzCode_3.0.0.3893.exe'
+$checksum = '7249952b9dbfbdc4ba7d427e1f4a22f481be41fa241255b77eed77a7d951f56e'
 
 # Flag whether we're being invoked by AU module
 [bool] $runningAU = (Test-Path Function:\au_GetLatest)
