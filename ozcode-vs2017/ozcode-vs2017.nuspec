@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ozcode-vs2017</id>
-    <version>3.0.0.3893</version>
+    <version>3.1.0.3913</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/ozcode-vs2017</packageSourceUrl>
     <owners>flcdrg</owners>
     <title>OzCode Debugging extension for Visual Studio 2017</title>

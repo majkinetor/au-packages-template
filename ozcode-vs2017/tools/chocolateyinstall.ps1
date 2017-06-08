@@ -2,8 +2,8 @@
 
 $packageName  = 'ozcode-vs2017'
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$fileName     = 'OzCode_3.0.0.3893_FOR_VS2017.vsix'
-$checksum     = '94f3f80f439b8e226453ce81d26e226e7cea49824994fcfccd10bd900d62ea0d'
+$fileName     = 'OzCode_3.1.0.3913_FOR_VS2017.vsix'
+$checksum     = '3c763172d0caf1546bf5e3482407607b9cad8c89412e6c79712c3353280be649'
 $fileFullPath = "$toolsDir\$fileName"
 
 # Flag whether we're being invoked by AU module
@@ -11,7 +11,11 @@ $fileFullPath = "$toolsDir\$fileName"
 
 if (-not $runningAU) {
 . $toolsDir\common.ps1
+} else {
+    # We don't want this file being put in the tools directory when running in AU
+    $fileFullPath = "$ENV:Temp\$filename"
 }
+
 
 $packageArgs = @{
   packageName   = $packageName
