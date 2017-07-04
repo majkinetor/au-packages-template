@@ -16,7 +16,7 @@
     <docsUrl>https://documentation.red-gate.com/dashboard.action</docsUrl>
     <mailingListUrl>https://forum.red-gate.com/categories/sql-tools</mailingListUrl>
     <!--<bugTrackerUrl></bugTrackerUrl>-->
-    <tags>SQL Server Tools trial admin</tags>
+    <tags>SQL Server SQL-Server Tools RedGate SqlToolbelt Toolbelt trial admin</tags>
     <summary>Everything you need to work with SQL Server</summary>
     <description>Redgate's SQL Toolbelt contains the industry-standard products for SQL Server development, deployment, backup, and monitoring. Together, they make you productive, your team agile, and your data safe.
 
@@ -42,8 +42,7 @@ Tools in the SQL Toolbelt:
 - SQL Backup Pro - Compress, securely encrypt and strengthen backups - fast
 
 #### Package Download Fallback
-This package will fallback to the Red Gate FTP site once the main fixed URL no longer matches the version for which this package was created. This is to ensure
-that a specific version of the Chocolatey package continues to work even after Red Gate releases newer versions.
+This package will fallback to the Red Gate FTP site once the main fixed URL no longer matches the version for which this package was created. This is to ensure that a specific version of the Chocolatey package continues to work even after Red Gate releases newer versions.
 
 When a newer version of the package is published, it will then revert to using the primary https download URL.
 
