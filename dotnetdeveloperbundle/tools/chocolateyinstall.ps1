@@ -1,38 +1,46 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$fileLocation = ''
+$checksum = '7B17ACA323642ED5EBDB91F40932F4A253DDC5EF46BD9CD5343A0F99FE27936B'
+$primaryDownloadUrl = 'https://download.red-gate.com/DotNETDeveloperBundle.exe'
+$secondaryDownloadUrl = 'ftp://support.red-gate.com/patches/DotNETDeveloperBundle/22Mar2017/DotNETDeveloperBundle.exe'
+$packageVersionLastModified = New-Object -TypeName DateTimeOffset 2017, 3, 22, 9, 9, 15, 0 # Last modified time corresponding to this package version
 
-#Based on NO DETECTION IN PRO
+$pp = Get-PackageParameters
+
+if ($pp["FTP"] -ne $null -and $pp["FTP"] -ne '') { 
+
+  # FTP forced  
+    $url = $secondaryDownloadUrl
+} else {
+
+  # Red Gate have a fixed download URL, but if the binary changes we can fall back to their FTP site
+  # so the package doesn't break
+  $headers = Get-WebHeaders -url $primaryDownloadUrl
+  $lastModifiedHeader = $headers.'Last-Modified'
+
+  $lastModified = [DateTimeOffset]::Parse($lastModifiedHeader, [Globalization.CultureInfo]::InvariantCulture)
+
+  Write-Verbose "Package LastModified: $packageVersionLastModified"
+  Write-Verbose "HTTP Last Modified  : $lastModified"
+
+  if ($lastModified -ne $packageVersionLastModified) {
+    Write-Warning "The download available at $primaryDownloadUrl has changed from what this package was expecting. Falling back to FTP for version-specific URL"
+    $url = $secondaryDownloadUrl
+  } else {
+    Write-Verbose "Primary URL matches package expectation"
+    $url = $primaryDownloadUrl
+  }
+}
+
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  softwareName  = 'dotnetdeveloperbundle*'
   fileType      = 'exe'
   silentArgs    = "/IAgreeToTheEULA"
-  #OTHERS
-  # Uncomment matching EXE type (sorted by most to least common)
-  #$silentArgs = '/S'           # NSIS
-  #silentArgs   = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-' # Inno Setup
-  #silentArgs   = '/s'           # InstallShield
-  #silentArgs   = '/s /v"/qn"' # InstallShield with MSI
-  #silentArgs   = '/s'           # Wise InstallMaster
-  #silentArgs   = '-s'           # Squirrel
-  #silentArgs   = '-q'           # Install4j
-  #silentArgs   = '-s'           # Ghost
-  # Note that some installers, in addition to the silentArgs above, may also need assistance of AHK to achieve silence.
-  #silentArgs   = ''             # none; make silent with input macro script like AutoHotKey (AHK)
-                                 #       https://chocolatey.org/packages/autohotkey.portable
-  
-  validExitCodes= @(0) #please insert other valid exit codes here
-  url           = "https://download.red-gate.com/DotNETDeveloperBundle.exe"  #download URL, HTTPS preferrred
-  checksum      = '7B17ACA323642ED5EBDB91F40932F4A253DDC5EF46BD9CD5343A0F99FE27936B'
+  validExitCodes= @(0)
+  url           = $url
+  checksum      = $checksum
   checksumType  = 'sha256'
-  url64bit      = ""   # 64bit URL here (HTTPS preferred) or remove - if installer contains both architectures (very rare), use $url
-  checksum64    = ''
-  checksumType64= 'sha256'
   destination   = $toolsDir
 }
 
-Install-ChocolateyPackage @packageArgs 
-
-## See https://chocolatey.org/docs/helpers-reference
-
+Install-ChocolateyPackage @packageArgs
