@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>microsoft-teams</id>
+    <version>1.0.00.17151</version>
+    <owners>flcdrg</owners>
+    <title>Microsoft Teams Desktop App</title>
+    <authors>Microsoft Corporation</authors>
+    <projectUrl>https://products.office.com/en-us/microsoft-teams/group-chat-software</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/flcdrg/au-packages/master/microsoft-teams/icons/teams-logo.png</iconUrl>
+    <copyright>2017 Microsoft Corporation</copyright>
+    <licenseUrl>https://www.microsoft.com/online/legal/v2/?docid=13&amp;langid=en-us</licenseUrl>
+	<packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/microsoft-teams</packageSourceUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://support.office.com/en-us/teams</docsUrl>
+    <mailingListUrl>https://microsoftteams.uservoice.com</mailingListUrl>
+    <tags>microsoft-teams teams office 365 chat collaboration slack admin</tags>
+    <summary>Microsoft Teams helps your team work better together. It’s one app that brings your team’s conversations, meetings, files and notes together into a single place for open and seamless collaboration.</summary>
+    <description>Microsoft Teams is a messaging app for teams where all conversations, meetings, files, and notes can be accessed by everyone, all in one place. It's a place for collaboration and work to happen in the open.
+
+Here's why you should use it:
+
+- It's great.
+- It makes communicating one-on-one and with groups a snap.
+- Collaboration happens in real time.
+- Everything your team cares about (all your files, docs, contact info, and more) is in once place.
+	</description>
+    <releaseNotes>https://support.office.com/en-us/article/Release-notes-for-Microsoft-Teams-d7092a6d-c896-424c-b362-a472d5f105de</releaseNotes>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+    <!--Building from Linux? You may need this instead: <file src="tools/**" target="tools" />-->
+  </files>
+</package>

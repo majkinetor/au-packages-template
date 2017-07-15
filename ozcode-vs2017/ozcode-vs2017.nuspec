@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>ozcode-vs2017</id>
+    <version>3.1.0.3913</version>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/ozcode-vs2017</packageSourceUrl>
+    <owners>flcdrg</owners>
+    <title>OzCode Debugging extension for Visual Studio 2017</title>
+    <authors>CodeValue LTD</authors>
+    <projectUrl>https://www.oz-code.com/</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/flcdrg/au-packages/master/ozcode/icons/ozcode.png</iconUrl>
+    <copyright>2017 CodeValue LTD</copyright>
+    <licenseUrl>http://o.oz-code.com/Media/Default/FaqPage/EULA.txt</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://ozcode.userecho.com/forums/4-ozcode-documentation/</docsUrl>
+    <mailingListUrl>https://ozcode.userecho.com/</mailingListUrl>
+    <bugTrackerUrl>https://oz-code.com/Support</bugTrackerUrl>
+    <tags>Debugging Extension vsix trial vs2017</tags>
+    <summary>Extension for Visual Studio that enhances debugging</summary>
+    <description>Debug like a magician.
+
+Cut debugging time in half with the legendary Visual Studio extension for C#
+
+Features include:
+
+* Linq Debugging
+* Export
+* Head-Up Display
+* Breakpoints
+* Exceptions
+* Trace
+* Quick Attach
+* Search
+* Foresee
+* Compare
+* Reveal
+* Custom Expressions
+* Filter Collections
+* Quick Actions
+* Show All Instances 
+
+#### Supported versions
+
+This package supports Visual Studio 2017. Use the [OzCode](https://chocolatey.org/packages/ozcode) package for Visual Studio 2012, 2013 and 2015.
+
+The install script will install OzCode into all suitable instances of Visual Studio 2017.
+</description>
+    <releaseNotes>http://ozcode.userecho.com/topics/641-version-history/</releaseNotes>
+  <dependencies>
+    <dependency id="vswhere" version="1.0.62" />
+  </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

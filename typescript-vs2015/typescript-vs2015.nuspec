@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>typescript-vs2015</id>
+    <title>TypeScript for Visual Studio 2015</title>
+    <version>2.4.1.0</version>
+    <authors>Microsoft</authors>
+    <owners>flcdrg</owners>
+    <summary>TypeScript is a language for application-scale JavaScript development. It is included in Visual Studio 2015. </summary>
+    <description>TypeScript is a language for application-scale JavaScript. 
+TypeScript adds optional types, classes, and modules to JavaScript. 
+TypeScript supports tools for large-scale JavaScript applications for any browser, for any host, on any OS. 
+TypeScript compiles to clean, readable, standards-based JavaScript. Try it out at https://www.typescriptlang.org/playground.
+
+This is a standalone, power tool release of TypeScript for Visual Studio 2015. It includes both the TypeScript experience for Visual Studio and a standalone compiler that can be used from the command line.
+
+*TypeScript 2.2 for Visual Studio 2015 requires VS 2015 Update 3*
+    </description>
+    <projectUrl>https://www.typescriptlang.org/</projectUrl>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/typescript-vs2015</packageSourceUrl>
+    <projectSourceUrl>https://github.com/Microsoft/TypeScript</projectSourceUrl>
+    <docsUrl>https://www.typescriptlang.org/docs/tutorial.html</docsUrl>    
+    <bugTrackerUrl>https://github.com/Microsoft/TypeScript/issues</bugTrackerUrl>
+    <tags>typescript visualstudio visual studio vs2015 admin</tags>
+    <copyright>https://raw.githubusercontent.com/Microsoft/TypeScript/master/CopyrightNotice.txt</copyright>
+    <licenseUrl>https://raw.githubusercontent.com/Microsoft/TypeScript/master/LICENSE.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/typescript.png</iconUrl>
+    <releaseNotes>https://github.com/Microsoft/TypeScript/releases/tag/v2.4.1</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

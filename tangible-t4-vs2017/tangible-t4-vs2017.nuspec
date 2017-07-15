@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>tangible-t4-vs2017</id>
+    <version>2.4.0</version>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tangible-t4-vs2017</packageSourceUrl>
+    <owners>flcdrg</owners>
+    <title>tangible T4 Editor plus modeling tools for VS 2017</title>
+    <authors>tangible engineering GmbH</authors>
+    <projectUrl>https://marketplace.visualstudio.com/items?itemName=tangibleengineeringGmbH.tangibleT4Editor240plusmodelingtoolsforVS2017</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/flcdrg/au-packages/master/tangible-t4-vs2017/icons/tangible-t4-vs2017.png</iconUrl>
+    <!-- copyright is usually years and software vendor, but not required for internal feeds -->
+    <copyright>2017 tangible engineering GmbH</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>http://t4-editor.tangible-engineering.com/T4-Book-Tangible-T4-Editor-User-Guide.html</docsUrl>
+    <mailingListUrl>http://t4-editor.tangible-engineering.com/forum/forum.aspx</mailingListUrl>
+    <tags>t4 templates visualstudio admin codegeneration vs2017</tags>
+    <summary>T4 editor for Visual Studio 2017</summary>
+    <description>Quickly write your own .NET Code Generator via T4 Text-Templates (.tt-Files) with Intelli-Sense &amp; Syntax-Highlighting. 
+	tangible T4 Editor comes with UML-Style modeling tools and can generate from diagrams, database schemas, xml, word, excel sources, or any other data source. 
+	Microsoft T4 looks and smells like ASP.NET - it is simple! T4 is used in ASP.NET MVC, Entity Framework and DSL Tools. 
+	The Microsoft T4 Generation Engine is already built into Visual Studio, however Visual Studio does not provide an Code-Editor for it. 
+	That is why we created the tangible T4 Editor for Visual Studio. You can now accelerate your projects by adopting Microsoft T4 today and generate the code you need directly from diagrams, 
+	database schemas, xml files or other sources - Write less, achieve more.</description>
+    <releaseNotes>http://t4-editor.tangible-engineering.com/forum/forum.aspx?g=posts&amp;t=1522</releaseNotes>
+	<dependencies>
+      <dependency id="chocolatey-visualstudio.extension" version="[1.2.0]" />
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

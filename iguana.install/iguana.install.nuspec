@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>iguana.install</id>
+    <version>6.0.6</version>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages</packageSourceUrl>
+    <owners>flcdrg</owners>
+    <title>Interfaceware Iguana (Install)</title>
+    <authors>iNTERFACEWARE Inc.</authors>
+    <projectUrl>https://www.interfaceware.com/iguana.html</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/flcdrg/chocolatey-interfaceware/master/icons/iguana.png</iconUrl>
+    <copyright>2017 iNTERFACEWARE Inc.</copyright>
+    <licenseUrl>https://www.interfaceware.com/termsandconditions.html</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>http://www.interfaceware.com/manual/index.html</docsUrl>
+    <mailingListUrl>http://help.interfaceware.com/forums</mailingListUrl>
+    <tags>iguana admin trial EHR HL7 chameleon healthcare integration</tags>
+    <summary>Iguana interface engine</summary>
+    <description>The Iguana interface engine allows you to integrate with EHRs, Billing Systems, HIEs and any other healthcare application.
+
+It’s the only integration engine you need to create any healthcare interface.
+
+Try out a fully functional, 30 day trial of Iguana for free!
+
+#### Package Parameters
+The following package parameters can be set:
+
+ * `/InstallationPath:path` - Install in this directory (default is C:\Program Files\iNTERFACEWARE)
+ * `/Port:nnnn` - Use this port for Iguana's web server (default is 6543)
+ * `/Log:path` - Use this directory for Iguana's log files (default is installation-directory\Iguana\logs)
+ * `/ExcludeChameleon` - do not install Chameleon
+
+These parameters can be passed to the installer with the use of `-params`.
+For example: `-params '"/InstallationPath:c:\Interfaceware /ExcludeChameleon"'`.
+</description>
+    <releaseNotes>http://help.interfaceware.com/v6/iguana-change-log</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>sqltoolbelt</id>
+    <version>1.8.3.1139</version>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/sqltoolbelt</packageSourceUrl>
+    <owners>kscelfo, flcdrg</owners>
+    <title>SQL Toolbelt</title>
+    <authors>Red Gate Software Ltd</authors>
+    <projectUrl>http://www.red-gate.com/products/sql-development/sql-toolbelt/</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/flcdrg/au-packages/master/sqltoolbelt/icons/redgate.png</iconUrl>
+    <copyright>2017 Red Gate Software Ltd</copyright>
+    <licenseUrl>http://www.red-gate.com/assets/purchase/assets/license.pdf</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://documentation.red-gate.com/dashboard.action</docsUrl>
+    <mailingListUrl>https://forum.red-gate.com/categories/sql-tools</mailingListUrl>
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <tags>SQL Server SQL-Server Tools RedGate SqlToolbelt Toolbelt trial admin</tags>
+    <summary>Everything you need to work with SQL Server</summary>
+    <description>Redgate's SQL Toolbelt contains the industry-standard products for SQL Server development, deployment, backup, and monitoring. Together, they make you productive, your team agile, and your data safe.
+
+Thousands of SQL Server professionals rely on the SQL Toolbelt every day, because it’s reliable, easy to use, and plugs in to the tools they already use for application development.
+
+Tools in the SQL Toolbelt:
+
+-  SQL Compare Pro - Compare and synchronize database schema
+-  SQL Data Compare Pro - Compare and synchronize database contents
+-  SQL Source Control - Connect your databases to your version control system
+-  SQL Prompt - Write, refactor, and explore SQL effortlessly
+-  SQL Search - Search your database quickly in SQL Server Management Studio
+-  SQL Data Generator - Generate realistic test data fast, based on column and table names
+-  SQL Doc - Automatically generate database documentation
+-  SQL Test - Write and run unit tests in SQL Server Management Studio
+-  DLM Dashboard - tracks your database schemas and alerts you when they change.
+- DLM Automation - Continuous integration and automated deployments for your SQL Server database
+- SQL Multi Script - Deploy multiple scripts to multiple servers with just one click
+- SQL Dependency Tracker - Explore object dependencies and visualize complex databases simply
+- SQL Comparison SDK - Automate comparison and synchronization tasks
+- ReadyRoll - Develop and deploy databases in Visual Studio with migration scripts
+- SQL Monitor - SQL Server performance monitoring and alerting
+- SQL Backup Pro - Compress, securely encrypt and strengthen backups - fast
+
+#### Package Download Fallback
+This package will fallback to the Red Gate FTP site once the main fixed URL no longer matches the version for which this package was created. This is to ensure that a specific version of the Chocolatey package continues to work even after Red Gate releases newer versions.
+
+When a newer version of the package is published, it will then revert to using the primary https download URL.
+
+#### Package Parameters
+The following package parameters can be set:
+
+ * `/FTP` - Force using the FTP download URL
+
+These parameters can be passed to the installer with the use of `--params`.
+For example: `--params "'/FTP'"`.
+</description>
+    <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
+  <dependencies>
+      <dependency id="chocolatey-core.extension" version="1.1.0" />
+  </dependencies>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
