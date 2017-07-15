@@ -41,7 +41,8 @@ For example: `--params "'/FTP'"`.
 - [ANTS Performance Profiler](https://documentation.red-gate.com/display/APP9/ANTS+Performance+Profiler+9.6+release+notes)
 - [.NET Reflector](https://documentation.red-gate.com/display/REF9/.NET+Reflector+9.0+release+notes)</releaseNotes>
   <dependencies>
-      <dependency id="chocolatey-core.extension" version="1.1.0" />
+    <dependency id="chocolatey-core.extension" version="1.1.0" />
+    <dependency id="vcredist2015" version="14.0.24215.20170201" />
   </dependencies>
   </metadata>
   <files>
