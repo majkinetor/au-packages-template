@@ -4,12 +4,12 @@
   <metadata>
     <id>PDFXchangeEditor</id>
     <version>6.0.322.5</version>
-    <packageSourceUrl>https://github.com/flcdrg/chocolatey-pdfxchangeeditor</packageSourceUrl>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/PDFXchangeEditor</packageSourceUrl>
     <owners>flcdrg, calwell</owners>
     <title>PDF-XChange Editor</title>
     <authors>Tracker Software</authors>
     <projectUrl>https://www.tracker-software.com/product/pdf-xchange-editor</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/flcdrg/chocolatey-pdfxchangeeditor/master/icons/pdfxchangeeditor.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/flcdrg/au-packages/master/PDFXchangeEditor/icons/pdfxchangeeditor.png</iconUrl>
     <copyright>1997-2017 Tracker Software Products</copyright>
     <licenseUrl>https://www.tracker-software.com/licensing</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
