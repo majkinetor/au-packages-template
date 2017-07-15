@@ -6,10 +6,10 @@ $primaryDownloadUrl = "http://downloads.pdf-xchange.com/EditorV6.x86.msi"
 $primaryDownloadUrl64 = "http://downloads.pdf-xchange.com/EditorV6.x64.msi"
 $url        = "http://www.docu-track.co.uk/builds/$version/EditorV6.x86.msi"
 $url64      = "http://www.docu-track.co.uk/builds/$version/EditorV6.x64.msi"
-$checksum   = '9CF01DFE107BB7DD362078E1F603AE4DD5AE006BB246ABD671AD9DED286B395E'
-$checksum64 = '3B951FC0E3C20504BA7CB00570D17F3898F20CBFDFB3B1C3E0AAAE18FE821CD7'
-$lastModified32 = New-Object -TypeName DateTimeOffset 2017, 5, 11, 9, 49, 50, 0 # Last modified time corresponding to this package version
-$lastModified64 = New-Object -TypeName DateTimeOffset 2017, 5, 11, 9, 49, 50, 0 # Last modified time corresponding to this package version
+$checksum   = '6F4985A0602416D6B45DEB7AB0DE5A8909C5B4834E752F1B66F6EC2851B1563C'
+$checksum64 = 'E45C9C68A3B9C9579C956DB0B46B6AFABA0C4C20768C2BF5F629416023A5FDD8'
+$lastModified32 = New-Object -TypeName DateTimeOffset 2017, 6, 30, 0, 10, 27, 0 # Last modified time corresponding to this package version
+$lastModified64 = New-Object -TypeName DateTimeOffset 2017, 6, 30, 0, 10, 2, 0 # Last modified time corresponding to this package version
 
 # Tracker Software have fixed download URLs, but if the binary changes we can fall back to their alternate (but slower) download site
 # so the package doesn't break.
