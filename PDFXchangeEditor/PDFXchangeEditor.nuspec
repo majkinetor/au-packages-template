@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>PDFXchangeEditor</id>
+    <version>6.0.321</version>
+    <packageSourceUrl>https://github.com/flcdrg/chocolatey-pdfxchangeeditor</packageSourceUrl>
+    <owners>flcdrg, calwell</owners>
+    <title>PDF-XChange Editor</title>
+    <authors>Tracker Software</authors>
+    <projectUrl>https://www.tracker-software.com/product/pdf-xchange-editor</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/flcdrg/chocolatey-pdfxchangeeditor/master/icons/pdfxchangeeditor.png</iconUrl>
+    <copyright>1997-2017 Tracker Software Products</copyright>
+    <licenseUrl>https://www.tracker-software.com/licensing</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>http://help.tracker-software.com/EUM/default.aspx?pageid=Welcome</docsUrl>
+    <mailingListUrl>https://www.tracker-software.com/forum3/viewforum.php?f=62</mailingListUrl>
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <tags>PDFXchangeEditor pdf reader editor ocr pdfxchangeviewer admin</tags>
+    <summary>The smallest, fastest, most feature-rich PDF editor/viewer available! Create, View, Edit, Annotate, OCR and Digitally Sign PDF files plus much more..</summary>
+    <description>
+Designed for anyone from home users to large corporate environments that wish to View/Edit/Modify and even OCR Image based PDF files on their Windows PC's. There is now a FREE pdf reader alternative to the Adobe Reader that truly raises the bar! The PDF-XChange Editor is smaller, faster and more feature rich than any other FREE PDF Reader/ PDF Viewer/ PDF Editor available on the market. This free pdf editor download also allows users to try the extended functionality offered by the licensed PDF-XChange Editor in evaluation mode - for free. No PDF reader or Viewer offers more features than PDF-XChange - or does so without compromising performance, quality or security.
+
+#### Package Parameters
+The following package parameters can be set:
+
+ * `/NoDesktopShortcuts` - Do not create shortcut on desktop.
+ * `/NoUpdater` - Do not install updater service.
+ * `/NoViewInBrowsers` - Do not configure to open PDF files inside browsers.
+ * `/NoSetAsDefault` - Do not set as default application for PDF files.
+ * `/NoProgramsMenuShortcuts` - Do not create program menu group for installed application and their components.
+
+These parameters can be passed to the installer with the use of `-params`.
+For example: `-params '"/NoDesktopShortcuts"'`.
+
+</description>
+    <releaseNotes>version 6.0.321 release - 06-03-2017
+Requires maintenance through 06-03-2017
+
+#### Newly added feature
+
+* Added full support for SharePoint-files to be opened in the Editor's browser-plugin for Internet Explorer.
+* Added full support for SharePoint-files when opened in Editor by UNC path.  Example: '\\sharepoint-server\path-to-file...'.
+
+#### A reported error or bug was fixed
+
+* Fixed a potential application hang when using the Windows Clipboard.
+* Fixed a Typewriter tool issue when applied to a rotated document (T# 2680, 3810). ([24921](http://www.tracker-software.com/forum3/viewtopic.php?t=24921), [28217](http://www.tracker-software.com/forum3/viewtopic.php?t=28217))
+* Fixed issues with context menus in the edit-boxes that are located on the 'Customize Toolbars' and some other related dialogs.
+* Fixed an issue with docking floating panes/toolbars inside the Editor's browser-plugin for Internet Explorer.
+* Fixed a issue with opening one file in two separate instances of the Portable Editor (T# 3753). ([27381](http://www.tracker-software.com/forum3/viewtopic.php?t=27381))
+* Fixed an issue with multiple instances of Portable Editor. ([28223](http://www.tracker-software.com/forum3/viewtopic.php?t=28223))
+* Fixed application hang issue when a popup-menu is displayed in context of a VB6-client.
+* Fixed inappropriately disabled buttons in Images Editor.
+* Fixed non-functional "marked state"" checkbox in Comments View.
+* Fixed an issue with storing certificates chain in digital signatures.
+* Fixed an issue with preserving DPI settings on chaning Page Layout Mode. (T# 3819)
+</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
