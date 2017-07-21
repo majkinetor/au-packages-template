@@ -1,7 +1,5 @@
 import-module au
 
-$releases = 'https://www.ubnt.com/download/unifi/'
-
 function global:au_SearchReplace {
     @{
         'tools\chocolateyInstall.ps1' = @{
@@ -20,7 +18,7 @@ function global:au_GetLatest {
 
     $response = Invoke-RestMethod -Uri "https://www.ubnt.com/download/?platform=unifi" -Headers $headers
 
-    $download = $response.downloads | Where-Object { $_.Featured -and $_.category__slug -eq "software" -and $_.filename.EndsWith(".exe") } | select -First 1
+    $download = $response.downloads | Where-Object { $_.Featured -and $_.category__slug -eq "software" -and $_.filename.EndsWith(".exe") } | Sort-Object -Property version  -Descending | Select-Object -First 1
 
     $url = "https://www.ubnt.com" + $download.file_path
 
@@ -35,7 +33,7 @@ function global:au_GetLatest {
 function global:au_AfterUpdate
 { 
     $nuspecFileName = $Latest.PackageName + ".nuspec"
-    $nu = gc $nuspecFileName -Raw -Encoding UTF8
+    $nu = Get-Content $nuspecFileName -Raw -Encoding UTF8
     $nu = $nu -replace "(?smi)(\<releaseNotes\>).*?(\</releaseNotes\>)", "`${1}$($Latest.ReleaseNotes)`$2"
 
     $Utf8NoBomEncoding = New-Object System.Text.UTF8Encoding($False)
