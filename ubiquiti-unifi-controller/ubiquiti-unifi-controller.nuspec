@@ -5,7 +5,7 @@
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>ubiquiti-unifi-controller</id>
     <version>5.5.19</version>
-    <packageSourceUrl>https://github.com/flcdrg/chocolatey-ubiquiti/tree/master/unifi-controller</packageSourceUrl>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/ubiquiti-unifi-controller</packageSourceUrl>
     <owners>flcdrg</owners>
     <!-- ============================== -->
 
