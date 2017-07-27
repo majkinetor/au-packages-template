@@ -6,6 +6,9 @@ function global:au_SearchReplace {
             "(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
             "(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
         }
+        "$($Latest.PackageName).nuspec" = @{
+            "(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"
+        }
      }
 }
 
@@ -30,15 +33,7 @@ function global:au_GetLatest {
     return $Latest
 }
 
-function global:au_AfterUpdate
-{ 
-    $nuspecFileName = $Latest.PackageName + ".nuspec"
-    $nu = Get-Content $nuspecFileName -Raw -Encoding UTF8
-    $nu = $nu -replace "(?smi)(\<releaseNotes\>).*?(\</releaseNotes\>)", "`${1}$($Latest.ReleaseNotes)`$2"
+if ($MyInvocation.InvocationName -ne '.') {
 
-    $Utf8NoBomEncoding = New-Object System.Text.UTF8Encoding($False)
-    $NuPath = (Resolve-Path $NuspecFileName)
-    [System.IO.File]::WriteAllText($NuPath, $nu, $Utf8NoBomEncoding)
+  update -ChecksumFor 32
 }
-
-update
