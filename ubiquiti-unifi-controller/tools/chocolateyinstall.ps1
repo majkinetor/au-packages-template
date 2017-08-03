@@ -2,8 +2,8 @@
 
 $packageName= 'unifi-controller'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://www.ubnt.com/downloads/unifi/5.5.19/UniFi-installer.exe'
-$checksum   = '96c8aae261d54febf9048a366a422c3e38fba29c45a602918d35571a3e618868'
+$url        = 'https://www.ubnt.com/downloads/unifi/5.5.20/UniFi-installer.exe'
+$checksum   = 'bc71cdf6b035d22693f0c83ea50713bfe4fde83401188d8add79d1e46d2aa4f5'
 
 $packageArgs = @{
   packageName   = $packageName
