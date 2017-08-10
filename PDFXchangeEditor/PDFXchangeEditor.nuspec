@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>PDFXchangeEditor</id>
-    <version>6.0.322.5</version>
+    <version>6.0.322.6</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/PDFXchangeEditor</packageSourceUrl>
     <owners>flcdrg, calwell</owners>
     <title>PDF-XChange Editor</title>
@@ -35,29 +35,19 @@ For example: `-params '"/NoDesktopShortcuts"'`.
 
 </description>
     <releaseNotes>Requires maintenance through 2017-06-29
-#### Newly added feature
-
-* SharePoint: added detecting conflicts caused by remote document changes.
-* SharePoint: added support of user permissions.
-
 #### A reported error or bug was fixed
 
-* Fixed issue: when dev-application uses IE-controls and opens pdfs with it and if user closes the first IE-control it suddenly closes all other instances.
-* Fixed wrong behavior with IE-plugin: when user opened a couple pdfs in different tabs and closes one of them it asks about closing of all other pdfs in other tabs. ([29193](http://www.tracker-software.com/forum3/viewtopic.php?t=29193))
-* Fixed issue with DnD of stamps-list control from dropdown menu onto toolbar or other menu during of customization toolbars/menus process.
-* Fixed minor issue with large popup menus. ([29259](http://www.tracker-software.com/forum3/viewtopic.php?t=29259))
-* Fixed possible hang of application during search-process. ([29197](http://www.tracker-software.com/forum3/viewtopic.php?t=29197))
-* Fixed crash of application during search-process in special document (uncommon document-related issue). ([29197](http://www.tracker-software.com/forum3/viewtopic.php?t=29197))
-* Fixed possible dead-lock on page removing.
-* Fixed restoring "Open PDFs in IE browser".
+* Fixed an issue where unwanted space was being added after editing text. (T# 3954, 3959, 3981)
+* Fixed a rendering issue when image smoothing is disabled. (T# 3975)
+* Fixed an issue with signing documents using some certificates located on external devices.
+* Restored toolbar on Manage Measurements dialog.
+* Fixed an issue with dropdown menus when a system's "Fade or slide menus into view" option is turned off - selecting menu items sometimes had no effect.
+* Fixed an issue with /UseP parameter in command line. ([29446](http://www.tracker-software.com/forum3/viewtopic.php?t=29446))
+* Fixed an issue with the Progress window and Report dialog from the PDF/A convertor - the progress window overlapped the Report dialog.
 
 #### Changed, reviewed, modified feature
 
-* Restored standard mechanism for beeping when MessageBox is displayed. Currently beeping logic and style is based on system's Sound settings.
-* SharePoint: improved mechanism of Check Out / Check In.
-* SharePoint: other minor improvements and fixes.
-* DropBox: migrated to modern API v2.0.
-* DropBox: minor improvements and fixes.</releaseNotes>
+* Improved performance of opening files from network shares with SharePoint plugin turned on.</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
