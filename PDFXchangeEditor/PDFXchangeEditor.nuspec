@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>PDFXchangeEditor</id>
-    <version>6.0.322.6</version>
+    <version>6.0.322.7</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/PDFXchangeEditor</packageSourceUrl>
     <owners>flcdrg, calwell</owners>
     <title>PDF-XChange Editor</title>
@@ -34,20 +34,7 @@ These parameters can be passed to the installer with the use of `-params`.
 For example: `-params '"/NoDesktopShortcuts"'`.
 
 </description>
-    <releaseNotes>Requires maintenance through 2017-06-29
-#### A reported error or bug was fixed
-
-* Fixed an issue where unwanted space was being added after editing text. (T# 3954, 3959, 3981)
-* Fixed a rendering issue when image smoothing is disabled. (T# 3975)
-* Fixed an issue with signing documents using some certificates located on external devices.
-* Restored toolbar on Manage Measurements dialog.
-* Fixed an issue with dropdown menus when a system's "Fade or slide menus into view" option is turned off - selecting menu items sometimes had no effect.
-* Fixed an issue with /UseP parameter in command line. ([29446](http://www.tracker-software.com/forum3/viewtopic.php?t=29446))
-* Fixed an issue with the Progress window and Report dialog from the PDF/A convertor - the progress window overlapped the Report dialog.
-
-#### Changed, reviewed, modified feature
-
-* Improved performance of opening files from network shares with SharePoint plugin turned on.</releaseNotes>
+    <releaseNotes>Requires maintenance through 2017-06-29</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
