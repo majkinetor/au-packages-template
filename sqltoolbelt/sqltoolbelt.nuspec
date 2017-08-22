@@ -24,15 +24,15 @@ Thousands of SQL Server professionals rely on the SQL Toolbelt every day, becaus
 
 Tools in the SQL Toolbelt:
 
--  SQL Compare Pro - Compare and synchronize database schema
--  SQL Data Compare Pro - Compare and synchronize database contents
--  SQL Source Control - Connect your databases to your version control system
--  SQL Prompt - Write, refactor, and explore SQL effortlessly
--  SQL Search - Search your database quickly in SQL Server Management Studio
--  SQL Data Generator - Generate realistic test data fast, based on column and table names
--  SQL Doc - Automatically generate database documentation
--  SQL Test - Write and run unit tests in SQL Server Management Studio
--  DLM Dashboard - tracks your database schemas and alerts you when they change.
+- SQL Compare Pro - Compare and synchronize database schema
+- SQL Data Compare Pro - Compare and synchronize database contents
+- SQL Source Control - Connect your databases to your version control system
+- SQL Prompt - Write, refactor, and explore SQL effortlessly
+- SQL Search - Search your database quickly in SQL Server Management Studio
+- SQL Data Generator - Generate realistic test data fast, based on column and table names
+- SQL Doc - Automatically generate database documentation
+- SQL Test - Write and run unit tests in SQL Server Management Studio
+- DLM Dashboard - tracks your database schemas and alerts you when they change.
 - DLM Automation - Continuous integration and automated deployments for your SQL Server database
 - SQL Multi Script - Deploy multiple scripts to multiple servers with just one click
 - SQL Dependency Tracker - Explore object dependencies and visualize complex databases simply
@@ -54,7 +54,7 @@ The following package parameters can be set:
 These parameters can be passed to the installer with the use of `--params`.
 For example: `--params "'/FTP'"`.
 </description>
-    <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
+  <releaseNotes>https://www.red-gate.com/products/roadmap</releaseNotes>
   <dependencies>
       <dependency id="chocolatey-core.extension" version="1.1.0" />
   </dependencies>
