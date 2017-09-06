@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>keepass-rpc</id>
+    <version>1.7.2</version>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/keepass-rpc</packageSourceUrl>
+    <owners>flcdrg</owners>
+    <title>KeePass RPC Plugin</title>
+    <authors>luckyrat</authors>
+    <projectUrl>https://github.com/kee-org/keepassrpc</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/dtgm/chocolatey-packages/master/icons/keepass.png</iconUrl>
+    <copyright>2017 Chris Tomlinson</copyright>
+    <licenseUrl>https://raw.githubusercontent.com/kee-org/keepassrpc/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/kee-org/keepassrpc</projectSourceUrl>
+    <docsUrl>https://github.com/kee-org/KeeFox/wiki/en-|-Development</docsUrl>
+    <bugTrackerUrl>https://github.com/kee-org/keepassrpc/issues</bugTrackerUrl>
+    <tags>keepass keefox keepassrpc plugin</tags>
+    <summary>KeePassRPC plugin that needs to be installed inside KeePass in order for KeeFox to be able to connect your browser to your passwords</summary>
+    <description>KeePassRPC plugin that needs to be installed inside KeePass in order for KeeFox to be able to connect your browser to your passwords </description>
+    <releaseNotes>Essential upgrade for KeeFox version 2.0.
+
+Enables update checking in KeePass.
+
+This also enables clients to connect using a name other than KeeFox (since version 2.0 will also work with Google Chrome and other web browsers).
+
+Only change since 1.7.1 is support for Mono.</releaseNotes>
+    <dependencies>
+      <dependency id="keepass" version="2.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+    <!--Building from Linux? You may need this instead: <file src="tools/**" target="tools" />-->
+  </files>
+</package>
