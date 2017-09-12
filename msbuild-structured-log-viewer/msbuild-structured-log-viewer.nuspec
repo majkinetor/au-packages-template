@@ -18,11 +18,11 @@
     <bugTrackerUrl>https://github.com/KirillOsenkov/MSBuildStructuredLog/issues</bugTrackerUrl>
     <tags>msbuild</tags>
     <summary>A rich interactive log viewer app for MSBuild logs</summary>
-    <description>MSBuild 15.3 introduces a new command-line switch: /bl to record all build events to a structured/binary log file:
+    <description>MSBuild 15.3 introduces a new command-line switch: `/bl` to record all build events to a structured/binary log file:
 
-Double-click the .binlog file to open it in MSBuild Structured Log Viewer:
+Double-click the `.binlog` file to open it in MSBuild Structured Log Viewer:
 
-![Screenshot](http://msbuildlog.com/Screenshot1.png)]
+![Screenshot](http://msbuildlog.com/Screenshot1.png)
  </description>
     <releaseNotes>Set the default back to the log tab.</releaseNotes>
     <dependencies>
