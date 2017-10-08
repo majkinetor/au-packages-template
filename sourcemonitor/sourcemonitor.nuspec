@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>sourcemonitor</id>
+    <version>3.5.3.328</version>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/sourcemonitor</packageSourceUrl>
+    <owners>flcdrg</owners>
+    <title>SourceMonitor</title>
+    <authors>Campwood Software LLC</authors>
+    <projectUrl>http://www.campwoodsw.com/sourcemonitor.html</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/flcdrg/au-packages/master/sourcemonitor/icons/sourcemonitor.png</iconUrl>
+    <copyright>2017 Campwood Software LLC. All Rights Reserved.</copyright>
+    <licenseUrl>http://www.campwoodsw.com/smlicense.html</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <bugTrackerUrl>http://www.campwoodsw.com/smbugs.html</bugTrackerUrl>
+    <tags>Source Metrics</tags>
+    <summary>See inside your software source code to find out how much code you have and to identify the relative complexity of your modules</summary>
+    <description>The freeware program SourceMonitor lets you see inside your software source code to find out how much code you have and to identify the relative complexity of your modules. For example, you can use SourceMonitor to identify the code that is most likely to contain defects and thus warrants formal review. SourceMonitor, written in C++, runs through your code at high speed, typically at least 10,000 lines of code per second. SourceMonitor provides the following:
+
+- Collects metrics in a fast, single pass through source files.
+- Measures metrics for source code written in C++, C, C#, VB.NET, Java, Delphi, Visual Basic (VB6) or HTML.
+- Includes method and function level metrics for C++, C, C#, VB.NET, Java, and Delphi.
+- Offers Modified Complexity metric option.
+- Saves metrics in checkpoints for comparison during software development projects.
+- Displays and prints metrics in tables and charts, including Kiviat diagrams.
+- Operates within a standard Windows GUI or inside your scripts using XML command files.
+- Exports metrics to XML or CSV (comma-separated-value) files for further processing with other tools. 
+</description>
+    <dependencies>
+        <dependency id="autohotkey.portable" version="1.1.25" />
+    </dependencies>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+    <!--Building from Linux? You may need this instead: <file src="tools/**" target="tools" />-->
+  </files>
+</package>
