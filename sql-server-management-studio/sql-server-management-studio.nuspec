@@ -1,15 +1,15 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sql-server-management-studio</id>
-    <version>14.0.17119.0</version>
+    <version>14.0.17199.0</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/sql-server-management-studio</packageSourceUrl>
     <owners>flcdrg</owners>
-    <title>SQL Server Management Studio</title>
+    <title>SQL Server Management Studio 17.3</title>
     <authors>Microsoft</authors>
     <projectUrl>https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-ssms</projectUrl>
-    <iconUrl>>http://cdn.rawgit.com/flcdrg/au-packages/master/sql-server-management-studio/icons/ssms-icon.png</iconUrl>
+    <iconUrl>http://cdn.rawgit.com/flcdrg/au-packages/master/sql-server-management-studio/icons/ssms-icon.png</iconUrl>
     <copyright>Microsoft 2017</copyright>
     <licenseUrl>https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-license-terms</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
@@ -28,51 +28,121 @@ This package is versioned using the published build number. The corresponding 'r
 
 #### Supported SQL Server versions
 
-- This version of SSMS works with all [supported versions of SQL Server (SQL Server 2008 - SQL Server 2017)](https://support.microsoft.com/en-us/lifecycle?C2=1044), and provides the greatest level of support for working with the latest cloud features in Azure SQL Database, and Azure SQL Data Warehouse.
-- There is no explicit block for SQL Server 2000 or SQL Server 2005, but some features may not work properly.
-- Additionally, SSMS 17.x can be installed side-by-side with SSMS 16.X or SQL Server 2014 SSMS and earlier. 
+* This version of SSMS works with all [supported versions of SQL Server 2008 - SQL Server 2017](https://support.microsoft.com/lifecycle?C2=1044) and provides the greatest level of support for working with the latest cloud features in Azure SQL Database and Azure SQL Data Warehouse.
+* There is no explicit block for SQL Server 2000 or SQL Server 2005, but some features may not work properly.
+* Additionally, SSMS 17.x can be installed side by side with SSMS 16.x or SQL Server 2014 SSMS and earlier. 
 
 #### Supported Operating systems
 
-This release of SSMS supports the following platforms when used with the latest available service pack:
-Windows 10, Windows 8, Windows 8.1, Windows 7 (SP1), Windows Server 2012 (64-bit), Windows Server 2012 R2 (64-bit), Windows Server 2008 R2 (64-bit)
+This release of SSMS supports the following 64-bit platforms when used with the latest available service pack:
+- Windows 10 (64-bit)
+- Windows 8.1 (64-bit)
+- Windows 8 (64-bit)
+- Windows 7 (SP1) (64-bit)
+- Windows Server 2016 *
+- Windows Server 2012 R2 (64-bit)
+- Windows Server 2012 (64-bit)
+- Windows Server 2008 R2 (64-bit)
 
-SSMS 17.0 is based on the Visual Studio 2015 Isolated shell, which was released before Windows Server 2016. Microsoft takes app compatibility very seriously and ensures that already-shipped applications continue to run on the latest Windows releases. Because of this, we do not anticipate that SSMS with all latest updates applied) will encounter issues when running on Windows Server 2016. Customers are advised to contact support, should they encounter any issues with SSMS on Windows Server 2016. Support will then work with customers to determine if the issue is with SSMS or Visual Studio or with Windows compatibility, and route the issue appropriately.
-	</description>
+\* SSMS 17.X is based on the Visual Studio 2015 Isolated shell, which was released before Windows Server 2016. Microsoft takes app compatibility seriously and ensures that already-shipped applications continue to run on the latest Windows releases. To minimize issues running SSMS on Windows Server 2016, ensure SSMS has all of the latest updates applied. If you experience any issues with SSMS on Windows Server 2016, contact support. The support team determines if the issue is with SSMS, Visual Studio, or with Windows compatibility. The support team then routes the issue to the appropriate team for further investigation.	</description>
     <releaseNotes>
-#### SSMS 17.1 release
-
-
-Generally available | Build number: 14.0.17119.0
-
+#### [SSMS 17.3](download-sql-server-management-studio-ssms.md)
+Generally available | Build number: 14.0.17199.0
 
 ##### Enhancements
 
-- Profiler: Help &gt; About now displays release version number (e.g 17.1)
-- Analysis Service users can refresh credentials for their datasources for 1200 TM models and above from the context menu on the datasource
-- Built-in SSIS reports now show logs from SSIS scale-out execution in CTP 2.1
-- SSIS scale-out management application
-  - View basic information about scale-out master.
-  - Easily add a Worker to the scale-out deployment.
-  - View all the scale-out workers and basic information about them, and can also enable or disable them easily.
+- New &quot;Import Flat File&quot; wizard added to streamline the import experience of CSV files with an intelligent framework, requiring minimal user intervention or specialized domain knowledge. For details, see [Import Flat File to SQL Wizard](../relational-databases/import-export/import-flat-file-wizard.md).
+- Added &quot;XEvent Profiler&quot; node to Object Explorer. For details, see [Use the SSMS XEvent Profiler](../relational-databases/extended-events/use-the-ssms-xe-profiler.md).
+- Updated waits filtering and categorization in Performance Dashboard historical waits report.
+- Added the syntax check of the &quot;Predict&quot; function.
+- Added the syntax check of the External Library Management queries.
+- Added SMO support for External Library Management.
+- Added &quot;Start PowerShell&quot; support to &quot;Registered Servers&quot; window (requires a new SQL PowerShell module).
+- Always On: added [read-only routing support](../database-engine/availability-groups/windows/configure-read-only-routing-for-an-availability-group-sql-server.md) for availability groups.
+- Added an option to send tracing details to the Output Window for &quot;Active Directory - Universal with MFA support&quot; logins (off by default; needs to be turned on in user settings under &quot;Tools &gt; Options &gt; Azure Services &gt; Azure Cloud &gt; ADAL Output Window Trace Level&quot;). 
+- Query Store: 
+  - Query Store UI will be accessible even when QDS is OFF as long as QDS have recorded any data.
+  - Query Store UI now exposes waits categorization in all the existing reports. This will let customers unlock the scenarios of Top Waiting Queries and many more.
+- Made inclusion of the scripting parameters headers optional (off by default;  can be enabled in user settings under &quot;Tools &gt; Options &gt; SQL Server Object Explorer &gt; Scripting &gt; Include scripting parameters header&quot;) - [Connect item 3139199](https://connect.microsoft.com/SQLServer/feedback/details/3139199).
+- Removed &quot;RC&quot; branding.
 
+##### Bug Fixes
 
-##### Bug fixes
+**General SSMS**
 
+- XEvent: 
+   - Fixed issue where SSMS opens only part of the events in .xel file.
+   - Improved “Watch Live Data” experience when default database is not &apos;master&apos; - [Connect item 1222582](https://connect.microsoft.com/SQLServer/feedback/details/1222582).
+- Always On: Fixed issue where &quot;Restore log backups&quot; may fail with error &quot;The log in this backup set terminates at LSN x, which is too early to apply to the database&quot;.
+- Job Activity Monitor: fixed inconsistent icons - [Connect item 3133100](https://connect.microsoft.com/SQLServer/feedback/details/3133100).
+- Query Store: Fixed Issue where user cannot choose &quot;custom&quot; date range for Query Store reports. Linked to below connect items.
+   - [Connect item 3139842](https://connect.microsoft.com/SQLServer/feedback/details/3139842)
+   - [Connect item 3139399](http://connect.microsoft.com/SQLServer/feedback/details/3139399)
+- Fixed issue where connection dialog doesn&apos;t &quot;clear&quot; the most recently used database when saved info has named database and user selects &lt;default&gt;.
+- Object Scripting:
+	- Fixed an issue where &quot;Generate database script&quot; not working and throwing an error when the user has a paused DW database on the server, but selected another non-DW database and tried t script it.
+	- Fixed issue where the header for scripted Stored Procedures was not matching the script settings, resulting in a misleading script - 
+		[Connect item 3139784](http://connect.microsoft.com/SQLServer/feedback/details/3139784).
+	- Re-enabled the &quot;Script button&quot; when targeting SQL Azure objects.
+	- Fixed issue where SSMS was not allowing scripting for &quot;Alter&quot; or &quot;Execute&quot; on some objects (UDF, View, SP, Trigger) when connected to an Azure SQL database - 
+		[Connect item 3136386](https://connect.microsoft.com/SQLServer/feedback/details/3136386).
+- Query editor:
+  - Improved intellisense when targeting Azure SQL databases.
+  - Fixed an issue where queries failed due to an expired authentication token (Universal Authentication).
+  - Improved intellisense when working against Azure SQL databases (particularly, when connecting to Azure SQL Database, the latest T-SQL grammar (140) will be used).
+  - Fixed issue where open a query window with a connection to a non-DataWarehouse database on a server would cause all subsequent query windows for that server to DataWarehouse databases to throw various errors about unsupported types/options.
 - Always On:
-  - Fixed an issue where the properties of an Availability Replica was always displayed as "Automatic failover" mode for WSFC AGs.
-  - Fixed an issue where the read-only routing list was overwritten when updating the Availability Group
-- Always Encrypted: fixed an issue where log file generated was missing the information generated by DacFx.
-- ShowPlan: fixed in issue where the UI was always showing the Actual join type attribute for non Adaptive join operators.
-- Setup:
-  - Fixed an issue where SSMS 17.0 was breaking SSDT on Visual Studio 2013 [Connect Item 3133479]
-  - Fixed an issue where clicking on "Restart" at the end of setup was not restarting the machine
-- Scripting: temporarily preventing SSMS from accidentally deleting Azure database objects when trying to script the deletion by disabling that option.  Proper fix will be in an upcoming release of SSMS.
-- Object Explorer: fixed an issue where "Databases" node was not expanded when connected to an Azure database created using "AS COPY"
+   - Added seeding mode column to Always On dashboard and AG properties page.
+   - Fixed issue where it was not possible to create a Linux AG when primary is on Windows - [Connect item 3139856](https://connect.microsoft.com/SQLServer/feedback/details/3139856).
+- Fixed several &quot;Out of Memory&quot; issues in SSMS when running queries - 
+	[Connect item 2845190](https://connect.microsoft.com/SQLServer/feedback/details/2845190), 
+	[Connect item 3123864](https://connect.microsoft.com/SQLServer/feedback/details/3123864).
+- Profiler: 
+   - Fixed issue were Profiler was not working when targeting SQL 2005.
+   - Fixed issue where Profiler was not honoring the &quot;trust server certificate&quot; connection option.
+- Activity Monitor: fixed an issue where Activity Monitor does not work when pointed at SQL Server running on Linux.
+- Fixed an issue with the SMO Transfer class where it wouldn’t transfer External Data Source or External File Format objects, objects of those types should now correctly be included in the transfer.
+- Registered Servers:
+   - Enabled multiserver query for UA servers (it will try to use the same token for every UA server in the group).
+- AD Universal Authentication:
+   - Fixed issue where Azure AD authentication was not supported.
+   - Fixed issue where table/view designer was not working.
+   - Fixed issue where &quot;Select Top 1000 rows&quot; and &quot;Edit Top 200 rows&quot; were not working.
+- Database restore: fixed an issue where restore omits the last folder in the path when moving files to an alternate location.
+- Compress wizard:
+   - Fixed an issue with manage compression wizard for indexes; fixed issue where compress data wizards was broken for SQL 2016 and lower.
+		https://connect.microsoft.com/SQLServer/feedback/details/3139342
+   - Added Compress wizard to Azure tables and indexes.
+- Showplan: 
+   - Fixed issue where PDW operators were not recognized.
+- Server Properties:
+   - Fixed issue with not being able to modify server processor affinity.
 
+
+**Analysis Services (AS)**
+
+- Fixed a number of issues with Deployment Wizard to support tabular 1400 compat-level models and Power Query data sources.
+- Deployment Wizard can now deploy to AS Azure when running from Command line.
+- When using Windows Auth in AS Azure the user will now see the name of the user account in Object Explorer correctly.
+
+
+##### Known issues in this 17.3 release:
+
+**General SSMS**
+
+- The following SSMS functionality is not supported for Azure AD auth using UA with MFA:
+   - Database Engine Tuning Advisor is not supported for Azure AD auth; there is a known issue where the error message presented to the user is a bit cryptic &quot;Could not load file or assembly &apos;Microsoft.IdentityModel.Clients.ActiveDirectory,…&quot; instead of the expected &quot;Database Engine Tuning Advisor does not support Microsoft Azure SQL Database. (DTAClient)&quot;.
+- Trying to analyze a query in DTA results in an error: &quot;Object must implement IConvertible. (mscorlib)&quot;.
+- *Regressed Queries* is missing from the Query Store list of reports in Object Explorer.
+   - Workaround: Right-click the **Query Store** node and select **View Regressed Queries**.
+
+**Integration Services (IS)**
+
+- The [execution_path] in [catalog].[event_messagea] is not correct for package executions in Scale Out. The [execution_path] starts with “\Package” instead of the object name of the package executable. When viewing the overview report of package executions in SSMS, the link of “Execution Path” in Execution Overview cannot work. The workaround is to click “View Messages” on overview report to check all event messages.
 </releaseNotes>
     <dependencies>
       <dependency id="KB2919355" version="1.0.20160915" />
+      <dependency id="dotnet4.6.1" version="4.6.01055.20170308" />
     </dependencies>
   </metadata>
   <files>

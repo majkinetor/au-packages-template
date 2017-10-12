@@ -3,13 +3,13 @@
 $packageName= 'SQL Server Management Studio'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$fullUrl = 'https://download.microsoft.com/download/5/0/B/50B02ECB-CB5C-4C23-A1D3-DAB4467604DA/SSMS-Setup-ENU.exe'
-$fullChecksum = 'E7EB0843299DA85BB294082D408F986191F2EE63F6D21813FDCEAA6019848E47'
+$fullUrl = 'https://download.microsoft.com/download/3/C/7/3C77BAD3-4E0F-4C6B-84DD-42796815AFF6/SSMS-Setup-ENU.exe'
+$fullChecksum = '0AB0B14F36603D337D332E32EAF63C5FD953A9A0792C6384AC7925F5DEA26244'
 
-$upgradeUrl = 'https://download.microsoft.com/download/5/0/B/50B02ECB-CB5C-4C23-A1D3-DAB4467604DA/SSMS-Setup-ENU-Upgrade.exe'
-$upgradeChecksum = '68668E601B7D39EE55087CDF080CB0B340FEBF4F3BC4EC9D65EC4153F7B4CD60'
+$upgradeUrl = 'https://download.microsoft.com/download/3/C/7/3C77BAD3-4E0F-4C6B-84DD-42796815AFF6/SSMS-Setup-ENU-Upgrade.exe'
+$upgradeChecksum = '42F996E6320B59287ED7A2E4921185BC35202598D754B0C973D26520FCEA308D'
 
-$release = '17.1'
+$release = '17.3'
 
 # Check if 17.0 is installed so we can get upgrade package instead of full package
 $ssms170 = Get-ItemProperty HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\* | Select-Object DisplayName, DisplayVersion | Where-Object { $_.DisplayName -eq "SQL Server Management Studio" -and $_.DisplayVersion -eq "14.0.17099.0" }
