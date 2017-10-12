@@ -12,7 +12,8 @@ $upgradeChecksum = '42F996E6320B59287ED7A2E4921185BC35202598D754B0C973D26520FCEA
 $release = '17.3'
 
 # Check if 17.0 is installed so we can get upgrade package instead of full package
-$ssms170 = Get-ItemProperty HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\* | Select-Object DisplayName, DisplayVersion | Where-Object { $_.DisplayName -eq "SQL Server Management Studio" -and $_.DisplayVersion -eq "14.0.17099.0" }
+$version17 = [version]"14.0.17099.0"
+$ssms170 = Get-ItemProperty HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\* | Select-Object DisplayName, DisplayVersion | Where-Object { $_.DisplayName -eq "SQL Server Management Studio" -and ([Version]$_.DisplayVersion) -ge $version17 }
 
 $packageArgs = @{
   packageName   = $packageName
