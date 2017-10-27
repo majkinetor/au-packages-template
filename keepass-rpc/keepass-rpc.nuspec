@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>keepass-rpc</id>
-    <version>1.7.2</version>
+    <version>1.7.3.1</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/keepass-rpc</packageSourceUrl>
     <owners>flcdrg</owners>
     <title>KeePass RPC Plugin</title>
@@ -19,13 +19,10 @@
     <tags>keepass keefox keepassrpc plugin</tags>
     <summary>KeePassRPC plugin that needs to be installed inside KeePass in order for KeeFox to be able to connect your browser to your passwords</summary>
     <description>KeePassRPC plugin that needs to be installed inside KeePass in order for KeeFox to be able to connect your browser to your passwords </description>
-    <releaseNotes>Essential upgrade for KeeFox version 2.0.
+    <releaseNotes>Fixes #5
 
-Enables update checking in KeePass.
-
-This also enables clients to connect using a name other than KeeFox (since version 2.0 will also work with Google Chrome and other web browsers).
-
-Only change since 1.7.1 is support for Mono.</releaseNotes>
+(git tag has a .1 suffix to bring the release onto the correct branch)
+</releaseNotes>
     <dependencies>
       <dependency id="keepass" version="2.0" />
     </dependencies>
