@@ -3,10 +3,10 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sql-server-management-studio</id>
-    <version>14.0.17199.0</version>
+    <version>14.0.17213.0</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/sql-server-management-studio</packageSourceUrl>
     <owners>flcdrg</owners>
-    <title>SQL Server Management Studio 17.3</title>
+    <title>SQL Server Management Studio 17.4</title>
     <authors>Microsoft</authors>
     <projectUrl>https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-ssms</projectUrl>
     <iconUrl>http://cdn.rawgit.com/flcdrg/au-packages/master/sql-server-management-studio/icons/ssms-icon.png</iconUrl>
@@ -46,99 +46,96 @@ This release of SSMS supports the following 64-bit platforms when used with the 
 
 \* SSMS 17.X is based on the Visual Studio 2015 Isolated shell, which was released before Windows Server 2016. Microsoft takes app compatibility seriously and ensures that already-shipped applications continue to run on the latest Windows releases. To minimize issues running SSMS on Windows Server 2016, ensure SSMS has all of the latest updates applied. If you experience any issues with SSMS on Windows Server 2016, contact support. The support team determines if the issue is with SSMS, Visual Studio, or with Windows compatibility. The support team then routes the issue to the appropriate team for further investigation.	</description>
     <releaseNotes>
-#### [SSMS 17.3](download-sql-server-management-studio-ssms.md)
-Generally available | Build number: 14.0.17199.0
+#### [SSMS 17.4](download-sql-server-management-studio-ssms.md)
+Generally available | Build number: 14.0.17213.0
 
-##### Enhancements
-
-- New &quot;Import Flat File&quot; wizard added to streamline the import experience of CSV files with an intelligent framework, requiring minimal user intervention or specialized domain knowledge. For details, see [Import Flat File to SQL Wizard](../relational-databases/import-export/import-flat-file-wizard.md).
-- Added &quot;XEvent Profiler&quot; node to Object Explorer. For details, see [Use the SSMS XEvent Profiler](../relational-databases/extended-events/use-the-ssms-xe-profiler.md).
-- Updated waits filtering and categorization in Performance Dashboard historical waits report.
-- Added the syntax check of the &quot;Predict&quot; function.
-- Added the syntax check of the External Library Management queries.
-- Added SMO support for External Library Management.
-- Added &quot;Start PowerShell&quot; support to &quot;Registered Servers&quot; window (requires a new SQL PowerShell module).
-- Always On: added [read-only routing support](../database-engine/availability-groups/windows/configure-read-only-routing-for-an-availability-group-sql-server.md) for availability groups.
-- Added an option to send tracing details to the Output Window for &quot;Active Directory - Universal with MFA support&quot; logins (off by default; needs to be turned on in user settings under &quot;Tools &gt; Options &gt; Azure Services &gt; Azure Cloud &gt; ADAL Output Window Trace Level&quot;). 
-- Query Store: 
-  - Query Store UI will be accessible even when QDS is OFF as long as QDS have recorded any data.
-  - Query Store UI now exposes waits categorization in all the existing reports. This will let customers unlock the scenarios of Top Waiting Queries and many more.
-- Made inclusion of the scripting parameters headers optional (off by default;  can be enabled in user settings under &quot;Tools &gt; Options &gt; SQL Server Object Explorer &gt; Scripting &gt; Include scripting parameters header&quot;) - [Connect item 3139199](https://connect.microsoft.com/SQLServer/feedback/details/3139199).
-- Removed &quot;RC&quot; branding.
-
-##### Bug Fixes
+##### What&apos;s new
 
 **General SSMS**
 
-- XEvent: 
-   - Fixed issue where SSMS opens only part of the events in .xel file.
-   - Improved “Watch Live Data” experience when default database is not &apos;master&apos; - [Connect item 1222582](https://connect.microsoft.com/SQLServer/feedback/details/1222582).
-- Always On: Fixed issue where &quot;Restore log backups&quot; may fail with error &quot;The log in this backup set terminates at LSN x, which is too early to apply to the database&quot;.
-- Job Activity Monitor: fixed inconsistent icons - [Connect item 3133100](https://connect.microsoft.com/SQLServer/feedback/details/3133100).
-- Query Store: Fixed Issue where user cannot choose &quot;custom&quot; date range for Query Store reports. Linked to below connect items.
-   - [Connect item 3139842](https://connect.microsoft.com/SQLServer/feedback/details/3139842)
-   - [Connect item 3139399](http://connect.microsoft.com/SQLServer/feedback/details/3139399)
-- Fixed issue where connection dialog doesn&apos;t &quot;clear&quot; the most recently used database when saved info has named database and user selects &lt;default&gt;.
-- Object Scripting:
-	- Fixed an issue where &quot;Generate database script&quot; not working and throwing an error when the user has a paused DW database on the server, but selected another non-DW database and tried t script it.
-	- Fixed issue where the header for scripted Stored Procedures was not matching the script settings, resulting in a misleading script - 
-		[Connect item 3139784](http://connect.microsoft.com/SQLServer/feedback/details/3139784).
-	- Re-enabled the &quot;Script button&quot; when targeting SQL Azure objects.
-	- Fixed issue where SSMS was not allowing scripting for &quot;Alter&quot; or &quot;Execute&quot; on some objects (UDF, View, SP, Trigger) when connected to an Azure SQL database - 
-		[Connect item 3136386](https://connect.microsoft.com/SQLServer/feedback/details/3136386).
-- Query editor:
-  - Improved intellisense when targeting Azure SQL databases.
-  - Fixed an issue where queries failed due to an expired authentication token (Universal Authentication).
-  - Improved intellisense when working against Azure SQL databases (particularly, when connecting to Azure SQL Database, the latest T-SQL grammar (140) will be used).
-  - Fixed issue where open a query window with a connection to a non-DataWarehouse database on a server would cause all subsequent query windows for that server to DataWarehouse databases to throw various errors about unsupported types/options.
-- Always On:
-   - Added seeding mode column to Always On dashboard and AG properties page.
-   - Fixed issue where it was not possible to create a Linux AG when primary is on Windows - [Connect item 3139856](https://connect.microsoft.com/SQLServer/feedback/details/3139856).
-- Fixed several &quot;Out of Memory&quot; issues in SSMS when running queries - 
-	[Connect item 2845190](https://connect.microsoft.com/SQLServer/feedback/details/2845190), 
-	[Connect item 3123864](https://connect.microsoft.com/SQLServer/feedback/details/3123864).
-- Profiler: 
-   - Fixed issue were Profiler was not working when targeting SQL 2005.
-   - Fixed issue where Profiler was not honoring the &quot;trust server certificate&quot; connection option.
-- Activity Monitor: fixed an issue where Activity Monitor does not work when pointed at SQL Server running on Linux.
-- Fixed an issue with the SMO Transfer class where it wouldn’t transfer External Data Source or External File Format objects, objects of those types should now correctly be included in the transfer.
-- Registered Servers:
-   - Enabled multiserver query for UA servers (it will try to use the same token for every UA server in the group).
-- AD Universal Authentication:
-   - Fixed issue where Azure AD authentication was not supported.
-   - Fixed issue where table/view designer was not working.
-   - Fixed issue where &quot;Select Top 1000 rows&quot; and &quot;Edit Top 200 rows&quot; were not working.
-- Database restore: fixed an issue where restore omits the last folder in the path when moving files to an alternate location.
-- Compress wizard:
-   - Fixed an issue with manage compression wizard for indexes; fixed issue where compress data wizards was broken for SQL 2016 and lower.
-		https://connect.microsoft.com/SQLServer/feedback/details/3139342
-   - Added Compress wizard to Azure tables and indexes.
-- Showplan: 
-   - Fixed issue where PDW operators were not recognized.
-- Server Properties:
-   - Fixed issue with not being able to modify server processor affinity.
+Vulnerability Assessment:
+- Added a new SQL Vulnerability Assessment service to scan your databases for potential vulnerabilities and deviations from best practices, such as misconfigurations, excessive permissions, and exposed sensitive data. 
+- Results of the assessment include actionable steps to resolve each issue and customized remediation scripts where applicable. The assessment report can be customized for each environment and tailored to specific requirements. Learn more at [SQL Vulnerability Assessment](https://docs.microsoft.com/sql/relational-databases/security/sql-vulnerability-assessment).
 
+SMO:
+- Fixed issue where *HasMemoryOptimizedObjects* was throwing exception on Azure.
+- Added support for new CATALOG_COLLATION feature.
+
+Always On Dashboard:
+- Improvements for latency analysis in Availability Groups.
+- Added two new reports: *AlwaysOn\_Latency\_Primary* and *AlwaysOn\_Latency\_Secondary*.
+
+Showplan:
+- Updated links to point to correct documentation.
+- Allow single plan analysis directly from actual plan produced.
+- New set of icons.
+- Added support for recognize &quot;Apply logical operators&quot; like GbApply, InnerApply.
+		
+XE Profiler:
+- Renamed to XEvent Profiler.
+- Stop/Start menu commands now stop/start the session by default.
+- Enabled keyboard shortcuts (for example, CTRL-F to search).
+- Added database\_name and client\_hostname actions to appropriate events in XEvent Profiler sessions. For the change to take effect, you may need to delete existing QuickSessionStandard or QuickSessionTSQL session instances on the servers - [Connect 3142981](https://connect.microsoft.com/SQLServer/feedback/details/3142981)
+
+Command line:
+- Added a new command line option (&quot;-G&quot;) that can be used to automatically have SSMS connect to a server/database using Active Directory Authentication (either &apos;Integrated&apos; or &apos;Password&apos;). For details, see [Ssms utility](ssms-utility.md).
+
+Import Flat File Wizard:
+- Added a way to pick a schema name other than the default (&quot;dbo&quot;) when creating the table.
+
+Query Store:
+- Restored the &quot;Regressed Queries&quot; report when expanding the Query Store available reports list.
+
+**Integration Services (IS)**
+- Added package validation function in Deployment Wizard, which helps the user figure out components inside SSIS packages that are not supported in Azure-SSIS IR.
+
+##### Bug fixes
+
+**General SSMS**
+
+- Object Explorer:
+	- Fixed an issue where Table-Valued Function node was not showing up for database snapshots - [Connect 3140161](https://connect.microsoft.com/SQLServer/feedback/details/3140161).
+	- Improved performance when expanding *Databases* node when the server has autoclose databases.
+- Query Editor:
+	- Fixed an issue where IntelliSense was failing for users that don&apos;t have access to the master database.
+	- Fixed an issue that was causing SSMS to crash in some cases when the connection to a remote machine was closed - [Connect 3142557](https://connect.microsoft.com/SQLServer/feedback/details/3142557).
+- XEvent Viewer:
+	- Re-enabled functionality to export to XEL.
+	- Fixed issues where in some cases the user was not able to load an entire XEL file.
+- XEvent Profiler:
+	- Fixed an issue that was causing SSMS to crash when the user did not have *VIEW SERVER STATE* permissions.
+	- Fixed an issue where closing the XE Profiler Live Data window did not stop the underlying session.
+- Registered Servers:
+	- Fixed an issue where the &quot;Move To…&quot; command stopped working - [Connect 3142862](https://connect.microsoft.com/SQLServer/feedback/details/3142862) and [Connect 3144359](https://connect.microsoft.com/SQLServer/feedback/details/3144359/).
+- SMO:
+	- Fixed an issue where the TransferData method on the Transfer object was not working.
+	- Fixed an issue where Server databases throws exception for paused SQL DW databases.
+	- Fixed an issue where scripting SQL database against SQL DW generated incorrect T-SQL parameter values.
+	- Fixed an issue where scripting of a stretched DB incorrectly emitting the *DATA\_COMPRESSION* option.
+- Job Activity Monitor:
+	- Fixed an issue where the user was getting an &quot;Index was out of range. Must be non-negative and less than the size of the collection. 
+		Parameter name: index (System.Windows.Forms)&quot; error when trying to filter by Category - [Connect 3138691](https://connect.microsoft.com/SQLServer/feedback/details/3138691).
+- Connection Dialog:
+	- Fixed an issue where domain users without access to a Read/Write domain controller could not log in to a SQL Server using SQL Authentication - [Connect 2373381](https://connect.microsoft.com/SQLServer/feedback/details/2373381).
+- Replication:
+	- Fixed an issue where an error similar to &quot;Cannot apply value &apos;null&apos; to property ServerInstance&quot; was displayed when looking at properties of a pull subscription in SQL Server.
+- SSMS Setup:
+	- Fixed an issue where SSMS setup was incorrectly causing all the installed products on the machine to be reconfigured.
+- User Settings:
+   - With this fix, US Government sovereign cloud users will have uninterrupted access to their Azure SQL Database and ARM resources with SSMS via Universal authentication and Azure Active Directory login.  Users of prior versions of SSMS would need to open Tools|Options|Azure Services and under Resource Management change the configuration of the &quot;Active Directory Authority&quot; property to https://login.microsoftonline.us.
 
 **Analysis Services (AS)**
 
-- Fixed a number of issues with Deployment Wizard to support tabular 1400 compat-level models and Power Query data sources.
-- Deployment Wizard can now deploy to AS Azure when running from Command line.
-- When using Windows Auth in AS Azure the user will now see the name of the user account in Object Explorer correctly.
-
-
-##### Known issues in this 17.3 release:
-
-**General SSMS**
-
-- The following SSMS functionality is not supported for Azure AD auth using UA with MFA:
-   - Database Engine Tuning Advisor is not supported for Azure AD auth; there is a known issue where the error message presented to the user is a bit cryptic &quot;Could not load file or assembly &apos;Microsoft.IdentityModel.Clients.ActiveDirectory,…&quot; instead of the expected &quot;Database Engine Tuning Advisor does not support Microsoft Azure SQL Database. (DTAClient)&quot;.
-- Trying to analyze a query in DTA results in an error: &quot;Object must implement IConvertible. (mscorlib)&quot;.
-- *Regressed Queries* is missing from the Query Store list of reports in Object Explorer.
-   - Workaround: Right-click the **Query Store** node and select **View Regressed Queries**.
-
-**Integration Services (IS)**
-
-- The [execution_path] in [catalog].[event_messagea] is not correct for package executions in Scale Out. The [execution_path] starts with “\Package” instead of the object name of the package executable. When viewing the overview report of package executions in SSMS, the link of “Execution Path” in Execution Overview cannot work. The workaround is to click “View Messages” on overview report to check all event messages.
+- Profiler: fixed an issue when trying to connect using Window Authentication against Azure AS.
+- Fixed an issue that could cause a crash when canceling connection details on a 1400 model.
+- When setting an Azure blob key in the connection properties dialog when refreshing credentials, it will now be visually masked.
+- Fixed an issue in the Azure Analysis Services User selection dialog to show the Application ID guid instead of the Object ID when searching.
+- Fixed an issue in the Browse Database\MDX query designer toolbar that caused the icons to be incorrectly mapped for some buttons.
+- Fixed an issue that prevented connecting to SSAS using msmdpump IIS http/https addresses.
+- Several strings in the Azure Analysis Services User Picker dialog have now been translated for additional languages.
+- MaxConnections property is now visible for data sources in tabular models.
+- Deployment Wizard will now generate correct JSON definitions for Azure AS role members.
+- Fixed an issue in SQL Profiler where selecting Windows Authentication against Azure AS would still prompt for login.
 </releaseNotes>
     <dependencies>
       <dependency id="KB2919355" version="1.0.20160915" />
