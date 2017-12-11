@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>msbuild-structured-log-viewer</id>
-    <version>1.1.168</version>
+    <version>1.1.195</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/msbuild-structured-log-viewer</packageSourceUrl>
     <owners>flcdrg</owners>
     <title>MSBuild Structured Log Viewer</title>
@@ -24,7 +24,7 @@ Double-click the `.binlog` file to open it in MSBuild Structured Log Viewer:
 
 ![Screenshot](http://msbuildlog.com/Screenshot1.png)
  </description>
-    <releaseNotes>Set the default back to the log tab.</releaseNotes>
+    <releaseNotes>Supports the version 3 of the binlog format and a few other bugfixes.</releaseNotes>
     <dependencies>
       <dependency id="dotnet4.6" version="4.6.00081.20150925" />
     </dependencies>
