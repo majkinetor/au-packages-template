@@ -21,7 +21,14 @@ function global:au_GetLatest {
 
     $response = Invoke-RestMethod -Uri "https://www.ubnt.com/download/?platform=unifi" -Headers $headers
 
-    $download = $response.downloads | Where-Object { $_.Featured -and $_.category__slug -eq "software" -and $_.filename.EndsWith(".exe") } | Sort-Object -Property version  -Descending | Select-Object -First 1
+    $download = $response.downloads | Where-Object { 
+        $_.Featured -and `
+        $_.category__slug -eq "software" `
+        -and $_.filename.EndsWith(".exe") `
+        -and -not ($_.version.StartsWith("v")) 
+    } | 
+    Sort-Object -Descending { [version] $_.version } |
+    Select-Object -First 1
 
     $url = "https://www.ubnt.com" + $download.file_path
 
