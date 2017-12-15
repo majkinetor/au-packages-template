@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>softerraldapbrowser</id>
+    <version>4.5.13724.20171215</version>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/softerraldapbrowser</packageSourceUrl>
+    <owners>Peter Jahn, flcdrg</owners>
+    <title>Softerra LDAP Browser</title>
+    <authors>Softerra, Ltd</authors>
+    <projectUrl>http://www.ldapbrowser.com/info_softerra-ldap-browser.htm</projectUrl>
+ 	  <iconUrl>https://raw.github.com/pjahn/nugetpackages/master/softerraldapbrowser/softerraldapbrowser.png</iconUrl>
+    <copyright>Copyright © 2013 Softerra, Ltd All Rights Reserved</copyright>
+    <licenseUrl>http://www.ldapadministrator.com/purchase_legal-license-agreement.htm</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>http://www.ldapbrowser.com/forum/</docsUrl>
+    <mailingListUrl>http://www.ldapbrowser.com/forum/</mailingListUrl>
+    <bugTrackerUrl>http://www.ldapbrowser.com/support_request.htm</bugTrackerUrl>
+    <tags>ldap browser directory admin</tags>
+    <summary>Browse LDAP directories</summary>
+    <description>Softerra LDAP Browser is a lightweight version of Softerra LDAP Administrator. It supports read-only operations that do not modify LDAP directory data, e.g. browsing, search, export, etc. For complete, fully functional management of LDAP directories you need Softerra LDAP Administrator.</description>
+    <releaseNotes>http://www.ldapadministrator.com/resources/english/2015.2/releasenotes.html</releaseNotes>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+    <!--Building from Linux? You may need this instead: <file src="tools/**" target="tools" />-->
+  </files>
+</package>
