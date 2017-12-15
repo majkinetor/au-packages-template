@@ -99,14 +99,12 @@ function global:au_GetLatest {
         $xmlNameSpace = new-object System.Xml.XmlNamespaceManager($xml.NameTable)
         $xmlNameSpace.AddNamespace("t", "http://schemas.tracker-software.com/trackerupdate/tb/v1")
 
-        $pdfxeditorNode = $xml.SelectSingleNode("//t:bundle[@id='PDFXEditor']", $xmlNameSpace)
-
-        $x32update = $pdfxeditorNode.SelectSingleNode("./t:update[@platform='x32']", $xmlNameSpace)
+        $x32update = $xml.SelectSingleNode("//t:bundle[@id='PDFXEditor.x32']/t:update", $xmlNameSpace)
         $version = $x32update.version
         $date = $x32update.startMaintenance
         $filename = $x32update.url
 
-        $x64update = $pdfxeditorNode.SelectSingleNode("./t:update[@platform='x64']", $xmlNameSpace)
+        $x64update = $xml.SelectSingleNode("//t:bundle[@id='PDFXEditor.x64']/t:update", $xmlNameSpace)
         $filename64 = $x64update.url
 
         $releaseNotes = (,"Requires maintenance through $date") + (ParseReleaseNotes $version)
@@ -141,7 +139,7 @@ function global:au_AfterUpdate
 { 
     $nuspecFileName = $Latest.PackageName + ".nuspec"
     $nu = Get-Content $nuspecFileName -Raw -Encoding UTF8
-    $nu = $nu -replace "(?smi)(\<releaseNotes\>).*?(\</releaseNotes\>)", "`${1}$($Latest.ReleaseNotes)`$2"
+    $nu = $nu -replace "(?smi)(\<releaseNotes\>).*?(\</releaseNotes\>)", "`${1}<![CDATA[$($Latest.ReleaseNotes)]]>`$2"
 
     $Utf8NoBomEncoding = New-Object System.Text.UTF8Encoding($False)
     $NuPath = (Resolve-Path $NuspecFileName)
