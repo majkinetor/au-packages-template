@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>PDFXchangeEditor</id>
-    <version>7.0.323.1</version>
+    <version>7.0.323.2</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/PDFXchangeEditor</packageSourceUrl>
     <owners>flcdrg, calwell</owners>
     <title>PDF-XChange Editor</title>
@@ -35,28 +35,23 @@ For example: `-params '"/NoDesktopShortcuts"'`.
 
 </description>
     <releaseNotes><![CDATA[Requires maintenance through 2017-12-01
-#### Newly added feature
-
-* Added 'Local Folders' to the 'Add a Place' feature.
-* Added functionality to switch between languages in Shell Extensions.
-
 #### A reported error or bug was fixed
 
-* Fixed the issue with the 'Combine Files' feature where one file in a group of selected files was not added to the list. ([30035](http://www.tracker-software.com/forum3/viewtopic.php?t=30035))
-* Fixed the scan issues identified in RC.323.
-* Fixed the preview issue in Microsoft Outlook.
-* Fixed the issue with printing masks and the inversion of masked images. (T# 4120)
-* Fixed several issues with toolbar customization, and improved the customization process itself.
-* Fixed the issue with maximizing the application window on multi-monitor configurations. ([30058](http://www.tracker-software.com/forum3/viewtopic.php?t=30058))
-* Fixed some issues with toolbar/menu elements added by JavaScript. ([30094](http://www.tracker-software.com/forum3/viewtopic.php?t=30094))
-* Fixed some issues with toolbars/menus in SDK mode. Editor now starts in Classic UI by default, as it did in previous builds.
+* Fixed the issue with installer-based registration of the IFilter module.
+* Fixed the handling of text-based clips when printing.
+* Fixed a rare issue with the decoding of JBIG2 streams that contain missed symbols.
+* Fixed the issue with paper selection for printers that have two different sets of paper with the same dimensions. (T# 3964)
+* Fixed the 'Import Settings' issue, which was causing crashes in some cases.
+* Fixed the issue with toggling rulers.
+* Fixed the issue with handling changes made in the "Tabs&Windows" Preferences.
+* Fixed the Firefox Plugin issue where closing the browser-tab with modified PDF document inside was freezing the browser in some cases.
+* Fixed several issues with the handling of touch/stylus events whilst editing comments/content in 'Pages View'. ([30112](http://www.tracker-software.com/forum3/viewtopic.php?t=30112))
 
 #### Changed, reviewed, modified feature
 
-* Forced the conversion of images to B&W when printing with the "Color Override" option set to "Monochrome". ([30097](http://www.tracker-software.com/forum3/viewtopic.php?t=30097))
-* Improved the logic of using contextual tabs in the Ribbon UI.
-* Prevented the elimination of existing toolbar customization data when Editor V7 is started. Editor now retains this data for use in conjunction with the 'Auto-Import Old Customization' feature that we are aiming to add in the future. ([29984](http://www.tracker-software.com/forum3/viewtopic.php?t=29984))
-* Fixed the issue with the IE Plugin where a white tab was displayed instead of the normal UI.]]></releaseNotes>
+* Improved the handling of non-wellformed ICC colorspaces created by iAnnotate for iOS. (T# 4142)
+* Improved the "Select Paper Size by Document's Page Size" option. Editor now uses the document page rotation to determine the orientation of printed documents when this option is selected. (T# 2874)
+* Improved the Certificate Selection combo box in the "Sign Document" dialog box. The dropdown list now displays additional information about digital certificates.]]></releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
