@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $packageName = 'typescript-vs2015'
-$installVersion = '2.6.1.0'
+$installVersion = '2.6.2.0'
 $softwareName = "TypeScript Tools for Microsoft Visual Studio 2015 $installVersion"
  
 $installerType = 'EXE' 
