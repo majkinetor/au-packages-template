@@ -27,15 +27,15 @@ function global:au_GetLatest {
         $htmlWeb.AutoDetectEncoding = $true
         $doc = $htmlWeb.Load($releases)
 
-        $links = $doc.DocumentNode.SelectNodes("//a[substring(@href, string-length(@href) - string-length('.exe') +1) = '.exe']")
+        $links = $doc.DocumentNode.SelectNodes("//a[contains(@href, '.exe')]")
         $link = $links[0]
-        $url32 = $link.Attributes["href"].Value
+        $url32 = $link.Attributes["href"].Value.Trim()
 
         $li = $link.ParentNode
 
         # first a should be release notes
         $firstA = $li.SelectSingleNode("a")
-        $releaseNotes = $firstA.Attributes["href"].Value
+        $releaseNotes = $firstA.Attributes["href"].Value.Trim()
 
         # version in filename isn't always complete, so we search for text description before link
 

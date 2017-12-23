@@ -3,8 +3,9 @@
 [![](http://transparent-favicon.info/favicon.ico)](#)
 [chocolatey/flcdrg](https://chocolatey.org/profiles/flcdrg)
 
-This repository contains [chocolatey automatic packages](https://chocolatey.org/docs/automatic-packages).  
-The repository is setup so that you can manage your packages entirely from the GitHub web interface (using AppVeyor to update and push packages) and/or using the local repository copy.
+This repository contains my Chocolatey packages. Where possible I use [chocolatey automatic packages](https://chocolatey.org/docs/automatic-packages). These packages will have an `update.ps1` script in the folder that is run daily to automatically detect and publish new versions.
+
+If there is no `update.ps1`, I haven't got around to creating one yet.
 
 ## Prerequisites
 
