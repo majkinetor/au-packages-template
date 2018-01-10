@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>popcorn-time</id>
+    <version>0.3.10</version>
+    <packageSourceUrl>https://github.com/galeksandrp/chocolatey-packages/tree/popcorn-time</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>Popcorn Time (Install)</title>
+    <authors>Popcorn Time Team</authors>
+    <projectUrl>https://popcorntime.sh</projectUrl>
+    <iconUrl>https://avatars2.githubusercontent.com/u/7267937</iconUrl>
+    <copyright>Copyright (c) Popcorn Time Team 2014-2018</copyright>
+    <licenseUrl>https://popcorntime.sh/tos</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/popcorn-official/popcorn-desktop</projectSourceUrl>
+    <docsUrl>https://popcorntime.sh/faq</docsUrl>
+    <bugTrackerUrl>https://github.com/popcorn-official/popcorn-desktop/issues</bugTrackerUrl>
+    <tags>popcorn popcorntime popcorn-time stream-movies watch-movies torrent admin</tags>
+    <summary>Popcorn Time is a multi-platform, free software BitTorrent client that includes an integrated media player.</summary>
+    <description>Popcorn Time is a multi-platform, free software BitTorrent client that includes an integrated media player. Desktop ( Windows / Mac / Linux ) a Butter-Project Fork
+
+Allow any user to easily watch movies through torrent streaming, without any prerequisites.
+
+Watch Movies and TV Shows instantly
+
+Popcorn Time streams movies and TV shows from torrents
+</description>
+    <releaseNotes>https://github.com/popcorn-official/popcorn-desktop/blob/development/CHANGELOG.md</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

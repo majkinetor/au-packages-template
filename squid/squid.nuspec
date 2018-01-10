@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>squid</id>
+    <version>3.5.27</version>
+    <packageSourceUrl>https://github.com/galeksandrp/chocolatey-packages/tree/squid</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>Squid (Install)</title>
+    <authors>Duane Wessels, Henrik Nordström, Amos Jeffries, Alex Rousskov, Francesco Chemolli, Robert Collins, Guido Serassio and volunteers</authors>
+    <projectUrl>http://www.squid-cache.org</projectUrl>
+    <iconUrl>http://www.squid-cache.org/Images/img4.jpg</iconUrl>
+    <copyright>Copyright (c) 2017 Duane Wessels, Henrik Nordström, Amos Jeffries, Alex Rousskov, Francesco Chemolli, Robert Collins, Guido Serassio and volunteers</copyright>
+    <licenseUrl>https://github.com/diladele/squid-windows/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/diladele/squid-windows</projectSourceUrl>
+    <docsUrl>https://wiki.squid-cache.org/SquidFaq/BinaryPackages#Windows</docsUrl>
+    <mailingListUrl>http://www.squid-cache.org/Support/mailing-lists.html</mailingListUrl>
+    <bugTrackerUrl>https://github.com/diladele/squid-windows/issues</bugTrackerUrl>
+    <tags>proxy squid cache server http https ftp admin</tags>
+    <summary>Squid is a caching proxy for the Web supporting HTTP, HTTPS, FTP, and more</summary>
+    <description>Squid is a caching proxy for the Web supporting HTTP, HTTPS, FTP, and more. It reduces bandwidth and improves response times by caching and reusing frequently-requested web pages. Squid has extensive access controls and makes a great server accelerator. It runs on most available operating systems, including Windows and is licensed under the GNU GPL.</description>
+    <releaseNotes>https://github.com/diladele/squid-windows/commits/master</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

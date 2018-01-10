@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>goodbyedpi</id>
+    <version>0.1.4</version>
+    <packageSourceUrl>https://github.com/galeksandrp/chocolatey-packages/tree/goodbyedpi</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>GoodbyeDPI</title>
+    <authors>ValdikSS</authors>
+    <projectUrl>https://github.com/ValdikSS/GoodbyeDPI</projectUrl>
+    <iconUrl>https://avatars3.githubusercontent.com/u/3054729</iconUrl>
+    <copyright>Copyright (c) ValdikSS 2017</copyright>
+    <licenseUrl>https://github.com/ValdikSS/GoodbyeDPI/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/ValdikSS/GoodbyeDPI</projectSourceUrl>
+    <docsUrl>https://github.com/ValdikSS/GoodbyeDPI/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/ValdikSS/GoodbyeDPI/issues</bugTrackerUrl>
+    <tags>goodbyedpi wfp windows-filtering-platform windivert dpi bypass dpi-bypass bypass-dpi censorship-circumvention anti-censorship anticensorship</tags>
+    <summary>GoodbyeDPI — Passive Deep Packet Inspection blocker and Active DPI circumvention utility</summary>
+    <description>GoodbyeDPI — Passive Deep Packet Inspection blocker and Active DPI circumvention utility
+
+This software designed to bypass Deep Packet Inspection systems found in many Internet Service Providers which block access to certain websites.
+
+It handles DPI connected using optical splitter or port mirroring (Passive DPI) which do not block any data but just replying faster than requested destination, and Active DPI connected in sequence.
+
+Windows 7, 8, 8.1 and 10 with administrator privileges required.</description>
+    <releaseNotes>https://github.com/ValdikSS/GoodbyeDPI/releases</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

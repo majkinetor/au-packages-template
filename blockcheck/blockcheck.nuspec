@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>blockcheck</id>
+    <version>0.0.9.6</version>
+    <packageSourceUrl>https://github.com/galeksandrp/chocolatey-packages/tree/blockcheck</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>BlockCheck</title>
+    <authors>ValdikSS</authors>
+    <projectUrl>https://github.com/ValdikSS/blockcheck</projectUrl>
+    <iconUrl>https://avatars3.githubusercontent.com/u/3054729</iconUrl>
+    <copyright>Copyright (c) ValdikSS 2014-2018</copyright>
+    <licenseUrl>https://github.com/ValdikSS/blockcheck/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/ValdikSS/blockcheck</projectSourceUrl>
+    <docsUrl>https://github.com/ValdikSS/blockcheck/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/ValdikSS/blockcheck/issues</bugTrackerUrl>
+    <tags>blockcheck isp dpi censorship internet-censorship сitizen-journalism osint open-source-intelligence open-source ooniprobe ooni</tags>
+    <summary>BlockCheck is a tool for detecting website access restrictions methods of russian ISPs for websites which present in EAIS</summary>
+    <description>BlockCheck is a tool for detecting website access restrictions methods of russian ISPs for websites which present in EAIS
+	
+You may not know that russian government deployed widespread internet censorship in that country. Official reestry of sites that forbidden to access (EAIS) counts ~98 000 webpages by January 2018. At least ~6 500 of them are politcal, says twitter.com/@RuBlackListNET, local human rights activists organisation.
+
+Due to active adoption of HTTPS ISPs can't guess which webpages are watched. They are forced to block entire HTTPS-powered website to comply the law. Since exact method of restricting access is not set by the law, most of ISPs not use DPI.
+
+Deploying DPI in 2018 costs large amount of money as well as some reputation loss, not saying about any privacy problems which may occur due to nature of DPI. Most of russian ISPs block all websites on a single IP. Human rights activists counted that by January 2018 ~4 334 000 of websites blocked illegitimately due to most websites are hosted on servers which IPs is shared between multiple websites.
+</description>
+    <releaseNotes>https://github.com/ValdikSS/blockcheck/releases</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
