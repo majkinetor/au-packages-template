@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>gosuslugi-plugin</id>
+    <version>2.0.6</version>
+    <packageSourceUrl>https://github.com/galeksandrp/chocolatey-packages/tree/gosuslugi-plugin</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>Gosuslugi Plugin (Install)</title>
+    <authors>Rostelecom OAO</authors>
+    <projectUrl>https://ds-plugin.gosuslugi.ru/plugin/upload/Index.spr</projectUrl>
+    <iconUrl>https://ds-plugin.gosuslugi.ru/plugin/htdocs/main/img/logo-esia.png</iconUrl>
+    <copyright>Copyright (c) 2017 Rostelecom OAO</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://www.gosuslugi.ru/help</docsUrl>
+    <bugTrackerUrl>https://www.gosuslugi.ru/feedback</bugTrackerUrl>
+    <tags>crypto office digital-signature signature gost cades government plugin admin</tags>
+    <summary>Gosuslugi Plugin is an browser add-in for using GOST encryption algorithms on electronic government services</summary>
+    <description>Gosuslugi Plugin is an browser add-in for using GOST encryption algorithms on electronic government services, such as single sign on</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

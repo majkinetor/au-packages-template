@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>foldersizes</id>
+    <version>8.3.150.0</version>
+    <packageSourceUrl>https://github.com/galeksandrp/chocolatey-packages/tree/foldersizes</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>FolderSizes (Install)</title>
+    <authors>Key Metric Software, LLC</authors>
+    <projectUrl>http://www.foldersizes.com</projectUrl>
+    <iconUrl>http://www.foldersizes.com/Images/foldersizes-logo.jpg</iconUrl>
+    <copyright>Copyright © 2003-2017 Key Metric Software, LLC</copyright>
+    <licenseUrl>http://www.foldersizes.com/order/faq</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>http://www.foldersizes.com/features</docsUrl>
+    <bugTrackerUrl>http://www.foldersizes.com/support</bugTrackerUrl>
+    <tags>folder directory size space admin</tags>
+    <summary>Disk space analyzer</summary>
+    <description>The ultimate disk space management tool
+
+Desktop PCs, laptops and servers can quickly end up accumulating large quantities of unused, temporary, and duplicate files. Before you know it, you’re out of drive space, backups are taking far too long to run, users can’t find what they need, and you’re struggling to plan for the future.</description>
+    <releaseNotes>http://www.foldersizes.com/Content/static/ReleaseNotes.htm</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

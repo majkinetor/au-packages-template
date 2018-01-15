@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>sbis-plugin</id>
+    <version>3.18.58.8</version>
+    <packageSourceUrl>https://github.com/galeksandrp/chocolatey-packages/tree/sbis-plugin</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>SBIS Plugin (Install)</title>
+    <authors>Тензор</authors>
+    <projectUrl>https://sbis.ru</projectUrl>
+    <iconUrl>https://help.sbis.ru/resources/help/images/icons/sbisplugin.png</iconUrl>
+    <copyright>Copyright (c) 2003-2017 Тензор, CБИС</copyright>
+    <licenseUrl>https://sbis.ru/reglament</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://help.sbis.ru/help/start/teh_terms/sbisplugin/</docsUrl>
+    <bugTrackerUrl>https://help.sbis.ru/help/</bugTrackerUrl>
+    <tags>sbis sbis.ru sbisru tensor digitalsignature signature bookkeeping admin</tags>
+    <summary>Network of business communications</summary>
+    <description>Unites people and companies, management and accounting systems, business processes and documents in one system
+Electronic document control
+Electronic signature and exchange documents between companies, within the company with ordinary people</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>cryptopro-browser-plugin</id>
+    <version>2.0.13064</version>
+    <packageSourceUrl>https://github.com/galeksandrp/chocolatey-packages/tree/cryptopro-browser-plugin</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>CryptoPro Browser Plugin (Install)</title>
+    <authors>ООО "КРИПТО-ПРО"</authors>
+    <projectUrl>https://www.cryptopro.ru/products/cades/plugin/</projectUrl>
+    <iconUrl>https://www.cryptopro.ru/sites/default/files/theme321_logo.png</iconUrl>
+    <copyright>Copyright (c) ООО "КРИПТО-ПРО", 2000-2017</copyright>
+    <licenseUrl>https://www.cryptopro.ru/sites/default/files/products/cades/lic-plugin.pdf</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://cpdn.cryptopro.ru/default.asp?url=content/cades/plugin.html</docsUrl>
+    <bugTrackerUrl>https://support.cryptopro.ru/index.php?/Knowledgebase/List/Index/12/kriptopro-ehcp-browser-plug-in</bugTrackerUrl>
+    <tags>crypto cryptopro crypto-pro browser browser-plugin plugin digital-signature signature gost cades admin</tags>
+    <summary>CryptoPro Browser Plugin is a plugin for using GOST cryptographic functions in browsers</summary>
+    <description>CryptoPro Browser Plugin is a plugin for using GOST cryptographic functions in browsers.
+Compatible with CryptoPro CSP 3.6 R4 and higher (Windows) or CryptoPro CSP 4.0 and higher (Other OS).</description>
+    <releaseNotes>https://www.cryptopro.ru/products/cades/plugin/</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
