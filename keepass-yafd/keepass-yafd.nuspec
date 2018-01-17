@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>keepass-yet-another-favicon-downloader</id>
+    <version>1.1.1.0</version>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/keepass-yafd</packageSourceUrl>
+    <owners>flcdrg</owners>
+    <title>KeePass Plugin Yet Another Favicon Downloader</title>
+    <authors>Rafael Cossovan de França</authors>
+    <projectUrl>https://github.com/navossoc/KeePass-Yet-Another-Favicon-Downloader</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/dtgm/chocolatey-packages/master/icons/keepass.png</iconUrl>
+    <copyright>2017 Rafael Cossovan de França</copyright>
+    <licenseUrl>https://raw.githubusercontent.com/navossoc/KeePass-Yet-Another-Favicon-Downloader/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/navossoc/KeePass-Yet-Another-Favicon-Downloader</projectSourceUrl>
+    <docsUrl>https://github.com/navossoc/KeePass-Yet-Another-Favicon-Downloader/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/navossoc/KeePass-Yet-Another-Favicon-Downloader/issues</bugTrackerUrl>
+    <tags>keepass plugin favicon icons</tags>
+    <summary>Yet Another Favicon Downloader for KeePass 2.x</summary>
+    <description>_Yet Another Favicon Downloader_ (_YAFD_ for short) is a plugin for _KeePass_ 2.x that allows you to quickly download favicons for your password entries.
+
+### Features
+
+- Concurrent and responsive (allows faster downloads without freezing the user interface)
+- Lightweight and reliable (designed to download thousands of icons in batch)
+- Smart and efficient
+  - Avoids duplicate icons (reuses custom icons already present in the database)
+  - Download entries without a URL scheme (automatically prefix URLs with `http://`)
+- Linux support (_experimental_)
+- Proxy support (respects _KeePass_ settings)
+    </description>
+    <releaseNotes>Fixes "Check for Updates" weird behavior on Linux/Mono.</releaseNotes>
+    <dependencies>
+      <dependency id="keepass" version="2.34" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
