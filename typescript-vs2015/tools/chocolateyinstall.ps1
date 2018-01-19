@@ -2,9 +2,9 @@
 
 $packageName= 'typescript-vs2015'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://download.microsoft.com/download/6/D/8/6D8381B0-03C1-4BD2-AE65-30FF0A4C62DA/2.6.2-TS-release-dev14update3-20171121.4/TypeScript_Dev14Full.exe'
-$checksum   = 'f656f55f0d91d316afb973718d9c7db4dfbb0df2d1a8589a4f623eef76e7c930'
-$installVersion = '2.6.2.0'
+$url        = 'https://download.microsoft.com/download/6/D/8/6D8381B0-03C1-4BD2-AE65-30FF0A4C62DA/2.7.0-TS-release-dev14update3-20180110.2/TypeScript_Dev14Full.exe'
+$checksum   = 'c66d34ca145f490f3fa6e93846c14e54c04f181ad636e53c81fff921b58e8c4a'
+$installVersion = '2.7.0.0 RC'
 $softwareName = "TypeScript Tools for Microsoft Visual Studio 2015 $installVersion"
 
 $packageArgs = @{
