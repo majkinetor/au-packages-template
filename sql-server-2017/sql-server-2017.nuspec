@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>sql-server-2017</id>
+    <version>14.0.1000</version>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/sql-server-2017</packageSourceUrl>
+    <owners>flcdrg</owners>
+    <title>Microsoft SQL Server 2017 Developer Edition</title>
+    <authors>Microsoft Corporation</authors>
+    <projectUrl>https://www.microsoft.com/en-au/sql-server/sql-server-downloads</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/59ad5e2e32c52fd2a45a9735f95a81368f9e5e85/icons/microsoft-sql-server.svg</iconUrl>
+    <copyright>2017 Microsoft Corporation</copyright>
+    <licenseUrl>https://www.microsoft.com/en-au/sql-server/sql-server-2017-pricing</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://docs.microsoft.com/en-us/sql/sql-server/sql-server-technical-documentation</docsUrl>
+    <mailingListUrl>https://social.technet.microsoft.com/Forums/sqlserver/en-us/home?category=sqlserver</mailingListUrl>
+    <bugTrackerUrl>https://feedback.azure.com/forums/908035-sql-server</bugTrackerUrl>
+    <tags>SQL tSQL Relational Data Database</tags>
+    <summary>SQL Server 2017 is a comprehensive, mission-critical database for demanding workloads</summary>
+    <description>SQL Server is a central part of the Microsoft data platform. SQL Server is an industry leader in operational database management systems (ODBMS).
+
+SQL Server 2017 Developer is a full-featured free edition, licensed for use as a development and test database in a non-production environment.
+
+This package will install SQL Server 2017 Developer Edition using an existing .iso file. If a path to an existing .iso is not supplied, it downloads the same .iso that can be obtained from the [SQL Server Basic Installer](https://go.microsoft.com/fwlink/?linkid=853016)'s *Download Media* menu.
+### Operating System requirements for SQL Server Developer
+
+- Windows Server 2016 Datacenter
+- Windows Server 2016 Standard
+- Windows Server 2016 Essentials*
+- Windows Server 2012 R2 Datacenter
+- Windows Server 2012 R2 Standard
+- Windows Server 2012 R2 Essentials
+- Windows Server 2012 R2 Foundation
+- Windows Server 2012 Datacenter
+- Windows Server 2012 Standard
+- Windows Server 2012 Essentials
+- Windows Server 2012 Foundation
+- Windows 10 Home
+- Windows 10 Professional
+- Windows 10 Enterprise
+- Windows 10 IoT Enterprise
+- Windows 8.1
+- Windows 8.1 Pro
+- Windows 8.1 Enterprise
+- Windows 8
+- Windows 8 Pro
+- Windows 8 Enterprise
+
+### Package Specific
+#### Package notes
+
+The initial release of this package is focused on installing and uninstalling a default instance of SQL Server 2017 Developer Edition.
+
+Future plans include better support for non-default instances (including uninstalling).
+
+Note that the install script makes use of `Mount-DiskImage` as the minimum OS requirements for SQL Server include this cmdlet.
+
+#### Package Parameters
+The following package parameters can be set:
+
+ * `/IsoPath:` - path to a local copy of the .iso file - if not supplied then .iso is downloaded
+
+
+ All other package parameters are passed through to SQL Server Setup, allowing you to customise the installation as necessary.
+
+ The following are set by default:
+
+ * `/ConfigurationFile:` - The path to a configurationfile.ini - defaults to the supplied tools\configurationfile.ini
+ * `/SQLSYSADMINACCOUNTS:` - The usernames to add to the SQL SysAdmin role - defaults to current user
+
+See https://docs.microsoft.com/en-us/sql/database-engine/install-windows/install-sql-server-from-the-command-prompt#Install for the full list of parameters supported by SQL Server.
+
+To pass parameters, use `--params "''"` (e.g. `choco install sql-server-2017 [other options] --params="'/ITEM:value /ITEM2:value2'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+
+    </description>
+    <releaseNotes>https://docs.microsoft.com/en-us/sql/sql-server/what-s-new-in-sql-server-2017</releaseNotes>
+    <dependencies>
+      <dependency id="dotnet4.6.1" version="4.6.01055.20170308" />
+      <dependency id="vcredist2015" version="14.0.24215" />
+      <dependency id="vcredist2017" version="14.12.25810" />
+      <dependency id="chocolatey-core.extension" version="1.3.3" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

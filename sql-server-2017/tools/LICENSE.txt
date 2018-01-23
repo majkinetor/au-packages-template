@@ -1,0 +1,82 @@
+﻿MICROSOFT SOFTWARE LICENSE TERMS
+MICROSOFT SQL SERVER 2017 DEVELOPER
+These license terms are an agreement between Microsoft Corporation (or based on where you live, one of its affiliates) and you. Please read them. They apply to the software named above, which includes the media on which you received it, if any. The terms also apply to any Microsoft
+·	updates,
+·	supplements,
+·	Internet-based services, and
+·	support services
+for this software, unless other terms accompany those items. If so, those terms apply. 
+BY USING THE SOFTWARE, YOU ACCEPT THESE TERMS. IF YOU DO NOT ACCEPT THEM, DO NOT USE THE SOFTWARE. 
+IMPORTANT NOTICE:  AUTOMATIC UPDATES TO PREVIOUS VERSIONS OF SQL SERVER.  If this software is installed on servers or devices running any supported editions of SQL Server prior to SQL Server 2017 (or components of any of them) this software will automatically update and replace certain files or features within those editions with files from this software.  This feature cannot be switched off.  Removal of these files may cause errors in the software and the original files may not be recoverable.  By installing this software on a server or device that is running such editions you consent to these updates in all such editions and copies of SQL Server (including components of any of them) running on that server or device.
+We collect data about how you interact with this software. This includes data about the performance of the services, any problems you experience with them, and the features you use. This also includes data about your device and the network you use to connect to our services, including IP address, device identifiers, regional and language settings. It includes information about the operating systems and other software installed on your device, including product keys. By using this software, you consent to Microsoft’s collection of usage and performance data related to your use of the software.
+***
+IF YOU COMPLY WITH THESE LICENSE TERMS, YOU HAVE THE RIGHTS BELOW FOR EACH LICENSE YOU ACQUIRE.
+1.	INSTALLATION AND USE RIGHTS.
+a.	General. You may install and use copies of the software on any device, including third party shared devices, to design, develop, test and demonstrate your programs. You may not use the software on a device or server in a production environment.
+b.	Demonstration. Any person that has access to your internal network may install and use copies of the software to demonstrate use of your programs with the software. Those copies may not be used for any other purpose.
+c.	User Testing. Your end users may access the software to perform acceptance tests on your programs.
+d.	Included Microsoft Programs.  The software includes other Microsoft programs listed at <http://go.microsoft.com/fwlink/?LinkID=298186>. Microsoft is making these programs available to you as a convenience only and these programs are licensed and supported under their own separate terms and policies. You may only use these programs in conjunction with the software licensed here.  If you do not agree to the license terms for these programs, you may not use them.
+e.	.NET FRAMEWORK SOFTWARE. The software contains Microsoft .NET Framework software. This software is part of Windows. The license terms for Windows apply to your use of the .NET Framework software.
+2.	ADDITIONAL LICENSING REQUIREMENTS AND/OR USE RIGHTS.
+a.	Font Components. While the software is running, you may use its fonts to display and print content. You may only
+·	embed fonts in content as permitted by the embedding restrictions in the fonts, and
+·	temporarily download them to a printer or other output device to help print content.
+b.	SQL Server Reporting Services Map Report Item. Reporting Services Map Item both include use of Bing Maps.  You may only use the content provided through Bing Maps, including geocodes, within or Reporting Services Map Item.  Your use of Bing Maps is also governed by the Bing Maps End User Terms of Use available at <http://go.microsoft.com/?linkid=9710837> and the Bing Maps Privacy Statement available at <http://go.microsoft.com/fwlink/?LinkID=248686>.
+3.	INTERNET-BASED SERVICES. Microsoft provides Internet-based services with the software. It may change or cancel them at any time. 
+4.	THIRD PARTY NOTICES. The software may include third party components with separate legal notices or governed by other agreements, as may be described in the ThirdPartyNotices file accompanying the software.  Even if such components are governed by other agreements, the disclaimers and the limitations on and exclusions of damages below also apply.
+5.	CANADA.  You may stop receiving updates by turning off the automatic update feature or by turning off Internet access. Refer to the product documentation to learn how to turn off updates for your specific device or software.
+6.	BENCHMARK TESTING. You must obtain Microsoft's prior written approval to disclose to a third party the results of any benchmark test of the software. 
+7.	SCOPE OF LICENSE. The software is licensed, not sold. Unless applicable law gives you more rights, Microsoft reserves all other rights not expressly granted under this agreement, whether by implication, estoppel or otherwise. You may use the software only as expressly permitted in this agreement. In doing so, you must comply with any technical limitations in the software that only allow you to use it in certain ways. You may not
+·	work around any technical limitations in the software;
+·	reverse engineer, decompile or disassemble the software, or otherwise attempt to derive the source code for the software except, and only to the extent: (i) permitted by applicable law, despite this limitation or (ii) required to debug changes to any libraries licensed under the GNU Lesser Public License that are included with and linked to by the software; 
+·	make more copies of the software than specified in this agreement or allowed by applicable law, despite this limitation;
+·	publish the software, including any application programming interfaces included in the software, for others to copy;
+·	share or otherwise distribute documents, text or images created using the software Data Mapping Services features;
+·	rent, lease or lend the software; or
+·	use the software for commercial software hosting services.
+You also may not remove, minimize, block or modify any logos, trademarks, copyright, digital watermarks, or other notices of Microsoft or its suppliers that are included in the software, including any content made available to you through the software.
+8.	DOCUMENTATION. Any person that has valid access to your computer or internal network may copy and use the documentation for your internal, reference purposes.
+9.	NOT FOR RESALE SOFTWARE. You may not sell software marked as “NFR” or “Not for Resale.”
+10.	DOWNGRADE. Instead of installing the software, you may install and use an earlier version. This agreement applies to your use of the earlier version. If the earlier version includes different components, any terms for those components in the agreement that comes with the earlier version apply to your use of them. Microsoft is not obligated to supply earlier versions to you. At any time, you may replace an earlier version with this version of the software.
+11.	EXPORT RESTRICTIONS. The software is subject to United States export laws and regulations. You must comply with all domestic and international export laws and regulations that apply to the software. These laws include restrictions on destinations, end users and end use. For additional information, see www.microsoft.com/exporting.
+12.	SUPPORT SERVICES. Microsoft provides support services for the software as described at www.support.microsoft.com/common/international.aspx.
+13.	ENTIRE AGREEMENT. This agreement (including the warranty below), and the terms for supplements, updates, Internet-based services and support services that you use, are the entire agreement for the software and support services.
+14.	APPLICABLE LAW.
+a.	United States. If you acquired the software in the United States, Washington state law governs the interpretation of this agreement and applies to claims for breach of it, regardless of conflict of laws principles. The laws of the state where you live govern all other claims, including claims under state consumer protection laws, unfair competition laws, and in tort.
+b.	Outside the United States. If you acquired the software in any other country, the laws of that country apply.
+15.	LEGAL EFFECT. This agreement describes certain legal rights. You may have other rights under the laws of your state or country. You may also have rights with respect to the party from whom you acquired the software. This agreement does not change your rights under the laws of your state or country if the laws of your state or country do not permit it to do so.
+16.	LIMITATION ON AND EXCLUSION OF DAMAGES. YOU CAN RECOVER FROM MICROSOFT AND ITS SUPPLIERS ONLY DIRECT DAMAGES UP TO THE AMOUNT YOU PAID FOR THE SOFTWARE. YOU CANNOT RECOVER ANY OTHER DAMAGES, INCLUDING CONSEQUENTIAL, LOST PROFITS, SPECIAL, INDIRECT OR INCIDENTAL DAMAGES.
+This limitation applies to
+·	anything related to the software, services, content (including code) on third party Internet sites, or third party programs, and
+·	claims for breach of contract, breach of warranty, guarantee or condition, strict liability, negligence, or other tort to the extent permitted by applicable law.
+It also applies even if
+·	repair, replacement or a refund for the software does not fully compensate you for any losses, or
+·	Microsoft knew or should have known about the possibility of the damages.
+Some states do not allow the exclusion or limitation of incidental or consequential damages, so the above limitation or exclusion may not apply to you. They also may not apply to you because your country may not allow the exclusion or limitation of incidental, consequential or other damages.
+************************************************************************************
+LIMITED WARRANTY
+A.	LIMITED WARRANTY. If you follow the instructions, the software will perform substantially as described in the Microsoft materials that you receive in or with the software.
+REFERENCES TO “LIMITED WARRANTY” are references to the express warranty provided by Microsoft. This warranty is given in addition to other rights and remedies you may have under law, including your rights and remedies in accordance with the statutory guarantees under local Consumer Law. 
+B.	TERM OF WARRANTY; WARRANTY RECIPIENT; LENGTH OF ANY IMPLIED WARRANTIES. THE LIMITED WARRANTY COVERS THE SOFTWARE FOR ONE YEAR AFTER ACQUIRED BY THE FIRST USER. IF YOU RECEIVE SUPPLEMENTS, UPDATES, OR REPLACEMENT SOFTWARE DURING THAT YEAR, THEY WILL BE COVERED FOR THE REMAINDER OF THE WARRANTY OR 30 DAYS, WHICHEVER IS LONGER. If the first user transfers the software, the remainder of the warranty will apply to the recipient.
+TO THE EXTENT PERMITTED BY LAW, ANY IMPLIED WARRANTIES, GUARANTEES OR CONDITIONS LAST ONLY DURING THE TERM OF THE LIMITED WARRANTY. Some states do not allow limitations on how long an implied warranty lasts, so these limitations may not apply to you. They also might not apply to you because some countries may not allow limitations on how long an implied warranty, guarantee or condition lasts.
+C.	EXCLUSIONS FROM WARRANTY. This warranty does not cover problems caused by your acts (or failures to act), the acts of others, or events beyond Microsoft’s reasonable control.
+D.	REMEDY FOR BREACH OF WARRANTY. MICROSOFT WILL REPAIR OR REPLACE THE SOFTWARE AT NO CHARGE. IF MICROSOFT CANNOT REPAIR OR REPLACE IT, MICROSOFT WILL REFUND THE AMOUNT SHOWN ON YOUR RECEIPT FOR THE SOFTWARE. IT WILL ALSO REPAIR OR REPLACE SUPPLEMENTS, UPDATES AND REPLACEMENT SOFTWARE AT NO CHARGE. IF MICROSOFT CANNOT REPAIR OR REPLACE THEM, IT WILL REFUND THE AMOUNT YOU PAID FOR THEM, IF ANY. YOU MUST UNINSTALL THE SOFTWARE AND RETURN ANY MEDIA AND OTHER ASSOCIATED MATERIALS TO MICROSOFT WITH PROOF OF PURCHASE TO OBTAIN A REFUND. THESE ARE YOUR ONLY REMEDIES FOR BREACH OF THE LIMITED WARRANTY.
+E.	CONSUMER RIGHTS NOT AFFECTED. YOU MAY HAVE ADDITIONAL CONSUMER RIGHTS UNDER YOUR LOCAL LAWS, WHICH THIS AGREEMENT CANNOT CHANGE.
+F.	WARRANTY PROCEDURES. You need proof of purchase for warranty service.
+1.	United States and Canada. For warranty service or information about how to obtain a refund for software acquired in the United States and Canada, contact Microsoft at
+·	(800) MICROSOFT;
+·	Microsoft Customer Service and Support, One Microsoft Way, Redmond, WA 98052-6399; or
+·	visit www.microsoft.com/info/nareturns.htm.
+2.	Europe, Middle East and Africa. If you acquired the software in Europe, the Middle East or Africa, Microsoft Ireland Operations Limited makes this limited warranty. To make a claim under this warranty, you should contact either
+·	Microsoft Ireland Operations Limited, Customer Care Centre, Atrium Building Block B, Carmanhall Road, Sandyford Industrial Estate, Dublin 18, Ireland; or
+·	the Microsoft affiliate serving your country (see www.microsoft.com/worldwide <http://www.microsoft.com/worldwide>).
+3.	Australia. For warranty service and to claim expenses in relation to the warranty (if applicable) for software acquired in Australia, contact Microsoft at:
+·	13 20 58; or
+·	Microsoft Pty Ltd, 1 Epping Road, North Ryde NSW 2113 Australia.
+4.	Outside United States, Canada, Europe, Middle East, Africa and Australia. If you acquired the software outside the United States, Canada, Europe, the Middle East and Africa and Australia contact the Microsoft affiliate serving your country (see www.microsoft.com/worldwide).
+G.	NO OTHER WARRANTIES. THE LIMITED WARRANTY IS THE ONLY DIRECT WARRANTY FROM MICROSOFT. MICROSOFT GIVES NO OTHER EXPRESS WARRANTIES, GUARANTEES OR CONDITIONS. WHERE ALLOWED BY YOUR LOCAL LAWS, MICROSOFT EXCLUDES IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. If your local laws give you any implied warranties, guarantees or conditions, despite this exclusion, your remedies are described in the Remedy for Breach of Warranty clause above, to the extent permitted by your local laws.
+FOR AUSTRALIA ONLY. In this paragraph, “goods” refers to the software for which Microsoft provides the express warranty. Our goods come with guarantees that cannot be excluded under the Australian Consumer Law. You are entitled to a replacement or refund for a major failure and compensation for any other reasonably foreseeable loss or damage. You are also entitled to have the goods repaired or replaced if the goods fail to be of acceptable quality and the failure does not amount to a major failure. Goods presented for repair may be replaced by refurbished goods of the same type rather than being replaced. Refurbished parts may be used to repair the goods.    
+H.	LIMITATION ON AND EXCLUSION OF DAMAGES FOR BREACH OF WARRANTY. THE LIMITATION ON AND EXCLUSION OF DAMAGES CLAUSE ABOVE APPLIES TO BREACHES OF THIS LIMITED WARRANTY.
+THIS WARRANTY GIVES YOU SPECIFIC LEGAL RIGHTS, AND YOU MAY ALSO HAVE OTHER RIGHTS WHICH VARY FROM STATE TO STATE. YOU MAY ALSO HAVE OTHER RIGHTS WHICH VARY FROM COUNTRY TO COUNTRY.
+
+

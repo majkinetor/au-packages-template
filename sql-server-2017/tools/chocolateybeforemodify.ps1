@@ -1,0 +1,1 @@
+﻿Stop-Service MSSQLSERVER -ErrorAction SilentlyContinue | Stop-Service
