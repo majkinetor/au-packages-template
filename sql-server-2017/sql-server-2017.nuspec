@@ -72,8 +72,11 @@ The following package parameters can be set:
 See https://docs.microsoft.com/en-us/sql/database-engine/install-windows/install-sql-server-from-the-command-prompt#Install for the full list of parameters supported by SQL Server.
 
 To pass parameters, use `--params "''"` (e.g. `choco install sql-server-2017 [other options] --params="'/ITEM:value /ITEM2:value2'"`).
-To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 
+Example using /IsoPath to use previously downloaded SQL Server .iso
+```
+choco install sql-server-2017 --params="'/IsoPath:c:\downloads\en_sql_server_2017_developer_x64_dvd_11296168.iso'"
+```
     </description>
     <releaseNotes>https://docs.microsoft.com/en-us/sql/sql-server/what-s-new-in-sql-server-2017</releaseNotes>
     <dependencies>
