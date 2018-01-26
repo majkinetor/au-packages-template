@@ -1,4 +1,6 @@
-﻿$ErrorActionPreference = 'Stop'; # stop on all errors
+﻿$ErrorActionPreference = 'Stop';
+
+# Inspired by @riezebosch's SQL Server packages at https://github.com/riezebosch/BoxstarterPackages/tree/master/sql-server
 
 # "C:\Program Files\Microsoft SQL Server\140\Setup Bootstrap\SQL2017\x64\SetupARP.exe"
 $setupARPPath = ((Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Microsoft SQL Server SQL2017').UninstallString).Replace("`"", "")
