@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>gnokii</id>
+    <version>0.6.31</version>
+    <packageSourceUrl>https://github.com/galeksandrp/chocolatey-packages/tree/gnokii</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>Gnokii (Install)</title>
+    <authors>gnokii project</authors>
+    <projectUrl>https://gnokii.org</projectUrl>
+    <iconUrl>https://gnokii.org/graphics/logo.jpg</iconUrl>
+    <copyright>Copyright (c) 2001-2011 gnokii project</copyright>
+    <licenseUrl>https://git.savannah.nongnu.org/cgit/gnokii.git/tree/COPYING</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://git.savannah.nongnu.org/cgit/gnokii.git</projectSourceUrl>
+    <docsUrl>https://gnokii.org/docs.shtml</docsUrl>
+    <mailingListUrl>https://lists.nongnu.org/mailman/listinfo/gnokii-users</mailingListUrl>
+    <bugTrackerUrl>https://savannah.nongnu.org/bugs/?group=gnokii</bugTrackerUrl>
+    <tags>admin sim sms vcard at gnokii cellphone cell-phone mobile mobile-phone</tags>
+    <summary>Open source tools for your mobile phone</summary>
+    <description>Open source tools for your mobile phone
+
+gnokii provides tools and a user space driver for use with mobile phones under various operating systems (most testing is done under Linux but also Solaris, *BSD family and MS Windows families are known to work). If you wonder whether your phone is supported or not, it is safe to assume it is supported, at least when the phone is fairly modern. However there are rare cases that make phone support very limited. You may refer to our wiki pages for hints in the gnokii configuration.
+
+gnokii features
+gnokii allows you to communicate with the phone over the serial cable connection, usb connection (support depends mostly on the operating system level support), infrared connection and bluetooth connection.
+
+gnokii provides many functionality of different areas for user to manipulate mobile phone.
+
+SMS
+You can send SMS, receive them and save them in the phone. gnokii supports delivery reports, picture messages (Nokia own protocol), concatenated messages, wap pushes, unicode messsages. gnokii allows you to send and receive logos and ringtones over SMS.
+
+Phonebook
+gnokii offers you possibility to read and write phonebook. Phonebook entries can be displayed in human readable form or can be exported to comma separated output, vCard version 3.0 format or ldif format. You can import data from the same formats. Please note, that supported phonebook entries	depend on the phone features and therefore may not be all imported.
+
+Calendar
+gnokii supports either calendar or todo lists. gnokii is capable to export calendar to iCal files and import them from the same format. Most calendar features like different types of events, recurrence, start and end times are supported.
+
+Call management
+You can initiate and answer calls with gnokii.
+
+Other
+Among other gnokii capabilities you'll find security options like entering PIN, ringtone and logo handling and many many other.</description>
+    <releaseNotes>https://gnokii.org/download/gnokii/0.6.x/gnokii-0.6.31.txt</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

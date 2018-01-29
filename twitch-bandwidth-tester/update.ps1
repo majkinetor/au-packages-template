@@ -12,7 +12,8 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	$URL32 = 'https://r-1.ch/TwitchTest.zip'
-    Install-ChocolateyZipPackage 'twitch-bandwidth-tester' $URL32 "$env:TMP"
+	Get-ChocolateyWebFile 'twitch-bandwidth-tester' "$env:TMP\TwitchTest.zip" $URL32
+    Get-ChocolateyUnzip "$env:TMP\TwitchTest.zip" "$env:TMP" -SpecificFolder "TwitchTest.exe"
 	
 	@{
         URL32   = $URL32

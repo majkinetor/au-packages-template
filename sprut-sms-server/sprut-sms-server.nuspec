@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>sprut-sms-server</id>
+    <version>3.0</version>
+    <packageSourceUrl>https://github.com/galeksandrp/chocolatey-packages/tree/sprut-sms-server</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>Sprut SMS Server (Install)</title>
+    <authors>RCOM company</authors>
+    <projectUrl>http://www.gsm-sprut.com/p.php?pid=221&amp;l=1</projectUrl>
+    <iconUrl>http://www.gsm-sprut.com/files/image/Sprut_u/SMS.jpg</iconUrl>
+    <copyright>Copyright (c) 2009-2018 RCOM company</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>http://www.gsm-sprut.com/files/file/SprutUniversal/sms/Manual%20SMS%20server.pdf</docsUrl>
+    <bugTrackerUrl>http://www.gsm-sprut.com/forum/</bugTrackerUrl>
+    <tags>sms sprut-universal rcom r-com admin</tags>
+    <summary>Sprut SMS Server allow you send SMS notifications via Sprut Universal.</summary>
+    <description>Sprut SMS Server allow you send SMS notifications via Sprut Universal. With availability to view replies it is useful in sending targeted notifications as well as in gatering mentions in marketing.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

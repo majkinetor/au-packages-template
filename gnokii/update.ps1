@@ -11,13 +11,15 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$URL32 = 'https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip'
-	Get-ChocolateyWebFile 'steamcmd' "$env:TMP\steamcmd.zip" $URL32
-    Get-ChocolateyUnzip "$env:TMP\steamcmd.zip" "$env:TMP" -SpecificFolder "steamcmd.exe"
+	git clone --depth=1 https://git.savannah.gnu.org/git/gnokii.git
+	cd gnokii
+	git fetch --depth=1 --tags
+	$version = (git tag --sort=-v:refname -l 'rel_*')[0].replace('rel_', '').replace('_', '.')
+	$URL32 = "https://gnokii.org/download/gnokii/binaries/win32/gnokii-$version-release-setup.msi"
 	
 	@{
         URL32   = $URL32
-        Version = (Get-Item "$env:TMP\steamcmd.exe").VersionInfo.ProductVersion
+        Version = $version
     }
 }
 

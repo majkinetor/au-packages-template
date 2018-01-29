@@ -11,13 +11,13 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$URL32 = 'https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip'
-	Get-ChocolateyWebFile 'steamcmd' "$env:TMP\steamcmd.zip" $URL32
-    Get-ChocolateyUnzip "$env:TMP\steamcmd.zip" "$env:TMP" -SpecificFolder "steamcmd.exe"
+	$URL32 = 'http://www.gsm-sprut.com/files/file/SprutUniversal/sms/smsserver.zip'
+    Get-ChocolateyWebFile 'sprut-sms-server' "$env:TMP\smsserver.zip" $URL32
+    Get-ChocolateyUnzip "$env:TMP\smsserver.zip" "$env:TMP" -SpecificFolder "sms_server_setup.exe"
 	
 	@{
         URL32   = $URL32
-        Version = (Get-Item "$env:TMP\steamcmd.exe").VersionInfo.ProductVersion
+        Version = (Get-Item "$env:TMP\sms_server_setup.exe").VersionInfo.ProductVersion
     }
 }
 
