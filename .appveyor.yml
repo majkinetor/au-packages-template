@@ -31,10 +31,6 @@ environment:
   mail_port: 587
   mail_enablessl: true
 
-  # Chocolatey API key - to push updated packages
-  api_key:
-    secure: YOUR_CHOCO_API_KEY_HERE_ENCRYPTED_STRING # https://ci.appveyor.com/tools/encrypt
-
 init:
 - git config --global user.email "chocolatey@realdimensions.net"
 - git config --global user.name "Chocolatey"
