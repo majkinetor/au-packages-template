@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>foldersizes</id>
-    <version>8.3.150.0</version>
+    <version>8.4.155</version>
     <packageSourceUrl>https://github.com/galeksandrp/chocolatey-packages/tree/foldersizes</packageSourceUrl>
     <owners>galeksandrp</owners>
     <title>FolderSizes (Install)</title>
