@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>beyondcompare</id>
-    <version>4.2.3.22587</version>
+    <version>4.2.4.22795</version>
     <title>Beyond Compare</title>
     <authors>Scooter Software</authors>
     <owners>Miguel Madero, Brendan Forster, David Gardiner</owners>
@@ -15,22 +15,28 @@
     <copyright>© 1996-2017 Scooter Software Inc</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>File comparison tool</summary>
-    <description>Beyond Compare is focused.
-	
-Beyond Compare allows you to quickly and easily compare your files and folders. By using simple, powerful commands you can focus on the differences you're interested in and ignore those you're not.  You can then merge the changes, synchronize your files, and generate reports for your records.
-	
-This is the trial version of Beyond Compare. It will work for 30 days, and after that it requires a license.
-	
-### Package Specific
+    <description><![CDATA[This is the code I use to publish the BeyondCompare package to Chocolatey. 
 
-#### Package Parameters
-The following package parameters can be set:
+It's actually really easy. 
 
- * `/UICulture` - Use Get-UICulture instead of Get-Culture 
+ 1. Follow the instructions on [chocolatey.org](http://chocolatey.org/) to setup Chocolatey
+ 2. Clone this repository and navigate to the folder in Powershell
+ 3. `Build.ps1` to create the package
+ 4. `cinst beyondcompare -Source "full-directory-path"` to install it locally
 
-These parameters can be passed to the installer with the use of `--params`.
-For example: `--params "'/UICulture'"`.	
-	</description>
+And you're done!
+
+## BeyondCompare has been updated! Help!
+
+When a new release of BeyondCompare is out in the wild, updating this package is easy:
+
+ 1. Fork this repository to your local environment
+ 2. Run the `.\Update-Version.ps1` to update the package artifacts
+ 3. Commit the changes to a branch and push it to your fork
+ 3. Submit a pull request
+
+After I merge the pull request, I'll publish a new release to Chocolatey so they can review it.
+]]></description>
     <tags>compare beyondcompare beyond file diff difference trial admin</tags>
     <releaseNotes>https://www.scootersoftware.com/download.php?zz=v4changelog</releaseNotes>
     <dependencies>
