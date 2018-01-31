@@ -4,7 +4,7 @@
   <metadata>
     <id>3proxy</id>
     <version>0.8.11</version>
-    <packageSourceUrl>https://github.com/galeksandrp/chocolatey-packages/tree/3proxy</packageSourceUrl>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/3proxy</packageSourceUrl>
     <owners>galeksandrp</owners>
     <title>3proxy</title>
     <authors>3APA3A, Vladimir Dubrovin</authors>

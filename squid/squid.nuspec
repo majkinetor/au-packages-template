@@ -3,7 +3,7 @@
   <metadata>
     <id>squid</id>
     <version>3.5.27</version>
-    <packageSourceUrl>https://github.com/galeksandrp/chocolatey-packages/tree/squid</packageSourceUrl>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/squid</packageSourceUrl>
     <owners>galeksandrp</owners>
     <title>Squid (Install)</title>
     <authors>Duane Wessels, Henrik Nordström, Amos Jeffries, Alex Rousskov, Francesco Chemolli, Robert Collins, Guido Serassio and volunteers</authors>

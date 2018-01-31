@@ -4,7 +4,7 @@
   <metadata>
     <id>sprut-sms-client</id>
     <version>3.0</version>
-    <packageSourceUrl>https://github.com/galeksandrp/chocolatey-packages/tree/sprut-sms-client</packageSourceUrl>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/sprut-sms-client</packageSourceUrl>
     <owners>galeksandrp</owners>
     <title>Sprut SMS Client (Install)</title>
     <authors>RCOM company</authors>

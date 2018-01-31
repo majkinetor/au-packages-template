@@ -3,7 +3,7 @@
   <metadata>
     <id>sbis-plugin</id>
     <version>3.18.58.8</version>
-    <packageSourceUrl>https://github.com/galeksandrp/chocolatey-packages/tree/sbis-plugin</packageSourceUrl>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/sbis-plugin</packageSourceUrl>
     <owners>galeksandrp</owners>
     <title>SBIS Plugin (Install)</title>
     <authors>Тензор</authors>

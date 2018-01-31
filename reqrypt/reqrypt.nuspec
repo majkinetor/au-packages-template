@@ -4,7 +4,7 @@
   <metadata>
     <id>reqrypt</id>
     <version>1.3.1</version>
-    <packageSourceUrl>https://github.com/galeksandrp/chocolatey-packages/tree/reqrypt</packageSourceUrl>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/reqrypt</packageSourceUrl>
     <owners>galeksandrp</owners>
     <title>ReQrypt (Install)</title>
     <authors>basil</authors>

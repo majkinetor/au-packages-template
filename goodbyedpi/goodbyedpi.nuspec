@@ -4,7 +4,7 @@
   <metadata>
     <id>goodbyedpi</id>
     <version>0.1.4</version>
-    <packageSourceUrl>https://github.com/galeksandrp/chocolatey-packages/tree/goodbyedpi</packageSourceUrl>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/goodbyedpi</packageSourceUrl>
     <owners>galeksandrp</owners>
     <title>GoodbyeDPI</title>
     <authors>ValdikSS</authors>

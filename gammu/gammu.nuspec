@@ -4,7 +4,7 @@
   <metadata>
     <id>gammu</id>
     <version>1.39.0</version>
-    <packageSourceUrl>https://github.com/galeksandrp/chocolatey-packages/tree/gammu</packageSourceUrl>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/gammu</packageSourceUrl>
     <owners>galeksandrp</owners>
     <title>Gammu (Install)</title>
     <authors>Michal Čihař</authors>

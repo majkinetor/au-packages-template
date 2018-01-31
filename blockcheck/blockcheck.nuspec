@@ -4,7 +4,7 @@
   <metadata>
     <id>blockcheck</id>
     <version>0.0.9.6</version>
-    <packageSourceUrl>https://github.com/galeksandrp/chocolatey-packages/tree/blockcheck</packageSourceUrl>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/blockcheck</packageSourceUrl>
     <owners>galeksandrp</owners>
     <title>BlockCheck</title>
     <authors>ValdikSS</authors>

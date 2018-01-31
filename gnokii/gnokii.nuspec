@@ -4,7 +4,7 @@
   <metadata>
     <id>gnokii</id>
     <version>0.6.31</version>
-    <packageSourceUrl>https://github.com/galeksandrp/chocolatey-packages/tree/gnokii</packageSourceUrl>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/gnokii</packageSourceUrl>
     <owners>galeksandrp</owners>
     <title>Gnokii (Install)</title>
     <authors>gnokii project</authors>

@@ -4,7 +4,7 @@
   <metadata>
     <id>popcorn-time</id>
     <version>0.3.10</version>
-    <packageSourceUrl>https://github.com/galeksandrp/chocolatey-packages/tree/popcorn-time</packageSourceUrl>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/popcorn-time</packageSourceUrl>
     <owners>galeksandrp</owners>
     <title>Popcorn Time (Install)</title>
     <authors>Popcorn Time Team</authors>
