@@ -4,7 +4,7 @@
   <metadata>
     <id>tangible-t4-vs2017</id>
     <version>2.4.0</version>
-    <packageSourceUrl>https://github.com/flcdrg/au-packages/tangible-t4-vs2017</packageSourceUrl>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/tangible-t4-vs2017</packageSourceUrl>
     <owners>flcdrg</owners>
     <title>tangible T4 Editor plus modeling tools for VS 2017</title>
     <authors>tangible engineering GmbH</authors>

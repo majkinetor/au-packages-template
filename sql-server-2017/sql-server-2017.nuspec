@@ -4,7 +4,7 @@
   <metadata>
     <id>sql-server-2017</id>
     <version>14.0.1000</version>
-    <packageSourceUrl>https://github.com/flcdrg/au-packages/sql-server-2017</packageSourceUrl>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/sql-server-2017</packageSourceUrl>
     <owners>flcdrg</owners>
     <title>Microsoft SQL Server 2017 Developer Edition</title>
     <authors>Microsoft Corporation</authors>

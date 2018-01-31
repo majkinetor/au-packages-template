@@ -11,7 +11,7 @@
     <licenseUrl>http://www.scootersoftware.com/index.php?zz=kb_licensev4</licenseUrl>
     <docsUrl>http://www.scootersoftware.com/v4help/</docsUrl>
     <mailingListUrl>http://www.scootersoftware.com/vbulletin/</mailingListUrl>
-    <packageSourceUrl>https://github.com/flcdrg/au-packages/beyondcompare</packageSourceUrl>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/beyondcompare</packageSourceUrl>
     <copyright>© 1996-2017 Scooter Software Inc</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>File comparison tool</summary>
