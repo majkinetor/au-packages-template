@@ -5,7 +5,7 @@
     <title>CounterPath X-Lite</title>
     <version>5.0.1.86895</version>
     <authors>CounterPath</authors>
-    <owners>fdcastel</owners>
+    <owners>fdcastel, flcdrg</owners>
     <summary>CounterPath X-Lite Softphone</summary>
     <description>Combining voice and video calls in a user-friendly interface, CounterPath's X-Lite helps you seamlessly transition from a traditional phone environment into the world of Voice over IP.</description>
     <projectUrl>http://www.counterpath.com/x-lite/</projectUrl>
@@ -16,7 +16,7 @@
     <licenseUrl>http://www.counterpath.com/eula/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>http://www.counterpath.com/assets/images/product_subpage_marquee/marquee_desktop_xlite.jpg</iconUrl>
-    <packageSourceUrl>https://github.com/fdcastel/chocolatey-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/x-lite</packageSourceUrl>
     <dependencies>
       <dependency id="vcredist2012" version="11.0.61031" />
       <dependency id="vcredist2013" version="12.0.30501.20150616" />
