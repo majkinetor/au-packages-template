@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>kontur-addtotrusted.portable</id>
+    <version>2.0.17.7</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/kontur-addtotrusted.portable</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>Kontur.AddToTrusted</title>
+    <authors>ЗАО "ПФ "СКБ Контур"</authors>
+    <projectUrl>https://install.kontur.ru/</projectUrl>
+    <iconUrl>https://kontur.ru/theme/ver-1321485457/common/images/logo_social.png</iconUrl>
+    <copyright>Copyright (c) 2010-2017 ЗАО "ПФ "СКБ Контур"</copyright>
+    <licenseUrl>https://install.kontur.ru/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://www.kontur-extern.ru/support/utilities</docsUrl>
+    <bugTrackerUrl>https://kontur.ru/support</bugTrackerUrl>
+    <tags>crypto office digital-signature signature gost cades bookkeeping kontur</tags>
+    <summary>Kontur.AddToTrusted is a tool for installing Kontur websites to IE Trust Zone</summary>
+    <description>Kontur.AddToTrusted is a tool for installing Kontur websites to IE Trust Zone, such sites using GOST powered single sign on by digital signature certificate</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
