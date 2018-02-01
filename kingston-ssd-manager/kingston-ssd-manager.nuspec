@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>kingston-ssd-manager</id>
+    <version>1.1.0.5</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/kingston-ssd-manager</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>Kingston SSD Manager (Install)</title>
+    <authors>Kingston Technology Corporation</authors>
+    <projectUrl>https://www.kingston.com/support/technical/ssdmanager</projectUrl>
+    <iconUrl>https://media.kingston.com/images/kingston-technology-company.png</iconUrl>
+    <copyright>Copyright (c) 2017 Kingston Technology Corporation</copyright>
+    <licenseUrl>https://www.kingston.com/company/privacy</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://media.kingston.com/support/downloads/KSM-UG.pdf</docsUrl>
+    <bugTrackerUrl>https://www.kingston.com/support</bugTrackerUrl>
+    <tags>kingston ssd manager kingston-ssd ssd-manager smart admin</tags>
+    <summary>Kingston® SSD Manager is an application that provides users with the ability to monitor and manage various aspects of their Kingston® Solid State Drive</summary>
+    <description>Kingston® SSD Manager is an application that provides users with the ability to monitor and manage various aspects of their Kingston® Solid State Drive.
+
+With Kingston® SSD Manager you will be able to:
+
+Monitor drive health, status, and disk usage
+View drive identification data including model name, serial number, firmware version, and other relevant information
+Utilize Self-Monitoring, Analysis, and Reporting Technology (SMART) and export detailed reports in text format
+Update drive firmware
+Securely erase data
+Manage TCG Opal and IEEE 1667</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

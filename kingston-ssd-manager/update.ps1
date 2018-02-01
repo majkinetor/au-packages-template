@@ -11,13 +11,12 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$URL32 = 'http://www.gsm-sprut.com/files/file/SprutUniversal/sms/smsserver.zip'
-    Get-ChocolateyWebFile 'sprut-sms-client' "$env:TMP\smsserver.zip" $URL32
-    Get-ChocolateyUnzip "$env:TMP\smsserver.zip" "$env:TMP" -SpecificFolder "sms_client_setup.exe"
+	$URL32 = 'https://media.kingston.com/support/downloads/KSM-setup.exe'
+    Get-ChocolateyWebFile 'kingston-ssd-manager' $URL32 -FileFullPath "$env:TMP\KSM-setup.exe"
 	
 	@{
         URL32   = $URL32
-        Version = (Get-Item "$env:TMP\sms_client_setup.exe").VersionInfo.ProductVersion.trim()
+        Version = (Get-Item "$env:TMP\KSM-setup.exe").VersionInfo.ProductVersion.trim()
     }
 }
 
