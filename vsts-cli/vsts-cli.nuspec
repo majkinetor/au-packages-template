@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>vsts-cli</id>
+    <version>0.1.0-b1</version>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/vsts-cli</packageSourceUrl>
+    <owners>flcdrg</owners>
+    <title>VSTS CLI</title>
+    <authors>Microsoft Corporation</authors>
+    <projectUrl>https://docs.microsoft.com/en-us/cli/vsts/overview?view=vsts-cli-latest</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/flcdrg/au-packages/master/vsts-cli/iconsVstsCli.png</iconUrl>
+    <copyright>2017, Microsoft Corporation</copyright>
+    <licenseUrl>https://aka.ms/vsts-cli-eula</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/Microsoft/vsts-cli</projectSourceUrl>
+    <docsUrl>https://docs.microsoft.com/en-us/cli/vsts/get-started?view=vsts-cli-latest</docsUrl>
+    <mailingListUrl>https://developercommunity.visualstudio.com/spaces/21/index.html?page=1&amp;pageSize=15&amp;sort=votes</mailingListUrl>
+    <bugTrackerUrl>https://github.com/Microsoft/vsts-cli/issues</bugTrackerUrl>
+    <tags>VSTS Git TFS</tags>
+    <summary>VSTS CLI is a command line interface for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)</summary>
+    <description>VSTS CLI is Visual Studio Team Services (VSTS) new command line experience for managing VSTS resources. You can install it on macOS, Linux, and Windows and run it from the command line.
+
+VSTS CLI is optimized for managing and administering VSTS resources from the command line, and for building automation scripts that work against your VSTS or Team Foundation Server account. This article helps get you started using it, and teaches you the core concepts behind it.
+
+VSTS CLI is supported on Team Foundation Server 2017 update 2 and later.</description>
+    <releaseNotes>This is the preview release of VSTS CLI. Preview applies to these command modules:
+
+    Build (commands to work with and manage Visual Studio Team Services builds.)
+    Code (commands to work with and manage Visual Studio Team Services code repositories.)
+    Project (commands to work with and manage Visual Studio Team Services team projects.)
+    Work (commands to work with and manage Visual Studio Team Services work items.)
+
+These command modules can be used in production and are supported by standard Microsoft SLA. You can ask questions and report issues on the VSTS developer community website using the vsts-cli tag. You can provide feedback from the command line with the vsts feedback command.
+
+The commands in these modules are stable and the syntax is not expected to change in upcoming releases of this version of VSTS CLI.</releaseNotes>
+
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
