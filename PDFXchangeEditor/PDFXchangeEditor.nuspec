@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>PDFXchangeEditor</id>
-    <version>7.0.324.0</version>
+    <version>7.0.324.1</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/PDFXchangeEditor</packageSourceUrl>
     <owners>flcdrg, calwell</owners>
     <title>PDF-XChange Editor</title>
@@ -35,63 +35,10 @@ For example: `-params '"/NoDesktopShortcuts"'`.
 
 </description>
     <releaseNotes><![CDATA[Requires maintenance through 2018-02-01
-#### Newly added feature
-
-* Added 'Places' and 'Sections' groups to the Bookmarks View. (T# 3727) ([27448](http://www.tracker-software.com/forum3/viewtopic.php?t=27448))
-* Added functionality to edit the portfolio schema and string and number values of Portfolio files.
-* Added support of setting the doc.viewState property. (T# 3971)
-* Added functionality to save documents to different formats through the 'Places' feature.
-* Added 'KeyTips' feature for toolbars and menus in the Ribbon/Classic UI. Press Alt to activate/use this feature.
-* Added the option of dropping commands into empty Ribbon Tabs during UI customization.
-* Added the 'chevron' feature for standard toolbars in the Classic UI. ([30096](http://www.tracker-software.com/forum3/viewtopic.php?t=30096))
-* Added the option of renaming custom toolbars through their context menu.
-* Added ability to work with long named files - it is now possible to open and process files with long filenames (length > 260) from the Command Line.
-* Added functionality that enables the use of the mouse wheel to scroll though Ribbon tabs. (T# 4161)
-* Added the option of using the Esc key to close comment pop-ups.
-* Added the option of hiding bar titles in Ribbon panes, which helps in reducing their height. This option is available in the Options tab of the Customize Toolbars dialog box.
-* SharePoint: added the option of working with List Attachments and internal site folders and documents.
-* SharePoint: added functionality to change options for import/export convertors in the Open/Save File dialog box.
-* SharePoint: added auto-complete of file extensions via selected format in Open/Save File dialog box.
-* DropBox: added functionality to change options for import/export convertors in the Open/Save File dialog box.
-* DropBox: added auto-complete of file extensions via selected format in Open/Save File dialog box.
-
 #### A reported error or bug was fixed
 
-* Reduced file size when embedding TTF fonts. (T# 4183)
-* Fixed the issue with the 'Resize Pages' feature in cases where it is set to the size of the current Page Box. ([22812](http://www.tracker-software.com/forum3/viewtopic.php?t=22812))
-* Fixed the issue with the 'Do not OCR pages with text' option in cases where all pages contain text. ([30230](http://www.tracker-software.com/forum3/viewtopic.php?t=30230))
-* Fixed the Alt key issue with the Bookmark Plugin menu string and updated the Custom Scan icon. ([30283](http://www.tracker-software.com/forum3/viewtopic.php?t=30283))
-* Added a 'Duplicate' command to the Arrange submenu for selected comments. ([30300](http://www.tracker-software.com/forum3/viewtopic.php?t=30300))
-* Fixed the 'OCR Pages' issue in which the incorrect language was being used. (T# 4218) ([30402](http://www.tracker-software.com/forum3/viewtopic.php?t=30402))
-* Improved XFA forms support. (T# 3084,2883,2640,2531,3630,3904,3956,3907,3460,4189)
-* Fixed the issue with printing some XForms, annotations and rotated images. (T# 3993)
-* Fixed security checking in some JS methods.
-* Fixed the issue with importing some combo box values. (T# 3593)
-* Fixed the TWAIN scan issue for Epson XP-440 printers.
-* Improved the Shell Extensions - zoom parameters are now stored when users switch between documents.
-* Fixed the Shell Extensions Setup issues.
-* Fixed the issue with self-printing documents in Internet Explorer - in cases where the Security Settings permit it.
-* Fixed a couple of issues with the use of temporary files. PDF-XChange Editor is now more accurate when using temp. data.
-* Fixed the issue with long opening times of some network shares, such as \\share\dir\..\doc.pdf.
-* Fixed the issue that was present when Editor's window was maximized and the Taskbar was set to auto-hide. (T# 4134)
-* Fixed the issue with adding items with dropdowns to toolbars/menus. (T# 4171)
-* Fixed the main window maximization issue when the top border of windows is double-clicked. The window now maximizes vertically.
-* Fixed the issue with handling relative paths inside documents in the context of the IE-plugin.
-* Fixed difficult to reproduce crash identified in the Ribbon's File menu.
-* SharePoint: fixed the 'Online Authentication' dialog box in cases where the authenticated user belongs to a different organization and needs to be logged out.
-* SharePoint: fixed the deadlock on cancellation of the Open/Save File dialog box when folder content is being loaded from the server.
-* SharePoint: fixed the conversion of PDF documents to other formats when saving to SharePoint.
-* DropBox: fixed the conversion of PDF documents to other formats when saving to DropBox.
-
-#### Changed, reviewed, modified feature
-
-* Added percentage as a value option in the Resize Pages dialog box. (T# 3972) ([29375](http://www.tracker-software.com/forum3/viewtopic.php?t=29375))
-* Changed the process of saving 'Launch' actions. (T# 3811)
-* Improved the Google Drive plugin UI and fixed multiple associated minor issues.
-* SharePoint: improved the algorithm that detects SharePoint and non-SharePoint files when opening documents from URLs.
-* SharePoint: improved the display of user information when SharePoint documents are checked out to other users: it now shows the user's name and/or e-mail.
-* SharePoint: several additional minor fixes and improvements.
-* DropBox: several additional minor fixes and improvements.]]></releaseNotes>
+* Fixed issue with handling ALT key in Full Screen mode. ([30443](http://www.tracker-software.com/forum3/viewtopic.php?t=30443))
+]]></releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
