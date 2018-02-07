@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>PDFXchangeEditor</id>
-    <version>7.0.324.1</version>
+    <version>7.0.324.2</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/PDFXchangeEditor</packageSourceUrl>
     <owners>flcdrg, calwell</owners>
     <title>PDF-XChange Editor</title>
@@ -35,9 +35,14 @@ For example: `-params '"/NoDesktopShortcuts"'`.
 
 </description>
     <releaseNotes><![CDATA[Requires maintenance through 2018-02-01
+#### Newly added feature
+
+* Added option to disable Keytips in Classic Toolbars/Menu mode (see Customize Toolbars > Options). ([30442](http://www.tracker-software.com/forum3/viewtopic.php?t=30442))
+
 #### A reported error or bug was fixed
 
-* Fixed issue with handling ALT key in Full Screen mode. ([30443](http://www.tracker-software.com/forum3/viewtopic.php?t=30443))
+* Fixed conflict between KeyTips and entering special symbols by Alt+numPadKeys. ([30454](http://www.tracker-software.com/forum3/viewtopic.php?t=30454))
+* Resolved issue when part of content was not printed in some documents. (T# 4228)
 ]]></releaseNotes>
   </metadata>
   <files>
