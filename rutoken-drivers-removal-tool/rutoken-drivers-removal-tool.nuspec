@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>rutoken-drivers-removal-tool</id>
+    <version>4.3.2.0</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/rutoken-drivers-removal-tool</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>Rutoken Drivers Removal Tool</title>
+    <authors>Компания «Актив»</authors>
+    <projectUrl>https://www.rutoken.ru/support/download/drivers-for-windows/</projectUrl>
+    <iconUrl>https://www.rutoken.ru/images/logo.png</iconUrl>
+    <copyright>Copyright 1994-2017 (c) Компания «Актив»</copyright>
+    <licenseUrl>https://download.rutoken.ru/License_Agreement.pdf</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://www.rutoken.ru/manual/RutokenHowToUse.pdf</docsUrl>
+    <bugTrackerUrl>https://www.rutoken.ru/support/feedback/</bugTrackerUrl>
+    <tags>crypto office digital-signature signature gost cades bookkeeping rutoken aktiv</tags>
+    <summary>Rutoken Drivers Removal Tool is a utility for forced removal of Rutoken Drivers</summary>
+    <description>Rutoken Drivers Removal Tool is a utility applicable in case when unable to uninstall earlier version of Rutoken Drivers by operating system default uninstall method.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>rutoken-ecp-flash-utility</id>
+    <version>2.1.4.141</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/rutoken-ecp-flash-utility</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>Rutoken ECP Flash Utility</title>
+    <authors>Компания «Актив»</authors>
+    <projectUrl>https://www.rutoken.ru/support/download/drivers-for-windows/</projectUrl>
+    <iconUrl>https://www.rutoken.ru/images/logo.png</iconUrl>
+    <copyright>Copyright 1994-2017 (c) Компания «Актив»</copyright>
+    <licenseUrl>https://download.rutoken.ru/License_Agreement.pdf</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://www.rutoken.ru/manual/RutokenHowToUse.pdf</docsUrl>
+    <bugTrackerUrl>https://www.rutoken.ru/support/feedback/</bugTrackerUrl>
+    <tags>crypto office digital-signature signature gost cades bookkeeping rutoken aktiv</tags>
+    <summary>Rutoken ECP Flash Utility is a utility for pre-sale configuration of Rutoken ECP tokens</summary>
+    <description>Rutoken ECP Flash Utility is a utility for pre-sale configuration of Rutoken ECP flash for engineers of CA. With help of this utility Flash-storage of device can be split to two parts, one of them emulating CD-ROM.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
