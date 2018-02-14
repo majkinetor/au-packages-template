@@ -1,8 +1,8 @@
 ﻿$packageArgs = @{
   packageName            = "$env:chocolateyPackageName"
   FileFullPath                = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)\DWS_Lite.exe"
-  url                    = 'https://github.com/Nummer/Destroy-Windows-10-Spying/releases/download/1.6.722/DWS_Lite.exe'
-  checksum               = '0f99eaf92a96c7103a971acfbf6d13cf84f504a5049ee0619bf55bcf89cef53b'
+  url                    = 'https://github.com/Nummer/Destroy-Windows-10-Spying/releases/download/1.7.1.0/DWS.exe'
+  checksum               = '2bfc72791f0e222a790e88895a143aac02c1c67ffc3f663cfb5c2461683d96b4'
   checksumType           = 'sha256'
 }
 Get-ChocolateyWebFile @packageArgs
