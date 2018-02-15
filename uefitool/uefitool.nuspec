@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>uefitool</id>
+    <version>0.22.1</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/uefitool</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>UEFITool</title>
+    <authors>Nikolaj Schlej</authors>
+    <projectUrl>https://github.com/LongSoft/UEFITool</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/LongSoft/UEFITool/master/uefitool.ico</iconUrl>
+    <copyright>Copyright (c) 2015, Nikolaj Schlej</copyright>
+    <licenseUrl>https://github.com/LongSoft/UEFITool/blob/master/LICENSE.md</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/LongSoft/UEFITool</projectSourceUrl>
+    <docsUrl>https://github.com/LongSoft/UEFITool/blob/master/README.rst</docsUrl>
+    <bugTrackerUrl>https://github.com/LongSoft/UEFITool/issues</bugTrackerUrl>
+    <tags>uefitool uefi tool uefi-tool efi phoenixtool phoenix-tool uefipatch uefi patch uefi-patch</tags>
+    <summary>UEFITool is a cross-platform C++/Qt program for parsing, extracting and modifying UEFI firmware images</summary>
+    <description>UEFITool is a cross-platform C++/Qt program for parsing, extracting and modifying UEFI firmware images.
+It supports parsing of full BIOS images starting with the flash descriptor or any binary files containing UEFI volumes.
+Original development was started here at MDL forums as a cross-platform analog to PhoenixTool's structure mode with some additional features, but the program's engine was proven to be usefull for another projects like UEFIPatch, UBU and OZMTool.</description>
+    <releaseNotes>https://github.com/LongSoft/UEFITool/releases</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
