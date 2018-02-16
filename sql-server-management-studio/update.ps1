@@ -65,7 +65,7 @@ function global:au_GetLatest {
         $content = $response.Content
 
         # The version number for this latest preview is: 13.0.12000.65
-        $isMatch = $content -match "(The release number: (?<release>\d+\.\d+(\.\d+){0,2}))\s*(The build number for this release).*: (?<version>\d+\.\d+\.\d+\.\d+)"
+        $isMatch = $content -match "([Rr]elease number: (?<release>\d+\.\d+(\.\d+){0,2}))\s*([Bb]uild number for this release).*: (?<version>\d+\.\d+\.\d+\.\d+)"
 
         if ($isMatch)
         {
