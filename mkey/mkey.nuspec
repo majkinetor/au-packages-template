@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>mkey</id>
+    <version>1.3.5.0</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/mkey</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>MKey (Install)</title>
+    <authors>SerioSoft</authors>
+    <projectUrl>http://www.seriosoft.org/en/</projectUrl>
+    <iconUrl>http://www.seriosoft.org/en/img/si_klava.png</iconUrl>
+    <copyright>Copyright (c) 2004-2015 SerioSoft</copyright>
+    <licenseUrl>https://choosealicense.com/no-permission/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>http://www.seriosoft.org/en/screens.php</docsUrl>
+	<mailingListUrl>http://www.seriosoft.org/en/</mailingListUrl>
+    <bugTrackerUrl>http://www.seriosoft.org/forum/index.php</bugTrackerUrl>
+    <tags>mkey multimedia keyboard multimedia-keyboard multimedia-key multimedia-keys admin</tags>
+    <summary>The main purpose of MKey (MediaKey) is configuration actions when you press on additional keys of multimedia keyboards</summary>
+    <description>Nowadays multimedia keyboards (with a lot of additional keys) are common, but usually these keys doesn’t perform any actions. With MKey user can use these keys to perform various actions.
+
+The main purpose of MKey (MediaKey) is configuration actions when you press on additional keys of multimedia keyboards.
+This program is also used when working with default keyboards without additional keys.
+It is possible to assign keyboard shortcuts combined with modifiers Ctrl, Shift, Win and Alt.
+
+It is a good alternative to programs that default supplied with most of keyboards.
+
+With the ability to use plugins MKey also works with mouse, remote control via WinLirc and with other input devices.</description>
+    <releaseNotes>http://www.seriosoft.org/history.php</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
