@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>smf-player</id>
+    <version>1.0.0.0</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/smf-player</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>SMF Player</title>
+    <authors>Roland Corporation</authors>
+    <projectUrl>https://www.roland.com/global/support/by_product/quad-capture/updates_drivers/d9e54197-dd1d-4100-b56d-21e4c759f691/</projectUrl>
+    <iconUrl>https://static.roland.com/global/css/fonts/roland.svg</iconUrl>
+    <copyright>Copyright (c) 2018 Roland Corporation</copyright>
+    <licenseUrl>https://www.roland.com/global/support/by_product/quad-capture/updates_drivers/d9e54197-dd1d-4100-b56d-21e4c759f691/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://www.roland.com/global/support/by_product/quad-capture/updates_drivers/d9e54197-dd1d-4100-b56d-21e4c759f691/</docsUrl>
+    <tags>smf player smf-player roland-smf-player updsmf updsmfj admin</tags>
+    <summary>SMF Player by Roland used for updating SMF music data</summary>
+    <description>UpdSMF is a simple SMF player.
+This SMF player is designed to be used only for updating, and cannot be used to play back conventional SMF music data.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
