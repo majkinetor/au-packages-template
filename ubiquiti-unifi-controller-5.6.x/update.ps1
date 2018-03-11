@@ -10,7 +10,7 @@ function global:au_GetLatest {
     }
 
     $response = Invoke-RestMethod -Uri "https://www.ubnt.com/download/?platform=unifi" -Headers $headers
-    $nextVersion = [version] "5.6.0.0"
+    $nextVersion = [version] "5.7.0.0"
     $download = $response.downloads | Where-Object { 
             $_.category__slug -eq "software" `
             -and $_.filename.EndsWith(".exe") `
@@ -45,7 +45,7 @@ function global:au_SearchReplace {
             "(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
             "(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
         }
-        "$($Latest.PackageName)-5.5.x.nuspec" = @{
+        "$($Latest.PackageName)-5.6.x.nuspec" = @{
             "(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"
         }
      }
