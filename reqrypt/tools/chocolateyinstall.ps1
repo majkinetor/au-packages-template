@@ -2,8 +2,8 @@
   packageName            = "$env:chocolateyPackageName"
   FileType               = 'exe'
   SilentArgs             = '/S'
-  url                    = 'https://reqrypt.org/download/reqrypt-1.3.1-win64-install.exe'
-  checksum               = '0f109c1c0ecb42dcaa4251a833c709de0979b6c4cb88b3712dc1c998b6c0c284'
+  url                    = 'https://github.com/basil00/reqrypt/releases/download/v1.4.0/reqrypt-1.4.0-win64-install.exe'
+  checksum               = '792464d0d587a87d3e5399ed290fe6f5b7c3cb6985d9152b3d55e0f6f8a22a77'
   checksumType           = 'sha256'
 }
 Install-ChocolateyPackage @packageArgs
