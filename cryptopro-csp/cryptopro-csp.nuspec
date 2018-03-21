@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>cryptopro-csp</id>
+    <version>4.0.9842.0</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/cryptopro-csp</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>CryptoPro CSP (Install)</title>
+    <authors>ООО "КРИПТО-ПРО"</authors>
+    <projectUrl>https://www.cryptopro.ru/products/csp</projectUrl>
+    <iconUrl>https://www.cryptopro.ru/sites/default/files/theme321_logo.png</iconUrl>
+    <copyright>Copyright (c) ООО "КРИПТО-ПРО", 2000-2017</copyright>
+    <licenseUrl>https://www.cryptopro.ru/download?pid=1417</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://www.cryptopro.ru/sites/default/files/docs/csp40/doc.zip</docsUrl>
+    <bugTrackerUrl>https://support.cryptopro.ru/</bugTrackerUrl>
+    <tags>cryptopro csp crypto gost digital-signature signature sign signing admin</tags>
+    <summary>CryptoPro CSP is a Cryptography Service Provider for GOST ecnryption alroritms</summary>
+    <description>CryptoPro CSP is a Cryptography Service Provider for GOST ecnryption alroritms on Windows</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
