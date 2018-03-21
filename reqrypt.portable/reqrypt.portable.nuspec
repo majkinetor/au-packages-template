@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>reqrypt.portable</id>
+    <version>1.3.1</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/reqrypt.portable</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>ReQrypt</title>
+    <authors>basil</authors>
+    <projectUrl>https://reqrypt.org/reqrypt.html</projectUrl>
+    <iconUrl>https://reqrypt.org/images/reqrypt.svg</iconUrl>
+    <copyright>Copyright (c) basil 2011-2018</copyright>
+    <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/basil00/reqrypt</projectSourceUrl>
+    <docsUrl>https://reqrypt.org/reqrypt-doc.html</docsUrl>
+    <bugTrackerUrl>https://github.com/basil00/reqrypt/issues</bugTrackerUrl>
+    <tags>reqrypt wfp windows-filtering-platform windivert dpi bypass dpi-bypass bypass-dpi censorship-circumvention anti-censorship anticensorship</tags>
+    <summary>ReQrypt is a tool for tunneling and encrypting web browser requests to hide them from local (e.g. router-level, or ISP-level) snooping and interception.</summary>
+    <description>ReQrypt is a tool for tunneling and encrypting web browser requests to hide
+them from local (e.g. router-level, or ISP-level) snooping and interception.
+ReQrypt is useful for bypassing ISP-level URL censorship/filtering/logging
+systems.
+
+Ordinarily, the HTTP request is sent directly to the web server, unencrypted.
+This means it may be read and/or intercepted by a local eavesdropper, such as
+your ISP, workplace, or shared family router.  However, with ReQrypt the
+outgoing HTTP requests are encrypted and tunneled, rendering them unreadable
+to any local eavesdropper.
+
+ReQrypt is effective against systems that only attack outbound HTTP requests
+only, and ignore inbound HTTP responses.  Such systems are very common is
+ISP-level censorship and logging systems, since processing URL traffic (HTTP
+requests) is significantly easier than processing web page responses.
+
+Finally, unlike proxies, VPNs, Tor, etc., ReQrypt is not an anonymity tool.
+It does not change the IP address of the tunneled packet.  This can be a good
+thing: it means the web responses are sent directly to your PC which means
+ReQrypt is typically faster than these other systems.
+</description>
+    <releaseNotes>https://github.com/basil00/reqrypt/releases</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

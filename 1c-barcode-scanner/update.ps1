@@ -13,11 +13,11 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 	$URL32 = 'https://its.1c.ru/db/files/1CITS/EXE/TradeWare/1C/ScanOPOS/ScanOPOS.exe'
     Get-ChocolateyWebFile '1c-barcode-scanner' "$env:TMP\1c-barcode-scanner.exe" $URL32
-    Get-ChocolateyUnzip "$env:TMP\1c-barcode-scanner.exe" "$env:TMP" -SpecificFolder "ScanOPOS.exe"
+    Get-ChocolateyUnzip "$env:TMP\1c-barcode-scanner.exe" "$env:TMP" -SpecificFolder "ScanOPOS"
 	
 	@{
         URL32   = $URL32
-        Version = (Get-Item "$env:TMP\ScanOPOS.exe").VersionInfo.ProductVersion.trim()
+        Version = (Get-Item "$env:TMP\ScanOPOS\ScanOPOS.exe").VersionInfo.ProductVersion.trim()
     }
 }
 
