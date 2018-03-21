@@ -56,7 +56,7 @@ install:
     
 build_script:
 - ps: >-
-    if (!$env:APPVEYOR_REPO_COMMIT_MESSAGE.Contains('[ci skiptest]')) {& "C:\Program Files\Git\usr\bin\bash" --login -c "git diff --name-only HEAD~ | grep '/' | cut -d '/' -f 1 | sort | uniq | xargs -i bash -c 'choco pack {}/{}.nuspec && choco install -s . --pre {} && choco uninstall {}'"}
+    if (!$env:APPVEYOR_REPO_COMMIT_MESSAGE.Contains('[ci skiptest]')) {& "C:\Program Files\Git\usr\bin\bash" --login -c "git diff --name-only --diff-filter=d HEAD~ | grep '/' | cut -d '/' -f 1 | sort | uniq | xargs -i bash -c 'choco pack {}/{}.nuspec && choco install -s . --pre {} && choco uninstall {}'"}
 - ps: |
     $ErrorActionPreference = 'Continue'
 
