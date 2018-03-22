@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>cpfixit</id>
+    <version>5.0.16772.0</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/cpfixit</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>cpfixit</title>
+    <authors>ООО "КРИПТО-ПРО"</authors>
+    <projectUrl>https://www.cryptopro.ru/downloads</projectUrl>
+    <iconUrl>https://www.cryptopro.ru/sites/default/files/theme321_logo.png</iconUrl>
+    <copyright>Copyright (c) ООО "КРИПТО-ПРО", 2000-2017</copyright>
+    <licenseUrl>https://www.cryptopro.ru/sites/default/files/docs/law/Licence_agreement.pdf</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://support.cryptopro.ru</bugTrackerUrl>
+    <tags>crypto cryptopro crypto-pro cpfixit digital-signature signature gost cades crypto cryptography</tags>
+    <summary>cpfixit utility intended for repairing corrupted security settings of CryptoPro registry trees</summary>
+    <description>cpfixit utility intended for repairing corrupted security settings of CryptoPro registry trees</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
