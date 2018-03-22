@@ -14,7 +14,7 @@ function global:au_GetLatest {
 	
 	@{
         URL32   = $release.assets.browser_download_url
-        Version = $release.tag_name
+        Version = $release.tag_name -replace '^v',''
     }
 }
 
