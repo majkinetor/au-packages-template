@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>stunnel-msspi</id>
+    <version>5.44.0.99</version>
+    <packageSourceUrl>https://github.com/galeksandrp/chocolatey-packages/tree/stunnel-msspi</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>stunnel-msspi</title>
+    <authors>Dmitrii Pichulin</authors>
+    <projectUrl>https://github.com/deemru/stunnel</projectUrl>
+    <iconUrl>https://www.cryptopro.ru/sites/default/files/theme321_logo.png</iconUrl>
+    <copyright>Copyright (c) 2016-2018 Dmitrii Pichulin</copyright>
+    <licenseUrl>https://github.com/deemru/stunnel/blob/master/COPYING</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/deemru/stunnel</projectSourceUrl>
+    <docsUrl>https://github.com/deemru/stunnel/releases/tag/stunnel-5.44-msspi-0.99</docsUrl>
+    <bugTrackerUrl>https://support.cryptopro.ru/</bugTrackerUrl>
+    <tags>stunnel msspi openssl sspi ssl tls tunnel gost crypto cryptography</tags>
+    <summary>stunnel-msspi brings a native support of operating system certificates and private keys in operating systems which supports SSPI</summary>
+    <description>stunnel-msspi brings a native support of operating system certificates and private keys in Windows and other operating systems which supports [SSPI](https://msdn.microsoft.com/en-us/library/windows/desktop/aa380493%28v=vs.85%29.aspx) for SSL/TLS connections.</description>
+    <releaseNotes>https://github.com/deemru/stunnel/releases</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
