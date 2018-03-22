@@ -16,7 +16,7 @@ function global:au_GetLatest {
 	
 	@{
         URL32   = $URL32
-        Version = (Get-Item "$env:TMP\td_eng.exe").VersionInfo.ProductVersion.trim()
+        Version = (Get-Item "$env:TMP\td_eng.exe").VersionInfo.ProductVersion.trim() -replace ', ','.'
     }
 }
 
