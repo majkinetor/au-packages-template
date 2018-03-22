@@ -13,14 +13,21 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$URL32 = 'https://ds-plugin.gosuslugi.ru/plugin/htdocs/plugin/IFCPlugin.msi'
-	$URL64 = 'https://ds-plugin.gosuslugi.ru/plugin/htdocs/plugin/IFCPlugin-x64.msi'
-    Get-ChocolateyWebFile 'foldersizes' $URL32 -FileFullPath "$env:TMP\cadesplugin.exe"
+	$URL32 = 'https://ds-plugin.gosuslugi.ru/plugin/upload/assets/distrib/IFCPlugin.msi'
+	$URL64 = 'https://ds-plugin.gosuslugi.ru/plugin/upload/assets/distrib/IFCPlugin-x64.msi'
+    Get-ChocolateyWebFile 'gosuslugi-plugin' $URL32 -FileFullPath "$env:TMP\IFCPlugin.msi"
+	$packageArgs = @{
+	  packageName            = "$env:chocolateyPackageName"
+	  FileType               = 'msi'
+	  SilentArgs             = '/qn /norestart'
+	  File                   = "$env:TMP\IFCPlugin.msi"
+	}
+	Install-ChocolateyInstallPackage @packageArgs
 	
 	@{
         URL32   = $URL32
 		URL64   = $URL64
-        Version = (Get-Item "$env:TMP\cadesplugin.exe").VersionInfo.ProductVersion
+        Version = (Get-UninstallRegistryKey -SoftwareName 'Плагин пользователя систем электронного правительства*').DisplayVersion
     }
 }
 
