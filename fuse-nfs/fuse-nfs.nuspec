@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>fuse-nfs</id>
+    <version>2.0.0</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/fuse-nfs</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>fuse-nfs</title>
+    <authors>Daniel Abrecht</authors>
+    <projectUrl>https://github.com/Daniel-Abrecht/fuse-nfs-crossbuild-scripts</projectUrl>
+    <iconUrl>https://avatars2.githubusercontent.com/u/10375108</iconUrl>
+    <copyright>Copyright (c) 2017 Daniel Abrecht</copyright>
+    <licenseUrl>https://github.com/Daniel-Abrecht/fuse-nfs-crossbuild-scripts/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/Daniel-Abrecht/fuse-nfs-crossbuild-scripts</projectSourceUrl>
+    <docsUrl>https://github.com/Daniel-Abrecht/fuse-nfs-crossbuild-scripts/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/Daniel-Abrecht/fuse-nfs-crossbuild-scripts/issues</bugTrackerUrl>
+    <tags>fuse-nfs fuse nfs fs filesystem vfs dokan</tags>
+    <summary>This is a fuse module that implements the NFS protocol.</summary>
+    <description>This is a fuse module that implements the NFS protocol.
+	
+Daniel Abrech (https://github.com/Daniel-Abrecht) has ported this fuse module
+  to windows using the dokany filesystem/fuse wrapper.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
