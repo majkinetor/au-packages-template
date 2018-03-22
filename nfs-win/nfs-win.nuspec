@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>nfs-win</id>
+    <version>1.0.17083</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/nfs-win</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>nfs-win (Install)</title>
+    <authors>Bill Zissimopoulos</authors>
+    <projectUrl>https://github.com/billziss-gh/nfs-win</projectUrl>
+    <copyright>Copyright (c) 2017 Bill Zissimopoulos</copyright>
+    <licenseUrl>https://github.com/billziss-gh/nfs-win/blob/master/License.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/billziss-gh/nfs-win</projectSourceUrl>
+    <docsUrl>https://github.com/billziss-gh/nfs-win/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/billziss-gh/nfs-win/issues</bugTrackerUrl>
+    <tags>nfs-win nfs fuse-nfs fuse fs vfs filesystem dokan admin</tags>
+    <summary>NFS-Win is a port of Ronnie Sahlberg's fuse-nfs project to Windows</summary>
+    <description>NFS-Win is a port of Ronnie Sahlberg's fuse-nfs project to Windows. Under the hood it uses Cygwin for the POSIX environment and WinFsp for the FUSE functionality.
+
+NFS-Win requires the latest version of WinFsp to be installed; you can find it here: http://www.secfs.net/winfsp/download/. It does not require Cygwin to be installed, all the necessary files are included in the NFS-Win installer.</description>
+    <releaseNotes>https://github.com/billziss-gh/nfs-win/releases/tag/v1.0.17083</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
