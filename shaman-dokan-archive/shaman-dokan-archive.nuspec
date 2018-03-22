@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>shaman-dokan-archive</id>
+    <version>1.0</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/shaman-dokan-archive</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>Shaman.Dokan.Archive</title>
+    <authors>Andrea Martinelli</authors>
+    <projectUrl>https://github.com/antiufo/Shaman.Dokan.Archive</projectUrl>
+    <iconUrl>https://shaman.io/favicon.ico</iconUrl>
+    <copyright>Copyright (c) 2017 Andrea Martinelli</copyright>
+    <licenseUrl>https://choosealicense.com/no-permission/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/antiufo/Shaman.Dokan.Archive</projectSourceUrl>
+    <docsUrl>https://github.com/antiufo/Shaman.Dokan.Archive/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/antiufo/Shaman.Dokan.Archive/issues</bugTrackerUrl>
+    <tags>shaman dokan archive fs vfs filesystem mount</tags>
+    <summary>Mounts 7z/zip/rar files on Windows</summary>
+    <description>Mounts 7zip/ZIP/RAR files (read only).
+
+Usage: Shaman.Dokan.Archive.exe &lt;path-to-archive&gt; [--open]
+
+The archive is mounted in C:\DokanFs\path-to-archive. When --open is specified, the mounted folder is opened in Explorer.
+
+Supports all the formats supported by 7zip.
+
+Download: Shaman.Dokan.Archive. Requires Dokan.</description>
+    <releaseNotes>https://github.com/antiufo/Shaman.Dokan.Archive/releases/tag/1.0</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
