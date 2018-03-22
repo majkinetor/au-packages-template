@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>lissi-csp</id>
+    <version>2.0.0.1</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/lissi-csp</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>LISSI-CSP (Install)</title>
+    <authors>ООО "ЛИССИ-Софт"</authors>
+    <projectUrl>http://soft.lissi.ru/ls_product/skzi/lissi-csp/</projectUrl>
+    <iconUrl>http://soft.lissi.ru/images/lirssl_csp/lirssl_csp.png</iconUrl>
+    <copyright>Copyright (c) 2002-2017. ООО "ЛИССИ-Софт"</copyright>
+    <licenseUrl>http://soft.lissi.ru/docs/lissi_csp_docs/Licenzionnoe_soglashenie.docx</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>http://soft.lissi.ru/downloads/download_lissi_csp/</docsUrl>
+	<bugTrackerUrl>http://soft.lissi.ru/about/contact/</bugTrackerUrl>
+    <tags>lissi-csp lissi csp cryptography crypto cryptoprovider provider lirssl-csp lirssl lissi-soft lissi soft gost admin</tags>
+    <summary>LISSI-CSP enables usage of GOST encryption algoritms in Windows cryptographic APIs</summary>
+    <description>LISSI-CSP is a software module, part of LIRSSL-CSP GOST cryptography provider, which enables usage of GOST encryption algoritms in Windows cryptographic APIs</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
