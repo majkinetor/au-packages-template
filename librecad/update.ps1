@@ -1,7 +1,7 @@
 ﻿import-module au
 
 $domain   = 'https://github.com'
-$releases = "$domain/LibreCAD/LibreCAD/releases/latest"
+$releases = "$domain/LibreCAD/LibreCAD/releases/latest?client_id=$env:GITHUB_CLIENT_ID&client_secret=$env:GITHUB_CLIENT_SECRET""
 
 function global:au_SearchReplace {
   @{

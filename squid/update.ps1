@@ -10,7 +10,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $version = (curl https://api.github.com/repos/diladele/squid-windows/tags | ConvertFrom-Json).name[0] -replace '^1.',''
+    $version = (curl "https://api.github.com/repos/diladele/squid-windows/tags?client_id=$env:GITHUB_CLIENT_ID&client_secret=$env:GITHUB_CLIENT_SECRET" | ConvertFrom-Json).name[0] -replace '^1.',''
 	
 	@{
         URL32   = "http://packages.diladele.com/squid/$version/squid.msi"

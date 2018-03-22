@@ -12,7 +12,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $release = curl https://api.github.com/repos/Daniel-Abrecht/fuse-nfs-crossbuild-scripts/releases/latest | ConvertFrom-Json
+    $release = curl "https://api.github.com/repos/Daniel-Abrecht/fuse-nfs-crossbuild-scripts/releases/latest?client_id=$env:GITHUB_CLIENT_ID&client_secret=$env:GITHUB_CLIENT_SECRET" | ConvertFrom-Json
 	
 	@{
 		URL32   = ($release.assets -match 'i686-w64-mingw32.zip').browser_download_url

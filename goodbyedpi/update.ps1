@@ -12,7 +12,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $release = curl https://api.github.com/repos/ValdikSS/GoodbyeDPI/releases/latest | ConvertFrom-Json
+    $release = curl "https://api.github.com/repos/ValdikSS/GoodbyeDPI/releases/latest?client_id=$env:GITHUB_CLIENT_ID&client_secret=$env:GITHUB_CLIENT_SECRET" | ConvertFrom-Json
 	
 	@{
         URL32   = $release.assets.browser_download_url
