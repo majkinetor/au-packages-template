@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>cspclean</id>
+    <version>5.0.15743.0</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/cspclean</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>cspclean</title>
+    <authors>ООО "КРИПТО-ПРО"</authors>
+    <projectUrl>https://www.cryptopro.ru/downloads</projectUrl>
+    <iconUrl>https://www.cryptopro.ru/sites/default/files/theme321_logo.png</iconUrl>
+    <copyright>Copyright (c) ООО "КРИПТО-ПРО", 2000-2017</copyright>
+    <licenseUrl>https://www.cryptopro.ru/sites/default/files/docs/law/Licence_agreement.pdf</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <bugTrackerUrl>https://support.cryptopro.ru</bugTrackerUrl>
+    <tags>crypto cryptopro crypto-pro cspclean digital-signature signature gost cades crypto cryptography</tags>
+    <summary>cspclean utility intended for cleanup undeleted CryptoPro products</summary>
+    <description>cspclean utility intended for cleanup undeleted CryptoPro products. Deleting installed CryptoPro products via "Programs and features" and computer reboot is recommended before launching cspclean.exe. Reboot required after using utility.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
