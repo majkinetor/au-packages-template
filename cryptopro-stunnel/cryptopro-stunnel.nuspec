@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>cryptopro-stunnel</id>
+    <version>3.06.3773.0000</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/cryptopro-stunnel</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>CryptoPro stunnel</title>
+    <authors>ООО "КРИПТО-ПРО"</authors>
+    <projectUrl>https://www.cryptopro.ru/products/other/stunnel</projectUrl>
+    <iconUrl>https://www.cryptopro.ru/sites/default/files/theme321_logo.png</iconUrl>
+    <copyright>Copyright (c) ООО "КРИПТО-ПРО", 2000-2017</copyright>
+    <licenseUrl>https://www.cryptopro.ru/sites/default/files/docs/law/Licence_agreement.pdf</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+	<docsUrl>https://www.cryptopro.ru/sites/default/files/products/stunnel/userguidestunnel_windows.pdf</docsUrl>
+    <bugTrackerUrl>https://support.cryptopro.ru/</bugTrackerUrl>
+    <tags>cryptopro crypto crypto-pro stunnel tunnel tls ssl gost</tags>
+    <summary>stunnel applicaton is intended for network traffic encryption between arbitrary apllication on a client side and server side</summary>
+    <description>stunnel applicaton is intended for network traffic encryption between arbitrary apllication on a client side and server side using GOST encryption algoritms.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
