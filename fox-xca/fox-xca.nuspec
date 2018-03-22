@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>fox-xca</id>
+    <version>2.0</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/fox-xca</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>Fox-XCA (Install)</title>
+    <authors>ООО "ЛИССИ-Софт"</authors>
+    <projectUrl>http://soft.lissi.ru/ls_product/fox-xca/</projectUrl>
+    <iconUrl>http://soft.lissi.ru/i/lissi_soft.png</iconUrl>
+    <copyright>Copyright (c) 2002-2017. ООО "ЛИССИ-Софт"</copyright>
+    <licenseUrl>http://soft.lissi.ru/templates/license_agreement.tmpl.php</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>http://soft.lissi.ru/docs/Fox_XCA/FoxXCA-AdminGuide.pdf</docsUrl>
+    <bugTrackerUrl>http://soft.lissi.ru/about/contact/</bugTrackerUrl>
+    <tags>fox-xca xca ca pki crypto cryptography openssl admin</tags>
+    <summary>Fox-XCA is a version of XCA with GOST ciphers support</summary>
+    <description>Fox-XCA is a version of XCA with GOST ciphers support
+	
+X Certificate and Key management is an interface for managing asymetric keys like RSA or DSA. It is intended as a small CA for creation and signing certificates. It uses the OpenSSL library for the cryptographic operations.
+
+Features
+Start your own PKI and create all kinds of certificates, requests or CRLs
+Import and export them in any format like PEM, DER, PKCS#7, PKCS#12
+Use them for your IPsec, OpenVPN, HTTPs or any other certificate based setup
+Manage your Smart-Cards via PKCS#11 interface
+Export certificates and requests to a OpenSSL config file
+Create Subject- and/or Extension- templates to ease issuing similar certs
+Convert existing certificates or requests to templates
+Get the broad support of x509v3 extensions as flexible as OpenSSL but user friendlier
+Adapt the Columns to have your important information at a glance</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
