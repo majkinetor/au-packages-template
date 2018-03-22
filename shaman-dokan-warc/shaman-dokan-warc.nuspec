@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>shaman-dokan-warc</id>
+    <version>1.0.1</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/shaman-dokan-warc</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>Shaman.Dokan.Warc</title>
+    <authors>Andrea Martinelli</authors>
+    <projectUrl>https://github.com/antiufo/Shaman.Dokan.Warc</projectUrl>
+    <iconUrl>https://shaman.io/favicon.ico</iconUrl>
+    <copyright>Copyright (c) 2017 Andrea Martinelli</copyright>
+    <licenseUrl>https://choosealicense.com/no-permission/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/antiufo/Shaman.Dokan.Warc</projectSourceUrl>
+    <docsUrl>https://github.com/antiufo/Shaman.Dokan.Warc/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/antiufo/Shaman.Dokan.Warc/issues</bugTrackerUrl>
+    <tags>shaman dokan warc fs vfs filesystem mount</tags>
+    <summary>Mounts WARC files on Windows</summary>
+    <description>Mounts WARC files (web archives).
+
+Usage: Shaman.Dokan.Warc.exe &lt;path-to-cdx&gt; [--open]
+
+The archive(s) are mounted in C:\DokanFs\path-to-cdx. When --open is specified, the mounted folder is opened in Explorer.
+
+Download: Shaman.Dokan.Warc. Requires Dokan.</description>
+    <releaseNotes>https://github.com/antiufo/Shaman.Dokan.Warc/releases/tag/1.0.1</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
