@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>spcomp</id>
+    <version>1.8.6040</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/spcomp</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>spcomp</title>
+    <authors>SourceMod Dev Team</authors>
+    <projectUrl>https://www.sourcemod.net</projectUrl>
+    <iconUrl>https://www.sourcemod.net/logo.png</iconUrl>
+    <copyright>Copyright (c) 2004-2018 SourceMod Dev Team</copyright>
+    <licenseUrl>https://www.sourcemod.net/license.php</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/alliedmodders/sourcemod</projectSourceUrl>
+    <docsUrl>https://wiki.alliedmods.net/index.php/Category:SourceMod_Documentation</docsUrl>
+    <bugTrackerUrl>https://github.com/alliedmodders/sourcemod/issues</bugTrackerUrl>
+    <tags>spcomp sourcemod sourcepawn pawn</tags>
+    <summary>spcomp is a SourceMod SourcePawn compiler</summary>
+    <description>spcomp is a SourceMod SourcePawn compiler
+	
+SourceMod is server modification for any game that runs on the Half-Life 2 engine. It is a powerful, highly optimized platform for scripting plugins and handling server administration. The default package comes with a base set of plugins, but there are over 2,500 plugins in the community. 
+
+Basic Features (Users)
+An easy to use, deeply fine-grained permissions system (SQL compatible)
+A highly configurable admin menu
+Reserved slots
+Flexible map management plugins (nominations, rock the vote, etc)
+Basic commands such as kicking/banning/slapping/muting players, changing cvars, etc
+Various voting commands
+Chat spam protection
+Comprehensive chat triggers for both users and administrators
+Easily translatable
+
+SourceMod is highly optimized and ideal for getting the most performance out of your Source servers, without the complexity of writing C++ code.</description>
+    <releaseNotes>https://www.sourcemod.net/downloads.php?branch=stable</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
