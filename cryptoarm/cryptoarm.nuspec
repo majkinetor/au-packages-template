@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>cryptoarm</id>
+    <version>5.3.0.8941</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/cryptoarm</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>CryptoARM (Install)</title>
+    <authors>ООО "Цифровые технологии"</authors>
+    <projectUrl>https://trusted.ru/products/cryptoarm/about/</projectUrl>
+    <iconUrl>https://trusted.ru/upload/cryptoarm.jpg</iconUrl>
+    <copyright>Copyright (c) 1999-2017 ООО "Цифровые технологии"</copyright>
+    <licenseUrl>https://trusted.ru/upload/ls_cryptoarm.pdf</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://trusted.ru/upload/kratkoe_rukovodstvo.pdf</docsUrl>
+    <bugTrackerUrl>https://trusted.ru/support/faq/</bugTrackerUrl>
+    <tags>cryptoarm crypto sign signing verify verifying digital-signature signature admin</tags>
+    <summary>CryptoARM is an universal application for data encrypting and signing.</summary>
+    <description>CryptoARM is an universal application for data encrypting and signing. CryptoARM protects corporative and private information while it is sended via internet, email or distributed via removable devices.</description>
+    <releaseNotes>https://trusted.ru/products/cryptoarm/history/</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
