@@ -4,7 +4,7 @@
   <metadata>
     <id>stunnel-msspi</id>
     <version>5.44.0.99</version>
-    <packageSourceUrl>https://github.com/galeksandrp/chocolatey-packages/tree/stunnel-msspi</packageSourceUrl>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/stunnel-msspi</packageSourceUrl>
     <owners>galeksandrp</owners>
     <title>stunnel-msspi</title>
     <authors>Dmitrii Pichulin</authors>
