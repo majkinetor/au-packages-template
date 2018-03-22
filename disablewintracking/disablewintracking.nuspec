@@ -38,7 +38,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>10se1ucgo</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://github.com/10se1ucgo/DisableWinTracking/blob/master/README.md</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/galeksandrp/chocolatey-packages/187fd6f3ed6e26114e4af1f1b374d9c2ece4ad18/icons/disablewintracking.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/galeksandrp/au-packages/a0261098c3df37abc05a5ba684c4e45a59ed4c3e/icons/disablewintracking.png</iconUrl>
     <copyright>Copyright (c) 2015 10se1ucgo</copyright>
     <!-- If there is a license Url available, it is is required for the community feed -->
     <licenseUrl>https://github.com/10se1ucgo/DisableWinTracking/blob/master/COPYING</licenseUrl>

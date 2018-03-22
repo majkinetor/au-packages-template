@@ -38,7 +38,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Nummer</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://github.com/Nummer/Destroy-Windows-10-Spying/blob/master/README.md</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/galeksandrp/chocolatey-packages/9a976097fcdef9375e2a4ec9a80d84d6be73da22/icons/dws.portable.png</iconUrl>
+    <iconUrl>https://github.com/galeksandrp/au-packages/blob/a0261098c3df37abc05a5ba684c4e45a59ed4c3e/icons/dws.portable.png</iconUrl>
     <copyright>Copyright (c) 2015 Nummer</copyright>
     <!-- If there is a license Url available, it is is required for the community feed -->
     <licenseUrl>https://github.com/Nummer/Destroy-Windows-10-Spying#license</licenseUrl>
