@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>kontur-diag</id>
+    <version>2.14.26.54</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/kontur-diag</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>Kontur.Diag (Install)</title>
+    <authors>АО «ПФ «СКБ Контур»</authors>
+    <projectUrl>https://install.kontur.ru</projectUrl>
+    <iconUrl>https://install.kontur.ru/content/images/logo-webdisc.gif</iconUrl>
+    <copyright>Copyright (c) 2014-2018 АО «ПФ «СКБ Контур»</copyright>
+    <licenseUrl>https://install.kontur.ru</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://kontur.ru/support</docsUrl>
+    <tags>kontur diag digital-signature signature bookkeeping gost cades signing security admin</tags>
+    <summary>Kontur.Diag is a core component of various diagnostic Kontur applications</summary>
+    <description>Kontur.Diag is a core component of various diagnostic Kontur applications</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
