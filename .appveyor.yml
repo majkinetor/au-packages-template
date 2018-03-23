@@ -31,6 +31,19 @@ environment:
   mail_port: 587
   mail_enablessl: true
 
+  # ID of the gist used to save run results - create a gist under the github_user (secret or not) and grab the id - https://gist.github.com/name/id
+  # Optional, leave empty to create anonymous gist
+  gist_id:
+    secure: wVpQ4zQOXzrW5rSbGaDkzMNXUYkO5yykvxVYOjJicvJeoIQg1Tee3VLKLkc9/bc/
+
+  # Force test: gist id for test results
+  gist_id_test:
+    secure: wVpQ4zQOXzrW5rSbGaDkzMNXUYkO5yykvxVYOjJicvJeoIQg1Tee3VLKLkc9/bc/
+
+  # Chocolatey API key - to push updated packages
+  api_key:
+    secure: jDIr9kyOc6mpFlnJtEpKJTE5MxZI/jbN9knPSh8u0SFapBAxPMvbNy7WDsvhC+H7 # https://ci.appveyor.com/tools/encrypt
+
 init:
 - git config --global user.email "chocolatey@realdimensions.net"
 - git config --global user.name "Chocolatey"
