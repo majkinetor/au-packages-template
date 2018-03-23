@@ -1,10 +1,10 @@
 ﻿$packageArgs = @{
   packageName            = "$env:chocolateyPackageName"
-  url                    = 'https://github.com/papertrail/remote_syslog2/releases/download/v0.19/remote_syslog_windows_i386.tar.gz'
-  url64bit               = 'https://github.com/papertrail/remote_syslog2/releases/download/v0.19/remote_syslog_windows_amd64.tar.gz'
+  url                    = 'https://github.com/papertrail/remote_syslog2/releases/download/v0.20/remote_syslog_windows_i386.tar.gz'
+  url64bit               = 'https://github.com/papertrail/remote_syslog2/releases/download/v0.20/remote_syslog_windows_amd64.tar.gz'
   UnzipLocation          = "$env:TMP"
-  checksum               = '2cdd4d3479fc62e8eb339fd474858bfe410c2126ea94cdc10f214c89e4d1fbe5'
-  checksum64             = 'c30da4e57628a4902a0f7838c826a91e2a3b17d59fc1abe8c7e06446139325cd'
+  checksum               = 'd5f907200d7a49131ceea04d2d70bf903fde6985fd1c60106d98ab5cef5146c6'
+  checksum64             = '933bedeb12d09be373924a40975232eb3c15030f4cea3599278f35289e4872e2'
   checksumType           = 'sha256'
   checksumType64         = 'sha256'
 }
