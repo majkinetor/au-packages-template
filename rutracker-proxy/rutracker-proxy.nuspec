@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>rutracker-proxy</id>
+    <version>0.1.3</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/rutracker-proxy</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>Rutracker proxy</title>
+    <authors>DreamTorrents Corp.</authors>
+    <projectUrl>https://github.com/RutrackerOrg/rutracker-proxy</projectUrl>
+    <iconUrl>https://avatars0.githubusercontent.com/u/28409793</iconUrl>
+    <copyright>Copyright (c) 2017 DreamTorrents Corp.</copyright>
+    <licenseUrl>https://github.com/RutrackerOrg/rutracker-proxy/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/RutrackerOrg/rutracker-proxy</projectSourceUrl>
+    <docsUrl>https://rutracker.org/forum/viewtopic.php?t=5403116</docsUrl>
+    <bugTrackerUrl>https://github.com/RutrackerOrg/rutracker-proxy/issues</bugTrackerUrl>
+    <tags>rutracker proxy bittorrent torrent p2p censorship anticensorship</tags>
+    <summary>Proxy software for bypassing rutracker.org bittorent announcers block</summary>
+    <description>Proxy software for bypassing rutracker.org bittorent announcers block
+
+Features:
+* Autoswitching proxy on connection failures
+* Can use external socks5 or http proxy
+* Crossplatform (Windows/OSX/Linux)
+* MIT license
+</description>
+    <releaseNotes>https://github.com/RutrackerOrg/rutracker-proxy/releases</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
