@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>jivosite</id>
+    <version>3.1.5.0</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/jivosite</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>JivoSite (Install)</title>
+    <authors>ООО "Живой сайт"</authors>
+    <projectUrl>https://www.jivosite.ru</projectUrl>
+    <iconUrl>https://www.jivosite.ru/assets/images/svg/logo_jivosite_regular.svg</iconUrl>
+    <copyright>Copyright (c) 2017 ООО "Живой сайт"</copyright>
+    <licenseUrl>https://www.jivosite.ru/license/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://www.jivosite.ru/help/</docsUrl>
+    <bugTrackerUrl>https://www.jivosite.ru/support/</bugTrackerUrl>
+    <tags>online consultant online-consultant chat messenger social conversion management sale communication tracking crm admin</tags>
+    <summary>JivoSite is web chat and social networks, messengers and mobile apps communication service between clients and sales managers</summary>
+    <description>JivoSite is web chat and social networks, messengers and mobile apps communication service between clients and sales managers. Earn more revenue now without missing any client request.</description>
+    <releaseNotes>https://www.jivosite.ru/support/announcements</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

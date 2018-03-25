@@ -17,7 +17,7 @@ function global:au_GetLatest {
 	$URL64 = 'https://ds-plugin.gosuslugi.ru/plugin/upload/assets/distrib/IFCPlugin-x64.msi'
     Get-ChocolateyWebFile 'gosuslugi-plugin' $URL32 -FileFullPath "$env:TMP\IFCPlugin.msi"
 	$packageArgs = @{
-	  packageName            = "$env:chocolateyPackageName"
+	  packageName            = 'gosuslugi-plugin'
 	  FileType               = 'msi'
 	  SilentArgs             = '/qn /norestart'
 	  File                   = "$env:TMP\IFCPlugin.msi"
