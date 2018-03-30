@@ -61,15 +61,18 @@ function global:au_GetLatest {
     $Latest = @{}
     
     try {
+        # Get latest version from XML 
+        $response = Invoke-RestMethod -Uri "https://go.microsoft.com/fwlink/?LinkId=841665"
+        $version = $response.component.version
+
         $response = Invoke-WebRequest -Uri "https://raw.githubusercontent.com/MicrosoftDocs/sql-docs/live/docs/ssms/download-sql-server-management-studio-ssms.md"
         $content = $response.Content
 
         # The version number for this latest preview is: 13.0.12000.65
-        $isMatch = $content -match "([Rr]elease number: (?<release>\d+\.\d+(\.\d+){0,2}))\s*([Bb]uild number for this release).*: (?<version>\d+\.\d+\.\d+\.\d+)"
+        $isMatch = $content -match "([Rr]elease number: (?<release>\d+\.\d+(\.\d+){0,2}))"
 
         if ($isMatch)
         {
-            $version = $matches.version
             $release = $matches.release
             
             Write-Host "Found version $version, release $release"
