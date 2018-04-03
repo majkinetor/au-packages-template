@@ -1,4 +1,4 @@
-$packageArgs = @{
+﻿$packageArgs = @{
   packageName            = "$env:chocolateyPackageName"
   FileFullPath           = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)\Fintender.Installer.Setup.exe"
   url                    = 'https://private.fintender.ru/files/Fintender.Installer.Setup.exe'
