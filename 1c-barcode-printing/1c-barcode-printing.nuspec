@@ -24,14 +24,14 @@ Supported barcode formats:
 * EAN8
 * EAN13
 * EAN128
-* CODE39
-* CODE128
+* Code39
+* Code128
 * CODE16K
 * PDF417
-* Industrial2of5
-* Interleaved2of5
-* Code39FullASCII
-* CODE93
+* Code16k Industrial 2 of 5
+* Interleaved 2 of 5
+* Code39 Full ASCII
+* Code93
 * ITF14
 * RSS14
 * CodaBar

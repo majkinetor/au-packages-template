@@ -9,7 +9,7 @@ Result=1
 [{48E6B39F-F686-4327-8BED-0D5AEDF2E56F}-SdLicense-0]
 Result=1
 [{48E6B39F-F686-4327-8BED-0D5AEDF2E56F}-SdAskDestPath-0]
-szDir=C:\1C\1CBarCode\
+szDir=C:\Program Files (x86)\1C\1CBarCode\
 Result=1
 [{48E6B39F-F686-4327-8BED-0D5AEDF2E56F}-SdFinish-0]
 Result=1
