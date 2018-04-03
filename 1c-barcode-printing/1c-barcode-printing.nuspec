@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>1c-barcode-printing</id>
+    <version>0.1.0</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/1c-barcode-printing</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>1С:Barcode printing (Install)</title>
+    <authors>ООО «1С»</authors>
+    <projectUrl>https://its.1c.ru/db/metod8dev/content/1838/hdoc</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/galeksandrp/au-packages/master/icons/1c-barcode-printing.png</iconUrl>
+    <copyright>Copyright (c) 2018 ООО «1С»</copyright>
+    <licenseUrl>https://its.1c.ru/terms_of_use/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://its.1c.ru/db/metod8dev/content/1838/hdoc</docsUrl>
+    <bugTrackerUrl>https://1c.ru/rus/support/hline.htm</bugTrackerUrl>
+    <tags>1c-barcode-printing 1c 1c-enterprise printing print printer barcode ean upc epf component external-component admin</tags>
+    <summary>1C:Barcode printing is a external component for 1C:Enterprise, enabling barcode generating and printing</summary>
+    <description>1C:Barcode printing is a external component for 1C:Enterprise, enabling barcode generating and printing
+
+Supported barcode formats:
+
+* EAN8
+* EAN13
+* EAN128
+* CODE39
+* CODE128
+* CODE16K
+* PDF417
+* Industrial2of5
+* Interleaved2of5
+* Code39FullASCII
+* CODE93
+* ITF14
+* RSS14
+* CodaBar
+* EAN13 AddOn 2
+* EAN13 AddOn 5
+
+1C:Enterprise is a powerful platform for creating applications that streamline automation of a wide range of business processes.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
