@@ -4,32 +4,43 @@
   <metadata>
     <id>windows-admin-center</id>
     <version>1.1.20642</version>
-    <!-- <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>-->
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/windows-admin-center</packageSourceUrl>
     <owners>flcdrg</owners>
     <title>Windows Admin Center (1804)</title>
     <authors>Microsoft Corporation</authors>
     <projectUrl>https://docs.microsoft.com/en-us/windows-server/manage/windows-admin-center/overview</projectUrl>
     <iconUrl>http://cdn.rawgit.com/flcdrg/au-packages/master/windows-admin-center/icons/windows-admin-center.png</iconUrl>
-    <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Microsoft Corporation</copyright>
+    <copyright>2018 Microsoft Corporation</copyright>
     <docsUrl>https://docs.microsoft.com/en-us/windows-server/manage/windows-admin-center/understand/windows-admin-center</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
-    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <bugTrackerUrl>https://windowsserver.uservoice.com/forums/295071/category/319162</bugTrackerUrl>
     <tags>honolulu windows</tags>
     <summary>Windows Admin Center is a locally deployed, browser-based app for managing servers, clusters, hyper-converged infrastructure, and Windows 10 PCs</summary>
     <description>Windows Admin Center is a new, locally-deployed, browser-based management tool set that lets you manage your Windows Servers with no Azure or cloud dependency. Windows Admin Center gives you full control over all aspects of your server infrastructure and is particularly useful for managing servers on private networks that are not connected to the Internet.
 
 Windows Admin Center is the modern evolution of in-box management tools, like Server Manager and MMC. It complements System Center and Operations Management Suite - it's not a replacement.
 
-#### Supported operating systems
+### Supported operating systems
 
 You can install Windows Admin Center on the following Windows operating systems:
 Version 	Installation Mode
 Windows 10 (1709) 	Desktop mode
 Windows Server, version 1709 	Gateway mode
 Windows Server 2016 	Gateway mode
+
+### Package Specific
+#### Package Parameters
+The following package parameters can be set:
+
+ * `/Port:` - determines what port to listen on. Defaults to 6516. (You may want to use 443 on Windows Server)
+ * `/Thumbprint:` - Existing certificate thumbprint. If not specified, a self-signed certificate is generated (expires after 60 days)
+
+To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 </description>
-    <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
+    <releaseNotes>
+Project Honolulu becomes Windows Admin Center and adds security features and role-based access control. Our first GA release.    
+    </releaseNotes>
     <dependencies>
       <dependency id="PowerShell" version="5.1.14409.20180105" />
     </dependencies>
