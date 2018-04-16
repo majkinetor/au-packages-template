@@ -2,8 +2,8 @@
   packageName            = "$env:chocolateyPackageName"
   FileType               = 'exe'
   SilentArgs             = '/S'
-  url                    = 'http://192.168.1.108/webplugin.exe'
-  checksum               = 'd8e02703d7a5179fcd096b55428b155afa492cdc9fe67d434812245ad9b4736d'
+  url                    = 'http://4c11bfaa17c7.dahuaddns.com:7000/webplugin.exe'
+  checksum               = 'b88ca6d5abc01736fe5c4146d57fb3ca33d75d19064e6174b4659484962ec784'
   checksumType           = 'sha256'
 }
 Install-ChocolateyPackage @packageArgs
