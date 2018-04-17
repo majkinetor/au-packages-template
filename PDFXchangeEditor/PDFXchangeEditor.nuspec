@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>PDFXchangeEditor</id>
-    <version>7.0.324.3</version>
+    <version>7.0.325.0</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/PDFXchangeEditor</packageSourceUrl>
     <owners>flcdrg, calwell</owners>
     <title>PDF-XChange Editor</title>
@@ -34,30 +34,7 @@ These parameters can be passed to the installer with the use of `-params`.
 For example: `-params '"/NoDesktopShortcuts"'`.
 
 </description>
-    <releaseNotes><![CDATA[Requires maintenance through 2018-02-01
-#### Newly added feature
-
-* Enabled the 'Save As' feature in the Ribbon/File menu of the IE-Plugin.
-
-#### A reported error or bug was fixed
-
-* Fixed the issue that was causing the first file/folder to be skipped during root folder enumeration. This issue occurred in some cases when the 'Add Folder' feature was used.
-* Fixed the issue with the enumeratiom of shared folders such as '\\share\sharedfolder\'. This issue occurred in some cases when the 'Add Folder' feature was used.
-* Fixed the IE-Plugin issue with opening elements from the version history for documents from SharePoint Online.
-* Fixed the issue that was present when the Alt key was used to minimize the Ribbon pane. The Ribbon now displays (after some delay). Note that Alt-based shortcuts can be used during this delay, even though the Ribbon UI is not visible.
-* Fixed the size issue with the Ribbon/File menu that was present when a maximized window was minimized and then maximized again. This issue was present on only multimonitor-configurations.
-* Fixed the issue with the auto-closing of the main window when the 'Close to System Tray' option is enabled. (T# 4256)
-* SharePoint: fixed the issue with the 'Add Place' feature in the context of the IE-Plugin.
-* SharePoint: fixed several issues with the 'Check Out' feature on specific servers.
-* SharePoint: fixed the issue with support of special characters in names of files and folders for SharePoint Online and OneDrive.
-* Fixed several issues with the simple ImageEditor in the context of the 'Images to PDF' feature.
-* Resolved the issue with the handling of relative file names as URLs in URI actions. (T# 4211, 4252)
-* Fixed an issue that was sometimes present when registering the Properties Handler.
-* Fixed the issue with launching Editor under Windows XP in which the SharePoint and DropDox plugins were causing a break on start.
-
-#### Changed, reviewed, modified feature
-
-* Improved the handling of relative paths in Launch actions.]]></releaseNotes>
+    <releaseNotes><![CDATA[Requires maintenance through 2018-04-16]]></releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
