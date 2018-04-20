@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>3proxy</id>
-    <version>0.8.11</version>
+    <version>0.8.12</version>
     <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/3proxy</packageSourceUrl>
     <owners>galeksandrp</owners>
     <title>3proxy</title>
