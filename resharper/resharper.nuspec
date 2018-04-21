@@ -13,6 +13,9 @@
     <copyright>JetBrains s.r.o.</copyright>
     <licenseUrl>https://www.jetbrains.com/resharper/buy/index.jsp?product=ultimate</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://www.jetbrains.com/help/resharper/Introduction__Index.html</docsUrl>
+    <mailingListUrl>https://resharper-support.jetbrains.com/hc/en-us</mailingListUrl>
+    <bugTrackerUrl>http://youtrack.jetbrains.net/issues/RSRP</bugTrackerUrl>
     <tags>jetbrains developer admin visualstudio</tags>
     <summary>Visual Studio extension for .NET developers</summary>
     <description>Visual Studio extension for .NET developers
@@ -40,6 +43,7 @@ Multiple code editing helpers include extended IntelliSense, hundreds of instant
 
 Code style and formatting functionality with fine-grained, language-specific settings will help you get rid of unused code and create a common coding standard for your team.
     </description>
+    <releaseNotes>https://www.jetbrains.com/resharper/whatsnew/</releaseNotes>
     <dependencies>
       <dependency id="resharper-platform" version="[112.0.20180414.124625]" />
     </dependencies>
