@@ -34,7 +34,7 @@ These parameters can be passed to the installer with the use of `-params`.
 For example: `-params '"/NoDesktopShortcuts"'`.
 
 </description>
-    <releaseNotes><![CDATA[Requires maintenance through 2018-04-16]]></releaseNotes>
+    <releaseNotes>https://www.tracker-software.com/product/pdf-xchange-editor/history</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

@@ -1,77 +1,5 @@
 import-module au
 
-function ParseReleaseNotes($version)
-{
-    $doc = Invoke-WebRequest ("https://www.tracker-software.com/product/pdf-xchange-editor/history?version=" + $version)
-    $subUl = $doc.ParsedHtml.body.firstChild
-
-    $newlyAdded = New-Object System.Collections.ArrayList
-    $bugFixed = New-Object System.Collections.ArrayList
-    $changed = New-Object System.Collections.ArrayList
-
-    $allowedTags = @('#text', 'a')
-
-    foreach ($child in $subUl.ChildNodes)
-    {
-        
-        $type = $child.ChildNodes[0].title
-
-        # remove unwanted tags
-        [void] ($child.ChildNodes | Where-Object { $allowedTags -notcontains $_.nodeName } | ForEach-Object { $child.removeChild($_) } )
-
-        # convert links
-
-        [void] ($child.ChildNodes | Where-Object { $_.nodeName -eq 'A' } | ForEach-Object { 
-                $textNode = $subUl.OwnerDocument.createTextNode("[$($_.innerText)]($($_.href))")
-                $child.replaceChild($textNode, $_)
-            } 
-            
-        )
-
-        $value = ($child.innerHTML.Trim().Replace("&lt;", "<").Replace("&gt;", ">").Replace("&amp;", "&") )
-
-        switch ($type) 
-        {
-            "Newly added feature" 
-            {
-                [void] $newlyAdded.Add($value)
-            }
-            "A reported error or bug was fixed" 
-            {
-                [void] $bugFixed.Add($value)
-            }
-            "Changed, reviewed, modified feature" 
-            {
-                [void] $changed.Add($value)
-            }
-        }
-    }
-
-    if ($newlyAdded)
-    {
-        "#### Newly added feature"
-        ""
-        $newlyAdded | ForEach-Object { "* " + $_ }
-        ""
-    }
-
-    if ($bugFixed)
-    {
-        "#### A reported error or bug was fixed"
-        ""
-        $bugFixed | ForEach-Object { "* " + $_ }
-        ""
-    }
-
-    if ($changed) 
-    {
-        "#### Changed, reviewed, modified feature"
-        ""
-
-        $changed | ForEach-Object { "* " + $_ }
-    }
-}
-
 function global:au_SearchReplace {
     $d32 = [DateTimeOffset] $Latest.LastModified32
     $d64 = [DateTimeOffset] $Latest.LastModified64
@@ -107,8 +35,6 @@ function global:au_GetLatest {
         $x64update = $xml.SelectSingleNode("//t:bundle[@id='PDFXEditor.x64']/t:update", $xmlNameSpace)
         $filename64 = $x64update.url
 
-        $releaseNotes = (,"Requires maintenance through $date") + (ParseReleaseNotes $version)
-
         $response = Invoke-WebRequest "http://downloads.pdf-xchange.com/$filename" -Method Head
         $lastModifiedHeader = $response.Headers.'Last-Modified'
         $x86lastModified = [DateTimeOffset]::Parse($lastModifiedHeader, [Globalization.CultureInfo]::InvariantCulture)
@@ -121,7 +47,6 @@ function global:au_GetLatest {
             Version = $version
             Checksum32 = $x32update.hash
             Checksum64 = $x64update.hash
-            ReleaseNotes = $releaseNotes -join "`r`n"
             LastModified32 = $x86lastModified
             LastModified64 = $x64lastModified
             Filename32 = $filename
@@ -133,17 +58,6 @@ function global:au_GetLatest {
         Write-Error $_
     }
     return $Latest
-}
-
-function global:au_AfterUpdate
-{ 
-    $nuspecFileName = $Latest.PackageName + ".nuspec"
-    $nu = Get-Content $nuspecFileName -Raw -Encoding UTF8
-    $nu = $nu -replace "(?smi)(\<releaseNotes\>).*?(\</releaseNotes\>)", "`${1}<![CDATA[$($Latest.ReleaseNotes)]]>`$2"
-
-    $Utf8NoBomEncoding = New-Object System.Text.UTF8Encoding($False)
-    $NuPath = (Resolve-Path $NuspecFileName)
-    [System.IO.File]::WriteAllText($NuPath, $nu, $Utf8NoBomEncoding)
 }
 
 update -ChecksumFor none
