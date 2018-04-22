@@ -15,7 +15,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <docsUrl>https://www.jetbrains.com/help/resharper/Introduction__Index.html</docsUrl>
     <mailingListUrl>https://resharper-support.jetbrains.com/hc/en-us</mailingListUrl>
-    <bugTrackerUrl>http://youtrack.jetbrains.net/issues/RSRP</bugTrackerUrl>
+    <bugTrackerUrl>https://youtrack.jetbrains.net/issues/RSRP</bugTrackerUrl>
     <tags>jetbrains developer admin visualstudio</tags>
     <summary>Visual Studio extension for .NET developers</summary>
     <description>Visual Studio extension for .NET developers

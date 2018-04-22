@@ -11,12 +11,15 @@
     <projectUrl>https://www.jetbrains.com/decompiler</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/jetbrains/chocolatey/master/dotPeek/logo.png</iconUrl>
     <copyright>JetBrains s.r.o.</copyright>
-    <licenseUrl>https://www.jetbrains.com/resharper/buy/index.jsp?product=ultimate</licenseUrl>
+    <licenseUrl>https://www.jetbrains.com/decompiler/download/license.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://www.jetbrains.com/decompiler/documentation/documentation.html</docsUrl>
+    <mailingListUrl>https://dotnettools-support.jetbrains.com/hc/en-us/community/topics/200379925-dotPeek</mailingListUrl>
+    <bugTrackerUrl>https://youtrack.jetbrains.com/issues/DOTP</bugTrackerUrl>
     <tags>jetbrains developer admin visualstudio</tags>
     <summary>Free .NET decompiler and assembly browser</summary>
     <description>Free .NET decompiler and assembly browser
-### Decompile .NET assemblies to C#
+### Decompile .NET assemblies to C# ###
 
 dotPeek is a free-of-charge standalone tool based on ReSharper's bundled decompiler. It can reliably decompile any .NET assembly into equivalent C# or IL code.
 
