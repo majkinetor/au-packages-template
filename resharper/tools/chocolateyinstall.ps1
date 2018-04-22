@@ -3,12 +3,12 @@
 $filename = 'JetBrains.ReSharperUltimate.2018.1.exe'
 
 $platformPackageName = 'resharper-platform'
-$packageName = 'ReSharper'
+
 $scriptPath = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 $commonPath = $(Split-Path -parent $(Split-Path -parent $scriptPath))
 $installPath = Join-Path  (Join-Path $commonPath $platformPackageName) $filename
 $packageArgs = @{
-  packageName   = $packageName
+  packageName   = $env:ChocolateyPackageName
   fileType      = 'exe'
   file          = $installPath
   silentArgs    = "/Silent=True /SpecificProductNames=ReSharper /VsVersion=*"
