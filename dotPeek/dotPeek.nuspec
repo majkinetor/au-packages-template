@@ -52,6 +52,7 @@ Whenever you put a caret on a symbol in the code view area, dotPeek offers a ple
 
 dotPeek indexes all assemblies in your assembly list, as well as all assemblies that they reference, and provides features to quickly jump to specific code. For instance, Go to Everything allows searching for an assembly, namespace, type, member, or a recently opened file.
     </description>
+    <releaseNotes>https://www.jetbrains.com/decompiler/whatsnew/</releaseNotes>
     <dependencies>
       <dependency id="resharper-platform" version="[112.0.20180414.124625]" />
     </dependencies>

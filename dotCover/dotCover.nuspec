@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>dotCover</id>
+    <owners>JetBrains, flcdrg</owners>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/dotCover</packageSourceUrl>
+    <version>2018.1</version>
+    <title>JetBrains dotCover</title>
+    <authors>JetBrains</authors>
+    <projectUrl>http://www.jetbrains.com/dotcover/</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/jetbrains/chocolatey/master/dotCover/logo.png</iconUrl>
+    <copyright>JetBrains s.r.o.</copyright>
+    <licenseUrl>https://www.jetbrains.com/resharper/buy/index.jsp?product=ultimate</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://www.jetbrains.com/dotcover/documentation/</docsUrl>
+    <mailingListUrl>https://dotnettools-support.jetbrains.com/hc/en-us/community/topics/200379915-dotCover</mailingListUrl>
+    <bugTrackerUrl>https://youtrack.jetbrains.com/issues/DCVR</bugTrackerUrl>
+    <tags>jetbrains developer admin</tags>
+    <summary>.NET unit test runner and code coverage tool</summary>
+    <description>JetBrains dotCover is a .NET unit test runner and code coverage tool that integrates with Visual Studio.
+
+Make sure you know to what extent your code is covered with unit tests. dotCover calculates and reports statement-level code coverage in applications targeting .NET Framework, Silverlight or .NET Core.
+
+### Unit tests
+
+Execute and debug unit tests and run coverage analysis of unit tests in Visual Studio or using the command-line utility. dotCover supports many unit testing frameworks including MSTest, NUnit, xUnit, and MSpec.
+
+### Manual test sessions
+
+For manual test sessions, dotCover shows what parts of code were called during the session and which parts were not reached. Using coverage analysis data, you can easily get to the source code of the tested application.
+
+### Detecting hot spots
+
+Detect potential risk areas at a glance with Hot Spots view, which shows the most complex methods with the least coverage. Get your coverage analysis off to a good start with intuitive graphical presentation.
+
+### Seamless integration with Visual Studio
+
+dotCover integrates with Visual Studio, giving you the advantage of analyzing and visualizing code coverage without leaving the code editor. It supports Visual Studio 2010, 2012, 2013, 2015 and 2017.
+
+### Continuous testing
+
+dotCover can figure out on-the-fly which unit tests are affected by your latest code changes, and automatically re-runs the affected tests for you.
+
+The continuous testing mode can be switched on for any unit test session: this way you can choose which tests you want to run continuously and which to run in a traditional way.    
+    </description>
+
+    <releaseNotes>https://www.jetbrains.com/dotcover/whatsnew/</releaseNotes>
+    <dependencies>
+      <dependency id="resharper-platform" version="[112.0.20180414.124625]" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
