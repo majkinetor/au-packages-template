@@ -14,6 +14,7 @@
     <licenseUrl>https://www.jetbrains.com/resharper/buy/index.jsp?product=ultimate</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>.NET Memory Profiler</summary>
+    <tags>jetbrains developer dotMemory outdated superceded</tags>
     <description>This package has been superceded by the `dotMemory` package</description>
     <dependencies>
       <dependency id="dotMemory" version="4.2" />
