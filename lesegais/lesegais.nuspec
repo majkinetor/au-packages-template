@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>lesegais</id>
+    <version>0.1.0</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/lesegais</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>EGAIS Crypto (Install)</title>
+    <authors>Федеральное агентство лесного хозяйства</authors>
+    <projectUrl>http://www.lesegais.ru/support</projectUrl>
+    <iconUrl>http://www.lesegais.ru/images/toplogo.png</iconUrl>
+    <copyright>Copyright (c) 2016 Федеральное агентство лесного хозяйства</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>http://www.lesegais.ru/images/egais_documents/Manual_EGAIS_Crypto.pdf</docsUrl>
+    <bugTrackerUrl>http://www.lesegais.ru/support</bugTrackerUrl>
+    <tags>admin egais crypto cryptography lesegais cryptoexpress sign signing verify pkcs pkcs7</tags>
+    <summary>EGAIS Crypto is lesegais.ru branded version of CryptoExpress</summary>
+    <description>EGAIS Crypto is lesegais.ru branded version of CryptoExpress
+
+CryptoExpress is documents digital signing and encrypting application. Supports creating PKCS#7 messages with attached and detached signature(s), encrypting and decrypting of them, verifying TSPs (timestamps). Supports CAdES</description>
+    <releaseNotes>http://www.lesegais.ru/support/obnovleniya</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
