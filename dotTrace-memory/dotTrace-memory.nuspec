@@ -6,18 +6,18 @@
     <owners>JetBrains, flcdrg</owners>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/dotTrace-memory</packageSourceUrl>
     <version>4.2</version>
-    <title>dotTrace Memory (superceded)</title>
+    <title>[Deprecated] dotTrace Memory</title>
     <authors>JetBrains</authors>
     <projectUrl>http://www.jetbrains.com/dotmemory/</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/jetbrains/chocolatey/master/dotMemory/logo.png</iconUrl>
     <copyright>JetBrains s.r.o.</copyright>
     <licenseUrl>https://www.jetbrains.com/resharper/buy/index.jsp?product=ultimate</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>.NET Memory Profiler</summary>
     <tags>jetbrains developer dotMemory outdated superceded</tags>
-    <description>This package has been superceded by the `dotMemory` package</description>
+    <description>This package has been deprecated in favour of the `dotMemory` package</description>
     <dependencies>
       <dependency id="dotMemory" version="4.2" />
     </dependencies>
   </metadata>
+  <files />
 </package>
