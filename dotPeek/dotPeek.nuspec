@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>dotPeek</id>
+    <owners>JetBrains, flcdrg</owners>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/dotPeek</packageSourceUrl>
+    <version>2018.1</version>
+    <title>JetBrains dotPeek</title>
+    <authors>JetBrains</authors>
+    <projectUrl>https://www.jetbrains.com/decompiler</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/jetbrains/chocolatey/master/dotPeek/logo.png</iconUrl>
+    <copyright>JetBrains s.r.o.</copyright>
+    <licenseUrl>https://www.jetbrains.com/decompiler/download/license.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://www.jetbrains.com/decompiler/documentation/documentation.html</docsUrl>
+    <mailingListUrl>https://dotnettools-support.jetbrains.com/hc/en-us/community/topics/200379925-dotPeek</mailingListUrl>
+    <bugTrackerUrl>https://youtrack.jetbrains.com/issues/DOTP</bugTrackerUrl>
+    <tags>jetbrains developer admin visualstudio</tags>
+    <summary>Free .NET decompiler and assembly browser</summary>
+    <description>Free .NET decompiler and assembly browser
+### Decompile .NET assemblies to C# ###
+
+dotPeek is a free-of-charge standalone tool based on ReSharper's bundled decompiler. It can reliably decompile any .NET assembly into equivalent C# or IL code.
+
+The decompiler supports multiple formats including libraries (.dll), executables (.exe), and Windows metadata files (.winmd).
+dotPeek can decompile any .NET assemblies
+
+### Export decompiled code to Visual Studio projects
+
+As soon as you've decompiled an assembly, you can save it as a Visual Studio project (.csproj). This can potentially save a lot of time if you need to restore lost source code from a legacy assembly.
+
+### Download source code and debug third-party code
+
+dotPeek can identify local source code based on PDB files, or fetch source code from source servers such as Microsoft Reference Source Center or SymbolSource.
+
+dotPeek can also perform as a symbol server and supply Visual Studio debugger with the information required to debug assembly code.
+
+### Navigation and Search
+
+dotPeek inherits a lot of features from ReSharper. These include contextual and context-insensitive navigation, usage search, as well as different code structure and hierarchy views.
+
+### Find usages of any symbol
+
+Use Find Usages to search for all usages of a symbol, be it a method, property, local variable or a different entity. The Find Results tool window lets you group usages, navigate between them, and open them in the code view area.
+
+### Jump to a type, symbol or anything
+
+Whenever you put a caret on a symbol in the code view area, dotPeek offers a plethora of contextual navigation options that are all available via Navigate To drop-down menu.
+
+### Navigate to related code
+
+dotPeek indexes all assemblies in your assembly list, as well as all assemblies that they reference, and provides features to quickly jump to specific code. For instance, Go to Everything allows searching for an assembly, namespace, type, member, or a recently opened file.
+    </description>
+    <releaseNotes>https://www.jetbrains.com/decompiler/whatsnew/</releaseNotes>
+    <dependencies>
+      <dependency id="resharper-platform" version="[112.0.20180414.124625]" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>dotTrace</id>
+    <owners>JetBrains, flcdrg</owners>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/dotTrace</packageSourceUrl>
+    <version>2018.1</version>
+    <title>JetBrains dotTrace</title>
+    <authors>JetBrains</authors>
+    <projectUrl>https://www.jetbrains.com/profiler</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/jetbrains/chocolatey/master/dotTrace/logo.png</iconUrl>
+    <copyright>JetBrains s.r.o.</copyright>
+    <licenseUrl>https://www.jetbrains.com/resharper/buy/index.jsp?product=ultimate</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://www.jetbrains.com/profiler/documentation/</docsUrl>
+    <mailingListUrl>https://dotnettools-support.jetbrains.com/hc/en-us/community/topics/200363899-Tracker-dotTrace</mailingListUrl>
+    <bugTrackerUrl>https://youtrack.jetbrains.com/issues/PROF</bugTrackerUrl>
+    <tags>jetbrains developer admin</tags>
+    <summary>.NET Performance Profiler</summary>
+    <description>dotTrace helps you detect performance bottlenecks in a variety of .NET and .NET Core applications: WPF and Universal Windows Platform, ASP.NET, Windows and WCF services, Silverlight and unit tests.
+
+### Analyze any performance issues
+
+Get accurate data on calls execution time. In the timeline profiling mode, get the same call time data but bound to a timeline. Use timeline data to analyze performance issues where the order of events matters, such as UI freezes, excessive garbage collection, uneven workload distribution, inefficient file I/O, and others.
+
+### Profile SQL queries and HTTP requests
+
+Find out how a particular query affects application performance and why this query is running slow.
+
+If you develop a web application, learn how it processes incoming HTTP requests.
+
+### Profile static methods and unit tests
+
+You can instantly get comprehensive profiling data without having to build your solution, run the profiler and perform a usage scenario. Just add a static method alongside the code that you're optimizing, and profile it!
+
+If you employ unit testing in your project, dotTrace helps you profile any test in just a few clicks. In addition, dotTrace offers a special TeamCity plugin which you can use to profile integration tests on your CI server and prevent performance regressions.
+
+### Profile and analyze results right in Visual Studio
+
+With dotTrace you can profile, view performance timelines, analyze call stacks, and perform many more profiling actions without leaving your IDE.
+
+You can even navigate to a method declaration from a hot spot in the call tree!
+</description>
+
+    <releaseNotes>https://www.jetbrains.com/profiler/whatsnew/</releaseNotes>
+    <dependencies>
+      <dependency id="resharper-platform" version="[112.0.20180414.124625]" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

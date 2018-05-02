@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>dotTrace-memory</id>
+    <owners>JetBrains, flcdrg</owners>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/dotTrace-memory</packageSourceUrl>
+    <version>4.2</version>
+    <title>[Deprecated] dotTrace Memory</title>
+    <authors>JetBrains</authors>
+    <projectUrl>http://www.jetbrains.com/dotmemory/</projectUrl>
+    <copyright>JetBrains s.r.o.</copyright>
+    <licenseUrl>https://www.jetbrains.com/resharper/buy/index.jsp?product=ultimate</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>.NET Memory Profiler</summary>
+    <tags>jetbrains developer dotMemory outdated superceded</tags>
+    <description>This package has been deprecated in favour of the `dotMemory` package</description>
+    <dependencies>
+      <dependency id="dotMemory" version="4.2" />
+    </dependencies>
+  </metadata>
+  <files />
+</package>

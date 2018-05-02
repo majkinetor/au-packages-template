@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>resharper-clt</id>
+    <owners>JetBrains, flcdrg</owners>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/resharper-clt</packageSourceUrl>
+    <version>2018.1</version>
+    <title>JetBrains ReSharper Command Line Tools</title>
+    <authors>JetBrains</authors>
+    <projectUrl>https://www.jetbrains.com/resharper/features/command-line.html</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/jetbrains/chocolatey/master/ReSharper/logo.png</iconUrl>
+    <copyright>JetBrains s.r.o.</copyright>
+    <licenseUrl>https://www.jetbrains.com/resharper/buy/resharper_clt_license.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://www.jetbrains.com/help/resharper/ReSharper_Command_Line_Tools.html</docsUrl>
+    <mailingListUrl>https://dotnettools-support.jetbrains.com/hc/en-us/community/topics/200363899-Tracker-dotTrace</mailingListUrl>
+    <bugTrackerUrl>https://youtrack.jetbrains.net/issues/RSRP</bugTrackerUrl>
+    <tags>resharper jetbrains developer tool ci continuous integration code quality</tags>
+    <summary>ReSharper Command Line Tools</summary>
+    <description>ReSharper Command Line Tools (CLT) is a free set of standalone command line tools that enable you to run ReSharper inspections outside of Visual Studio and find duplicate code. 
+The tools can be integrated with a CI server, code quality management server or version control system.
+
+ReSharper Command Line Tools are free and don't require a license key.
+    </description>
+    <releaseNotes>https://www.jetbrains.com/resharper/whatsnew/</releaseNotes>
+    <dependencies>
+      <dependency id="resharper-clt.portable" version="[2018.1]" />
+    </dependencies>
+  </metadata>
+</package>

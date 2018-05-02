@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>resharper-ultimate-all</id>
+    <version>2018.1</version>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/resharper-ultimate-all</packageSourceUrl>
+    <owners>flcdrg</owners>
+    <title>ReSharper Ultimate All</title>
+    <authors>JetBrains</authors>
+    <projectUrl>http://www.jetbrains.com/dotnet/</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/flcdrg/chocolatey-resharper-ultimate-all/master/icons/resharper-logo.png</iconUrl>
+    <copyright>JetBrains s.r.o</copyright>
+    <licenseUrl>https://www.jetbrains.com/resharper/buy/index.jsp?product=ultimate</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>http://www.jetbrains.com/resharper/documentation/</docsUrl>
+    <mailingListUrl>https://resharper-support.jetbrains.com/hc/en-us/community/topics</mailingListUrl>
+    <bugTrackerUrl>https://youtrack.jetbrains.com/issues/RSRP</bugTrackerUrl>
+    <tags>ReSharper JetBrains dotCover dotMemory dotPeek dotTrace Ultimate admin</tags>
+    <summary>JetBrains ReSharper Ultimate Full Install</summary>
+    <description>
+This package installs all the .NET components of JetBrains ReSharper Ultimate in one pass. 
+It is a faster, more efficient alternative to running `choco install resharper dottrace dotmemory dotcover dotpeek` as the latter will run the JetBrains installer 5 times (once for each application)
+
+If you just want to install specific JetBrains applications then consider using one or more of the other individual Chocolatey packages:
+
+- [ReSharper](https://chocolatey.org/packages/resharper)
+- [dotCover](https://chocolatey.org/packages/dotCover)
+- [dotMemory](https://chocolatey.org/packages/dotMemory)
+- [dotPeek](https://chocolatey.org/packages/dotPeek)
+- [dotTrace](https://chocolatey.org/packages/dotTrace)
+
+### Package Specific
+
+#### Package Parameters
+The following package parameters can be set:
+
+ * `/PerMachine` - install machine-wide (instead of per-user)
+
+These parameters can be passed to the installer with the use of `--params`.
+For example: `--params "'/PerMachine'"`.
+	</description>
+    <releaseNotes>https://www.jetbrains.com/resharper/whatsnew</releaseNotes>
+    <dependencies>
+      <dependency id="resharper-platform" version="[112.0.20180414.124625]" />
+      <dependency id="chocolatey-core.extension" version="1.3.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

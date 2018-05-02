@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>ReSharper</id>
+    <owners>JetBrains, flcdrg</owners>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/resharper</packageSourceUrl>
+    <version>2018.1</version>
+    <title>JetBrains ReSharper</title>
+    <authors>JetBrains</authors>
+    <projectUrl>https://www.jetbrains.com/resharper</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/jetbrains/chocolatey/master/ReSharper/logo.png</iconUrl>
+    <copyright>JetBrains s.r.o.</copyright>
+    <licenseUrl>https://www.jetbrains.com/resharper/buy/index.jsp?product=ultimate</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://www.jetbrains.com/help/resharper/Introduction__Index.html</docsUrl>
+    <mailingListUrl>https://resharper-support.jetbrains.com/hc/en-us</mailingListUrl>
+    <bugTrackerUrl>https://youtrack.jetbrains.net/issues/RSRP</bugTrackerUrl>
+    <tags>jetbrains developer admin visualstudio</tags>
+    <summary>Visual Studio extension for .NET developers</summary>
+    <description>Visual Studio extension for .NET developers
+### Analyze code quality
+
+On-the-fly code quality analysis is available in C#, VB.NET, XAML, ASP.NET, ASP.NET MVC, JavaScript, TypeScript, CSS, HTML, and XML. You'll know right away if your code needs to be improved.
+
+### Eliminate errors and code smells
+
+Not only does ReSharper warn you when there's a problem in your code but it provides hundreds of quick-fixes to solve problems automatically. In most cases, you can select the best quick-fix from a variety of options.
+
+### Safely change the code base
+
+Automated solution-wide code refactorings help safely change your code base. Whether you need to revitalize legacy code or put your project structure in order, you can lean on ReSharper.
+
+### Instantly traverse the entire solution
+
+You can instantly navigate and search in the whole solution. Jump to any file, type, or type member, or navigate from a specific symbol to its usages, base and derived symbols, or implementations.
+
+### Enjoy code editing helpers
+
+Multiple code editing helpers include extended IntelliSense, hundreds of instant code transformations, auto-importing namespaces, rearranging code and displaying documentation.
+
+### Comply with coding standards
+
+Code style and formatting functionality with fine-grained, language-specific settings will help you get rid of unused code and create a common coding standard for your team.
+    </description>
+    <releaseNotes>https://www.jetbrains.com/resharper/whatsnew/</releaseNotes>
+    <dependencies>
+      <dependency id="resharper-platform" version="[112.0.20180414.124625]" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
