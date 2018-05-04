@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sbis-plugin</id>
-    <version>3.18.58.8</version>
+    <version>3.23.70.6</version>
     <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/sbis-plugin</packageSourceUrl>
     <owners>galeksandrp</owners>
     <title>SBIS Plugin (Install)</title>
