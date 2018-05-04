@@ -29,7 +29,7 @@ It may be compiled with Visual C or gcc. Native Win32/Win64 versions included in
 See Release Notes and Changes on download page for a full list of features list.
 
 3proxy is absolutely free (FreeWare) and open source. It can be used under terms of GNU/GPL. Starting from 0.6 version BSD-style license is used and any compatible license (Apache license, GPL, LGPL) may be used instead.</description>
-    <releaseNotes>https://github.com/z3APA3A/3proxy/releases/tag/0.8.11</releaseNotes>
+    <releaseNotes>https://github.com/z3APA3A/3proxy/releases</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
