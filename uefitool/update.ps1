@@ -13,7 +13,7 @@ function global:au_GetLatest {
     $release = curl "https://api.github.com/repos/LongSoft/UEFITool/releases/latest?client_id=$env:GITHUB_CLIENT_ID&client_secret=$env:GITHUB_CLIENT_SECRET" | ConvertFrom-Json
 	
 	@{
-        URL32   = ($release.assets | where {$_.name.StartsWith("UEFITool_")}).browser_download_url
+        URL32   = ($release.assets -match 'UEFITool_.+_win32.zip').browser_download_url
         Version = $release.tag_name
     }
 }
