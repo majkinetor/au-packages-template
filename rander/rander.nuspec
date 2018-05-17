@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>rander</id>
+    <version>0.1.0</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/rander</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>Rander (Install)</title>
+    <authors>KPP Ranat</authors>
+    <projectUrl>http://randersoft.com</projectUrl>
+    <iconUrl>http://randersoft.com/en/screenshot.png</iconUrl>
+    <copyright>Copyright © 2004-2017 KPP Ranat</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>http://randersoft.com/en/help/reports/license.htm</docsUrl>
+    <bugTrackerUrl>http://randersoft.com/en/contacts.shtml</bugTrackerUrl>
+    <tags>rander cti telephony panasonic pbx tsp tapi smdr admin</tags>
+    <summary>Rander is CTI software integrated with Panasonic PBX</summary>
+    <description>Rander is CTI software integrated with Panasonic PBX. (What is CTI?) Rander brings together the two main communication tools - the computer and the telephone. Your company can work far more effectively with Rander as it gives you basic CTI call center functionality. Your employees can handle more calls in the same amount of time and you can provide your customers with even better care.
+
+Here are a few examples of how Rander CTI could be used to increase the efficiency of your company.
+Members of the accounts department could answer customers calls ready with the accounts software showing the customers balance on their screen.
+Customer service could respond to enquiries with an Access database open and ready to log a pending request.
+Your dispatch department would have no need to ask the customer for delivery addresses if it they were already looking at them on their screen at the point of speaking to them.
+All of these examples are ways of ensuring your company departments run more effectively. Less time searching the database not only means your customers perceptions of you is a professional one, but statistically each call should be processed in a shorter time, allowing for more calls to be dealt with by your teams.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
