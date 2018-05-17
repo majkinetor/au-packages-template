@@ -32,4 +32,4 @@ function global:au_GetLatest {
 	$Latest
 }
 
-update -NoCheckChocoVersion
+update
