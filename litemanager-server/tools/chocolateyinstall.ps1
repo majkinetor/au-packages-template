@@ -1,7 +1,7 @@
 ﻿$packageArgs = @{
   packageName            = "$env:chocolateyPackageName"
   url                    = 'http://litemanager.com/soft/litemanager_4.8.zip'
-  checksum               = '5e27c47fac38ef31467776b3872a2033c599d3cbd91cfbd5109e84509f0e14b2'
+  checksum               = '8b1d22bbf9e7e9095dce9d3129c0ac6cbab8017e6d42f96179da0e565b58d341'
   checksumType           = 'sha256'
   UnzipLocation          = "$env:TMP"
 }
