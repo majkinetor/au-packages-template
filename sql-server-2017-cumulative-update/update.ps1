@@ -2,9 +2,14 @@ import-module au
 
 function global:au_SearchReplace {
     @{
+        #   softwareName  = 'Hotfix 3026 for Microsoft SQL Server*(KB4229789)*'
         'tools\chocolateyInstall.ps1' = @{
             "(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"
             "(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
+            "(^[$]softwareName\s*=\s*)('.*')" = "`$1'Hotfix $($Latest.Build) for Microsoft SQL Server*($($Latest.KB))*'"
+        }
+        'tools\chocolateyUninstall.ps1' = @{
+            "(^[$]softwareName\s*=\s*)('.*')" = "`$1'Hotfix $($Latest.Build) for Microsoft SQL Server*($($Latest.KB))*'"
         }
      }
 }
@@ -18,19 +23,25 @@ function global:au_GetLatest {
     if ($response.Content -match "<meta name=`"Description`" content=`"Cumulative Update Package (\d+) for SQL Server 2017 - KB(\d+)`" \/\>") {
         $cu = $Matches[1]
         $kb = $Matches[2]
+    } else {
+        return @{}
     }
 
     $response = Invoke-WebRequest -Uri "https://www.microsoft.com/en-us/download/details.aspx?id=56128"
 
     if ($response.Content -match "\d+\.\d+\.\d+\.\d+") {
         $version = $Matches[0]
+    } else {
+        return @{}
     }
     
+    $v = [Version] $version
     $Latest = @{ 
         URL64 = $url
         Version = $version
         KB = $kb
         CU = $cu
+        Hotfix = $v.Build
     }
     return $Latest
 }
