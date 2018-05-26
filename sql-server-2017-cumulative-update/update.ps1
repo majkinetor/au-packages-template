@@ -6,10 +6,10 @@ function global:au_SearchReplace {
         'tools\chocolateyInstall.ps1' = @{
             "(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"
             "(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
-            "(^[$]softwareName\s*=\s*)('.*')" = "`$1'Hotfix $($Latest.Build) for Microsoft SQL Server*($($Latest.KB))*'"
+            "(^[$]softwareName\s*=\s*)('.*')" = "`$1'Hotfix $($Latest.Build) for SQL Server 2017*(KB$($Latest.KB))*'"
         }
         'tools\chocolateyUninstall.ps1' = @{
-            "(^[$]softwareName\s*=\s*)('.*')" = "`$1'Hotfix $($Latest.Build) for Microsoft SQL Server*($($Latest.KB))*'"
+            "(^[$]softwareName\s*=\s*)('.*')" = "`$1'Hotfix $($Latest.Build) for SQL Server 2017*(KB$($Latest.KB))*'"
         }
      }
 }
@@ -41,7 +41,7 @@ function global:au_GetLatest {
         Version = $version
         KB = $kb
         CU = $cu
-        Hotfix = $v.Build
+        Build = $v.Build
     }
     return $Latest
 }
