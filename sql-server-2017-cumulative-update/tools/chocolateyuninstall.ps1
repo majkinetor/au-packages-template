@@ -1,11 +1,13 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
+$softwareName = 'sql-server-2017-cumulative-update*'
+
 $file = Join-Path $toolsDir "SQLServer2017-KB4052987-x64.exe"
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  softwareName  = 'sql-server-2017-cumulative-update*'
+  softwareName  = $softwareName
   fileType      = 'EXE'
   file          = $file
   silentArgs    = "/q /IAcceptSQLServerLicenseTerms /Action=RemovePatch /AllInstances"

@@ -3,6 +3,7 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $url        = 'https://download.microsoft.com/download/C/4/F/C4F908C9-98ED-4E5F-88D5-7D6A5004AEBD/SQLServer2017-KB4052987-x64.exe'
 $checksum   = '3228E428B10C884F6C3C91EEA8A65546AD7A019EE9B56D1E5CC31708611D24CE'
+$softwareName = 'sql-server-2017-cumulative-update*'
 
 $filename = [IO.Path]::GetFileName($url)
 
@@ -32,7 +33,7 @@ Copy-Item $filePath -Destination $fullFilePath
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   file  = $fullFilePath
-  softwareName  = 'sql-server-2017-cumulative-update*'
+  softwareName  = $softwareName
   silentArgs    = "/q /IAcceptSQLServerLicenseTerms /Action=Patch /AllInstances"
   validExitCodes= @(0, 3010, 1641)
 }
