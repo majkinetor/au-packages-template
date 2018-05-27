@@ -33,10 +33,6 @@ Uninstalling with Chocolatey is known to not be reliable, as the uninstaller wan
 Should you need to uninstall this cumulative update, you may need to revert to manual uninstallation via Programs and Features, Installed Updates.
     </description>
     <releaseNotes>http://support.microsoft.com/help/4229789</releaseNotes>
-    <dependencies>
-      <dependency id="sql-server-2017" version="14.0.1000" />
-      <dependency id="chocolatey-core.extension" version="1.1.0" />
-    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
