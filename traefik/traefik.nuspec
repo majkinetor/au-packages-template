@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>traefik</id>
+    <version>1.6.1</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/traefik</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>Træfik</title>
+    <authors>Containous SAS</authors>
+    <projectUrl>https://traefik.io</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/containous/traefik/master/docs/img/traefik.logo.png</iconUrl>
+    <copyright>Copyright (c) 2016-2018 Containous SAS</copyright>
+    <licenseUrl>https://github.com/containous/traefik/blob/master/LICENSE.md</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/containous/traefik</projectSourceUrl>
+    <docsUrl>https://docs.traefik.io</docsUrl>
+    <bugTrackerUrl>https://github.com/containous/traefik/issues</bugTrackerUrl>
+    <tags>traefik reverse-proxy proxy</tags>
+    <summary>Træfik, a modern reverse proxy</summary>
+    <description>Træfik is a modern HTTP reverse proxy and load balancer that makes deploying microservices easy. Træfik integrates with your existing infrastructure components (Docker, Swarm mode, Kubernetes, Marathon, Consul, Etcd, Rancher, Amazon ECS, ...) and configures itself automatically and dynamically. Pointing Træfik at your orchestrator should be the only configuration step you need.</description>
+    <releaseNotes>https://github.com/containous/traefik/releases</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
