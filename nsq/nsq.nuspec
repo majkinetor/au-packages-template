@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>nsq</id>
+    <version>0.3.8</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/nsq</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>NSQ</title>
+    <authors>Matt Reiferson, Jehiah Czebotar</authors>
+    <projectUrl>https://nsq.io</projectUrl>
+    <iconUrl>https://nsq.io/static/img/nsq_blue.png</iconUrl>
+    <copyright>Copyright (c) 2012-2018 Matt Reiferson, Jehiah Czebotar</copyright>
+    <licenseUrl>https://github.com/nsqio/nsq/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/nsqio/nsq</projectSourceUrl>
+    <docsUrl>https://nsq.io/overview/design.html</docsUrl>
+    <bugTrackerUrl>https://github.com/nsqio/nsq/issues</bugTrackerUrl>
+    <tags>nsq realtime rt distributed messaging</tags>
+    <summary>A realtime distributed messaging platform</summary>
+    <description>NSQ is a realtime distributed messaging platform designed to operate at scale, handling billions of messages per day.
+
+It promotes distributed and decentralized topologies without single points of failure, enabling fault tolerance and high availability coupled with a reliable message delivery guarantee. See features &amp; guarantees.
+
+Operationally, NSQ is easy to configure and deploy (all parameters are specified on the command line and compiled binaries have no runtime dependencies). For maximum flexibility, it is agnostic to data format (messages can be JSON, MsgPack, Protocol Buffers, or anything else). Official Go and Python libraries are available out of the box (as well as many other client libraries) and, if you're interested in building your own, there's a protocol spec.</description>
+    <releaseNotes>https://github.com/nsqio/nsq/releases</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
