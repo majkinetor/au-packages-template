@@ -71,12 +71,6 @@ install:
 # - cinst chocolatey-core.extension
     
 build_script:
-- ps: >-
-    if (!($env:API_BUILD -or $env:APPVEYOR_REPO_COMMIT_MESSAGE.Contains('[ci skiptest]'))) {& "C:\Program Files\Git\usr\bin\bash" --login -c "git diff --name-only --diff-filter=d HEAD~ | grep '/' | cut -d '/' -f 1 | sort | uniq | xargs -i bash -c 'choco pack {}/{}.nuspec && choco install -y -s .\;https://chocolatey.org/api/v2/ --pre {} && choco uninstall -y {}'"}
-- ps: >-
-    if ($env:APPVEYOR_REPO_COMMIT_MESSAGE -match '[ci push] ') {choco push --api-key $env:api_key $(ls *.nupkg)}
-- ps: >-
-    if ($env:APPVEYOR_REPO_COMMIT_MESSAGE -match '[ci push] ') {Exit-AppveyorBuild}
 - ps: |
     $ErrorActionPreference = 'Continue'
 
@@ -85,7 +79,9 @@ build_script:
     if ( ($Env:APPVEYOR_SCHEDULED_BUILD -ne 'true') -and ($Env:APPVEYOR_FORCED_BUILD -ne 'true') ) {
         switch -regex ($Env:APPVEYOR_REPO_COMMIT_MESSAGE)
         {
-            '\[AU (.+?)\]'   { $forced = $Matches[1] }
+            '\[AU (.+?):(.+?)\]'   { $forced = $Matches[1,2] -join ':'; $package = $Matches[1] }
+            
+            '\[AU ([^:]+?)\]'   { $package = $Matches[1] }
 
             '\[PUSH (.+?)\]' {
                 $packages = $Matches[1] -split ' '
@@ -104,7 +100,7 @@ build_script:
         }
     }
 
-    if (!$env:APPVEYOR_REPO_COMMIT_MESSAGE.Contains('[ci skippush]')) {./update_all.ps1 -ForcedPackages $forced}
+    ./update_all.ps1 -Name $package -ForcedPackages $forced
     7z a au_temp.zip $Env:TEMP\chocolatey\au\*
 
 artifacts:
