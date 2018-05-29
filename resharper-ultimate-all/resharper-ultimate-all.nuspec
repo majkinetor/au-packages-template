@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>resharper-ultimate-all</id>
-    <version>2018.1</version>
+    <version>2018.1.1</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/resharper-ultimate-all</packageSourceUrl>
     <owners>flcdrg</owners>
     <title>ReSharper Ultimate All</title>
@@ -42,7 +42,7 @@ For example: `--params "'/PerMachine'"`.
 	</description>
     <releaseNotes>https://www.jetbrains.com/resharper/whatsnew</releaseNotes>
     <dependencies>
-      <dependency id="resharper-platform" version="[112.0.20180414.124625]" />
+      <dependency id="resharper-platform" version="[112.0.20180524.161537]" />
       <dependency id="chocolatey-core.extension" version="1.3.1" />
     </dependencies>
   </metadata>
