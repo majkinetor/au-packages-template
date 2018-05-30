@@ -10,6 +10,10 @@ function global:au_SearchReplace {
     }
 }
 
+function global:au_BeforeUpdate() {
+    rm tools\rtDrvRemover.exe
+}
+
 function global:au_GetLatest {
 	$URL32 = 'https://download.rutoken.ru/Rutoken/Utilites/rtDrvInstallTool.msi'
     Get-ChocolateyWebFile 'rutoken-driver-repair-tool' "$env:TMP\rtDrvInstallTool.msi" $URL32

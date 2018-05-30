@@ -10,6 +10,10 @@ function global:au_SearchReplace {
     }
 }
 
+function global:au_BeforeUpdate() {
+    rm tools\Fintender.Installer.Setup.exe
+}
+
 function global:au_GetLatest {
 	$URL32 = 'https://private.fintender.ru/files/Fintender.Installer.Setup.exe'
     Get-ChocolateyWebFile 'fintender-installer' $URL32 -FileFullPath "$env:TMP\Fintender.Installer.Setup.exe"

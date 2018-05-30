@@ -10,6 +10,10 @@ function global:au_SearchReplace {
     }
 }
 
+function global:au_BeforeUpdate() {
+    rm tools\RutokenFlashTool.exe
+}
+
 function global:au_GetLatest {
 	$URL32 = 'https://download.rutoken.ru/Rutoken/Utilites/RutokenFlashTool.exe'
     Get-ChocolateyWebFile 'rutoken-ecp-flash-utility' $URL32 -FileFullPath "$env:TMP\RutokenFlashTool.exe"

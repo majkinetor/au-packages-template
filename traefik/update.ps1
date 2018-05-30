@@ -11,6 +11,10 @@ function global:au_SearchReplace {
     }
 }
 
+function global:au_BeforeUpdate() {
+    rm tools\traefik.exe
+}
+
 function global:au_GetLatest {
     $release = curl "https://api.github.com/repos/containous/traefik/releases/latest?client_id=$env:GITHUB_CLIENT_ID&client_secret=$env:GITHUB_CLIENT_SECRET" | ConvertFrom-Json
 	

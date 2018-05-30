@@ -10,6 +10,10 @@ function global:au_SearchReplace {
     }
 }
 
+function global:au_BeforeUpdate() {
+    rm tools\cpfixit.exe
+}
+
 function global:au_GetLatest {
 	$URL32 = 'https://www.cryptopro.ru/sites/default/files/public/cpfixit.exe'
     Get-ChocolateyWebFile 'cpfixit' $URL32 -FileFullPath "$env:TMP\cpfixit.exe"

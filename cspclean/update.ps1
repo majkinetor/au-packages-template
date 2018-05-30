@@ -10,6 +10,10 @@ function global:au_SearchReplace {
     }
 }
 
+function global:au_BeforeUpdate() {
+    rm tools\cspclean.exe
+}
+
 function global:au_GetLatest {
 	$URL32 = 'https://www.cryptopro.ru/sites/default/files/public/cspclean.exe'
     Get-ChocolateyWebFile 'cspclean' $URL32 -FileFullPath "$env:TMP\cspclean.exe"

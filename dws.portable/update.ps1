@@ -9,6 +9,10 @@ function global:au_SearchReplace {
     }
 }
 
+function global:au_BeforeUpdate() {
+    rm tools\DWS.exe
+}
+
 function global:au_GetLatest {
     $release = curl "https://api.github.com/repos/Nummer/Destroy-Windows-10-Spying/releases/latest?client_id=$env:GITHUB_CLIENT_ID&client_secret=$env:GITHUB_CLIENT_SECRET" | ConvertFrom-Json
 	
