@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>sdrsharp</id>
+    <version>0.1.0</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/sdrsharp</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>SDR#</title>
+    <authors>Youssef Touil</authors>
+    <projectUrl>https://airspy.com</projectUrl>
+    <iconUrl>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6vvs5WlHIAbxvg_LlOs5FdUNxj096dpo2SWgYCBWY1kNGDEb1</iconUrl>
+    <copyright>Copyright (c) 2012-2018 Youssef Touil</copyright>
+    <licenseUrl>https://github.com/cgommel/sdrsharp/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://airspy.com/quickstart/</docsUrl>
+    <bugTrackerUrl>https://airspy.groups.io/g/main</bugTrackerUrl>
+    <tags>sdr sdr-sharp sdrsharp rtlsdr rtl-sdr</tags>
+    <summary>SDR# (SDRSharp) is a popular, simple, fast and extensible Software Defined Radio program</summary>
+    <description>SDR# (SDRSharp) is a popular, simple, fast and extensible Software Defined Radio program written from scratch in C# to experiment new Digital Signal Processing techniques and push the Microsoft .NET Framework to its limits.
+
+We release new versions very often so we invite you to visit this page frequently for updates.</description>
+    <releaseNotes>https://airspy.com/downloads/changelog.txt</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
