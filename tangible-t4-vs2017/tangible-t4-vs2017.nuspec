@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>tangible-t4-vs2017</id>
-    <version>2.4.0</version>
+    <version>2.4.0.20180531</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/tangible-t4-vs2017</packageSourceUrl>
     <owners>flcdrg</owners>
     <title>tangible T4 Editor plus modeling tools for VS 2017</title>
@@ -23,9 +23,15 @@
 	The Microsoft T4 Generation Engine is already built into Visual Studio, however Visual Studio does not provide an Code-Editor for it. 
 	That is why we created the tangible T4 Editor for Visual Studio. You can now accelerate your projects by adopting Microsoft T4 today and generate the code you need directly from diagrams, 
 	database schemas, xml files or other sources - Write less, achieve more.</description>
-    <releaseNotes>http://t4-editor.tangible-engineering.com/forum/forum.aspx?g=posts&amp;t=1522</releaseNotes>
+    <releaseNotes>http://t4-editor.tangible-engineering.com/forum/forum.aspx?g=posts&amp;t=1522
+    
+    20180531 Package improvements
+  - Loosen version dependency on `chocolatey-visualstudio.extension`
+  - Update download URL
+  - Improve VS2017 detection to handle moved VS package caches
+    </releaseNotes>
 	<dependencies>
-      <dependency id="chocolatey-visualstudio.extension" version="[1.2.0]" />
+      <dependency id="chocolatey-visualstudio.extension" version="1.7.0" />
     </dependencies>
   </metadata>
   <files>
