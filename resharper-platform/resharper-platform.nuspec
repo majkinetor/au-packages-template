@@ -1,12 +1,12 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>resharper-platform</id>
     <owners>JetBrains, flcdrg</owners>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/resharper-platform</packageSourceUrl>
-    <version>112.0.20180414.124625</version>
-    <title>JetBrains ReSharper Ultimate 2018.1</title>
+    <version>112.0.20180529.225627</version>
+    <title>JetBrains ReSharper Ultimate Platform Installer 2018.1.2</title>
     <authors>JetBrains</authors>
     <projectUrl>https://www.jetbrains.com/dotnet/</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/jetbrains/chocolatey/master/ReSharper/logo.png</iconUrl>
@@ -16,7 +16,17 @@
     <tags>resharper jetbrains developer productivity tool visualstudio</tags>
     <summary>JetBrains ReSharper Ultimate shared installer</summary>
     <description>ReSharper Ultimate is a license that combines all individual JetBrains .NET tools, as well as ReSharper C++. 
-    Each ReSharper Ultimate license allows a single developer to use ReSharper, ReSharper C++, dotCover, dotTrace and dotMemory.</description>
+Each ReSharper Ultimate license allows a single developer to use ReSharper, ReSharper C++, dotCover, dotTrace and dotMemory.
+    
+This package is used as a dependency by other Chocolatey packages. To install ReSharper or related tools, see the individual packages:
+
+- [ReSharper](https://chocolatey.org/packages/resharper)
+- [dotCover](https://chocolatey.org/packages/dotCover)
+- [dotMemory](https://chocolatey.org/packages/dotMemory)
+- [dotPeek](https://chocolatey.org/packages/dotPeek)
+- [dotTrace](https://chocolatey.org/packages/dotTrace)
+- [ReSharper Ultimate All](https://chocolatey.org/packages/resharper) - Installs all the .NET tools from ReSharper Ultimate (faster than installing individual packages)
+    </description>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
