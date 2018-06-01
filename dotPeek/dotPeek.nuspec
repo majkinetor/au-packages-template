@@ -1,11 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>dotPeek</id>
     <owners>JetBrains, flcdrg</owners>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/dotPeek</packageSourceUrl>
-    <version>2018.1</version>
+    <version>2018.1.2</version>
     <title>JetBrains dotPeek</title>
     <authors>JetBrains</authors>
     <projectUrl>https://www.jetbrains.com/decompiler</projectUrl>
@@ -54,7 +54,7 @@ dotPeek indexes all assemblies in your assembly list, as well as all assemblies 
     </description>
     <releaseNotes>https://www.jetbrains.com/decompiler/whatsnew/</releaseNotes>
     <dependencies>
-      <dependency id="resharper-platform" version="[112.0.20180414.124625]" />
+      <dependency id="resharper-platform" version="[112.0.20180529.225627]" />
     </dependencies>
   </metadata>
   <files>

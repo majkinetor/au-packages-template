@@ -1,11 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>dotMemory</id>
     <owners>JetBrains, flcdrg</owners>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/dotMemory</packageSourceUrl>
-    <version>2018.1</version>
+    <version>2018.1.2</version>
     <title>JetBrains dotMemory</title>
     <authors>JetBrains</authors>
     <projectUrl>https://www.jetbrains.com/dotmemory</projectUrl>
@@ -43,7 +43,7 @@ Analyse memory traffic in a particular timeframe to know the cause of excessive 
 
     <releaseNotes>https://www.jetbrains.com/dotmemory/whatsnew/</releaseNotes>
     <dependencies>
-      <dependency id="resharper-platform" version="[112.0.20180414.124625]" />
+      <dependency id="resharper-platform" version="[112.0.20180529.225627]" />
     </dependencies>
   </metadata>
   <files>
