@@ -3,7 +3,7 @@
   FileType               = 'exe'
   SilentArgs             = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
   url                    = 'https://media.kingston.com/support/downloads/KSM-setup.exe'
-  checksum               = 'd2275e54db7430a3c28a37f82f715aeeca3fdc4b9808b47ffc7de50fe142a8cb'
+  checksum               = 'be4a44137aa604562e24e6f5aeecb62339f8ae6f0a65af487d32b5920b2a6fab'
   checksumType           = 'sha256'
 }
 Install-ChocolateyPackage @packageArgs
