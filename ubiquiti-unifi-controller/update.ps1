@@ -1,5 +1,7 @@
 import-module au
 
+Set-StrictMode -Version Latest
+
 function global:au_SearchReplace {
     @{
         'tools\chocolateyInstall.ps1' = @{
@@ -12,6 +14,21 @@ function global:au_SearchReplace {
      }
 }
 
+function GetStream($download, [version] $nextVersion)
+{
+    $minVersion = New-Object version $nextVersion.Major, ($nextVersion.Minor-1), $nextVersion.Build, $nextVersion.Revision
+    $download | Where-Object { [version] $_.version -ge $minVersion} |
+        Where-Object { [version] $_.version -lt $nextVersion } | 
+        Select-Object -Last 1 | 
+        ForEach-Object {
+        @{ 
+            URL32 = "https://www.ubnt.com" + $_.file_path
+            Version = $_.version
+            ReleaseNotes = $_.changelog
+        }
+    }
+}
+
 function global:au_GetLatest {
 
     $headers = @{
@@ -22,25 +39,26 @@ function global:au_GetLatest {
     $response = Invoke-RestMethod -Uri "https://www.ubnt.com/download/?platform=unifi" -Headers $headers
 
     $download = $response.downloads | Where-Object { 
-        $_.Featured -and `
-        $_.category__slug -eq "software" `
-        -and $_.filename.EndsWith(".exe") `
-        -and -not ($_.version.StartsWith("v")) 
-    } | 
-    Sort-Object -Descending { [version] $_.version } |
-    Select-Object -First 1
+            $_.category__slug -eq "software" `
+            -and $_.filename.EndsWith(".exe") `
+            -and -not ($_.version.StartsWith("v")) `
+        } |
+        Sort-Object { [version] $_.version };
 
-    $url = "https://www.ubnt.com" + $download.file_path
-
-    $Latest = @{ 
-        URL32 = $url
-        Version = $download.version
-        ReleaseNotes = $download.changelog
+    $latest = @{
+        Streams = [ordered] @{
+        }
     }
-    return $Latest
+
+    $i = 5
+    $stream = GetStream $download "5.$i.0.0"
+    while ($stream) {
+        $latest.Streams.Add("5.$($i - 1)", $stream)
+        $i++
+        $stream = GetStream $download "5.$i.0.0"
+    }
+
+    $latest
 }
 
-if ($MyInvocation.InvocationName -ne '.') {
-
-  update -ChecksumFor 32
-}
+update -ChecksumFor 32
