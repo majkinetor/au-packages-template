@@ -7,7 +7,7 @@ function global:au_SearchReplace {
             "(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
         }
         'resharper-platform.nuspec' = @{
-            "(\<title\>).*?(\</title\>)" = "`${1}JetBrains ReSharper Ultimate $($Latest.MarketingVersion)`$2"
+            "(\<title\>).*?(\</title\>)" = "`${1}JetBrains ReSharper Ultimate Platform Installer $($Latest.MarketingVersion)`$2"
         }        
      }
 }
@@ -18,4 +18,4 @@ function global:au_GetLatest {
     return GetJetbrainsReSharperPlatformLatest
 }
 
-update -ChecksumFor none -Force
+update -ChecksumFor none
