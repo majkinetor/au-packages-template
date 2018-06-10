@@ -39,6 +39,7 @@ UAP, UAP-AC, UAP-AC-EDU, UAP-AC-HD, UAP-AC-LITE, UAP-AC-LR, UAP-AC-M, UAP-AC-M-P
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->
-    <file src="tools\**" target="tools" />
+    <file src="tools\*.ps1" target="tools" />
+    <file src="tools\*.ahk" target="tools" />
   </files>
 </package>
