@@ -2,10 +2,10 @@
 
 $packageName= 'microsoft-teams.install'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32      = 'https://statics.teams.microsoft.com/production-windows/1.1.00.13555/Teams_windows.msi'
-$url64      = 'https://statics.teams.microsoft.com/production-windows-x64/1.1.00.13555/Teams_windows_x64.msi'
-$checksum32 = '2c56dfa01a5dc2145d58fcaddc7b3e080c18cb94e57149f595ecea4445e7522c'
-$checksum64 = '0c9fd8fb242cdc6228085262f5064a8f0ad6a1415f84a700bf75709bb66b7405'
+$url32      = 'https://statics.teams.microsoft.com/production-windows/1.1.00.14359/Teams_windows.msi'
+$url64      = 'https://statics.teams.microsoft.com/production-windows-x64/1.1.00.14359/Teams_windows_x64.msi'
+$checksum32 = '067c81ee43fcaa1339556d7b6c66a40bdad6bb17349c9287c1e10943304edde5'
+$checksum64 = '3a6a00f69c6a0e7b3ee7d268c5bff42c4953f2288d908348a6a7503e744b3cc8'
 
 $packageArgs = @{
   packageName   = $packageName
