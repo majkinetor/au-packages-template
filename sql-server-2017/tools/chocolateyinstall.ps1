@@ -4,6 +4,12 @@ $url        = 'https://download.microsoft.com/download/E/F/2/EF23C21D-7860-4F05-
 
 # Inspired by @riezebosch's SQL Server packages at https://github.com/riezebosch/BoxstarterPackages/tree/master/sql-server
 
+. .\Get-PendingReboot.ps1
+
+if ((Get-PendingReboot).RebootPending) {
+  Write-Error "A system reboot is pending. You must restart Windows first before installing SQL Server"
+}
+
 $pp = Get-PackageParameters
 
 # Default to use supplied configuration file and current user as sysadmin
