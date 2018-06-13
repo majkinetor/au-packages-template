@@ -13,7 +13,11 @@ $checksumType = 'sha256'
 
 $ahkScript = "$toolsDir\install.ahk"
 
-Start-Process -FilePath 'AutoHotkey' -ArgumentList $ahkScript -PassThru
+[bool] $runningAU = (Test-Path Function:\au_GetLatest)
+
+if (-not $runningAU) {
+    Start-Process -FilePath 'AutoHotkey' -ArgumentList $ahkScript -PassThru
+}
 
 Install-ChocolateyPackage -PackageName "$packageName" `
                           -FileType "$installerType" `
