@@ -104,6 +104,15 @@ if ($packageParameters) {
         $customArguments.Add("PROGRAMSMENU_SHORTCUTS", "0")
     }
 
+    if ($arguments.ContainsKey("KeyFile")) {
+        if ($arguments["KeyFile"] -eq "") {
+          Throw 'KeyFile needs a colon-separated argument; try something like this: --params "/KeyFile:C:\Users\foo\Temp\PDFXChangeEditor.xcvault".'
+        } else {
+          Write-Host "You want a KeyFile named $($arguments["KeyFile"])"
+          $customArguments.Add("KEYFILE", $arguments["KeyFile"])
+        }
+    }
+
 } else {
     Write-Debug "No Package Parameters Passed in"
 }

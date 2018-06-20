@@ -29,9 +29,10 @@ The following package parameters can be set:
  * `/NoViewInBrowsers` - Do not configure to open PDF files inside browsers.
  * `/NoSetAsDefault` - Do not set as default application for PDF files.
  * `/NoProgramsMenuShortcuts` - Do not create program menu group for installed application and their components.
+ * `/KeyFile:[file]` - Pass [file] (which should be a .xcvault file downloaded from Tracker Software) in as your license file.
 
 These parameters can be passed to the installer with the use of `-params`.
-For example: `-params '"/NoDesktopShortcuts"'`.
+For example: `-params '"/NoDesktopShortcuts"'`, `--params "/KeyFile:C:\Users\foo\Temp\PDFXChangeEditor.xcvault"`.
 
 </description>
     <releaseNotes>https://www.tracker-software.com/product/pdf-xchange-editor/history</releaseNotes>
