@@ -8,9 +8,6 @@ function global:au_SearchReplace {
             "(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
             "(^[$]softwareName\s*=\s*)('.*')" = "`$1'Hotfix $($Latest.Build) for SQL Server 2017*(KB$($Latest.KB))*'"
         }
-        'tools\chocolateyUninstall.ps1' = @{
-            "(^[$]softwareName\s*=\s*)('.*')" = "`$1'Hotfix $($Latest.Build) for SQL Server 2017*(KB$($Latest.KB))*'"
-        }
      }
 }
 
