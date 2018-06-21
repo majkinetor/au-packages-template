@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>dellcommandupdate</id>
+    <version>2.3.0</version>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/dellcommandupdate</packageSourceUrl>
+    <owners>flcdrg, joenazz</owners>
+    <title>Dell Command | Update</title>
+    <authors>Dell Inc</authors>
+    <projectUrl>http://www.dell.com/support/article/us/en/19/HOW10760/how-to-use-dell-command---update-to-update-all-drivers-bios-and-firmware-for-your-system?lang=EN</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/flcdrg/au-packages/master/dellcommandupdate/icons/dellcommandupdate.png</iconUrl>
+    <copyright>Copyright © 2018 Dell Inc. All rights reserved</copyright>
+    <licenseUrl>http://www.dell.com/learn/us/en/solutions/software-license-agreements?s=corp</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>http://www.dell.com/support/manuals/us/en/19/dell-command-update-v2.3/DCU_UG_2.3?guid=&amp;lang=</docsUrl>
+    <tags>dell command update admin</tags>
+    <summary>Dell utility that allows you to automate driver, BIOS and firmware updates on your system</summary>
+    <description>You can use Dell Command | Update to update a Dell system with the latest drivers, BIOS, firmware, and Dell software applications.
+
+Dell Command | Update provides the following new features:
+
+- Support for installing base drivers on a system that contains only an operating system, network adapter, a compatible network adapter driver, and an installation of Dell Command | Update, using the Advanced Driver Restore feature.
+- Support for updating intra-component dependencies as shown in the Partner Development Kit (PDK) catalog.
+- Notification when system restore points are created.
+- Enhanced updates Schedule — You can configure Dell Command | Update to automatically check for updates on the system at specific intervals of time
+
+Supported on OptiPlex, Venue Pro Tablet, Precision, XPS Notebook and Latitude models that are running the following Windows operating systems: Windows 7,Windows 8, Windows 8.1 and Windows 10.
+
+### Package updates
+This package is updated automatically by querying the Dell Version Control Catalog. There can sometimes be a short delay between the time new software version is released and when it is added to the catalog (which is also used by Dell applications to auto-update)
+ </description>
+ <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
