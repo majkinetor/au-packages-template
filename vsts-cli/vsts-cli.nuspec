@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vsts-cli</id>
-    <version>0.1.0-b1</version>
+    <version>0.1.1</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/vsts-cli</packageSourceUrl>
     <owners>flcdrg</owners>
     <title>VSTS CLI</title>
@@ -24,16 +24,20 @@
 VSTS CLI is optimized for managing and administering VSTS resources from the command line, and for building automation scripts that work against your VSTS or Team Foundation Server account. This article helps get you started using it, and teaches you the core concepts behind it.
 
 VSTS CLI is supported on Team Foundation Server 2017 update 2 and later.</description>
-    <releaseNotes>This is the preview release of VSTS CLI. Preview applies to these command modules:
+    <releaseNotes>
+This release is a bug fix release:
 
-    Build (commands to work with and manage Visual Studio Team Services builds.)
-    Code (commands to work with and manage Visual Studio Team Services code repositories.)
-    Project (commands to work with and manage Visual Studio Team Services team projects.)
-    Work (commands to work with and manage Visual Studio Team Services work items.)
+- Fixes issue where a user can inadvertently put private data into an argument name which would be included in usage telemetry. Argument names are included in telemetry, but argument values are not. This allows us to make investment decisions based on how customers use the CLI. Before this fix a customer could inadvertently send an argument value as an argument name, and that data would be collected and stored in telemetry for a 4 week period. With this fix, we ensure all argument names are valid argument names before reporting the telemetry. If there are any invalid argument names, then no telemetry is sent. This eliminates any chance of inadvertently including private data in the telemetry. Users have always been able to opt out of telemetry collection by using the configure command.
+- Fixes issue where `vsts -v` or `vsts --version` no longer worked with latest version of pip due to the use of a deprecated pip API.
+- Fix build command table output when build has no source branch.
+- Change name of `--source-branch` arg to just `--branch` on build queue command for consistancy and ease of use.
+- Improved error messaging when project is not specified but is required.
+- Performance improvements when calling commands with the `--help` or `-h` argument, by delaying imports to reduce unnecessary module loading.
+- Improved error messages when queueing a build fails.
+- Dependency updates and reaction
+- Other minor fixes.
 
-These command modules can be used in production and are supported by standard Microsoft SLA. You can ask questions and report issues on the VSTS developer community website using the vsts-cli tag. You can provide feedback from the command line with the vsts feedback command.
-
-The commands in these modules are stable and the syntax is not expected to change in upcoming releases of this version of VSTS CLI.</releaseNotes>
+    </releaseNotes>
 
   </metadata>
   <files>

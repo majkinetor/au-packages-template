@@ -7,8 +7,8 @@ $packageArgs = @{
   fileType      = 'msi'
   silentArgs    = "/qn /norestart"
   validExitCodes= @(0, 3010, 1641)
-  url           = "https://vstscli.blob.core.windows.net/msi/vsts-cli-0.1.0b1.msi"
-  checksum      = '3A02FCDDF358E19757FB02FE211D00A5F60C771638A288EB2E8ADF1D432E52B7'
+  url           = "https://vstscli.blob.core.windows.net/msi/vsts-cli-0.1.1.msi"
+  checksum      = 'CA03F2178A84C8ABDD99E693FFCBE85BC3E0733A41AB831CA5736FD1894A724F'
   checksumType  = 'sha256'
   destination   = $toolsDir
 }
