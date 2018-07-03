@@ -3,7 +3,7 @@
   FileType               = 'exe'
   SilentArgs             = '/qn'
   url                    = 'https://s3.amazonaws.com/KeyMetricSoft/FolderSizes/fs8-setup.exe'
-  checksum               = '1b80c3b072e2944089d16b8fa294f4d27e70067ef4b870e9e1f65074a5c5d0ad'
+  checksum               = '018ecb19f99e6de148a9f9e423d849ad816e82e5139bcbd3e1f4b59cecedefee'
   checksumType           = 'sha256'
 }
 Install-ChocolateyPackage @packageArgs
