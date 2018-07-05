@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>kontur-addtotrusted</id>
-    <version>2.0.18.1</version>
+    <version>2.0.18.2</version>
     <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/kontur-addtotrusted</packageSourceUrl>
     <owners>galeksandrp</owners>
     <title>Kontur.AddToTrusted (Install)</title>
