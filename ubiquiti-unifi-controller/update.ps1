@@ -1,7 +1,5 @@
 import-module au
 
-Set-StrictMode -Version Latest
-
 function global:au_SearchReplace {
     @{
         'tools\chocolateyInstall.ps1' = @{
