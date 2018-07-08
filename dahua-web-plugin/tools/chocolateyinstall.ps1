@@ -3,7 +3,7 @@
   FileType               = 'exe'
   SilentArgs             = '/S'
   url                    = 'http://4c11bfaa17c7.dahuaddns.com:7000/webplugin.exe'
-  checksum               = 'b88ca6d5abc01736fe5c4146d57fb3ca33d75d19064e6174b4659484962ec784'
+  checksum               = '52f5d89af1452ce08f8520193b1c0895fd4694cac9e12162ec042baf54185f39'
   checksumType           = 'sha256'
 }
 Install-ChocolateyPackage @packageArgs

@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>dahua-web-plugin</id>
-    <version>3.1.0.285246</version>
+    <version>3.1.0.486876</version>
     <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/dahua-web-plugin</packageSourceUrl>
     <owners>galeksandrp</owners>
     <title>Dahua Web Plugin (Install)</title>
