@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>letsencrypt-win-simple</id>
+    <version>1.9.8.4</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/letsencrypt-win-simple</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>letsencrypt-win-simple</title>
+    <authors>PKISharp</authors>
+    <projectUrl>https://github.com/PKISharp/win-acme</projectUrl>
+    <copyright>Copyright (c) 2015-2018 PKISharp</copyright>
+    <licenseUrl>https://github.com/PKISharp/win-acme/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/PKISharp/win-acme</projectSourceUrl>
+    <docsUrl>https://github.com/PKISharp/win-acme/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/PKISharp/win-acme/issues</bugTrackerUrl>
+    <tags>acme letsencrypt win-acme wacs windows-acme-simple lews</tags>
+    <summary>A Simple ACME Client for Windows</summary>
+    <description>letsencrypt-win-simple
+A Simple ACME Client for Windows
+
+Overview
+This is a ACME windows CLI client built in native .net and aims to be as simple as possible to use. It's built on top of the ACMESharp project.</description>
+    <releaseNotes>https://github.com/PKISharp/win-acme/releases</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
