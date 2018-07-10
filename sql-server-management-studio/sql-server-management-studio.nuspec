@@ -3,10 +3,10 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sql-server-management-studio</id>
-    <version>14.0.17254.0</version>
+    <version>14.0.17277.0</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/sql-server-management-studio</packageSourceUrl>
     <owners>flcdrg</owners>
-    <title>SQL Server Management Studio 17.7</title>
+    <title>SQL Server Management Studio 17.8.1</title>
     <authors>Microsoft</authors>
     <projectUrl>https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-ssms</projectUrl>
     <iconUrl>http://cdn.rawgit.com/flcdrg/au-packages/master/sql-server-management-studio/icons/ssms-icon.png</iconUrl>
@@ -46,156 +46,68 @@ This release of SSMS supports the following 64-bit platforms when used with the 
 
 \* SSMS 17.X is based on the Visual Studio 2015 Isolated shell, which was released before Windows Server 2016. Microsoft takes app compatibility seriously and ensures that already-shipped applications continue to run on the latest Windows releases. To minimize issues running SSMS on Windows Server 2016, ensure SSMS has all of the latest updates applied. If you experience any issues with SSMS on Windows Server 2016, contact support. The support team determines if the issue is with SSMS, Visual Studio, or with Windows compatibility. The support team then routes the issue to the appropriate team for further investigation.	</description>
     <releaseNotes>
-#### [SSMS 17.7](download-sql-server-management-studio-ssms.md)
+#### [SSMS 17.8.1](download-sql-server-management-studio-ssms.md)
+*A bug was discovered in 17.8 related to provisioning SQL databases, so SSMS 17.8.1 replaces 17.8.*
 
-Release number: 17.7&lt;br&gt;
-Build number: 14.0.17254.0&lt;br&gt;
-Release date: May 09, 2018
+
+Build number: 14.0.17277.0&lt;br&gt;
+Release date: June 26, 2018
+
 
 ##### What&apos;s new
 
 **General SSMS**
 
-Replication Monitor:   
-- Replication monitor now supports registering a listener for scenarios where publisher database and/or distributor database is part of Availability Group. You can now monitor replication environments where publisher database and/or distribution database is part of Always On. 
- 
-Azure SQL Data Warehouse: 
-- Add Rejected Row Location support for External Tables in Azure SQL Data Warehouse. 
+Database Properties:
 
-**Integration Services (IS)**
+- This improvement exposes the **AUTOGROW_ALL_FILES** configuration option for Filegroups. This new config option is added under the Database Properties &gt; Filegroups window in the form of a new column (Autogrow All Files) of checkboxes for each available Filegroup (except for Filestream and Memory Optimized Filegroups). The user can enable/disable AUTOGROW_ALL_FILES for a particular Filegroup by toggling the corresponding Autogrow_All_Files checkbox. Correspondingly, the **AUTOGROW_ALL_FILES** option is properly scripted when scripting the database for CREATE / generating scripts for the database (SQL2016 and above).
+	
+SQL Editor:
 
-- Added a scheduling feature for SSIS packages deployed to Azure SQL Database. Unlike SQL Server on premises and SQL Database Managed Instance (Preview), which have SQL Server Agent as a first-class job scheduler, SQL Database does not have a built-in scheduler. This new SSMS feature provides a familiar user interface that&apos;s similar to SQL Server Agent for scheduling packages deployed to SQL Database. If you&apos;re using SQL Database to host the SSIS catalog database, SSISDB, you can use this SSMS feature to generate the Data Factory pipelines, activities, and triggers required to schedule SSIS packages. You can then edit and extend these objects in Data Factory. For more info, see [Schedule SSIS package execution on Azure SQL Database with SSMS](../integration-services/lift-shift/ssis-azure-schedule-packages-ssms.md). To learn more about Azure Data Factory pipelines, activities, and triggers, see [Pipelines and activities in Azure Data Factory](https://docs.microsoft.com/azure/data-factory/concepts-pipelines-activities) and [Pipeline execution and triggers in Azure Data Factory](https://docs.microsoft.com/azure/data-factory/concepts-pipeline-execution-triggers).
-- Support for SSIS package scheduling in SQL Agent on SQL Managed instance. It is now possible to create SQL Agent jobs to execute SSIS packages on the managed instance. 
+- Improved experience with Intellisense in Azure SQL Database when the user doesn&apos;t have master access.
 
-##### Bug fixes
+Scripting:
 
-**General SSMS** 
+- General performance improvements, especially over high-latency connections.
+	
+**Analysis Servics (AS)**
 
-Maintenance Plan:   
-- Fixed an issue where trying to change the schedule of an existing Maintenance Plan was throwing an exception. For details, see [SSMS 17.6 crashes when clicking on a schedule in a maintenance plan](https://feedback.azure.com/forums/908035-sql-server/suggestions/33712924).
-
-Always On: 
-- Fixed an issue where Always On Latency Dashboard was not working with SQL Server 2012.
- 
-Scripting: 
-- Fixed an issue where scripting stored procedure against Azure SQL Data Warehouse, is not working for non-admin user.
-- Fixed an issue where scripting a database against Azure SQL Database was not scripting the *SCOPED CONFIGURATION* properties.
- 
-Telemetry: 
-- Fixed issue where  SSMS crashes then trying to connect to a server, after opting out of sending telemetry.
- 
-Azure SQL Database: 
-- Fixed an issue  where the user was not able to set or change compatibility level (the drop-down from empty). Note: in order to set the compatibility level to 150, the user still needs to use the *Script* button and manually edit the script. 
- 
-SMO: 
-- Exposed Error Log Size setting in SMO. For details, see [Set the Maximum Size of the SQL Server Error Logs](https://feedback.azure.com/forums/908035-sql-server/suggestions/33624115).  
-- Fix linefeed scripting in SMO on Linux.
-- Miscellaneous perf improvement when retrieving rarely used properties.  
-
-Intellisense: 
-- Perf improvement: reduced volume of intellisense queries for column data. This is especially beneficial when working on tables with huge number of columns. 
-
-SSMS User settings:
-- Fixed an issue where the options page was not resizing properly.
-
-Misc:  
-- Improved how text is displayed on *Statistics details* page. 
-
-**Integration Services (IS)**
-
-- Better support for Azure SQL Database Managed Instance.
-- Fixed an issue where the user was unable to create a catalog for SQL Server 2014 or before.
-- Fixed two issues with reports:
-   - Removed the machine name for Azure servers.
-   - Improved handling of localized object name.
+- Analysis Services client libraries and data providers updated to the latest version, which added support for the new Azure Government AAD authority (login.microsoftonline.us).
 
 
-##### Known issues
-
-Some dialogs display an invalid edition error when working with new *General Purpose* or *Business Critical* Azure SQL Database editions.
-
-#### ![download](../ssdt/media/download.png) [SSMS 17.6](https://go.microsoft.com/fwlink/?linkid=870039)
-
-Build number: 14.0.17230.0&lt;br&gt;
-Release date: March 20, 2018
-
-[Chinese (People&apos;s Republic of China)](https://go.microsoft.com/fwlink/?linkid=870039&amp;clcid=0x804) | [Chinese (Taiwan)](https://go.microsoft.com/fwlink/?linkid=870039&amp;clcid=0x404) | [English (United States)](https://go.microsoft.com/fwlink/?linkid=870039&amp;clcid=0x409) | [French](https://go.microsoft.com/fwlink/?linkid=870039&amp;clcid=0x40c) | [German](https://go.microsoft.com/fwlink/?linkid=870039&amp;clcid=0x407) | [Italian](https://go.microsoft.com/fwlink/?linkid=870039&amp;clcid=0x410) | [Japanese](https://go.microsoft.com/fwlink/?linkid=870039&amp;clcid=0x411) | [Korean](https://go.microsoft.com/fwlink/?linkid=870039&amp;clcid=0x412) | [Portuguese (Brazil)](https://go.microsoft.com/fwlink/?linkid=870039&amp;clcid=0x416) | [Russian](https://go.microsoft.com/fwlink/?linkid=870039&amp;clcid=0x419) | [Spanish](https://go.microsoft.com/fwlink/?linkid=870039&amp;clcid=0x40a)
-
-##### What&apos;s new
-
-**General SSMS**
-
-SQL Database Managed Instance:
-
-- Added a support for [Azure SQL Database Managed Instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance). Azure SQL Database Managed Instance (preview) is a new flavor of Azure SQL Database, providing near 100% compatibility with SQL Server on-premises, a native [virtual network (VNet)](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) implementation that addresses common security concerns, and a [business model](https://azure.microsoft.com/pricing/details/sql-database/) favorable for on-premises SQL Server customers.
-- Support for common management scenarios like:
-   - Create and alter databases.
-   - Backup and restore databases.
-   - Importing, exporting, extracting and publishing Data-tier Applications.
-   - Viewing and altering Server properties.
-   - Full Object Explorer support.
-   - Scripting database objects.
-   - Support for SQL Agent jobs.
-   - Support for Linked Servers.
-- Learn more about Managed Instances [here](https://azure.microsoft.com/blog/migrate-your-databases-to-a-fully-managed-service-with-azure-sql-database-managed-instance/).
-
-Object Explorer:
-- Added settings to not force brackets around names when dragging &amp; dropping from Object Explorer to Query Window. (User suggestions [32911933](https://feedback.azure.com/forums/908035-sql-server/suggestions/32911933), and [32671051](https://feedback.azure.com/forums/908035-sql-server/suggestions/32671051).)
-
-Data Classification:
-- General improvements and bug fixes.
-
-**Integration Services (IS)**
-
-- Added support to deploy packages to a [SQL Database Managed Instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance).
 
 ##### Bug fixes
 
 **General SSMS**
+	
+Maintenance Plans:
 
-Data Classification:
+- Fixed an issue when editing maintenance plans with Sql Authentication where &quot;Notify Operator Task&quot; was failing when using SQL authentication.
+	
+Scripting:
 
-- Fixed an issue in *Data Classification* which was causing newly added classifications to be displayed with stale *information type* and *sensitivity label*.
-- Fixed an issue where *Data Classification* was not working when targeting a server set to a case-sensitive collation.
-		
-Always On:
-
-- Fixed an issue in AG Show Dashboard where clicking on *Collect Latency Data* could result in an error when the server was set to a case-sensitive collation.
-- Fixed an issue where SSMS was incorrectly reporting an AG as *Distributed* when the Cluster service shuts down.
-- Fixed an issue when creating AG using *Create Availability Group* dialog the *ReadOnlyRoutingUrl* is required.
-- Fixed an issue when the primary is down and manually failover to secondary, a NullReferenceException will be thrown.
-- Fixed an issue when creating Availability Group using backup/restore to initialize a database, on the secondary replicas, the database files will be created in the default directory. The fix includes:
-   - Add the data/log directory validator.
-   - Only do the file relocation when the replica is on a different OS to the primary replica.
-- Fixed an issue where SSMS wizard doesn&apos;t generate *CLUSTER_TYPE* option, causing secondary join to fail.
-
-Setup:
-- Fixed issue where trying to upgrade SSMS by installing the &quot;upgrade package&quot; was failing when SSMS was installed in a non-default location.
-
+- Fixed an issue where PostProcess actions in SMO lead to resource exhaustion and SQL login failures
+	
 SMO:
-- Fixed performance issue where scripting tables on SQL Server 2016 and above could take up to 30 seconds (now, it&apos;s down to less than 1 second).
 
-Object Explorer:
-- Fixed an issue where SSMS could throw an exception like &quot;Object cannot be cast from DBNull to other types&quot; when trying to expand *Management* node in Object Explorer.
-- Fixed an issue where *Start PowerShell* was not detecting the SQLServer module when user-defined PS profile emitted output.
-- Fixed an intermittent hang that could occur when right-clicking a Table or Index node in Object Explorer.
+- Fixed an issue where Table.Alter() fails if adding a column with a default constraint and the table already has data. For details, see [sql server smo generating inline default constraint when adding a column to a table containing data](https://feedback.azure.com/forums/908035-sql-server/suggestions/32895625).
+	
+Always Encrypted:
 
-Database Mail:
-- Fixed an issue where *Database Mail Configuration Wizard* was throwing an exception when trying to display/manage more than 16 profiles.
-
+- Fixed an issue (in DacFx) which was causing a lock timeout error when enabling Always Encrypted on a partitioned table
+	
 
 **Analysis Services (AS)**
 
-- Fixed as issue where modifying a data source on a 1400 compatibility level model in SSMS the changes are not saved to the server.
+- Fixed an issue that occurred when modifying an OAuth datasource in a Tabular Analysis Services 1400-level compatibility model, which caused the changes in the OAuth tokens to not get updated in the data source.
+- Fixed a crash in SSMS that may have occurred when using some invalid data source credentials or editing data sources that didn&apos;t support Change Data Source migration in Power Query (for example, Oracle) in Analysis Services Tabular 1400-level compatibility models.
 
-**Integration Services (IS)**
-
-- Fixed an issue where SSMS did not show SSIS catalog node and reports when connected to SQL Database Managed Instance
 
 ##### Known issues
 
-&gt; [!WARNING]
-&gt; There is a known issue where SSMS 17.6 becomes unstable and crashes when using [Maintenance Plans](../relational-databases/maintenance-plans/maintenance-plans.md). If you use Maintenance Plans, do not install SSMS 17.6. Downgrade to SSMS 17.5 if you already installed 17.6 and this issue is affecting you.
+- Clicking the *Script* button after modifying any filegroup property in the *Properties* window, generates two scripts – one script with a *USE &lt;database&gt;* statement, and a second script with a *USE master* statement.  The script with *USE master* is generated in error and should be discarded. Run the script that contains the *USE &lt;database&gt;* statement.
+- Some dialogs display an invalid edition error when working with new *General Purpose* or *Business Critical* Azure SQL Database editions.
+- Some latency in XEvents viewer may be observed. This is a [known issue in the .Net Framework](https://github.com/Microsoft/dotnet/blob/master/releases/net472/dotnet472-changes.md#sql). Please, consider upgrading to NetFx 4.7.2.
 </releaseNotes>
     <dependencies>
       <dependency id="KB2919355" version="1.0.20160915" />
