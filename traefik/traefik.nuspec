@@ -9,7 +9,7 @@
     <title>Træfik</title>
     <authors>Containous SAS</authors>
     <projectUrl>https://traefik.io</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/containous/traefik/master/docs/img/traefik.logo.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/containous/traefik/fd8b4a3305f635672040a947403e382ac43f8388/docs/img/traefik.logo.png</iconUrl>
     <copyright>Copyright (c) 2016-2018 Containous SAS</copyright>
     <licenseUrl>https://github.com/containous/traefik/blob/master/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
