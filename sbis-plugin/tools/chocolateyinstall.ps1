@@ -3,7 +3,7 @@
   FileType               = 'exe'
   SilentArgs             = '/verysilent /SUPPRESSMSGBOXES /NORESTART /notShowInstallInProcessMessage'
   url                    = 'https://update.sbis.ru/SbisPlugin/master/SbisPlugin.exe'
-  checksum               = '1a6e80f51aed1414af134dba65f183c2ae700094d924f7dc2c454bf8c5ca4662'
+  checksum               = '38396af42d3c467b295b9ab8026490ae1ef79cb32d4922de2c3200213afafd29'
   checksumType           = 'sha256'
   ValidExitCodes         = @(0,1)
 }
