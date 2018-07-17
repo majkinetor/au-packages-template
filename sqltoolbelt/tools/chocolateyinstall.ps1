@@ -71,14 +71,14 @@ if ($pp["FTP"] -ne $null -and $pp["FTP"] -ne '') {
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  fileFullPath  = "$toolsDir\SQLToolbelt.exe"
-  
+  fileType      = 'exe'
+  silentArgs    = $commandArgs
+
+  validExitCodes= @(0)
   url           = $url
   checksum      = $checksum
   checksumType  = 'sha256'
+  destination   = $toolsDir
 }
 
-$executable = Get-ChocolateyWebFile @packageArgs
-
-Write-Host "Installing $productCommand from $env:ChocolateyPackageName"
-Start-Process $executable -ArgumentList $commandArgs -Wait
+Install-ChocolateyPackage @packageArgs
