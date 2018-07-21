@@ -11,8 +11,10 @@ If there is no `update.ps1`, I haven't got around to creating one yet.
 
 To run locally you will need:
 
-- Powershell 5+: `cinst powershell`
-- [Chocolatey Automatic Package Updater Module](https://github.com/majkinetor/au): `Install-Module au` or `cinst au`
+- Powershell 5+.
+- [Chocolatey Automatic Package Updater Module](https://github.com/majkinetor/au): `Install-Module au` or `cinst au`.
+
+In order to setup AppVeyor update runner please take a look at the AU wiki [AppVeyor section](https://github.com/majkinetor/au/wiki/AppVeyor).
 
 ## Create a package
 
@@ -31,12 +33,12 @@ Run from within the directory of the package to update that package:
    
     cd <package_dir>
     ./update.ps1
-
+ 
 If this script is missing, the package is not automatic.  
 Set `$au_Force = $true` prior to script call to update the package even if no new version is found.
 
 ### Multiple packages
-
+ 
 To update all packages run `./update_all.ps1`. It accepts few options:
 
 ```powershell
@@ -57,18 +59,19 @@ You can also call AU method `Update-AUPackages` (alias `updateall`) on its own i
 
     updateall -Options ([ordered]@{ Force = $true })
 
-To quickly test if all of the packages update force all with `test_all.ps1` script:
+## Testing all packages
 
+You can force the update of all or subset of packages to see how they behave when complete update procedure is done:
+
+
+```powershell
+./test_all.ps1                            # Test force update on all packages
+./test_all.ps1 'cdrtfe','freecad', 'p*'   # Test force update on only given packages
+./test_all.ps1 'random 3'                 # Split packages in 3 groups and randomly select and test 1 of those each time
 ```
-master~> .\test_all.ps1
-Updating 4 automatic packages at 2017-04-30 10:54:34 (forced)
-Push is disabled
-FORCE IS ENABLED. All packages will be updated
-   less is updated to 4.87.0.20170430
-   copyq is updated to 3.0.0.20170430
-   librecad is updated to 2.1.3.20170430
-   prey is updated to 1.6.6.20170430
-``` 
+
+
+**Note**: If you run this locally your packages will get updated. Use `git reset --hard` after running this to revert the changes.
 
 ## Pushing To Community Repository Via Commit Message
 
@@ -103,3 +106,4 @@ To use this system with your own packages do the following steps:
 Add your own packages now, with this in mind:
 * You can keep both manual and automatic packages together. To get only AU packages any time use `Get-AUPackages` function (alias `lsau` or `gau`)
 * Keep all package additional files in the package directory (icons, screenshots etc.). This keeps everything related to one package in its own directory so it is easy to move it around or remove it.
+ 
