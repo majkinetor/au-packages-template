@@ -17,7 +17,7 @@ function Get-Download($url, $version)
     $request = Invoke-WebRequest -Uri $url -MaximumRedirection 0 -ErrorAction Ignore
 
     $r = @{}
- 
+
     if($request.StatusCode -lt 400)
     {
         # $url        = 'http://download.microsoft.com/download/E/E/1/EE12CC0F-A1A5-4B55-9425-2AFBB2D63979/SSMS-Full-Setup.exe'
@@ -59,9 +59,9 @@ function Get-Download($url, $version)
 function global:au_GetLatest {
 
     $Latest = @{}
-    
+
     try {
-        # Get latest version from XML 
+        # Get latest version from XML
         $response = Invoke-RestMethod -Uri "https://go.microsoft.com/fwlink/?LinkId=841665"
         $version = $response.component.version
 
@@ -74,16 +74,16 @@ function global:au_GetLatest {
         if ($isMatch)
         {
             $release = $matches.release
-            
+
             Write-Host "Found version $version, release $release"
-        
-            $downloadLinks = $content | Select-String -Pattern "Download SQL Server Management Studio.*\]\((https.*)\)" -AllMatches 
+
+            $downloadLinks = $content | Select-String -Pattern "Download SQL Server Management Studio.*\]\((https.*\d+)\)" -AllMatches
 
             if ($downloadLinks.Matches.Count -eq 2)
             {
                 $first = Get-Download $downloadLinks.Matches[0].Groups[1].Value $version
                 $second = Get-Download $downloadLinks.Matches[1].Groups[1].Value $version
-         
+
                 if($first.Count -and $second.Count)
                 {
                     # release notes
@@ -97,10 +97,10 @@ function global:au_GetLatest {
                     # bump headings to fit in with Chocolatey levels
                     $content = $content.Replace("# ", "### ").Trim()
 
-                    # encode 
+                    # encode
                     $content = "`r`n" + [System.Security.SecurityElement]::Escape($content) + "`r`n"
-            
-                    $Latest = @{ 
+
+                    $Latest = @{
                         Version = $version
                         Release = $release
                         FullChecksum = $first.checksum
@@ -120,13 +120,13 @@ function global:au_GetLatest {
 }
 
 function global:au_AfterUpdate
-{ 
+{
     $nuspecFileName = $Latest.PackageName + ".nuspec"
     $nu = Get-Content $nuspecFileName -Raw -Encoding UTF8
     $nu = $nu -replace "(?smi)(\<releaseNotes\>).*?(\</releaseNotes\>)", "`${1}$($Latest.ReleaseNotes)`$2"
 
     $nu = $nu -replace "(?smi)(\<title\>).*?(\</title\>)", "`${1}SQL Server Management Studio $($Latest.Release)`$2"
-    
+
     $Utf8NoBomEncoding = New-Object System.Text.UTF8Encoding($False)
     $NuPath = (Resolve-Path $NuspecFileName)
     [System.IO.File]::WriteAllText($NuPath, $nu, $Utf8NoBomEncoding)
