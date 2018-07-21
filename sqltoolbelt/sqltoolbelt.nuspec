@@ -24,8 +24,8 @@ Thousands of SQL Server professionals rely on the SQL Toolbelt every day, becaus
 
 Tools in the SQL Toolbelt:
 
-- SQL Compare Pro - Compare and synchronize database schema
-- SQL Data Compare Pro - Compare and synchronize database contents
+- SQL Compare - Compare and synchronize database schema
+- SQL Data Compare - Compare and synchronize database contents
 - SQL Source Control - Connect your databases to your version control system
 - SQL Prompt - Write, refactor, and explore SQL effortlessly
 - SQL Search - Search your database quickly in SQL Server Management Studio
@@ -33,13 +33,13 @@ Tools in the SQL Toolbelt:
 - SQL Doc - Automatically generate database documentation
 - SQL Test - Write and run unit tests in SQL Server Management Studio
 - DLM Dashboard - tracks your database schemas and alerts you when they change.
-- DLM Automation - Continuous integration and automated deployments for your SQL Server database
 - SQL Multi Script - Deploy multiple scripts to multiple servers with just one click
 - SQL Dependency Tracker - Explore object dependencies and visualize complex databases simply
-- SQL Comparison SDK - Automate comparison and synchronization tasks
-- ReadyRoll - Develop and deploy databases in Visual Studio with migration scripts
 - SQL Monitor - SQL Server performance monitoring and alerting
-- SQL Backup Pro - Compress, securely encrypt and strengthen backups - fast
+- SQL Backup - Compress, securely encrypt and strengthen backups - fast
+- SSMS Integration Pack - Use SQL Compare and SQL Data Compare from SSMS
+- SQL Change Automation Powershell - Automates database development solutions
+- SQL Change Automation - Develop and deploy databases in Visual Studio with migration scripts
 
 #### Package Download Fallback
 This package will fallback to the Red Gate FTP site once the main fixed URL no longer matches the version for which this package was created. This is to ensure that a specific version of the Chocolatey package continues to work even after Red Gate releases newer versions.
@@ -50,9 +50,10 @@ When a newer version of the package is published, it will then revert to using t
 The following package parameters can be set:
 
  * `/FTP` - Force using the FTP download URL
+ * `/products` - Only install the specified products
 
 These parameters can be passed to the installer with the use of `--params`.
-For example: `--params "'/FTP'"`.
+For example: `--params "/FTP /products:'SQL Compare, SQL Data Compare'"`.
 </description>
   <releaseNotes>https://www.red-gate.com/products/roadmap</releaseNotes>
   <dependencies>
