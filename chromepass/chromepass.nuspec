@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>chromepass</id>
+    <version>1.45</version>
+    <title>ChromePass</title>
+    <authors>Nir Sofer</authors>
+    <owners>galeksandrp</owners>
+    <licenseUrl>http://www.nirsoft.net/utils/chromepass.html</licenseUrl>
+    <projectUrl>http://www.nirsoft.net/utils/chromepass.html</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/galeksandrp/au-packages/5eb91bd48d7f6cab7f39059af03952d187c0aec4/icons/chromepass.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>ChromePass is a small password recovery tool that allows you to view the user names and passwords stored by Google Chrome Web browser.
+
+For each password entry, the following information is displayed: Origin URL, Action URL, User Name Field, Password Field, User Name, Password, and Created Time.
+
+You can select one or more items and then save them into text/html/xml file or copy them to the clipboard.</description>
+    <summary>Chrome Browser Password Recovery</summary>
+    <releaseNotes>https://www.nirsoft.net/utils/chromepass.html</releaseNotes>
+    <copyright>© 2008 NirSoft</copyright>
+    <tags>chrome password recover</tags>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/chromepass</packageSourceUrl>
+  </metadata>
+</package>
