@@ -3,7 +3,7 @@ import-module au
 function global:au_SearchReplace {
     @{
         'tools\chocolateyInstall.ps1' = @{
-            "(^[$]url\s*=\s*)('.*')"      = "`$1'https://download.jetbrains.com/resharper/JetBrains.ReSharper.CommandLineTools.$($Latest.MarketingVersion).zip'"
+            "(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.Url32)'"
             "(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
         }
      }
@@ -14,10 +14,26 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $latest = GetJetbrainsProductLatest
 
+    ######
+    $stream = $latest.Streams['Release']
     # https://download.jetbrains.com/resharper/JetBrains.ReSharper.CommandLineTools.2018.1.1.zip.sha256
-    ($hashcode, $other) = (Invoke-RestMethod -Uri "https://download.jetbrains.com/resharper/JetBrains.ReSharper.CommandLineTools.$($latest.MarketingVersion).zip.sha256") -split " "
+    $versionMarketingStringDotted = $stream.VersionMarketingStringDotted
+    $url = "https://download.jetbrains.com/resharper/JetBrains.ReSharper.CommandLineTools.$versionMarketingStringDotted.zip.sha256"
+    ($hashcode, $filename) = (Invoke-RestMethod -Uri $url).Split(([string[]] ," *"), [System.StringSplitOptions]::RemoveEmptyEntries)
 
-    $latest.Checksum32 = $hashcode
+    $stream.Checksum32 = $hashcode
+    $stream.Url32 = "https://download.jetbrains.com/resharper/JetBrains.ReSharper.CommandLineTools.$versionMarketingStringDotted.zip"
+
+    # https://download.jetbrains.com/resharper/ReSharperUltimate.2018.2.EAP5/JetBrains.ReSharper.CommandLineTools.2018.2.EAP5.Checked.zip
+    $stream = $latest.Streams['Release-Eap']
+    $versionMarketingStringDotted = $stream.VersionMarketingStringDotted
+    $url = "https://download.jetbrains.com/resharper/ReSharperUltimate.$versionMarketingStringDotted/JetBrains.ReSharper.CommandLineTools.$versionMarketingStringDotted.Checked.zip.sha256"
+    ($hashcode, $filename) = (Invoke-RestMethod -Uri $url).Split(([string[]] ," *"), [System.StringSplitOptions]::RemoveEmptyEntries)
+
+    $stream.Checksum32 = $hashcode
+    # https://download.jetbrains.com/resharper/ReSharperUltimate.2018.2.EAP5/JetBrains.ReSharper.CommandLineTools.2018.2.EAP5.Checked.zip.sha256
+    $stream.Url32 = "https://download.jetbrains.com/resharper/ReSharperUltimate.$versionMarketingStringDotted/JetBrains.ReSharper.CommandLineTools.$versionMarketingStringDotted.Checked.zip"
+
     return $latest
 }
 
