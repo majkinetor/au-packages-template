@@ -3,11 +3,13 @@ $urls = @{
         Version = "https://download-cf.jetbrains.com/resharper/resharper-version.json"
         Updates = "https://download-cf.jetbrains.com/resharper/resharper-updates.json"
         Hash = "https://download.jetbrains.com/resharper/JetBrains.ReSharperUltimate.VERSIONMARKETINGSTRING.exe.sha256"
+        Url = "https://download.jetbrains.com/resharper/JetBrains.ReSharperUltimate.VERSIONMARKETINGSTRING.exe"
     }
     "Release-EAP" = @{
         Version = "https://download.jetbrains.com/resharper/resharper-version-eap.json"
         Updates = "https://download.jetbrains.com/resharper/resharper-updates-eap.json"
         Hash = "https://download.jetbrains.com/resharper/ReSharperUltimate.VERSIONMARKETINGSTRING/JetBrains.ReSharperUltimate.VERSIONMARKETINGSTRING.Checked.exe.sha256"
+        Url = "https://download.jetbrains.com/resharper/ReSharperUltimate.VERSIONMARKETINGSTRING/JetBrains.ReSharperUltimate.VERSIONMARKETINGSTRING.Checked.exe"
     }
 }
 
@@ -27,12 +29,15 @@ function GetJetbrainsReSharperPlatformLatestRelease($release) {
     $url = $urls[$release].Hash -replace "VERSIONMARKETINGSTRING", $versionMarketingStringDotted
     ($hashcode, $filename) = (Invoke-RestMethod -Uri $url).Split(([string[]] ," *"), [System.StringSplitOptions]::RemoveEmptyEntries)
 
+    $url = $urls[$release].Url -replace "VERSIONMARKETINGSTRING", $versionMarketingStringDotted
+
     $Latest = @{
         Filename = $filename.Trim()
         Checksum32 = $hashcode
         Version = $version
         MarketingVersion = $versionMarketingStringSemVer
         VersionMarketingStringDotted = $versionMarketingStringDotted
+        Url32 = $url
     }
     return $Latest
 }
