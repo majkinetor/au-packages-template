@@ -5,7 +5,7 @@
     <id>dotTrace</id>
     <owners>JetBrains, flcdrg</owners>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/dotTrace</packageSourceUrl>
-    <version>2018.1.3</version>
+    <version>2018.2-EAP5</version>
     <title>JetBrains dotTrace</title>
     <authors>JetBrains</authors>
     <projectUrl>https://www.jetbrains.com/profiler</projectUrl>
@@ -45,7 +45,7 @@ You can even navigate to a method declaration from a hot spot in the call tree!
 
     <releaseNotes>https://www.jetbrains.com/profiler/whatsnew/</releaseNotes>
     <dependencies>
-      <dependency id="resharper-platform" version="[112.0.20180626.160030]" />
+      <dependency id="resharper-platform" version="[182.0.20180725.203721-eap05]" />
     </dependencies>
   </metadata>
   <files>
