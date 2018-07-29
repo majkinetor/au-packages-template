@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>ReSharperCpp</id>
+    <owners>JetBrains, flcdrg</owners>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/resharper</packageSourceUrl>
+    <version>2018.1</version>
+    <title>JetBrains ReSharper C++</title>
+    <authors>JetBrains</authors>
+    <projectUrl>https://www.jetbrains.com/resharper-cpp</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/JetBrains/Chocolatey/master/ReSharperCpp/logo.png</iconUrl>
+    <copyright>JetBrains s.r.o.</copyright>
+    <licenseUrl>https://www.jetbrains.com/resharper/buy/index.jsp?product=ultimate</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://www.jetbrains.com/resharper-cpp/documentation/</docsUrl>
+    <mailingListUrl>https://resharper-support.jetbrains.com/hc/en-us</mailingListUrl>
+    <bugTrackerUrl>https://youtrack.jetbrains.net/issues/RSCPP</bugTrackerUrl>
+    <tags>jetbrains developer admin visualstudio</tags>
+    <summary>Visual Studio Extension for C++ Developers</summary>
+    <description>Visual Studio Extension for C++ Developers
+### Analyze code quality
+
+ReSharper C++ highlights code issues in the editor and provides quick-fixes to improve code in one way or another. Unreachable code? Redundant statements? Suspicious object slicing or incorrect format specifier? ReSharper C++ will bring these and other kinds of problems to your attention and help you fix them.
+
+### Find usages and navigate code
+
+You can instantly jump at any file, type, or type member in solution. You can search for usages of any code and enjoy a clear view of found usages, with grouping and preview options. Last but not least, you can go from any code symbol to its declaration or definition, its base or derived symbols.
+
+### Refactor and transform code
+
+Code refactorings for C++ help safely change your code base, which is especially important in a language as non-trivial as C++. Context actions help switch between alternative syntax constructs and serve as shortcuts to code generation actions.
+
+### Generate common code
+
+Code that ReSharper C++ can generate for you includes definitions, missing and overriding members, equality and relational operators, hash and swap functions. Add dozens of customizable templates, and you have the tools to deal with boilerplate code faster than ever.
+
+### Run and manage unit tests
+
+ReSharper C++ supports running Google Test and Boost.Test based unit tests in Visual Studio. You can run and debug unit tests contextually, right from the text editor. Dedicated tool windows help you view, group, filter and run unit tests, create and manage unit test sessions.
+
+### Use a consistent code style
+
+Configure code formatting options and naming style, share settings with your teammates, and maintaining a consistent code style should never be a problem again.
+    </description>
+    <releaseNotes>https://www.jetbrains.com/resharper-cpp/whatsnew/</releaseNotes>
+    <dependencies>
+      <dependency id="resharper-platform" version="[112.0.20180414.124625]" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
