@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>teamCityAddin</id>
+    <version>2018.1</version>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/teamCityAddin</packageSourceUrl>
+    <owners>JetBrains, flcdrg</owners>
+    <title>JetBrains TeamCity Add-in</title>
+    <authors>JetBrains</authors>
+    <!-- projectUrl is required for the community feed -->
+    <projectUrl>https://www.jetbrains.com/teamcity</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/JetBrains/Chocolatey/master/TeamCityAddin/logo.png</iconUrl>
+    <copyright>JetBrains s.r.o.</copyright>
+    <licenseUrl>https://www.jetbrains.com/teamcity/buy/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://www.jetbrains.com/help/teamcity/vs-addin/Reference__Windows.html</docsUrl>
+    <mailingListUrl>https://teamcity-support.jetbrains.com/hc/en-us</mailingListUrl>
+    <bugTrackerUrl>https://youtrack.jetbrains.com/issues/TW?q=Subsystem:%20%7BIDE:%20VS%20add-in%7D</bugTrackerUrl>
+    <tags>jetbrains developer admin visualstudio teamcity</tags>
+    <summary>TeamCity integration provider in Visual Studio</summary>
+    <description> If you use TeamCity continuous integration server to build and test your Visual Studio projects, TeamCity Add-in can help you access, execute, and analyze builds and tests on your TeamCity server without leaving Visual Studio.
+
+You can get the most from TeamCity Add-in when working with centralized version control systems (VCS) (like Perforce, Subversion, or Team Foundation Server), where light feature branches are not a part of the workflow. For these VCSs, TeamCity Add-in provides the possibility to run personal builds so that you can test your local changes on your TeamCity server before you commit them to your VCS.
+
+The TeamCity Add-in is a free Visual Studio extension that seamlessly integrates with Visual Studio 2010, 2012, 2013, 2015, and 2017 and with other JetBrains .NET tools such as ReSharper and dotCover. 
+    </description>
+    <releaseNotes>https://www.jetbrains.com/teamcity/whatsnew/</releaseNotes>
+    <dependencies>
+      <dependency id="resharper-platform" version="[112.0.20180626.160030]" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
