@@ -25,4 +25,7 @@ ReSharper Command Line Tools are free and don't require a license key.
     </description>
     <releaseNotes>https://www.jetbrains.com/resharper/whatsnew/</releaseNotes>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
