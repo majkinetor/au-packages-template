@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>secure-file</id>
+    <version>1.0.0</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/secure-file</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>secure-file</title>
+    <authors>AppVeyor Systems Inc.</authors>
+    <projectUrl>https://github.com/appveyor/secure-file</projectUrl>
+    <iconUrl>https://avatars2.githubusercontent.com/u/1117363</iconUrl>
+    <copyright>Copyright (c) 2015-2018 AppVeyor Systems Inc.</copyright>
+    <licenseUrl>https://github.com/appveyor/secure-file/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/appveyor/secure-file</projectSourceUrl>
+    <docsUrl>https://www.appveyor.com/docs/how-to/secure-files/</docsUrl>
+    <bugTrackerUrl>https://github.com/appveyor/secure-file/issues</bugTrackerUrl>
+    <tags>appveyor ci continuous-integration continuous-delivery cd encrypt encryption rijndael</tags>
+    <summary>A small command-line utility for encrypting/decrypting arbitrary files using Rijndael method</summary>
+    <description>A small command-line utility for encrypting/decrypting arbitrary files using Rijndael method.
+
+High-level scenario of using this utility in AppVeyor CI environment:
+
+Encrypt file on development machine.
+Commit encrypted file to source control.
+Place "secret" to project environment variable.
+Decrypt file during the build.
+</description>
+    <releaseNotes>https://github.com/appveyor/secure-file/releases</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
