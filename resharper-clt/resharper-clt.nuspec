@@ -28,4 +28,7 @@ ReSharper Command Line Tools are free and don't require a license key.
       <dependency id="resharper-clt.portable" version="[2018.1.2]" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
