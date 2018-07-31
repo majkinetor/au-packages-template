@@ -14,7 +14,7 @@ function global:au_GetLatest {
 	$version = $release.tag_name -replace '^v',''
 	
 	@{
-        URL32   = "https://s3-us-west-2.amazonaws.com/grafana-releases/release/grafana-$version.windows-x64.zip"
+        URL32   = "https://s3-us-west-2.amazonaws.com/grafana-releases/release/grafana-$version.windows-amd64.zip"
         Version = $version
     }
 }
