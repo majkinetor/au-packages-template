@@ -1,11 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>dotCover</id>
     <owners>JetBrains, flcdrg</owners>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/dotCover</packageSourceUrl>
-    <version>2018.1</version>
+    <version>2018.1.4</version>
     <title>JetBrains dotCover</title>
     <authors>JetBrains</authors>
     <projectUrl>http://www.jetbrains.com/dotcover/</projectUrl>
@@ -47,7 +47,7 @@ The continuous testing mode can be switched on for any unit test session: this w
 
     <releaseNotes>https://www.jetbrains.com/dotcover/whatsnew/</releaseNotes>
     <dependencies>
-      <dependency id="resharper-platform" version="[112.0.20180414.124625]" />
+      <dependency id="resharper-platform" version="[112.0.20180731.141553]" />
     </dependencies>
   </metadata>
   <files>
