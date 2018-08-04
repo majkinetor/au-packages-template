@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>stunnel-msspi</id>
-    <version>5.44.0.99</version>
+    <version>5.48.0.106</version>
     <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/stunnel-msspi</packageSourceUrl>
     <owners>galeksandrp</owners>
     <title>stunnel-msspi</title>
