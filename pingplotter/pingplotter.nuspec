@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>pingplotter</id>
-    <version>5.5.13</version>
+    <version>5.5.14</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/pingplotter</packageSourceUrl>
     <owners>flcdrg</owners>
     <title>PingPlotter for Windows</title>
@@ -19,7 +19,11 @@
     <summary>Graph ping and traceroute over time. Find the source of network problems and fuel solutions with evidence.</summary>
     <description>Graphical Traceroute Software
 
-PingPlotter helps solve network problems. It's a network diagnostic tool that graphs latency and packet loss between your computer and a target. Visualizing the information accelerates your troubleshooting process and helps build a case if you ever need to convince someone a problem exists on their end.</description>
+PingPlotter helps solve network problems. It's a network diagnostic tool that graphs latency and packet loss between your computer and a target. Visualizing the information accelerates your troubleshooting process and helps build a case if you ever need to convince someone a problem exists on their end.
+
+PingPlotter is available in Professional, Standard, and Free editions. Professional edition offers the most capacity and features. Free edition offers the least, and Standard fits in between. 
+https://www.pingplotter.com/products/features.html
+</description>
     <releaseNotes>https://www.pingplotter.com/download/windows/release-notes.html</releaseNotes>
   </metadata>
   <files>
