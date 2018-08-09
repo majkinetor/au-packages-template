@@ -10,20 +10,30 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $release = ((curl 'https://sm.alliedmods.net/smdrop/1.8/').Links -match '-windows.zip').href | select -last 1
-	$version = [version]($release -split '-')[1]
-	$revision = ($release -split '-')[2] -replace '^git',''
-	
-	$build = ''
-	
-	if ($version.build) {
-		$build = $version.build
+	function getSourcemodLatestRelease {
+		param($versionMajorMinor)
+		$release = ((curl "https://sm.alliedmods.net/smdrop/$versionMajorMinor/").Links -match '-windows.zip').href | select -last 1
+		$version = [version]($release -split '-')[1]
+		$revision = ($release -split '-')[2] -replace '^git',''
+
+		$build = ''
+
+		if ($version.build) {
+			$build = $version.build
+		}
+
+		@{
+			URL32   = "https://sm.alliedmods.net/smdrop/$versionMajorMinor/$release"
+			Version = ($version.major, $version.minor -join '.'), ($build, $revision -join '') -join '.'
+		}
 	}
 	
 	@{
-        URL32   = "https://sm.alliedmods.net/smdrop/1.8/$release"
-        Version = ($version.major, $version.minor -join '.'), ($build, $revision -join '') -join '.'
-    }
+		Streams = [ordered] @{
+		    '1.9' = getSourcemodLatestRelease '1.9'
+		    '1.8' = getSourcemodLatestRelease '1.8'
+		}
+	}
 }
 
 update
