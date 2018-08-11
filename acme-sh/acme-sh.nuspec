@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>acme-sh</id>
+    <version>0.1.0</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/acme-sh</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>acme.sh</title>
+    <authors>Neilpang</authors>
+    <projectUrl>https://github.com/Neilpang/acme.sh</projectUrl>
+    <iconUrl>https://avatars3.githubusercontent.com/u/8305679</iconUrl>
+    <copyright>Copyright (c) Neilpang 2015-2018</copyright>
+    <licenseUrl>https://github.com/Neilpang/acme.sh#17-license--others</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/Neilpang/acme.sh</projectSourceUrl>
+    <docsUrl>https://github.com/Neilpang/acme.sh/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/Neilpang/acme.sh/issues</bugTrackerUrl>
+    <tags>acme letsencrypt lets-encrypt acme-sh certbot cert certificate certificates ssl tls</tags>
+    <summary>A pure Unix shell script implementing ACME client protocol</summary>
+    <description>An ACME Shell script: acme.sh
+
+An ACME protocol client written purely in Shell (Unix shell) language.
+Full ACME protocol implementation.
+Support ACME v1 and ACME v2
+Support ACME v2 wildcard certs
+Simple, powerful and very easy to use. You only need 3 minutes to learn it.
+Bash, dash and sh compatible.
+Simplest shell script for Let's Encrypt free certificate client.
+Purely written in Shell with no dependencies on python or the official Let's Encrypt client.
+Just one script to issue, renew and install your certificates automatically.
+DOES NOT require root/sudoer access.
+Docker friendly
+IPv6 support
+It's probably the easiest &amp; smartest shell script to automatically issue &amp; renew the free certificates from Let's Encrypt.
+
+Please note that this package follows KISS principle (keep it simple stupid) and does not:
+- [ ] install cygwin
+- [ ] install msys/msys2
+- [ ] install curl
+- [ ] install openssl
+</description>
+    <releaseNotes>https://github.com/Neilpang/acme.sh/releases</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
