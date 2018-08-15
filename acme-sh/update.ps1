@@ -27,8 +27,7 @@ function global:au_GetLatest {
 		$version = $version.major, $version.minor -join '.'
 		if (!$versions[$version]) {
 		
-        $url = "https://raw.githubusercontent.com/Neilpang/acme.sh/$($_.tag_name)/acme.sh"
-		if ([version]$_.tag_name -lt [version]'2.2.9') {$url = "https://raw.githubusercontent.com/Neilpang/acme.sh/$($_.tag_name)/le.sh"}
+        $url = "https://github.com/Neilpang/acme.sh/archive/$($_.tag_name).zip"
 
 		if ($url) { $versions[$version] = @{ # append to external $versions variable since powershell does not reduce well, because in powershell it is possible for hashtable to have items with same names
 			# foreach create hashtables like
