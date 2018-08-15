@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>pingplotter</id>
+    <version>5.5.14</version>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/pingplotter</packageSourceUrl>
+    <owners>flcdrg</owners>
+    <title>PingPlotter for Windows</title>
+    <authors>Pingman Tools LLC</authors>
+    <projectUrl>https://www.pingplotter.com/download/windows</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/flcdrg/au-packages/tree/master/pingplotter/icons/pingplotter.png</iconUrl>
+    <copyright>Copyright 1998-2018 Pingman Tools, LLC. All Rights Reserved</copyright>
+    <licenseUrl>https://www.pingman.com/licenseagreement.html</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://www.pingplotter.com/manual</docsUrl>
+    <mailingListUrl>https://www.pingman.com/forums/</mailingListUrl>
+    <tags>ping network traceroute tracert diagnostics</tags>
+    <summary>Graph ping and traceroute over time. Find the source of network problems and fuel solutions with evidence.</summary>
+    <description>Graphical Traceroute Software
+
+PingPlotter helps solve network problems. It's a network diagnostic tool that graphs latency and packet loss between your computer and a target. Visualizing the information accelerates your troubleshooting process and helps build a case if you ever need to convince someone a problem exists on their end.
+
+PingPlotter is available in Professional, Standard, and Free editions. Professional edition offers the most capacity and features. Free edition offers the least, and Standard fits in between. 
+https://www.pingplotter.com/products/features.html
+</description>
+    <releaseNotes>https://www.pingplotter.com/download/windows/release-notes.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
