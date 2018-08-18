@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>ftester</id>
+    <version>2016.01.14</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/ftester</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>FTester</title>
+    <authors>Ридико Леонид Иванович</authors>
+    <projectUrl>http://www.leoniv.diod.club/articles/ft232rl/ft232rl.html</projectUrl>
+    <iconUrl>http://www.leoniv.diod.club/articles/ft232rl/images/ft_06.gif</iconUrl>
+    <copyright>Copyright (c) 2016-2018 Ридико Леонид Иванович</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+	<projectSourceUrl>http://www.leoniv.diod.club/articles/ft232rl/downloads/ftester_source.zip</projectSourceUrl>
+    <docsUrl>http://www.leoniv.diod.club/articles/ft232rl/ft232rl.html</docsUrl>
+    <bugTrackerUrl>http://www.leoniv.diod.club/contacts/contacts.html</bugTrackerUrl>
+    <tags>ft232rl ftdi uart gpio ttl usb-ttl rs232 com vcom</tags>
+    <summary>"Fake" FT232RL (FTDI FT232RL analogs) detector and unbricker</summary>
+    <description>"Fake" FT232RL (FTDI FT232RL analogs) detector and unbricker</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
