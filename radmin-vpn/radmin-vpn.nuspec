@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>radmin-vpn</id>
+    <version>1.0.3524.2</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/radmin-vpn</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>Radmin VPN (Install)</title>
+    <authors>Famatech</authors>
+    <projectUrl>https://www.radmin-vpn.com</projectUrl>
+    <iconUrl>https://705167.ssl.1c-bitrix-cdn.ru/images/rvpn/logo-03.png</iconUrl>
+    <copyright>Copyright (c) 1999-2018 Famatech</copyright>
+    <licenseUrl>https://www.radmin-vpn.com/privacy/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://www.radmin-vpn.com/help/</docsUrl>
+    <bugTrackerUrl>https://www.radmin-vpn.com/support/</bugTrackerUrl>
+    <tags>radmin-vpn radmin vpn privacy security admin</tags>
+    <summary>Radmin VPN is a free and easy-to-use software product to create virtual private network (VPN)</summary>
+    <description>Radmin VPN is a free and easy-to-use software product to create virtual private network (VPN). The program allows users to establish a secure connection between computers over the Internet as if they were connected over a LAN.
+	
+Why Radmin VPN?
+Security
+Provides you with a secure VPN tunnel. Encryption keeps your connection safe.
+
+High speed
+The connection speed is up to 100Mbps.
+
+Reliability
+Radmin VPN does not malfunction after months of continuous operation.
+
+Ease-of-use
+Easy to set-up, easy to manage for both - IT Pros and home techs.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
