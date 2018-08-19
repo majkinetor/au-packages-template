@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>spcomp</id>
-    <version>1.9.6251</version>
+    <version>1.10.6329-dev</version>
     <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/spcomp</packageSourceUrl>
     <owners>galeksandrp</owners>
     <title>spcomp</title>
