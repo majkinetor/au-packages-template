@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>pushmonitoff</id>
+    <version>0.1.0</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/pushmonitoff</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>PushMonitOff</title>
+    <authors>Skrommel</authors>
+    <projectUrl>https://www.dcmembers.com/skrommel/download/pushmonitoff/</projectUrl>
+    <iconUrl>https://www.dcmembers.com/skrommel/wp-content/uploads/sites/2/2017/12/PushMonitOff.gif</iconUrl>
+    <copyright>Copyright (c) 2017 Skrommel</copyright>
+    <licenseUrl>https://www.dcmembers.com/skrommel/download/pushmonitoff/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://www.donationcoder.com/forum/index.php?topic=16056.0</docsUrl>
+    <bugTrackerUrl>https://www.dcmembers.com/skrommel/contact/</bugTrackerUrl>
+    <tags>pushmonitoff skrommel dcmembers donationcoder donation-coder autohotkey ahk one-hour-software</tags>
+    <summary>Press Shift-F1 to turn the monitor off</summary>
+    <description>Press Shift-F1 to turn the monitor off.
+
+Features:
+
+- Change settings using Settings in the Tray menu.
+
+These freeware utilities are written in the AutoHotkey scripting language. Downloads are available both as pre-compiled .exe files or as .ahk scripts you can customize for your own use.</description>
+    <releaseNotes>https://www.dcmembers.com/skrommel/download/pushmonitoff/</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
