@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>uiforetw</id>
+    <version>0.1.0</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/uiforetw</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>UIforETW</title>
+    <authors>Google</authors>
+    <projectUrl>https://github.com/google/UIforETW</projectUrl>
+    <iconUrl>https://avatars2.githubusercontent.com/u/1342004</iconUrl>
+    <copyright>Copyright (c) 2015-2018 Google</copyright>
+    <licenseUrl>https://github.com/google/UIforETW/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/google/UIforETW</projectSourceUrl>
+    <docsUrl>https://randomascii.wordpress.com/2015/04/14/uiforetw-windows-performance-made-easier/</docsUrl>
+    <bugTrackerUrl>https://github.com/google/UIforETW/issues</bugTrackerUrl>
+    <tags>uiforetw etw event-tracing</tags>
+    <summary>UIforETW is a user interface for recording ETW (Event Tracing for
+Windows) traces</summary>
+    <description>UIforETW is a user interface for recording ETW (Event Tracing for
+Windows) traces, which allow amazingly deep investigations of
+performance problems on Windows. Its goals include:
+ - making recording ETW traces easy for non-developers
+ - making it easy to record additional contextual data such as user
+input and CPU temperature in order to make trace analysis easier
+ - making trace management easier for developers
+ - working around bugs in WPT (Windows Performance Toolkit)</description>
+    <releaseNotes>https://github.com/google/UIforETW/releases</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
