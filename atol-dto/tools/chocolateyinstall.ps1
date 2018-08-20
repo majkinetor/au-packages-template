@@ -31,19 +31,19 @@ function getFoldername{
 
 $packageArgs = @{
   packageName            = "$env:chocolateyPackageName"
-  url                    = 'http://fs.atol.ru/_layouts/15/atol.templates/Handlers/FileHandler.ashx?guid=f7fe9e0a-b120-4fb4-a110-65b71d322089&webUrl='
-  checksum               = 'ff1d7a62bf4aa113cc8c9e3af8f788cfc57484ce1619e9cfb700c7a3a4de66df'
+  url                    = 'http://fs.atol.ru/_layouts/15/atol.templates/Handlers/FileHandler.ashx?guid=5c0a3c23-682c-42b3-95f8-eb9f0d674344'
+  checksum               = '74bdf394b1c93f592af75a101d17ca637f87c40a1f968116da46237ca32155e9'
   checksumType           = 'sha256'
   UnzipLocation          = "$env:TMP"
-  SpecificFolder         = '10.1.1\installer\exe'
+  SpecificFolder         = '10.3.1\installer\exe'
 }
 Install-ChocolateyZipPackage @packageArgs
 
 $foldername = getFoldername
 
 $packageArgs = @{
-  FileFullPath           = "$env:TMP\10.1.1\installer\exe\KKT10-10.1.1.0-windows32-setup.exe"
-  FileFullPath64         = "$env:TMP\10.1.1\installer\exe\KKT10-10.1.1.0-windows64-setup.exe"
+  FileFullPath           = "$env:TMP\10.3.1\installer\exe\KKT10-10.3.1-windows32-setup.exe"
+  FileFullPath64         = "$env:TMP\10.3.1\installer\exe\KKT10-10.3.1-windows64-setup.exe"
   Destination            = "$env:TMP"
   SpecificFolder         = "USB_Drivers\$foldername"
 }
@@ -57,7 +57,7 @@ $packageArgs = @{
   packageName            = "$env:chocolateyPackageName"
   FileType               = 'exe'
   SilentArgs             = '/S'
-  File                   = "$env:TMP\10.1.1\installer\exe\KKT10-10.1.1.0-windows32-setup.exe"
-  File64                 = "$env:TMP\10.1.1\installer\exe\KKT10-10.1.1.0-windows64-setup.exe"
+  File                   = "$env:TMP\10.3.1\installer\exe\KKT10-10.3.1-windows32-setup.exe"
+  File64                 = "$env:TMP\10.3.1\installer\exe\KKT10-10.3.1-windows64-setup.exe"
 }
 Install-ChocolateyInstallPackage @packageArgs
