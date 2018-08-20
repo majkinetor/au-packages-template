@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>officegate-configuration-tool</id>
+    <version>1.2.7</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/officegate-configuration-tool</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>OfficeGate Configuration Tool</title>
+    <authors>TELEOFIS</authors>
+    <projectUrl>https://teleofis.ru/support/download/officegate/</projectUrl>
+    <iconUrl>https://teleofis.ru/images/teleofis-logo.jpg</iconUrl>
+    <copyright>Copyright (c) TELEOFIS 2004-2017</copyright>
+    <licenseUrl>https://teleofis.ru/privacy/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://teleofis.ru/upload/iblock/5f6/gsm_3g_shlyuzy-officegate.-rukovodstvo-po-ekspluatatsii-r.1.4.pdf</docsUrl>
+    <bugTrackerUrl>https://teleofis.freshdesk.com/support/solutions</bugTrackerUrl>
+    <tags>officegate-configuration-tool officegate gateway gsm gsm-gateway config at modem pstn dect</tags>
+    <summary>OfficeGate Configuration Tool is a configuration utility for TELEOFIS OfficeGate GSM gateway</summary>
+    <description>OfficeGate Configuration Tool is a configuration utility for TELEOFIS OfficeGate GSM gateway
+	
+TELEOFIS OfficeGate is a GSM gateway for providing PSTN services for mobile and stacionary locations, using GSM cellular network. Usage GSM gateway provides advantage of cheap and high quality PSTN service in places without wired connections, or without cheap wired telefony service. Such places counts vehicles, cottage areas, developing areas, storehouses, gas stations and many other. Setup as simple as inserting SIM card, connecting PSTN or DECT phone and numbering phone number!</description>
+    <releaseNotes>https://teleofis.ru/support/news/?ELEMENT_ID=575</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
