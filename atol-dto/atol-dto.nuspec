@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>atol-dto</id>
+    <version>10.1.1</version>
+    <packageSourceUrl>https://github.com/galeksandrp/chocolatey-packages/tree/atol-dto</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>Atol DTO (Install)</title>
+    <authors>Компания АТОЛ</authors>
+    <projectUrl>http://www.atol.ru/software/special/driver/</projectUrl>
+    <iconUrl>http://www.atol.ru/site_styles/img/logo-red.png</iconUrl>
+    <copyright>Copyright (c) 2001–2018 Компания АТОЛ</copyright>
+    <licenseUrl>http://www.atol.ru/agreement.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>http://fs.atol.ru/_layouts/15/atol.templates/Handlers/FileHandler.ashx?guid=855469c7-66cd-4b49-aa65-682aa8f4629e&amp;webUrl=</docsUrl>
+    <bugTrackerUrl>http://www.atol.ru/contacts/kontakty-atol/</bugTrackerUrl>
+    <tags>admin atol driver drivers pos barcode pdt printers 1c 1c-enterprise</tags>
+    <summary>Driver package intended to help with connecting Atol business automation hardware to PC</summary>
+    <description>Driver package intended to help with connecting Atol business automation hardware to PC: cash registers, input devices, checkue printers, weighing scales, portable data terminal and others. All drivers in package compatible with business platform 1C:Enterprise.</description>
+    <releaseNotes>http://fs.atol.ru/_layouts/15/atol.templates/Handlers/FileHandler.ashx?guid=c3b9b52e-a457-4c24-82a8-017028174014&amp;webUrl=</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
