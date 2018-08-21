@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>teamviewer-qs</id>
+    <version>0.1.0</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/teamviewer-qs</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>TeamViewer QuickSupport</title>
+    <authors>TeamViewer GmbH</authors>
+    <projectUrl>https://www.teamviewer.com/download/windows/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/pauby/ChocoPackages/46f969b5/icons/teamviewer.png</iconUrl>
+    <copyright>Copyright (c) 2017-2018 TeamViewer GmbH</copyright>
+    <licenseUrl>https://www.teamviewer.com/privacy-policy/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://www.teamviewer.com/support/documents/</docsUrl>
+    <bugTrackerUrl>https://www.teamviewer.com/support/#submitTicket</bugTrackerUrl>
+    <tags>teamviewer quicksupport support remote-support</tags>
+    <summary>Optimized for instant remote desktop support, TeamViewer QuickSupport does not require installation or administrator rights</summary>
+    <description>Optimized for instant remote desktop support, this small customer module does not require installation or administrator rights — simply download, double click, and give the provided ID and password to your supporter.</description>
+    <releaseNotes>https://www.teamviewer.com/download/previous-versions/</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

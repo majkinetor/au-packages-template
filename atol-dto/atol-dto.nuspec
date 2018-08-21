@@ -4,7 +4,7 @@
   <metadata>
     <id>atol-dto</id>
     <version>10.3.1</version>
-    <packageSourceUrl>https://github.com/galeksandrp/chocolatey-packages/tree/atol-dto</packageSourceUrl>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/atol-dto</packageSourceUrl>
     <owners>galeksandrp</owners>
     <title>Atol DTO (Install)</title>
     <authors>Компания АТОЛ</authors>
