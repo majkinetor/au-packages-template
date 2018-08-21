@@ -8,12 +8,12 @@
     <title>Fintender Installer</title>
     <authors>FINTENDER.RU</authors>
     <projectUrl>https://fintender.ru/crypto</projectUrl>
-    <iconUrl>http://ft-crypto.ru/attachments/Logo/ft_crypto_logo.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/galeksandrp/au-packages/0816ac723a14a99c0554bd6a4655a8e8e3bbdbbd/icons/fintender-installer.png</iconUrl>
     <copyright>Copyright © 2013-2017 FINTENDER.RU</copyright>
-    <licenseUrl>http://ft-crypto.ru/about-us/</licenseUrl>
+    <licenseUrl>http://ft-crypto.ru/data/documents/ft-crypto-reglament.pdf</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <docsUrl>http://ft-crypto.ru/help/instrukcii/</docsUrl>
-    <bugTrackerUrl>http://ft-crypto.ru</bugTrackerUrl>
+    <bugTrackerUrl>https://private.fintender.ru/home/User/Login</bugTrackerUrl>
     <tags>fintender ft-crypto cryptoca digital-signature signature csr browser plugin</tags>
     <summary>Plugin for configuring browser for digital signature generation on Fintender.ru</summary>
     <description>Plugin for configuring browser for digital signature generation on Fintender.ru</description>
