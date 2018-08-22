@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>dellcommandupdate-uwp</id>
+    <version>3.0.0</version>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/dellcommandupdate-uwp</packageSourceUrl>
+    <owners>flcdrg</owners>
+    <title>Dell Command | Update (UWP)</title>
+    <authors>Dell Inc</authors>
+    <projectUrl>http://www.dell.com/support/article/us/en/19/HOW10760/how-to-use-dell-command---update-to-update-all-drivers-bios-and-firmware-for-your-system?lang=EN</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/flcdrg/au-packages/master/dellcommandupdate/icons/dellcommandupdate.png</iconUrl>
+    <copyright>Copyright © 2018 Dell Inc. All rights reserved</copyright>
+    <licenseUrl>http://www.dell.com/learn/us/en/solutions/software-license-agreements?s=corp</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://www.dell.com/support/home/us/en/19/product-support/product/command-update-v3.0/manuals </docsUrl>
+    <tags>dell command update admin uwp windows10</tags>
+    <summary>Dell utility that allows you to automate driver, BIOS and firmware updates on your system for Windows 10</summary>
+    <description>You can use Dell Command | Update to update a Dell system with the latest drivers, BIOS, firmware, and Dell software applications.
+
+Dell Command | Update provides the following new features:
+
+- Support for installing base drivers on a system that contains only an operating system, network adapter, a compatible network adapter driver, and an installation of Dell Command | Update, using the Advanced Driver Restore feature.
+- Support for updating intra-component dependencies as shown in the Partner Development Kit (PDK) catalog.
+- Notification when system restore points are created.
+- Enhanced updates Schedule — You can configure Dell Command | Update to automatically check for updates on the system at specific intervals of time
+
+This UWP package provides the Dell Command | Update Application and is supported on OptiPlex, Venue Pro Tablet, Precision, XPS Notebook and Latitude models that are running the following Windows operating system: Windows 10 > = RS1+ (build 14393) systems.
+
+*Note that this is not an upgrade to the non-UWP version. You will need to manually uninstall older versions of Dell Command | Update before installing this Windows 10/UWP version.*
+ </description>
+ <releaseNotes>
+Fixes:
+- Bug fixes
+
+Enhancements:
+- Support for Universal Windows (UWP) Platform
+- Option to participate in the Dell Command | Update Improvement Program 
+ </releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

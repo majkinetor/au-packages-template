@@ -1,0 +1,1 @@
+﻿Get-Service DellClientManagementService -ErrorAction SilentlyContinue | Stop-Service
