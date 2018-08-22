@@ -2,8 +2,13 @@ $urls = @{
     "Release" = @{
         Version = "https://download-cf.jetbrains.com/resharper/resharper-version.json"
         Updates = "https://download-cf.jetbrains.com/resharper/resharper-updates.json"
-        Hash = "https://download.jetbrains.com/resharper/JetBrains.ReSharperUltimate.VERSIONMARKETINGSTRING.exe.sha256"
-        Url = "https://download.jetbrains.com/resharper/JetBrains.ReSharperUltimate.VERSIONMARKETINGSTRING.exe"
+        Hash = "https://download.jetbrains.com/resharper/ReSharperUltimate.VERSIONMARKETINGSTRING/JetBrains.ReSharperUltimate.VERSIONMARKETINGSTRING.exe.sha256"
+
+        # https://download.jetbrains.com/resharper/ReSharperUltimate.2018.2/JetBrains.ReSharperUltimate.2018.2.exe.sha256
+        # https://download.jetbrains.com/resharper/ReSharperUltimate.2018.2/JetBrains.ReSharperUltimate.2018.2.exe
+        # https://download-cf.jetbrains.com/resharper/ReSharperUltimate.2018.2/JetBrains.ReSharperUltimate.2018.2.exe
+
+        Url = "https://download.jetbrains.com/resharper/ReSharperUltimate.VERSIONMARKETINGSTRING/JetBrains.ReSharperUltimate.VERSIONMARKETINGSTRING.exe"
     }
     "Release-EAP" = @{
         Version = "https://download.jetbrains.com/resharper/resharper-version-eap.json"
