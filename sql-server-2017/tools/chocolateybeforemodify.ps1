@@ -1,1 +1,1 @@
-﻿Stop-Service MSSQLSERVER -ErrorAction SilentlyContinue | Stop-Service
+﻿Get-Service MSSQLSERVER -ErrorAction SilentlyContinue | Stop-Service
