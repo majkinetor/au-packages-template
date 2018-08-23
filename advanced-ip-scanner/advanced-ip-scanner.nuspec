@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>advanced-ip-scanner</id>
+    <version>2.5.3581</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/advanced-ip-scanner</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>Advanced IP Scanner (Install)</title>
+    <authors>Famatech</authors>
+    <projectUrl>https://www.advanced-ip-scanner.com</projectUrl>
+    <iconUrl>https://705167.ssl.1c-bitrix-cdn.ru/images/aips/aips_logo.png</iconUrl>
+    <copyright>Copyright (c) 2002-2017 Famatech</copyright>
+    <licenseUrl>https://www.advanced-ip-scanner.com/legal/pp.php</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://www.advanced-ip-scanner.com/help/</docsUrl>
+    <bugTrackerUrl>https://www.advanced-ip-scanner.com/support/</bugTrackerUrl>
+    <tags>ip scanner nmap pentest pentesting security network admin</tags>
+    <summary>Reliable and free network scanner to analyse LAN.</summary>
+    <description>Reliable and free network scanner to analyse LAN. The program shows all network devices, gives you access to shared folders, provides remote control of computers (via RDP and Radmin), and can even remotely switch computers off. It is easy to use and runs as a portable edition. It should be the first choice for every network admin.</description>
+    <releaseNotes>https://www.advanced-ip-scanner.com/news/</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
