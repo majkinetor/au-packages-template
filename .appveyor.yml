@@ -79,7 +79,7 @@ build_script:
     if ( ($Env:APPVEYOR_SCHEDULED_BUILD -ne 'true') -and ($Env:APPVEYOR_FORCED_BUILD -ne 'true') ) {
         switch -regex ($Env:APPVEYOR_REPO_COMMIT_MESSAGE)
         {
-            '\[AU (.+?)\]'   { $forced = $Matches[1] -split ' ' -match ':' -join ' '; $packages = $Matches[1] -split ' ' | % {($_ -split ':')[0]} }
+            '\[AU (.+?)\]'   { $forced = $Matches[1] -split ' ' -match ':' -join ' '; $packages = $Matches[1] -split ' ' | % {($_ -split '[\\:]')[0]} }
 
             '\[PUSH (.+?)\]' {
                 $packages = $Matches[1] -split ' '
