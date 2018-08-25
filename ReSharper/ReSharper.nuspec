@@ -46,6 +46,7 @@ Code style and formatting functionality with fine-grained, language-specific set
     <releaseNotes>https://www.jetbrains.com/resharper/whatsnew/</releaseNotes>
     <dependencies>
       <dependency id="resharper-platform" version="[182.0.20180819.121800]" />
+      <dependency id="dotnet4.6.1" version="4.6.01055.20170308" />
     </dependencies>
   </metadata>
   <files>
