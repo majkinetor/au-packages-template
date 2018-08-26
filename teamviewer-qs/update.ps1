@@ -15,16 +15,22 @@ function global:au_BeforeUpdate() {
 }
 
 function global:au_GetLatest {
-	$URL32 = 'https://download.teamviewer.com/download/TeamViewerQS.exe'
-    Get-ChocolateyWebFile 'teamviewer-qs' $URL32 -FileFullPath "$env:TMP\TeamViewerQS.exe"
-	
-	$version = (Get-Item "$env:TMP\TeamViewerQS.exe").VersionInfo.FileVersion
-	if (!$version) {$version = "$((Get-Item "$env:TMP\TeamViewerQS.exe").VersionInfo.FileVersionRaw)"}
-	
-	@{
-        URL32   = $URL32
-        Version = $version.trim()
+    $versions = [ordered]@{}
+
+    [array]'https://download.teamviewer.com/download/TeamViewerQS.exe'+(curl 'https://www.teamviewer.com/ru/download/old-versions.aspx').Links.href -match '/TeamViewerQS\.exe$' | %{
+        $filename = "$env:TMP\$([guid]::NewGuid()).exe"
+        Get-ChocolateyWebFile 'teamviewer-qs' "$_" -FileFullPath $filename
+
+        $version = ''
+        try {
+            $version = [version](Get-Item $filename).VersionInfo.FileVersion.trim()
+        }catch{
+        }
+	    if (!$version) {$version = (Get-Item $filename).VersionInfo.ProductVersionRaw}
+        $versions[$version.major, $version.minor -join '.'] = @{URL32 = "$_"; Version = "$version"}
     }
+
+	@{Streams = $versions}
 }
 
 update
