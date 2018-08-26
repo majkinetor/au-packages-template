@@ -2,8 +2,8 @@
   packageName            = "$env:chocolateyPackageName"
   FileType               = 'exe'
   SilentArgs             = '/S'
-  url                    = 'https://downloads.sourceforge.net/project/xca/xca/1.4.0/setup_xca-1.4.0.exe'
-  checksum               = '676eaf24348a76bc311db959694c88be86386395686ba05fc1e63f985292aaf6'
+  url                    = 'https://github.com/chris2511/xca/releases/download/RELEASE.2.1.0/setup_xca-2.1.0.exe'
+  checksum               = 'b519aec836d9d4888a2606dc1f3b40077ed17f67caf73ce8b8b3b38f7ccb71db'
   checksumType           = 'sha256'
 }
 Install-ChocolateyPackage @packageArgs
