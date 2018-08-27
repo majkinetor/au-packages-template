@@ -1,8 +1,8 @@
 ﻿$packageArgs = @{
   packageName            = "$env:chocolateyPackageName"
-  url                    = 'https://github.com/google/UIforETW/releases/download/v1.49/etwpackage1.49.zip'
+  url                    = 'https://github.com/google/UIforETW/releases/download/v1.16/etwpackage.zip'
   UnzipLocation          = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
-  checksum               = '2dd37ca3be8d3566a95ba78a3cbcc3190397d4743f87d74f952e11c40e92708d'
+  checksum               = 'c8fee2d34517b792e7eb09b4c136c97e339f5f8451824b3b0c61c6508eb57f34'
   checksumType           = 'sha256'
 }
 Install-ChocolateyZipPackage @packageArgs
