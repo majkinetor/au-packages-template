@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>stunnel-msspi</id>
-    <version>5.48.0.106</version>
+    <version>5.49.0.133</version>
     <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/stunnel-msspi</packageSourceUrl>
     <owners>galeksandrp</owners>
     <title>stunnel-msspi</title>
