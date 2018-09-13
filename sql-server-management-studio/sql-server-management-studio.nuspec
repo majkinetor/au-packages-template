@@ -3,10 +3,10 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sql-server-management-studio</id>
-    <version>14.0.17277.0</version>
+    <version>14.0.17285.0</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/sql-server-management-studio</packageSourceUrl>
     <owners>flcdrg</owners>
-    <title>SQL Server Management Studio 17.8.1</title>
+    <title>SQL Server Management Studio 17.9</title>
     <authors>Microsoft</authors>
     <projectUrl>https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-ssms</projectUrl>
     <iconUrl>http://cdn.rawgit.com/flcdrg/au-packages/master/sql-server-management-studio/icons/ssms-icon.png</iconUrl>
@@ -46,68 +46,81 @@ This release of SSMS supports the following 64-bit platforms when used with the 
 
 \* SSMS 17.X is based on the Visual Studio 2015 Isolated shell, which was released before Windows Server 2016. Microsoft takes app compatibility seriously and ensures that already-shipped applications continue to run on the latest Windows releases. To minimize issues running SSMS on Windows Server 2016, ensure SSMS has all of the latest updates applied. If you experience any issues with SSMS on Windows Server 2016, contact support. The support team determines if the issue is with SSMS, Visual Studio, or with Windows compatibility. The support team then routes the issue to the appropriate team for further investigation.	</description>
     <releaseNotes>
-#### [SSMS 17.8.1](download-sql-server-management-studio-ssms.md)
-*A bug was discovered in 17.8 related to provisioning SQL databases, so SSMS 17.8.1 replaces 17.8.*
+#### [SSMS 17.9](download-sql-server-management-studio-ssms.md)
 
 
-Build number: 14.0.17277.0&lt;br&gt;
-Release date: June 26, 2018
-
+Build number: 14.0.17285.0&lt;br&gt;
+Release date: September 04, 2018
 
 ##### What&apos;s new
 
 **General SSMS**
 
-Database Properties:
 
-- This improvement exposes the **AUTOGROW_ALL_FILES** configuration option for Filegroups. This new config option is added under the Database Properties &gt; Filegroups window in the form of a new column (Autogrow All Files) of checkboxes for each available Filegroup (except for Filestream and Memory Optimized Filegroups). The user can enable/disable AUTOGROW_ALL_FILES for a particular Filegroup by toggling the corresponding Autogrow_All_Files checkbox. Correspondingly, the **AUTOGROW_ALL_FILES** option is properly scripted when scripting the database for CREATE / generating scripts for the database (SQL2016 and above).
-	
-SQL Editor:
+ShowPlan:
 
-- Improved experience with Intellisense in Azure SQL Database when the user doesn&apos;t have master access.
+- Graphical Showplan now shows the new row mode memory grant feedback attributes when the feature is activated for a specific plan: IsMemoryGrantFeedbackAdjusted and LastRequestedMemory added to the MemoryGrantInfo query plan XML element. For more on row mode memory grant feedback, see [Adaptive query processing in SQL databases](https://docs.microsoft.com/sql/relational-databases/performance/adaptive-query-processing).
 
-Scripting:
+Azure SQL: 
 
-- General performance improvements, especially over high-latency connections.
-	
-**Analysis Servics (AS)**
-
-- Analysis Services client libraries and data providers updated to the latest version, which added support for the new Azure Government AAD authority (login.microsoftonline.us).
-
-
+- Added support for vCore SKUs in Azure DB creation. For more information, see [vCore-based purchasing model](https://docs.microsoft.com/azure/sql-database/sql-database-service-tiers#vcore-based-purchasing-model).
+ 
 
 ##### Bug fixes
 
 **General SSMS**
 	
-Maintenance Plans:
+Replication Monitor:
 
-- Fixed an issue when editing maintenance plans with Sql Authentication where &quot;Notify Operator Task&quot; was failing when using SQL authentication.
-	
-Scripting:
+- Fixed an issue that was causing Replication Monitor (SqlMonitor.exe) not to start (User Voice item: https://feedback.azure.com/forums/908035-sql-server/suggestions/34791079) 
 
-- Fixed an issue where PostProcess actions in SMO lead to resource exhaustion and SQL login failures
-	
-SMO:
+Import Flat File Wizard: 
 
-- Fixed an issue where Table.Alter() fails if adding a column with a default constraint and the table already has data. For details, see [sql server smo generating inline default constraint when adding a column to a table containing data](https://feedback.azure.com/forums/908035-sql-server/suggestions/32895625).
-	
-Always Encrypted:
+- Fixed the link to the help page for &quot;Flat File Wizard&quot; dialog 
+- Fixed issue where the wizard did not allow changing the destination table when the table already existed: this allows users to retry without having to exit the wizard, delete the failed table, and then reenter the information into the wizard (User Voice item: https://feedback.azure.com/forums/908035-sql-server/suggestions/32896186). 
 
-- Fixed an issue (in DacFx) which was causing a lock timeout error when enabling Always Encrypted on a partitioned table
-	
+Import/Export Data-Tier Application:
 
-**Analysis Services (AS)**
+- Fixed an issue (in DacFx) which was causing the import of a .bacpac could fail with a message like &quot;Error SQL72014: .Net SqlClient Data Provider: Msg 9108, Level 16, State 10, Line 1 This type of statistics is not supported to be incremental. &quot; when dealing with tables with partitions defined and no indexes on the table. 
 
-- Fixed an issue that occurred when modifying an OAuth datasource in a Tabular Analysis Services 1400-level compatibility model, which caused the changes in the OAuth tokens to not get updated in the data source.
-- Fixed a crash in SSMS that may have occurred when using some invalid data source credentials or editing data sources that didn&apos;t support Change Data Source migration in Power Query (for example, Oracle) in Analysis Services Tabular 1400-level compatibility models.
+Intellisense:
 
+- Fixed an issue where intellisense completion was not working when using AAD with MFA. 
+
+Object Explorer: 
+
+- Fixed an issue where the &quot;Filter Dialog&quot; was displayed on random monitors instead of the monitor where SSMS was running (multi-monitor systems).
+
+Azure SQL: 
+
+- Fixed an issue related to enumeration of databases in the &quot;Available Databases&quot; where &quot;master&quot; was not displayed in the dropdown when connected to a specific database. 
+- Fixed an issue where trying to generate a script (&quot;Data&quot; or &quot;Schema and Data&quot;) was failing then connected to the SQL Azure DB using AAD with MFA. 
+- Fixed an issue in the View Designer (Views) where it was not possible to select &quot;Add Tables&quot; from the UI when connected to a SQL Azure DB. 
+- Fixed an issue where SSMS Query Editor was silently closing and reopening connections during MFA token renewal. This will prevent side effects unbeknownst to the user (like closing a transaction and never reopening again) from happening. The change adds the token expiration time to the properties window. 
+- Fixed an issue where SSMS was not enforcing password prompts for imported MSA accounts for AAD with MFA login. 
+
+Activity Monitor: 
+
+- Fixed a an issue that was causing &quot;Live Query Statistics&quot; to hang when launched from Activity Monitor and SQL Authentication was used. 
+
+Microsoft Azure integration: 
+
+- Fixed an issue where SSMS only shows the first 50 subscriptions (Always Encrypted dialogs, Backup/Restore from URL dialogs, etc…). 
+- Fixed an issue where SSMS was throwing an exception (&quot;Index out of range&quot;) while trying to log on to an Microsoft Azure account which did not have any storage account (in Restore Backup from URL dialog). 
+
+Object Scripting: 
+
+- When scripting &quot;Drop and Create&quot;, SSMS now avoids generating dynamic T-SQL.
+- When scripting a database object, SSMS now does not generate script to set database scoped configurations, if they are set to default values.
+
+Help:
+
+- Fixed a long outstanding issue where &quot;Help on Help&quot; was not honoring the online/offline mode.
+- When clicking on &quot;Help | Community Projects and Samples&quot; SSMS now opens the default browser that points to a Git page and shows no errors/warnings due to old browser being used.
 
 ##### Known issues
 
-- Clicking the *Script* button after modifying any filegroup property in the *Properties* window, generates two scripts – one script with a *USE &lt;database&gt;* statement, and a second script with a *USE master* statement.  The script with *USE master* is generated in error and should be discarded. Run the script that contains the *USE &lt;database&gt;* statement.
-- Some dialogs display an invalid edition error when working with new *General Purpose* or *Business Critical* Azure SQL Database editions.
-- Some latency in XEvents viewer may be observed. This is a [known issue in the .Net Framework](https://github.com/Microsoft/dotnet/blob/master/releases/net472/dotnet472-changes.md#sql). Please, consider upgrading to NetFx 4.7.2.
+- There are currently no known issues in this release.
 </releaseNotes>
     <dependencies>
       <dependency id="KB2919355" version="1.0.20160915" />
