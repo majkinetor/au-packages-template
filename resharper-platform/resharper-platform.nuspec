@@ -21,11 +21,13 @@ Each ReSharper Ultimate license allows a single developer to use ReSharper, ReSh
 This package is used as a dependency by other Chocolatey packages. To install ReSharper or related tools, see the individual packages:
 
 - [ReSharper](https://chocolatey.org/packages/resharper)
+- [ReSharper C++](https://chocolatey.org/packages/ReSharperCpp)
 - [dotCover](https://chocolatey.org/packages/dotCover)
 - [dotMemory](https://chocolatey.org/packages/dotMemory)
 - [dotPeek](https://chocolatey.org/packages/dotPeek)
 - [dotTrace](https://chocolatey.org/packages/dotTrace)
-- [ReSharper Ultimate All](https://chocolatey.org/packages/resharper) - Installs all the .NET tools from ReSharper Ultimate (faster than installing individual packages)
+- [TeamCity Addin](https://chocolatey.org/packages/teamCityAddin)
+- [ReSharper Ultimate All](https://chocolatey.org/packages/resharper-ultimate-all) - Installs all the .NET tools from ReSharper Ultimate (faster than installing individual packages)
     </description>
   </metadata>
   <files>
