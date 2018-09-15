@@ -46,7 +46,9 @@ The following package parameters can be set:
 These parameters can be passed to the installer with the use of `--params`.
 For example: `--params "'/PerMachine'"`.
 	</description>
-    <releaseNotes>https://www.jetbrains.com/resharper/whatsnew</releaseNotes>
+    <releaseNotes>As of Chocolatey package version 2018.2.3.20180915, *all* components are now installed by default. 
+    
+ReSharper release notes: https://www.jetbrains.com/resharper/whatsnew</releaseNotes>
     <dependencies>
       <dependency id="resharper-platform" version="[182.0.20180912.70144]" />
       <dependency id="chocolatey-core.extension" version="1.3.1" />
