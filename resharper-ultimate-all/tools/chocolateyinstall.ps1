@@ -6,14 +6,26 @@ $scriptPath = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 $commonPath = $(Split-Path -parent $(Split-Path -parent $scriptPath))
 $filename = 'JetBrains.ReSharperUltimate.2018.2.3.exe'
 $installPath = Join-Path  (Join-Path $commonPath $platformPackageName) $filename
-
-$silentArgs = "/Silent=True /SpecificProductNames=ReSharper;dotTrace;dotMemory;dotCover;dotPeek /VsVersion=*"
-
 $packageParameters = Get-PackageParameters
 
-if ($packageParameters["PerMachine"] -ne $null) {
+$products = "ReSharper;dotTrace;dotMemory;dotCover;dotPeek"
+
+if ($null -eq $packageParameters["NoCpp"]) {
+  $products += ";ReSharperCpp"
+}
+
+if ($null -eq $packageParameters["NoTeamCityAddin"]) {
+  $products += ";teamCityAddin"
+}
+
+$silentArgs = "/Silent=True /SpecificProductNames=$products /VsVersion=*"
+
+Write-Verbose $silentArgs
+
+if ($packageParameters["PerMachine"]) {
   $silentArgs += " /PerMachine=True"
 }
+
 
 $packageArgs = @{
   packageName   = $packageName

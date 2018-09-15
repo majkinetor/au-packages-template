@@ -7,7 +7,7 @@ $commonPath = $(Split-Path -parent $(Split-Path -parent $scriptPath))
 $filename = 'JetBrains.ReSharperUltimate.2018.2.3.exe'
 $installPath = Join-Path  (Join-Path $commonPath $platformPackageName) $filename
 
-$silentArgs = '/Silent=True /SpecificProductNamesToRemove=ReSharper;dotTrace;dotMemory;dotCover;dotPeek /VsVersion=* /ReSharper9PlusMsi=True'
+$silentArgs = '/Silent=True /SpecificProductNamesToRemove=* /VsVersion=* /ReSharper9PlusMsi=True'
 
 $packageParameters = Get-PackageParameters
 

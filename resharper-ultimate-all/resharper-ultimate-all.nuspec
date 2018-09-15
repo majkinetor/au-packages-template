@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>resharper-ultimate-all</id>
-    <version>2018.2.3</version>
+    <version>2018.2.3.20180915</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/resharper-ultimate-all</packageSourceUrl>
     <owners>flcdrg</owners>
     <title>ReSharper Ultimate All</title>
@@ -16,11 +16,13 @@
     <docsUrl>http://www.jetbrains.com/resharper/documentation/</docsUrl>
     <mailingListUrl>https://resharper-support.jetbrains.com/hc/en-us/community/topics</mailingListUrl>
     <bugTrackerUrl>https://youtrack.jetbrains.com/issues/RSRP</bugTrackerUrl>
-    <tags>ReSharper JetBrains dotCover dotMemory dotPeek dotTrace Ultimate admin</tags>
+    <tags>ReSharper JetBrains dotCover dotMemory dotPeek dotTrace TeamCity C++ Ultimate admin</tags>
     <summary>JetBrains ReSharper Ultimate Full Install</summary>
     <description>
-This package installs all the .NET components of JetBrains ReSharper Ultimate in one pass. 
-It is a faster, more efficient alternative to running `choco install resharper dottrace dotmemory dotcover dotpeek` as the latter will run the JetBrains installer 5 times (once for each application)
+This package installs all the components of JetBrains ReSharper Ultimate in one pass. 
+It is a faster, more efficient alternative to running `choco install resharper dottrace dotmemory dotcover dotpeek TeamCityAddin ReSharperCpp` as the latter will run the JetBrains installer 5 times (once for each application)
+
+If don't want C++ or TeamCity then there are parameters to exclude either or both of those.
 
 If you just want to install specific JetBrains applications then consider using one or more of the other individual Chocolatey packages:
 
@@ -29,6 +31,8 @@ If you just want to install specific JetBrains applications then consider using 
 - [dotMemory](https://chocolatey.org/packages/dotMemory)
 - [dotPeek](https://chocolatey.org/packages/dotPeek)
 - [dotTrace](https://chocolatey.org/packages/dotTrace)
+- [ReSharper C++](https://chocolatey.org/packages/ReSharperCpp)
+- [TeamCity Addin](https://chocolatey.org/packages/TeamCityAddin)
 
 ### Package Specific
 
@@ -36,6 +40,8 @@ If you just want to install specific JetBrains applications then consider using 
 The following package parameters can be set:
 
  * `/PerMachine` - install machine-wide (instead of per-user)
+ * `/NoCpp` - don't install ReSharper C++
+ * `/NoTeamCityAddin` - don't install TeamCity Addin
 
 These parameters can be passed to the installer with the use of `--params`.
 For example: `--params "'/PerMachine'"`.
