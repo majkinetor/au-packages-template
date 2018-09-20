@@ -17,26 +17,15 @@
     <docsUrl>https://docs.microsoft.com/en-us/cli/vsts/get-started?view=vsts-cli-latest</docsUrl>
     <mailingListUrl>https://developercommunity.visualstudio.com/spaces/21/index.html?page=1&amp;pageSize=15&amp;sort=votes</mailingListUrl>
     <bugTrackerUrl>https://github.com/Microsoft/vsts-cli/issues</bugTrackerUrl>
-    <tags>VSTS Git TFS</tags>
+    <tags>VSTS Git TFS Azure DevOps CLI</tags>
     <summary>VSTS CLI is a command line interface for Visual Studio Team Services (VSTS) and Team Foundation Server (TFS)</summary>
-    <description>VSTS CLI is Visual Studio Team Services (VSTS) new command line experience for managing VSTS resources. You can install it on macOS, Linux, and Windows and run it from the command line.
+    <description>VSTS CLI is the new command line experience for managing Azure DevOps Services resources. You can install it on macOS, Linux, and Windows and run it from the command line.
 
-VSTS CLI is optimized for managing and administering VSTS resources from the command line, and for building automation scripts that work against your VSTS or Team Foundation Server account. This article helps get you started using it, and teaches you the core concepts behind it.
+VSTS CLI is optimized for managing and administering VSTS resources from the command line, and for building automation scripts that work against your Azure DevOps Services organization or Team Foundation Server account.
 
-VSTS CLI is supported on Team Foundation Server 2017 update 2 and later.</description>
+VSTS CLI works with Azure DevOps Services and Team Foundation Server 2017 Update 2 and later.</description>
     <releaseNotes>
-This release is a bug fix release:
-
-- Fixes issue where a user can inadvertently put private data into an argument name which would be included in usage telemetry. Argument names are included in telemetry, but argument values are not. This allows us to make investment decisions based on how customers use the CLI. Before this fix a customer could inadvertently send an argument value as an argument name, and that data would be collected and stored in telemetry for a 4 week period. With this fix, we ensure all argument names are valid argument names before reporting the telemetry. If there are any invalid argument names, then no telemetry is sent. This eliminates any chance of inadvertently including private data in the telemetry. Users have always been able to opt out of telemetry collection by using the configure command.
-- Fixes issue where `vsts -v` or `vsts --version` no longer worked with latest version of pip due to the use of a deprecated pip API.
-- Fix build command table output when build has no source branch.
-- Change name of `--source-branch` arg to just `--branch` on build queue command for consistancy and ease of use.
-- Improved error messaging when project is not specified but is required.
-- Performance improvements when calling commands with the `--help` or `-h` argument, by delaying imports to reduce unnecessary module loading.
-- Improved error messages when queueing a build fails.
-- Dependency updates and reaction
-- Other minor fixes.
-
+https://docs.microsoft.com/en-us/cli/vsts/release-notes
     </releaseNotes>
 
   </metadata>
