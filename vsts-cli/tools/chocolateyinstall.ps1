@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url = 'https://vstscli.blob.core.windows.net/msi/vsts-cli-0.1.1.msi'
-$checksum = 'CA03F2178A84C8ABDD99E693FFCBE85BC3E0733A41AB831CA5736FD1894A724F'
+$url = 'https://vstscli.blob.core.windows.net/msi/vsts-cli-0.1.3.msi'
+$checksum = 'dbb1f9fe24625352868ff740434802fd353f24d142c3d2083d61b1d25a95cd4d'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
