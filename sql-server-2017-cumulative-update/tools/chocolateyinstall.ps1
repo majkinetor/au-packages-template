@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url        = 'https://download.microsoft.com/download/C/4/F/C4F908C9-98ED-4E5F-88D5-7D6A5004AEBD/SQLServer2017-KB4341265-x64.exe'
-$checksum   = '6871130543a0de2f9d1fa761e5b39101bc4ca667ae93e64c051323bef1abc6ba'
-$softwareName = 'Hotfix 3030 for SQL Server 2017*(KB4341265)*'
+$url        = 'https://download.microsoft.com/download/C/4/F/C4F908C9-98ED-4E5F-88D5-7D6A5004AEBD/SQLServer2017-KB4462262-x64.exe'
+$checksum   = '75f7b3afcf0e318e15218290d4bdf6a093cfb6bb321d8a108c4f8cf8f515b2ee'
+$softwareName = 'Hotfix 3038 for SQL Server 2017*(KB4462262)*'
 
 $filename = [IO.Path]::GetFileName($url)
 

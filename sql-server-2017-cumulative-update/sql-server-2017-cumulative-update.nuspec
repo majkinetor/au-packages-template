@@ -3,10 +3,10 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sql-server-2017-cumulative-update</id>
-    <version>14.0.3030.27</version>
+    <version>14.0.3038.14</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/sql-server-2017-cumulative-update</packageSourceUrl>
     <owners>flcdrg</owners>
-    <title>Microsoft SQL Server 2017 Cumulative Update 9</title>
+    <title>Microsoft SQL Server 2017 Cumulative Update 11</title>
     <authors>Microsoft Corporation</authors>
     <projectUrl>https://www.microsoft.com/en-us/download/details.aspx?id=56128</projectUrl>
     <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/59ad5e2e32c52fd2a45a9735f95a81368f9e5e85/icons/microsoft-sql-server.svg</iconUrl>
@@ -32,7 +32,7 @@ Uninstalling with Chocolatey is known to not be reliable, as the uninstaller wan
 
 Should you need to uninstall this cumulative update, you may need to revert to manual uninstallation via Programs and Features, Installed Updates.
     </description>
-    <releaseNotes>http://support.microsoft.com/help/4341265</releaseNotes>
+    <releaseNotes>http://support.microsoft.com/help/4462262</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
