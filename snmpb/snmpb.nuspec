@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>snmpb</id>
-    <version>0.8.0.20180925</version>
+    <version>0.8</version>
     <title>snmpb (Install)</title>
     <authors>martj</authors>
     <owners>MarcioC</owners>
@@ -18,5 +18,6 @@
     <docsUrl>https://sourceforge.net/p/snmpb/wiki/Home/</docsUrl>
     <mailingListUrl>https://sourceforge.net/p/snmpb/discussion/</mailingListUrl>
     <bugTrackerUrl>https://sourceforge.net/p/snmpb/bugs/</bugTrackerUrl>
+	<packageSourceUrl>https://github.com/CompactFactor/au-packages/tree/master/snmpb</packageSourceUrl>
   </metadata>
 </package>
