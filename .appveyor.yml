@@ -22,10 +22,6 @@ environment:
   github_api_key:
     secure: WOXmV3cLWnTw92fHumLctpFOXXKjHvxZGPtUDphVhwCzhlr//NO4hn2c8XFPXAhh #https://ci.appveyor.com/tools/encrypt
 
-  # Gitter Integration
-  gitter_webhook:
-    secure: mlfNOI+el4+76n0HEE9COlXYSSBfBY+0h+iR7gDWhXT98B8FXHrjWJRMBsvfYpPG
-
   # ID of the gist used to save run results - create a gist under the github_user (secret or not) and grab the id - https://gist.github.com/name/id
   # Optional, leave empty to create anonymous gist
   gist_id: acb08144abc2af19c24374a4ce0cb596
