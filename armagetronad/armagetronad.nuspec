@@ -16,6 +16,6 @@
     <docsUrl>https://sourceforge.net/p/armagetronad/wiki/</docsUrl>
     <mailingListUrl>https://sourceforge.net/p/armagetronad/discussion/</mailingListUrl>
     <bugTrackerUrl>https://sourceforge.net/p/armagetronad/bugs/</bugTrackerUrl>
-	<packageSourceUrl>https://github.com/CompactFactor/au-packages/tree/master/armagetronad</packageSourceUrl>
+	  <packageSourceUrl>https://github.com/CompactFactor/au-packages/tree/master/armagetronad</packageSourceUrl>
   </metadata>
 </package>
