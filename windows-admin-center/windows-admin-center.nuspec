@@ -38,9 +38,7 @@ The following package parameters can be set:
 To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 </description>
-    <releaseNotes>
-Project Honolulu becomes Windows Admin Center and adds security features and role-based access control. Our first GA release.    
-    </releaseNotes>
+    <releaseNotes>https://docs.microsoft.com/en-au/windows-server/manage/windows-admin-center/overview#latest-features</releaseNotes>
     <dependencies>
       <dependency id="PowerShell" version="5.1.14409.20180105" />
     </dependencies>
