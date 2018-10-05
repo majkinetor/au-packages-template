@@ -2,10 +2,10 @@
 
 $packageName= 'iguana.install'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'http://dl.interfaceware.com/iguana/windows/6_0_7/iguana_6_0_7_windows_x86.exe'
-$url64      = 'http://dl.interfaceware.com/iguana/windows/6_0_7/iguana_6_0_7_windows_x64.exe'
-$checksum   = '295bbd489bb3530765f5e2b0854c21e7572ce8135e16cb2c7469ada6d4934083'
-$checksum64 = 'fa6b77fdbc48f0c0e419a41444804c6bc3eeed7176ac90aa79b832c4190112bd'
+$url        = 'http://dl.interfaceware.com/iguana/windows/6_1_1/iguana_6_1_1_windows_x86.exe'
+$url64      = 'http://dl.interfaceware.com/iguana/windows/6_1_1/iguana_6_1_1_windows_x64.exe'
+$checksum   = 'bb7bb445efc54f15d718124ce2b554f0f1313b4c9c08a955c0c3587fb2fe1740'
+$checksum64 = '1dd7aa14f030c0b39c61e71e85fd4e3505b11067821708ebca20092d5ac20ce9'
 
 $packageParameters = $env:chocolateyPackageParameters
 
