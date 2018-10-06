@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>clipboardhelpandspell</id>
+    <version>2.42.0.20181005</version>
+    <title>Clipboard Help+Spell</title>
+    <authors>DonationCoder</authors>
+    <owners>DonationCoder</owners>
+    <licenseUrl>https://www.donationcoder.com/licensing/commercial</licenseUrl>
+    <projectUrl>https://www.donationcoder.com/software/mouser/popular-apps/clipboard-help-and-spell</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Clipboard Help+Spell is a clipboard history utility with the following features:
+
+Database stores history of all past text and image clipboard entries for easy viewing, modification, and search
+Use it for keeping hierarchical notes - search, sort, filter by text, modification date, last view date
+Super easy and super fast search function - or use complex filters if you need them - you'll never have a problem finding a note again!
+Organize your notes and clips any way you want - show them all or view by group or category; view your clips any way you like
+High-quality spellcheck - underlined mistakes; learning spellchecker
+Configurable hotkeys for common functions
+Powerful text formatting options - make your own presets for common functions
+Simple functions for copying and pasting into and out of other applications</description>
+    <summary>Clipboard Help+Spell is a clipboard history utility</summary>
+    <releaseNotes>https://www.donationcoder.com/Software/Mouser/clipboardhelpandspell/help/index.html</releaseNotes>
+    <copyright>© 2018 DonationCoder.com</copyright>
+    <tags>clipboard database search hotkey</tags>
+    <docsUrl>https://www.donationcoder.com/Software/Mouser/clipboardhelpandspell/help/index.html/</docsUrl>
+    <mailingListUrl>https://www.donationcoder.com/forum/index.php?board=49</mailingListUrl>
+    <bugTrackerUrl>https://www.donationcoder.com/forum/index.php?board=49</bugTrackerUrl>
+	<packageSourceUrl>https://github.com/CompactFactor/au-packages/tree/master/clipboardhelpandspell</packageSourceUrl>
+  </metadata>
+</package>
