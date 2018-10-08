@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>azure-pipelines-agent</id>
+    <version>2.140.2</version>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/azure-pipelines-agent</packageSourceUrl>
+    <owners>flcdrg</owners>
+    <title>Azure Pipelines Agent (VSTS Build Agent)</title>
+    <authors>Microsoft Corporation</authors>
+    <projectUrl>https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows?view=vsts</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/flcdrg/au-packages/master/azure-pipelines-agent/icons/azure-pipelines-agent.jpg</iconUrl>
+    <copyright>2018 Microsoft Corporation</copyright>
+    <licenseUrl>https://raw.githubusercontent.com/Microsoft/azure-pipelines-agent/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/Microsoft/azure-pipelines-agent</projectSourceUrl>
+    <docsUrl>https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows?view=vsts</docsUrl>
+    <mailingListUrl>https://developercommunity.visualstudio.com/spaces/21/index.html</mailingListUrl>
+    <bugTrackerUrl>https://github.com/Microsoft/azure-pipelines-agent/issues</bugTrackerUrl>
+    <tags>VSTS TFS Azure Pipelines Build Agents</tags>
+    <summary>Azure Pipelines agent - build agent</summary>
+    <description>The cross platform build and release agent for Azure Pipelines and Team Foundation Server 2015 and beyond.
+    An agent that you set up and manage on your own to run build and deployment jobs is a self-hosted agent. You can use self-hosted agents in Azure Pipelines or Team Foundation Server (TFS). Self-hosted agents give you more control to install dependent software needed for your builds and deployments.
+
+### Package Specific
+
+#### Package Parameters
+
+The following package parameters can be set:
+
+ * `/Directory:` - Directory to install agent in (defaults to `c:\agent`)
+ * `/Url:` - URL of the server. For example: https://myaccount.visualstudio.com or http://onprem:8080/tfs
+ * `/Token:` - Personal Access Token
+ * `/Auth:` - One of `negotiate`, `alt` or `integrated`
+ * `/Username:` - Used with `negotiate` or `alt` - Specify the Windows user name in the format: domain\userName or userName@domain.com
+ * `/Password:` - Used with `negotiate` or `alt`
+ * `/Pool:` - Pool name for the agent to join (defaults to `default`)
+ * `/DeploymentGroup` - Install as deployment agent (instead of a build agent)
+ * `/ProjectName:` - Used with /DeploymentGroup. Team project name
+ * `/DeploymentGroupName:` - Used with /DeploymentGroup. Deployment group for the agent to join
+ * `/DeploymentGroupTags:` - Used with /DeploymentGroup. A comma separated list of tags for the deployment group agent. For example "web, db".
+ * `/AutoLogon` - Configure auto logon and run the agent on startup (The default if this is not specified, is to run the agent as a Windows Service)
+ * `/LogonAccount:` - Account that agent should run as (either Windows Service or auto logon) - Specify the Windows user name in the format: domain\userName or userName@domain.com. To log in as Local System, use "NT AUTHORITY\SYSTEM". Defaults to NetworkService if not specified.
+ * `/LogonPassword:` - Used with /LogonAccount. Windows logon password
+
+To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.    
+
+Example:
+`choco install azure-pipelines-agent --params "'/Directory:c:\agent2 /Token:mytoken /Pool:Integration /Url:https://dev.azure.com/orgname'"`
+    </description>
+    <releaseNotes>https://github.com/Microsoft/azure-pipelines-agent/releases</releaseNotes>
+    <dependencies>
+      <dependency id="dotnet4.5" version="4.5.20120822" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
