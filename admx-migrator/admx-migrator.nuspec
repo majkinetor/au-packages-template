@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>admx-migrator</id>
+    <version>0.1.0</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/admx-migrator</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>ADMX Migrator (Install)</title>
+    <authors>FullArmor Corporation</authors>
+    <projectUrl>https://technet.microsoft.com/en-us/library/2008.02.utilityspotlight.aspx</projectUrl>
+    <iconUrl>https://i-technet.sec.s-msft.com/dynimg/IC317762.gif</iconUrl>
+    <copyright>Copyright (c) 2008-2018 FullArmor Corporation</copyright>
+    <licenseUrl>https://docs.microsoft.com/en-us/legal/mdsa</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://technet.microsoft.com/en-us/library/2008.02.utilityspotlight.aspx</docsUrl>
+    <bugTrackerUrl>https://technet.microsoft.com/ru-ru/cc512759.aspx</bugTrackerUrl>
+    <tags>admx adm group-policy group-policies gpo mmc microsoft-management-console editor admin</tags>
+    <summary>This free tool, developed by FullArmor Corporation and licensed to Microsoft, offers two key benefits: it lets you create your own custom ADMX files, and it can convert your legacy ADM files into ADMX</summary>
+    <description>This free tool, developed by FullArmor Corporation and licensed to Microsoft, offers two key benefits: it lets you create your own custom ADMX files, and it can convert your legacy ADM files into ADMX.
+
+To create templates in the new format, the ADMX Migrator provides the ADMX Editor, which sports a graphical user interface—no more text editor required. You build your templates using pulldown menus and dropdown lists within a clean and simple interface (see the figure). To start, choose the New Template command, name your template file, and enter a category by which to classify your file. Next you create the actual policy setting by entering the Registry key to which the policy will apply, the name of the Registry value, and the class that it will affect (User, Machine, or both). You can also describe what the policy does.
+When you're done, save your new template in the ADMX format. It is stored as both an ADMX file and an ADML file. The ADMX file contains the actual policy settings, and the ADML file provides language-specific information for the policy. You can now copy both files to the appropriate directories on your domain and incorporate them into Group Policy.
+You'll probably want to convert your ADM files into ADMX to take advantage of the new format. The ADMX Migrator provides two conversion methods—through the editor or through a command-line program. From the ADMX Editor, choose the option to Generate ADMX from ADM. Browse to your ADM file, and the tool quickly and automatically converts it. You then can open the converted file in the editor to examine its values and properties and modify it if you wish. The ADMX Migrator Command Window is a little more complicated; it requires you to type a lengthy command string at a prompt to perform the conversions. However, it includes some options and flexibility not available in the graphical editor.
+The ADMX Migrator is a Microsoft Management Console (MMC) snap-in, so it requires MMC 3.0 as well as the Microsoft .NET Framework 2.0. ADMX Migrator will run under Windows XP SP2, Windows Server® 2003 SP1, and Windows Vista.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
