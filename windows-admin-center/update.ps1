@@ -37,7 +37,7 @@ function global:au_GetLatest {
         $checksum = (Get-FileHash $downloadedFile -Algorithm SHA256).Hash
         Write-Verbose "$checksum"
 
-        Remove-Item $downloadedFile -Force
+        Remove-Item $downloadedFile -Force -ErrorAction Ignore
 
         $Latest = @{
             Version = $version
