@@ -33,22 +33,25 @@ function global:au_GetLatest {
 
     $url = $ini.DATA.url
 
-    $url -match ".*X-Lite-(\d+\.\d+\.\d+\.\d+)"
-    $version = $Matches[1]
+    if ($url -match ".*X-Lite-(\d+\.\d+\.\d+\.\d+)") {
+        $version = $Matches[1]
 
-    if (-not ($url.EndsWith(".exe"))) {
-        # http://counterpath.s3.amazonaws.com/downloads/X-Lite_5.3.1_92361.exe
-        $v = [version] $version
-        $versionFormat = "$($v.Major).$($v.Minor).$($v.Build)_$($v.Revision)"
-        $url = "https://counterpath.s3.amazonaws.com/downloads/X-Lite_$($versionFormat).exe"
-    }
+        if (-not ($url.EndsWith(".exe"))) {
+            # http://counterpath.s3.amazonaws.com/downloads/X-Lite_5.3.1_92361.exe
+            $v = [version] $version
+            $versionFormat = "$($v.Major).$($v.Minor).$($v.Build)_$($v.Revision)"
+            $url = "https://counterpath.s3.amazonaws.com/downloads/X-Lite_$($versionFormat).exe"
+        }
 
-    $releaseNotes = (GetReleaseNotes $ini) -join [Environment]::NewLine
+        $releaseNotes = (GetReleaseNotes $ini) -join [Environment]::NewLine
 
-    @{
-        URL32 = $url
-        Version = $version
-        ReleaseNotes = $releaseNotes
+        @{
+            URL32 = $url
+            Version = $version
+            ReleaseNotes = $releaseNotes
+        }
+    } else {
+        return @{}
     }
 }
 
