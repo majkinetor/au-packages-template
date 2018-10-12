@@ -23,7 +23,7 @@ function global:au_GetLatest {
     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
     $response = Invoke-RestMethod -Uri "https://upgrades.counterpath.com/xlite4/upgrade.php?build=76589"
-
+    
     $iniFile = [IO.Path]::GetTempFileName()
 
     Set-Content -Path $iniFile -Value $response
@@ -33,26 +33,35 @@ function global:au_GetLatest {
 
     $url = $ini.DATA.url
 
+    # http://counterpath.s3.amazonaws.com/downloads/X-Lite-5.3.3.92990-full.nupkg
     if ($url -match ".*X-Lite-(\d+\.\d+\.\d+\.\d+)") {
         $version = $Matches[1]
 
         if (-not ($url.EndsWith(".exe"))) {
-            # http://counterpath.s3.amazonaws.com/downloads/X-Lite_5.3.1_92361.exe
+            # http://counterpath.s3.amazonaws.com/downloads/X-Lite_5.3.3_92990.exe
             $v = [version] $version
             $versionFormat = "$($v.Major).$($v.Minor).$($v.Build)_$($v.Revision)"
             $url = "https://counterpath.s3.amazonaws.com/downloads/X-Lite_$($versionFormat).exe"
         }
-
-        $releaseNotes = (GetReleaseNotes $ini) -join [Environment]::NewLine
-
-        @{
-            URL32 = $url
-            Version = $version
-            ReleaseNotes = $releaseNotes
-        }
-    } else {
-        return @{}
+    } elseif ($url -match ".*X-Lite_(?<Major>\d+)\.(?<Minor>\d+)\.(?<Build>\d+)_(?<Revision>\d+)") {
+        # http://counterpath.s3.amazonaws.com/downloads/X-Lite_5.4.0_94388.exe
+        $version = "$($Matches.Major).$($Matches.Minor).$($Matches.Build).$($Matches.Revision)"
+        $url = $url -replace "http:", "https:"
     }
+
+    if (-not $version) {
+        Write-Warning ("Didn't match version`n" + $response)
+        return 'ignore'
+    }
+
+    $releaseNotes = (GetReleaseNotes $ini) -join [Environment]::NewLine
+
+    @{
+        URL32 = $url
+        Version = $version
+        ReleaseNotes = $releaseNotes
+    }
+
 }
 
 function global:au_AfterUpdate
