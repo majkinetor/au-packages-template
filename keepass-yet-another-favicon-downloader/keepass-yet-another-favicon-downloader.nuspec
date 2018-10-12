@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>keepass-yet-another-favicon-downloader</id>
-    <version>1.2.0.0</version>
-    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/keepass-yafd</packageSourceUrl>
+    <version>1.1.1.0</version>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/keepass-yet-another-favicon-downloader</packageSourceUrl>
     <owners>flcdrg</owners>
     <title>KeePass Plugin Yet Another Favicon Downloader</title>
     <authors>Rafael Cossovan de França</authors>
@@ -30,19 +30,7 @@
 - Linux support (_experimental_)
 - Proxy support (respects _KeePass_ settings)
     </description>
-    <releaseNotes>
-### Improvements
-
-- Download all entries in a group recursively.
-- Several improvements when downloading favicons (thanks @lukefor).
-- Use title field if URL field is empty (thanks @huseyint).
-
-Please refer to Settings: Use title field if URL field is empty for more details.
-
-### Breaking changes
-
-- No longer compatible with older runtime versions.
-.</releaseNotes>
+    <releaseNotes>Fixes "Check for Updates" weird behavior on Linux/Mono.</releaseNotes>
     <dependencies>
       <dependency id="keepass" version="2.34" />
     </dependencies>
