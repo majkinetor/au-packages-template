@@ -28,6 +28,11 @@ function global:au_GetLatest {
     $url32 -match "-(?<version>\d+\.\d+\.\d+)\.msi$"   
 
     $version = $Matches.version
+
+    if (-not $version) {
+        Write-Warning "Didn't match version in $url32"
+        return 'ignore'
+    }
     
     $Latest = @{ URL32 = $url32; Version = $version }
     return $Latest
