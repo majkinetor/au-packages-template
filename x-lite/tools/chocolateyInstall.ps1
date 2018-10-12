@@ -5,10 +5,10 @@ $packageName = 'x-lite'
 $installerType = 'exe'
 
 $silentArgs = '-s'
-$url = 'https://counterpath.s3.amazonaws.com/downloads/X-Lite_5.3.3_92990.exe'
+$url = 'https://counterpath.s3.amazonaws.com/downloads/X-Lite_5.4.0_94388.exe'
 $validExitCodes = @(0)
 
-$checksum = 'f4811cfd9eab6576eec4fdcaaba8a3a02a3030e76164862b2e88c46d1b593d4e'
+$checksum = '4e69c2b09187f1f41d8f265e44d42a74ea3ab38584ad023af0b90b3848128a14'
 $checksumType = 'sha256'
 
 $ahkScript = "$toolsDir\install.ahk"
