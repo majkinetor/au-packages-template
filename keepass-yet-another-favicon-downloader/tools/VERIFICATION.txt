@@ -4,4 +4,4 @@ in verifying that this package's contents are trustworthy.
  
 Download appropriate version from https://github.com/navossoc/KeePass-Yet-Another-Favicon-Downloader/releases
 
-Calculate checksum (eg. using Get-FileHash) and compare with checksums displayed on chocolatey.org page.
+Calculate checksum (eg. using Get-FileHash) and compare with checksum for YetAnotherFaviconDownloader.plgx file included in this package.
