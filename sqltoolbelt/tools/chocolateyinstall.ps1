@@ -61,8 +61,12 @@ if ($pp["FTP"] -ne $null -and $pp["FTP"] -ne '') {
   Write-Verbose "HTTP Last Modified  : $lastModified"
 
   if ($lastModified -ne $packageVersionLastModified) {
-    Write-Warning "The download available at $primaryDownloadUrl has changed from what this package was expecting. Falling back to FTP for version-specific URL"
-    $url = $secondaryDownloadUrl
+    if ($pp["NoFTP"]) {
+      Write-Warning "The download available at $primaryDownloadUrl has changed from what this package was expecting, but /NoFTP package parameter was supplied. Expect checksums to fail if the download is actually a newer version."
+    } else {
+      Write-Warning "The download available at $primaryDownloadUrl has changed from what this package was expecting. Falling back to FTP for version-specific URL"
+      $url = $secondaryDownloadUrl
+    }
   } else {
     Write-Verbose "Primary URL matches package expectation"
     $url = $primaryDownloadUrl

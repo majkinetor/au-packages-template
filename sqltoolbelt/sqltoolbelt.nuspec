@@ -50,6 +50,7 @@ When a newer version of the package is published, it will then revert to using t
 The following package parameters can be set:
 
  * `/FTP` - Force using the FTP download URL
+ * `/NoFTP` - Don't fallback to FTP if HTTPS modified time is different (using this risks a checksum mismatch if file is actually a newer version)
  * `/products` - Only install the specified products
 
 These parameters can be passed to the installer with the use of `--params`.
