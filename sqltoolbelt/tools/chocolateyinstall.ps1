@@ -18,7 +18,7 @@ $validProductPackageNames = @(
   "DLM Dashboard",
   "SQL Multi Script",
   "SQL Dependency Tracker",
-  "SQL Monitor",
+  "SQL Monitor Installer",
   "SQL Backup",
   "SSMS Integration Pack",
   "SQL Change Automation Powershell",
