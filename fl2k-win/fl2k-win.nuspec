@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>fl2k-win</id>
+    <version>0.0.1</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/fl2k-win</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>fl2k_win</title>
+    <authors>winterrace</authors>
+    <projectUrl>https://github.com/winterrace/fl2k_win</projectUrl>
+    <iconUrl>https://git.osmocom.org/artwork/plain/logo/osmocom_avatar.svg</iconUrl>
+    <copyright>Copyright (c) 2018 winterrace</copyright>
+    <licenseUrl>https://github.com/winterrace/fl2k_win/blob/master/COPYING</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/winterrace/fl2k_win</projectSourceUrl>
+    <docsUrl>https://github.com/winterrace/fl2k_win/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/winterrace/fl2k_win/issues</bugTrackerUrl>
+    <tags>osmo osmocom fl2k fresco fresco-logic fl2000 rtl sdr rtl-sdr</tags>
+    <summary>This is a fork of [osmo-fl2k](https://git.osmocom.org/osmo-fl2k) for Windows</summary>
+    <description>This is a fork of [osmo-fl2k](https://git.osmocom.org/osmo-fl2k) for Windows
+	
+Since rtl-sdr has been released a couple of years ago, cheap SDR receivers are ubiquitous. SDRs with transmission capability have become cheaper as well, but are still more expensive. osmo-fl2k allows to use USB 3.0 to VGA adapters based on the Fresco Logic FL2000 chip, which are available for around $5, as general purpose DACs and SDR transmitter generating a continuous stream of samples by avoiding the HSYNC and VSYNC blanking intervals.
+
+To use the fl2k_win programs on a x64 Windows machine you first have to install the libusb driver for your FL2000-based VGA adapter. I recommend using zadig (http://zadig.akeo.ie/) to do so. Be aware that FL2000 dongles are composite USB devices since they have the (optional) feature to bring their driver in an embedded memory drive. Use the zadig option "list all devices” and disable "ignore hubs or composite parents" to select the composite device (typically id 1D5C-2000) instead of its VGA subdevice (typically id 1D5C-2000-00).</description>
+    <releaseNotes>https://github.com/winterrace/fl2k_win/releases</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
