@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>fl2k-win</id>
-    <version>0.0.1</version>
+    <version>0.1</version>
     <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/fl2k-win</packageSourceUrl>
     <owners>galeksandrp</owners>
     <title>fl2k_win</title>
