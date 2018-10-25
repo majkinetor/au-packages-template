@@ -1,7 +1,7 @@
 ﻿$packageArgs = @{
   packageName            = "$env:chocolateyPackageName"
   url                    = 'https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip'
-  checksum               = 'd8ed371935db1081c79d7f3857c4d1bc0c13590210f716e02c783508967b5125'
+  checksum               = 'c3e68e0314199f17cfdfecb1c041bd8a10d3623ccb8b037ff1d1576b51833be5'
   checksumType           = 'sha256'
   UnzipLocation          = "$env:TMP\$env:chocolateyPackageName"
 }
