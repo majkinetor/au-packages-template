@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>gps-sdr-sim</id>
+    <version>0.0.1</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/gps-sdr-sim</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>GPS-SDR-SIM</title>
+    <authors>Takuji Ebinuma</authors>
+    <projectUrl>https://github.com/osqzss/gps-sdr-sim</projectUrl>
+    <iconUrl>https://upload.wikimedia.org/wikipedia/commons/3/3c/NAVSTAR_GPS_logo.png</iconUrl>
+    <copyright>Copyright (c) 2015-2018 Takuji Ebinuma</copyright>
+    <licenseUrl>https://github.com/osqzss/gps-sdr-sim/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/osqzss/gps-sdr-sim</projectSourceUrl>
+    <docsUrl>https://github.com/osqzss/gps-sdr-sim/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/osqzss/gps-sdr-sim/issues</bugTrackerUrl>
+    <tags>osmo osmocom fl2k fresco fresco-logic fl2000 rtl sdr rtl-sdr gps</tags>
+    <summary>GPS-SDR-SIM generates GPS baseband signal data streams, which can be converted to RF using software-defined radio</summary>
+    <description>GPS-SDR-SIM generates GPS baseband signal data streams, which can be converted to RF using software-defined radio (SDR) platforms, such as ADALM-Pluto, bladeRF, HackRF, and USRP.</description>
+    <releaseNotes>https://github.com/osqzss/gps-sdr-sim/releases</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
