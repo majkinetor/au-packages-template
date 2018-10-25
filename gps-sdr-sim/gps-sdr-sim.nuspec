@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>gps-sdr-sim</id>
-    <version>0.0.1</version>
+    <version>1.0</version>
     <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/gps-sdr-sim</packageSourceUrl>
     <owners>galeksandrp</owners>
     <title>GPS-SDR-SIM</title>
