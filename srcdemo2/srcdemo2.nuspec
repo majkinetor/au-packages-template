@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>srcdemo2</id>
+    <version>2012.04.07</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/srcdemo2</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>SrcDemo² (Install)</title>
+    <authors>Etienne Perot</authors>
+    <projectUrl>https://code.google.com/archive/p/srcdemo2/</projectUrl>
+    <iconUrl>https://storage.googleapis.com/google-code-archive/v2/code.google.com/srcdemo2/logo.png</iconUrl>
+    <copyright>Copyright (c) 2011-2014 Etienne Perot</copyright>
+    <licenseUrl>https://opensource.org/licenses/BSD-3-Clause</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://code.google.com/archive/p/srcdemo2/source</projectSourceUrl>
+    <docsUrl>https://code.google.com/archive/p/srcdemo2/wikis</docsUrl>
+    <bugTrackerUrl>https://code.google.com/archive/p/srcdemo2/issues</bugTrackerUrl>
+    <tags>srcdemo2 srcdemo valve source steam tf team-fortress tf2 team-fortress2 portal portal2 css counter-strike cs dokan fs vfs filesystem admin</tags>
+    <summary>Utility to render high-quality, smooth Source Engine movies using a customized userspace filesystem that catches the frames before they are written to disk</summary>
+    <description>Utility to render high-quality, smooth Source Engine movies using a customized userspace filesystem that catches the frames before they are written to disk. Can render your movie at a framerate as high as you want it to be, yet keep disk usage flat. Adds a nice motion blur effect to the video. Also includes shutter angle simulation.
+
+Can be used with any Source engine game with Source Recorder, which includes: * Team Fortress 2 * Team Fortress 2 Beta * Portal * Portal 2 * Counter-Strike Source * Any mod of the above games * Future Valve titles, possibly * Works with Left 4 Dead and Left 4 Dead 2, but those two games use a glitchy version of the Source engine, which causes severe graphical issues (zombies teleporting all over the place) when rendering at high framerates
+
+Relies on the Dokan library.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
