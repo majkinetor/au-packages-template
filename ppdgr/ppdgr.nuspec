@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>ppdgr</id>
+    <version>1.4.9</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/ppdgr</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>PPDGR (Install)</title>
+    <authors>АО "ГНИВЦ"</authors>
+    <projectUrl>https://www.gnivc.ru/software/software_ul_fl/registration/</projectUrl>
+    <iconUrl>https://www.nalog.ru/css/ul/i/logo.png</iconUrl>
+    <copyright>Copyright (c) 2016-2018 АО "ГНИВЦ"</copyright>
+    <licenseUrl>https://www.nalog.ru/rn77/copyright/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://www.gnivc.ru/html/gnivcsoft/ppdgr/1.4.9/install.doc</docsUrl>
+    <bugTrackerUrl>https://www.gnivc.ru/feedback/</bugTrackerUrl>
+    <tags>admin ppdgr pfdgr government taxes ltd llc law laws</tags>
+    <summary>PPDGR software is designed for automated creation of package of documents required when registering juridical person in Russia</summary>
+    <description>PPDGR software is designed for automated creation of package of documents required when registering juridical person (contains, but not limited private limited company / sole proprietorship) in Russia. PPDGR also can be used for creating an information container, used while sending registration documents online.
+
+Common details:
+
+PPDGR software replaces PFDGR software.
+</description>
+    <releaseNotes>https://www.gnivc.ru/html/gnivcsoft/ppdgr/1.4.9/readme.doc</releaseNotes>
+    <dependencies>
+      <dependency id="pdf417" version="3.2.4" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
