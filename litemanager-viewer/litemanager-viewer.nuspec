@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>litemanager-viewer</id>
+    <version>4.8.4865</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/litemanager-viewer</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>LiteManager Viewer (Install)</title>
+    <authors>LiteManagerTeam</authors>
+    <projectUrl>http://www.litemanager.com</projectUrl>
+    <iconUrl>http://www.litemanager.com/img/head_img.png</iconUrl>
+    <copyright>Copyright © 2004—2018 «LiteManagerTeam»</copyright>
+    <licenseUrl>http://www.litemanager.com/support/help_en/user_license_agreement/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>http://www.litemanager.com/support/</docsUrl>
+    <tags>litemanager lite-manager viewer remote-admin remote-access remote-control remote-administration support admin</tags>
+    <summary>LiteManager Pro/Free — remote access software for remote administration of computers over the Internet or remote control in a local network</summary>
+    <description>LiteManager Pro/Free — remote access software for remote administration of computers over the Internet or remote control in a local network, for distant learning, providing remote support to users and supervising work activity of employees.
+
+The program allows to quickly and easily control computer desktop in real-time mode with full support for Windows, provides secure remote access to the file system, processes and services of the remote computer. LiteManager has built-in tools for creating network map, collecting technical data, ability to deploy and update using remote installation services, configure private ID router (NOIP) and many other features. Classroom management software.
+
+Remote administration is now possible without IP address. Using Connect by ID mode, you can choose your personal unique ID by yourself and connect by it. Client and server modules of the program can work in networks connected to the Internet via a proxy server. LiteManager remote access software, remote administration.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
