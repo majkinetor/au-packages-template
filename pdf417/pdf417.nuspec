@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>pdf417</id>
+    <version>3.2.4</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/pdf417</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>Print FTS Russia PDF417 barcodes (Install)</title>
+    <authors>АО "ГНИВЦ"</authors>
+    <projectUrl>https://www.gnivc.ru/software/software_ul_fl/pdf417/</projectUrl>
+    <iconUrl>https://www.gnivc.ru/design/www/img/logo.png</iconUrl>
+    <copyright>Copyright (c) 2016-2018 АО "ГНИВЦ"</copyright>
+    <licenseUrl>https://www.nalog.ru/rn77/copyright/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://www.gnivc.ru/software/software_ul_fl/pdf_417/158124/</docsUrl>
+    <bugTrackerUrl>https://www.gnivc.ru/feedback/</bugTrackerUrl>
+    <tags>pdf417 barcode com library redistributable ppdgr pfdgr admin</tags>
+    <summary>Redistributable of FTS Russia PDF417 barcode generating COM library</summary>
+    <description>Redistributable of FTS Russia PDF417 barcode generating COM library, which is used, for example, by PPDGR software</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
