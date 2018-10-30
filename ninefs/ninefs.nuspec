@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>ninefs</id>
+    <version>2010.01.21</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/ninefs</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>ninefs</title>
+    <authors>tim.newsham</authors>
+    <projectUrl>https://code.google.com/archive/p/ninefs/</projectUrl>
+    <iconUrl>https://storage.googleapis.com/google-code-archive/v2/code.google.com/ninefs/logo.png</iconUrl>
+    <copyright>Copyright (c) 2009-2010 tim.newsham</copyright>
+    <licenseUrl>https://opensource.org/licenses/BSD-3-Clause</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://code.google.com/archive/p/ninefs/source</projectSourceUrl>
+    <docsUrl>https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/ninefs/README.txt</docsUrl>
+    <bugTrackerUrl>https://code.google.com/archive/p/ninefs/issues</bugTrackerUrl>
+    <tags>ninefs 9pfs 9p fs vfs dokan</tags>
+    <summary>9p filesystem for win32 using the Dokan library</summary>
+    <description>Ninefs is a 9p filesystem for win32. It is built on the Dokan and npfs libraries. It allows 9p resources from other machines to be mounted as a filesystem in a win32 system such as Windows XP. See http://ninefs.googlecode.com/files/README.txt for more information.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
