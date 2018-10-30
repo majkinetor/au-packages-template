@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>mpack</id>
+    <version>1.7</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/mpack</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>mpack</title>
+    <authors>siddhartha77</authors>
+    <projectUrl>https://sourceforge.net/projects/mpack-win/</projectUrl>
+    <copyright>Copyright (c) 2010-2018 siddhartha77</copyright>
+    <licenseUrl>http://metadata.ftp-master.debian.org/changelogs/main/m/mpack/mpack_1.6-8.2_copyright</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://downloads.sourceforge.net/project/mpack-win/mpack17-src.zip</projectSourceUrl>
+    <docsUrl>https://linux.die.net/man/1/mpack</docsUrl>
+    <bugTrackerUrl>https://sourceforge.net/p/mpack-win/discussion/1253371</bugTrackerUrl>
+    <tags>mpack munpack</tags>
+    <summary>Windows 32-bit port of mpack/munpack</summary>
+    <description>Windows 32-bit port of mpack/munpack using the version 1.6 source obtained from http://ftp.andrew.cmu.edu/pub/mpack/, which was largely written by John G. Myers. The version 1.7 here was compiled with MinGW using the Bloodshed Dev C++ IDE.
+
+mpack and munpack are utilities used to encode and decode binaries for use in mail messages following the MIME standard. It was originally written by John Gardiner Myers of Carnegie Mellon University in 1993, and has been ported to the classic Mac OS and Windows.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
