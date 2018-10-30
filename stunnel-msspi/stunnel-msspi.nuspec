@@ -9,12 +9,12 @@
     <title>stunnel-msspi</title>
     <authors>Dmitrii Pichulin</authors>
     <projectUrl>https://github.com/deemru/stunnel</projectUrl>
-    <iconUrl>https://www.cryptopro.ru/sites/default/files/theme321_logo.png</iconUrl>
+    <iconUrl>https://galeksandrp.github.io/au-packages/icons/stunnel-msspi.png</iconUrl>
     <copyright>Copyright (c) 2016-2018 Dmitrii Pichulin</copyright>
     <licenseUrl>https://github.com/deemru/stunnel/blob/master/COPYING</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/deemru/stunnel</projectSourceUrl>
-    <docsUrl>https://github.com/deemru/stunnel/releases/tag/stunnel-5.44-msspi-0.99</docsUrl>
+    <docsUrl>https://github.com/deemru/stunnel/wiki</docsUrl>
     <bugTrackerUrl>https://support.cryptopro.ru/</bugTrackerUrl>
     <tags>stunnel msspi openssl sspi ssl tls tunnel gost crypto cryptography</tags>
     <summary>stunnel-msspi brings a native support of operating system certificates and private keys in operating systems which supports SSPI</summary>
