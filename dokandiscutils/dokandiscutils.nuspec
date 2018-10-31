@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>dokandiscutils</id>
+    <version>0.1</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/dokandiscutils</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>DokanDiscUtils</title>
+    <authors>DokanDiscUtils</authors>
+    <projectUrl>https://archive.codeplex.com/?p=dokandiscutils</projectUrl>
+    <copyright>Copyright (c) 2006-2018 DokanDiscUtils</copyright>
+    <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://codeplexarchive.blob.core.windows.net/archive/projects/DokanDiscUtils/DokanDiscUtils.zip</projectSourceUrl>
+    <docsUrl>https://archive.codeplex.com/?p=dokandiscutils</docsUrl>
+    <bugTrackerUrl>https://archive.codeplex.com/?p=dokandiscutils</bugTrackerUrl>
+    <tags>dokandiscutils discutils filesystem fs vfs dokan</tags>
+    <summary>This a a bridge for the Dokan library and the DiscUtils library that allows Any partition/image that discutils can open to be mounted using dokan
+</summary>
+    <description>This a a bridge for the Dokan library and the DiscUtils library that allows Any partition/image that discutils can open to be mounted using dokan
+Built using Dokan dokan-dev.net/en and DiscUtils.codeplex.com
+Currently working: Mounts ANY filesystem DiscUtils Supports. Reads files, directory browsing, Deleting, moving,Writing files (Notepad wont write but notepad++ will. Havent found the problem there yet.) (I need someone who knows more about streams!)</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
