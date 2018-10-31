@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>wingrub</id>
+    <version>0.02.6</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/wingrub</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>WINGRUB (Install)</title>
+    <authors>Tinybit</authors>
+    <projectUrl>https://sourceforge.net/projects/grub4dos/</projectUrl>
+    <copyright>Copyright (c) 2004-2015 Tinybit</copyright>
+    <licenseUrl>https://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://downloads.sourceforge.net/project/grub4dos/WINGRUB/WINGRUB%200.02%20Build%206/WINGRB0206_src.zip</projectSourceUrl>
+    <docsUrl>https://web.archive.org/web/http://grub4dos.sourceforge.net/wiki/index.php/Main_Page</docsUrl>
+    <mailingListUrl>https://mail.gna.org/listinfo/grub4dos-devel/</mailingListUrl>
+    <bugTrackerUrl>https://sourceforge.net/p/grub4dos/bugs/</bugTrackerUrl>
+    <tags>wingrub grub4dos grub bootloader admin</tags>
+    <summary>WINGRUB is an GUI utility intends to help configuring and installing GRUB for DOS in the WINDOWS environment</summary>
+    <description>WINGRUB is an GUI utility intends to help configuring and installing GRUB for DOS in the WINDOWS environment
+	
+GRUB for DOS is the dos version of GRUB. It enables dos users to run the configuration console directly in real mode.
+
+GNU GRUB (short for GNU GRand Unified Bootloader) is a boot loader package from the GNU Project. GRUB is the reference implementation of the Free Software Foundation's Multiboot Specification, which provides a user the choice to boot one of multiple operating systems installed on a computer or select a specific kernel configuration available on a particular operating system's partitions.
+
+GNU GRUB was developed from a package called the Grand Unified Bootloader (a play on Grand Unified Theory[5]). It is predominantly used for Unix-like systems. The GNU operating system uses GNU GRUB as its boot loader, as do most Linux distributions and the Solaris operating system on x86 systems, starting with the Solaris 10 1/06 release.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
