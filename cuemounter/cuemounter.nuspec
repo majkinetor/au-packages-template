@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>cuemounter</id>
+    <version>0.5</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/cuemounter</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>CueMounter (Install)</title>
+    <authors>CueMounter</authors>
+    <projectUrl>https://archive.codeplex.com/?p=cuemounter</projectUrl>
+    <copyright>Copyright (c) 2006-2018 CueMounter</copyright>
+    <licenseUrl>https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://codeplexarchive.blob.core.windows.net/archive/projects/cuemounter/cuemounter.zip</projectSourceUrl>
+    <docsUrl>https://archive.codeplex.com/?p=cuemounter</docsUrl>
+    <bugTrackerUrl>https://archive.codeplex.com/?p=cuemounter</bugTrackerUrl>
+    <tags>cuemounter cue mount fs vfs admin</tags>
+    <summary>CueMounter makes it easier to use audio disc images - .cue and an audio file. It mounts them as a virtual drive and allows you to explore the tracks inside as separate .wav files, play, analyze and recode them, without any intermediate storage.</summary>
+    <description>CueMounter makes it easier to use audio disc images - .cue and an audio file. It mounts them as a virtual drive and allows you to explore the tracks inside as separate .wav files, play, analyze and recode them, without any intermediate storage.
+You can use it to:
+Split audio CD images to tracks, recode them to other formats or perform any other operation that is normally executed on temporary files, avoiding that overhead.
+Decode all the supported audio files to wavs on the fly, avoiding hard disk usage and overhead
+With the new AuCDTect integration: seamlessly analyze your compressed lossless tracks - one click away.
+You can perform album analysis directly on audio CD images, without the need to split them
+The only solution to analyze compressed files with AuCDTect without the need for temporary files or other hard disk usage
+Use audio CD images split by tracks with software unaware of cue files transparently
+Use the RAM Disk mounted under ramdisk for fast and painless temporary storage</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
