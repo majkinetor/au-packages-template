@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>srcdemo2</id>
-    <version>2012.03.31</version>
+    <version>2011.09.29</version>
     <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/srcdemo2</packageSourceUrl>
     <owners>galeksandrp</owners>
     <title>SrcDemo² (Install)</title>
