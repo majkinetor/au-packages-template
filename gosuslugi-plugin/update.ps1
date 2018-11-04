@@ -27,7 +27,7 @@ function global:au_GetLatest {
 	@{
         URL32   = $URL32
 		URL64   = $URL64
-        Version = (Get-UninstallRegistryKey -SoftwareName 'Плагин пользователя систем электронного правительства*').DisplayVersion
+        Version = "$(ls "$env:APPDATA\Rostelecom\IFCPlugin")"
     }
 }
 
