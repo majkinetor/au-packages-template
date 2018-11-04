@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>gosuslugi-plugin</id>
-    <version>2.0.6</version>
+    <version>3.0.3.0</version>
     <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/gosuslugi-plugin</packageSourceUrl>
     <owners>galeksandrp</owners>
     <title>Gosuslugi Plugin (Install)</title>

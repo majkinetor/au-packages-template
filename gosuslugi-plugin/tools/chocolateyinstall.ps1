@@ -2,10 +2,10 @@
   packageName            = "$env:chocolateyPackageName"
   FileType               = 'msi'
   SilentArgs             = '/qn /norestart'
-  url                    = 'https://ds-plugin.gosuslugi.ru/plugin/htdocs/plugin/IFCPlugin.msi'
-  url64bit               = 'https://ds-plugin.gosuslugi.ru/plugin/htdocs/plugin/IFCPlugin-x64.msi'
-  checksum               = '08bffdc20e8be0bd6a3230d83fcce67fe0739b9fd899d929d669684ed699f16b'
-  checksum64             = 'c3fd120d8c762c30d909c13ac06bef1c32ae333cd8eb1b7bcaa0e35a7a087397'
+  url                    = 'https://ds-plugin.gosuslugi.ru/plugin/upload/assets/distrib/IFCPlugin.msi'
+  url64bit               = 'https://ds-plugin.gosuslugi.ru/plugin/upload/assets/distrib/IFCPlugin-x64.msi'
+  checksum               = 'c48a6aea7dfd8e77b17a6136066343639d3f14a167db0a7f4ea265d5753da677'
+  checksum64             = '71955a685fd1afeb94d252541102200b95b79e8b4e7714c7fc4668d10c06e108'
   checksumType           = 'sha256'
   checksumType64         = 'sha256'
 }
