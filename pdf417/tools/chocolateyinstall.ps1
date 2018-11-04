@@ -1,7 +1,7 @@
 ﻿$packageArgs = @{
   packageName            = "$env:chocolateyPackageName"
-  url                    = 'https://www.gnivc.ru/html/Soft/pdf417/pdf417_3_2_4.rar'
-  checksum               = 'a351acc3fc5639b8593109dd4b0bef50d70dc6d5e67213f8ed0c9dc982264f62'
+  url                    = 'https://www.gnivc.ru/html/Soft/pdf417/pdf417(3.0.32).zip'
+  checksum               = 'b27605719ce86a532d9a9d190b5890658238e9e511c01dc2a6576edd0816b288'
   checksumType           = 'sha256'
   UnzipLocation          = "$env:TMP"
 }
@@ -11,6 +11,6 @@ $packageArgs = @{
   packageName            = "$env:chocolateyPackageName"
   FileType               = 'msi'
   SilentArgs             = '/qn /norestart'
-  File                   = "$env:TMP\Печать НД с PDF417(3.2.4).msi"
+  File                   = "$env:TMP\ÅÑτáΓ∞ ìä ß PDF417(3.0.32).msi"
 }
 Install-ChocolateyInstallPackage @packageArgs
