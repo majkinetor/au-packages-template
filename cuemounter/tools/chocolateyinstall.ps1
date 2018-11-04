@@ -11,6 +11,6 @@ $packageArgs = @{
   packageName            = "$env:chocolateyPackageName"
   FileType               = 'msi'
   SilentArgs             = '/qn /norestart'
-  File                   = "$env:TMP\releases\./0/c67ade99-20ef-4569-bdc3-99575e816319"
+  File                   = "$env:TMP\releases\.\0\c67ade99-20ef-4569-bdc3-99575e816319"
 }
 Install-ChocolateyInstallPackage @packageArgs
