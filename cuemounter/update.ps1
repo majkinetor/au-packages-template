@@ -26,7 +26,7 @@ function global:au_GetLatest {
 		$versions[$version] = @{
 			URL32   = $URL32
 			Version = $version
-			File = "`$env:TMP\releases\$filepath"
+			File = (Join-Path "$env:TMP\releases" $filepath) -replace [regex]::escape("$env:TMP\"),'$env:TMP\'
 		}
 	}
 
