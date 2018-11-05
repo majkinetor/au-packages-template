@@ -48,7 +48,7 @@ if ($pp['Url']) {
 
         $configOpts += @("--deploymentGroup", "--deploymentGroupName", $pp['DeploymentGroupName'])
         if ($pp['DeploymentGroupTags']) {
-            $configOpts =+ @("--deploymentGroupTags", $pp['DeploymentGroupTags'])
+            $configOpts += @("--deploymentGroupTags", $pp['DeploymentGroupTags'])
         }
 
         if ($pp['ProjectName']) {
