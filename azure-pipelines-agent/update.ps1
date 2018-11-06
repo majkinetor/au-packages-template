@@ -31,11 +31,9 @@ function global:au_GetLatest {
     $Latest = @{
         Url32 = $asset32.downloadUrl
         Url64 = $asset64.downloadUrl
-        File32 = $asset32.name
-        File64 = $asset64.name
         Version = $version
     }
     return $Latest
 }
 
-update -Force
+update
