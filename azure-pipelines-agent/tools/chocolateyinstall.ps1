@@ -2,8 +2,8 @@
 
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$file = 'vsts-agent-win-x86-2.141.0.zip'
-$file64 = 'vsts-agent-win-x64-2.141.0.zip'
+$file = 'vsts-agent-win-x86-2.141.1.zip'
+$file64 = 'vsts-agent-win-x64-2.141.1.zip'
 
 $pp = Get-PackageParameters
 
