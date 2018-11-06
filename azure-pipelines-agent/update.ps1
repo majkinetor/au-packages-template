@@ -3,13 +3,12 @@ import-module au
 function global:au_SearchReplace {
     @{
         'tools\chocolateyInstall.ps1' = @{
-            "(^\`$file\s*=\s*)('.*')"    = "`$1'$($Latest.File32)'"
-            "(^\`$file64\s*=\s*)('.*')"   = "`$1'$($Latest.File64)'"
+            "(^\`$url\s*=\s*)('.*')"    = "`$1'$($Latest.Url32)'"
+            "(^\`$url64\s*=\s*)('.*')"   = "`$1'$($Latest.Url64)'"
+            "(^\`$checksum\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum32)'"
+            "(^\`$checksum64\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum64)'"
         }
-    }}
-
-function global:au_BeforeUpdate() {
-    Get-RemoteFiles -Purge -NoSuffix
+    }
 }
 
 function global:au_GetLatest {
@@ -39,4 +38,4 @@ function global:au_GetLatest {
     return $Latest
 }
 
-update -ChecksumFor none
+update -Force
