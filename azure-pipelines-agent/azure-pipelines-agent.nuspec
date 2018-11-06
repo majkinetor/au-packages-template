@@ -9,7 +9,7 @@
     <title>Azure Pipelines Agent (VSTS Build Agent)</title>
     <authors>Microsoft Corporation</authors>
     <projectUrl>https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows?view=vsts</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/flcdrg/au-packages/master/azure-pipelines-agent/icons/azure-pipelines-agent.jpg</iconUrl>
+    <iconUrl>http://cdn.rawgit.com/flcdrg/au-packages/master/azure-pipelines-agent/icons/azure-pipelines-agent.png</iconUrl>
     <copyright>2018 Microsoft Corporation</copyright>
     <licenseUrl>https://raw.githubusercontent.com/Microsoft/azure-pipelines-agent/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
