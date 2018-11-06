@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop'; # stop on all errors
 
-$url = 'https://vstsagentpackage.azureedge.net/agent/2.141.0/vsts-agent-win-x86-2.141.0.zip'
-$url64 = 'https://vstsagentpackage.azureedge.net/agent/2.141.0/vsts-agent-win-x64-2.141.0.zip'
-$checksum = 'F65C6D3ED262252242724A95D3561E2859EEA74EFA131D165473C45AEB6E68B7'
-$checksum64 = '0398F9FE2716DA1A00C378140BF4E069A4803CBF41FF332F99C42307BD46F6D2'
+$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+
+$file = 'vsts-agent-win-x86-2.141.0.zip'
+$file64 = 'vsts-agent-win-x64-2.141.0.zip'
 
 $pp = Get-PackageParameters
 
@@ -80,19 +80,14 @@ if ($pp['Url']) {
 
 $packageArgs = @{
     packageName    = $env:ChocolateyPackageName
-    unzipLocation  = $pp['Directory']
-    url            = $url
-    url64bit       = $url64
-
-    checksum       = $checksum
-    checksumType   = 'sha256'
-    checksum64     = $checksum64
-    checksumType64 = 'sha256'
+    FileFullPath   = "$toolsDir\$file"
+    FileFullPath64 = "$toolsDir\$file64"
+    destination  = $pp['Directory']
 }
 
-Install-ChocolateyZipPackage @packageArgs
+Get-ChocolateyUnzip @packageArgs
 
 if ($configOpts.Count) {
-    Write-Verbose "$($packageArgs.unzipLocation)\bin\Agent.Listener.exe configure $configOpts"
-    & "$($packageArgs.unzipLocation)\bin\Agent.Listener.exe" $configOpts
+    Write-Verbose "$($packageArgs.destination)\bin\Agent.Listener.exe configure $configOpts"
+    & "$($packageArgs.destination)\bin\Agent.Listener.exe" $configOpts
 }
