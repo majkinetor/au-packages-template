@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>kingston-ssd-manager</id>
-    <version>1.1.1.5</version>
+    <version>1.1.1.7</version>
     <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/kingston-ssd-manager</packageSourceUrl>
     <owners>galeksandrp</owners>
     <title>Kingston SSD Manager (Install)</title>
