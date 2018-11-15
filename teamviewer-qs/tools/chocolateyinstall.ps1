@@ -2,7 +2,7 @@
   packageName            = "$env:chocolateyPackageName"
   FileFullPath           = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)\TeamViewerQS.exe"
   url                    = 'https://download.teamviewer.com/download/TeamViewerQS.exe'
-  checksum               = 'c3add377b6da3cfb9144de4ecd7e2f63692bcdc0f31d81c62732db20a44b92d4'
+  checksum               = '6473d24aaa84075d8a1a4311cfab5c647c14cbb3df3785a196a3f2e257e0e52f'
   checksumType           = 'sha256'
 }
 Get-ChocolateyWebFile @packageArgs
