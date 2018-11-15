@@ -2,7 +2,7 @@ import-module au
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
-$releases = 'https://www.interfaceware.com/iguana.html'
+$releases = 'https://www.interfaceware.com/downloads.html'
 
 function global:au_SearchReplace {
     @{
