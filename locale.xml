@@ -1,0 +1,6 @@
+<gs:GlobalizationServices xmlns:gs="urn:longhornGlobalizationUnattend">
+<gs:UserList>
+<gs:User UserID="Current" CopySettingsToDefaultUserAcct="true" CopySettingsToSystemAcct="true"/>
+</gs:UserList>
+<!-- system locale --><gs:SystemLocale Name="ru-RU" />
+</gs:GlobalizationServices>

@@ -69,7 +69,12 @@ install:
 
 # Uncomment the below line if you are using any of the functions from chocolatey-core.extension - https://chocolatey.org/packages/chocolatey-core.extension. Ensure you also have it listed in your package's dependencies
 # - cinst chocolatey-core.extension
-    
+
+before_build:
+- 'control intl.cpl,, /f:"%APPVEYOR_BUILD_FOLDER%\locale.xml" || exit 0'
+- ps: Restart-Computer
+- ps: Start-Sleep -s 300
+
 build_script:
 - ps: |
     $ErrorActionPreference = 'Continue'
