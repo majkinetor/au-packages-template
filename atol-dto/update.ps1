@@ -6,7 +6,6 @@ function global:au_SearchReplace {
         ".\tools\chocolateyInstall.ps1" = @{
             "(?i)(^\s*url\s*=\s*)('.*')"                     = "`$1'$($Latest.URL32)'"
             "(?i)(^\s*checksum\s*=\s*)('.*')"                = "`$1'$($Latest.Checksum32)'"
-			"(?i)(^\s*SpecificFolder\s*=\s*)('.*')"          = "`$1'$($Latest.SpecificFolder)'"
 			"(?i)(^\s*FileFullPath\s*=\s*)(`".*`")"          = "`$1`"$($Latest.FileFullPath)`""
 			"(?i)(^\s*FileFullPath64\s*=\s*)(`".*`")"        = "`$1`"$($Latest.FileFullPath64)`""
 			"(?i)(^\s*File\s*=\s*)(`".*`")"                  = "`$1`"$($Latest.File)`""
@@ -30,7 +29,6 @@ function global:au_BeforeUpdate {
 	#$Latest.URL32   = $Latest.link.href
     $Latest.Checksum32 = (Get-FileHash "$env:TMP\$foldername.zip" -Algorithm 'sha256').Hash.toLower()
     $Latest.Version = $Matches[0]
-	$Latest.SpecificFolder = $file.DirectoryName -replace [regex]::escape("$env:TMP\$foldername\"),''
 	$Latest.FileFullPath = $($file) -replace [regex]::escape("$env:TMP\$foldername"),'$env:TMP'
 	$Latest.File = $($file) -replace [regex]::escape("$env:TMP\$foldername"),'$env:TMP'
 

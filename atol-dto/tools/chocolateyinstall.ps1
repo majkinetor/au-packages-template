@@ -35,7 +35,6 @@ $packageArgs = @{
   checksum               = '29eb7fe60d3ab3456558806d03bc5758c2d105336a23159527b72b34547a90e9'
   checksumType           = 'sha256'
   UnzipLocation          = "$env:TMP"
-  SpecificFolder         = 'Драйвер_ККТ_10\10.0.0\installer\exe'
 }
 Install-ChocolateyZipPackage @packageArgs
 
