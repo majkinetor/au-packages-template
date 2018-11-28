@@ -71,15 +71,14 @@ function global:au_GetLatest {
         # The version number for this latest preview is: 13.0.12000.65
         $isMatch = $content -match "([Rr]elease number: (?<release>\d+\.\d+(\.\d+){0,2}))"
 
-        $Latest.Version = $version 
-
         if ($isMatch)
         {
             $release = $matches.release
 
             Write-Host "Found version $version, release $release"
 
-            $downloadLinks = $content | Select-String -Pattern "Download SQL Server Management Studio.*\]\((https.*\d+)\)" -AllMatches
+            # Focus on 17.x for now.
+            $downloadLinks = $content | Select-String -Pattern "Download SQL Server Management Studio 17.*\]\((https.*\d+)\)" -AllMatches
 
             if ($downloadLinks.Matches.Count -eq 2)
             {
@@ -93,11 +92,13 @@ function global:au_GetLatest {
                     $content = $response.Content
 
                     # Extract latest release notes
-                    $content = $content.Substring($content.IndexOf("##"))
-                    $content = $content.Substring(0, $content.IndexOf("## Previous SSMS releases") -1)
+                    $content = $content.Substring($content.IndexOf("## SSMS 17"))
+                    $content = $content.Substring(0, $content.IndexOf("## SSMS 17", 1) -1)
 
                     # bump headings to fit in with Chocolatey levels
                     $content = $content.Replace("# ", "### ").Trim()
+
+                    $content = $content.Replace("<br>", "")
 
                     # encode
                     $content = "`r`n" + [System.Security.SecurityElement]::Escape($content) + "`r`n"
@@ -111,8 +112,14 @@ function global:au_GetLatest {
                         UpgradeChecksum = $second.checksum
                         ReleaseNotes = $content
                     }
+                } else {
+                    Write-Warning "first.Count and/or second.Count were zero"
                 }
+            } else {
+                Write-Warning "Could not find download links"
             }
+        } else {
+            Write-Warning "Regex match was false"
         }
     }
     catch {
@@ -134,4 +141,4 @@ function global:au_AfterUpdate
     [System.IO.File]::WriteAllText($NuPath, $nu, $Utf8NoBomEncoding)
 }
 
-update -ChecksumFor none
+update -ChecksumFor none -NoCheckChocoVersion

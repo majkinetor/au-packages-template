@@ -3,13 +3,13 @@
 $packageName= 'SQL Server Management Studio'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$fullUrl = 'https://download.microsoft.com/download/B/8/3/B839AD7D-DDC7-4212-9643-28E148251DC1/SSMS-Setup-ENU.exe'
-$fullChecksum = 'F094C6C2CBD848232A660C6C723F6B9962D15A8D3D8AF3812F6DE2A5CDBFB777'
+$fullUrl = 'https://download.microsoft.com/download/D/D/4/DD495084-ADA7-4827-ADD3-FC566EC05B90/SSMS-Setup-ENU.exe'
+$fullChecksum = 'B506A265559AC7D8E49DEF351D65B0CEF66C5EB8A47D530E78DB76D187A09CD7'
 
-$upgradeUrl = 'https://download.microsoft.com/download/B/8/3/B839AD7D-DDC7-4212-9643-28E148251DC1/SSMS-Setup-ENU-Upgrade.exe'
-$upgradeChecksum = '3F448400BB6C62B6458C0B1AFF154067358CDA3FA1684D3F376E74EEF8492422'
+$upgradeUrl = 'https://download.microsoft.com/download/D/D/4/DD495084-ADA7-4827-ADD3-FC566EC05B90/SSMS-Setup-ENU-Upgrade.exe'
+$upgradeChecksum = 'A092B5F4270F19B83874E8ECDEC8EF309B8DBC55462E99EAFA309A75A1D04E09'
 
-$release = '17.9'
+$release = '17.9.1'
 
 # Check if 17.0 is installed so we can get upgrade package instead of full package
 $version17 = [version]"14.0.17099.0"
