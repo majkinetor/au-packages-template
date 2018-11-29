@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vsts-cli</id>
-    <version>0.1.3.20181129</version>
+    <version>0.1.4</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/vsts-cli</packageSourceUrl>
     <owners>flcdrg</owners>
     <title>VSTS CLI</title>
