@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'; # stop on all errors
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url = 'http://downloads.softerra.com/ldapadmin/ldapbrowser-4.5.13724.0-x64-eng.msi'
-$url64 = 'http://softerra-downloads.com/ldapadmin/ldapbrowser-4.5.13724.0-x64-eng.msi'
+$url = 'http://downloads.softerra.com/ldapadmin/ldapbrowser-4.5.19808.0-x86-eng.msi'
+$url64 = 'http://downloads.softerra.com/ldapadmin/ldapbrowser-4.5.19808.0-x64-eng.msi'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -13,9 +13,9 @@ $packageArgs = @{
 
   softwareName  = 'Softerra LDAP Browser*'
 
-  checksum      = '705296402ffbd0cc0593d95cc49fc33ceeb96ab0'
+  checksum      = 'ab5175ff06cd249a8c74a8b6e98f9f5482b2230f'
   checksumType  = 'sha1'
-  checksum64    = 'fdebc2f7fafcab65d5e86052667026be64158024'
+  checksum64    = '7c8094ed0a9da1112212820012943d127a3cdbb5'
   checksumType64= 'sha1'
 
   silentArgs = '/quiet /norestart'  

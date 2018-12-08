@@ -3,14 +3,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>softerraldapbrowser</id>
-    <version>4.5.13724.20171215</version>
+    <version>4.5.19808.0</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/softerraldapbrowser</packageSourceUrl>
     <owners>Peter Jahn, flcdrg</owners>
     <title>Softerra LDAP Browser</title>
     <authors>Softerra, Ltd</authors>
     <projectUrl>http://www.ldapbrowser.com/info_softerra-ldap-browser.htm</projectUrl>
  	  <iconUrl>https://raw.github.com/pjahn/nugetpackages/master/softerraldapbrowser/softerraldapbrowser.png</iconUrl>
-    <copyright>Copyright © 2013 Softerra, Ltd All Rights Reserved</copyright>
+    <copyright>Copyright © 2018 Softerra, Ltd All Rights Reserved</copyright>
     <licenseUrl>http://www.ldapadministrator.com/purchase_legal-license-agreement.htm</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <docsUrl>http://www.ldapbrowser.com/forum/</docsUrl>
