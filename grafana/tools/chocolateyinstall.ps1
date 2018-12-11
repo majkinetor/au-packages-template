@@ -1,8 +1,8 @@
 ﻿$packageArgs = @{
   packageName            = "$env:chocolateyPackageName"
-  url                    = 'https://s3-us-west-2.amazonaws.com/grafana-releases/release/grafana-5.4.0.windows-amd64.zip'
+  url                    = 'https://s3-us-west-2.amazonaws.com/grafana-releases/release/grafana-5.4.1.windows-amd64.zip'
   UnzipLocation          = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
-  checksum               = 'e9b6cb2bafd552080e2d8d78727d64ff8592e0d63556b0889cc3be4ef685daa8'
+  checksum               = '69fc32bf0cc83dffd818f43bd68a73007dec1d0b124bb63072bdd2b5d2733f4c'
   checksumType           = 'sha256'
 }
 Install-ChocolateyZipPackage @packageArgs
