@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>teamviewer-qs</id>
-    <version>14.0.13880.0</version>
+    <version>14.1.3399.0</version>
     <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/teamviewer-qs</packageSourceUrl>
     <owners>galeksandrp</owners>
     <title>TeamViewer QuickSupport</title>
