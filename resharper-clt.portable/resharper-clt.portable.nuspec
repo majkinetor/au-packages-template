@@ -5,7 +5,7 @@
     <id>resharper-clt.portable</id>
     <owners>JetBrains, flcdrg</owners>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/resharper-clt.portable</packageSourceUrl>
-    <version>2018.3-EAP8</version>
+    <version>2018.3</version>
     <title>JetBrains ReSharper Command Line Tools (Portable)</title>
     <authors>JetBrains</authors>
     <projectUrl>https://www.jetbrains.com/resharper/features/command-line.html</projectUrl>
