@@ -5,7 +5,7 @@
     <id>ReSharper</id>
     <owners>JetBrains, flcdrg</owners>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/resharper</packageSourceUrl>
-    <version>2018.3</version>
+    <version>2018.3.1</version>
     <title>JetBrains ReSharper</title>
     <authors>JetBrains</authors>
     <projectUrl>https://www.jetbrains.com/resharper</projectUrl>
@@ -45,7 +45,7 @@ Code style and formatting functionality with fine-grained, language-specific set
     </description>
     <releaseNotes>https://www.jetbrains.com/resharper/whatsnew/</releaseNotes>
     <dependencies>
-      <dependency id="resharper-platform" version="[183.0.20181217.72325]" />
+      <dependency id="resharper-platform" version="[183.0.20181223.64728]" />
       <dependency id="dotnet4.6.1" version="4.6.01055.20170308" />
     </dependencies>
   </metadata>
