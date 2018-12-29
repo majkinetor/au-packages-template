@@ -3,7 +3,7 @@
   FileType               = 'exe'
   SilentArgs             = '/nowait'
   url                    = 'https://help.kontur.ru/content/components/Certificates_Kontur_Admin.exe'
-  checksum               = '89a1ea9ee9f2d6b349033cc674cc2b90c854c91b0ff08e042cc19c350799ef9c'
+  checksum               = 'f665ac50fa408d0e037f6bb7c931581e50dca5222cca74af5ae5578fee8e5bff'
   checksumType           = 'sha256'
 }
 Install-ChocolateyPackage @packageArgs
