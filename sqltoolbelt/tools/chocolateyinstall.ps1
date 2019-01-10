@@ -42,12 +42,16 @@ if ($pp["products"] -ne $null -and $pp["products"] -ne ''){
 
   $productCommand = "all products"
 }
+
 $commandArgs += "/IAgreeToTheEula"
+
+$url = $primaryDownloadUrl
 
 if ($pp["FTP"] -ne $null -and $pp["FTP"] -ne '') { 
 
-  # FTP forced  
-    $url = $secondaryDownloadUrl
+  # FTP forced
+  Write-Verbose "Using $secondaryDownloadUrl because /FTP was specified"
+  $url = $secondaryDownloadUrl
 } else {
 
   # Red Gate has a fixed download URL, but if the binary changes we can fall back to their FTP site
@@ -69,7 +73,6 @@ if ($pp["FTP"] -ne $null -and $pp["FTP"] -ne '') {
     }
   } else {
     Write-Verbose "Primary URL matches package expectation"
-    $url = $primaryDownloadUrl
   }
 }
 
