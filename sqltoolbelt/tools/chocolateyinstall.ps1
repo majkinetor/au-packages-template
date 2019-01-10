@@ -2,9 +2,9 @@
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $primaryDownloadUrl = "https://download.red-gate.com/SQLToolbelt.exe"
-$secondaryDownloadUrl = 'ftp://support.red-gate.com/patches/SQLToolbelt/20Dec2018/SQLToolbelt.exe'
-$packageVersionLastModified = New-Object -TypeName DateTimeOffset 2018, 12, 20, 14, 45, 17, 0 # Last modified time corresponding to this package version
-$checksum = '2A149B627C081D695815FB04A1CB00B759C2DC465402FFAD09C7460C24D5B89B'
+$secondaryDownloadUrl = 'ftp://support.red-gate.com/patches/SQLToolbelt/09Jan2019/SQLToolbelt.exe'
+$packageVersionLastModified = New-Object -TypeName DateTimeOffset 2019, 1, 9, 14, 6, 50, 0 # Last modified time corresponding to this package version
+$checksum = 'EBC56827B840BF074B99E00AA7B3EC92320112D65661995625A6F061F8F3E2A3'
 
 $validProductPackageNames = @(
   "SQL Compare",
