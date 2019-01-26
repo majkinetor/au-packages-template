@@ -10,17 +10,23 @@ function global:au_BeforeUpdate() {
 
 function global:au_GetLatest {
 
-    $response = Invoke-RestMethod -Method Get -Uri "https://api.github.com/repos/navossoc/KeePass-Yet-Another-Favicon-Downloader/releases/latest"
+    $token = $env:github_api_key
+    $headers = @{
+        'User-Agent' = 'flcdrg'
+    }
+    if ($token) {
+        $headers['Authorization'] = ("token {0}" -f $token)
+    }
+    $response = Invoke-RestMethod -Method Get -Uri "https://api.github.com/repos/navossoc/KeePass-Yet-Another-Favicon-Downloader/releases/latest" -Headers $headers
     
     if (!$response.name.StartsWith("v")) {
-        return @{}
+        Write-Warning "Ignoring unexpected version"
+        return 'ignore'
     }
 
     $version = $response.name.Substring(1)
 
-    $release_id = $response.id
-
-    $assets = Invoke-RestMethod -Method Get -Uri "https://api.github.com/repos/navossoc/KeePass-Yet-Another-Favicon-Downloader/releases/$release_id/assets"
+    $assets = $response.assets
 
     $Latest = @{
         Url32 = $assets[0].browser_download_url
