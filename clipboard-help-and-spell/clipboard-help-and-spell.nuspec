@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
-    <id>clipboardhelpandspell</id>
+    <id>clipboard-help-and-spell</id>
     <version>2.42.0.20181005</version>
     <title>Clipboard Help+Spell</title>
     <authors>DonationCoder</authors>
@@ -26,6 +26,6 @@ Simple functions for copying and pasting into and out of other applications</des
     <docsUrl>https://www.donationcoder.com/Software/Mouser/clipboardhelpandspell/help/index.html/</docsUrl>
     <mailingListUrl>https://www.donationcoder.com/forum/index.php?board=49</mailingListUrl>
     <bugTrackerUrl>https://www.donationcoder.com/forum/index.php?board=49</bugTrackerUrl>
-	<packageSourceUrl>https://github.com/CompactFactor/au-packages/tree/master/clipboardhelpandspell</packageSourceUrl>
+	<packageSourceUrl>https://github.com/CompactFactor/au-packages/tree/master/clipboard-help-and-spell</packageSourceUrl>
   </metadata>
 </package>
