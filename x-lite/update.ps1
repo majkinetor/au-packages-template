@@ -27,9 +27,17 @@ function global:au_GetLatest {
     $iniFile = [IO.Path]::GetTempFileName()
 
     Set-Content -Path $iniFile -Value $response
-    $ini = Get-IniContent $iniFile
 
-    Remove-Item $iniFile
+    try {
+        $ini = Get-IniContent $iniFile
+    }
+    catch {
+        Write-Warning "Counterpath's API is messed up"
+        return 'ignore'
+    }
+    finally {
+        Remove-Item $iniFile
+    }
 
     $url = $ini.DATA.url
 
@@ -61,7 +69,6 @@ function global:au_GetLatest {
         Version = $version
         ReleaseNotes = $releaseNotes
     }
-
 }
 
 function global:au_AfterUpdate
