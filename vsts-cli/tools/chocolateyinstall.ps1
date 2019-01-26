@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url = 'https://vstsclitool.blob.core.windows.net/msi/vsts-cli-0.1.4.msi'
+$url = 'https://github.com/Microsoft/azure-devops-cli-extension/releases/download/0.1.4/vsts-cli-0.1.4.msi'
 $checksum = 'd9f079ce4809dd4a81e492602cb7a83adb3abdf04993f48ef31d199a8865d723'
 
 $packageArgs = @{

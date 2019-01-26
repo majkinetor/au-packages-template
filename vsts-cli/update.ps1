@@ -10,29 +10,20 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    # 32bit
-    
-    $url32 = "https://aka.ms/vsts-cli-windows-installer"
-    for ($i = 0; ($i -lt 4) -and (-not ($url32.EndsWith(".msi"))); $i++) {
-        $response = Invoke-WebRequest -Uri $url32 -Method Head -MaximumRedirection 0 -ErrorAction Ignore
-
-        $url32 = $response.Headers.Location
+        
+    $token = $env:github_api_key
+    $headers = @{
+        'User-Agent' = 'flcdrg'
+    }
+    if ($token) {
+        $headers['Authorization'] = ("token {0}" -f $token)
     }
 
-    if ($i -ge 3) {
-        return @{}
-    }
+    $response = Invoke-RestMethod -Method Get -Uri "https://api.github.com/repos/Microsoft/azure-devops-cli-extension/releases/latest" -Headers $headers
 
-    # https://vstscli.blob.core.windows.net/msi/vsts-cli-0.1.3.msi
-    
-    $url32 -match "-(?<version>\d+\.\d+\.\d+)\.msi$"   
+    $version = $response.tag_name
 
-    $version = $Matches.version
-
-    if (-not $version) {
-        Write-Warning "Didn't match version in $url32"
-        return 'ignore'
-    }
+    $url32 = $response.assets | Where-Object { $_.name.EndsWith(".msi")} | Select-Object -ExpandProperty browser_download_url -First 1
     
     $Latest = @{ URL32 = $url32; Version = $version }
     return $Latest
