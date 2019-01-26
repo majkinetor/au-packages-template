@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>eventghost</id>
-    <version>0.5.0-rc4</version>
+    <version>0.5.0-rc6</version>
     <title>EventGhost</title>
     <authors>EventGhost Project</authors>
     <owners>EventGhost Project</owners>
