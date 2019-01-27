@@ -8,6 +8,7 @@
     <owners>davidfancella, guru3, z-man</owners>
     <licenseUrl>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
     <projectUrl>https://sourceforge.net/projects/armagetronad/</projectUrl>
+	<iconUrl>https://raw.githubusercontent.com/CompactFactor/au-packages/master/icons/armagetronad.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Another version of the simple action game modeled after the lightcycle sequence of the movie Tron.</description>
     <summary>Another version of the simple action game modeled after the lightcycle sequence of the movie Tron.</summary>
