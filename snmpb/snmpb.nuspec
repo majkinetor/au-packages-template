@@ -1,23 +1,26 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
-  <metadata>
-    <id>snmpb</id>
-    <version>0.8</version>
-    <title>snmpb (Install)</title>
-    <authors>martj</authors>
-    <owners>MarcioC</owners>
-    <licenseUrl>https://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
-    <projectUrl>https://sourceforge.net/projects/snmpb/</projectUrl>
-    <iconUrl>https://a.fsdn.com/allura/p/snmpb/icon</iconUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>SnmpB is an SNMP MIB browser written in QT. It supports SNMPv1, SNMPv2c &amp; SNMPv3. SnmpB can browse/edit/load/add MIB files and can query SNMP agents. It also supports agent discovery, trap events, and graph plotting.</description>
-    <summary>SnmpB is an SNMP MIB browser written in QT. It supports SNMPv1, SNMPv2c &amp; SNMPv3. SnmpB can browse/edit/load/add MIB files and can query SNMP agents. It also supports agent discovery, trap events, and graph plotting.</summary>
-    <copyright>Martin Jolicoeur, 2004-2009</copyright>
-    <tags>snmpb snmp mib browser admin</tags>
-    <projectSourceUrl>https://sourceforge.net/p/snmpb/code/</projectSourceUrl>
-    <docsUrl>https://sourceforge.net/p/snmpb/wiki/Home/</docsUrl>
-    <mailingListUrl>https://sourceforge.net/p/snmpb/discussion/</mailingListUrl>
-    <bugTrackerUrl>https://sourceforge.net/p/snmpb/bugs/</bugTrackerUrl>
-	  <packageSourceUrl>https://github.com/CompactFactor/au-packages/tree/master/snmpb</packageSourceUrl>
-  </metadata>
+	<metadata>
+		<id>snmpb</id>
+		<version>0.8</version>
+		<title>snmpb (Install)</title>
+		<authors>martj</authors>
+		<owners>MarcioC</owners>
+		<licenseUrl>https://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
+		<projectUrl>https://sourceforge.net/projects/snmpb/</projectUrl>
+		<iconUrl>https://a.fsdn.com/allura/p/snmpb/icon</iconUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>SnmpB is an SNMP MIB browser written in QT. It supports SNMPv1, SNMPv2c &amp; SNMPv3. SnmpB can browse/edit/load/add MIB files and can query SNMP agents. It also supports agent discovery, trap events, and graph plotting.</description>
+		<summary>SnmpB is an SNMP MIB browser written in QT. It supports SNMPv1, SNMPv2c &amp; SNMPv3. SnmpB can browse/edit/load/add MIB files and can query SNMP agents. It also supports agent discovery, trap events, and graph plotting.</summary>
+		<copyright>Martin Jolicoeur, 2004-2009</copyright>
+		<tags>snmpb snmp mib browser admin</tags>
+		<projectSourceUrl>https://sourceforge.net/p/snmpb/code/</projectSourceUrl>
+		<docsUrl>https://sourceforge.net/p/snmpb/wiki/Home/</docsUrl>
+		<mailingListUrl>https://sourceforge.net/p/snmpb/discussion/</mailingListUrl>
+		<bugTrackerUrl>https://sourceforge.net/p/snmpb/bugs/</bugTrackerUrl>
+		<packageSourceUrl>https://github.com/CompactFactor/au-packages/tree/master/snmpb</packageSourceUrl>
+	</metadata>
+	<files>
+		<file src="tools\**" target="tools" />
+	</files>
 </package>

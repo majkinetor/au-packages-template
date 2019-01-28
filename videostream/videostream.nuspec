@@ -1,19 +1,22 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
-  <metadata>
-    <id>videostream</id>
-    <version>0.3.5</version>
-    <title>Videostream for Chromecast</title>
-    <authors>Groupnotes Inc</authors>
-    <owners>MarcioC</owners>
-    <projectUrl>https://getvideostream.com/</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/CompactFactor/au-packages/master/icons/videostream.png</iconUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Videostream is a application that streams video, music, and image files wirelessly to Google's Chromecast.</description>
-    <copyright>© 2013-2017 Videostream, by Groupnotes Inc.</copyright>
-    <tags>stream chromecast mkv mp4 subtitles mobile</tags>
-    <mailingListUrl>http://community.getvideostream.com/</mailingListUrl>
-    <bugTrackerUrl>http://community.getvideostream.com/</bugTrackerUrl>
-	<packageSourceUrl>https://github.com/CompactFactor/au-packages/tree/master/videostream</packageSourceUrl>
-  </metadata>
+	<metadata>
+		<id>videostream</id>
+		<version>0.1</version>
+		<title>Videostream for Chromecast</title>
+		<authors>Groupnotes Inc</authors>
+		<owners>MarcioC</owners>
+		<projectUrl>https://getvideostream.com/</projectUrl>
+		<iconUrl>https://raw.githubusercontent.com/CompactFactor/au-packages/master/icons/videostream.png</iconUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>Videostream is a application that streams video, music, and image files wirelessly to Google's Chromecast.</description>
+		<copyright>© 2013-2017 Videostream, by Groupnotes Inc.</copyright>
+		<tags>stream chromecast mkv mp4 subtitles mobile</tags>
+		<mailingListUrl>http://community.getvideostream.com/</mailingListUrl>
+		<bugTrackerUrl>http://community.getvideostream.com/</bugTrackerUrl>
+		<packageSourceUrl>https://github.com/CompactFactor/au-packages/tree/master/videostream</packageSourceUrl>
+	</metadata>
+	<files>
+		<file src="tools\**" target="tools" />
+	</files>
 </package>

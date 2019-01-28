@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
-  <metadata>
-    <id>eventghost</id>
-    <version>0.5.0-rc6</version>
-    <title>EventGhost</title>
-    <authors>EventGhost Project</authors>
-    <owners>EventGhost Project</owners>
-    <licenseUrl>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
-    <projectUrl>http://www.eventghost.net/</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/CompactFactor/au-packages/master/icons/eventghost.png</iconUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>EventGhost is an advanced, easy to use and extensible automation tool. It can use different input devices like infrared or wireless remote controls to trigger macros, that on their part control a computer and its attached hardware. So it can be used to control a Media-PC with a normal consumer remote. But its possible uses go much beyond this.
+	<metadata>
+		<id>eventghost</id>
+		<version>0.5.0-rc6</version>
+		<title>EventGhost</title>
+		<authors>EventGhost Project</authors>
+		<owners>EventGhost Project</owners>
+		<licenseUrl>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
+		<projectUrl>http://www.eventghost.net/</projectUrl>
+		<iconUrl>https://raw.githubusercontent.com/CompactFactor/au-packages/master/icons/eventghost.png</iconUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>EventGhost is an advanced, easy to use and extensible automation tool. It can use different input devices like infrared or wireless remote controls to trigger macros, that on their part control a computer and its attached hardware. So it can be used to control a Media-PC with a normal consumer remote. But its possible uses go much beyond this.
 
 #### Documentation
 * [Screenshots]()
@@ -22,15 +22,18 @@
 
 #### Community
 * [Forum](http://www.eventghost.net/forum/)</description>
-    <summary>Advanced, easy to use and extensible automation tool</summary>
-    <releaseNotes>#### Program
+		<summary>Advanced, easy to use and extensible automation tool</summary>
+		<releaseNotes>#### Program
 * [Changelog](http://www.eventghost.net/docs/changelog.html)</releaseNotes>
-    <copyright>© 2009 EventGhost Project</copyright>
-    <tags>automation x10 remote-control macro</tags>
-    <projectSourceUrl>https://github.com/EventGhost/EventGhost/</projectSourceUrl>
-    <docsUrl>http://eventghost.net/docs/</docsUrl>
-    <mailingListUrl>http://eventghost.net/forum/</mailingListUrl>
-    <bugTrackerUrl>https://github.com/EventGhost/EventGhost/issues</bugTrackerUrl>
-	<packageSourceUrl>https://github.com/CompactFactor/au-packages/tree/master/eventghost</packageSourceUrl>
-  </metadata>
+		<copyright>© 2009 EventGhost Project</copyright>
+		<tags>automation x10 remote-control macro</tags>
+		<projectSourceUrl>https://github.com/EventGhost/EventGhost/</projectSourceUrl>
+		<docsUrl>http://eventghost.net/docs/</docsUrl>
+		<mailingListUrl>http://eventghost.net/forum/</mailingListUrl>
+		<bugTrackerUrl>https://github.com/EventGhost/EventGhost/issues</bugTrackerUrl>
+		<packageSourceUrl>https://github.com/CompactFactor/au-packages/tree/master/eventghost</packageSourceUrl>
+	</metadata>
+	<files>
+		<file src="tools\**" target="tools" />
+	</files>
 </package>
