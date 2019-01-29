@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+	<metadata>
+		<id>find-and-run-robot</id>
+		<version>2.11</version>
+		<title>Find and Run Robot</title>
+		<authors>DonationCoder</authors>
+		<owners>MarcioC</owners>
+		<licenseUrl>https://www.donationcoder.com/licensing/commercial</licenseUrl>
+		<projectUrl>https://www.donationcoder.com/software/mouser/popular-apps/farr</projectUrl>
+		<iconUrl>https://raw.githubusercontent.com/CompactFactor/au-packages/master/icons/find-and-run-robot.png</iconUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>Find and Run Robot (FARR) is a program for keyboard maniacs -- it uses an adaptive "live search" function to rapidly find programs and documents on your computer as you type.
+
+Press your chosen hotkey to display the FARR window, then just start typing the first letters of the application you want to launch and the results appear instantly. Hit enter to launch the top result, or refine your search with special modifiers and commands.
+
+FARR also lets you quickly run web searches, send email, manipulate files, control on-screen windows, and much more. Build and share custom commands or install plugins to add tons of new features, like live search features for your clipboard history and your internet bookmarks; a popup a calculator with history tape and persistent variables; and many more..</description>
+		<summary>Find and Run Robot (FARR) is a program for keyboard maniacs</summary>
+		<releaseNotes>https://www.donationcoder.com/Software/Mouser/findrun/help/version_history.htm</releaseNotes>
+		<copyright>© 2018 DonationCoder.com</copyright>
+		<tags>keyboard macro search computer</tags>
+		<docsUrl>https://www.donationcoder.com/Software/Mouser/findrun/help/index.html</docsUrl>
+		<mailingListUrl>https://www.donationcoder.com/forum/index.php?board=12.0</mailingListUrl>
+		<bugTrackerUrl>https://www.donationcoder.com/forum/index.php?board=12.0</bugTrackerUrl>
+		<packageSourceUrl>https://github.com/CompactFactor/au-packages/tree/master/find-and-run-robot</packageSourceUrl>
+	</metadata>
+	<files>
+		<file src="tools\**" target="tools" />
+	</files>
+</package>
