@@ -5,7 +5,7 @@
 		<version>0.2.8.34</version>
 		<title>Armagetron Advanced</title>
 		<authors>davidfancella, guru3, z-man</authors>
-		<owners>davidfancella, guru3, z-man</owners>
+		<owners>MarcioC</owners>
 		<licenseUrl>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
 		<projectUrl>https://sourceforge.net/projects/armagetronad/</projectUrl>
 		<iconUrl>https://raw.githubusercontent.com/CompactFactor/au-packages/master/icons/armagetronad.png</iconUrl>

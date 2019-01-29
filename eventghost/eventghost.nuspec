@@ -5,7 +5,7 @@
 		<version>0.5.0-rc6</version>
 		<title>EventGhost</title>
 		<authors>EventGhost Project</authors>
-		<owners>EventGhost Project</owners>
+		<owners>MarcioC</owners>
 		<licenseUrl>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
 		<projectUrl>http://www.eventghost.net/</projectUrl>
 		<iconUrl>https://raw.githubusercontent.com/CompactFactor/au-packages/master/icons/eventghost.png</iconUrl>
