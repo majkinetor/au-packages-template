@@ -1,5 +1,5 @@
-[![](https://ci.appveyor.com/api/projects/status/github/CompactFactor/au-packages?svg=true)](https://ci.appveyor.com/project/CompactFactor/au-packages)
-[Update status](https://gist.github.com/CompactFactor/eae7c31972662d6ea5f024c6c89a5e90)
+[![](https://ci.appveyor.com/api/projects/status/github/CruzMarcio/au-packages?svg=true)](https://ci.appveyor.com/project/CruzMarcio/au-packages)
+[Update status](https://gist.github.com/eae7c31972662d6ea5f024c6c89a5e90)
 [![](http://transparent-favicon.info/favicon.ico)](#)
 [chocolatey/MarcioC](https://chocolatey.org/profiles/MarcioC)
 
