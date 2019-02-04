@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+	<metadata>
+		<id>nzxt-cam</id>
+		<version>1.0</version>
+		<title>CAM</title>
+		<authors>NZXT</authors>
+		<owners>MarcioC</owners>
+		<licenseUrl>https://camwebapp.com/terms-of-service</licenseUrl>
+		<projectUrl>https://camwebapp.com/</projectUrl>
+		<iconUrl>https://raw.githubusercontent.com/CruzMarcio/au-packages/master/icons/nzxt-cam.png</iconUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>A COMPLETE PC MONITORING SOLUTION
+The days of using multiple programs to monitor and tune your PC are over. CAM is easy-to-use and comprehensive, providing you the essential data you need to keep your PC running optimally. Think of CAM as your PC's best friend.</description>
+		<summary>PC Monitoring</summary>
+		<releaseNotes>https://blog.nzxt.com/cam-changelog/</releaseNotes>
+		<copyright>NZXT 2018. All Rights Reserved.</copyright>
+		<tags>pc monitoring temperature cooler fan watercooler nzxt</tags>
+		<mailingListUrl>https://support.camwebapp.com/</mailingListUrl>
+		<bugTrackerUrl>https://support.camwebapp.com/</bugTrackerUrl>
+		<packageSourceUrl>https://github.com/CruzMarcio/au-packages/tree/master/nzxt-cam</packageSourceUrl>
+	</metadata>
+	<files>
+		<file src="tools\**" target="tools" />
+	</files>
+</package>
