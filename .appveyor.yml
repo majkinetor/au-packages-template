@@ -22,7 +22,7 @@ environment:
   # Github token to commit pushed packages to repository
   github_user_repo: CruzMarcio/au-packages
   github_api_key:
-    secure: /+8dGcyrcM7JTDY+yOtjU5wm0Yki46ScQAMeMVJ3cRFd8wYYTzvmp+/Yl0l6yM8z # https://ci.appveyor.com/tools/encrypt
+    secure: IASBTIoHN2KKir9cub/oWhS8qMbMcAIprprdKHW6Y3Tgoshn4GbY3X7gl/BqtgPB # https://ci.appveyor.com/tools/encrypt
 
   # ID of the gist used to save run results - create a gist under the github_user (secret or not) and grab the id - https://gist.github.com/name/id
   # Optional, leave empty to create anonymous gist
