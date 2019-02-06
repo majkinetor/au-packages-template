@@ -20,6 +20,7 @@ The days of using multiple programs to monitor and tune your PC are over. CAM is
 		<bugTrackerUrl>https://support.camwebapp.com/</bugTrackerUrl>
 		<packageSourceUrl>https://github.com/CruzMarcio/au-packages/tree/master/nzxt-cam</packageSourceUrl>
 		<dependencies>
+			<dependency id="vcredist2015" />
     		<dependency id="dotnet4.6.2" />
     	</dependencies>
 	</metadata>
