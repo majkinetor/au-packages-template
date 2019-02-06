@@ -1,8 +1,8 @@
 ﻿$packageArgs = @{
   packageName            = "$env:chocolateyPackageName"
-  url                    = 'https://github.com/10se1ucgo/DisableWinTracking/releases/download/v3.2.1/dwt-3.2.1-cp27-win_x86.zip'
+  url                    = 'https://github.com/10se1ucgo/DisableWinTracking/releases/download/3.2.2/dwt-3.2.2-cp27-win_x86.zip'
   UnzipLocation          = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
-  checksum               = 'd4c31d005c1a676e9867f4a2a553299e55aa0857626d25a1d7dd84b00e505757'
+  checksum               = '9fccf3796aa791ce02bfdf221f716af38e9984aef15dd6acaca2267a25a3ba2d'
   checksumType           = 'sha256'
 }
 Install-ChocolateyZipPackage @packageArgs

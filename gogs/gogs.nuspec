@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>gogs</id>
-    <version>0.11.66</version>
+    <version>0.11.86</version>
     <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/gogs</packageSourceUrl>
     <owners>galeksandrp</owners>
     <title>Gogs</title>
