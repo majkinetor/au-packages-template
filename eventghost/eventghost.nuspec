@@ -8,7 +8,7 @@
 		<owners>MarcioC</owners>
 		<licenseUrl>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
 		<projectUrl>http://www.eventghost.net/</projectUrl>
-		<iconUrl>https://raw.githubusercontent.com/CruzMarcio/au-packages/master/icons/eventghost.png</iconUrl>
+		<iconUrl>https://raw.githubusercontent.com/CruzMarcio/au-packages/master/eventghost/eventghost.png</iconUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>EventGhost is an advanced, easy to use and extensible automation tool. It can use different input devices like infrared or wireless remote controls to trigger macros, that on their part control a computer and its attached hardware. So it can be used to control a Media-PC with a normal consumer remote. But its possible uses go much beyond this.
 

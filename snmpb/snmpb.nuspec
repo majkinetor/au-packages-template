@@ -8,7 +8,7 @@
 		<owners>MarcioC</owners>
 		<licenseUrl>https://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
 		<projectUrl>https://sourceforge.net/projects/snmpb/</projectUrl>
-		<iconUrl>https://raw.githubusercontent.com/CruzMarcio/au-packages/master/icons/snmpb.png</iconUrl>
+		<iconUrl>https://raw.githubusercontent.com/CruzMarcio/au-packages/master/snmpb/snmpb.png</iconUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>SnmpB is an SNMP MIB browser written in QT. It supports SNMPv1, SNMPv2c &amp; SNMPv3. SnmpB can browse/edit/load/add MIB files and can query SNMP agents. It also supports agent discovery, trap events, and graph plotting.</description>
 		<summary>SnmpB is an SNMP MIB browser written in QT. It supports SNMPv1, SNMPv2c &amp; SNMPv3. SnmpB can browse/edit/load/add MIB files and can query SNMP agents. It also supports agent discovery, trap events, and graph plotting.</summary>

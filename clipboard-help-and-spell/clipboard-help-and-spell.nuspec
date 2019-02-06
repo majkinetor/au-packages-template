@@ -8,7 +8,7 @@
 		<owners>MarcioC</owners>
 		<licenseUrl>https://www.donationcoder.com/licensing/commercial</licenseUrl>
 		<projectUrl>https://www.donationcoder.com/software/mouser/popular-apps/clipboard-help-and-spell</projectUrl>
-		<iconUrl>https://raw.githubusercontent.com/CruzMarcio/au-packages/master/icons/clipboard-help-and-spell.png</iconUrl>
+		<iconUrl>https://raw.githubusercontent.com/CruzMarcio/au-packages/master/clipboard-help-and-spell/clipboard-help-and-spell.png</iconUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>Clipboard Help+Spell is a clipboard history utility with the following features:
 

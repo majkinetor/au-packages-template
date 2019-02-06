@@ -7,7 +7,7 @@
 		<authors>Groupnotes Inc</authors>
 		<owners>MarcioC</owners>
 		<projectUrl>https://getvideostream.com/</projectUrl>
-		<iconUrl>https://raw.githubusercontent.com/CruzMarcio/au-packages/master/icons/videostream.png</iconUrl>
+		<iconUrl>https://raw.githubusercontent.com/CruzMarcio/au-packages/master/videostream/videostream.png</iconUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>Videostream is a application that streams video, music, and image files wirelessly to Google's Chromecast.</description>
 		<copyright>© 2013-2017 Videostream, by Groupnotes Inc.</copyright>

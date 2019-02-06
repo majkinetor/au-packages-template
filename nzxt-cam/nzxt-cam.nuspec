@@ -8,7 +8,7 @@
 		<owners>MarcioC</owners>
 		<licenseUrl>https://camwebapp.com/terms-of-service</licenseUrl>
 		<projectUrl>https://camwebapp.com/</projectUrl>
-		<iconUrl>https://raw.githubusercontent.com/CruzMarcio/au-packages/master/icons/nzxt-cam.png</iconUrl>
+		<iconUrl>https://raw.githubusercontent.com/CruzMarcio/au-packages/master/nzxt-cam/nzxt-cam.png</iconUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>A COMPLETE PC MONITORING SOLUTION
 The days of using multiple programs to monitor and tune your PC are over. CAM is easy-to-use and comprehensive, providing you the essential data you need to keep your PC running optimally. Think of CAM as your PC's best friend.</description>
