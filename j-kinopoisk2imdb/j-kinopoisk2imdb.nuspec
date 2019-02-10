@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>j-kinopoisk2imdb</id>
+    <version>0.1.0</version>
+    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/j-kinopoisk2imdb</packageSourceUrl>
+    <owners>galeksandrp</owners>
+    <title>J-Kinopoisk2IMDB</title>
+    <authors>REDNBLACK</authors>
+    <projectUrl>https://github.com/REDNBLACK/J-Kinopoisk2IMDB</projectUrl>
+    <iconUrl>https://avatars0.githubusercontent.com/u/1498939</iconUrl>
+    <copyright>Copyright (c) 2015-2019 REDNBLACK</copyright>
+    <licenseUrl>https://github.com/REDNBLACK/J-Kinopoisk2IMDB/blob/master/LICENSE.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/REDNBLACK/J-Kinopoisk2IMDB</projectSourceUrl>
+    <docsUrl>https://github.com/REDNBLACK/J-Kinopoisk2IMDB/tree/master/docs</docsUrl>
+    <bugTrackerUrl>https://github.com/REDNBLACK/J-Kinopoisk2IMDB/issues</bugTrackerUrl>
+    <tags>kinopoisk kp imdb omdb library movie-library movie-ratings movie-ranking</tags>
+    <summary>J-Kinopoisk2IMDB is a software for importing movie ratings and watchlists from Kinopoisk to IMDB</summary>
+    <description>J-Kinopoisk2IMDB is a software for importing movie ratings and watchlists from Kinopoisk to IMDB</description>
+    <releaseNotes>https://github.com/REDNBLACK/J-Kinopoisk2IMDB/releases</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
