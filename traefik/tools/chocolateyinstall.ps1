@@ -1,10 +1,10 @@
 ﻿$packageArgs = @{
   packageName            = "$env:chocolateyPackageName"
-  url                    = 'https://github.com/containous/traefik/releases/download/v1.7.7/traefik_windows-386.exe'
-  url64bit               = 'https://github.com/containous/traefik/releases/download/v1.7.7/traefik_windows-amd64.exe'
+  url                    = 'https://github.com/containous/traefik/releases/download/v1.7.9/traefik_windows-386.exe'
+  url64bit               = 'https://github.com/containous/traefik/releases/download/v1.7.9/traefik_windows-amd64.exe'
   FileFullPath           = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)\traefik.exe"
-  checksum               = '79b787a6b8a1cc7faba524e02daefe9e7767cdbe40ff62652389b8b9478a9910'
-  checksum64             = 'beda2dc335aa1234696182b8dca1c89696be5e4e86911045b6757815f9b00d98'
+  checksum               = '12d2e0288f3c29d5c6d42e6ac541421e7cd09a9fe4c61a3866b5a876f9ac0371'
+  checksum64             = '88a8f2c7b0032a2edbf896153f9bbae4929872abb7fb51b9ffd0b136ce38a102'
   checksumType           = 'sha256'
   checksumType64         = 'sha256'
 }
