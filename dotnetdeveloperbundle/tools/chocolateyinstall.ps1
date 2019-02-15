@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$checksum = '8A0F6B0F14B103D9A0EB0F99274D6FEB014BDF0F567120C2837D076E04262E47'
+$checksum = 'CB345AED1A838AA88C1E362A3F875916D702597C3CEB9CE63CB1D8F2BD45642A'
 $primaryDownloadUrl = 'https://download.red-gate.com/DotNETDeveloperBundle.exe'
-$secondaryDownloadUrl = 'ftp://support.red-gate.com/patches/DotNETDeveloperBundle/10Jan2019/DotNETDeveloperBundle.exe'
-$packageVersionLastModified = New-Object -TypeName DateTimeOffset 2019, 1, 10, 10, 57, 52, 0 # Last modified time corresponding to this package version
+$secondaryDownloadUrl = 'ftp://support.red-gate.com/patches/DotNETDeveloperBundle/14Feb2019/DotNETDeveloperBundle.exe'
+$packageVersionLastModified = New-Object -TypeName DateTimeOffset 2019, 2, 14, 10, 1, 0, 0 # Last modified time corresponding to this package version
 
 $pp = Get-PackageParameters
 
