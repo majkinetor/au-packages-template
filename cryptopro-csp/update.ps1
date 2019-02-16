@@ -24,7 +24,8 @@ function global:au_GetLatest {
 	@{
         URL32   = $URL32
         Version = (Get-Item "$env:TMP\CSP40R2Setup.exe").VersionInfo.ProductVersion.trim()
+        Options = $options
     }
 }
 
-update -NoCheckUrl
+update
