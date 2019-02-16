@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+	<metadata>
+		<id>ksp-ckan</id>
+		<version>1.0</version>
+		<title>Comprehensive Kerbal Archive Network</title>
+		<authors>KSP-CKAN Project</authors>
+		<owners>MarcioC</owners>
+		<licenseUrl>https://github.com/KSP-CKAN/CKAN/blob/master/LICENSE.md</licenseUrl>
+		<projectUrl>https://github.com/KSP-CKAN/CKAN/</projectUrl>
+		<iconUrl>https://raw.githubusercontent.com/CruzMarcio/au-packages/master/ksp-ckan/ksp-ckan.png</iconUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>The CKAN is a metadata repository and associated tools to allow you to find, install, and manage mods for Kerbal Space Program. It provides strong assurances that mods are installed in the way prescribed by their metadata files, for the correct version of Kerbal Space Program, alongside their dependencies, and without any conflicting mods.
+
+CKAN is great for players and for authors:
+
+players can find new content and install it with just a few clicks;
+modders don't have to worry about misinstall problems or outdated versions;
+The CKAN has been inspired by the solid and proven metadata formats from both the Debian project and the CPAN, each of which manages tens of thousands of packages.</description>
+		<summary>The CKAN is a metadata repository and associated tools to allow you to find, install, and manage mods for Kerbal Space Progra</summary>
+		<releaseNotes>https://github.com/KSP-CKAN/CKAN/releases</releaseNotes>
+		<tags>ksp kerbal space program mods ckan</tags>
+		<projectSourceUrl>https://github.com/KSP-CKAN/CKAN/</projectSourceUrl>
+		<docsUrl>https://github.com/KSP-CKAN/CKAN/wiki</docsUrl>
+		<mailingListUrl>https://github.com/KSP-CKAN/CKAN/issues</mailingListUrl>
+		<bugTrackerUrl>https://github.com/KSP-CKAN/CKAN/issues</bugTrackerUrl>
+		<packageSourceUrl>https://github.com/CruzMarcio/au-packages/tree/master/ksp-ckan</packageSourceUrl>
+	</metadata>
+	<files>
+		<file src="tools\**" target="tools" />
+	</files>
+</package>
