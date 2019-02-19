@@ -11,7 +11,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_BeforeUpdate() {
-    rm tools\Fintender.Installer.Setup.exe
+    rm 'tools\*.exe'
 }
 
 function global:au_GetLatest {
