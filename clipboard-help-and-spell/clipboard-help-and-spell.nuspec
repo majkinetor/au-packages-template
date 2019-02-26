@@ -30,6 +30,6 @@ Simple functions for copying and pasting into and out of other applications</des
 		<packageSourceUrl>https://github.com/CruzMarcio/au-packages/tree/master/clipboard-help-and-spell</packageSourceUrl>
 	</metadata>
 	<files>
-		<file src="tools\**" target="tools" />
+		<file src="tools\*.ps1" target="tools" />
 	</files>
 </package>

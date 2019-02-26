@@ -25,6 +25,6 @@ The days of using multiple programs to monitor and tune your PC are over. CAM is
     	</dependencies>
 	</metadata>
 	<files>
-		<file src="tools\**" target="tools" />
+		<file src="tools\*.ps1" target="tools" />
 	</files>
 </package>
