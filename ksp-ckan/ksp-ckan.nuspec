@@ -30,6 +30,6 @@ The CKAN has been inspired by the solid and proven metadata formats from both th
     	</dependencies>
 	</metadata>
 	<files>
-		<file src="tools\**" target="tools" />
+		<file src="tools\*.ps1" target="tools" />
 	</files>
 </package>
