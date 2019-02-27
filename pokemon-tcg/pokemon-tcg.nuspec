@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+	<metadata>
+		<id>pokemon-tcg</id>
+		<version>2.60</version>
+		<title>Pokémon Trading Card Game Online</title>
+		<authors>Nintendo</authors>
+		<owners>MarcioC</owners>
+		<licenseUrl>https://www.pokemon.com/us/terms-of-use/</licenseUrl>
+		<projectUrl>https://www.pokemon.com/us/pokemon-tcg/play-online/</projectUrl>
+		<iconUrl>https://raw.githubusercontent.com/CruzMarcio/au-packages/master/pokemon-tcg/pokemon-tcg.png</iconUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>Pokémon TCG Online (PTCGO) is the digital version of the Pokémon Trading Card Game developed by American studio Dire Wolf Digital, and is available for Microsoft Windows, OS X, iPad and Android.</description>
+		<summary>Pokémon Trading Card Game</summary>
+		<releaseNotes>http://forums.pokemontcg.com/forum/108-patch-notes-known-issues/</releaseNotes>
+		<copyright>© 2019 Pokémon. TM, ® Nintendo.</copyright>
+		<tags>pokemon trading card game online</tags>
+		<mailingListUrl>http://forums.pokemontcg.com/forum/</mailingListUrl>
+		<packageSourceUrl>https://github.com/CruzMarcio/au-packages/tree/master/pokemon-tcg</packageSourceUrl>
+	</metadata>
+	<files>
+		<file src="tools\*.ps1" target="tools" />
+	</files>
+</package>
