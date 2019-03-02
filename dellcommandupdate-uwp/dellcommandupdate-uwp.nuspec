@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>dellcommandupdate-uwp</id>
-    <version>3.0.0</version>
+    <version>3.0.1</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/dellcommandupdate-uwp</packageSourceUrl>
     <owners>flcdrg</owners>
     <title>Dell Command | Update (UWP)</title>
@@ -35,7 +35,6 @@ Fixes:
 
 Enhancements:
 - Support for Universal Windows (UWP) Platform
-- Option to participate in the Dell Command | Update Improvement Program 
  </releaseNotes>
   </metadata>
   <files>
