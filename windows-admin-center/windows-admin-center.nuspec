@@ -3,10 +3,10 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>windows-admin-center</id>
-    <version>1.1.28771.0</version>
+    <version>1.1.35619.0</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/windows-admin-center</packageSourceUrl>
     <owners>flcdrg</owners>
-    <title>Windows Admin Center (1809.5)</title>
+    <title>Windows Admin Center (1809.51)</title>
     <authors>Microsoft Corporation</authors>
     <projectUrl>https://docs.microsoft.com/en-us/windows-server/manage/windows-admin-center/overview</projectUrl>
     <iconUrl>http://cdn.rawgit.com/flcdrg/au-packages/master/windows-admin-center/icons/windows-admin-center.png</iconUrl>
