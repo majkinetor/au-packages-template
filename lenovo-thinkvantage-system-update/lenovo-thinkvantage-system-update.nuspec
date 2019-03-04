@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>lenovo-thinkvantage-system-update</id>
+    <version>5.07.0078</version>
+    <packageSourceUrl>https://github.com/flcdrg/chocolatey-lenovo-thinkvantage-system-update</packageSourceUrl>
+    <owners>flcdrg</owners>
+    <title>Lenovo System Update</title>
+    <authors>Lenovo</authors>
+    <projectUrl>http://support.lenovo.com/au/en/downloads/ds012808</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/flcdrg/chocolatey-lenovo-thinkvantage-system-update/master/icons/tvsu.png</iconUrl>
+    <copyright>(C) Copyright Lenovo 2018. All rights reserved</copyright>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>https://support.lenovo.com/au/en/solutions/ht100141</licenseUrl>
+    <docsUrl>https://support.lenovo.com/au/en/solutions/ht003029</docsUrl>
+    <tags>lenovo thinkvantage thinkpad thinkcenter thinkstation system update bios drivers admin</tags>
+    <summary>ThinkVantage System Update</summary>
+    <description>#### ThinkVantage System Update
+
+System Update downloads software, driver and BIOS updates from a Lenovo server directly over the Internet without requiring specific user knowledge of where the package is located or if it is needed by the target system.
+
+Other ways in which ThinkVantage Technologies help you keep your system up to date and secure are:
+
+- Provides a direct connection to Lenovo Service and Support for ThinkPad and ThinkCentre drivers, software and BIOS updates.
+- Helps maximize your system performance and minimize security vulnerability.
+
+##### Supported Systems
+
+ThinkVantage System Update is supported on the following systems:
+
+- Lenovo 3000 C100, C200, N100, N200, V100, V200
+- Lenovo 3000 J100, J105, J110, J115, J200, J200p, J205, S200, S200p, S205
+- All ThinkPad
+- All ThinkCentre
+- All ThinkStation
+- Lenovo V/B/K/E Series
+
+Note: ThinkPad S440 &amp; S540 does not support Windows 8.1
+
+ThinkVantage System Update will support additional models as content is created for them.
+
+##### Supported Operating Systems
+
+The following operating system are supported:
+
+-    Microsoft Windows 10
+-    Microsoft Windows 8.1
+-    Microsoft Windows 8
+-    Microsoft Windows 7
+	</description>
+    <releaseNotes>2019-01-25 release - https://download.lenovo.com/pccbbs/thinkvantage_en/systemupdate5.07.0078.txt</releaseNotes>
+    <dependencies>
+      <dependency id="dotnet4.5.2" version="4.5.2.20140902" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
