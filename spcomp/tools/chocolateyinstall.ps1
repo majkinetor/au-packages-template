@@ -1,8 +1,8 @@
 ﻿$packageArgs = @{
   packageName            = "$env:chocolateyPackageName"
-  url                    = 'https://sm.alliedmods.net/smdrop/1.10/sourcemod-1.10.0-git6385-windows.zip'
+  url                    = 'https://sm.alliedmods.net/smdrop/1.10/sourcemod-1.10.0-git6386-windows.zip'
   UnzipLocation          = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
-  checksum               = '62c5981a6a9370f22d18b5598f6c8136aa5beae2f4b9c886b4e82dff81367725'
+  checksum               = '45e7fb930f62586c91306a9ac0877a9868e80ef3a5e925532a4608a56b43ac29'
   checksumType           = 'sha256'
   SpecificFolder         = "addons\sourcemod\scripting"
 }
