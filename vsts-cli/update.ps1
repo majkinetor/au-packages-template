@@ -25,8 +25,12 @@ function global:au_GetLatest {
 
     $url32 = $response.assets | Where-Object { $_.name.EndsWith(".msi")} | Select-Object -ExpandProperty browser_download_url -First 1
     
-    $Latest = @{ URL32 = $url32; Version = $version }
-    return $Latest
+    if ($url32 -and $version) {
+        $Latest = @{ URL32 = $url32; Version = $version }
+        return $Latest
+    } else {
+        return 'ignore'
+    }
 }
 
 update
