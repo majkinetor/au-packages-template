@@ -43,7 +43,11 @@ function Get-Download($url, $version)
         if (Test-Path $filename) {
             Write-Warning "$filename already exists, skipping download"
         } else {
+
+            $currentProgressPreference = $ProgressPreference
+            $ProgressPreference = 'silentlyContinue'        
             Invoke-WebRequest -Uri $url -OutFile $filename
+            $ProgressPreference = $currentProgressPreference
         }
 
         $hash = Get-FileHash $filename -Algorithm SHA256
