@@ -76,6 +76,11 @@ if ($pp['Url']) {
             $configOpts += @("--windowsLogonPassword", $pp['LogonPassword'])
         }
     }
+
+    # Work directory
+    if ($pp['Work']) {
+        $configOpts += @("--work", $pp['Work'])
+    }
 }
 
 $packageArgs = @{
