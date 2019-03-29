@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>advanced-ip-scanner</id>
-    <version>2.5.3784</version>
+    <version>2.5.3850</version>
     <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/advanced-ip-scanner</packageSourceUrl>
     <owners>galeksandrp</owners>
     <title>Advanced IP Scanner (Install)</title>
