@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>keepass-yet-another-favicon-downloader</id>
-    <version>1.2.0.0</version>
+    <version>1.2.1.0</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/keepass-yet-another-favicon-downloader</packageSourceUrl>
     <owners>flcdrg</owners>
     <title>KeePass Plugin Yet Another Favicon Downloader</title>
@@ -32,19 +32,9 @@
     </description>
     <releaseNotes>### Improvements
 
-- Download all entries in a group recursively.
-- Several improvements when downloading favicons (thanks @lukefor).
-- Use title field if URL field is empty (thanks @huseyint).
-
-Please refer to [Settings: Use title field if URL field is empty](https://github.com/navossoc/KeePass-Yet-Another-Favicon-Downloader/wiki/Settings:-Use-title-field-if-URL-field-is-empty) for more details.
-
-### Breaking changes
-
-- No longer compatible with older runtime versions.
-
-**Tested on:**
-* Windows 7 SP 1 with .NET Framework 4.5.
-* Debian 9 with Mono 4.8.0.</releaseNotes>
+- Improves compatibility with third party plugins.
+- Adds mnemonics to menu items.
+- Improves site download compatibility.</releaseNotes>
     <dependencies>
       <dependency id="keepass" version="2.34" />
     </dependencies>
