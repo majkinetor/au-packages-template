@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
 	<metadata>
 		<id>ksp-ckan</id>
-		<version>1.26.0-PRE2</version>
+		<version>1.26.0</version>
 		<title>Comprehensive Kerbal Archive Network</title>
 		<authors>KSP-CKAN Project</authors>
 		<owners>MarcioC</owners>
