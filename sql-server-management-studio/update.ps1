@@ -56,7 +56,6 @@ function Get-Download($url, $version)
             checksum = $hash.Hash
         }
     }
-
     return $r
 }
 
@@ -91,22 +90,6 @@ function global:au_GetLatest {
 
                 if($first.Count -and $second.Count)
                 {
-                    # release notes
-                    $response = Invoke-WebRequest -Uri "https://raw.githubusercontent.com/MicrosoftDocs/sql-docs/live/docs/ssms/sql-server-management-studio-changelog-ssms.md"
-                    $content = $response.Content
-
-                    # Extract latest release notes
-                    $content = $content.Substring($content.IndexOf("## SSMS 17"))
-                    $content = $content.Substring(0, $content.IndexOf("## SSMS 17", 1) -1)
-
-                    # bump headings to fit in with Chocolatey levels
-                    $content = $content.Replace("# ", "### ").Trim()
-
-                    $content = $content.Replace("<br>", "")
-
-                    # encode
-                    $content = "`r`n" + [System.Security.SecurityElement]::Escape($content) + "`r`n"
-
                     $Latest = @{
                         Version = $version
                         Release = $release
@@ -114,8 +97,9 @@ function global:au_GetLatest {
                         FullUrl = $first.url
                         UpgradeUrl = $second.url
                         UpgradeChecksum = $second.checksum
-                        ReleaseNotes = $content
                     }
+                    return $Latest
+
                 } else {
                     Write-Warning "first.Count and/or second.Count were zero"
                 }
@@ -129,20 +113,8 @@ function global:au_GetLatest {
     catch {
         Write-Error $_
     }
-    return $Latest
-}
 
-function global:au_AfterUpdate
-{
-    $nuspecFileName = $Latest.PackageName + ".nuspec"
-    $nu = Get-Content $nuspecFileName -Raw -Encoding UTF8
-    $nu = $nu -replace "(?smi)(\<releaseNotes\>).*?(\</releaseNotes\>)", "`${1}$($Latest.ReleaseNotes)`$2"
-
-    $nu = $nu -replace "(?smi)(\<title\>).*?(\</title\>)", "`${1}SQL Server Management Studio $($Latest.Release)`$2"
-
-    $Utf8NoBomEncoding = New-Object System.Text.UTF8Encoding($False)
-    $NuPath = (Resolve-Path $NuspecFileName)
-    [System.IO.File]::WriteAllText($NuPath, $nu, $Utf8NoBomEncoding)
+    return 'ignore'
 }
 
 update -ChecksumFor none -NoCheckChocoVersion

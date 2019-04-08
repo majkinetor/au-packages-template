@@ -24,7 +24,7 @@ a stand-alone web installer, and toast notifications within SSMS when new releas
 
 #### Version Number
 
-This package is versioned using the published build number. The corresponding 'release number' is listed below in the Release Notes section.
+This package is versioned using the published build number. The corresponding 'release number' is included in the package title.
 
 #### Supported SQL Server versions
 
@@ -45,28 +45,7 @@ This release of SSMS supports the following 64-bit platforms when used with the 
 - Windows Server 2008 R2 (64-bit)
 
 \* SSMS 17.X is based on the Visual Studio 2015 Isolated shell, which was released before Windows Server 2016. Microsoft takes app compatibility seriously and ensures that already-shipped applications continue to run on the latest Windows releases. To minimize issues running SSMS on Windows Server 2016, ensure SSMS has all of the latest updates applied. If you experience any issues with SSMS on Windows Server 2016, contact support. The support team determines if the issue is with SSMS, Visual Studio, or with Windows compatibility. The support team then routes the issue to the appropriate team for further investigation.	</description>
-    <releaseNotes>
-#### SSMS 17.9.1 (latest GA release)
-
-![download](../ssdt/media/download.png) [SSMS 17.9.1](https://go.microsoft.com/fwlink/?linkid=2043154&amp;clcid=0x409)
-
-- Release number: 17.9.1
-- Build number: 14.0.17289.0
-- Release date: November 21, 2018
-
-17.9.1 is a small update to 17.9 with the following bug fixes:
-
-- Fixed an issue where users may experience their connection being closed and reopened with each query invocation when using &quot;Active Directory – Universal with MFA Support&quot; authentication with the SQL query editor. Side effects of the connection closing included global temporary tables being dropped unexpectedly, and sometimes a new SPID given to the connection.
-- Fixed a long outstanding issue where restore plan would fail to find a restore plan, or would generate an inefficient restore plan under certain conditions.
-- Fixed an issue in the &quot;Import Data-tier Application&quot; wizard which could result in an error when connected to an Azure SQL database.
-
-
-
-&gt; [!NOTE]
-&gt; Non-English localized releases of SSMS 17.x require the [KB 2862966 security update package](https://support.microsoft.com/kb/2862966) if installing on: Windows 8, Windows 7, Windows Server 2012, and Windows Server 2008 R2.
-
-[Chinese (Simplified)](https://go.microsoft.com/fwlink/?linkid=2043154&amp;clcid=0x804) | [Chinese (Traditional)](https://go.microsoft.com/fwlink/?linkid=2043154&amp;clcid=0x404) | [English (United States)](https://go.microsoft.com/fwlink/?linkid=2043154&amp;clcid=0x409) | [French](https://go.microsoft.com/fwlink/?linkid=2043154&amp;clcid=0x40c) | [German](https://go.microsoft.com/fwlink/?linkid=2043154&amp;clcid=0x407) | [Italian](https://go.microsoft.com/fwlink/?linkid=2043154&amp;clcid=0x410) | [Japanese](https://go.microsoft.com/fwlink/?linkid=2043154&amp;clcid=0x411) | [Korean](https://go.microsoft.com/fwlink/?linkid=2043154&amp;clcid=0x412) | [Portuguese (Brazil)](https://go.microsoft.com/fwlink/?linkid=2043154&amp;clcid=0x416) | [Russian](https://go.microsoft.com/fwlink/?linkid=2043154&amp;clcid=0x419) | [Spanish](https://go.microsoft.com/fwlink/?linkid=2043154&amp;clcid=0x40a)
-</releaseNotes>
+    <releaseNotes>https://docs.microsoft.com/en-au/sql/ssms/release-notes-ssms?view=sql-server-2017</releaseNotes>
     <dependencies>
       <dependency id="KB2919355" version="1.0.20160915" />
       <dependency id="dotnet4.6.1" version="4.6.01055.20170308" />
