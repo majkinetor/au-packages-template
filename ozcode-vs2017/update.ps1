@@ -1,7 +1,7 @@
 import-module au
 
-$releases = 'http://www.oz-code.com/download/eap_2017'
-
+$releases = 'https://shop.oz-code.com/download/v4'
+# http://downloads.oz-code.com/files/OzCode_4.0.0.557.vsix
 function global:au_SearchReplace {
     @{
         'tools\chocolateyInstall.ps1' = @{
@@ -21,19 +21,18 @@ function global:au_GetLatest {
     {
         $url = $response.GetResponseHeader("Location")
 
-        # http://downloads.oz-code.com/files/OzCode_3.0.0.3597_FOR_VS2017.vsix
-        $url -match ".*(?<filename>OzCode_(?<version>\d+\.\d+\.\d+\.\d+)_FOR_VS2017\.vsix)"
+        # http://downloads.oz-code.com/files/OzCode_4.0.0.557.vsix
+        $url -match ".*(?<filename>OzCode_(?<version>\d+\.\d+\.\d+\.\d+)\.vsix)"
 
         $Latest = @{ 
             URL32 = $url
             Version = $Matches.version
             Filename = $Matches.filename
         }
+        return $Latest
     } else {
-        $Latest = @{}
+        return 'ignore'
     }
-
-    return $Latest
 }
 
 update

@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://www.oz-code.com/download/eap'
+$releases = 'https://shop.oz-code.com/download/eap'
 
 function global:au_SearchReplace {
     @{
@@ -29,11 +29,10 @@ function global:au_GetLatest {
             Version = $Matches.version
             Filename = $Matches.filename
         }
+        return $Latest
     } else {
-        $Latest = @{}
+        return 'ignore'
     }
-
-    return $Latest
 }
 
 update
