@@ -117,4 +117,4 @@ function global:au_GetLatest {
     return 'ignore'
 }
 
-update -ChecksumFor none -NoCheckChocoVersion
+update -ChecksumFor none
