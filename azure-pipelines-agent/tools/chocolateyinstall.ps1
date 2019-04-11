@@ -81,6 +81,16 @@ if ($pp['Url']) {
     if ($pp['Work']) {
         $configOpts += @("--work", $pp['Work'])
     }
+
+    # Agent name
+    if ($pp['AgentName']) {
+        $configOpts += @("--agent", $pp['AgentName'])
+    }
+
+    # Replace existing agent
+    if ($pp['Replace']) {
+        $configOpts += @("--replace")
+    }
 }
 
 $packageArgs = @{

@@ -43,6 +43,8 @@ The following package parameters can be set:
  * `/LogonAccount:` - Account that agent should run as (either Windows Service or auto logon) - Specify the Windows user name in the format: domain\userName or userName@domain.com. To log in as Local System, use "NT AUTHORITY\SYSTEM". Defaults to NetworkService if not specified.
  * `/LogonPassword:` - Used with /LogonAccount. Windows logon password
  * `/Work:WorkDirectory` - Work directory where job data is stored. Defaults to _work under the root of the agent directory. The work directory is owned by a given agent and should not share between multiple agents.
+ * `/AgentName:Custom_Name` - Custom agent name (defaults to hostname)
+ * `/Replace` - Replace already registered agent with same name
 
 To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.    
