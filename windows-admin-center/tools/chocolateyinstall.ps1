@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url = 'https://download.microsoft.com/download/1/0/5/1059800B-F375-451C-B37E-758FFC7C8C8B/WindowsAdminCenter1809.51.msi'
-$checksum = 'F549D413F7E8102B01FB4B0C9E2658B86316152C9710473BBB951D3D84F05A17'
+$url = 'https://download.microsoft.com/download/1/0/5/1059800B-F375-451C-B37E-758FFC7C8C8B/WindowsAdminCenter1904.msi'
+$checksum = 'B37B5FE20D9CD693C4E4DCCE436ABEE171354A7ED635A679227931B5EB270407'
 
 $pp = Get-PackageParameters
 
