@@ -19,7 +19,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 
     try {
-        $response = Invoke-RestMethod -Uri "https://www.tracker-software.com/trackerupdate/TrackerData.xml"
+        $response = Invoke-RestMethod -Uri "https://www.tracker-software.com/trackerupdate/TrackerData8.xml"
 
         # Unfortunately, they're including a Byte Order Mark, so we have to trim that off
         $xml = [xml] $response.Substring(3)
