@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>SqlSearch</id>
+        <version>3.3.0.2332</version>
+        <title>SQL Search</title>
+        <authors>Red Gate Software Ltd</authors>
+        <owners>sumo300, flcdrg</owners>
+        <licenseUrl>https://documentation.red-gate.com/display/XX/Licensing</licenseUrl>
+        <projectUrl>http://www.red-gate.com/products/sql-development/sql-search/</projectUrl>
+        <iconUrl>http://www.red-gate.com/assets/INTERIM/assets/products/sql-search/images/sql-search.svg</iconUrl>
+        <docsUrl>https://documentation.red-gate.com/ss3</docsUrl>
+        <bugTrackerUrl>https://github.com/sumo300/chocolatey-sqlsearch/issues</bugTrackerUrl>
+        <projectSourceUrl>https://github.com/flcdrg/au-packages/tree/master/SqlSearch</projectSourceUrl>
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <description>SQL Search is a free add-in for SQL Server Management Studio that lets you quickly search for SQL across your databases.</description>
+        <summary>Find SQL fast in SQL Server Management Studio</summary>
+        <releaseNotes>https://documentation.red-gate.com/ss3/release-notes-and-other-versions</releaseNotes>
+        <language>en-US</language>
+        <tags>SQL search SSMS admin</tags>
+    </metadata>
+    <files>
+        <file src="tools\chocolateyInstall.ps1" target="tools\chocolateyInstall.ps1" />
+    </files>
+</package>

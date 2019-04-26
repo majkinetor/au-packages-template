@@ -1,6 +1,11 @@
 param(
-    [string] $name
+    [string] $name,
+    [string] $alternateName
 )
+
+if (-not ($alternateName)) {
+    $alternateName = $name
+}
 
 import-module au
 
@@ -26,7 +31,7 @@ function global:au_GetLatest {
 
         # Infer what the FTP download should be and grab that to find out the version (and indirectly confirm that the URL is correct)
         # $secondaryDownloadUrl = "ftp://support.red-gate.com/patches/SQLToolbelt/03Jul2017/SQLToolbelt.exe"
-        $secondaryDownloadUrl = "ftp://support.red-gate.com/patches/$name/$($lastModified.ToString("ddMMMyyyy"))/$name.exe"
+        $secondaryDownloadUrl = "ftp://support.red-gate.com/patches/$alternateName/$($lastModified.ToString("ddMMMyyyy"))/$alternateName.exe"
 
         $downloadedFile = [IO.Path]::GetTempFileName()
 
@@ -34,7 +39,8 @@ function global:au_GetLatest {
         $client = new-object System.Net.WebClient
         $client.DownloadFile($secondaryDownloadUrl, $downloadedFile)
 
-        $version = (get-item $downloadedFile).VersionInfo.FileVersion
+        # SqlSearch has strange FileVersion, so use FileVersionRaw as that seems correct
+        $version = (get-item $downloadedFile).VersionInfo.FileVersionRaw
         Write-Verbose "$version"
         $checksum = (Get-FileHash $downloadedFile -Algorithm SHA256).Hash
         Write-Verbose "$checksum"
