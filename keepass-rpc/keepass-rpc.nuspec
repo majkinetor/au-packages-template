@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>keepass-rpc</id>
-    <version>1.8.0</version>
+    <version>1.9.0</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/keepass-rpc</packageSourceUrl>
     <owners>flcdrg</owners>
     <title>KeePass RPC Plugin</title>
@@ -19,7 +19,7 @@
     <tags>keepass keefox keepassrpc plugin</tags>
     <summary>KeePassRPC plugin that needs to be installed inside KeePass in order for KeeFox to be able to connect your browser to your passwords</summary>
     <description>KeePassRPC plugin that needs to be installed inside KeePass in order for KeeFox to be able to connect your browser to your passwords </description>
-    <releaseNotes>https://forum.kee.pm/t/release-notes-keepassrpc-1-8-0/1107</releaseNotes>
+    <releaseNotes>Release notes available at https://forum.kee.pm/t/release-notes-keepassrpc-1-9-0/2345</releaseNotes>
     <dependencies>
       <dependency id="keepass" version="2.0" />
     </dependencies>
