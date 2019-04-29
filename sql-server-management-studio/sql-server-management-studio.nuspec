@@ -3,14 +3,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sql-server-management-studio</id>
-    <version>14.0.17289.1</version>
+    <version>15.0.18118.0</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/sql-server-management-studio</packageSourceUrl>
     <owners>flcdrg</owners>
-    <title>SQL Server Management Studio 17.9.1</title>
+    <title>SQL Server Management Studio 18.0</title>
     <authors>Microsoft</authors>
     <projectUrl>https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-ssms</projectUrl>
     <iconUrl>http://cdn.rawgit.com/flcdrg/au-packages/master/sql-server-management-studio/icons/ssms-icon.png</iconUrl>
-    <copyright>Microsoft 2017</copyright>
+    <copyright>Microsoft 2019</copyright>
     <licenseUrl>https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-license-terms</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <mailingListUrl>https://social.msdn.microsoft.com/forums/en-us/home?forum=sqltools</mailingListUrl>
@@ -19,8 +19,9 @@
     <summary>SQL Server Management Studio (SSMS) is an integrated environment for accessing, configuring, managing, administering, and developing all components of SQL Server</summary>
     <description>
 SQL Server Management Studio (SSMS) is an integrated environment for accessing, configuring, managing, administering, and developing all components of SQL Server. SSMS combines a broad group of 
-graphical tools with a number of rich script editors to provide developers and administrators of all skill levels access to SQL Server.  This release features improved compatibility with previous versions of SQL Server, 
-a stand-alone web installer, and toast notifications within SSMS when new releases become available.
+graphical tools with a number of rich script editors to provide developers and administrators of all skill levels access to SQL Server. 
+
+The SSMS 18.x installation does not upgrade or replace SSMS versions 17.x or earlier. SSMS 18.x installs side by side with previous versions so both versions are available for use.
 
 #### Version Number
 
@@ -28,24 +29,23 @@ This package is versioned using the published build number. The corresponding 'r
 
 #### Supported SQL Server versions
 
-* This version of SSMS works with all [supported versions of SQL Server 2008 - SQL Server 2017](https://support.microsoft.com/lifecycle?C2=1044) and provides the greatest level of support for working with the latest cloud features in Azure SQL Database and Azure SQL Data Warehouse.
-* There is no explicit block for SQL Server 2000 or SQL Server 2005, but some features may not work properly.
-* Additionally, SSMS 17.x can be installed side by side with SSMS 16.x or SQL Server 2014 SSMS and earlier. 
+* This version of SSMS works with all [supported versions of SQL Server 2008 - SQL Server 2019 preview](https://support.microsoft.com/lifecycle?C2=1044) and provides the greatest level of support for working with the latest cloud features in Azure SQL Database and Azure SQL Data Warehouse.
+* Additionally, SSMS 18.x can be installed side by side with SSMS 17.x, SSMS 16.x, or SQL Server 2014 SSMS and earlier.
+* SQL Server Integration Services (SSIS) - SSMS version 17.x or later does not support connecting to the legacy SQL Server Integration Services service. To connect to an earlier version of the legacy Integration Services, use the version of SSMS aligned with the version of SQL Server. For example, use SSMS 16.x to connect to the legacy SQL Server 2016 Integration Services service. SSMS 17.x and SSMS 16.x can be installed side-by-side on the same computer. Since the release of SQL Server 2012, the SSIS Catalog database, SSISDB, is the recommended way to store, manage, run, and monitor Integration Services packages. For details, see [SSIS Catalog](https://docs.microsoft.com/en-us/sql/integration-services/catalog/ssis-catalog?view=sql-server-ver15).
 
 #### Supported Operating systems
 
 This release of SSMS supports the following 64-bit platforms when used with the latest available service pack:
-- Windows 10 (64-bit)
-- Windows 8.1 (64-bit)
-- Windows 8 (64-bit)
-- Windows 7 (SP1) (64-bit)
+- Windows 10 (64-bit) *
 - Windows Server 2016 *
 - Windows Server 2012 R2 (64-bit)
 - Windows Server 2012 (64-bit)
 - Windows Server 2008 R2 (64-bit)
 
-\* SSMS 17.X is based on the Visual Studio 2015 Isolated shell, which was released before Windows Server 2016. Microsoft takes app compatibility seriously and ensures that already-shipped applications continue to run on the latest Windows releases. To minimize issues running SSMS on Windows Server 2016, ensure SSMS has all of the latest updates applied. If you experience any issues with SSMS on Windows Server 2016, contact support. The support team determines if the issue is with SSMS, Visual Studio, or with Windows compatibility. The support team then routes the issue to the appropriate team for further investigation.	</description>
-    <releaseNotes>https://docs.microsoft.com/en-au/sql/ssms/release-notes-ssms?view=sql-server-2017</releaseNotes>
+\* Requires version 1607 (10.0.14939) or later</description>
+    <releaseNotes>https://docs.microsoft.com/en-au/sql/ssms/release-notes-ssms
+    
+If you have a preview versions of SSMS 18.0 installed, uninstall it and reboot before installing SSMS 18.0 GA.</releaseNotes>
     <dependencies>
       <dependency id="KB2919355" version="1.0.20160915" />
       <dependency id="dotnet4.6.1" version="4.6.01055.20170308" />

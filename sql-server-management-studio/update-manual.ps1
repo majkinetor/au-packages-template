@@ -5,8 +5,8 @@ function global:au_SearchReplace {
         'tools\chocolateyInstall.ps1' = @{
             "(^[$]fullUrl\s*=\s*)('.*')"         = "`$1'$($Latest.FullUrl)'"
             "(^[$]fullChecksum\s*=\s*)('.*')"    = "`$1'$($Latest.FullChecksum)'"
-            "(^[$]upgradeUrl\s*=\s*)('.*')"      = "`$1'$($Latest.UpgradeUrl)'"
-            "(^[$]upgradeChecksum\s*=\s*)('.*')" = "`$1'$($Latest.UpgradeChecksum)'"
+#            "(^[$]upgradeUrl\s*=\s*)('.*')"      = "`$1'$($Latest.UpgradeUrl)'"
+#            "(^[$]upgradeChecksum\s*=\s*)('.*')" = "`$1'$($Latest.UpgradeChecksum)'"
             "(^[$]release\s*=\s*)('.*')"         = "`$1'$($Latest.Release)'"
         }
      }
@@ -65,7 +65,7 @@ function global:au_GetLatest {
 
     try {
         # Get latest version from XML
-        $response = Invoke-RestMethod -Uri "https://go.microsoft.com/fwlink/?LinkId=841665"
+        $response = Invoke-RestMethod -Uri "https://go.microsoft.com/fwlink/?linkid=2021100"
         $version = $response.component.version
 
         $response = Invoke-WebRequest -Uri "https://raw.githubusercontent.com/MicrosoftDocs/sql-docs/live/docs/ssms/download-sql-server-management-studio-ssms.md"
@@ -80,23 +80,25 @@ function global:au_GetLatest {
 
             Write-Host "Found version $version, release $release"
 
-            # Focus on 17.x for now.
-            $downloadLinks = $content | Select-String -Pattern "Download SQL Server Management Studio 17.*\]\((https.*\d+)\)" -AllMatches
+            # Focus on 18.x for now.
+            $downloadLinks = $content | Select-String -Pattern "Download SQL Server Management Studio 18.*\]\((https.*\d+)\)" -AllMatches
 
-            if ($downloadLinks.Matches.Count -eq 2)
+            if ($downloadLinks.Matches.Count -eq 1)
+            #if ($downloadLinks.Matches.Count -eq 2)
             {
                 $first = Get-Download $downloadLinks.Matches[0].Groups[1].Value $version
-                $second = Get-Download $downloadLinks.Matches[1].Groups[1].Value $version
+                #$second = Get-Download $downloadLinks.Matches[1].Groups[1].Value $version
 
-                if($first.Count -and $second.Count)
+                #if($first.Count -and $second.Count)
+                if($first.Count)
                 {
                     $Latest = @{
                         Version = $version
                         Release = $release
                         FullChecksum = $first.checksum
                         FullUrl = $first.url
-                        UpgradeUrl = $second.url
-                        UpgradeChecksum = $second.checksum
+                        # UpgradeUrl = $second.url
+                        # UpgradeChecksum = $second.checksum
                     }
                     return $Latest
 
@@ -115,6 +117,19 @@ function global:au_GetLatest {
     }
 
     return 'ignore'
+}
+
+function global:au_AfterUpdate
+{
+    # Include version in title
+    $nuspecFileName = $Latest.PackageName + ".nuspec"
+    $nu = Get-Content $nuspecFileName -Raw -Encoding UTF8
+
+    $nu = $nu -replace "(?smi)(\<title\>).*?(\</title\>)", "`${1}SQL Server Management Studio $($Latest.Release)`$2"
+
+    $Utf8NoBomEncoding = New-Object System.Text.UTF8Encoding($False)
+    $NuPath = (Resolve-Path $NuspecFileName)
+    [System.IO.File]::WriteAllText($NuPath, $nu, $Utf8NoBomEncoding)
 }
 
 update -ChecksumFor none
