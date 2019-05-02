@@ -25,6 +25,7 @@ function global:au_GetLatest {
 
     try {
         # Get last modified from web download
+        Write-Verbose "Get last modified from https://download.red-gate.com/$name.exe"
         $response = Invoke-WebRequest "https://download.red-gate.com/$name.exe" -Method Head
         $lastModifiedHeader = $response.Headers.'Last-Modified'
         $lastModified = [DateTimeOffset]::Parse($lastModifiedHeader, [Globalization.CultureInfo]::InvariantCulture)
@@ -36,27 +37,34 @@ function global:au_GetLatest {
         $downloadedFile = [IO.Path]::GetTempFileName()
 
         Write-Verbose "Downloading $secondaryDownloadUrl"
-        $client = new-object System.Net.WebClient
-        $client.DownloadFile($secondaryDownloadUrl, $downloadedFile)
+        try {
+            
+            $client = new-object System.Net.WebClient
+            $client.DownloadFile($secondaryDownloadUrl, $downloadedFile)
 
-        # SqlSearch has strange FileVersion, so use FileVersionRaw as that seems correct
-        $version = (get-item $downloadedFile).VersionInfo.FileVersionRaw
-        Write-Verbose "$version"
-        $checksum = (Get-FileHash $downloadedFile -Algorithm SHA256).Hash
-        Write-Verbose "$checksum"
+            # SqlSearch has strange FileVersion, so use FileVersionRaw as that seems correct
+            $version = (get-item $downloadedFile).VersionInfo.FileVersionRaw
+            Write-Verbose "$version"
+            $checksum = (Get-FileHash $downloadedFile -Algorithm SHA256).Hash
+            Write-Verbose "$checksum"
 
-        Remove-Item $downloadedFile
+            Remove-Item $downloadedFile
 
-        $Latest = @{ 
-            URL32 = $secondaryDownloadUrl
-            Version = $version
-            Checksum32 = $checksum
-            LastModified = $lastModified
+            $Latest = @{ 
+                URL32 = $secondaryDownloadUrl
+                Version = $version
+                Checksum32 = $checksum
+                LastModified = $lastModified
+            }
+        }
+        catch {
+            Write-Warning "Could not find file $secondaryDownloadUrl"
+            $Latest = 'ignore'
         }
     } catch {
         Write-Error $_
 
-        $Latest = @{}
+        $Latest = 'ignore'
     }
      
     return $Latest
