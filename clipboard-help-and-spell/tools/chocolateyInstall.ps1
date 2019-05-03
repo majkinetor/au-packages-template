@@ -8,7 +8,7 @@ $packageArgs = @{
 
   softwareName  = 'Clipboard Help+Spell*'
 
-  checksum      = '7e4ea4dbb31f05e1397672d0914b663a2d69ffe5d8e210a3f4128804baf0be69'
+  checksum      = 'f221fd3187ba1ee6f7e7cd9c9c868df18be96870d775849969d53a92f7c0a002'
   checksumType  = 'sha256'
 
   silentArgs    = "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-"
