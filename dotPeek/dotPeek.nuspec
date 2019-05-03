@@ -5,7 +5,7 @@
     <id>dotPeek</id>
     <owners>JetBrains, flcdrg</owners>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/dotPeek</packageSourceUrl>
-    <version>2019.1-EAP7</version>
+    <version>2019.1.1</version>
     <title>JetBrains dotPeek</title>
     <authors>JetBrains</authors>
     <projectUrl>https://www.jetbrains.com/decompiler</projectUrl>
@@ -54,7 +54,7 @@ dotPeek indexes all assemblies in your assembly list, as well as all assemblies 
     </description>
     <releaseNotes>https://www.jetbrains.com/decompiler/whatsnew/</releaseNotes>
     <dependencies>
-      <dependency id="resharper-platform" version="[191.0.20190418.202051-eap07]" />
+      <dependency id="resharper-platform" version="[191.0.20190501.122458]" />
       <dependency id="dotnet4.6.1" version="4.6.01055.20170308" />
     </dependencies>
   </metadata>

@@ -5,7 +5,7 @@
     <id>dotCover</id>
     <owners>JetBrains, flcdrg</owners>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/dotCover</packageSourceUrl>
-    <version>2019.1</version>
+    <version>2019.1.1</version>
     <title>JetBrains dotCover</title>
     <authors>JetBrains</authors>
     <projectUrl>http://www.jetbrains.com/dotcover/</projectUrl>
@@ -47,7 +47,7 @@ The continuous testing mode can be switched on for any unit test session: this w
 
     <releaseNotes>https://www.jetbrains.com/dotcover/whatsnew/</releaseNotes>
     <dependencies>
-      <dependency id="resharper-platform" version="[191.0.20190423.74250]" />
+      <dependency id="resharper-platform" version="[191.0.20190501.122458]" />
       <dependency id="dotnet4.6.1" version="4.6.01055.20170308" />
     </dependencies>
   </metadata>
