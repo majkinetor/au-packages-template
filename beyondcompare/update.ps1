@@ -10,6 +10,7 @@ function global:au_SearchReplace {
             "(^\`$checksumde\s*=\s*)('.*')" = "`$1'$($Latest.Checksum_DE)'"
             "(^\`$checksumfr\s*=\s*)('.*')" = "`$1'$($Latest.Checksum_FR)'"
             "(^\`$checksumjp\s*=\s*)('.*')" = "`$1'$($Latest.Checksum_JP)'"
+            "(^\`$checksumzh\s*=\s*)('.*')" = "`$1'$($Latest.Checksum_ZH)'"
         }
     }
 }
@@ -35,12 +36,13 @@ function global:au_GetLatest {
     $url_de = "https://www.scootersoftware.com/BCompare-de-$($version).exe"
     $url_fr = "https://www.scootersoftware.com/BCompare-fr-$($version).exe"
     $url_jp = "https://www.scootersoftware.com/BCompare-jp-$($version).exe"
-
+    $url_zh = "https://www.scootersoftware.com/BCompare-zh-$($version).exe"
     $Latest = @{ 
         URL_EN = $url_en
         URL_DE = $url_de
         URL_FR = $url_fr
         URL_JP = $url_jp
+        URL_ZH = $url_zh
         Version = $version 
     }
 
@@ -52,6 +54,7 @@ function global:au_BeforeUpdate() {
     $Latest.Checksum_DE = Get-RemoteChecksum $Latest.URL_DE
     $Latest.Checksum_FR = Get-RemoteChecksum $Latest.URL_FR
     $Latest.Checksum_JP = Get-RemoteChecksum $Latest.URL_JP
+    $Latest.Checksum_ZH = Get-RemoteChecksum $Latest.URL_ZH
 }
 
 update -ChecksumFor none

@@ -14,7 +14,7 @@ if ($pp["UICulture"] -ne $null) {
 $german = @(3079,1031,5127,4103,2055)
 $french = @(2060,11276,3084,9228,12300,1036,5132,13324,6156,14348,10252,4108,7180)
 $japanese = @(17, 1041)
-
+$chinese = @(2052)
 $version = '4.2.9.23626'
 
 $packageArgs = @{
@@ -30,6 +30,7 @@ $packageArgs = @{
 $checksumde = 'bedf5f567dc52f338a95598fd41a5ef1de5130180b8ec936b27a788bedbec3df'
 $checksumfr = '42e26935e97b6cddc5e2ca4e44a645a480dee016a9a339f1e9711a9e3a2f9327'
 $checksumjp = '6ce1bba2e03edc0dcd7f91825fb3b8c361addbff4aacf43d31728a71182c0454'
+$checksumzh = '7738D1CCF872202D48F9DA53E6A0A0C62795DF37F19008796BB4A9E1A0976928'
 $checksum = '366e78cb7ffd536fbc4a42dbecb094a41a008f30439c95e760710f0ec7b1f300'
 
 if ($german -contains $LCID)
@@ -46,6 +47,10 @@ elseif ($japanese -contains $LCID)
 {
     $packageArgs.url = "$urlBase/BCompare-jp-$version.exe"
     $packageArgs.checksum = $checksumjp
+}
+elseif ($chinese -contains $LCID) {
+    $packageArgs.url = "$urlBase/BCompare-zh-$version.exe"
+    $packageArgs.checksum = $checksumzh
 }
 else
 {
