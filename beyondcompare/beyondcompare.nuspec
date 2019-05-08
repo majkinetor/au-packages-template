@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>beyondcompare</id>
-    <version>4.2.9.23626</version>
+    <version>4.2.9.20190508</version>
     <title>Beyond Compare</title>
     <authors>Scooter Software</authors>
     <owners>Miguel Madero, Brendan Forster, David Gardiner</owners>
@@ -12,31 +12,29 @@
     <docsUrl>http://www.scootersoftware.com/v4help/</docsUrl>
     <mailingListUrl>http://www.scootersoftware.com/vbulletin/</mailingListUrl>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/beyondcompare</packageSourceUrl>
-    <copyright>© 1996-2017 Scooter Software Inc</copyright>
+    <copyright>© 1996-2019 Scooter Software Inc</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>File comparison tool</summary>
-    <description><![CDATA[This is the code I use to publish the BeyondCompare package to Chocolatey. 
+    <description>Compare files and folders using simple, powerful commands that focus on the differences you're interested in and ignore those you're not.  Merge changes, synchronize files, and generate reports. 
 
-It's actually really easy. 
+Directly access FTP sites, media devices, WebDAV resources, svn repositories and cloud storage.
 
- 1. Follow the instructions on [chocolatey.org](http://chocolatey.org/) to setup Chocolatey
- 2. Clone this repository and navigate to the folder in Powershell
- 3. `Build.ps1` to create the package
- 4. `cinst beyondcompare -Source "full-directory-path"` to install it locally
+Beyond Compare includes built-in comparison viewers for a variety of data types.  In addition to text, compare tables, images, binary files, registry hives, and much more.
 
-And you're done!
+### Package Specific
 
-## BeyondCompare has been updated! Help!
+The install script by default will detect which localized version of Beyond Compare to install. Use the package parameters to alter this behavior.
 
-When a new release of BeyondCompare is out in the wild, updating this package is easy:
+#### Package Parameters
+The following package parameters can be set:
 
- 1. Fork this repository to your local environment
- 2. Run the `.\Update-Version.ps1` to update the package artifacts
- 3. Commit the changes to a branch and push it to your fork
- 3. Submit a pull request
+ * `/UICulture` - Call `Get-UICulture` (instead of `Get-Culture`) to detect which localised version to install
+ * `/LCID:nnn` - Use this specific LCID (instead of trying to automatically detect it). Check `chocolateyInstall.ps1` for valid LCID values.
 
-After I merge the pull request, I'll publish a new release to Chocolatey so they can review it.
-]]></description>
+To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+ 
+</description>
     <tags>compare beyondcompare beyond file diff difference trial admin</tags>
     <releaseNotes>https://www.scootersoftware.com/download.php?zz=v4changelog</releaseNotes>
     <dependencies>

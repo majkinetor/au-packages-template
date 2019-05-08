@@ -4,7 +4,9 @@ $urlBase = "https://www.scootersoftware.com"
 
 $pp = Get-PackageParameters
 
-if ($pp["UICulture"] -ne $null) {
+if ($pp["LCID"]) {
+    $LCID = $pp["LCID"]
+} elseif ($pp["UICulture"]) {
     $LCID = (Get-UICulture).LCID
     Write-Debug "Calling Get-UICulture (instead of Get-Culture)"
 } else {
@@ -30,7 +32,7 @@ $packageArgs = @{
 $checksumde = 'bedf5f567dc52f338a95598fd41a5ef1de5130180b8ec936b27a788bedbec3df'
 $checksumfr = '42e26935e97b6cddc5e2ca4e44a645a480dee016a9a339f1e9711a9e3a2f9327'
 $checksumjp = '6ce1bba2e03edc0dcd7f91825fb3b8c361addbff4aacf43d31728a71182c0454'
-$checksumzh = '7738D1CCF872202D48F9DA53E6A0A0C62795DF37F19008796BB4A9E1A0976928'
+$checksumzh = '7738d1ccf872202d48f9da53e6a0a0c62795df37f19008796bb4a9e1a0976928'
 $checksum = '366e78cb7ffd536fbc4a42dbecb094a41a008f30439c95e760710f0ec7b1f300'
 
 if ($german -contains $LCID)
