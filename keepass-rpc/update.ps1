@@ -32,10 +32,6 @@ function global:au_GetLatest {
     return $Latest
 }
 
-function global:au_BeforeUpdate() {
-    $Latest.Checksum32 = Get-RemoteChecksum $Latest.Url32
- }
-
 function global:au_AfterUpdate
 { 
     $nuspecFileName = $Latest.PackageName + ".nuspec"
@@ -47,4 +43,4 @@ function global:au_AfterUpdate
     [System.IO.File]::WriteAllText($NuPath, $nu, $Utf8NoBomEncoding)
 }
 
-update -ChecksumFor none
+update
