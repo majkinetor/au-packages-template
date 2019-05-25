@@ -18,31 +18,14 @@ Professional edition of TeamCity is free forever and provides access to all prod
 
 ### Package Specific
 
-#### Package Parameters
-
-The following package parameters can be set:
-
- * `/unzipLocation:` - Root directory to install TeamCity service (defaults to `c:\`, which results in `c:\TeamCity` being used. A TeamCity folder is always created, so the actual install path is `C:\TeamCity` for the default case or *path*\TeamCity with a custom option)
- * `/RunAsSystem` - Run as SYSTEM user (defaults to true. If false, then username/password must be set)
- * `/ServiceName:` - Name of TeamCity Windows service (defaults to 'TeamCity')
- * `/Domain:` - Windows service domain
- * `/Username:` - Windows service username
- * `/Password:` - Windows service password
-
-To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
-To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.    
-
-Example:
-`choco install teamcity --params "'/username=*user* /password=*password*'"`
+This package now only downloads TeamCity. You can use one of the related packages that installs a specific release of OpenJDK to 
+install and start TeamCity as a service.
     </description>
 
     <summary>This package installs the continuous integration server without a build agent. Windows 32 and 64 bit. Default install location: `C:\TeamCity.`</summary>
     <releaseNotes>https://confluence.jetbrains.com/display/TW/TeamCity+2018.2.4+(build+61678)+Release+Notes</releaseNotes>
     <copyright>JetBrains s.r.o.</copyright>
     <tags>Testing Build Coding Compilation Continuous Integration CI jetbrains admin</tags>
-    <dependencies>
-        <dependency id="server-jre8" version="8.0.92" />
-    </dependencies>
   </metadata>
     <files>
       <!-- this section controls what actually gets packaged into the Chocolatey package -->

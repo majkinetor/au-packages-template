@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>teamcity-openjdk8</id>
+    <version>2019.1</version>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/TeamCity-OpenJDK8</packageSourceUrl>
+    <owners>flcdrg</owners>
+    <title>TeamCity Continuous Integration Server (OpenJDK8)</title>
+    <authors>JetBrains</authors>
+    <!-- projectUrl is required for the community feed -->
+    <projectUrl>https://_Software_Location_REMOVE_OR_FILL_OUT_</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/JetBrains/Chocolatey/master/TeamCityAddin/logo.png</iconUrl>
+    <copyright>JetBrains s.r.o.</copyright>
+    <licenseUrl>https://www.jetbrains.com/teamcity/buy/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://www.jetbrains.com/teamcity/documentation/</docsUrl>
+    <!--<mailingListUrl></mailingListUrl>-->
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <tags>Testing Build Coding Compilation Continuous Integration CI jetbrains admin OpenJDK Java</tags>
+    <summary>This package installs the continuous integration server without a build agent. Windows 32 and 64 bit. Default install location: `C:\TeamCity.`</summary>
+    <description>Powerful Continuous Integration out of the box.
+
+Professional edition of TeamCity is free forever and provides access to all product features, support via the forum and issue tracker, 100 build configurations, and 3 build agents. It is a perfect fit for small teams and individual developers.
+
+### Package Specific
+
+This package installs TeamCity along with the OpenJDK Java implementation
+
+#### Package Parameters
+
+The following package parameters can be set:
+
+ * `/unzipLocation:` - Root directory to install TeamCity service (defaults to `c:\`, which results in `c:\TeamCity` being used. A TeamCity folder is always created, so the actual install path is `C:\TeamCity` for the default case or *path*\TeamCity with a custom option)
+ * `/RunAsSystem` - Run as SYSTEM user (defaults to true. If false, then username/password must be set)
+ * `/ServiceName:` - Name of TeamCity Windows service (defaults to 'TeamCity')
+ * `/Domain:` - Windows service domain
+ * `/Username:` - Windows service username
+ * `/Password:` - Windows service password
+
+To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.    
+
+Example:
+`choco install teamcity --params "'/username=*user* /password=*password*'"`
+    </description>
+    <releaseNotes>https://confluence.jetbrains.com/display/TW/TeamCity+2018.2.4+(build+61678)+Release+Notes</releaseNotes>
+    <dependencies>
+      <dependency id="AdoptOpenJDK8 " version="8.212.1" />
+      <dependency id="teamcity" version="2019.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
