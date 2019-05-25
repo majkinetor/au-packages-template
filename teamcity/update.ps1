@@ -43,4 +43,5 @@ function global:au_GetLatest {
     $latest
 }
 
-update -ChecksumFor none
+# Disabled until we update this for the new package structure
+# update -ChecksumFor none

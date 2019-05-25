@@ -2,7 +2,7 @@
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $filename = "TeamCity-$($env:ChocolateyPackageVersion).tar.gz"
-$checksum = 'c2a34049012d6a7846f0d384c45fed72e46e00eb20c1228aa2a258b8b3432390'
+$checksum = '5d5ddc03591fa7a1c8ce378efd3491adca5464af6fd32a14f0967f14f7a221c1'
 
 $url = "https://download.jetbrains.com/teamcity/TeamCity-$($env:ChocolateyPackageVersion).tar.gz"
 $packagePath = $(Split-Path -parent $toolsDir)

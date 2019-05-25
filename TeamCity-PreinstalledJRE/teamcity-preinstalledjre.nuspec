@@ -2,11 +2,11 @@
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>teamcity-openjdk8</id>
+    <id>teamcity-preinstalledjre</id>
     <version>2019.1</version>
-    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/TeamCity-OpenJDK8</packageSourceUrl>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/TeamCity-PreinstalledJRE</packageSourceUrl>
     <owners>flcdrg</owners>
-    <title>TeamCity Continuous Integration Server (OpenJDK8)</title>
+    <title>TeamCity Continuous Integration Server (Existing JRE)</title>
     <authors>JetBrains</authors>
     <projectUrl>https://www.jetbrains.com/teamcity/</projectUrl>
     <iconUrl>https://cdn.rawgit.com/JetBrains/Chocolatey/master/TeamCityAddin/logo.png</iconUrl>
@@ -16,7 +16,7 @@
     <docsUrl>https://www.jetbrains.com/teamcity/documentation/</docsUrl>
     <mailingListUrl>https://teamcity-support.jetbrains.com/hc/en-us/community/topics</mailingListUrl>
     <bugTrackerUrl>https://youtrack.jetbrains.com/issues/TW</bugTrackerUrl>
-    <tags>Testing Build Coding Compilation Continuous Integration CI jetbrains admin OpenJDK Java</tags>
+    <tags>Testing Build Coding Compilation Continuous Integration CI jetbrains admin</tags>
     <summary>This package installs the continuous integration server without a build agent. Windows 32 and 64 bit. Default install location: `C:\TeamCity.`</summary>
     <description>Powerful Continuous Integration out of the box.
 
@@ -24,7 +24,7 @@ Professional edition of TeamCity is free forever and provides access to all prod
 
 ### Package Specific
 
-This package installs TeamCity together with Java OpenJDK 8
+This package installs TeamCity, relying on a pre-existing Java JRE installation.
 
 #### Package Parameters
 
@@ -45,7 +45,6 @@ Example:
     </description>
     <releaseNotes>https://confluence.jetbrains.com/display/TW/TeamCity+2019.1+Release+Notes</releaseNotes>
     <dependencies>
-      <dependency id="AdoptOpenJDK8 " version="8.212.1" />
       <dependency id="teamcity" version="[2019.1]" />
     </dependencies>
   </metadata>
