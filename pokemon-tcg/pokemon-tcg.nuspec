@@ -15,7 +15,7 @@
 		<releaseNotes>http://forums.pokemontcg.com/forum/108-patch-notes-known-issues/</releaseNotes>
 		<copyright>© 2019 Pokémon. TM, ® Nintendo.</copyright>
 		<tags>pokemon trading card game online</tags>
-		<mailingListUrl>http://forums.pokemontcg.com/forum/</mailingListUrl>
+		<mailingListUrl>http://forums.pokemontcg.com/</mailingListUrl>
 		<packageSourceUrl>https://github.com/CruzMarcio/au-packages/tree/master/pokemon-tcg</packageSourceUrl>
 	</metadata>
 	<files>
