@@ -6,7 +6,7 @@
     <version>3.0.20171219.105559</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/dotMemory-Unit</packageSourceUrl>
     <owners>flcdrg</owners>
-    <title>dotMemory Unit Standalone Launcher</title>
+    <title>dotMemory Unit Standalone Launcher (Portable)</title>
     <authors>JetBrains</authors>
     <projectUrl>https://www.jetbrains.com/dotmemory/unit/</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/jetbrains/chocolatey/master/dotMemory/logo.png</iconUrl>
