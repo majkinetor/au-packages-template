@@ -9,7 +9,7 @@
     <title>OzCode Debugging extension for Visual Studio 2017</title>
     <authors>CodeValue LTD</authors>
     <projectUrl>https://www.oz-code.com/</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/flcdrg/au-packages/master/ozcode/icons/ozcode.png</iconUrl>
+    <iconUrl>http://raw.githubusercontent.com/flcdrg/au-packages/master/ozcode/icons/ozcode.png</iconUrl>
     <copyright>2017 CodeValue LTD</copyright>
     <licenseUrl>http://o.oz-code.com/Media/Default/FaqPage/EULA.txt</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>

@@ -9,7 +9,7 @@
     <title>VSTS CLI</title>
     <authors>Microsoft Corporation</authors>
     <projectUrl>https://docs.microsoft.com/en-us/cli/vsts/overview?view=vsts-cli-latest</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/flcdrg/au-packages/master/vsts-cli/icons/VstsCli.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/flcdrg/au-packages/master/vsts-cli/icons/VstsCli.png</iconUrl>
     <copyright>2017, Microsoft Corporation</copyright>
     <licenseUrl>https://aka.ms/vsts-cli-eula</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>

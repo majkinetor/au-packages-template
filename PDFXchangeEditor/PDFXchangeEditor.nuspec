@@ -9,7 +9,7 @@
     <title>PDF-XChange Editor</title>
     <authors>Tracker Software</authors>
     <projectUrl>https://www.tracker-software.com/product/pdf-xchange-editor</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/flcdrg/au-packages/master/PDFXchangeEditor/icons/pdfxchangeeditor.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/flcdrg/au-packages/master/PDFXchangeEditor/icons/pdfxchangeeditor.png</iconUrl>
     <copyright>1997-2017 Tracker Software Products</copyright>
     <licenseUrl>https://www.tracker-software.com/licensing</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>

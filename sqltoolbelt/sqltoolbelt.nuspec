@@ -9,7 +9,7 @@
     <title>SQL Toolbelt</title>
     <authors>Red Gate Software Ltd</authors>
     <projectUrl>http://www.red-gate.com/products/sql-development/sql-toolbelt/</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/flcdrg/au-packages/master/sqltoolbelt/icons/redgate.png</iconUrl>
+    <iconUrl>http://raw.githubusercontent.com/flcdrg/au-packages/master/sqltoolbelt/icons/redgate.png</iconUrl>
     <copyright>2017 Red Gate Software Ltd</copyright>
     <licenseUrl>http://www.red-gate.com/assets/purchase/assets/license.pdf</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>

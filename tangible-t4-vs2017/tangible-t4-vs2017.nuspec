@@ -9,7 +9,7 @@
     <title>tangible T4 Editor plus modeling tools for VS 2017</title>
     <authors>tangible engineering GmbH</authors>
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=tangibleengineeringGmbH.tangibleT4Editor240plusmodelingtoolsforVS2017</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/flcdrg/au-packages/master/tangible-t4-vs2017/icons/tangible-t4-vs2017.png</iconUrl>
+    <iconUrl>http://raw.githubusercontent.com/flcdrg/au-packages/master/tangible-t4-vs2017/icons/tangible-t4-vs2017.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>2017 tangible engineering GmbH</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

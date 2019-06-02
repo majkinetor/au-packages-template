@@ -14,7 +14,7 @@
     <title>Ubiquiti UniFI Controller</title>
     <authors>Ubiquiti Networks Inc</authors>
     <projectUrl>https://www.ubnt.com/download/unifi</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/flcdrg/chocolatey-ubiquiti/master/icons/ubiquiti.png</iconUrl>
+    <iconUrl>http://raw.githubusercontent.com/flcdrg/chocolatey-ubiquiti/master/icons/ubiquiti.png</iconUrl>
     <copyright>2017 Ubiquiti Networks, Inc</copyright>
     <licenseUrl>https://www.ubnt.com/eula/</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>

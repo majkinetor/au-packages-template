@@ -9,7 +9,7 @@
     <title>Lenovo System Update</title>
     <authors>Lenovo</authors>
     <projectUrl>http://support.lenovo.com/au/en/downloads/ds012808</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/flcdrg/chocolatey-lenovo-thinkvantage-system-update/master/icons/tvsu.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/flcdrg/chocolatey-lenovo-thinkvantage-system-update/master/icons/tvsu.png</iconUrl>
     <copyright>(C) Copyright Lenovo 2018. All rights reserved</copyright>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <licenseUrl>https://support.lenovo.com/au/en/solutions/ht100141</licenseUrl>

@@ -9,7 +9,7 @@
     <title>Dell Command | Update (UWP)</title>
     <authors>Dell Inc</authors>
     <projectUrl>http://www.dell.com/support/article/us/en/19/HOW10760/how-to-use-dell-command---update-to-update-all-drivers-bios-and-firmware-for-your-system?lang=EN</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/flcdrg/au-packages/master/dellcommandupdate/icons/dellcommandupdate.png</iconUrl>
+    <iconUrl>http://raw.githubusercontent.com/flcdrg/au-packages/master/dellcommandupdate/icons/dellcommandupdate.png</iconUrl>
     <copyright>Copyright © 2018 Dell Inc. All rights reserved</copyright>
     <licenseUrl>http://www.dell.com/learn/us/en/solutions/software-license-agreements?s=corp</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>

@@ -9,7 +9,7 @@
     <title>KeePass Plugin Yet Another Favicon Downloader</title>
     <authors>Rafael Cossovan de França</authors>
     <projectUrl>https://github.com/navossoc/KeePass-Yet-Another-Favicon-Downloader</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/dtgm/chocolatey-packages/master/icons/keepass.png</iconUrl>
+    <iconUrl>http://raw.githubusercontent.com/dtgm/chocolatey-packages/master/icons/keepass.png</iconUrl>
     <copyright>2017 Rafael Cossovan de França</copyright>
     <licenseUrl>https://raw.githubusercontent.com/navossoc/KeePass-Yet-Another-Favicon-Downloader/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

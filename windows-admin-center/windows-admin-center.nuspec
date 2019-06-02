@@ -9,7 +9,7 @@
     <title>Windows Admin Center (1904.1)</title>
     <authors>Microsoft Corporation</authors>
     <projectUrl>https://docs.microsoft.com/en-us/windows-server/manage/windows-admin-center/overview</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/flcdrg/au-packages/master/windows-admin-center/icons/windows-admin-center.png</iconUrl>
+    <iconUrl>http://raw.githubusercontent.com/flcdrg/au-packages/master/windows-admin-center/icons/windows-admin-center.png</iconUrl>
     <copyright>2018 Microsoft Corporation</copyright>
     <docsUrl>https://docs.microsoft.com/en-us/windows-server/manage/windows-admin-center/understand/windows-admin-center</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->

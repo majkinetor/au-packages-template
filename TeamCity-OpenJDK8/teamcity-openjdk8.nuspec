@@ -9,7 +9,7 @@
     <title>TeamCity Continuous Integration Server (OpenJDK8)</title>
     <authors>JetBrains</authors>
     <projectUrl>https://www.jetbrains.com/teamcity/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/JetBrains/Chocolatey/master/TeamCityAddin/logo.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/JetBrains/Chocolatey/master/TeamCityAddin/logo.png</iconUrl>
     <copyright>JetBrains s.r.o.</copyright>
     <licenseUrl>https://www.jetbrains.com/teamcity/buy/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

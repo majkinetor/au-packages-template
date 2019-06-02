@@ -8,7 +8,7 @@
     <title>BgInfo</title>
     <authors>Bryce Cogswell</authors>
     <projectUrl>https://docs.microsoft.com/en-au/sysinternals/downloads/bginfo</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/flcdrg/au-packages/master/bginfo/icons/bginfo.png</iconUrl>
+    <iconUrl>http://raw.githubusercontent.com/flcdrg/au-packages/master/bginfo/icons/bginfo.png</iconUrl>
     <copyright>© 2000-2007 Bryce Cogswell</copyright>
     <licenseUrl>https://docs.microsoft.com/en-au/sysinternals/license-terms</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

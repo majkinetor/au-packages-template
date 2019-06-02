@@ -9,7 +9,7 @@
     <title>KeePass RPC Plugin</title>
     <authors>luckyrat</authors>
     <projectUrl>https://github.com/kee-org/keepassrpc</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/dtgm/chocolatey-packages/master/icons/keepass.png</iconUrl>
+    <iconUrl>http://raw.githubusercontent.com/dtgm/chocolatey-packages/master/icons/keepass.png</iconUrl>
     <copyright>2017 Chris Tomlinson</copyright>
     <licenseUrl>https://raw.githubusercontent.com/kee-org/keepassrpc/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

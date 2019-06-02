@@ -12,7 +12,7 @@
     <docsUrl>https://www.jetbrains.com/teamcity/documentation/</docsUrl>
     <mailingListUrl>https://teamcity-support.jetbrains.com/hc/en-us/community/topics</mailingListUrl>
     <bugTrackerUrl>https://youtrack.jetbrains.com/issues/TW</bugTrackerUrl>
-    <iconUrl>https://cdn.rawgit.com/JetBrains/Chocolatey/master/TeamCityAddin/logo.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/JetBrains/Chocolatey/master/TeamCityAddin/logo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <copyright>JetBrains s.r.o.</copyright>
     <summary>This package installs the continuous integration server without a build agent. Windows 32 and 64 bit. Default install location: `C:\TeamCity.`</summary>

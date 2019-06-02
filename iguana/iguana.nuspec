@@ -9,7 +9,7 @@
     <title>Interfaceware Iguana</title>
     <authors>iNTERFACEWARE Inc.</authors>
     <projectUrl>https://www.interfaceware.com/iguana.html</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/flcdrg/chocolatey-interfaceware/master/icons/iguana.png</iconUrl>
+    <iconUrl>http://raw.githubusercontent.com/flcdrg/chocolatey-interfaceware/master/icons/iguana.png</iconUrl>
     <copyright>2017 iNTERFACEWARE Inc.</copyright>
     <licenseUrl>https://www.interfaceware.com/termsandconditions.html</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>

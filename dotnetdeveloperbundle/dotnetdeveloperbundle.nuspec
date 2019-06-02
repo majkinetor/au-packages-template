@@ -9,7 +9,7 @@
     <title>.NET Developer Bundle</title>
     <authors>Red Gate Software Ltd</authors>
     <projectUrl>http://www.red-gate.com/products/dotnet-development/dotnet-developer-bundle/</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/flcdrg/au-packages/master/dotnetdeveloperbundle/icons/dotnet.png</iconUrl>
+    <iconUrl>http://raw.githubusercontent.com/flcdrg/au-packages/master/dotnetdeveloperbundle/icons/dotnet.png</iconUrl>
     <copyright>2017 Red Gate Software Ltd</copyright>
     <licenseUrl>http://www.red-gate.com/assets/purchase/assets/license.pdf</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>

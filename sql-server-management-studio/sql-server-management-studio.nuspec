@@ -9,7 +9,7 @@
     <title>SQL Server Management Studio 18.0</title>
     <authors>Microsoft</authors>
     <projectUrl>https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-ssms</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/flcdrg/au-packages/master/sql-server-management-studio/icons/ssms-icon.png</iconUrl>
+    <iconUrl>http://raw.githubusercontent.com/flcdrg/au-packages/master/sql-server-management-studio/icons/ssms-icon.png</iconUrl>
     <copyright>Microsoft 2019</copyright>
     <licenseUrl>https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-license-terms</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>

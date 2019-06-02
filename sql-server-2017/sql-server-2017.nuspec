@@ -9,7 +9,7 @@
     <title>Microsoft SQL Server 2017 Developer Edition</title>
     <authors>Microsoft Corporation</authors>
     <projectUrl>https://www.microsoft.com/en-au/sql-server/sql-server-downloads</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/59ad5e2e32c52fd2a45a9735f95a81368f9e5e85/icons/microsoft-sql-server.svg</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/59ad5e2e32c52fd2a45a9735f95a81368f9e5e85/icons/microsoft-sql-server.svg</iconUrl>
     <copyright>2017 Microsoft Corporation</copyright>
     <licenseUrl>https://www.microsoft.com/en-au/sql-server/sql-server-2017-pricing</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>

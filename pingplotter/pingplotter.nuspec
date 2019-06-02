@@ -9,7 +9,7 @@
     <title>PingPlotter for Windows</title>
     <authors>Pingman Tools LLC</authors>
     <projectUrl>https://www.pingplotter.com/download/windows</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/flcdrg/au-packages/master/pingplotter/icons/pingplotter.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/flcdrg/au-packages/master/pingplotter/icons/pingplotter.png</iconUrl>
     <copyright>Copyright 1998-2018 Pingman Tools, LLC. All Rights Reserved</copyright>
     <licenseUrl>https://www.pingman.com/licenseagreement.html</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
