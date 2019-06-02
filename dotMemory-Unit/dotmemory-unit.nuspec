@@ -19,7 +19,11 @@
     <tags>dotmemory unit testing jetbrains</tags>
     <summary>Effective memory usage in .NET applications with dotMemory Unit</summary>
     <description>Effective memory usage in .NET applications with dotMemory Unit
-    
+
+If you run tests with a standalone unit test runner (rather than Visual Studio) or want to make memory tests a part of your continuous integration builds, then you need a standalone dotMemory Unit launcher - the dotMemoryUnit.exe command-line tool.
+
+dotMemoryUnit.exe works as a mediator - it runs a particular standalone unit test runner and provides the support for dotMemory Unit calls in the running tests.
+
 ### Check for objects
 
 Checking for objects of a certain type is the main way to locate memory leaks in your code. With dotMemory Unit, you can specify a set of objects by almost any condition, calculate their number and size, and use this information in your assertions.
