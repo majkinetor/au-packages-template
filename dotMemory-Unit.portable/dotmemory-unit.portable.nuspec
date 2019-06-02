@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>dotmemory-unit.portable</id>
+    <version>3.0.20171219.105559</version>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/dotMemory-Unit</packageSourceUrl>
+    <owners>flcdrg</owners>
+    <title>dotMemory Unit Standalone Launcher</title>
+    <authors>JetBrains</authors>
+    <projectUrl>https://www.jetbrains.com/dotmemory/unit/</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/jetbrains/chocolatey/master/dotMemory/logo.png</iconUrl>
+    <copyright>JetBrains s.r.o.</copyright>
+    <licenseUrl>https://www.jetbrains.com/legal/agreements/user.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://www.jetbrains.com/help/dotmemory-unit/</docsUrl>
+    <mailingListUrl>https://dotnettools-support.jetbrains.com/hc/en-us/community/topics/200379845-dotMemory</mailingListUrl>
+    <bugTrackerUrl>https://youtrack.jetbrains.com/issues/DMU</bugTrackerUrl>
+    <tags>dotmemory unit testing jetbrains</tags>
+    <summary>Effective memory usage in .NET applications with dotMemory Unit</summary>
+    <description>Effective memory usage in .NET applications with dotMemory Unit
+    
+### Check for objects
+
+Checking for objects of a certain type is the main way to locate memory leaks in your code. With dotMemory Unit, you can specify a set of objects by almost any condition, calculate their number and size, and use this information in your assertions.
+
+### Check memory traffic
+
+When you need to simply evaluate the amount of memory allocated in a test, you can use the AssertTraffic attribute. This flexible attribute allows you to filter traffic data by object type, interface, or namespace.
+
+### Compare snapshots
+
+Like in the dotMemory profiler, you can use checkpoints not only for traffic amount assertions, but also for many kinds of snapshot comparisons.
+
+### Continue analysis in dotMemory
+
+Some memory issues will still require further manual investigation in dotMemory. Just set the rules when you want this done, and a workspace for further analysis in dotMemory will be created automatically.
+    </description>
+    <releaseNotes>https://www.jetbrains.com/dotmemory/whatsnew/</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
