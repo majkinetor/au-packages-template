@@ -2,13 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>SqlSearch</id>
-        <version>3.3.0.2332</version>
+        <version>3.2.7.2379</version>
         <title>SQL Search</title>
         <authors>Red Gate Software Ltd</authors>
         <owners>sumo300, flcdrg</owners>
         <licenseUrl>https://documentation.red-gate.com/display/XX/Licensing</licenseUrl>
         <projectUrl>http://www.red-gate.com/products/sql-development/sql-search/</projectUrl>
-        <iconUrl>http://www.red-gate.com/assets/INTERIM/assets/products/sql-search/images/sql-search.svg</iconUrl>
+        <iconUrl>http://raw.githubusercontent.com/flcdrg/au-packages/master/SqlSearch/icons/SqlSearch.png</iconUrl>
         <docsUrl>https://documentation.red-gate.com/ss3</docsUrl>
         <bugTrackerUrl>https://github.com/sumo300/chocolatey-sqlsearch/issues</bugTrackerUrl>
         <projectSourceUrl>https://github.com/flcdrg/au-packages/tree/master/SqlSearch</projectSourceUrl>
