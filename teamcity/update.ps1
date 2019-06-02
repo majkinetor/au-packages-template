@@ -45,3 +45,4 @@ function global:au_GetLatest {
 
 # Disabled until we update this for the new package structure
 # update -ChecksumFor none
+return "ignore"
