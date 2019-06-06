@@ -8,7 +8,7 @@
         <owners>sumo300, flcdrg</owners>
         <licenseUrl>https://documentation.red-gate.com/display/XX/Licensing</licenseUrl>
         <projectUrl>http://www.red-gate.com/products/sql-development/sql-search/</projectUrl>
-        <iconUrl>http://raw.githubusercontent.com/flcdrg/au-packages/master/SqlSearch/icons/SqlSearch.png</iconUrl>
+        <iconUrl>https://raw.githubusercontent.com/flcdrg/au-packages/master/SqlSearch/icons/SqlSearch.png</iconUrl>
         <docsUrl>https://documentation.red-gate.com/ss3</docsUrl>
         <bugTrackerUrl>https://github.com/sumo300/chocolatey-sqlsearch/issues</bugTrackerUrl>
         <projectSourceUrl>https://github.com/flcdrg/au-packages/tree/master/SqlSearch</projectSourceUrl>
