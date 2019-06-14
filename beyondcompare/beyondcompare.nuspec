@@ -26,9 +26,8 @@ Beyond Compare includes built-in comparison viewers for a variety of data types.
 The install script by default will detect which localized version of Beyond Compare to install. Use the package parameters to alter this behavior.
 
 #### Package Parameters
-The following package parameters can be set:
+The following package parameter can be set:
 
- * `/UICulture` - Call `Get-UICulture` (instead of `Get-Culture`) to detect which localised version to install
  * `/LCID:nnn` - Use this specific LCID (instead of trying to automatically detect it). Check `chocolateyInstall.ps1` for valid LCID values.
 
 To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
