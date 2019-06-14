@@ -3,15 +3,15 @@
 $packageName= 'SQL Server Management Studio'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$fullUrl = 'https://download.microsoft.com/download/5/4/E/54EC1AD8-042C-4CA3-85AB-BA307CF73710/SSMS-Setup-ENU.exe'
-$fullChecksum = '4B6C6D464FF88617E365EB256A52EE129B0CA3EC711DD9DE00CAD0C94047A07A'
+$fullUrl = 'https://download.microsoft.com/download/0/1/5/015ECB20-6206-4500-B73C-F3405553445A/SSMS-Setup-ENU.exe'
+$fullChecksum = 'B5C3669A7970074EB8292316406242D69B3D151C8BDD9A3D92A67B7A712A73E8'
 
 # Upgrading is commented out for 18.x until the first upgrade package is made available by Microsoft
 
 # $upgradeUrl = 'https://download.microsoft.com/download/D/D/4/DD495084-ADA7-4827-ADD3-FC566EC05B90/SSMS-Setup-ENU-Upgrade.exe'
 # $upgradeChecksum = 'A092B5F4270F19B83874E8ECDEC8EF309B8DBC55462E99EAFA309A75A1D04E09'
 
-$release = '18.0'
+$release = '18.1'
 
 # Check if 17.0 is installed so we can get upgrade package instead of full package
 # $version17 = [version]"14.0.17099.0"

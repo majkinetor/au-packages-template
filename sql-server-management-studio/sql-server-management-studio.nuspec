@@ -3,10 +3,10 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sql-server-management-studio</id>
-    <version>15.0.18118.0</version>
+    <version>15.0.18131.0</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/sql-server-management-studio</packageSourceUrl>
     <owners>flcdrg</owners>
-    <title>SQL Server Management Studio 18.0</title>
+    <title>SQL Server Management Studio 18.1</title>
     <authors>Microsoft</authors>
     <projectUrl>https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-ssms</projectUrl>
     <iconUrl>http://raw.githubusercontent.com/flcdrg/au-packages/master/sql-server-management-studio/icons/ssms-icon.png</iconUrl>
