@@ -15,7 +15,7 @@
     <copyright>© 1996-2019 Scooter Software Inc</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>File comparison tool</summary>
-    <description>Compare files and folders using simple, powerful commands that focus on the differences you're interested in and ignore those you're not.  Merge changes, synchronize files, and generate reports. 
+    <description>Compare files and folders using simple, powerful commands that focus on the differences you're interested in and ignore those you're not.  Merge changes, synchronize files, and generate reports.
 
 Directly access FTP sites, media devices, WebDAV resources, svn repositories and cloud storage.
 
@@ -26,14 +26,13 @@ Beyond Compare includes built-in comparison viewers for a variety of data types.
 The install script by default will detect which localized version of Beyond Compare to install. Use the package parameters to alter this behavior.
 
 #### Package Parameters
-The following package parameters can be set:
+The following package parameter can be set:
 
- * `/UICulture` - Call `Get-UICulture` (instead of `Get-Culture`) to detect which localised version to install
  * `/LCID:nnn` - Use this specific LCID (instead of trying to automatically detect it). Check `chocolateyInstall.ps1` for valid LCID values.
 
 To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
- 
+
 </description>
     <tags>compare beyondcompare beyond file diff difference trial admin</tags>
     <releaseNotes>https://www.scootersoftware.com/download.php?zz=v4changelog</releaseNotes>
@@ -43,5 +42,5 @@ To have choco remember parameters on upgrade, be sure to set `choco feature enab
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
-  </files>  
+  </files>
 </package>

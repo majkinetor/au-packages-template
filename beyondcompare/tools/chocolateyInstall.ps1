@@ -6,11 +6,8 @@ $pp = Get-PackageParameters
 
 if ($pp["LCID"]) {
     $LCID = $pp["LCID"]
-} elseif ($pp["UICulture"]) {
-    $LCID = (Get-UICulture).LCID
-    Write-Debug "Calling Get-UICulture (instead of Get-Culture)"
 } else {
-    $LCID = (Get-Culture).LCID
+    $LCID = (Get-UICulture).LCID
 }
 
 $german = @(3079,1031,5127,4103,2055)
