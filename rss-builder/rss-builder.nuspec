@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>rss-builder</id>
+    <version>2.1.8</version>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/rss-builder</packageSourceUrl>
+    <owners>flcdrg</owners>
+    <title>RSS Builder</title>
+    <authors>Wim Bokkers</authors>
+    <projectUrl>https://sourceforge.net/p/rss-builder</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/flcdrg/au-packages/master/rss-builder/icons/rss-builder.png</iconUrl>
+    <copyright>2006 B!Soft</copyright>
+    <licenseUrl>https://sourceforge.net/directory/license:gpl/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://sourceforge.net/p/rss-builder</projectSourceUrl>
+    <mailingListUrl>https://sourceforge.net/p/rss-builder/discussion/</mailingListUrl>
+    <bugTrackerUrl>https://sourceforge.net/p/rss-builder/bugs/</bugTrackerUrl>
+    <tags>RSS</tags>
+    <summary>RSS Builder is an easy to use program for creating and publishing news feeds and podcasts</summary>
+    <description>RSS Builder is an easy to use program for creating and publishing news feeds and podcasts. You can use local RSS files, but there is also an option to edit the RSS feeds on your web site without keeping a local copy.</description>
+  </metadata>
+  <!-- this section controls what actually gets packaged into the Chocolatey package -->
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
