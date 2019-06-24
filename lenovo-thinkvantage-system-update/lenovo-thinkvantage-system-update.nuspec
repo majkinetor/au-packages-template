@@ -4,7 +4,7 @@
   <metadata>
     <id>lenovo-thinkvantage-system-update</id>
     <version>5.07.0084</version>
-    <packageSourceUrl>https://github.com/flcdrg/chocolatey-lenovo-thinkvantage-system-update</packageSourceUrl>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/lenovo-thinkvantage-system-update</packageSourceUrl>
     <owners>flcdrg</owners>
     <title>Lenovo System Update</title>
     <authors>Lenovo</authors>
