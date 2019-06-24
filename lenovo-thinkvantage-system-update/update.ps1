@@ -18,8 +18,8 @@ function global:au_GetLatest {
     $buildDate = $xml.LevelDescriptor.BuildDate
     
     $Latest = @{
-        URL32 = "https://download.lenovo.com/pccbbs/thinkvantage_en/systemupdate$($version).exe";
-        ReleaseNotes = "$buildDate release - https://download.lenovo.com/pccbbs/thinkvantage_en/systemupdate$($version).txt"
+        URL32 = "https://download.lenovo.com/pccbbs/thinkvantage_en/system_update_$($version).exe";
+        ReleaseNotes = "$buildDate release - https://download.lenovo.com/pccbbs/thinkvantage_en/system_update_$($version).txt"
         Version = $version 
     }
     return $Latest
