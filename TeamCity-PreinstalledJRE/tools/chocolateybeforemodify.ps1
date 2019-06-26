@@ -20,6 +20,6 @@ $binPath = Join-Path $options['unzipLocation'] 'TeamCity\bin'
 if ((Test-Path $binPath) -and ($service -ne $null)) {
 
   Push-Location $binPath
-  Start-ChocolateyProcessAsAdmin '.\teamcity-server.bat service delete'
+  Start-ChocolateyProcessAsAdmin "$binPath\teamcity-server.bat service delete"
   Pop-Location
 }
