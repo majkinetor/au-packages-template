@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>teamcity-openjdk8</id>
-    <version>2019.1</version>
+    <id>TeamCity-OpenJDK8</id>
+    <version>2019.1.1</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/TeamCity-OpenJDK8</packageSourceUrl>
     <owners>flcdrg</owners>
     <title>TeamCity Continuous Integration Server (OpenJDK8)</title>
@@ -46,7 +46,7 @@ Example:
     <releaseNotes>https://confluence.jetbrains.com/display/TW/TeamCity+2019.1+Release+Notes</releaseNotes>
     <dependencies>
       <dependency id="AdoptOpenJDK8 " version="8.212.1" />
-      <dependency id="teamcity" version="[2019.1]" />
+      <dependency id="teamcity" version="[2019.1.1]" />
     </dependencies>
   </metadata>
   <files>
