@@ -52,7 +52,7 @@ else {
   }
 }
 $joined = $($args -join ' ')
-Start-ChocolateyProcessAsAdmin ".\teamcity-server.bat $joined"
+Start-ChocolateyProcessAsAdmin "$binPath\teamcity-server.bat $joined"
 Pop-Location
 
 $options['password'] = '';
