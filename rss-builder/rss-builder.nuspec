@@ -19,6 +19,9 @@
     <tags>RSS</tags>
     <summary>RSS Builder is an easy to use program for creating and publishing news feeds and podcasts</summary>
     <description>RSS Builder is an easy to use program for creating and publishing news feeds and podcasts. You can use local RSS files, but there is also an option to edit the RSS feeds on your web site without keeping a local copy.</description>
+    <dependencies>
+      <dependency id="dotnet3.5" version="3.5.20160716" />
+    </dependencies>
   </metadata>
   <!-- this section controls what actually gets packaged into the Chocolatey package -->
   <files>
