@@ -2,12 +2,12 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
 	<metadata>
 		<id>videostream</id>
-		<version>0.3.5</version>
+		<version>0.3.6.20190628</version>
 		<title>Videostream for Chromecast</title>
 		<authors>Groupnotes Inc</authors>
 		<owners>MarcioC</owners>
 		<projectUrl>https://getvideostream.com/</projectUrl>
-		<iconUrl>https://raw.githubusercontent.com/CruzMarcio/au-packages/master/videostream/videostream.png</iconUrl>
+		<iconUrl>https://rawcdn.githack.com/CruzMarcio/au-packages/9ff68f4237a9c7cc17d3b539a23a15b6af813669/videostream/videostream.png</iconUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>Videostream is a application that streams video, music, and image files wirelessly to Google's Chromecast.</description>
 		<copyright>© 2013-2017 Videostream, by Groupnotes Inc.</copyright>
