@@ -12,9 +12,9 @@ function global:au_SearchReplace {
      }
 }
 
-function GetStream($download, [version] $nextVersion)
+function GetStream($download, [version] $minVersion)
 {
-    $minVersion = New-Object version $nextVersion.Major, ($nextVersion.Minor-1), $nextVersion.Build, $nextVersion.Revision
+    $nextVersion = New-Object version $minVersion.Major, ($minVersion.Minor+1), $minVersion.Build, $minVersion.Revision
     $download | Where-Object { [version] $_.version -ge $minVersion} |
         Where-Object { [version] $_.version -lt $nextVersion } | 
         Select-Object -Last 1 | 
@@ -36,7 +36,7 @@ function global:au_GetLatest {
 
     $response = Invoke-RestMethod -Uri "https://www.ubnt.com/download/?platform=unifi" -Headers $headers
 
-    $download = $response.downloads | Where-Object { 
+    $download = $response.downloads | Where-Object {
             $_.category__slug -eq "software" `
             -and $_.filename.EndsWith(".exe") `
             -and -not ($_.version.StartsWith("v")) `
@@ -48,12 +48,14 @@ function global:au_GetLatest {
         }
     }
 
-    $i = 5
-    $stream = GetStream $download "5.$i.0.0"
-    while ($stream) {
-        $latest.Streams.Add("5.$($i - 1)", $stream)
-        $i++
-        $stream = GetStream $download "5.$i.0.0"
+    $uniqueVersions = $download | % {  [Version] $_.Version; } | % { "$($_.Major).$($_.Minor)" } | Sort-Object -Unique -Descending
+
+    $uniqueVersions | ForEach-Object {
+        $stream = GetStream $download "$_.0.0"
+
+        if ($stream) {
+            $latest.Streams.Add($_, $stream)
+        }
     }
 
     $latest
