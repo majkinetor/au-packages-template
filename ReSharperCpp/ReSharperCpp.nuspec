@@ -5,7 +5,7 @@
     <id>ReSharperCpp</id>
     <owners>JetBrains, flcdrg</owners>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/resharper</packageSourceUrl>
-    <version>2019.2-EAP3</version>
+    <version>2019.2-EAP4</version>
     <title>JetBrains ReSharper C++</title>
     <authors>JetBrains</authors>
     <projectUrl>https://www.jetbrains.com/resharper-cpp</projectUrl>
@@ -45,7 +45,7 @@ Configure code formatting options and naming style, share settings with your tea
     </description>
     <releaseNotes>https://www.jetbrains.com/resharper-cpp/whatsnew/</releaseNotes>
     <dependencies>
-      <dependency id="resharper-platform" version="[192.0.20190709.64042-eap03]" />
+      <dependency id="resharper-platform" version="[192.0.20190717.141904-eap04]" />
       <dependency id="dotnet4.6.1" version="4.6.01055.20170308" />
     </dependencies>
   </metadata>
