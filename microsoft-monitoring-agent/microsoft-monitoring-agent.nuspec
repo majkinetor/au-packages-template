@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>microsoft-monitoring-agent</id>
+    <version>10.20.18001</version>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/microsoft-monitoring-agent</packageSourceUrl>
+    <owners>flcdrg</owners>
+    <title>Microsoft Monitoring Agent</title>
+    <authors>Microsoft</authors>
+    <projectUrl>https://docs.microsoft.com/en-us/azure/azure-monitor/platform/log-analytics-agent</projectUrl>
+    <iconUrl>http://raw.githubusercontent.com/flcdrg/au-packages/master/microsoft-monitoring-agent/icons/microsoft-monitoring-agent.png</iconUrl>
+    <copyright>Microsoft Corp</copyright>
+    <licenseUrl>https://github.com/flcdrg/au-packages/tree/master/microsoft-monitoring-agent/LICENSE.txt</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://docs.microsoft.com/en-us/azure/azure-monitor/learn/quick-collect-windows-computer</docsUrl>
+    <tags>Azure Microsoft Monitoring Agent</tags>
+    <summary>For advanced monitoring where you need to do more than collect metrics and a subset of logs</summary>
+    <description>For advanced monitoring where you need to do more than collect metrics and a subset of logs, the Log Analytics agent for Windows (also referred to as the Microsoft Monitoring Agent (MMA)) is required. 
+    
+The Log Analytics agent was developed for comprehensive management across on-premises physical and virtual machines, computers monitored by System Center Operations Manager, and VMs in hosted in other clouds. 
+
+The Windows agents connect to a Log Analytics workspace in Azure Monitor to collect both monitoring solution-based data as well as custom data sources that you configure.
+
+In order to monitor and manage virtual machines or physical computers in your local datacenter or other cloud environment with Azure Monitor, you need to deploy the Log Analytics agent (also referred to as the Microsoft Monitoring Agent (MMA)) and configure it to report to one or more Log Analytics workspaces. The agent also supports the Hybrid Runbook Worker role for Azure Automation.
+
+On a monitored Windows computer, the agent is listed as the Microsoft Monitoring Agent service. The Microsoft Monitoring Agent service collects events from log files and Windows event log, performance data, and other telemetry. Even when the agent is unable to communicate with Azure Monitor it reports to, the agent continues to run and queues the collected data on the disk of the monitored computer. When the connection is restored, the Microsoft Monitoring Agent service sends collected data to the service.
+
+### Supported Windows operating systems
+
+The following versions of the Windows operating system are officially supported for the Windows agent:
+
+ * Windows Server 2019
+ * Windows Server 2008 R2, 2012, 2012 R2, 2016, version 1709 and 1803
+ * Windows 7 SP1, Windows 8 Enterprise and Pro, and Windows 10 Enterprise and Pro
+
+### Package Specific
+#### Package Parameters
+The following package parameters can be set:
+
+ * `/WorkspaceId:` - Microsoft Azure Monitor workspace id (a GUID)
+ * `/workspaceKey:` - Microsoft Azure Monitor workspace key
+
+To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+    </description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="icons\**" target="icons" />
+  </files>
+</package>
