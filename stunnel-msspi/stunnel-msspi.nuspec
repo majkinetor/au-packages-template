@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>stunnel-msspi</id>
-    <version>5.52.0.137</version>
+    <version>5.55.0.144</version>
     <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/stunnel-msspi</packageSourceUrl>
     <owners>galeksandrp</owners>
     <title>stunnel-msspi</title>
@@ -11,7 +11,7 @@
     <projectUrl>https://github.com/deemru/stunnel</projectUrl>
     <iconUrl>https://galeksandrp.github.io/au-packages/icons/stunnel-msspi.png</iconUrl>
     <copyright>Copyright (c) 2016-2018 Dmitrii Pichulin</copyright>
-    <licenseUrl>https://github.com/deemru/stunnel/blob/stunnel-5.52-msspi-0.137/COPYING</licenseUrl>
+    <licenseUrl>https://github.com/deemru/stunnel/blob/stunnel-5.55-msspi-0.144/COPYING</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/deemru/stunnel</projectSourceUrl>
     <docsUrl>https://github.com/deemru/stunnel/wiki</docsUrl>
