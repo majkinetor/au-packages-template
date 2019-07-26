@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>teamCityAddin</id>
-    <version>2019.2-EAP3</version>
+    <version>2019.2-EAP5</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/teamCityAddin</packageSourceUrl>
     <owners>JetBrains, flcdrg</owners>
     <title>JetBrains TeamCity Add-in</title>
@@ -27,7 +27,7 @@ The TeamCity Add-in is a free Visual Studio extension that seamlessly integrates
     </description>
     <releaseNotes>https://www.jetbrains.com/teamcity/whatsnew/</releaseNotes>
     <dependencies>
-      <dependency id="resharper-platform" version="[192.0.20190709.64042-eap03]" />
+      <dependency id="resharper-platform" version="[192.0.20190722.63243-eap05]" />
       <dependency id="dotnet4.6.1" version="4.6.01055.20170308" />
    </dependencies>
   </metadata>
