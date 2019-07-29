@@ -8,7 +8,7 @@ $packageArgs = @{
 
     softwareName   = 'CAM'
 
-    checksum       = 'dc523a29c2f1341ef9f200a9f386f1e7fdad13b0618ea8482d4c9dd5ca8c4839'
+    checksum       = '583606fe8e078a9a207c0724aa5cc57c5c620e9831401d5fd1648dd6d08ea6ff'
     checksumType   = 'sha256'
 
     silentArgs     = "/exelang 1033 /quiet"
