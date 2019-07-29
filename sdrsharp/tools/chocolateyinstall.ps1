@@ -3,8 +3,8 @@
   url                    = 'https://airspy.com/downloads/sdrsharp-x86.zip'
   url64bit               = 'https://airspy.com/downloads/sdrsharp-x64.zip'
   UnzipLocation          = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
-  checksum               = '2cff866f85f0fb772171e45ba0ee577ccf387a7f18f51b1f354e67951f630499'
-  checksum64             = '380a62ef8eddcd5512150526345877ec921e8c8a64c0120e29bc60bf48adc0da'
+  checksum               = '19b224ebf092850938d41fd68767743204df64586c518bdd23623d13b88831b6'
+  checksum64             = 'cced6e996ce7d60a8badf449f4cf360559ec1c1a1b256aa412f408f7ab25cf40'
   checksumType           = 'sha256'
   checksumType64         = 'sha256'
 }
