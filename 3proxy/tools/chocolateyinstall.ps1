@@ -16,10 +16,10 @@
  
 # Get-ComputerInfo is PowerShell 5+
 
-$url = 'https://github.com/z3APA3A/3proxy/releases/download/0.8.11/3proxy-0.8.11.zip'
-$urlVista2003 = 'https://github.com/z3APA3A/3proxy/releases/download/0.8.11/3proxy-0.8.11-lite.zip'
-$checksum = '2c83da8290afd11313ee22709d6e0c68656b2ac87e421e7ca7e5204fd00b44ac'
-$checksumVista2003 = '7f7cdbac89247cf158b3d5f7e67a7c68aaefcf6224f5ec63d91cae6c7263f4ed'
+$url = 'https://github.com/z3APA3A/3proxy/releases/download/0.8.13/3proxy-0.8.13.zip'
+$urlVista2003 = 'https://github.com/z3APA3A/3proxy/releases/download/0.8.13/3proxy-0.8.13-lite.zip'
+$checksum = '379ff8fc57083d2bd3ec121edc2358c03dfc77c9fbdbc4fcacd6bb8aa5056272'
+$checksumVista2003 = '0271ba50227c76a37fa6062ed79b05e7c7f6fe637cc34a93f8a8ab1061a5b89e'
 
 function getFile{
     $windowsVersion = Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion"
@@ -37,10 +37,10 @@ $file = getFile
 $packageArgs = @{
   packageName            = "$env:chocolateyPackageName"
   url                    = $file.url
-  url64bit               = 'https://github.com/z3APA3A/3proxy/releases/download/0.8.11/3proxy-0.8.11-x64.zip'
+  url64bit               = 'https://github.com/z3APA3A/3proxy/releases/download/0.8.13/3proxy-0.8.13-x64.zip'
   UnzipLocation          = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
   checksum               = $file.checksum
-  checksum64             = '9310ba8233ce77d31f27878d11509f1b613edfedbfef735e2cb76c0619705fb4'
+  checksum64             = 'd9b5ff1f39b6377cbd6bee0baa699dc0378dfde228f7240fc62ddc51795a7c94'
   checksumType           = 'sha256'
   checksumType64         = 'sha256'
 }
