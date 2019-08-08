@@ -42,7 +42,12 @@ This release of SSMS supports the following 64-bit platforms when used with the 
 - Windows Server 2012 (64-bit)
 - Windows Server 2008 R2 (64-bit)
 
-\* Requires version 1607 (10.0.14939) or later</description>
+\* Requires version 1607 (10.0.14939) or later
+
+#### Package Updates
+This package is automatically updated based on the same data source that SSMS itself uses to determine when updates are available. This may mean that there may sometimes be a delay between
+Microsoft releasing a new version and when they 'advertise' it as being generally available for SSMS to update.
+</description>
     <releaseNotes>https://docs.microsoft.com/en-au/sql/ssms/release-notes-ssms
     
 If you have a preview versions of SSMS 18.0 installed, uninstall it and reboot before installing SSMS 18.0 GA.</releaseNotes>
