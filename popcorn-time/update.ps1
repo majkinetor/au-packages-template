@@ -10,7 +10,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $version = (curl "https://api.github.com/repos/popcorn-official/popcorn-desktop/tags?client_id=$env:GITHUB_CLIENT_ID&client_secret=$env:GITHUB_CLIENT_SECRET" | ConvertFrom-Json).name
+    $version = (curl -UseBasicParsing "https://api.github.com/repos/popcorn-official/popcorn-desktop/tags?client_id=$env:GITHUB_CLIENT_ID&client_secret=$env:GITHUB_CLIENT_SECRET" | ConvertFrom-Json).name
 	
 	if ($version -is [array]) {
 		$version = $version[0]

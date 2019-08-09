@@ -12,7 +12,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $version = ((curl "https://api.github.com/repos/gammu/gammu/tags?client_id=$env:GITHUB_CLIENT_ID&client_secret=$env:GITHUB_CLIENT_SECRET" | ConvertFrom-Json) | where {$_.name -match '^[0-9.]+$'}).name[0]
+    $version = ((curl -UseBasicParsing "https://api.github.com/repos/gammu/gammu/tags?client_id=$env:GITHUB_CLIENT_ID&client_secret=$env:GITHUB_CLIENT_SECRET" | ConvertFrom-Json) | where {$_.name -match '^[0-9.]+$'}).name[0]
 	
 	@{
         URL32   = "https://dl.cihar.com/gammu/releases/windows/Gammu-$version-Windows.exe"

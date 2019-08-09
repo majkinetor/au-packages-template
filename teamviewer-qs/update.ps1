@@ -17,7 +17,7 @@ function global:au_BeforeUpdate() {
 function global:au_GetLatest {
     $versions = [ordered]@{}
 
-    [array]'https://download.teamviewer.com/download/TeamViewerQS.exe'+(curl 'https://www.teamviewer.com/ru/download/old-versions.aspx').Links.href -match '/TeamViewerQS\.exe$' | %{
+    [array]'https://download.teamviewer.com/download/TeamViewerQS.exe'+(curl -UseBasicParsing 'https://www.teamviewer.com/ru/download/old-versions.aspx').Links.href -match '/TeamViewerQS\.exe$' | %{
         $filename = "$env:TMP\$([guid]::NewGuid()).exe"
         Get-ChocolateyWebFile 'teamviewer-qs' "$_" -FileFullPath $filename
 

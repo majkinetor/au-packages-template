@@ -13,7 +13,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 	$versions = [ordered]@{}
 
-	([xml](curl 'https://sourceforge.net/projects/grub4dos/rss?path=/WINGRUB')).rss.channel.item | ? {$_.title.'#cdata-section' -match '\.EXE$'} | % {
+	([xml](curl -UseBasicParsing 'https://sourceforge.net/projects/grub4dos/rss?path=/WINGRUB')).rss.channel.item | ? {$_.title.'#cdata-section' -match '\.EXE$'} | % {
 		$_.title.'#cdata-section' -match '([0-9]{2})([0-9]{2})' > $null
 
 		$version = $Matches[1..2]

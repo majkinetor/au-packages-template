@@ -12,7 +12,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 	function getSourcemodLatestRelease {
 		param($versionMajorMinor, [switch]$dev)
-		$release = ((curl "https://sm.alliedmods.net/smdrop/$versionMajorMinor/").Links -match '-windows.zip').href | select -last 1
+		$release = ((curl -UseBasicParsing "https://sm.alliedmods.net/smdrop/$versionMajorMinor/").Links -match '-windows.zip').href | select -last 1
 		$version = [version]($release -split '-')[1]
 		$revision = ($release -split '-')[2] -replace '^git',''
 

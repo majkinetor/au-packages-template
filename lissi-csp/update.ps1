@@ -13,8 +13,8 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$URL32 = 'http://ftp.lissi.ru/LISSI-CSP/win10/LISSI-CSP-Setup-win32.exe'
-	$URL64 = 'http://ftp.lissi.ru/LISSI-CSP/win10/LISSI-CSP-Setup-x64.exe'
+	$URL32 = 'http://ftp.lissi.ru/LISSI-CSP/LIRSSL-CSP-Setup-win32.exe'
+	$URL64 = 'http://ftp.lissi.ru/LISSI-CSP/LIRSSL-CSP-Setup-x64.exe'
     Get-ChocolateyWebFile 'lissi-csp' $URL32 -FileFullPath "$env:TMP\LISSI-CSP-Setup-win32.exe"
 	
 	@{

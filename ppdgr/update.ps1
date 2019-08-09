@@ -11,7 +11,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	$baseURL = 'https://www.gnivc.ru'
-	$filepath = (curl "$baseURL/software/fnspo/software_ul_fl/registration/").Links.href -match '\.exe$'
+	$filepath = (curl -UseBasicParsing "$baseURL/software/fnspo/registration/").Links.href -match '\.exe$'
 	$url = "$baseURL$filepath"
 	([uri]$url).segments[-2] -match '[0-9]+[0-9.]+[0-9]+'
 	

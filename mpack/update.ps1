@@ -13,7 +13,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 	$versions = [ordered]@{}
 
-	$rss = [xml](curl 'https://sourceforge.net/projects/mpack-win/rss')
+	$rss = [xml](curl -UseBasicParsing 'https://sourceforge.net/projects/mpack-win/rss')
 	$file = $rss.rss.channel.item | ? {$_.title.'#cdata-section' -match '[0-9]+\.zip$'} | % {
 		$_.title.'#cdata-section' -match '([0-9])([0-9]+)'
 		$version = $Matches[1..2] -join '.'

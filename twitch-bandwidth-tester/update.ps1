@@ -12,7 +12,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	$baseURL = 'https://r1ch.net'
-	$filepath = (curl "$baseURL/projects/twitchtest").Links.href -match '\.zip'
+	$filepath = (curl -UseBasicParsing "$baseURL/projects/twitchtest").Links.href -match '\.zip'
 	"$filepath" -match '[0-9]+[0-9.]+[0-9]+' > $null
 	$version = $Matches[0] -split '\.'
 	$version[1] = [int]$version[1] * 10

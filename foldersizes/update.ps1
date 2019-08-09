@@ -11,12 +11,12 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-	$URL32 = 'https://s3.amazonaws.com/KeyMetricSoft/FolderSizes/fs8-setup.exe'
-    Get-ChocolateyWebFile 'foldersizes' $URL32 -FileFullPath "$env:TMP\fs8-setup.exe"
+	$URL32 = 'https://s3.amazonaws.com/keymetricsoft/FolderSizes/fs9-setup.exe'
+    Get-ChocolateyWebFile 'foldersizes' $URL32 -FileFullPath "$env:TMP\fs9-setup.exe"
 	
 	@{
         URL32   = $URL32
-        Version = (Get-Item "$env:TMP\fs8-setup.exe").VersionInfo.ProductVersion
+        Version = (Get-Item "$env:TMP\fs9-setup.exe").VersionInfo.ProductVersion
     }
 }
 

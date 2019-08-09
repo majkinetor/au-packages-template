@@ -12,7 +12,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
 	$hostname = 'https://www.radmin-vpn.com'
-	$URL32 = $hostname + ((curl $hostname).Links.href -match '\.exe$' | Get-Unique)
+	$URL32 = $hostname + ((curl -UseBasicParsing $hostname).Links.href -match '\.exe$' | Get-Unique)
     Get-ChocolateyWebFile 'radmin-vpn' $URL32 -FileFullPath "$env:TMP\Radmin_VPN.exe"
 	
 	@{

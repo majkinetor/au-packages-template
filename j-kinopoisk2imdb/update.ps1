@@ -14,7 +14,7 @@ function global:au_GetLatest {
 
 	$versions = [ordered]@{}
 
-	(curl "https://api.github.com/repos/REDNBLACK/J-Kinopoisk2IMDB/releases?client_id=$env:GITHUB_CLIENT_ID&client_secret=$env:GITHUB_CLIENT_SECRET" | ConvertFrom-Json) | ? { #filter out nuspec-noncompatible versions. Filter is applied here, and not in foreach because it is needed immediately in next sort
+	(curl -UseBasicParsing "https://api.github.com/repos/REDNBLACK/J-Kinopoisk2IMDB/releases?client_id=$env:GITHUB_CLIENT_ID&client_secret=$env:GITHUB_CLIENT_SECRET" | ConvertFrom-Json) | ? { #filter out nuspec-noncompatible versions. Filter is applied here, and not in foreach because it is needed immediately in next sort
 		try {
 			[version]($_.tag_name -replace '^v','')
 		}

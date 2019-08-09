@@ -43,7 +43,7 @@ function global:au_BeforeUpdate {
 function global:au_GetLatest {
 	$versions = [ordered]@{}
 
-	$rss = [xml](curl 'http://fs.atol.ru/_layouts/15/atol.templates/Handlers/RSSHandler.ashx?rss=e5c8ea9f-5b28-47e6-88a5-aea118c20546').Content
+	$rss = [xml](curl -UseBasicParsing 'http://fs.atol.ru/_layouts/15/atol.templates/Handlers/RSSHandler.ashx?rss=e5c8ea9f-5b28-47e6-88a5-aea118c20546').Content
 
 	$rss.rss.channel.item.description -split '<br/>' | % {
 		try{

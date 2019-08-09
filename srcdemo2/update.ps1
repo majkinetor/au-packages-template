@@ -12,7 +12,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 	$versions = [ordered]@{}
 
-	((curl "https://storage.googleapis.com/google-code-archive/v2/code.google.com/srcdemo2/downloads-page-1.json" | ConvertFrom-Json).downloads | ? {
+	((curl -UseBasicParsing "https://storage.googleapis.com/google-code-archive/v2/code.google.com/srcdemo2/downloads-page-1.json" | ConvertFrom-Json).downloads | ? {
 		($_.labels -contains 'Type-Installer') -and ($_.labels -contains 'OpSys-Windows')
 	}).filename | % {
 		$_ -match 'SrcDemo2-setup-(.+).exe' > $null

@@ -16,9 +16,7 @@ function global:au_GetLatest {
 
 	$baseURL = 'https://www.gnivc.ru'
 
-	"/software/fnspo/software_ul_fl/pdf417/","/software/fnspo/software_ul_fl/pdf_417/158125/" | % {
-		(curl "$baseURL/$_").Links.href -match '\.(rar|zip)$'
-	} | Get-Unique | % {
+	(curl -UseBasicParsing "$baseURL/software/fnspo/pdf417/").Links.href | ? {($_ -split '/')[-1] -match '^pdf417'} | Get-Unique | % {
 		$URL32 = "$baseURL$_"
 		$archivePath = "$env:TMP\$($([uri]$URL32).segments[-1])"
 

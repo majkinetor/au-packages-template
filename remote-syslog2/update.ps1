@@ -12,7 +12,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $release = curl "https://api.github.com/repos/papertrail/remote_syslog2/releases/latest?client_id=$env:GITHUB_CLIENT_ID&client_secret=$env:GITHUB_CLIENT_SECRET" | ConvertFrom-Json
+    $release = curl -UseBasicParsing "https://api.github.com/repos/papertrail/remote_syslog2/releases/latest?client_id=$env:GITHUB_CLIENT_ID&client_secret=$env:GITHUB_CLIENT_SECRET" | ConvertFrom-Json
 	
 	@{
         URL32   = $release.assets.browser_download_url -match 'remote_syslog_windows_i386.tar.gz'

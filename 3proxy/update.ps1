@@ -14,7 +14,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $release = curl "https://api.github.com/repos/z3APA3A/3proxy/releases/latest?client_id=$env:GITHUB_CLIENT_ID&client_secret=$env:GITHUB_CLIENT_SECRET" | ConvertFrom-Json
+    $release = curl -UseBasicParsing "https://api.github.com/repos/z3APA3A/3proxy/releases/latest?client_id=$env:GITHUB_CLIENT_ID&client_secret=$env:GITHUB_CLIENT_SECRET" | ConvertFrom-Json
 	
 	$version = $release.tag_name
 	

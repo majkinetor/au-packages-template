@@ -13,7 +13,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $versions = [ordered]@{}
 
-    (curl https://dahuawiki.com/Live_Demo).Links.href -match '\.dahuaddns\.com' | % {
+    (curl -UseBasicParsing https://dahuawiki.com/Live_Demo).Links.href -match '\.dahuaddns\.com' | % {
         $URL32 = "$_/webplugin.exe"
         Get-ChocolateyWebFile 'dahua-web-plugin' $URL32 -FileFullPath "$env:TMP\webplugin.exe"
 

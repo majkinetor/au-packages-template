@@ -12,7 +12,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 	$versions = [ordered]@{}
 
-	(curl "https://api.github.com/repos/DavidMoore/ipfilter/releases?client_id=$env:GITHUB_CLIENT_ID&client_secret=$env:GITHUB_CLIENT_SECRET" | ConvertFrom-Json) | % {
+	(curl -UseBasicParsing "https://api.github.com/repos/DavidMoore/ipfilter/releases?client_id=$env:GITHUB_CLIENT_ID&client_secret=$env:GITHUB_CLIENT_SECRET" | ConvertFrom-Json) | % {
 		$version = $_.tag_name
 
 		$url = ($_.assets | where {$_.name -match '\.msi$'}).browser_download_url
