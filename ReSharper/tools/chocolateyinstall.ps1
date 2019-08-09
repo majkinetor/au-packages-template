@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'; # stop on all errors
 
-$filename = 'JetBrains.ReSharperUltimate.2019.2.EAP5.Checked.exe'
+$filename = 'JetBrains.ReSharperUltimate.2019.2.exe'
 
 $platformPackageName = 'resharper-platform'
 
