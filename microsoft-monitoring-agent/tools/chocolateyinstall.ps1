@@ -1,6 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
+$url32      = 'https://download.microsoft.com/download/A/E/7/AE709F7E-37F5-473F-A615-42D6F66AE32F/MMASetup-i386.exe'
+$checksum32 = '2986B39E819E2C16F524DB2AF318779E0E8EAC72819592227090C1BB4C8381CE'
+$url64      = 'https://download.microsoft.com/download/2/B/5/2B59B9A7-37CC-4FC5-BB4E-C7A69FE75DCF/MMASetup-AMD64.exe'
+$checksum64 = 'EFD6EB26A71FD32BCD5BEF15BC7C36F1CBB581CBAA158F930EFDA7692A23279F'
+
 # package parameters
 $pp = Get-PackageParameters
 
@@ -23,11 +28,11 @@ $packageArgs = @{
   silentArgs    = "/C:`"setup.exe /qn NOAPM=1 $azureArgs AcceptEndUserLicenseAgreement=1`""
   
   validExitCodes= @(0) #please insert other valid exit codes here
-  url           = "https://go.microsoft.com/fwlink/?LinkId=828604"
-  checksum      = '2986B39E819E2C16F524DB2AF318779E0E8EAC72819592227090C1BB4C8381CE'
+  url           = $url32
+  checksum      = $checksum32
   checksumType  = 'sha256'
-  url64bit      = "https://go.microsoft.com/fwlink/?LinkId=828603"
-  checksum64    = '98412487E7E98306D0476361EBF6F4B008DAC528B9B481A9E83A503CD00DCE90'
+  url64bit      = $url64
+  checksum64    = $checksum64
   checksumType64= 'sha256'
   destination   = $toolsDir
 }

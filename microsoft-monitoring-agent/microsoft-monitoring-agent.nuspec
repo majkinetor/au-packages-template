@@ -1,18 +1,17 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>microsoft-monitoring-agent</id>
-    <version>10.20.18001</version>
+    <version>10.20.18011.0</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/microsoft-monitoring-agent</packageSourceUrl>
     <owners>flcdrg</owners>
     <title>Microsoft Monitoring Agent</title>
     <authors>Microsoft</authors>
     <projectUrl>https://docs.microsoft.com/en-us/azure/azure-monitor/platform/log-analytics-agent</projectUrl>
-    <iconUrl>http://raw.githubusercontent.com/flcdrg/au-packages/master/microsoft-monitoring-agent/icons/microsoft-monitoring-agent.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/flcdrg/au-packages/master/microsoft-monitoring-agent/icons/microsoft-monitoring-agent.png</iconUrl>
     <copyright>Microsoft Corp</copyright>
-    <licenseUrl>https://github.com/flcdrg/au-packages/tree/master/microsoft-monitoring-agent/LICENSE.txt</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <docsUrl>https://docs.microsoft.com/en-us/azure/azure-monitor/learn/quick-collect-windows-computer</docsUrl>
     <tags>Azure Microsoft Monitoring Agent</tags>
     <summary>For advanced monitoring where you need to do more than collect metrics and a subset of logs</summary>
@@ -47,6 +46,5 @@ To have choco remember parameters on upgrade, be sure to set `choco feature enab
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
-    <file src="icons\**" target="icons" />
   </files>
 </package>
