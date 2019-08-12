@@ -1,10 +1,10 @@
 ﻿$packageArgs = @{
   packageName            = "$env:chocolateyPackageName"
-  url                    = 'https://github.com/gogs/gogs/releases/download/v0.11.86/windows_386.zip'
-  url64bit               = 'https://github.com/gogs/gogs/releases/download/v0.11.86/windows_amd64.zip'
+  url                    = 'https://github.com/gogs/gogs/releases/download/v0.11.91/windows_386.zip'
+  url64bit               = 'https://github.com/gogs/gogs/releases/download/v0.11.91/windows_amd64.zip'
   UnzipLocation          = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
-  checksum               = '95f959c31447c113fe12628f436429ba82199bfb577f522159cbc22dac20b80d'
-  checksum64             = 'd34b4e220e144590008781b1afa6f5a0c7468ecbdd47ad8ae497dcc01117151b'
+  checksum               = '52cf5e65ded83e94d784f2ac4392b2a4d999d291e07ff83673e35a81d487a47e'
+  checksum64             = '30d524e2dc87f67d65a9a79205c18c63a8057bfcb0b8f68536812cb7edb8bdd8'
   checksumType           = 'sha256'
   checksumType64         = 'sha256'
 }
