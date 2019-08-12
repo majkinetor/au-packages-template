@@ -61,10 +61,9 @@ The following package parameters can be set:
 
  * `/IsoPath:` - path to a local copy of the .iso file - if not supplied then .iso is downloaded
 
+All other package parameters are passed through to SQL Server Setup, allowing you to customise the installation as necessary.
 
- All other package parameters are passed through to SQL Server Setup, allowing you to customise the installation as necessary.
-
- The following are set by default:
+The following are set by default:
 
  * `/ConfigurationFile:` - The path to a configurationfile.ini - defaults to the supplied tools\configurationfile.ini
  * `/SQLSYSADMINACCOUNTS:` - The usernames to add to the SQL SysAdmin role - defaults to current user
@@ -76,6 +75,11 @@ To pass parameters, use `--params "''"` (e.g. `choco install sql-server-2017 [ot
 Example using /IsoPath to use previously downloaded SQL Server .iso
 ```
 choco install sql-server-2017 --params="'/IsoPath:c:\downloads\en_sql_server_2017_developer_x64_dvd_11296168.iso'"
+
+#### Chocolatey Pro / Business users
+
+If you allow the package to download the ISO file, it is suggested you run Chocolatey with the `--skip-virus-check` parameter, as the online virus scanner doesn't 
+handle files over 500MB. You should use alternate methods of scanning in this case.
 ```
     </description>
     <releaseNotes>https://docs.microsoft.com/en-us/sql/sql-server/what-s-new-in-sql-server-2017</releaseNotes>
