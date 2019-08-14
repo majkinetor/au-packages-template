@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>cryptopro-browser-plugin</id>
-    <version>2.0.13642.0</version>
+    <version>2.0.13738.0</version>
     <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/cryptopro-browser-plugin</packageSourceUrl>
     <owners>galeksandrp</owners>
     <title>CryptoPro Browser Plugin (Install)</title>
