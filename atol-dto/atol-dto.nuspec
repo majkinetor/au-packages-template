@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>atol-dto</id>
-    <version>10.5.0.0</version>
+    <version>10.5.1.3</version>
     <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/atol-dto</packageSourceUrl>
     <owners>galeksandrp</owners>
     <title>Atol DTO (Install)</title>
