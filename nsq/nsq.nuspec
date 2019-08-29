@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>nsq</id>
-    <version>1.1.0</version>
+    <version>1.2.0</version>
     <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/nsq</packageSourceUrl>
     <owners>galeksandrp</owners>
     <title>NSQ</title>
