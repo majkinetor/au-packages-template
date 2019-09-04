@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$checksum = 'EA7358CFA8014AF0D183E58386F8CD52BC1ACA9E585C05115043BFFDDA6754CF'
+$checksum = 'AD91C5A582861006FA5AAE5B378E328C4A5A9125CB9B24C2AA4DA88A7ADC34CC'
 $primaryDownloadUrl = 'https://download.red-gate.com/SQL_Search.exe'
-$secondaryDownloadUrl = 'ftp://support.red-gate.com/patches/SQLSearch/14Aug2019/SQLSearch.exe'
-$packageVersionLastModified = New-Object -TypeName DateTimeOffset 2019, 8, 14, 16, 25, 25, 0 # Last modified time corresponding to this package version
+$secondaryDownloadUrl = 'ftp://support.red-gate.com/patches/SQLSearch/03Sep2019/SQLSearch.exe'
+$packageVersionLastModified = New-Object -TypeName DateTimeOffset 2019, 9, 3, 12, 47, 27, 0 # Last modified time corresponding to this package version
 
 $pp = Get-PackageParameters
 
