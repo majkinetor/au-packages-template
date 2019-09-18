@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>blockcheck</id>
-    <version>0.0.9.7</version>
+    <version>0.0.9.8</version>
     <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/blockcheck</packageSourceUrl>
     <owners>galeksandrp</owners>
     <title>BlockCheck</title>
