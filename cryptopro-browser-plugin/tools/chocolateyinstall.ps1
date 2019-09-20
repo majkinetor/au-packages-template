@@ -10,7 +10,7 @@ $packageArgs = @{
   FileType               = 'exe'
   SilentArgs             = '-silent -norestart'
   url                    = 'https://www.cryptopro.ru/products/cades/plugin/get_2_0'
-  checksum               = 'caea2ae864d56e2d0a6a938a57a682fddbbe52d63e53fd49cb01338bfc669a23'
+  checksum               = '67584655bcda50a6ce4fd2c0038b83d2f45515f24ae8ea65491d348d465b5599'
   checksumType           = 'sha256'
   Options                = $options
 }
