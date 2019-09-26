@@ -23,19 +23,6 @@
 - ANTS Performance Profiler Pro - Get a complete picture of your application's performance and find bottlenecks, whether in the code or database.
 - ANTS Memory Profiler - Find memory leaks within minutes and optimize the memory usage of your C# and VB.NET code.
 - .NET Reflector VSPro - Understand and debug any 3rd party code, including frameworks, components and libraries.
-
-#### Package Download Fallback
-This package will fallback to the Red Gate FTP site once the main fixed URL no longer matches the version for which this package was created. This is to ensure that a specific version of the Chocolatey package continues to work even after Red Gate releases newer versions.
-
-When a newer version of the package is published, it will then revert to using the primary https download URL.
-
-#### Package Parameters
-The following package parameters can be set:
-
- * `/FTP` - Force using the FTP download URL
-
-These parameters can be passed to the installer with the use of `--params`.
-For example: `--params "'/FTP'"`.
 </description>
     <releaseNotes>- [ANTS Memory Profiler](https://documentation.red-gate.com/display/AMP8/ANTS+Memory+Profiler+8.11+release+notes)
 - [ANTS Performance Profiler](https://documentation.red-gate.com/display/APP9/ANTS+Performance+Profiler+9.6+release+notes)

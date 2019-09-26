@@ -41,20 +41,13 @@ Tools in the SQL Toolbelt:
 - SQL Change Automation Powershell - Automates database development solutions
 - SQL Change Automation - Develop and deploy databases in Visual Studio with migration scripts
 
-#### Package Download Fallback
-This package will fallback to the Red Gate FTP site once the main fixed URL no longer matches the version for which this package was created. This is to ensure that a specific version of the Chocolatey package continues to work even after Red Gate releases newer versions.
-
-When a newer version of the package is published, it will then revert to using the primary https download URL.
-
 #### Package Parameters
 The following package parameters can be set:
 
- * `/FTP` - Force using the FTP download URL
- * `/NoFTP` - Don't fallback to FTP if HTTPS modified time is different (using this risks a checksum mismatch if file is actually a newer version)
  * `/products` - Only install the specified products (see tools\chocolateyinstall.ps1 for supported named)
 
 These parameters can be passed to the installer with the use of `--params`.
-For example: `--params "/FTP /products:'SQL Compare, SQL Data Compare'"`.
+For example: `--params "/products:'SQL Compare, SQL Data Compare'"`.
 </description>
   <releaseNotes>https://www.red-gate.com/products/roadmap</releaseNotes>
   <dependencies>
