@@ -1,9 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$primaryDownloadUrl = "https://download.red-gate.com/SQLToolbelt.exe"
-$secondaryDownloadUrl = 'ftp://support.red-gate.com/patches/SQLToolbelt/10Sep2019/SQLToolbelt.exe'
-$packageVersionLastModified = New-Object -TypeName DateTimeOffset 2019, 9, 10, 13, 40, 46, 0 # Last modified time corresponding to this package version
+$url = 'ftp://support.red-gate.com/patches/SQLToolbelt/10Sep2019/SQLToolbelt.exe'
 $checksum = '9BEB3A2F65382792E3F7F766D20381E76F5A6840072E8CDA233E06DD05D68AEE'
 
 $validProductPackageNames = @(
@@ -44,37 +42,6 @@ if ($pp["products"] -ne $null -and $pp["products"] -ne ''){
 }
 
 $commandArgs += "/IAgreeToTheEula"
-
-$url = $primaryDownloadUrl
-
-if ($pp["FTP"] -ne $null -and $pp["FTP"] -ne '') { 
-
-  # FTP forced
-  Write-Verbose "Using $secondaryDownloadUrl because /FTP was specified"
-  $url = $secondaryDownloadUrl
-} else {
-
-  # Red Gate has a fixed download URL, but if the binary changes we can fall back to their FTP site
-  # so the package doesn't break
-  $headers = Get-WebHeaders -url $primaryDownloadUrl
-  $lastModifiedHeader = $headers.'Last-Modified'
-
-  $lastModified = [DateTimeOffset]::Parse($lastModifiedHeader, [Globalization.CultureInfo]::InvariantCulture)
-
-  Write-Verbose "Package LastModified: $packageVersionLastModified"
-  Write-Verbose "HTTP Last Modified  : $lastModified"
-
-  if ($lastModified -ne $packageVersionLastModified) {
-    if ($pp["NoFTP"]) {
-      Write-Warning "The download available at $primaryDownloadUrl has changed from what this package was expecting, but /NoFTP package parameter was supplied. Expect checksums to fail if the download is actually a newer version."
-    } else {
-      Write-Warning "The download available at $primaryDownloadUrl has changed from what this package was expecting. Falling back to FTP for version-specific URL"
-      $url = $secondaryDownloadUrl
-    }
-  } else {
-    Write-Verbose "Primary URL matches package expectation"
-  }
-}
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
