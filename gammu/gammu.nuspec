@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>gammu</id>
-    <version>1.40.0</version>
+    <version>1.41.0</version>
     <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/gammu</packageSourceUrl>
     <owners>galeksandrp</owners>
     <title>Gammu (Install)</title>
