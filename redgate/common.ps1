@@ -49,7 +49,7 @@ function global:au_GetLatest {
                 # Some of Redgate's installers are bundles of other installers. (The toolbelts and dev bundles)
                 # In that case, the version number embedded in the installer is irrelevant.
                 # So use the date the installer was released instead.
-                $version = $dateReleased
+                $version = $lastModified.ToString("yyyy.MM.dd")
             }
             Write-Verbose "$version"
             $checksum = (Get-FileHash $downloadedFile -Algorithm SHA256).Hash
