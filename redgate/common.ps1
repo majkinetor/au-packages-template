@@ -1,12 +1,7 @@
 param(
     [string] $name,
-    [string] $alternateName,
     [switch] $readVersionFromInstaller
 )
-
-if (-not ($alternateName)) {
-    $alternateName = $name
-}
 
 import-module au
 
@@ -32,7 +27,7 @@ function global:au_GetLatest {
         # and the main https://download.red-gate.com/<name>.exe is just a redirect.
         # so use the url with the date to keep the chocolatey package stable and do away with checksum errors.
         $dateReleased = $lastModified.ToString("yyyy-MM-dd")
-        $downloadUrl = "https://download.red-gate.com/installers/$alternateName/$dateReleased/$alternateName.exe"
+        $downloadUrl = "https://download.red-gate.com/installers/$name/$dateReleased/$name.exe"
 
         $downloadedFile = [IO.Path]::GetTempFileName()
 
