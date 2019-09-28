@@ -1,22 +1,15 @@
 param(
     [string] $name,
-    [string] $alternateName
+    [switch] $readVersionFromInstaller
 )
-
-if (-not ($alternateName)) {
-    $alternateName = $name
-}
 
 import-module au
 
 function global:au_SearchReplace {
-    $d = [DateTimeOffset] $Latest.LastModified
     @{
         'tools\chocolateyInstall.ps1' = @{
-            "(^[$]secondaryDownloadUrl\s*=\s*)(['`"].*['`"])"      = "`$1'$($Latest.URL32)'"
+            "(^[$]url\s*=\s*)(['`"].*['`"])"      = "`$1'$($Latest.URL32)'"
             "(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
-            # $packageVersionLastModified = New-Object -TypeName DateTimeOffset 2017, 7, 3, 11, 5, 0, 0 # Last modified time corresponding to this package version
-            "(^[$]packageVersionLastModified\s*=\s*)(.*)(\s+\#)" = "`$1New-Object -TypeName DateTimeOffset $($d.Year), $($d.Month), $($d.Day), $($d.Hour), $($d.Minute), $($d.Second), 0`$3"
         }
     }
 }
@@ -30,20 +23,29 @@ function global:au_GetLatest {
         $lastModifiedHeader = $response.Headers.'Last-Modified'
         $lastModified = [DateTimeOffset]::Parse($lastModifiedHeader, [Globalization.CultureInfo]::InvariantCulture)
 
-        # Infer what the FTP download should be and grab that to find out the version (and indirectly confirm that the URL is correct)
-        # $secondaryDownloadUrl = "ftp://support.red-gate.com/patches/SQLToolbelt/03Jul2017/SQLToolbelt.exe"
-        $secondaryDownloadUrl = "ftp://support.red-gate.com/patches/$alternateName/$($lastModified.ToString("ddMMMyyyy"))/$alternateName.exe"
+        # Redgate's installers are uploaded to https://download.red-gate.com/installers/<name>/<date-released>/<name>.exe
+        # and the main https://download.red-gate.com/<name>.exe is just a redirect.
+        # so use the url with the date to keep the chocolatey package stable and do away with checksum errors.
+        $dateReleased = $lastModified.ToString("yyyy-MM-dd")
+        $downloadUrl = "https://download.red-gate.com/installers/$name/$dateReleased/$name.exe"
 
         $downloadedFile = [IO.Path]::GetTempFileName()
 
-        Write-Verbose "Downloading $secondaryDownloadUrl"
+        Write-Verbose "Downloading $downloadUrl"
         try {
             
             $client = new-object System.Net.WebClient
-            $client.DownloadFile($secondaryDownloadUrl, $downloadedFile)
+            $client.DownloadFile($downloadUrl, $downloadedFile)
 
-            # SqlSearch has strange FileVersion, so use FileVersionRaw as that seems correct
-            $version = (get-item $downloadedFile).VersionInfo.FileVersionRaw
+            if($readVersionFromInstaller.IsPresent) {
+                # SqlSearch has strange FileVersion, so use FileVersionRaw as that seems correct
+                $version = (get-item $downloadedFile).VersionInfo.FileVersionRaw
+            } else {
+                # Some of Redgate's installers are bundles of other installers. (The toolbelts and dev bundles)
+                # In that case, the version number embedded in the installer is irrelevant.
+                # So use the date the installer was released instead.
+                $version = $lastModified.ToString("yyyy.MM.dd")
+            }
             Write-Verbose "$version"
             $checksum = (Get-FileHash $downloadedFile -Algorithm SHA256).Hash
             Write-Verbose "$checksum"
@@ -51,14 +53,14 @@ function global:au_GetLatest {
             Remove-Item $downloadedFile
 
             $Latest = @{ 
-                URL32 = $secondaryDownloadUrl
+                URL32 = $downloadUrl
                 Version = $version
                 Checksum32 = $checksum
                 LastModified = $lastModified
             }
         }
         catch {
-            Write-Warning "Could not find file $secondaryDownloadUrl"
+            Write-Warning "Could not find file $downloadUrl"
             $Latest = 'ignore'
         }
     } catch {

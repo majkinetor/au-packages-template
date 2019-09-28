@@ -1,1 +1,1 @@
-..\redgate\common.ps1 "SQL_Search" "SQLSearch"
+..\redgate\common.ps1 "SQL_Search" -readVersionFromInstaller
