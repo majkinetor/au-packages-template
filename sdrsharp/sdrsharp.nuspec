@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sdrsharp</id>
-    <version>1.0.0.1716</version>
+    <version>1.0.0.1719</version>
     <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/sdrsharp</packageSourceUrl>
     <owners>galeksandrp</owners>
     <title>SDR#</title>
