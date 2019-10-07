@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>mirth.install</id>
+    <version>3.8.0</version>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/mirth.install</packageSourceUrl>
+    <owners>flcdrg</owners>
+    <title>Mirth Connect (Install)</title>
+    <authors>Nextgen Healthcare</authors>
+    <projectUrl>https://www.nextgen.com/products-and-services/integration-engine</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/flcdrg/au-packages/fc9ff5df6b2acfdceeed214affc76335e88749f8/mirth/icons/teams-logo.png</iconUrl>
+    <copyright>2019 NextGen Healthcare</copyright>
+    <!-- If there is a license Url available, it is required for the community feed -->
+    <licenseUrl>https://raw.githubusercontent.com/nextgenhealthcare/connect/development/server/docs/LICENSE.txt</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/nextgenhealthcare/connect</projectSourceUrl>
+    <docsUrl>http://www.mirthcorp.com/community/wiki/display/mirth/Home</docsUrl>
+    <mailingListUrl>http://www.mirthcorp.com/community/forums/</mailingListUrl>
+    <bugTrackerUrl>http://www.mirthcorp.com/community/issues/browse/MIRTH</bugTrackerUrl>
+    <tags>mirth nextgen</tags>
+    <summary>NextGen® Connect Integration Engine</summary>
+    <description>The ability to standardize and exchange health information and patient data is critical for healthcare organizations. NextGen Connect (formerly Mirth Connect) has been powering healthcare organizations for more than a decade. Designed for seamless healthcare message integration, this solution is easily configurable, easily deployed, and scalable. 
+    
+#### Open source platform
+
+With open source contributions from a global community of developers made over the course of 10 years, NextGen Connect (formerly Mirth Connect) helps you implement nearly all healthcare data exchange mechanisms.
+
+#### Cost-effective interoperability
+
+Our vendor-agnostic NextGen Connect Integration Engine delivers secure, cost-effective interoperability, enabling users to translate data into standardized formats while owning data management.
+
+#### Data where you want it
+
+Our valuable, cost-efficient HIT interoperability capabilities include full commercial support and an easy-to-use management control panel.
+
+#### Improved connections with direct messaging
+
+Regulatory requirements demand secure messaging and document exchange. Our vendor-agnostic, accredited HISP connects with your network of hospitals, providers, clinics, payers, and others.
+
+#### Better results with expert help
+
+Our experts will help you integrate and optimize your solutions, train efficiently and effectively, and―for Gold- and Platinum-level clients―provide 24x7 assistance for critical support issues.
+
+#### Enhanced skills with NextGen Connect training
+
+Our NextGen Connect fundamentals and advanced certification training courses enable users to improve their skills quickly and become a power user.
+
+#### Package details
+
+This package installs Mirth Connect Server, Mirth Connect Server Manager and Mirth Connect CLI, but not the Mirth Connect Administrator Launcher
+    </description>
+    <releaseNotes>http://www.mirthcorp.com/community/wiki/pages/viewpage.action?pageId=24709204</releaseNotes>
+    <dependencies>
+      <dependency id="openjdk" version="11.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
