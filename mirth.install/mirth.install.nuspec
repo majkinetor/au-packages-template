@@ -9,7 +9,7 @@
     <title>Mirth Connect (Install)</title>
     <authors>Nextgen Healthcare</authors>
     <projectUrl>https://www.nextgen.com/products-and-services/integration-engine</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/flcdrg/au-packages/fc9ff5df6b2acfdceeed214affc76335e88749f8/mirth/icons/teams-logo.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/flcdrg/au-packages/ce211e13b31785e6a8e06186f1a09c42002c7490/mirth/icons/mirth.png</iconUrl>
     <copyright>2019 NextGen Healthcare</copyright>
     <!-- If there is a license Url available, it is required for the community feed -->
     <licenseUrl>https://raw.githubusercontent.com/nextgenhealthcare/connect/development/server/docs/LICENSE.txt</licenseUrl>
