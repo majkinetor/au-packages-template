@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>mirth</id>
-    <version>3.8.0</version>
+    <version>3.8.1</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/mirth</packageSourceUrl>
     <owners>flcdrg</owners>
     <title>Mirth Connect</title>
@@ -52,7 +52,7 @@ This package installs Mirth Connect Server, Mirth Connect Server Manager and Mir
     </description>
     <releaseNotes>http://www.mirthcorp.com/community/wiki/pages/viewpage.action?pageId=24709204</releaseNotes>
     <dependencies>
-      <dependency id="mirth.install" version="[3.8.0]" />
+      <dependency id="mirth.install" version="[3.8.1]" />
     </dependencies>
   </metadata>
   <files>

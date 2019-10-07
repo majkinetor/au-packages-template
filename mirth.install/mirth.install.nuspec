@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>mirth.install</id>
-    <version>3.8.0</version>
+    <version>3.8.1</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/mirth.install</packageSourceUrl>
     <owners>flcdrg</owners>
     <title>Mirth Connect (Install)</title>
