@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>beyondcompare</id>
-    <version>4.2.9.20190508</version>
+    <version>4.3.0.24364</version>
     <title>Beyond Compare</title>
     <authors>Scooter Software</authors>
     <owners>Miguel Madero, Brendan Forster, David Gardiner</owners>
