@@ -18,9 +18,10 @@ environment:
   au_test_groups: 1
 
   # Github token to commit pushed packages to repository
-  github_user_repo: {github_user}/{repository}
+  github_user_repo: digitalcoyote/chocolatey-packages
   github_api_key:
-    secure: YOUR_GITHUB_API_KEY_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
+    secure: GaEUTSuMPoUwPKxw1NxZRfSuYijYdoXM4ijIFw/9GujWXGK16MjayrifL5LbCg5c
+ #https://ci.appveyor.com/tools/encrypt
 
 
   # Mail credentials - for error notifications
@@ -41,7 +42,7 @@ environment:
 
   # Chocolatey API key - to push updated packages
   api_key:
-    secure: YOUR_CHOCO_API_KEY_HERE_ENCRYPTED_STRING # https://ci.appveyor.com/tools/encrypt
+    secure: We/gAKa9tXEzr2uzS1GkMZDScWGJyNvPaOaRubi/FUYkEOX/1o1SjNxOCZ94Np8t # https://ci.appveyor.com/tools/encrypt
 
 init:
 - git config --global user.email "chocolatey@realdimensions.net"
@@ -64,7 +65,7 @@ install:
     '  {0,-20} {1}' -f 'RE BUILD:'       , ($Env:APPVEYOR_RE_BUILD        -eq 'true')
 
 # Uncomment the below line if you are using any of the functions from chocolatey-core.extension - https://chocolatey.org/packages/chocolatey-core.extension. Ensure you also have it listed in your package's dependencies
-# - cinst chocolatey-core.extension
+- cinst chocolatey-core.extension
     
 build_script:
 - ps: |
