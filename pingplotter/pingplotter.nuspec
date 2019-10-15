@@ -10,7 +10,7 @@
     <authors>Pingman Tools LLC</authors>
     <projectUrl>https://www.pingplotter.com/download/windows</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/flcdrg/au-packages/master/pingplotter/icons/pingplotter.png</iconUrl>
-    <copyright>Copyright 1998-2018 Pingman Tools, LLC. All Rights Reserved</copyright>
+    <copyright>Copyright 1998-2019 Pingman Tools, LLC. All Rights Reserved</copyright>
     <licenseUrl>https://www.pingman.com/licenseagreement.html</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://www.pingplotter.com/manual</docsUrl>
@@ -25,6 +25,9 @@ PingPlotter is available in Professional, Standard, and Free editions. Professio
 https://www.pingplotter.com/products/features.html
 </description>
     <releaseNotes>https://www.pingplotter.com/download/windows/release-notes.html</releaseNotes>
+    <dependencies>
+      <dependency id="dotnet4.7.2" version="4.7.2.20180712" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
