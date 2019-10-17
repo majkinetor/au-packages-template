@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <title>MyPaint</title>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://mypaint.org/</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/mypaint/mypaint/master/pixmaps/mypaint_logo.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/mypaint/mypaint/1e01206a10820934ea2a805ec5a60091490f172e/pixmaps/mypaint_logo.png</iconUrl>
     <!-- <copyright>Year Software Vendor</copyright> -->
     <!-- If there is a license Url available, it is required for the community feed -->
     <licenseUrl>https://github.com/mypaint/mypaint/blob/master/Licenses.md</licenseUrl>
