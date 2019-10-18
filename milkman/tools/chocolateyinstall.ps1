@@ -4,7 +4,6 @@ $url64 = 'https://github.com/warmuuh/milkman/releases/download/3.6.0/milkman-dis
 $checksum64 = '258bf82c535b344f4fd8999ae80e8393c5eb764b185314581e28336288a080f6bc9d498c42085c7afeca48495e3d3977cf578bb80dfcf55f433ed69f3ad5546c'
 $checksumType64 = 'sha512'
 $UnzipLocation = Join-Path $env:ChocolateyInstall (Join-Path 'lib' $env:ChocolateyPackageName)
-Write-Output $UnzipLocation
 Install-ChocolateyZipPackage -PackageName $env:ChocolateyPackageName -Url $url64 -UnzipLocation $UnzipLocation -CheckSum $checksum64 -CheckSumType $checksumType64
 $ExecutableFiles = get-childitem $UnzipLocation -include *.exe -recurse
 
