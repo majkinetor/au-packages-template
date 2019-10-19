@@ -40,7 +40,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <iconUrl>https://rawcdn.githack.com/jgraph/drawio-desktop/9ec742edd663c3bf5b09b8715ad2a16d1d027085/build/1024x1024.png</iconUrl>
     <!-- <copyright>Year Software Vendor</copyright> -->
     <!-- If there is a license Url available, it is required for the community feed -->
-    <licenseUrl>https://github.com/jgraph/drawio-desktop/blob/master/LICENSE</licenseUrl>
+    <licenseUrl>https://rawcdn.githack.com/jgraph/drawio-desktop/9ec742edd663c3bf5b09b8715ad2a16d1d027085/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/jgraph/drawio-desktop</projectSourceUrl>
     <docsUrl>https://support.draw.io/display/DO/Draw.io+Online+User+Manual</docsUrl>
