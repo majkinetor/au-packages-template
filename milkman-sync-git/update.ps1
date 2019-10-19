@@ -5,15 +5,15 @@ $PackageName = "milkman-sync-git"
 function global:au_SearchReplace {
   @{
     ".\tools\chocolateyInstall.ps1" = @{
-      "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
-      "(^[$]checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
+      "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
+      "(^[$]checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
     }
   }
 }
 
 function global:au_BeforeUpdate() {
-  $Latest.Checksum32 = Get-FileHash -Path "tools\$PackageName.jar" -Algorithm SHA512
-  $Latest.ChecksumType32 = 'sha512'
+  $Latest.Checksum64 = Get-FileHash -Path "tools\$PackageName.jar" -Algorithm SHA512
+  $Latest.ChecksumType64 = 'sha512'
 }
 
 function global:au_GetLatest {
