@@ -3,7 +3,7 @@
   FileType               = 'exe'
   SilentArgs             = ''
   url                    = 'https://help.kontur.ru/content/components/AddToTrusted.exe'
-  checksum               = 'e4424eeba85a15c5577a30db2c3c7dcc5518a12ce2a25c4182ee53e9b410d0cc'
+  checksum               = '4db4253b453151e1a9da959deff2c77f847e5a25aa401df574525b0f6a6c1880'
   checksumType           = 'sha256'
 }
 Install-ChocolateyPackage @packageArgs
