@@ -1,0 +1,1 @@
+﻿Uninstall-Module oh-my-posh
