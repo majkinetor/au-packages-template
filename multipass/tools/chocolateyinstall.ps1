@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 $pp = Get-PackageParameters
 if(!$pp['HyperVisor']) {$pp['HyperVisor'] = "Hyper-V"}
-$url64 = ''
-$checksum64 = ''
+$url64 = 'https://github.com/CanonicalLtd/multipass/releases/download/v0.8.0/multipass-0.8.0+win-win64.exe'
+$checksum64 = '48dbb677822741b7890657c9c3613beebe173116d9e4bc5930ca5e0db133b35a4c7ccc02b76adea89e3b17c19f7888f1d3f30e56523475bb3f54581809d1d860'
 $checksumType64 = 'sha512'
 Install-ChocolateyPackage -PackageName $env:ChocolateyPackageName -FileType 'exe' -SilentArgs '/S' -Url64bit $url64 -Checksum64 $checksum64 -ChecksumType64 $checksumType64
   # [-Url64bit <String>] `

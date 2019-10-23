@@ -22,11 +22,11 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- This section is about this package, although id and version have ties back to the software -->
     <!-- id is lowercase and if you want a good separator for words, use '-', not '.'. Dots are only acceptable as suffixes for certain types of packages, e.g. .install, .portable, .extension, .template -->
     <!-- If the software is cross-platform, attempt to use the same id as the debian/rpm package(s) if possible. -->
-    <id>drawio-desktop</id>
+    <id>multipass</id>
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>0.0.1</version>
+    <version>0.8.0</version>
     <packageSourceUrl>https://github.com/digitalcoyote/au-packages</packageSourceUrl>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Curtis Carter</owners>
@@ -53,7 +53,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <description>Multipass is a lightweight VM manager for Linux, Windows and macOS. It's designed for developers who want a fresh Ubuntu environment with a single command. It uses KVM on Linux, Hyper-V on Windows and HyperKit on macOS to run the VM with minimal overhead. It can also use VirtualBox on Windows and macOS. Multipass will fetch images for you and keep them up to date.
 
       Since it supports metadata for cloud-init, you can simulate a small cloud deployment on your laptop or workstation.</description>
-    <releaseNotes>[Release Notes]()</releaseNotes>
+    <releaseNotes>[Release Notes](https://github.com/CanonicalLtd/multipass/releases/tag/v0.8.0)</releaseNotes>
     <!-- =============================== -->      
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
