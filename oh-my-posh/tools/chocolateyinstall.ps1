@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$version = ''
+$version = '0.2.1'
 Install-Script -RequiredVersion $version -Name 'oh-my-posh' -Scope 'AllUsers' -AcceptLicense -AllowPrerelease -Force
 if($PSVersionTable.PSVersion.Major -gt 5){
     Install-Module -Name PSReadLine -AllowPrerelease -Scope CurrentUser -Force -SkipPublisherCheck
