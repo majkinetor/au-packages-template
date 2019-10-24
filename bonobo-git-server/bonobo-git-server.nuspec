@@ -51,6 +51,18 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <summary>Git Server For Windows</summary>
     <description>Git Server For Windows
     ### Package Specific
+    This package will check for IIS and Install/Configure it and the Following Windows Optional Features if necessary.
+      * IIS-WebServerRole
+      * IIS-WebServer
+      * IIS-ApplicationDevelopment
+      * NetFx4Extended-ASPNET45
+      * IIS-NetFxExtensibility45
+      * IIS-ISAPIExtensions
+      * IIS-ISAPIFilter
+      * IIS-ASPNET45
+    
+    Additionally, this package will configure AppPool, User, and Site in IIS.
+
     #### Package Parameters
     The following package parameters can be set:
 
