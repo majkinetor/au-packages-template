@@ -2,15 +2,20 @@
 
 $pp = Get-PackageParameters
 $url = 'https://bonobogitserver.com/resources/releases/6_5_0.zip'
-$checksum32 = ''
+$checksum = '5862b9485ac323ffe2f04e3a580ce535654a30f7fb6546877adbb6ce6171c4f8a326202c6abdf73e694ec81cddacbe262c9a3db70e12ca1bbacb2512a68426ec'
 if(!$pp['Site']) {$pp['Site'] = "Default Web Site"}
 if(!$pp['Name']) {$pp['Name'] = "Bonobo.Git.Server"}
-if(!$pp['InstallLocation']) {$pp['InstallLocation'] = "$env:SystemDrive\inetpub\wwwroot\Bonobo.Git.Server"}
+if(!$pp['InstallLocation']) {$pp['InstallLocation'] = "$env:SystemDrive\inetpub\wwwroot\"}
 if(!$pp['AppPool']){$pp['AppPool'] = "Bonobo.Git.Server"}
 if(!$pp['UseExistingAppPool']){$pp['UseExistingAppPool'] = "False"}
-$UseExistingAppPool = [System.Convert]::ToBoolean($pp['UseExistingAppPool'])
 
-Install-ChocolateyZipPackage -PackageName "BonoboGitServer" -Url $url -UnzipLocation "$env:SystemDrive\inetpub\wwwroot\" -CheckSum $checksum
+Install-ChocolateyZipPackage -PackageName $env:ChocolateyPackageName `
+    -Url $url `
+    -UnzipLocation $pp['InstallLocation'] `
+    -CheckSum $checksum `
+    -CheckSumType 'sha512'
+
+$pp['InstallLocation'] = Join-Path $pp['InstallLocation'] "Bonobo.Git.Server" <#  #>
 
 if ((Get-WindowsOptionalFeature -Online -FeatureName IIS-WebServerRole).State -eq "Disabled"){
     Write-Output "Installing IIS WebServerRole"
@@ -61,7 +66,7 @@ if(Test-Path "IIS:\Sites\$($pp['Site'])\$($pp['Name'])")
     Remove-WebSite "$($pp['Site'])\$($pp['Name'])"
 }
 
-if (!$UseExistingAppPool){
+if (!([System.Convert]::ToBoolean($pp['UseExistingAppPool']))){
     
     if(Test-Path "IIS:\AppPools\$($pp['AppPool'])")
     {
@@ -79,15 +84,13 @@ Write-Output "Creating new website"
 New-WebApplication -Name $pp['Name'] -Site $pp['Site'] -PhysicalPath $pp['InstallLocation'] -ApplicationPool $pp['AppPool']
 
 if ($pp['Port']){
-    Set-WebBinding -Name $pp['Site'] -BindingInformation "*:80:" -PropertyName Port -Value $pp['Port']
+    Set-WebBinding -Name $pp['Site'] -BindingInformation "*:$($pp['Port']):" -PropertyName Port -Value $pp['Port']
 }
 
 $AppDataPath = Join-Path -Path $pp['InstallLocation'] -ChildPath "App_Data"
 $AppPoolUser = "IIS APPPOOL\$($pp['AppPool'])"
 $Acl = Get-Acl $AppDataPath
-$permission = $Acl.Access | Where-Object{$_.IdentityReference -match $AppPoolUser} | Select-Object IdentityReference,FileSystemRights
-If (!$permission){
-    $AccessRule= New-Object System.Security.AccessControl.FileSystemAccessRule($AppPoolUser, "FullControl", "ContainerInherit,Objectinherit", "none", "Allow")
-    $Acl.AddAccessRule($AccessRule)
+If (!($Acl.Access | Where-Object{$_.IdentityReference -match $AppPoolUser} | Select-Object IdentityReference,FileSystemRights)){
+    $Acl.AddAccessRule((New-Object System.Security.AccessControl.FileSystemAccessRule($AppPoolUser, "FullControl", "ContainerInherit,Objectinherit", "none", "Allow")))
     Set-Acl $AppDataPath $Acl
 }      

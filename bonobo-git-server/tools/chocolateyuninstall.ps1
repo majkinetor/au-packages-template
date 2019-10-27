@@ -18,5 +18,5 @@ if(Test-Path IIS:\Sites\BonoboGitServer)
     Get-ChildItem IIS:\Sites
 }
 
-Uninstall-ChocolateyZipPackage "BonoboGitServer"
+Uninstall-ChocolateyZipPackage -PackageName $env:ChocolateyPackageName
 Write-Output "Files and repositories have not been deleted and may need to be cleaned up manually."
