@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <!-- Read this before creating packages: https://chocolatey.org/docs/create-packages -->
 <!-- It is especially important to read the above link to understand additional requirements when publishing packages to the community feed aka dot org (https://chocolatey.org/packages). -->
 
@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>6.4.0</version>
+    <version>6.5.0</version>
     <packageSourceUrl>https://github.com/digitalcoyote/au-packages</packageSourceUrl>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Curtis Carter</owners>
@@ -49,39 +49,52 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>https://github.com/jakubgarfield/Bonobo-Git-Server/graphs/contributors</authors>
     <tags>bonobogitserver git vcs</tags>
     <summary>Git Server For Windows</summary>
-    <description>Git Server For Windows
-    ### Package Specific
-    This package will check for IIS and Install/Configure it and the Following Windows Optional Features if necessary.
-      * IIS-WebServerRole
-      * IIS-WebServer
-      * IIS-ApplicationDevelopment
-      * NetFx4Extended-ASPNET45
-      * IIS-NetFxExtensibility45
-      * IIS-ISAPIExtensions
-      * IIS-ISAPIFilter
-      * IIS-ASPNET45
+<description>Git Server For Windows
+
+### Package Specific
+
+This package will check for IIS and Install/Configure it and the Following Windows Optional Features if necessary.
+
+* IIS-WebServerRole
+* IIS-WebServer
+* IIS-ApplicationDevelopment
+* NetFx4Extended-ASPNET45
+* IIS-NetFxExtensibility45
+* IIS-ISAPIExtensions
+* IIS-ISAPIFilter
+* IIS-ASPNET45
     
-    Additionally, this package will configure AppPool, User, and Site in IIS.
+Additionally, this package will configure AppPool, User, and Site in IIS.
 
-    #### Package Parameters
-    The following package parameters can be set:
+#### Package Parameters
 
-     * `/Port:` - Uses Set-WebBinding to swtitch the port used to a new port
-     * `/Site:` - What IIS Site to Install WebApplication under - defaults to "Default Web Site"
-     * `/Name:` - Name to use when installing WebApplication - defaults to "Bonobo.Git.Server"
-     * `/AppPool` - Name of AppPool to use - defaults to "Bonobo.Git.Server"
-     * `/UseExistingAppPool` - If True, Does not create/recreate the app pool - defaults to False
-     * `/InstallLocation:` - Physical Path to set for the website - defaults to "`$env:SystemDrive\inetpub\wwwroot\Bonobo.Git.Server`"
+The following package parameters can be set:
 
-    To pass parameters, use `--params "''"` (e.g. `choco install bonobo-git-server [other options] --params="'/Site:MySite /Name:GitServer /UseExistingAppPool'"`).
-    To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`. 
-    </description>
+* `/Port:` - Uses Set-WebBinding to swtitch the port used to a new port
+* `/Site:` - What IIS Site to Install WebApplication under - defaults to "Default Web Site"
+* `/Name:` - Name to use when installing WebApplication - defaults to "Bonobo.Git.Server"
+* `/AppPool` - Name of AppPool to use - defaults to "Bonobo.Git.Server"
+* `/UseExistingAppPool` - If True, Does not create/recreate the app pool - defaults to False
+* `/InstallLocation:` - Physical Path to set for the website - defaults to "`$env:SystemDrive\inetpub\wwwroot\Bonobo.Git.Server`"
+
+To pass parameters, use `--params "''"` (e.g. `choco install bonobo-git-server [other options] --params="'/Site:MySite /Name:GitServer /UseExistingAppPool'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+
+
+#### Uninstall
+
+This package will attempt to clean up on uninstall, but many components used by Bonobo Git Server could be shared with other applications and websites. 
+
+* Using a custom Site/AppPool name will prevent removal during uninstall.
+* Files and Repositories are not deleted on uninstall. This is to prevent accidentally wiping your git repositories and any custom web.config changes.
+* Optional Windows Features listed above are not removed.
+</description>
     <releaseNotes>https://bonobogitserver.com/changelog/</releaseNotes>
-    <!-- =============================== -->      
+    <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
-      <dependency id="chocolatey-core.extension" version="1.0.4"/>
+      <dependency id="chocolatey-core.extension" version="1.0.4" />
     </dependencies>
     <!-- chocolatey-core.extension - https://chocolatey.org/packages/chocolatey-core.extension
          - You want to use Get-UninstallRegistryKey on less than 0.9.10 (in chocolateyUninstall.ps1)
