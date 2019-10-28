@@ -49,11 +49,11 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>https://github.com/vvatanabe/gitb/graphs/contributors</authors>
     <tags>gitb git </tags>
     <summary>A command line tool for using Backlog's git comfortably.</summary>
-    <description>gitb command helps to use Backlog's git comfortably. For example, can open PR, issue, branches, tags, etc in the browser with one action.
+<description>gitb command helps to use Backlog's git comfortably. For example, can open PR, issue, branches, tags, etc in the browser with one action.
 
-      Also, gitb wraps all git commands, therefore can execute git-command using gitb like a gitb fetch, gitb pull, gitb push, and more...
+Also, gitb wraps all git commands, therefore can execute git-command using gitb like a gitb fetch, gitb pull, gitb push, and more...
       
-      Suffix B has multiple meanings. Backlog, Browser, B-Dash.</description>
+Suffix B has multiple meanings. Backlog, Browser, B-Dash.</description>
     <releaseNotes>[Release Notes](https://github.com/vvatanabe/gitb/releases/tag/2.0.1)</releaseNotes>
     <!-- =============================== -->      
 

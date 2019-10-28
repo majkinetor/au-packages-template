@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>2.0.0-alpha-12</version>
+    <version>1.2.1</version>
     <packageSourceUrl>https://github.com/digitalcoyote/au-packages</packageSourceUrl>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Curtis Carter</owners>
@@ -49,13 +49,13 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>https://github.com/mypaint/mypaint/graphs/contributors</authors>
     <tags>mypaint art design graphics paint sketch</tags>
     <summary>MyPaint is a simple drawing and painting program that works well with Wacom-style graphics tablets.</summary>
-    <description>MyPaint is a nimble, distraction-free, and easy tool for digital painters. It supports graphics tablets made by Wacom, and many similar devices. Its brush engine is versatile and configurable, and it provides useful, productive tools.
+<description>MyPaint is a nimble, distraction-free, and easy tool for digital painters. It supports graphics tablets made by Wacom, and many similar devices. Its brush engine is versatile and configurable, and it provides useful, productive tools.
 
-      The standard brushes can emulate traditional media like charcoal, pencils, ink, or paint. But you don’t have to limit yourself to just the standard ones. It’s easy to make expressive, artful new brushes that don’t respond like anything conventional.
+The standard brushes can emulate traditional media like charcoal, pencils, ink, or paint. But you don’t have to limit yourself to just the standard ones. It’s easy to make expressive, artful new brushes that don’t respond like anything conventional.
       
-      Fullscreen mode declutters the interface, leaving you with just your brush and your creativity. You can still reveal the tools you want, when you need them. This distraction-free approach means you can focus better on the art you make, not the tool you make it with.
+Fullscreen mode declutters the interface, leaving you with just your brush and your creativity. You can still reveal the tools you want, when you need them. This distraction-free approach means you can focus better on the art you make, not the tool you make it with.
       
-      MyPaint has simplicity, yet it gives you all the tools you need to create great artwork.</description>
+MyPaint has simplicity, yet it gives you all the tools you need to create great artwork.</description>
     <releaseNotes>https://github.com/mypaint/mypaint/releases/</releaseNotes>
     <!-- =============================== -->      
 
