@@ -50,9 +50,30 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <tags>multipass VM Hyper-V virtualbox ubuntu</tags>
     <summary>Multipass orchestrates virtual Ubuntu instances
     </summary>
-<description>Multipass is a lightweight VM manager for Linux, Windows and macOS. It's designed for developers who want a fresh Ubuntu environment with a single command. It uses KVM on Linux, Hyper-V on Windows and HyperKit on macOS to run the VM with minimal overhead. It can also use VirtualBox on Windows and macOS. Multipass will fetch images for you and keep them up to date.
+<description>### Package Specific
 
-Since it supports metadata for cloud-init, you can simulate a small cloud deployment on your laptop or workstation.</description>
+This package allows configuring multipass via either of the two supported hypervisors. 
+Hyper-V (and it's dependant Optional Windows Features) will be enabled if supported by your operating system. The version of Hyper-V supported by Multipass requires Windows 10 Professional/Enterprise build version 17134 or later.
+Virtual Box must be preinstalled as it will not be installed with this package. If set to use Virtual Box, This package will set the driver to user Virtual Box, but other configuration may be necessary depending on your setup.
+
+#### Package Parameters
+
+The following package parameter can be set:
+    
+ * `/HyperVisor:` - Accepts 'VirtualBox' or 'Hyper-V' (default)
+    
+To pass parameters, use `--params "''"` (e.g. `choco install bonobo-git-server [other options] --params="'/HyperVisor:VirtualBox'"`).
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+
+#### Multipass
+
+Multipass is a lightweight VM manager for Linux, Windows and macOS. It's designed for developers who want a fresh Ubuntu environment with a single command. It uses KVM on Linux, Hyper-V on Windows and HyperKit on macOS to run the VM with minimal overhead. It can also use VirtualBox on Windows and macOS. Multipass will fetch images for you and keep them up to date.
+
+Since it supports metadata for cloud-init, you can simulate a small cloud deployment on your laptop or workstation.
+
+#### Uninstall
+
+This package attempts to clean up files related to multipass by running it's uninstall.exe, but will not uninstall the hypervisor. </description>
     <releaseNotes>[Release Notes](https://github.com/CanonicalLtd/multipass/releases/tag/v0.8.0)</releaseNotes>
     <!-- =============================== -->      
 

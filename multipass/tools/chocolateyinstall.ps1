@@ -37,6 +37,6 @@ Install-BinFile `
 
 if($pp['HyperVisor'] -match '[Vv][Ii][Rr][Tt][Uu][Aa][Ll]\s*[Bb][Oo][Xx]'){
 
-  Write-Host "Virtual-Box muse be installed to use this option"
+  Write-Host "Virtual-Box must be installed to use this option"
   & "$env:ProgramFiles\Multipass\bin\multipass.exe" set local.driver=virtualbox
 }
