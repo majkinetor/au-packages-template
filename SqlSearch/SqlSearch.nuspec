@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>SqlSearch</id>
-        <version>3.3.1.2410</version>
+        <version>2019.09.27</version>
         <title>SQL Search</title>
         <authors>Red Gate Software Ltd</authors>
         <owners>sumo300, flcdrg</owners>
