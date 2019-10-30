@@ -44,32 +44,51 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <projectSourceUrl>https://github.com/JanDeDobbeleer/oh-my-posh</projectSourceUrl>
     <docsUrl>https://github.com/JanDeDobbeleer/oh-my-posh/blob/master/README.md</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
-    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <bugTrackerUrl>https://github.com/JanDeDobbeleer/oh-my-posh/issues</bugTrackerUrl>
     <authors>https://github.com/JanDeDobbeleer/oh-my-posh/graphs/contributors</authors>
     <tags>powershell oh-my-posh posh conemu</tags>
     <summary>A theme engine for Powershell in ConEmu inspired by the work done by Chris Benti on PS-Config and Oh-My-ZSH on OSX and Linux (hence the name).</summary>
-    <description>
-      ConEmu based Powershell theme engine.
-      
-      Features:
+    <description>ConEmu based Powershell theme engine.
 
-      Easy installation
-      Awesome prompt themes for PowerShell in ConEmu
-      Git status indications (powered by posh-git)
-      Failed command indication
-      Admin indication
-      Current session indications (admin, failed command, user)
-      Configurable
-      Easily create your own theme
-      Separate settings for oh-my-posh and posh-git
-      Does not mess with the default Powershell console</description>
+#### Package Specific
+
+This package appends the following lines to your Powershell Profile on Install if they are not already there
+ * 'Import-Module posh-git' - Enables posh-git (a requirement of oh-my-posh)
+ * 'Import-Module oh-my-posh' - Enables oh-my-posh
+
+On uninstall, this package removes the following lines from your Powershell profile
+ * 'Import-Module oh-my-posh' - Enables oh-my-posh
+ * 'Set-Theme someTheme' - Any Themes set are removed from the profile.
+ 
+Posh-Git is not disabled on uninstall.
+
+#### Features
+
+ * Easy installation
+ * Awesome prompt themes for PowerShell in ConEmu
+ * Git status indications (powered by posh-git)
+ * Failed command indication
+ * Admin indication
+ * Current session indications (admin, failed command, user)
+ * Configurable
+ * Easily create your own theme
+ * Separate settings for oh-my-posh and posh-git
+ * Does not mess with the default Powershell console
+
+#### Prerequisites
+
+ * ConEmu (Chocolatey dependency)
+ * posh-git (Must be installed manually or via PowershellGallery)
+ * PSReadLine ≥ 2.0.0-beta1 (installed during installation) if using Powershell 6+
+ * Ability to run unsigned scripts.
+</description>
     <releaseNotes>https://github.com/JanDeDobbeleer/oh-my-posh/releases</releaseNotes>
     <!-- =============================== -->      
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
       <dependency id="conemu" version="12.4.17" />
-      <dependency id="poshgit" version="0.3" />
+      <!-- <dependency id="poshgit" version="0.3" /> -->
     </dependencies>
     <!-- chocolatey-core.extension - https://chocolatey.org/packages/chocolatey-core.extension
          - You want to use Get-UninstallRegistryKey on less than 0.9.10 (in chocolateyUninstall.ps1)
