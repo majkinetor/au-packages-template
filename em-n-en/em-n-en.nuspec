@@ -30,7 +30,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <packageSourceUrl>https://github.com/digitalcoyote/au-packages</packageSourceUrl>
     <iconUrl>https://rawcdn.githack.com/CemraJC/em-n-en/e06e5e60267e63c917dd263e978c293fdd91b85b/icon/Eminen-icon.png?raw=true</iconUrl>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
-    <owners>Curtis Carter</owners>
+    <owners>codingcoyote</owners>
     <!-- ============================== -->
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
