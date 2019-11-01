@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Read this before creating packages: https://chocolatey.org/docs/create-packages -->
 <!-- It is especially important to read the above link to understand additional requirements when publishing packages to the community feed aka dot org (https://chocolatey.org/packages). -->
 
@@ -8,20 +8,23 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>kubeval</id>
-    <version>0.7.1</version>
-    <packageSourceUrl>https://github.com/garethr/kubeval/tree/master/chocolatey/kubeval</packageSourceUrl>
-    <owners>Gareth Rushgrove</owners>
+    <version>0.0.1</version>
+    <packageSourceUrl>https://github.com/digitalcoyote/chocolatey-packages</packageSourceUrl>
+    <owners>Gareth Rushgrove
+Curtis Carter
+    </owners>
     <title>kubeval</title>
     <authors>Gareth Rushgrove</authors>
-    <projectUrl>https://github.com/garethr/kubeval</projectUrl>
+    <projectUrl>https://kubeval.instrumenta.dev/</projectUrl>
     <copyright>2017 Gareth Rushgrove</copyright>
     <licenseUrl>https://github.com/garethr/kubeval/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/garethr/kubeval.git</projectSourceUrl>
+    <docsUrl>https://kubeval.instrumenta.dev/</docsUrl>
     <bugTrackerUrl>https://github.com/garethr/kubeval/issues</bugTrackerUrl>
     <tags>kubeval kubernetes</tags>
     <summary>Validate your Kubernetes configuration files, supports multiple Kubernetes versions</summary>
-    <description>Validate your Kubernetes configuration files, supports multiple Kubernetes versions</description>
+    <description>kubeval is a tool for validating a Kubernetes YAML or JSON configuration file. It does so using schemas generated from the Kubernetes OpenAPI specification, and therefore can validate schemas for multiple versions of Kubernetes.</description>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
