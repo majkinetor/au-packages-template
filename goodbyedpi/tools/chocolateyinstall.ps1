@@ -3,9 +3,9 @@ $subfolder = '_64'
 }
 $packageArgs = @{
   packageName            = "$env:chocolateyPackageName"
-  url                    = 'https://github.com/ValdikSS/GoodbyeDPI/releases/download/0.1.5/goodbyedpi-0.1.5.zip'
+  url                    = 'https://github.com/ValdikSS/GoodbyeDPI/releases/download/0.1.6/goodbyedpi-0.1.6.zip'
   UnzipLocation          = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
-  checksum               = '1e225ea392aebc2815bb5bec9a552a20d2feef6e6647e60d3b779deabeb65d55'
+  checksum               = '2b8124aad279860fb490447708357cfe695253f828400032779e6da93f6e0c95'
   checksumType           = 'sha256'
   SpecificFolder         = "goodbyedpi-0.1.4/x86$subfolder"
 }
