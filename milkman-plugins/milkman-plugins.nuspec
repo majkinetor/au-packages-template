@@ -46,7 +46,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <docsUrl>https://github.com/warmuuh/milkman/blob/master/milkman-sync-git/readme.md</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
     <!--<bugTrackerUrl></bugTrackerUrl>-->
-    <authors>https://github.com/warmuuh/milkman/graphs/contributors</authors>
+    <authors>warmuuh</authors>
     <tags>milkman</tags>
     <summary>Milkman Sync-Git Plugin</summary>
     <description>

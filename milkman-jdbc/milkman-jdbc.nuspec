@@ -46,7 +46,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <docsUrl>https://github.com/warmuuh/milkman/blob/master/milkman-jdbc/readme.md</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
     <!--<bugTrackerUrl></bugTrackerUrl>-->
-    <authors>https://github.com/warmuuh/milkman/graphs/contributors</authors>
+    <authors>warmuuh</authors>
     <tags>milkman jdbc sql</tags>
     <summary>Milkman JDBC Plugin</summary>
     <description>
