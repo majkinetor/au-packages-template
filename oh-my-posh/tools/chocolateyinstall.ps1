@@ -2,7 +2,6 @@ $ErrorActionPreference = 'Stop';
 if (! (Get-Module -ListAvailable -Name 'posh-git')) {
   Write-Host "Posh-Git was not found in powershell modules."
   Write-Host "You may need to install Posh-Git manually or run 'Install-Module posh-git' before installing this package."
-  Throw [System.Exception] "posh-git not found in `"Get-Module -ListAvailable -Name 'posh-git'`""
 }
 
 Remove-Module -Name $env:ChocolateyPackageName -Force -ErrorAction SilentlyContinue
@@ -18,7 +17,10 @@ if($PSVersionTable.PSVersion.Major -gt 5){
     [Environment]::SetEnvironmentVariable('PSModulePath', $newPSModulePath, 'Machine')
     $env:PSModulePath = $newPSModulePath
   }
+  if (! (Get-Module -ListAvailable -Name 'PSReadLine')) {
+    Write-Host "Installing PSReadLine prerelease from PowershellGallery"
     Install-Module -Name PSReadLine -AllowPrerelease -Scope CurrentUser -Force -SkipPublisherCheck
+  }
 }
 else{
   $Script:modulePath = Join-Path -Path $env:ProgramFiles -ChildPath 'WindowsPowerShell\Modules\'
@@ -61,4 +63,4 @@ else{
   Write-Host "No Powershell Profile was found. You may wish to create a Profile and append 'Import-Module posh-git', 'Import-Module oh-my-posh', and 'Set-Theme paradox' to enable oh-my-posh"
 }
 
-Write-Host "You may need to change your Powershell Execution Policy to use $env:ChocolateyPackageName as the powershell profile is unsigned."
+Write-Host "You may need to change your Powershell Execution Policy to use $env:ChocolateyPackageName."
