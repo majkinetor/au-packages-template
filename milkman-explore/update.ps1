@@ -12,6 +12,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_BeforeUpdate() {
+  
   $Latest.Checksum64 = Get-FileHash -Path "tools\$PackageName.jar" -Algorithm SHA512
   $Latest.ChecksumType64 = 'sha512'
 }
@@ -24,6 +25,7 @@ function global:au_GetLatest {
   $url = 'https://github.com/warmuuh/milkman/releases/download/' + $version + '/milkman-dist-plugins-bin.zip'
   $DownloadedFile = "$PSScriptRoot\milkman-dist-plugins-bin.zip"
   (New-Object System.Net.WebClient).DownloadFile($url, $DownloadedFile)
+  Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/warmuuh/milkman/master/LICENSE' -OutFile 'tools\License.txt'
   $UnzipDirectory = "$PSScriptRoot\milkman-dist-plugins-bin\"
   Expand-Archive -Path $DownloadedFile -DestinationPath $UnzipDirectory -Force
   Get-ChildItem -Path $UnzipDirectory  -Filter "$PackageName.jar" -Recurse | Select-Object -first 1 | Copy-Item -Destination "tools\$PackageName.jar"

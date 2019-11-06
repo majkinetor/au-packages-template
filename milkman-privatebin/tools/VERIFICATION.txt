@@ -1,0 +1,9 @@
+
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+ 
+The binary in this package (milkman-privatebin.jar) is obtained directly from
+the milkman-dist-plugins-bin.zip from this version (obtainable at 
+https://github.com/warmuuh/milkman/releases) and can be compared to the 
+milkman-privatebin.jar provided by warmuuh on github.
