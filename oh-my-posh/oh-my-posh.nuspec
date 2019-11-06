@@ -45,7 +45,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <docsUrl>https://github.com/JanDeDobbeleer/oh-my-posh/blob/master/README.md</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
     <bugTrackerUrl>https://github.com/JanDeDobbeleer/oh-my-posh/issues</bugTrackerUrl>
-    <authors>https://github.com/JanDeDobbeleer/oh-my-posh/graphs/contributors</authors>
+    <authors>JanDeDobbeleer</authors>
     <tags>powershell oh-my-posh posh conemu</tags>
     <summary>A theme engine for Powershell in ConEmu inspired by the work done by Chris Benti on PS-Config and Oh-My-ZSH on OSX and Linux (hence the name).</summary>
     <description>ConEmu based Powershell theme engine.
@@ -77,7 +77,6 @@ Posh-Git is not disabled on uninstall.
 
 #### Prerequisites
 
- * ConEmu (Chocolatey dependency)
  * posh-git (Must be installed manually or via PowershellGallery)
  * PSReadLine ≥ 2.0.0-beta1 (installed during installation) if using Powershell 6+
  * Ability to run unsigned scripts.
