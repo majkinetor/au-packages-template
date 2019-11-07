@@ -46,10 +46,9 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <docsUrl>https://discourse.ubuntu.com/c/multipass/doc</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
     <!--<bugTrackerUrl></bugTrackerUrl>-->
-    <authors>https://github.com/CanonicalLtd/multipass/graphs/contributors</authors>
+    <authors>Canonical Ltd</authors>
     <tags>multipass VM Hyper-V virtualbox ubuntu</tags>
-    <summary>Multipass orchestrates virtual Ubuntu instances
-    </summary>
+    <summary>Multipass orchestrates virtual Ubuntu instances</summary>
 <description>### Package Specific
 
 This package allows configuring multipass via either of the two supported hypervisors. 
