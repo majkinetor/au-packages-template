@@ -65,7 +65,7 @@ Posh-Git is not disabled on uninstall.
 #### Features
 
  * Easy installation
- * Awesome prompt themes for PowerShell in ConEmu
+ * Awesome prompt themes for PowerShell
  * Git status indications (powered by posh-git)
  * Failed command indication
  * Admin indication
@@ -86,7 +86,6 @@ Posh-Git is not disabled on uninstall.
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
-      <dependency id="conemu" version="12.4.17" />
       <!-- <dependency id="poshgit" version="0.3" /> -->
     </dependencies>
     <!-- chocolatey-core.extension - https://chocolatey.org/packages/chocolatey-core.extension
