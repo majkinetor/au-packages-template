@@ -5,7 +5,7 @@
     <id>dotMemory</id>
     <owners>JetBrains, flcdrg</owners>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/dotMemory</packageSourceUrl>
-    <version>2019.3-EAP2</version>
+    <version>2019.3-EAP3</version>
     <title>JetBrains dotMemory</title>
     <authors>JetBrains</authors>
     <projectUrl>https://www.jetbrains.com/dotmemory</projectUrl>
@@ -43,7 +43,7 @@ Analyse memory traffic in a particular timeframe to know the cause of excessive 
 
     <releaseNotes>https://www.jetbrains.com/dotmemory/whatsnew/</releaseNotes>
     <dependencies>
-      <dependency id="resharper-platform" version="[193.0.20191031.203554-eap02]" />
+      <dependency id="resharper-platform" version="[193.0.20191106.173251-eap03]" />
       <dependency id="dotnet4.6.1" version="4.6.01055.20170308" />
     </dependencies>
   </metadata>
