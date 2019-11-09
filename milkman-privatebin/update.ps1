@@ -11,8 +11,8 @@ function global:au_SearchReplace {
   }
 }
 
-function global:au_BeforeUpdate() {
-  $Latest.Checksum64 = Get-FileHash -Path "tools\$PackageName.jar" -Algorithm SHA512
+function script:au_BeforeUpdate() {
+  $Latest.Checksum64 = (Get-FileHash -Path "tools\$PackageName.jar" -Algorithm SHA512).Hash
   $Latest.ChecksumType64 = 'sha512'
 }
 
