@@ -2,8 +2,8 @@
 
 $packageName  = 'ozcode-vs2017'
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$fileName     = 'OzCode_4.0.0.1543.vsix'
-$checksum     = '269bfe06b725dcbebb1efe3adf4f81acca21167c749a83e8394487f3767e7f2d'
+$fileName     = 'OzCode_4.0.0.1632.vsix'
+$checksum     = '529bf33cc95018011ecc7a9bf0e64ed655aff883b3b41bc63e190395f757d2a7'
 $fileFullPath = "$toolsDir\$fileName"
 
 # Flag whether we're being invoked by AU module
