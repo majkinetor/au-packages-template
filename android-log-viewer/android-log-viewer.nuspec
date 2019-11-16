@@ -40,12 +40,12 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- <iconUrl></iconUrl> -->
     <!-- <copyright>Year Software Vendor</copyright> -->
     <!-- If there is a license Url available, it is required for the community feed -->
-    <licenseUrl>https://rawcdn.githack.com/MarkusPalcer/AndroidLogViewer/726d1f73e55b2262cd61043c4a7a9ff90b39f395/LICENSE</licenseUrl>
+    <licenseUrl>https://github.com/MarkusPalcer/AndroidLogViewer/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/MarkusPalcer/AndroidLogViewer</projectSourceUrl>
     <!-- <docsUrl></docsUrl> -->
     <!--<mailingListUrl></mailingListUrl>-->
-    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <bugTrackerUrl>https://github.com/MarkusPalcer/AndroidLogViewer/issues</bugTrackerUrl>
     <authors>https://github.com/MarkusPalcer/AndroidLogViewer/graphs/contributors</authors>
     <tags>android log viewer android-log-viewer</tags>
     <summary>A Windows software to view and filter logcat logs</summary>

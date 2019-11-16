@@ -40,7 +40,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <iconUrl>https://d33wubrfki0l68.cloudfront.net/d0c94836ab5b896f29728f3c4798054539303799/9f948/logo/logo.png</iconUrl>
     <!-- <copyright>Year Software Vendor</copyright> -->
     <!-- If there is a license Url available, it is required for the community feed -->
-    <licenseUrl>https://rawcdn.githack.com/kubernetes-sigs/kind/59b0bc3e26a60cc81406fb0638c4186aa19ef4a3/LICENSE</licenseUrl>
+    <licenseUrl>https://github.com/kubernetes-sigs/kind/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/kubernetes-sigs/kind</projectSourceUrl>
     <docsUrl>https://kind.sigs.k8s.io/docs/</docsUrl>

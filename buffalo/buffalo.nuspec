@@ -40,7 +40,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <iconUrl>https://rawcdn.githack.com/gobuffalo/buffalo/d1a3b6945efc36c596338ae618ece4e8a3ce2449/logo.svg?sanitize=true</iconUrl>
     <!-- <copyright>Year Software Vendor</copyright> -->
     <!-- If there is a license Url available, it is required for the community feed -->
-    <licenseUrl>https://rawcdn.githack.com/gobuffalo/buffalo/d1a3b6945efc36c596338ae618ece4e8a3ce2449/LICENSE.txt</licenseUrl>
+    <licenseUrl>https://github.com/gobuffalo/buffalo/blob/master/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/gobuffalo/buffalo</projectSourceUrl>
     <docsUrl>https://gobuffalo.io/en/docs/overview/</docsUrl>

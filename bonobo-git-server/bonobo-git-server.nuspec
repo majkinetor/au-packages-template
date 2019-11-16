@@ -40,7 +40,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/bonobogitserver.png</iconUrl>-->
     <!-- <copyright>Year Software Vendor</copyright> -->
     <!-- If there is a license Url available, it is required for the community feed -->
-    <licenseUrl>https://rawcdn.githack.com/jakubgarfield/Bonobo-Git-Server/f44c9b272974527e1e6d601d02aa5ef1826e2382/license.md</licenseUrl>
+    <licenseUrl>https://github.com/jakubgarfield/Bonobo-Git-Server/blob/master/license.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/jakubgarfield/Bonobo-Git-Server</projectSourceUrl>
     <docsUrl>https://bonobogitserver.com/documentation/</docsUrl>
