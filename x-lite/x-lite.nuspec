@@ -3,13 +3,14 @@
   <metadata>
     <id>x-lite</id>
     <title>CounterPath X-Lite</title>
-    <version>5.8.0.101919</version>
+    <version>5.8.1.102008</version>
     <authors>CounterPath</authors>
     <owners>fdcastel, flcdrg</owners>
     <summary>CounterPath X-Lite Softphone</summary>
     <description>Combining voice and video calls in a user-friendly interface, CounterPath's X-Lite helps you seamlessly transition from a traditional phone environment into the world of Voice over IP.</description>
     <projectUrl>http://www.counterpath.com/x-lite/</projectUrl>
-    <releaseNotes>- Bug Fixes and Stability Updates</releaseNotes>
+    <releaseNotes>- Fixed a few crashes on start up or upgrading
+- General Stability updates</releaseNotes>
     <docsUrl>http://www.counterpath.com/assets/product_documents/X-Lite_4_Windows_User_Guide_R6.pdf</docsUrl>
     <mailingListUrl>https://support.counterpath.com/</mailingListUrl>
     <tags>admin notsilent counterpath x-lite softphone</tags>
