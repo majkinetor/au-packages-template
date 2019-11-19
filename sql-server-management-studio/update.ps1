@@ -14,8 +14,10 @@ function global:au_SearchReplace {
 
 function Get-Download($url, $version)
 {
-    $request = Invoke-WebRequest -Uri $url -MaximumRedirection 0 -ErrorAction Ignore
+    # two levels of redirection
+    $request = Invoke-WebRequest -Method Head -Uri $url -MaximumRedirection 0 -ErrorAction Ignore
 
+    $request = Invoke-WebRequest -Method Head -Uri $request.Headers.Location -ErrorAction Ignore -MaximumRedirection 0
     $r = @{}
 
     if($request.StatusCode -lt 400)
@@ -80,34 +82,22 @@ function global:au_GetLatest {
 
             Write-Host "Found version $version, release $release"
 
-            # Focus on 18.x for now.
-            $downloadLinks = $content | Select-String -Pattern "Download SQL Server Management Studio 18.*\]\((https.*\d+)\)" -AllMatches
+            $first = Get-Download "https://aka.ms/ssmsfullsetup" $version
 
-            if ($downloadLinks.Matches.Count -eq 1)
-            #if ($downloadLinks.Matches.Count -eq 2)
+            if($first.Count)
             {
-                $first = Get-Download $downloadLinks.Matches[0].Groups[1].Value $version
-                #$second = Get-Download $downloadLinks.Matches[1].Groups[1].Value $version
-
-                #if($first.Count -and $second.Count)
-                if($first.Count)
-                {
-                    $Latest = @{
-                        Version = $version
-                        Release = $release
-                        FullChecksum = $first.checksum
-                        FullUrl = $first.url
-                        # UpgradeUrl = $second.url
-                        # UpgradeChecksum = $second.checksum
-                    }
-                    return $Latest
-
-                } else {
-                    Write-Warning "first.Count and/or second.Count were zero"
+                $Latest = @{
+                    Version = $version
+                    Release = $release
+                    FullChecksum = $first.checksum
+                    FullUrl = $first.url
                 }
+                return $Latest
+
             } else {
-                Write-Warning "Could not find download links"
+                Write-Warning "first.Count and/or second.Count were zero"
             }
+
         } else {
             Write-Warning "Regex match was false"
         }
