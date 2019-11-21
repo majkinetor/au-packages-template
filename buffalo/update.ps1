@@ -25,7 +25,7 @@ function global:au_GetLatest {
   $version = $version -split 'v' | Select-Object -Last 1
   $url32 = "$releases/download/v$version/buffalo_$($version)_windows_386.tar.gz"  
   $url64 = "$releases/download/v$version/buffalo_$($version)_windows_amd64.tar.gz"
-  $ReleaseNotesVersion = $version -replace '.', ''
+  $ReleaseNotesVersion = $version -replace '\.', ''
   $releaseNotes = "https://gobuffalo.io/en/docs/release-notes/buffalo/v$ReleaseNotesVersion/"
   return @{ Version = $version; URL = $url32; URL64 = $url64; ChecksumType32 = 'sha512'; ChecksumType64 = 'sha512'; ReleaseNotes = $releaseNotes;}
 }
