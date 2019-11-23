@@ -8,6 +8,9 @@ function global:au_SearchReplace {
       "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
       "(^[$]checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
     }
+    "$PackageName.nuspec" = @{
+      "(\<dependency id=""milkman"" version=""\[).*(\]"" />)" = "`${1}$($Latest.Version)`$2"
+    }
   }
 }
 
