@@ -4,7 +4,7 @@ $platformPackageName = 'resharper-platform'
 $packageName = 'ReSharper-Ultimate-All'
 $scriptPath = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 $commonPath = $(Split-Path -parent $(Split-Path -parent $scriptPath))
-$filename = 'JetBrains.ReSharperUltimate.2019.3.EAP4.Checked.exe'
+$filename = 'JetBrains.ReSharperUltimate.2019.3.EAP6.Checked.exe'
 $installPath = Join-Path  (Join-Path $commonPath $platformPackageName) $filename
 $packageParameters = Get-PackageParameters
 
