@@ -2,8 +2,8 @@
   packageName            = "$env:chocolateyPackageName"
   FileType               = 'exe'
   SilentArgs             = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
-  url                    = 'https://www.radmin-vpn.com/download/Radmin_VPN_1.1.3909.2.exe'
-  checksum               = 'b59c331b89e7187d9f965caf8c662dc30fc94f5a2a4ef8707f502efad55a1885'
+  url                    = 'https://www.radmin-vpn.com/download/Radmin_VPN_1.1.3969.3.exe'
+  checksum               = 'd5c5176905bc67ea93688786989fd98faf23ab63d3e5414034b982814d11d1c4'
   checksumType           = 'sha256'
 }
 Install-ChocolateyPackage @packageArgs
