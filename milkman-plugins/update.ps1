@@ -9,14 +9,14 @@ function global:au_SearchReplace {
       "(^[$]checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
     }
     "$PackageName.nuspec" = @{
-      "(\<dependency id=""milkman"" version=""\[).*(\]"" />)" = "`${1}$($Latest.Version)`$2"
-      "(\<dependency id=""milkman-explore"" version=""\[).*(\]"" />)" = "`${1}$($Latest.Version)`$2"
-      "(\<dependency id=""milkman-graphql"" version=""\[).*(\]"" />)" = "`${1}$($Latest.Version)`$2"
-      "(\<dependency id=""milkman-jdbc"" version=""\[).*(\]"" />)" = "`${1}$($Latest.Version)`$2"
-      "(\<dependency id=""milkman-privatebin"" version=""\[).*(\]"" />)" = "`${1}$($Latest.Version)`$2"
-      "(\<dependency id=""milkman-scripting"" version=""\[).*(\]"" />)" = "`${1}$($Latest.Version)`$2"
-      "(\<dependency id=""milkman-note"" version=""\[).*(\]"" />)" = "`${1}$($Latest.Version)`$2"
-      "(\<dependency id=""milkman-sync-git"" version=""\[).*(\]"" />)" = "`${1}$($Latest.Version)`$2"
+      "(\<dependency id=""milkman"" version=""\[).*(\]""\s*/>)" = "`${1}$($Latest.Version)`$2"
+      "(\<dependency id=""milkman-explore"" version=""\[).*(\]""\s*/>)" = "`${1}$($Latest.Version)`$2"
+      "(\<dependency id=""milkman-graphql"" version=""\[).*(\]""\s*/>)" = "`${1}$($Latest.Version)`$2"
+      "(\<dependency id=""milkman-jdbc"" version=""\[).*(\]""\s*/>)" = "`${1}$($Latest.Version)`$2"
+      "(\<dependency id=""milkman-privatebin"" version=""\[).*(\]""\s*/>)" = "`${1}$($Latest.Version)`$2"
+      "(\<dependency id=""milkman-scripting"" version=""\[).*(\]""\s*/>)" = "`${1}$($Latest.Version)`$2"
+      "(\<dependency id=""milkman-note"" version=""\[).*(\]""\s*/>)" = "`${1}$($Latest.Version)`$2"
+      "(\<dependency id=""milkman-sync-git"" version=""\[).*(\]""\s*/>)" = "`${1}$($Latest.Version)`$2"
     }
   }
 }
