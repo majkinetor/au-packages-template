@@ -4,9 +4,6 @@ $releases = "https://github.com/JanDeDobbeleer/oh-my-posh/releases"
 
 function global:au_SearchReplace {
   @{
-    ".\tools\chocolateyInstall.ps1" = @{
-      "(^[$]version\s*=\s*)('.*')"  = "`$1'$($Latest.Version)'"
-    }
   }
 }
 
