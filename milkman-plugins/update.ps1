@@ -1,13 +1,10 @@
 ﻿import-module au
 
 $releases = "https://github.com/warmuuh/milkman/releases"
-$PackageName = "milkman-note"
-function au_SearchReplace {
+$PackageName = "milkman-plugins"
+function global:au_SearchReplace {
   @{
-    ".\tools\chocolateyInstall.ps1" = @{
-      "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
-      "(^[$]checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
-    }
+
     "$PackageName.nuspec" = @{
       "(\<dependency id=""milkman"" version=""\[).*(\]""\s*/>)" = "`${1}$($Latest.Version)`$2"
       "(\<dependency id=""milkman-explore"" version=""\[).*(\]""\s*/>)" = "`${1}$($Latest.Version)`$2"
@@ -19,11 +16,6 @@ function au_SearchReplace {
       "(\<dependency id=""milkman-sync-git"" version=""\[).*(\]""\s*/>)" = "`${1}$($Latest.Version)`$2"
     }
   }
-}
-
-function script:au_BeforeUpdate() {
-  $Latest.Checksum64 = (Get-FileHash -Path "tools\$PackageName.jar" -Algorithm SHA512).Hash
-  $Latest.ChecksumType64 = 'sha512'
 }
 
 function global:au_GetLatest {
