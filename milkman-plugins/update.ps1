@@ -2,7 +2,7 @@
 
 $releases = "https://github.com/warmuuh/milkman/releases"
 $PackageName = "milkman-note"
-function global:au_SearchReplace {
+function au_SearchReplace {
   @{
     ".\tools\chocolateyInstall.ps1" = @{
       "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"

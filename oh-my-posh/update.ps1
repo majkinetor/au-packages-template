@@ -2,6 +2,14 @@
 
 $releases = "https://github.com/JanDeDobbeleer/oh-my-posh/releases"
 
+function global:au_SearchReplace {
+  @{
+    ".\tools\chocolateyInstall.ps1" = @{
+      "(^[$]version\s*=\s*)('.*')"  = "`$1'$($Latest.Version)'"
+    }
+  }
+}
+
 function global:au_GetLatest {
   $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
   $regex   = '\/JanDeDobbeleer\/oh-my-posh\/releases\/tag\/\d{1,3}\.\d{1,3}\.\d{1,3}$'
