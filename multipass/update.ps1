@@ -5,9 +5,9 @@ $releases = "https://github.com/CanonicalLtd/multipass/releases"
 function global:au_SearchReplace {
   @{
     ".\tools\chocolateyInstall.ps1" = @{
-      "(^[$]url64\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"
-      "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
-      "(^[$]checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
+      "(Url64bit\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"
+      "(Checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
+      "(ChecksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
     }
     "$($Latest.PackageName).nuspec" = @{
       "(\<releaseNotes\>\[Release Notes\]\().*?(\)\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"
