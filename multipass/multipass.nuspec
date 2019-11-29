@@ -45,7 +45,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <projectSourceUrl>https://github.com/CanonicalLtd/multipass</projectSourceUrl>
     <docsUrl>https://discourse.ubuntu.com/c/multipass/doc</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
-    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <bugTrackerUrl>https://github.com/CanonicalLtd/multipass/issues</bugTrackerUrl>
     <authors>Canonical Ltd</authors>
     <tags>multipass VM Hyper-V virtualbox ubuntu</tags>
     <summary>Multipass orchestrates virtual Ubuntu instances</summary>

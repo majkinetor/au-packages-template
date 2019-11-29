@@ -45,8 +45,8 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <projectSourceUrl>https://github.com/kubernetes-sigs/kind</projectSourceUrl>
     <docsUrl>https://kind.sigs.k8s.io/docs/</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
-    <!--<bugTrackerUrl></bugTrackerUrl>-->
-    <authors>https://github.com/kubernetes-sigs/kind/graphs/contributors</authors>
+    <bugTrackerUrl>https://github.com/kubernetes-sigs/kind/issues</bugTrackerUrl>
+    <authors>Kubernetes SIGs</authors>
     <tags>kind cli kubernetes docker test go</tags>
     <summary>Kubernetes IN Docker - local clusters for testing Kubernetes</summary>
     <description>kind is a tool for running local Kubernetes clusters using Docker container "nodes".

@@ -45,8 +45,8 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <projectSourceUrl>https://github.com/vvatanabe/gitb</projectSourceUrl>
     <docsUrl>https://github.com/vvatanabe/gitb/blob/master/README.md</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
-    <!--<bugTrackerUrl></bugTrackerUrl>-->
-    <authors>https://github.com/vvatanabe/gitb/graphs/contributors</authors>
+    <bugTrackerUrl>https://github.com/vvatanabe/gitb/issues</bugTrackerUrl>
+    <authors>vvatanabe</authors>
     <tags>gitb git </tags>
     <summary>A command line tool for using Backlog's git comfortably.</summary>
 <description>gitb command helps to use Backlog's git comfortably. For example, can open PR, issue, branches, tags, etc in the browser with one action.

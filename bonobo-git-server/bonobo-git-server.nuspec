@@ -45,8 +45,8 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <projectSourceUrl>https://github.com/jakubgarfield/Bonobo-Git-Server</projectSourceUrl>
     <docsUrl>https://bonobogitserver.com/documentation/</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
-    <!--<bugTrackerUrl></bugTrackerUrl>-->
-    <authors>https://github.com/jakubgarfield/Bonobo-Git-Server/graphs/contributors</authors>
+    <bugTrackerUrl>https://github.com/jakubgarfield/Bonobo-Git-Server/issues</bugTrackerUrl>
+    <authors>jakubgarfield</authors>
     <tags>bonobogitserver git vcs</tags>
     <summary>Git Server For Windows</summary>
 <description>Git Server For Windows

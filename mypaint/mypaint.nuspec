@@ -45,8 +45,8 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <projectSourceUrl>https://github.com/mypaint/mypaint</projectSourceUrl>
     <docsUrl>https://github.com/mypaint/mypaint/wiki/Documentation</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
-    <!--<bugTrackerUrl></bugTrackerUrl>-->
-    <authors>https://github.com/mypaint/mypaint/graphs/contributors</authors>
+    <bugTrackerUrl>https://github.com/mypaint/mypaint/issues</bugTrackerUrl>
+    <authors>MyPaint</authors>
     <tags>mypaint art design graphics paint sketch</tags>
     <summary>MyPaint is a simple drawing and painting program that works well with Wacom-style graphics tablets.</summary>
 <description>MyPaint is a nimble, distraction-free, and easy tool for digital painters. It supports graphics tablets made by Wacom, and many similar devices. Its brush engine is versatile and configurable, and it provides useful, productive tools.

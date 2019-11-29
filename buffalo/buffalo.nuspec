@@ -45,8 +45,8 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <projectSourceUrl>https://github.com/gobuffalo/buffalo</projectSourceUrl>
     <docsUrl>https://gobuffalo.io/en/docs/overview/</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
-    <!--<bugTrackerUrl></bugTrackerUrl>-->
-    <authors>https://github.com/gobuffalo/buffalo/contributors</authors>
+    <bugTrackerUrl>https://github.com/gobuffalo/buffalo/issues</bugTrackerUrl>
+    <authors>Ashley McNamara</authors>
     <tags>web development go buffalo</tags>
     <summary>Rapid Web Development w/ Go</summary>
 <description>A Go web development eco-system, designed to make your life easier.
