@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <title>Deno</title>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://deno.land/</projectUrl>
-    <iconUrl>https://deno.land/images/deno_logo_3.svg</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/denoland/deno_website2/714f954418e1b26ca59c1d4c02135341c19a35e1/public/images/deno_logo_3.svg</iconUrl>
     <!-- <copyright>Year Software Vendor</copyright> -->
     <!-- If there is a license Url available, it is required for the community feed -->
     <licenseUrl>https://github.com/denoland/deno/blob/master/LICENSE</licenseUrl>
@@ -45,7 +45,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <projectSourceUrl>https://github.com/denoland/deno</projectSourceUrl>
     <docsUrl>https://deno.land/manual.html</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
-    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <bugTrackerUrl>https://github.com/denoland/deno/issues</bugTrackerUrl>
     <authors>https://github.com/denoland/deno/contributors</authors>
     <tags>v8 deno denoland deno_install javascript typescript rust tokio runtime</tags>
     <summary>A secure runtime for JavaScript and TypeScript built with V8, Rust, and Tokio.</summary>
