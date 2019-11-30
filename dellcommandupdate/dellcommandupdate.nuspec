@@ -3,9 +3,9 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>dellcommandupdate</id>
-    <version>2.4.0</version>
+    <version>3.1.0</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/dellcommandupdate</packageSourceUrl>
-    <owners>flcdrg, joenazz</owners>
+    <owners>flcdrg</owners>
     <title>Dell Command | Update</title>
     <authors>Dell Inc</authors>
     <projectUrl>http://www.dell.com/support/article/us/en/19/HOW10760/how-to-use-dell-command---update-to-update-all-drivers-bios-and-firmware-for-your-system?lang=EN</projectUrl>
@@ -30,7 +30,7 @@ Supported on OptiPlex, Venue Pro Tablet, Precision, XPS Notebook and Latitude mo
 ### Package updates
 This package is updated automatically by querying the Dell Version Control Catalog. There can sometimes be a short delay between the time new software version is released and when it is added to the catalog (which is also used by Dell applications to auto-update)
  </description>
- <releaseNotes>http://www.dell.com/support/home/us/en/19/Drivers/DriversDetails?driverId=DDVDP</releaseNotes>
+ <releaseNotes>https://www.dell.com/support/home/au/en/aubsd1/drivers/driversdetails?driverid=0nj7c</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
