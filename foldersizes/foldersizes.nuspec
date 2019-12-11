@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>foldersizes</id>
-    <version>9.0.250</version>
+    <version>9.0.252</version>
     <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/foldersizes</packageSourceUrl>
     <owners>galeksandrp</owners>
     <title>FolderSizes (Install)</title>
