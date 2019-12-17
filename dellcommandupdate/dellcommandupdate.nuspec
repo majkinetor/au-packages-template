@@ -9,11 +9,11 @@
     <title>Dell Command | Update</title>
     <authors>Dell Inc</authors>
     <projectUrl>http://www.dell.com/support/article/us/en/19/HOW10760/how-to-use-dell-command---update-to-update-all-drivers-bios-and-firmware-for-your-system?lang=EN</projectUrl>
-    <iconUrl>http://raw.githubusercontent.com/flcdrg/au-packages/master/dellcommandupdate/icons/dellcommandupdate.png</iconUrl>
+    <iconUrl>http://rawcdn.githack.com/flcdrg/au-packages/359437f27e4f72676411967fe222e27cf1d94a27/dellcommandupdate/icons/dellcommandupdate.png</iconUrl>
     <copyright>Copyright © 2018 Dell Inc. All rights reserved</copyright>
-    <licenseUrl>http://www.dell.com/learn/us/en/solutions/software-license-agreements?s=corp</licenseUrl>
+    <licenseUrl>https://www.dell.com/learn/us/en/uscorp1/terms-of-sale-consumer-license-agreements</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <docsUrl>http://www.dell.com/support/manuals/us/en/19/dell-command-update-v2.3/DCU_UG_2.3?guid=&amp;lang=</docsUrl>
+    <docsUrl>https://www.dell.com/support/manuals/us/en/19/command-update-v3.1/dellcommandupdate_3.1_ug/dell-command-update-overview</docsUrl>
     <tags>dell command update admin</tags>
     <summary>Dell utility that allows you to automate driver, BIOS and firmware updates on your system</summary>
     <description>You can use Dell Command | Update to update a Dell system with the latest drivers, BIOS, firmware, and Dell software applications.
@@ -31,6 +31,9 @@ Supported on OptiPlex, Venue Pro Tablet, Precision, XPS Notebook and Latitude mo
 This package is updated automatically by querying the Dell Version Control Catalog. There can sometimes be a short delay between the time new software version is released and when it is added to the catalog (which is also used by Dell applications to auto-update)
  </description>
  <releaseNotes>https://www.dell.com/support/home/au/en/aubsd1/drivers/driversdetails?driverid=0nj7c</releaseNotes>
+    <dependencies>
+      <dependency id="dotnet4.6.1" version="4.6.01055.20170308" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
