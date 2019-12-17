@@ -9,7 +9,7 @@
     <title>SQL Server Management Studio 18.4</title>
     <authors>Microsoft</authors>
     <projectUrl>https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-ssms</projectUrl>
-    <iconUrl>https://raw.githack.com/flcdrg/au-packages/master/sql-server-management-studio/icons/ssms-icon.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/flcdrg/au-packages/ed266b63ad6adb86d35c355a86ba1ca74fe674d2/sql-server-management-studio/icons/ssms-icon.png</iconUrl>
     <copyright>Microsoft 2019</copyright>
     <licenseUrl>https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-license-terms</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
