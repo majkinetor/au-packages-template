@@ -1,5 +1,13 @@
 import-module au
 
+function global:au_SearchReplace {
+    @{
+        'ssms.nuspec' = @{
+            "(^.+version=`")(\[.*\])(`".+$)"   = "`$1[$($Latest.Version)]`$3"
+        }
+     }
+}
+
 function global:au_GetLatest {
 
     $Latest = @{}
