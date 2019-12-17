@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sql-server-2019</id>
-    <version>15.0.2000</version>
+    <version>15.0.2000.20191202</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/sql-server-2019</packageSourceUrl>
     <owners>flcdrg</owners>
     <title>Microsoft SQL Server 2019 Developer Edition</title>
