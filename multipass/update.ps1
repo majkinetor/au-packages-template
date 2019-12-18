@@ -17,7 +17,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
   $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-  $regex   = '\/CanonicalLtd\/multipass\/releases\/download\/v\d\.\d\.\d/multipass-\d\.\d\.\d\+win-win64\.exe$'
+  $regex   = '\/canonical\/multipass\/releases\/download\/v\d{1,4}\.\d{1,4}\.\d{1,4}\/multipass-\d{1,4}\.\d{1,4}\.\d{1,4}\+win-win64\.exe$'
   $url     = $download_page.links | Where-Object href -match $regex | Select-Object -First 1 -expand href
   $version = $url -split '\/|-|\+' | Select-Object -Last 1 -Skip 2
   $url = "https://github.com/CanonicalLtd/multipass/releases/download/v$version/multipass-$version+win-win64.exe"
