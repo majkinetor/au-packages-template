@@ -8,9 +8,9 @@ function global:au_SearchReplace {
       "(Url64Bit\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"
       "(Url\s*=\s*)('.*')"      = "`$1'$($Latest.URL)'"
       "(Checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
-      "(CheckSum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum)'"
+      "(CheckSum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
       "(CheckSumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
-      "(CheckSumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType)'"
+      "(CheckSumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
     }
   }
 }
@@ -23,7 +23,7 @@ function global:au_GetLatest {
   $installversion = $version -replace '\.', '_'
   $url32 = "https://github.com/CoatiSoftware/Sourcetrail/releases/download/$version/Sourcetrail_$($installversion)_Windows_32bit_Installer.zip"
   $url64 = "https://github.com/CoatiSoftware/Sourcetrail/releases/download/$version/Sourcetrail_$($installversion)_Windows_64bit_Installer.zip"
-  return @{ Version = $version; URL = $url32; URL64 = $url64; ChecksumType64 = 'sha512'; ChecksumType = 'sha512';}
+  return @{ Version = $version; URL = $url32; URL64 = $url64; ChecksumType64 = 'sha512'; ChecksumType32 = 'sha512';}
 }
 
 Update-Package -ChecksumFor all
