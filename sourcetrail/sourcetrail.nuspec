@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <title>Sourcetrail</title>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://www.sourcetrail.com/</projectUrl>
-    <iconUrl>https://www.sourcetrail.com/documentation/img/logo.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/CoatiSoftware/Sourcetrail/ceb900589ec52587f5861c86fb0c9fc574cc9406/docs/documentation/img/logo.png</iconUrl>
     <!-- <copyright>Year Software Vendor</copyright> -->
     <!-- If there is a license Url available, it is required for the community feed -->
     <licenseUrl>https://raw.githubusercontent.com/CoatiSoftware/Sourcetrail/master/LICENSE.txt</licenseUrl>
