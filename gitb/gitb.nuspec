@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>2.0.1</version>
+    <version>2.2.1</version>
     <packageSourceUrl>https://github.com/digitalcoyote/chocolatey-packages</packageSourceUrl>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>codingcoyote</owners>
@@ -54,7 +54,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 Also, gitb wraps all git commands, therefore can execute git-command using gitb like a gitb fetch, gitb pull, gitb push, and more...
       
 Suffix B has multiple meanings. Backlog, Browser, B-Dash.</description>
-    <releaseNotes>[Release Notes](https://github.com/vvatanabe/gitb/releases/tag/2.0.1)</releaseNotes>
+    <releaseNotes>[Release Notes](https://github.com/vvatanabe/gitb/releases/tag/2.2.1)</releaseNotes>
     <!-- =============================== -->      
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
