@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <title>Xenko Game Engine</title>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://www.xenko.com/</projectUrl>
-    <iconUrl>https://xenko.com/images/svg/logo.svg</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/xenko3d/xenko/6d52ee5e2de94194475ecfa275c5297c92a44b5c/samples/Graphics/CustomEffect/Resources/LogoXenko.png</iconUrl>
     <!-- <copyright>Year Software Vendor</copyright> -->
     <!-- If there is a license Url available, it is required for the community feed -->
     <licenseUrl>https://raw.githubusercontent.com/xenko3d/xenko/master/LICENSE.md</licenseUrl>
