@@ -3,6 +3,6 @@ VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
  
-The binary in this package () is obtained directly from
+The binary in this package (mypaint-w64-installer.exe) is obtained directly from
 the release page for this version (https://github.com/mypaint/mypaint/releases/tag/v2.0.0-alpha.13).
 The installer links are only usable for ~6 months from the date they are first published.

@@ -1,3 +1,9 @@
-﻿$bit = (Get-WMIObject Win32_Processor).AddressWidth | Select-Object -First 1
-$file = "$Env:Programfiles\mypaint-git-w$bit\uninstall.exe"
-Uninstall-ChocolateyPackage -PackageName $env:ChocolateyPackageName -File $file -FileType 'exe' -SilentArgs '/S'
+﻿$ErrorActionPreference = 'Stop';
+
+$UninstallArgs = @{
+    PackageName = $env:ChocolateyPackageName
+    File = Joint-Path $Env:Programfiles "\mypaint-git-w64\uninstall.exe"
+    FileType = 'exe'
+    SilentArgs = '/S'
+}
+Uninstall-ChocolateyPackage @UninstallArgs
