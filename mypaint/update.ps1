@@ -1,42 +1,76 @@
-import-module au
+﻿import-module au
 
 $releases = "https://github.com/mypaint/mypaint/releases"
+$Script:64Only = ''
 
 function global:au_SearchReplace {
+  if($64Only){
+    @{
+      ".\tools\chocolateyInstall.ps1" = @{
+        "(^[$]Version\s*=\s*)('.*')" = "`$1'$($Latest.Version)'"
+        "(checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
+        "(checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
+      }
+      ".\tools\VERIFICATION.txt" = @{
+        "(^The binar.* in this package .* obtained directly from\s*)(.*)" = "`$1'The binary in this package (mypaint-git-w64-$($Latest.Version)-installer.exe) is obtained directly from)'"
+      "(the release page for this version\s\().*?(\)\.)" = "`${1}$($Latest.VersionUrl)`$2"
+      }}
+  }else{
   @{
     ".\tools\chocolateyInstall.ps1" = @{
-      "(Checksum64\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum64)'"
-      "(ChecksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
+      "(^[$]Version\s*=\s*)('.*')" = "`$1'$($Latest.Version)'"
+      "(checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
+      "(checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
+      "(checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
+      "(checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
     }
-    ".\tools\VERIFICATION.txt"      = @{
+    ".\tools\VERIFICATION.txt" = @{
+      "(^The binar.* in this package .* obtained directly from\s*)(.*)" = "`$1'The binaries in this package ('mypaint-git-w64-$($Latest.Version)-installer.exe', 'mypaint-git32-$($Latest.Version)-installer.exe' ) are obtained directly from)'"
       "(the release page for this version\s\().*?(\)\.)" = "`${1}$($Latest.VersionUrl)`$2"
-    }
+    }}
   }
 }
 
 function global:au_GetLatest {
   $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing  
   $versionRegex = '\/mypaint\/mypaint\/releases\/tag\/v\d{1,3}\.\d{1,3}\.\d{1,3}.*'
-  $regex64 = '.*mypaint-git-w64-\d{1,3}\.\d{1,3}\.\d{1,3}.*-installer\.exe'
+  $regex   = '.*mypaint-git-w32-\d{1,3}\.\d{1,3}\.\d{1,3}.*-installer\.exe'
+  $regex64   = '.*mypaint-git-w64-\d{1,3}\.\d{1,3}\.\d{1,3}.*-installer\.exe'
   $versionurl = ($download_page.links | Where-Object href -match $versionRegex | Select-Object -First 1 -expand href)
-  $version = $versionurl -split '\/|v' | Select-Object -Last 1
-  $url64 = $download_page.links | Where-Object href -match $regex64 | Select-Object -First 1 -expand href
+  $version =  $versionurl -split '\/|v' | Select-Object -Last 1
+  $url     = $download_page.links | Where-Object href -match $regex | Select-Object -First 1 -expand href
+  $url = "https://github.com/$url"
+  $url64     = $download_page.links | Where-Object href -match $regex64 | Select-Object -First 1 -expand href
+  $url64 = "https://github.com/$url64"
   
-  while ($version.LastIndexOf(".") -gt $version.LastIndexOf("-") -and $version.LastIndexOf("-") -ne '-1') {
-    $version = $version.remove($version.LastIndexOf("."), 1).insert($version.LastIndexOf("."), "-") 
+  while($version.LastIndexOf(".") -gt $version.LastIndexOf("-") -and $version.LastIndexOf("-") -ne '-1'){
+    $version = $version.remove($version.LastIndexOf("."),1).insert($version.LastIndexOf("."),"-") 
   }
-  foreach ($line in ((choco list mypaint --all) | Select-String -Pattern 'mypaint')) {
-    if (($line -split ' ' | Select-Object -First 1 -Skip 1) -match $version) {
-      $Script:OnChocolatey = $true
-    }
-  }
+  $DownloadedFile = "$PSScriptRoot\tools\mypaint-git-w64-$version-installer.exe"
+  Write-Host "PSSCRIPTROOT: $PSScriptRoot"
 
-  $DownloadedFile = "$PSScriptRoot\tools\mypaint-git-w64-installer.exe"
+  Write-Host "DownloadedFile = $DownloadedFile"
   (New-Object System.Net.WebClient).DownloadFile($url64, $DownloadedFile)
   $CheckSum64 = (Get-FileHash -Path $DownloadedFile -Algorithm 'sha512').Hash
   Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/mypaint/mypaint/master/Licenses.dep5' -OutFile 'tools\License.txt'
 
-  return @{ Version = $version; ChecksumType64 = 'sha512'; Checksum64 = $CheckSum64; VersionUrl = $versionurl; }  
+  if($null -ne $url){
+    $DownloadedFile = "$PSScriptRoot\tools\mypaint-git-w32-$version-installer.exe"
+    Write-Host "DownloadedFile = $DownloadedFile"
+
+    (New-Object System.Net.WebClient).DownloadFile($url, $DownloadedFile)
+    $CheckSum32 = (Get-FileHash -Path $DownloadedFile -Algorithm 'sha512').Hash
+    Copy-Item -Path 'chocolateyinstall32and64.ps1' -Destination 'tools\chocolateyinstall.ps1'
+    return @{ Version = $version; Checksum32 = $CheckSum32; ChecksumType32 = 'sha512'; Checksum64 = $CheckSum64; ChecksumType64 = 'sha512'; VersionUrl = $versionurl;}
+
+  }
+  else{
+    Write-Host "No  32-bit Installer Available"
+    $Script:64Only = 'true'
+    Copy-Item -Path 'chocolateyinstall64only.ps1' -Destination 'tools\chocolateyinstall.ps1'
+    return @{ Version = $version; URL = $url64; ChecksumType64 = 'sha512'; Checksum64 = $CheckSum64; VersionUrl = $versionurl;}  
+
+  }
   
 }
 Update-Package -ChecksumFor none
