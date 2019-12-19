@@ -60,6 +60,7 @@ This package is intended to allow automated management of Xenko versions and req
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
       <dependency id="visualstudio2019buildtools" version="16.4.0.0" />
+      <dependency id="nuget.commandline" version="1.6.0" />
     </dependencies>
     <!-- chocolatey-core.extension - https://chocolatey.org/packages/chocolatey-core.extension
          - You want to use Get-UninstallRegistryKey on less than 0.9.10 (in chocolateyUninstall.ps1)
