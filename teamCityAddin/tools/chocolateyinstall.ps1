@@ -2,7 +2,7 @@
 $packageName = 'teamCityAddin'
 $scriptPath = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 $commonPath = $(Split-Path -parent $(Split-Path -parent $scriptPath))
-$filename = 'JetBrains.ReSharperUltimate.2019.3.exe'
+$filename = 'JetBrains.ReSharperUltimate.2019.3.1.exe'
 
 $installPath = Join-Path  (Join-Path $commonPath $platformPackageName) $filename
 $packageArgs = @{
