@@ -16,4 +16,3 @@ foreach ($file in $files) {
 }
 
 Install-ChocolateyPackage @InstallArgs
-
