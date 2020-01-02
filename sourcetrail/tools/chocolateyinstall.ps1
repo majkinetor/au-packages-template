@@ -1,6 +1,5 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$UnzipLocation = Join-Path $env:ChocolateyInstall (Join-Path 'lib' $env:ChocolateyPackageName)
 $ZipFile = Join-Path (Join-Path $env:ChocolateyInstall (Join-Path 'lib' $env:ChocolateyPackageName)) 'Sourcetrail.zip'
 $InstallChocolateyZipPackageArgs = @{
     PackageName = $env:ChocolateyPackageName
@@ -14,8 +13,8 @@ $file = Install-ChocolateyZipPackage @InstallChocolateyZipPackageArgs
 
 $InstallFileArgs = @{
     PackageName = $env:ChocolateyPackageName
-    FileType = 'exe'
-    SilentArgs = '/S'
+    FileType = 'msi'
+    SilentArgs = '/q'
     File = (Get-ChildItem -Path $file -Filter 'sourcetrail.msi' -Recurse).FullName
 }
 
