@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>sidequest</id>
+    <version>0.8.5</version>
+    <packageSourceUrl>https://github.com/digitalcoyote/chocolatey-packages</packageSourceUrl>
+    <owners>CodingCoyote</owners>
+    <title>SideQuest</title>
+    <authors>The Expanse VR</authors>
+    <projectUrl>https://sidequestvr.com</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/the-expanse/SideQuest/e2d4912531fbf21fe95c5f1c2b4a6945600544c1/desktop-app/src/assets/images/new-logo.png</iconUrl>
+    <licenseUrl>https://github.com/the-expanse/SideQuest/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/the-expanse/SideQuest</projectSourceUrl>
+    <docsUrl>https://sidequestvr.com/#/setup-howto</docsUrl>
+    <bugTrackerUrl>https://github.com/the-expanse/SideQuest/issues</bugTrackerUrl>
+    <tags>sidequest vr game store occulus android</tags>
+    <summary>A open app store for mobile android based VR devices such as the Oculus Go, Oculus Quest or other android based devices.</summary>
+    <description># SideQuest
+
+![Image](https://i.imgur.com/AlYMbTj.png)    
+    
+    
+SideQuest is designed to simplify sideloading apps onto your standalone android based headset. It should include everything you need to get started. When you first open the app it is best to open the setup screen and follow the instructions on screen to get set up.
+    
+The quest doesnt show 2D apps normally anywhere in the UI. Thankfully though SideQuest has a launcher ( install on the setup screen - scroll down to the bottom ) which appears in the unknown sources list and lets you open 2d apps. You can pick "SideQuest - Home" or "SideQuest - TV" to use the 2D app in the Oculus Home or Oculus TV environments. 
+    
+VR apps dont work when launched from the app launcher currently, only 2d apps. The workaround is to launch the VR apps from the unknown sources list instead - they are usually listed there!
+    
+    
+## SideQuest Features
+    
+-   Automatic download of ADB platform-tools for your platform - win/mac/linux.
+-   Automatic download of QuestSaberPatch for your platform - win/mac/linux.
+-   Automatic download of songe-converter for your platform - win/mac/linux.
+-   Setup instructions for enabling developer mode on your device.
+-   AppStarter based app launcher in both Oculus Home and Oculus TV for launching and using 2D apps
+-   Drag and drop support for installing arbitrary apk/obb files.
+-   File manager with drag and drop support ( thanks Mitch ) 
+-   Dark mode
+-   New installed apps manager with a backup system.
+-   Beat Saber song manager for patching songs onto the Oculus Quest - sorting, multi select, remove duplicates and drag and drop
+-   Auto downloading via the in-app browser - now works with beatsaver.com, bsaber.com and also any APK downloads too!</description>
+<releaseNotes>https://github.com/the-expanse/SideQuest/releases</releaseNotes>
+<dependencies>
+      <dependency id="chocolatey-core.extension" version="1.1.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
