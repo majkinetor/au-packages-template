@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>docto</id>
+    <version>0.0.0.1</version>
+    <packageSourceUrl>https://github.com/digitalcoyote/chocolatey-packages</packageSourceUrl>
+    <owners>CodingCoyote</owners>
+    <title>DocTo</title>
+    <authors>tobya</authors>
+    <projectUrl>https://tobya.github.io/DocTo/</projectUrl>
+    <licenseUrl>https://github.com/tobya/DocTo/blob/master/license.txt</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/tobya/DocTo</projectSourceUrl>
+    <docsUrl>https://github.com/tobya/DocTo/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/tobya/DocTo/issues</bugTrackerUrl>
+    <tags>docx xls convert </tags>
+    <summary>Simple command line utility for converting .doc and .xls files to any supported format such as Text, RTF, CSV or PDF</summary>
+    <description># DocTo and XLSTo
+
+DocTo
+====
+      
+Simple utility for converting a Microsoft Word Document '.doc' and Microsoft Excel '.xls' files to any other supported format 
+such as .txt .csv .rtf .pdf.  
+
+Can also be used to convert .txt, .rtf, .csv to .doc, .xls or .pdf format.
+
+Can be used to convert older word documents to latest format.
+
+Must have Microsoft Word or Excel installed on host machine.
+
+Download Release From Github Releases - https://github.com/tobya/DocTo/releases/
+Further Information available at https://tobya.github.io/DocTo/
+
+XLSTo
+=====
+
+XLSTo is now incorporated into DocTo.  Previously XLSTo was a seperate EXE that was used to convert xls files to csv or pdf.  This can now be done with the main `DocTo.exe` by simply adding the -XL flag.
+
+
+## Features
+      
+1. Convert Doc/RTF/Text file to any Word SaveAs Type Doc/Text/RTF/PDF
+1. Convert XLS/XLSX/CSV file to any Excel SaveAs Type CSV/Text/PDF
+1. Convert Text/CSV file to full fledged Word or Excel format.
+1. [Single File Conversion](https://github.com/tobya/DocTo/wiki/Converting-a-File-to-PDF)
+1. [Multiple / Directory File Conversion.](https://github.com/tobya/DocTo/wiki/Converting-a-directory-of-files)
+1. [Delete after conversion](https://github.com/tobya/DocTo/wiki/Delete-%5Cinput-File-after-conversion)
+1. [Fire https Webhook on each conversion.](https://github.com/tobya/DocTo#webhooks)</description>
+<releaseNotes>https://github.com/tobya/DocTo/releases/</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
