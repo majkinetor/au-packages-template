@@ -18,6 +18,6 @@ Rename-Item -Path $ExecutableFolder -NewName $env:ChocolateyPackageName
 $ExecutableFolder = Join-Path $UnzipLocation $env:ChocolateyPackageName
 
 $InstallLocation = Join-Path (Get-ToolsLocation) $env:ChocolateyPackageName
-Copy-Item -Path $ExecutableFolder -Destination $InstallLocation -Recurse
+Copy-Item -Path $ExecutableFolder -Destination $InstallLocation -Recurse -Force
 Remove-Item -Path $ExecutableFolder -Recurse -Force
 Write-Host "Installed $($env:ChocolateyPackageName) to $($InstallLocation)"
