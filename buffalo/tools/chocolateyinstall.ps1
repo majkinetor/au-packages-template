@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$url32 = 'https://github.com/gobuffalo/buffalo/releases/download/v0.15.3/buffalo_0.15.3_windows_i386.tar.gz'
-$url64 = 'https://github.com/gobuffalo/buffalo/releases/download/v0.15.3/buffalo_0.15.3_windows_x86_64.tar.gz'
-$checksum32 = '363f634e49eafe4d8fbd47ad19e19ae4c5f70ad13602d136b6e53b4992b9e3097034c69eef1651b21cce989c4325d885c717363c8f9f273462c1a84482aac1a8'
-$checksum64 = 'c5b1c9358cb8e3be031e4991288b4f577862ad0a117a5e7f209e0b12b97b985436ba323a15404789f94faa289c8b4acfe514792418b28c48fa85a882285c79c6'
+$url32 = 'https://github.com/gobuffalo/buffalo/releases/download/v0.15.4/buffalo_0.15.4_windows_i386.tar.gz'
+$url64 = 'https://github.com/gobuffalo/buffalo/releases/download/v0.15.4/buffalo_0.15.4_windows_x86_64.tar.gz'
+$checksum32 = '176bcb12a5887056f1539b5e9355e76acea675a007fac9155a2e1b70eec4fef6376b25ed6a95d70e6462aa065a0a14235d172fd54657af837999fbc5b802f5b9'
+$checksum64 = '57831a2fc283125c45781d9949903c8db2075e8e74346aea2fc5b38c0174636c994eca44bf2f532d4c60bfdbbae18150138ccbe686a1490d99bd5ca78fd2e2f1'
 $checksumType32 = 'sha512'
 $checksumType64 = 'sha512'
 $UnzipLocation = Join-Path $env:ChocolateyInstall (Join-Path 'lib' $env:ChocolateyPackageName)
