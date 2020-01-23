@@ -4,12 +4,12 @@ $releases = "https://github.com/gobuffalo/buffalo/releases"
 function global:au_SearchReplace {
   @{
     ".\tools\chocolateyInstall.ps1" = @{
-      "(^[$]url32\s*=\s*)('.*')"      = "`$1'$($Latest.URL)'"
-      "(^[$]url64\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"
-      "(^[$]checksum32\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
-      "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
-      "(^[$]checksumType32\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
-      "(^[$]checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
+      "(URL\s*=\s*)('.*')"      = "`$1'$($Latest.URL)'"
+      "(Url64bit\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"
+      "(CheckSum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
+      "(CheckSum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
+      "(CheckSumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
+      "(CheckSumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
     }
     "$($Latest.PackageName).nuspec" = @{
       "(\<releaseNotes\>\[Release Notes\]\().*?(\)\</releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`$2"
