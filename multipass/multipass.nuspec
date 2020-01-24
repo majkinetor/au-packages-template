@@ -61,7 +61,7 @@ The following package parameter can be set:
     
  * `/HyperVisor:` - Accepts 'VirtualBox' or 'Hyper-V' (default)
     
-To pass parameters, use `--params "''"` (e.g. `choco install bonobo-git-server [other options] --params="'/HyperVisor:VirtualBox'"`).
+To pass parameters, use `--params "''"` (e.g. `choco install multipass [other options] --params="'/HyperVisor:VirtualBox'"`).
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 
 #### Multipass
