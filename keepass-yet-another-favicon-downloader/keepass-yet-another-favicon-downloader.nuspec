@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>keepass-yet-another-favicon-downloader</id>
-    <version>1.2.2.0</version>
+    <version>1.2.3.0</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/keepass-yet-another-favicon-downloader</packageSourceUrl>
     <owners>flcdrg</owners>
     <title>KeePass Plugin Yet Another Favicon Downloader</title>
@@ -32,10 +32,7 @@
     </description>
     <releaseNotes>### Improvements
 
-- Automatically adds https:// prefix to URLs while resolving the website address, if it fails try http:// as fallback.
-(as suggested on pull request #31 by @firesoft-de)
-
-Please refer to [Settings: Automatic prefix URLs with http(s)://](https://github.com/navossoc/KeePass-Yet-Another-Favicon-Downloader/wiki/Settings:-Automatic-prefix-URLs-with-HTTP) for more details.</releaseNotes>
+- Update `Last Modification Time` only for entries changed (issue #35).</releaseNotes>
     <dependencies>
       <dependency id="keepass" version="2.34" />
     </dependencies>
