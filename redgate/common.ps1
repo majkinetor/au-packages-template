@@ -17,20 +17,13 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 
     try {
-        # Get last modified from web download
-        Write-Verbose "Get last modified from https://download.red-gate.com/$name.exe"
-        $response = Invoke-WebRequest "https://download.red-gate.com/$name.exe" -Method Head
-        $lastModifiedHeader = $response.Headers.'Last-Modified'
-        $lastModified = [DateTimeOffset]::Parse($lastModifiedHeader, [Globalization.CultureInfo]::InvariantCulture)
 
-        if([datetimeoffset](get-date) -lt $lastModified.AddDays(-2)){
-            # Make sure the release is at least 1 day old before we make a package for it.
-            # That's because Redgate can sometimes release toolbelts multiple times per day.
-            # Because installers are released in a yyyy-MM-dd subfolder, previous installers
-            # released in the same day are overriden which will cause
-            # checksums to mismatch if we generate the chocolatey package too quickly.
-            return 'ignore'
-        }
+        # Make sure the release is at least 2 days old before we make a package for it.
+        # That's because Redgate can sometimes release toolbelts multiple times per day.
+        # Because installers are released in a yyyy-MM-dd subfolder, previous installers
+        # released in the same day are overriden which will cause
+        # checksums to mismatch if we generate the chocolatey package too quickly.
+        $lastModified = [DateTimeOffset]::UtcNow.AddDays(-2)
 
         # Redgate's installers are uploaded to https://download.red-gate.com/installers/<name>/<date-released>/<name>.exe
         # and the main https://download.red-gate.com/<name>.exe is just a redirect.
