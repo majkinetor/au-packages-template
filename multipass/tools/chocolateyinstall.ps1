@@ -3,7 +3,7 @@ $pp = Get-PackageParameters
 if (!$pp['HyperVisor']) { $pp['HyperVisor'] = "Hyper-V" }
 $winversion = Get-WmiObject Win32_OperatingSystem | Select-Object Caption, Version, BuildNumber
 if ($pp['HyperVisor'] -match 'Hyper-*V') {
-  if (((($winversion.Caption) -match '.*10.*Pro.*') -or (($winversion.Caption) -match '.*10.*Enterprise.*')) -and ($winversion.BuildNumber -gt 17134)) {
+  if (((($winversion.Caption) -match '.*10.*Pro.*') -or (($winversion.Caption) -match '.*10.*Enterprise.*') -or (($winversion.Caption) -match '.*10.*Корпоративная.*')) -and ($winversion.BuildNumber -gt 17134)) {
     if ((Get-WindowsOptionalFeature -Online -FeatureName IIS-WebServer).State -eq "Disabled") {
       Write-Output "Installing Hyper-V"
       Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All -NoRestart
