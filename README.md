@@ -15,8 +15,9 @@ This repository contains [chocolatey automatic packages](https://chocolatey.org/
 * [Em-n-En](https://github.com/CemraJC/em-n-en)
 * [File Converter](https://file-converter.org/)
 * [gitb](https://github.com/vvatanabe/gitb)
-* [Jenkins CLI (jcli)](http://jcli.jenkins-zh.cn/)
-  * Alternative CLI for Jenkins that can be used to manage multiple servers
+* ~[Jenkins CLI (jcli)](http://jcli.jenkins-zh.cn/)~
+  * ~Alternative CLI for Jenkins that can be used to manage multiple servers~
+  * On Hold pending Security Review of the binary that was pushed. Flagged 30/72 Virus Scanners on Chocolatey
 * [Kind](https://kind.sigs.k8s.io/)
 * [LiteDB.Studio](https://github.com/mbdavid/LiteDB.Studio)
 * [Milkman](https://github.com/warmuuh/milkman)
