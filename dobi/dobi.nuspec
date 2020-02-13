@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>dobi</id>
+    <version>0.13.0</version>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/dobi</packageSourceUrl>
+    <owners>flcdrg</owners>
+    <title>dobi</title>
+    <authors>Daniel Nephin</authors>
+    <projectUrl>https://dnephin.github.io/dobi/</projectUrl>
+    <copyright>2020 Daniel Nephin</copyright>
+    <licenseUrl>https://github.com/dnephin/dobi/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/dnephin/dobi</projectSourceUrl>
+    <docsUrl>https://dnephin.github.io/dobi/</docsUrl>
+    <bugTrackerUrl>https://github.com/dnephin/dobi/issues</bugTrackerUrl>
+    <tags>docker build automation</tags>
+    <summary>A build automation tool for Docker applications</summary>
+    <description>A build automation tool for Docker applications.
+
+Keep your project tasks organized, portable, repeatable, and fast with dobi. Define the resources and tasks required to build, test, and release your project in a dobi.yaml and run them with dobi TASK.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
