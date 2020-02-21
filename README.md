@@ -1,6 +1,8 @@
 [![](https://ci.appveyor.com/api/projects/status/github/digitalcoyote/chocolatey-packages?svg=true)](https://ci.appveyor.com/project/digitalcoyote/chocolatey-packages)
+[![29](https://img.shields.io/badge/AU%20packages-29-red.svg)](#ok)
 [![](http://transparent-favicon.info/favicon.ico)](#)
 [chocolatey/codingcoyote](https://chocolatey.org/profiles/codingcoyote)
+
 
 This repository contains [chocolatey automatic packages](https://chocolatey.org/docs/automatic-packages). 
 
