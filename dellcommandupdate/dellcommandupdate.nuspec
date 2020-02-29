@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>dellcommandupdate</id>
-    <version>3.1.0</version>
+    <version>3.1.1</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/dellcommandupdate</packageSourceUrl>
     <owners>flcdrg</owners>
     <title>Dell Command | Update</title>
@@ -30,7 +30,7 @@ Supported on OptiPlex, Venue Pro Tablet, Precision, XPS Notebook and Latitude mo
 ### Package updates
 This package is updated automatically by querying the Dell Version Control Catalog. There can sometimes be a short delay between the time new software version is released and when it is added to the catalog (which is also used by Dell applications to auto-update)
  </description>
- <releaseNotes>https://www.dell.com/support/home/au/en/aubsd1/drivers/driversdetails?driverid=0nj7c</releaseNotes>
+ <releaseNotes>https://www.dell.com/support/home/au/en/aubsd1/drivers/driversdetails?driverid=ph01c</releaseNotes>
     <dependencies>
       <dependency id="dotnet4.6.1" version="4.6.01055.20170308" />
     </dependencies>
