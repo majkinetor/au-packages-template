@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>zoomit</id>
+    <title>ZoomIt</title>
+    <version>4.52.0</version>
+    <authors>Mark Russinovich</authors>
+    <owners>flcdrg</owners>
+    <summary>Presentation utility for zooming and drawing on the screen</summary>
+    <description>
+ZoomIt is a screen zoom and annotation tool for technical presentations that include application demonstrations. ZoomIt runs unobtrusively in the tray and activates with customizable hotkeys to zoom in on an area of the screen, move around while zoomed, and draw on the zoomed image. I wrote ZoomIt to fit my specific needs and use it in all my presentations.
+    </description>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/zoomit/</packageSourceUrl>
+    <projectUrl>https://docs.microsoft.com/en-us/sysinternals/downloads/zoomit</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/flcdrg/au-packages/1e2da097532097e6e8dfb3dd7edbf7f55b985926/zoomit/icons/zoomit.png</iconUrl>
+    <mailingListUrl>https://social.technet.microsoft.com/Forums/en-US/home?forum=miscutils</mailingListUrl>
+    <tags>presentation zoom sysinternals gui</tags>
+    <copyright>© 2006-2013 Mark Russinovich</copyright>
+    <licenseUrl>https://docs.microsoft.com/en-us/sysinternals/license-terms</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
