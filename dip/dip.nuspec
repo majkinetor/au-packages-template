@@ -8,6 +8,7 @@
     <title>Docker Image Patrol (DIP)</title>
     <authors>030</authors>
     <projectUrl>https://github.com/030/dip</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/030/dip/9278442011d094704894d053fd9c6493be1cb05c/logo/logo.png</iconUrl>
     <licenseUrl>https://github.com/030/dip/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/030/dip</projectSourceUrl>
