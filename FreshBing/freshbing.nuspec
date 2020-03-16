@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>freshbing</id>
+    <version>1.0.0</version>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/FreshBing</packageSourceUrl>
+    <owners>flcdrg</owners>
+    <title>Bing Image Of The Day Desktop Wallpaper (FreshBing)</title>
+    <authors>Nikhil Dabas, David Gardiner</authors>
+    <projectUrl>https://github.com/flcdrg/au-packages/tree/master/FreshBing</projectUrl>
+    <copyright>2013 Nikhil Dabas, 2016 David Gardiner</copyright>
+    <projectSourceUrl>https://github.com/flcdrg/au-packages/tree/master/FreshBing</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/flcdrg/au-packages/issues</bugTrackerUrl>
+    <tags>freshbing bing desktop wallpaper image</tags>
+    <summary>Sets your desktop wallpaper to the Bing iamge of the day</summary>
+    <description>Sets your desktop wallpaper to the Bing image of the day.
+    
+The [original FreshBing script](https://github.com/ndabas/FreshBing) was written by Nikhil Dabas. David enhanced the script to add an image description overlay.
+
+The Chocolatey package creates a Windows scheduled task to run the script daily at 9am and also when a user first logs in.
+    </description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
