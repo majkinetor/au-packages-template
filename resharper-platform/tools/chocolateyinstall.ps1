@@ -1,10 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop'; # stop on all errors
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$filename = 'JetBrains.ReSharperUltimate.2020.1.EAP3.Checked.exe'
-$checksum = '974b3d127d8d5dd0461508e5e616efea59fd40ef7f0e43401e46e8e092c8b142'
+$filename = 'JetBrains.ReSharperUltimate.2020.1.EAP5.Checked.exe'
+$checksum = '50768f76818abcecf2d092fde2ec35839eb4802dabaa406f3372f3e18a636c64'
 
-$url = 'https://download.jetbrains.com/resharper/ReSharperUltimate.2020.1.EAP3/JetBrains.ReSharperUltimate.2020.1.EAP3.Checked.exe'
+$url = 'https://download.jetbrains.com/resharper/ReSharperUltimate.2020.1.EAP5/JetBrains.ReSharperUltimate.2020.1.EAP5.Checked.exe'
 $packagePath = $(Split-Path -parent $toolsDir)
 $installPath = Join-Path $packagePath $filename
 
