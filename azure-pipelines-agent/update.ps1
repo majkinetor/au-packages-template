@@ -12,8 +12,16 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
+    $token = $env:github_api_key
+    $headers = @{
+        'User-Agent' = 'flcdrg'
+    }
+    if ($token) {
+        $headers['Authorization'] = ("token {0}" -f $token)
+    }
+
     $releasesUrl = "https://api.github.com/repos/Microsoft/azure-pipelines-agent/releases"
-    $response = Invoke-RestMethod -Method Get -Uri "$releasesUrl/latest"
+    $response = Invoke-RestMethod -Method Get -Uri "$releasesUrl/latest"-Headers $headers
     
     # Assume releases are named v1.2.3
     if (!$response.name.StartsWith("v")) {
