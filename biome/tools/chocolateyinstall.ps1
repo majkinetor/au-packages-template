@@ -3,8 +3,8 @@
 $ZipInstallArgs = @{
     PackageName = $env:ChocolateyPackageName 
     UnzipLocation = Join-Path $env:ChocolateyInstall (Join-Path 'lib' $env:ChocolateyPackageName)
-    Url64 = 'https://github.com/biome-sh/biome/releases/download/bio-0.90.26/bio-0.90.26-x86_64-windows.zip'
-    CheckSum64 = '46457597d2beaad35ffc5aeb98cf0394f53ef91d3db826e83a823678171693a0c8869240bca9cc1ec34d2eea790a515bd1968b9618b602b28a95021e9fbe578b'
+    Url64 = 'https://github.com/biome-sh/biome/releases/download/bio-1.5.75/bio-1.5.75-x86_64-windows.zip'
+    CheckSum64 = 'da00eb524d253f42fac1adbf271f4cac5c9d61f6f20a3be97f3b441618dc13cd2a6999cb0e5a153f664929989a3ec8a7bf4d153bd2d75ab338fb2d124ce6284c'
     CheckSumType64 = 'sha512'
 }
 
