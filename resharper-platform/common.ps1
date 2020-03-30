@@ -32,7 +32,8 @@ function GetJetbrainsReSharperPlatformLatestRelease($release) {
 
     #$filename = "JetBrains.ReSharperUltimate.$($versionMarketingStringUpdated).exe"
     $url = $urls[$release].Hash -replace "VERSIONMARKETINGSTRING", $versionMarketingStringDotted
-    ($hashcode, $filename) = (Invoke-RestMethod -Uri $url).Split(([string[]] ," *"), [System.StringSplitOptions]::RemoveEmptyEntries)
+    $data = Invoke-RestMethod -Uri $url
+    ($hashcode, $filename) = $data -split "\s\*" #.Split(([string[]] ," *"), [System.StringSplitOptions]::RemoveEmptyEntries)
 
     $url = $urls[$release].Url -replace "VERSIONMARKETINGSTRING", $versionMarketingStringDotted
 
