@@ -9,8 +9,8 @@
     <title>OzCode Debugging extension for Visual Studio 2017 and 2019</title>
     <authors>CodeValue LTD</authors>
     <projectUrl>https://oz-code.com/debugging-redefined/</projectUrl>
-    <iconUrl>http://raw.githubusercontent.com/flcdrg/au-packages/master/ozcode/icons/ozcode.png</iconUrl>
-    <copyright>2017 CodeValue LTD</copyright>
+    <iconUrl>https://rawcdn.githack.com/flcdrg/au-packages/1984f3f79fabb91831a8634902b85d7804e265f0/ozcode/icons/ozcode.png</iconUrl>
+    <copyright>2019 CodeValue D.T LTD</copyright>
     <licenseUrl>https://oz-code.com/eula/</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://oz-code.com/knowledge-base/</docsUrl>
@@ -20,7 +20,9 @@
     <summary>Extension for Visual Studio that enhances debugging</summary>
     <description>Debug like a magician.
 
-Cut debugging time in half with the legendary Visual Studio extension for C#
+Cut debugging time in half with the legendary Visual Studio extension for C#.
+
+Ozcode dramatically enhances your Visual Studio debugging experience enabling you to quickly find the root cause of bugs in .NET applications and fix them fast. With powerful tools that dissect your code and visualize it to the deepest levels, Ozcode makes debugging easier that you ever dared to imagine. Fix bugs fast, craft more code.
 
 Features include:
 
@@ -39,6 +41,8 @@ Features include:
 * Filter Collections
 * Quick Actions
 * Show All Instances
+* Time travel debugging
+* Full integration with VS2019, including LiveShare
 
 #### Supported versions
 
@@ -46,9 +50,9 @@ This package supports Visual Studio 2017 and 2019. Use the [OzCode](https://choc
 
 The install script will install OzCode into all suitable instances of Visual Studio 2017 and 2019.
 </description>
-    <releaseNotes>http://ozcode.userecho.com/topics/641-version-history/</releaseNotes>
+    <releaseNotes>https://oz-code.com/release-notes/</releaseNotes>
   <dependencies>
-    <dependency id="vswhere" version="1.0.62" />
+    <dependency id="chocolatey-visualstudio.extension" version="1.8.1" />
   </dependencies>
   </metadata>
   <files>
