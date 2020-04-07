@@ -1,5 +1,7 @@
 import-module au
 
+. ..\_scripts\common.ps1
+
 $releases = 'https://shop.oz-code.com/download/v4'
 # http://downloads.oz-code.com/files/OzCode_4.0.0.557.vsix
 function global:au_SearchReplace {
@@ -12,15 +14,11 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-
-    $request = [System.Net.WebRequest]::Create($releases)
-    $request.AllowAutoRedirect=$false
-    $response=$request.GetResponse()
  
-    if ($response.StatusCode -eq "Found")
-    {
-        $url = $response.GetResponseHeader("Location")
+    $url = Get-RedirectedUri $releases
 
+    if ($url)
+    {
         # http://downloads.oz-code.com/files/OzCode_4.0.0.557.vsix
         $url -match ".*(?<filename>OzCode_(?<version>\d+\.\d+\.\d+\.\d+)\.vsix)"
 

@@ -20,7 +20,7 @@ if (-not $runningAU) {
 $packageArgs = @{
   packageName   = $packageName
   fileFullPath  = $fileFullPath
-  url           = "http://downloads.oz-code.com/files/$fileName"  #download URL, HTTPS preferrred
+  url           = "https://downloads.oz-code.com/files/$fileName"  #download URL, HTTPS preferrred
   checksum      = $checksum
   checksumType  = 'sha256'
 }

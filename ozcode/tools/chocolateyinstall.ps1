@@ -21,7 +21,7 @@ $packageArgs = @{
   fileFullPath = "$download_dir\$fileName"
   silentArgs    = "" # NSIS  
   validExitCodes= @(0)
-  url           = "http://downloads.oz-code.com/files/$filename"
+  url           = "https://downloads.oz-code.com/files/$filename"
   checksum      = $checksum
   checksumType  = 'sha256'
 }

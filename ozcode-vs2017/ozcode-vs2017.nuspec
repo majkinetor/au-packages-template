@@ -6,17 +6,17 @@
     <version>4.0.0.2540</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/ozcode-vs2017</packageSourceUrl>
     <owners>flcdrg</owners>
-    <title>OzCode Debugging extension for Visual Studio 2017</title>
+    <title>OzCode Debugging extension for Visual Studio 2017 and 2019</title>
     <authors>CodeValue LTD</authors>
-    <projectUrl>https://www.oz-code.com/</projectUrl>
+    <projectUrl>https://oz-code.com/debugging-redefined/</projectUrl>
     <iconUrl>http://raw.githubusercontent.com/flcdrg/au-packages/master/ozcode/icons/ozcode.png</iconUrl>
     <copyright>2017 CodeValue LTD</copyright>
-    <licenseUrl>http://o.oz-code.com/Media/Default/FaqPage/EULA.txt</licenseUrl>
+    <licenseUrl>https://oz-code.com/eula/</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <docsUrl>https://ozcode.userecho.com/forums/4-ozcode-documentation/</docsUrl>
+    <docsUrl>https://oz-code.com/knowledge-base/</docsUrl>
     <mailingListUrl>https://ozcode.userecho.com/</mailingListUrl>
     <bugTrackerUrl>https://oz-code.com/Support</bugTrackerUrl>
-    <tags>Debugging Extension vsix trial vs2017</tags>
+    <tags>Debugging Extension vsix trial vs2017 vs2019</tags>
     <summary>Extension for Visual Studio that enhances debugging</summary>
     <description>Debug like a magician.
 
@@ -38,13 +38,13 @@ Features include:
 * Custom Expressions
 * Filter Collections
 * Quick Actions
-* Show All Instances 
+* Show All Instances
 
 #### Supported versions
 
-This package supports Visual Studio 2017. Use the [OzCode](https://chocolatey.org/packages/ozcode) package for Visual Studio 2012, 2013 and 2015.
+This package supports Visual Studio 2017 and 2019. Use the [OzCode](https://chocolatey.org/packages/ozcode) package for Visual Studio 2012, 2013 and 2015.
 
-The install script will install OzCode into all suitable instances of Visual Studio 2017.
+The install script will install OzCode into all suitable instances of Visual Studio 2017 and 2019.
 </description>
     <releaseNotes>http://ozcode.userecho.com/topics/641-version-history/</releaseNotes>
   <dependencies>
