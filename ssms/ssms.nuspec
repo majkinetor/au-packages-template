@@ -3,10 +3,10 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ssms</id>
-    <version>15.0.18206.0</version>
+    <version>15.0.18330.0</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/ssms</packageSourceUrl>
     <owners>flcdrg</owners>
-    <title>SQL Server Management Studio 18.4</title>
+    <title>SQL Server Management Studio 18.5</title>
     <authors>Microsoft</authors>
     <projectUrl>https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-ssms</projectUrl>
     <iconUrl>https://rawcdn.githack.com/flcdrg/au-packages/ed266b63ad6adb86d35c355a86ba1ca74fe674d2/sql-server-management-studio/icons/ssms-icon.png</iconUrl>
@@ -27,7 +27,7 @@ This package is an alias to the [sql-server-management-studio](https://chocolate
     
 If you have a preview versions of SSMS 18.0 installed, uninstall it and reboot before installing SSMS 18.0 GA.</releaseNotes>
     <dependencies>
-      <dependency id="sql-server-management-studio" version="[15.0.18206.0]" />
+      <dependency id="sql-server-management-studio" version="[15.0.18330.0]" />
     </dependencies>
   </metadata>
   <files>
