@@ -1,0 +1,22 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The embedded software have been downloaded from the listed download
+location on <https://github.com/mscrmtools/xrmtoolbox/releases/tag/v1.2020.2.37>
+and can be verified by doing the following:
+
+1. Download the following:
+  software: <https://github.com/MscrmTools/XrmToolBox/releases/download/v1.2020.2.37/XrmToolbox.zip>
+
+2. Get the checksum using one of the following methods:
+  - Using PowerShell function 'Get-FileHash'
+  - Using AU PowerShell function 'Get-RemoteChecksum'
+  - Using Chocolatey utility 'checksum.exe'
+
+3. The checksums should match the following:
+  checksum type: sha256
+  checksum: 28D9720ABB7682ADD43807107EAF33795A3EDC138A60E88030E2ADD3EEB75C41
+
+The file 'LICENSE.txt' has been obtained from <https://github.com/MscrmTools/XrmToolBox/blob/c16eb792269ff29ba0a45328c7c6683fd16c4e68/LICENSE.txt>
