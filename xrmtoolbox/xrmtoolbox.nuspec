@@ -9,7 +9,7 @@
     <title>XrmToolBox</title>
     <authors>MscrmTools</authors>
     <projectUrl>https://www.xrmtoolbox.com/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/joshcampbell191/au-packages/master/xrmtoolbox/icons/xrmtoolbox.png</iconUrl>
+    <iconUrl>https://cdn.statically.io/gh/joshcampbell191/chocolatey-packages/61aef664/xrmtoolbox/icons/xrmtoolbox.png</iconUrl>
     <copyright>(c) 2020 XrmToolBox</copyright>
     <licenseUrl>https://github.com/MscrmTools/XrmToolBox/blob/master/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
