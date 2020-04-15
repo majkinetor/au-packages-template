@@ -18,16 +18,16 @@ environment:
   au_test_groups: 1
 
   # Github token to commit pushed packages to repository
-  github_user_repo: {github_user}/{repository}
+  github_user_repo: joshcampbell191/chocolatey-packages
   github_api_key:
-    secure: YOUR_GITHUB_API_KEY_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
+    secure: BTp5CyadVacObqlOMu9rfBavRUOY5htrhXm5MTev42eI9TzpkJwWd5ruZNAS5Swu #https://ci.appveyor.com/tools/encrypt
 
 
   # Mail credentials - for error notifications
   mail_user:
-    secure: YOUR_EMAIL_ACCOUNT_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
+    secure: CvgmDgVuCjMOOUY1fHSiZHJiz7mTtu/tNXjJV5Pmcow= #https://ci.appveyor.com/tools/encrypt
   mail_pass:
-    secure: YOUR_EMAIL_PASSWORD_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
+    secure: D13uaYyrZA9l+cpW1jH1DQ== #https://ci.appveyor.com/tools/encrypt
   mail_server: smtp.gmail.com
   mail_port: 587
   mail_enablessl: true
@@ -41,7 +41,7 @@ environment:
 
   # Chocolatey API key - to push updated packages
   api_key:
-    secure: YOUR_CHOCO_API_KEY_HERE_ENCRYPTED_STRING # https://ci.appveyor.com/tools/encrypt
+    secure: bsJnSRkiwqLyHb/XVnMjM4o2po3qPqrvkKEdA7/MKH5Lqmwl1crBl2GE/XMbpQES # https://ci.appveyor.com/tools/encrypt
 
 init:
 - git config --global user.email "chocolatey@realdimensions.net"
@@ -65,7 +65,7 @@ install:
 
 # Uncomment the below line if you are using any of the functions from chocolatey-core.extension - https://chocolatey.org/packages/chocolatey-core.extension. Ensure you also have it listed in your package's dependencies
 # - cinst chocolatey-core.extension
-    
+
 build_script:
 - ps: |
     $ErrorActionPreference = 'Continue'
