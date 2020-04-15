@@ -13,3 +13,4 @@ $packageArgs = @{
   unzipLocation  = $installDir
 }
 Install-ChocolateyZipPackage @packageArgs
+if ($installDir -ne $toolsPath) { Install-ChocolateyPath $installDir }
