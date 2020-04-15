@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>xrmtoolbox</id>
+    <version>1.2020.2.37</version>
+    <packageSourceUrl>https://github.com/joshcampbell191/au-packages/tree/master/xrmtoolbox</packageSourceUrl>
+    <owners>Joshua Campbell</owners>
+    <title>XrmToolBox</title>
+    <authors>MscrmTools</authors>
+    <projectUrl>https://www.xrmtoolbox.com/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/joshcampbell191/au-packages/master/xrmtoolbox/icon.png</iconUrl>
+    <copyright>(c) 2020 XrmToolBox</copyright>
+    <licenseUrl>https://github.com/MscrmTools/XrmToolBox/blob/master/LICENSE.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/MscrmTools/XrmToolBox</projectSourceUrl>
+    <docsUrl>https://www.xrmtoolbox.com/documentation/</docsUrl>
+    <bugTrackerUrl>https://github.com/MscrmTools/XrmToolBox/issues</bugTrackerUrl>
+    <tags>xrmtoolbox dynamics powerapps cds crm</tags>
+    <summary>XrmToolBox is a Windows application that connects to the Common Data Service for Apps (CDS).</summary>
+    <description>XrmToolBox provides tools to ease customization, configuration and operation tasks for anything built on CDS, including Dynamics 365 CE (formerly CRM) and model-driven PowerApps.</description>
+    <releaseNotes>https://github.com/mscrmtools/xrmtoolbox/releases/tag/v1.2020.2.37</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
