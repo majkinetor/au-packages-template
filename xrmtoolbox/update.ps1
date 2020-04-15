@@ -32,7 +32,7 @@ function global:au_BeforeUpdate { Get-RemoteFiles -Purge -NoSuffix }
 function global:au_GetLatest {
   $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-  $re = 'XrmToolbox\.zip$'
+  $re = 'XrmToolBox\.zip$'
   $url = $download_page.links | ? href -match $re | % href | Select-Object -First 1
 
   $version = (Split-Path ( Split-Path $url ) -Leaf).Substring(1)
