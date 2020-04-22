@@ -17,7 +17,7 @@ function global:au_GetLatest {
   $regex   = '\/denoland\/deno\/releases\/tag\/v\d{1,3}\.\d{1,3}\.\d{1,3}$'
   $url     = $download_page.links | Where-Object href -match $regex | Select-Object -First 1 -expand href
   $version = $url -split '\/|v' | Select-Object -Last 1
-  $url = "https://github.com/denoland/deno/releases/download/v$version/deno_win_x64.zip"
+  $url = "https://github.com/denoland/deno/releases/download/v$version/deno-x86_64-pc-windows-msvc.zip"
   return @{ Version = $version; URL64 = $url; ChecksumType64 = 'sha512';}
 }
 
