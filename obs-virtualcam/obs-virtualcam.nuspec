@@ -10,7 +10,7 @@
     <authors>Han-Tai Chen</authors>
     <projectUrl>https://obsproject.com/forum/resources/obs-virtualcam.539/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/aeliussaionji/chocopkgs@979a823c98cedde055c6004aebfc6d8a7bdef796/icons/obs-studio.png</iconUrl>
-    <copyright>2019</copyright>
+    <copyright>2019 Han-Tai Chen</copyright>
     <licenseUrl>https://raw.githubusercontent.com/CatxFish/obs-virtual-cam/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/CatxFish/obs-virtual-cam</projectSourceUrl>
