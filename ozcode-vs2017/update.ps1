@@ -13,6 +13,15 @@ function global:au_SearchReplace {
      }
 }
 
+function global:au_BeforeUpdate() {
+    # AU on Appveyor doesn't like Install-VisualStudioVsixExtension in chocolateyinstall.ps1, so calc
+    # checksum here instead
+    $oldProgressPreference = $global:ProgressPreference
+    $global:ProgressPreference = 'SilentlyContinue'
+    $Latest.Checksum32 = Get-RemoteChecksum $Latest.Url32
+    $global:ProgressPreference = $oldProgressPreference
+ }
+
 function global:au_GetLatest {
  
     $url = Get-RedirectedUri $releases
@@ -33,4 +42,4 @@ function global:au_GetLatest {
     }
 }
 
-update
+update -ChecksumFor none
