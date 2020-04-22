@@ -11,4 +11,11 @@ $packageArgs = @{
   checksumType  = 'sha256'
 }
 
-Install-VisualStudioVsixExtension @packageArgs
+# Flag whether we're being invoked by AU module
+if (Test-Path Function:\au_GetLatest) {
+  # Need different logic for AU as it doesn't like Install-VisualStudioVsixExtension,
+  # but this should allow it to do the download and calculate the checksum for package updates
+  Get-ChocolateyWebFile @packageArgs -fileFullPath "$Env:TEMP\$filename"
+} else {
+  Install-VisualStudioVsixExtension @packageArgs
+}
