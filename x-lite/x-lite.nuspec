@@ -2,30 +2,23 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>x-lite</id>
-    <title>CounterPath X-Lite</title>
-    <version>5.8.1.102008</version>
+    <title>[Deprecated] CounterPath X-Lite</title>
+    <version>5.8.1.20200428</version>
     <authors>CounterPath</authors>
-    <owners>fdcastel, flcdrg</owners>
+    <owners>flcdrg</owners>
     <summary>CounterPath X-Lite Softphone</summary>
-    <description>Combining voice and video calls in a user-friendly interface, CounterPath's X-Lite helps you seamlessly transition from a traditional phone environment into the world of Voice over IP.</description>
+    <description>This application is now end-of-life. All trials have expired and it is no longer available for download from download servers.
+    
+    The closest replacement is Bria Solo or Bria Teams, which are SaaS offerings. There is an MSI for paid subscribers of these products
+    </description>
     <projectUrl>http://www.counterpath.com/x-lite/</projectUrl>
-    <releaseNotes>- Fixed a few crashes on start up or upgrading
-- General Stability updates</releaseNotes>
-    <docsUrl>http://www.counterpath.com/assets/product_documents/X-Lite_4_Windows_User_Guide_R6.pdf</docsUrl>
-    <mailingListUrl>https://support.counterpath.com/</mailingListUrl>
-    <tags>admin notsilent counterpath x-lite softphone</tags>
+    <tags>counterpath x-lite softphone</tags>
     <licenseUrl>http://www.counterpath.com/eula/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>http://www.counterpath.com/assets/images/product_subpage_marquee/marquee_desktop_xlite.jpg</iconUrl>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/x-lite</packageSourceUrl>
     <dependencies>
-      <dependency id="vcredist2012" version="11.0.61031" />
-      <dependency id="vcredist2013" version="12.0.30501.20150616" />
-      <dependency id="dotnet4.6.2" version="4.6" />
       <dependency id="autohotkey.portable" version="1.1.26" />
     </dependencies>    
   </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
+  <files />
 </package>
