@@ -1,6 +1,6 @@
 # Chocolatey packages
 
-[![Chocolatey Profile](https://img.shields.io/badge/Chocolatey-Profile-brown)](https://chocolatey.org/profiles/flcdrg)
+[![Chocolatey Profile](https://img.shields.io/badge/Chocolatey Profile-flcdrg-yellowgreen)](https://chocolatey.org/profiles/flcdrg)
 [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/flcdrg/au-packages?svg=true)](https://ci.appveyor.com/project/flcdrg/au-packages)
 [![Update Status](https://img.shields.io/badge/Update-Status-blue.svg)](https://gist.github.com/flcdrg/7d00c69c2cde8309a8594abaa897a9a6)
 
