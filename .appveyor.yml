@@ -11,6 +11,12 @@ branches:
 #build:
 #  verbosity: minimal
 
+skip_commits:
+  files:
+    - README.md
+    - .gitignore
+    - LICENSE
+
 environment:
   # Set au version to use or omit to use the latest. Specify branch name to use development version from Github
   au_version: master # 2018.5.18
