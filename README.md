@@ -1,11 +1,19 @@
-[![](https://ci.appveyor.com/api/projects/status/github/flcdrg/au-packages?svg=true)](https://ci.appveyor.com/project/flcdrg/au-packages)
+# Chocolatey packages
+
+[![AppVeyor](https://ci.appveyor.com/api/projects/status/github/flcdrg/au-packages?svg=true)](https://ci.appveyor.com/project/flcdrg/au-packages)
 [Update status](https://gist.github.com/flcdrg/7d00c69c2cde8309a8594abaa897a9a6)
-[![](http://transparent-favicon.info/favicon.ico)](#)
+[![Chocolatey Profile](http://transparent-favicon.info/favicon.ico)](#)
 [chocolatey/flcdrg](https://chocolatey.org/profiles/flcdrg)
 
 This repository contains my Chocolatey packages. Where possible I use [chocolatey automatic packages](https://chocolatey.org/docs/automatic-packages). These packages will have an `update.ps1` script in the folder that is run daily to automatically detect and publish new versions.
 
 If there is no `update.ps1`, I haven't got around to creating one yet.
+
+## Contributions
+
+If you have found a bug or have a suggestion, please feel free to raise an issue.
+
+Pull requests are also most welcome!
 
 ## Prerequisites
 
@@ -24,21 +32,22 @@ To create a new package see [Creating the package updater script](https://github
 
 In a package directory run: `Test-Package`. This function can be used to start testing in [chocolatey-test-environment](https://github.com/majkinetor/chocolatey-test-environment) via `Vagrant` parameter or it can test packages locally.
 
-
 ## Automatic package update
 
 ### Single package
 
 Run from within the directory of the package to update that package:
-   
+
+```powershell
     cd <package_dir>
     ./update.ps1
- 
+```
+
 If this script is missing, the package is not automatic.  
 Set `$au_Force = $true` prior to script call to update the package even if no new version is found.
 
 ### Multiple packages
- 
+
 To update all packages run `./update_all.ps1`. It accepts few options:
 
 ```powershell
@@ -58,19 +67,19 @@ $au_Push      = $false       #Do not push to chocolatey
 
 You can also call AU method `Update-AUPackages` (alias `updateall`) on its own in the repository root. This will just run the updater for the each package without any other option from `update_all.ps1` script. For example to force update of all packages with a single command execute:
 
+```powershell
     updateall -Options ([ordered]@{ Force = $true })
+```
 
 ## Testing all packages
 
 You can force the update of all or subset of packages to see how they behave when complete update procedure is done:
-
 
 ```powershell
 ./test_all.ps1                            # Test force update on all packages
 ./test_all.ps1 'cdrtfe','freecad', 'p*'   # Test force update on only given packages
 ./test_all.ps1 'random 3'                 # Split packages in 3 groups and randomly select and test 1 of those each time
 ```
-
 
 **Note**: If you run this locally your packages will get updated. Use `git reset --hard` after running this to revert the changes.
 
@@ -81,6 +90,7 @@ You can force package update and push using git commit message. AppVeyor build i
 If commit message includes `[AU <forced_packages>]` message on the first line, the `forced_packages` string will be sent to the updater.
 
 Examples:
+
 - `[AU pkg1 pkg2]`  
 Force update ONLY packages `pkg1` and `pkg2`.
 - `[AU pkg1:ver1 pkg2 non_existent]`  
@@ -92,19 +102,21 @@ You can also push manual packages with command `[PUSH pkg1 ... pkgN]`. This work
 
 If there are no changes in the repository use `--allow-empty` git parameter:
 
+```powershell
     git commit -m '[AU copyq less:2.0]' --allow-empty
     git push
+```
 
 ## Start using AU with your own packages
 
 To use this system with your own packages do the following steps:
 
-* Fork this project. If needed, rename it to `au-packages`.
-* Delete all existing packages.
-* Edit the `README.md` header with your repository info.
-* Set your environment variables. See [AU wiki](https://github.com/majkinetor/au/wiki#environment-variables) for details.
+- Fork this project. If needed, rename it to `au-packages`.
+- Delete all existing packages.
+- Edit the `README.md` header with your repository info.
+- Set your environment variables. See [AU wiki](https://github.com/majkinetor/au/wiki#environment-variables) for details.
 
 Add your own packages now, with this in mind:
-* You can keep both manual and automatic packages together. To get only AU packages any time use `Get-AUPackages` function (alias `lsau` or `gau`)
-* Keep all package additional files in the package directory (icons, screenshots etc.). This keeps everything related to one package in its own directory so it is easy to move it around or remove it.
- 
+
+- You can keep both manual and automatic packages together. To get only AU packages any time use `Get-AUPackages` function (alias `lsau` or `gau`)
+- Keep all package additional files in the package directory (icons, screenshots etc.). This keeps everything related to one package in its own directory so it is easy to move it around or remove it.
