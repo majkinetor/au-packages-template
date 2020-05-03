@@ -1,9 +1,8 @@
 # Chocolatey packages
 
+[![Chocolatey Profile](https://img.shields.io/badge/Chocolatey-Profile-brown)](https://chocolatey.org/profiles/flcdrg)
 [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/flcdrg/au-packages?svg=true)](https://ci.appveyor.com/project/flcdrg/au-packages)
-[Update status](https://gist.github.com/flcdrg/7d00c69c2cde8309a8594abaa897a9a6)
-[![Chocolatey Profile](http://transparent-favicon.info/favicon.ico)](#)
-[chocolatey/flcdrg](https://chocolatey.org/profiles/flcdrg)
+[![Update Status](https://img.shields.io/badge/Update-Status-blue.svg)](https://gist.github.com/flcdrg/7d00c69c2cde8309a8594abaa897a9a6)
 
 This repository contains my Chocolatey packages. Where possible I use [chocolatey automatic packages](https://chocolatey.org/docs/automatic-packages). These packages will have an `update.ps1` script in the folder that is run daily to automatically detect and publish new versions.
 
