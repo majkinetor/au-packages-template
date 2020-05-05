@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>sql-server-2019-cumulative-update</id>
+    <version>15.0.4033.1</version>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/sql-server-2019-cumulative-update</packageSourceUrl>
+    <owners>flcdrg</owners>
+    <title>Microsoft SQL Server 2019 Cumulative Update 4</title>
+    <authors>Microsoft Corporation</authors>
+    <projectUrl>https://www.microsoft.com/en-us/download/details.aspx?id=56128</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/59ad5e2e32c52fd2a45a9735f95a81368f9e5e85/icons/microsoft-sql-server.svg</iconUrl>
+    <copyright>2019 Microsoft Corporation</copyright>
+    <licenseUrl>https://www.microsoft.com/en-us/sql-server/sql-server-2019-pricing</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://docs.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver15</docsUrl>
+    <mailingListUrl>https://social.technet.microsoft.com/Forums/sqlserver/en-us/home?category=sqlserver</mailingListUrl>
+    <bugTrackerUrl>https://feedback.azure.com/forums/908035-sql-server</bugTrackerUrl>
+    <tags>SQL Server Cumulative Update 2019</tags>
+    <summary>The latest Cumulative Update (CU) download is the most recent CU released for SQL Server 2019</summary>
+    <description>The latest Cumulative Update (CU) download is the most recent CU released for SQL Server 2019 and contains all updates released since the release of SQL Server 2019 RTM.
+
+- Each new CU contains all the fixes that were included in the previous CU for the installed version of SQL Server.
+- SQL Server CUs are certified to the same levels as Service Packs, and should be installed at the same level of confidence.
+- Microsoft recommends ongoing, proactive installation of CUs as they become available:
+  - Historical data shows that a significant number of support cases involve an issue that has already been addressed in a released CU.
+  - CUs may contain added value over and above hotfixes. This includes supportability, manageability, and reliability updates.
+- We recommend that you test CUs before you deploy them to production environments.
+
+#### Supported Operating System
+
+Windows 10, Windows Server 2016, Windows Server 2019
+
+#### Uninstalling
+Uninstalling with Chocolatey is known to not be reliable, as the uninstaller wants to locate `sql_engine_core_inst_loc.msi` from the original installation media.
+
+Should you need to uninstall this cumulative update, you may need to revert to manual uninstallation via Programs and Features, Installed Updates.
+
+### Package Specific
+
+#### Package Parameters
+
+The following package parameters can be set:
+
+ * `/IgnorePendingReboot` - don't check for pending reboot (*Warning, SQL Server installations may fail if reboots are pending*)
+    </description>
+    <releaseNotes>http://support.microsoft.com/help/4548597</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\*.ps1" target="tools" />
+    <file src="..\sql-server-2019\tools\Get-PendingReboot.ps1" target="tools" />
+  </files>
+</package>
