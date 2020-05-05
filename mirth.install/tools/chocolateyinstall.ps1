@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'; # stop on all errors
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url        = 'https://s3.amazonaws.com/downloads.mirthcorp.com/connect/3.8.1.b246/mirthconnect-3.8.1.b246-windows.exe'
-$url64      = 'https://s3.amazonaws.com/downloads.mirthcorp.com/connect/3.8.1.b246/mirthconnect-3.8.1.b246-windows-x64.exe'
+$url        = 'https://s3.amazonaws.com/downloads.mirthcorp.com/connect/3.9.0.b2526/mirthconnect-3.9.0.b2526-windows.exe'
+$url64      = 'https://s3.amazonaws.com/downloads.mirthcorp.com/connect/3.9.0.b2526/mirthconnect-3.9.0.b2526-windows-x64.exe'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -13,9 +13,9 @@ $packageArgs = @{
 
   softwareName  = 'Mirth Connect *'
 
-  checksum      = '826d8b4aba07f2f0aa9735ac3f765e6a0ea8288635cee07ba07952aee8d6db4e'
+  checksum      = '6e62ba2df73eeb7416fc8d18f9945697b8064661d3506e41c83d5e1ed79f5fe0'
   checksumType  = 'sha256'
-  checksum64    = '0e1158c5dfcaad5dbd8d8fc3d1b78e20a9404e06e0197f93583d6590651da132'
+  checksum64    = '9845791f4f4437c2f0e77486716f920fb81ec9f9f6d893d88007437e578fb017'
   checksumType64= 'sha256'
 
   # OTHERS
