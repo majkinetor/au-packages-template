@@ -43,6 +43,14 @@ Should you need to uninstall this cumulative update, you may need to revert to m
 The following package parameters can be set:
 
  * `/IgnorePendingReboot` - don't check for pending reboot (*Warning, SQL Server installations may fail if reboots are pending*)
+
+ To pass parameters, use `--params "''"` (e.g. `choco install sql-server-2019-cumulative-update [other options] --params="'/ITEM:value /ITEM2:value2'"`).
+
+Example using /IgnorePendingReboot
+
+```
+choco install sql-server-2019-cumulative-update --params="'/IgnorePendingReboot'"
+```
     </description>
     <releaseNotes>http://support.microsoft.com/help/4548597</releaseNotes>
   </metadata>
