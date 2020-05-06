@@ -5,17 +5,14 @@ $url        = 'https://download.microsoft.com/download/7/c/1/7c14e92e-bdcb-4f89-
 . $toolsDir\Get-PendingReboot.ps1
 
 if ([Version] (Get-CimInstance Win32_OperatingSystem).Version -lt [version] "10.0.0.0") {
-  Write-Error "SQL Server 2019 is only supported on Windows 10 or Windows Server 2016"
+  Write-Error "SQL Server 2019 requires a minimum of Windows 10 or Windows Server 2016"
 }
-
-if ((Get-PendingReboot).RebootPending) {
-  Write-Error "A system reboot is pending. You must restart Windows first before installing SQL Server"
-}
-
-
-# TODO - Check Windows OS is compatible
 
 $pp = Get-PackageParameters
+
+if ( (!$pp['IGNOREPENDINGREBOOT']) -and (Get-PendingReboot).RebootPending) {
+  Write-Error "A system reboot is pending. You must restart Windows first before installing SQL Server"
+}
 
 # Default to use supplied configuration file and current user as sysadmin
 if (!$pp['CONFIGURATIONFILE']) { 
