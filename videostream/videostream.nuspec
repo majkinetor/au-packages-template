@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
 	<metadata>
 		<id>videostream</id>
-		<version>0.3.6.20190628</version>
+		<version>0.4.0</version>
 		<title>Videostream for Chromecast</title>
 		<authors>Groupnotes Inc</authors>
 		<owners>MarcioC</owners>
