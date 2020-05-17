@@ -13,7 +13,7 @@ $packageArgs = @{
   validExitCodes= @(0)
   url           = $url
   checksum      = $checksum
-  checksumType  = 'sha256'
+  checksumType  = 'md5'
   destination   = $toolsDir
 }
 
