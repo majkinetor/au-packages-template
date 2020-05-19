@@ -3,36 +3,44 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>obs-virtualcam</id>
-    <version>2.0.4</version>
+    <version>2.0.5</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/obs-virtualcam</packageSourceUrl>
     <owners>flcdrg</owners>
     <title>OBS-VirtualCam</title>
     <authors>Han-Tai Chen</authors>
-    <projectUrl>https://obsproject.com/forum/resources/obs-virtualcam.539/</projectUrl>
+    <projectUrl>https://obsproject.com/forum/resources/obs-virtualcam.949/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/aeliussaionji/chocopkgs@979a823c98cedde055c6004aebfc6d8a7bdef796/icons/obs-studio.png</iconUrl>
-    <copyright>2019 Han-Tai Chen</copyright>
-    <licenseUrl>https://raw.githubusercontent.com/CatxFish/obs-virtual-cam/master/LICENSE</licenseUrl>
+    <copyright>2020 Joel Bethke, 2019 Han-Tai Chen</copyright>
+    <licenseUrl>https://raw.githubusercontent.com/Fenrirthviti/obs-virtual-cam/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/CatxFish/obs-virtual-cam</projectSourceUrl>
-    <bugTrackerUrl>https://github.com/CatxFish/obs-virtual-cam/issues</bugTrackerUrl>
+    <projectSourceUrl>https://github.com/Fenrirthviti/obs-virtual-cam</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/Fenrirthviti/obs-virtual-cam/issues</bugTrackerUrl>
     <tags>obs webcam</tags>
     <summary>obs-studio plugin to simulate a directshow webcam</summary>
     <description>OBS-VirtualCam is a plugin for obs-studio, transforming the output video to a virtual directshow device.
 
-Supported Platforms : Windows 7 , Windows 8 and Windows 10
+Supported Platforms : Windows 7, Windows 8 and Windows 10
 
-Supported OBS Studio version : 24.0.0+
+Supported OBS Studio version : 25.0.0+
 
 #### Features
 
 - virtual output : A output plugin sink raw video &amp; audio to directshow interface.
 - virtual filter output : A filter plugin sink obs source video to directshow interface.
-- virtual source : Four directshow Interfaces which can use in 3rd party software.</description>
+- virtual source : Four directshow Interfaces which can use in 3rd party software.
+
+### Package Notes
+
+From version 2.0.5, this package is based on the fork maintained at https://github.com/Fenrirthviti/obs-virtual-cam
+
+</description>
     <releaseNotes>
-- Change FFmpeg dependency for OBS 24 ( Don't use this version if you haven't upgraded OBS)
-- Reduce resource used when OBS is not opening.</releaseNotes>
+- Fixed up the installer to make it more reliable
+- Fixed minor typos in the code
+- Added version information and descriptions to the dll files
+</releaseNotes>
     <dependencies>
-      <dependency id="obs-studio" version="24.0" />
+      <dependency id="obs-studio" version="25.0" />
     </dependencies>
   </metadata>
   <files>
