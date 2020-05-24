@@ -21,7 +21,7 @@ function global:au_GetLatest {
     }
 
     $releasesUrl = "https://api.github.com/repos/Microsoft/azure-pipelines-agent/releases"
-    $response = Invoke-RestMethod -Method Get -Uri "$releasesUrl/latest"-Headers $headers
+    $response = Invoke-RestMethod -Method Get -Uri "$releasesUrl/latest" -Headers $headers
     
     # Assume releases are named v1.2.3
     if (!$response.name.StartsWith("v")) {
