@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$fileName     = 'OzCode_4.0.0.2721.vsix'
-$checksum     = '6ec34cca7cfe309f1726133ca8feaab11a152b9e2cdbe85fbabe8a314a5cc753'
+$fileName     = 'OzCode_4.0.0.2842.vsix'
+$checksum     = '6f635ea3e53284c05e74841e4d43ce94c3d9311d1b389a3b970fb4b14be3d231'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
