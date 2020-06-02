@@ -12,19 +12,25 @@ $pp = Get-PackageParameters
 
 if ( (!$pp['IGNOREPENDINGREBOOT']) -and (Get-PendingReboot).RebootPending) {
   Write-Error "A system reboot is pending. You must restart Windows first before installing SQL Server"
-} else if ($pp['IGNOREPENDINGREBOOT']) {
-  $pp.Remove('IGNOREPENDINGREBOOT')
-  if(!$pp['ACTION']) $pp['ACTION']='Install'
-  if(!$pp['SkipRules']) $pp['SkipRules']='RebootRequiredCheck'
+} else {
+  if ($pp['IGNOREPENDINGREBOOT']) {
+    $pp.Remove('IGNOREPENDINGREBOOT')
+    if(!$pp['ACTION']) {
+      $pp['ACTION']='Install'
+    }
+    if(!$pp['SkipRules']) {
+      $pp['SkipRules']='RebootRequiredCheck'
+    }
+  }
 }
 
 # Default to use supplied configuration file and current user as sysadmin
-if (!$pp['CONFIGURATIONFILE']) { 
+if (!$pp['CONFIGURATIONFILE']) {
   $pp['CONFIGURATIONFILE'] = "$toolsDir\ConfigurationFile.ini"
 }
 
-if (!$pp['SQLSYSADMINACCOUNTS']) { 
-  $pp['SQLSYSADMINACCOUNTS'] = "$env:USERDOMAIN\$env:USERNAME" 
+if (!$pp['SQLSYSADMINACCOUNTS']) {
+  $pp['SQLSYSADMINACCOUNTS'] = "$env:USERDOMAIN\$env:USERNAME"
 }
 
 $packageArgs = @{
@@ -47,11 +53,11 @@ if (!$pp['IsoPath']) {
   $chocTempDir = $env:TEMP
   $tempDir = Join-Path $chocTempDir "$($env:chocolateyPackageName)"
   if ($env:chocolateyPackageVersion -ne $null) {
-     $tempDir = Join-Path $tempDir "$($env:chocolateyPackageVersion)"; 
+     $tempDir = Join-Path $tempDir "$($env:chocolateyPackageVersion)";
   }
 
   $tempDir = $tempDir -replace '\\chocolatey\\chocolatey\\', '\chocolatey\'
-  if (![System.IO.Directory]::Exists($tempDir)) { 
+  if (![System.IO.Directory]::Exists($tempDir)) {
     [System.IO.Directory]::CreateDirectory($tempDir) | Out-Null
   }
 
@@ -69,9 +75,9 @@ try {
   $MountResult = Mount-DiskImage -ImagePath $fileFullPath -StorageType ISO -PassThru
   $MountVolume = $MountResult | Get-Volume
   $MountLocation = "$($MountVolume.DriveLetter):"
-  
-  Install-ChocolateyInstallPackage @packageArgs -File "$($MountLocation)\setup.exe"  
+
+  Install-ChocolateyInstallPackage @packageArgs -File "$($MountLocation)\setup.exe"
 }
 finally {
-  Dismount-DiskImage -ImagePath $fileFullPath  
+  Dismount-DiskImage -ImagePath $fileFullPath
 }
