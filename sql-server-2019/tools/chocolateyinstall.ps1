@@ -12,6 +12,10 @@ $pp = Get-PackageParameters
 
 if ( (!$pp['IGNOREPENDINGREBOOT']) -and (Get-PendingReboot).RebootPending) {
   Write-Error "A system reboot is pending. You must restart Windows first before installing SQL Server"
+} else {
+  $pp.Remove('IGNOREPENDINGREBOOT')
+  if(!$pp['ACTION']) $pp['ACTION']='Install'
+  if(!$pp['SkipRules']) $pp['SkipRules']='RebootRequiredCheck'
 }
 
 # Default to use supplied configuration file and current user as sysadmin
