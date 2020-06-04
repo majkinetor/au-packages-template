@@ -1,24 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
-<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
-  <metadata>
-    <id>sql-server-2019</id>
-    <version>15.0.2000.20200604</version>
-    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/sql-server-2019</packageSourceUrl>
-    <owners>flcdrg</owners>
-    <title>Microsoft SQL Server 2019 Developer Edition</title>
-    <authors>Microsoft Corporation</authors>
-    <projectUrl>https://www.microsoft.com/en-au/sql-server/sql-server-2019#Install</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/ferventcoder/chocolatey-packages/59ad5e2e32c52fd2a45a9735f95a81368f9e5e85/icons/microsoft-sql-server.svg</iconUrl>
-    <copyright>2019 Microsoft Corporation</copyright>
-    <licenseUrl>https://www.microsoft.com/en-us/sql-server/sql-server-2019-pricing</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <docsUrl>https://docs.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver15</docsUrl>
-    <mailingListUrl>https://social.technet.microsoft.com/Forums/sqlserver/en-us/home?category=sqlserver</mailingListUrl>
-    <bugTrackerUrl>https://feedback.azure.com/forums/908035-sql-server</bugTrackerUrl>
-    <tags>SQL tSQL Relational Data Database</tags>
-    <summary>Apply intelligence across all your data with SQL Server 2019</summary>
-    <description>Whether your data is structured or unstructured, query and analyze it using the data platform with industry-leading performance and security.
+# Description
+
+Whether your data is structured or unstructured, query and analyze it using the data platform with industry-leading performance and security.
 
 ### What you'll love about SQL Server 2019
 
@@ -86,14 +68,3 @@ choco install sql-server-2019 --params="'/IsoPath:c:\downloads\SQLServer2019-x64
 #### Chocolatey Pro / Business users
 
 If you allow the package to download the ISO file, it is suggested you run Chocolatey with the `--skip-virus-check` parameter, as the online virus scanner doesn't handle files over 500MB. You should use alternate methods of scanning in this case.
-</description>
-    <releaseNotes>https://docs.microsoft.com/en-au/sql/sql-server/sql-server-version-15-release-notes?view=sql-server-ver15</releaseNotes>
-    <dependencies>
-      <!-- All dependencies are met via minimum Windows supported version(s) -->
-      <dependency id="chocolatey-core.extension" version="1.3.3" />
-    </dependencies>
-  </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
-</package>
