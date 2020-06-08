@@ -67,6 +67,9 @@ if ($pp['Url']) {
         if ($pp['ProjectName']) {
             $configOpts += @('--projectName', $pp['ProjectName'])
         }
+
+        # TODO: Environment Resources in Azure Pipelines have a notion of tagging resources (i.e. VM's)
+        # Haven't found how/if it's possible to set that during agent registration (documentation on this feature is non-existent)
     }
     else {
         if (!$pp['Pool']) { $pp['Pool'] = 'default'}
