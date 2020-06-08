@@ -38,7 +38,7 @@ if ($pp['Url']) {
             $configOpts += @("--userName", $username, "--password", $password)
         }
     }
-    # Are we a deployment agent or a build agent?
+    # Are we a deployment agent, environment, or a build agent?
     if ($pp['DeploymentGroup']) {
         Write-Verbose "Deployment Agent"
 
@@ -50,6 +50,19 @@ if ($pp['Url']) {
         if ($pp['DeploymentGroupTags']) {
             $configOpts += @("--addDeploymentGroupTags", "--deploymentGroupTags", $pp['DeploymentGroupTags'])
         }
+
+        if ($pp['ProjectName']) {
+            $configOpts += @('--projectName', $pp['ProjectName'])
+        }
+    }
+    elseif ($pp['Environment']) {
+        Write-Verbose "Environment Agent"
+
+        if (!$pp['EnvironmentName'] -or !$pp['ProjectName']) {
+            Write-Error "Must specify /EnvironmentName and /ProjectName"
+        }
+
+        $configOpts += @("--environment", "--environmentName", $pp['EnvironmentName'])
 
         if ($pp['ProjectName']) {
             $configOpts += @('--projectName', $pp['ProjectName'])
