@@ -45,9 +45,17 @@ The following package parameters can be set:
  * `/Work:WorkDirectory` - Work directory where job data is stored. Defaults to _work under the root of the agent directory. The work directory is owned by a given agent and should not share between multiple agents.
  * `/AgentName:Custom_Name` - Custom agent name (defaults to hostname)
  * `/Replace` - Replace already registered agent with same name
+ * `/SslSkipCertValidation` - Ignore SSL server certificate validation errors
+ * `/GitUseSChannel` - Enable git to use SChannel
+ * `/UseClientCertificate` - Require all incoming requests to TFS to present a client certificate in addition to the regular credential. Check the documentation for all the requirements.
+ * `/SslCaCert` - Used with /UseClientCertificate. CA certificate(s) in `.pem` format
+ * `/SslClientCert` - Used with /UseClientCertificate. Client certificate in `.pem` format
+ * `/SslClientCertKey` - Used with /UseClientCertificate. Client certificate private key in `.pem` format
+ * `/SslClientCertArchive` - Used with /UseClientCertificate. Client certificate archive package in `.pfx` format
+ * `/SslClientCertPassword` - Used with /UseClientCertificate. Password that was used to protected both the Client certificate private key and Client certificate archive package
 
 To pass parameters, use `--params "''"` (e.g. `choco install packageID [other options] --params="'/ITEM:value /ITEM2:value2 /FLAG_BOOLEAN'"`).
-To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.    
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 
 Example:
 `choco install azure-pipelines-agent --params "'/Directory:c:\agent2 /Token:mytoken /Pool:Integration /Url:https://dev.azure.com/orgname'"`
