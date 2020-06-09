@@ -91,6 +91,30 @@ if ($pp['Url']) {
     if ($pp['Replace']) {
         $configOpts += @("--replace")
     }
+
+    # Self-signed certificate
+    if ($pp['SslSkipCertValidation']) {
+        $configOpts += @("--sslskipcertvalidation")
+    }
+
+    # Git use SChannel
+    if ($pp['GitUseSChannel']) {
+        $configOpts += @("--gituseschannel")
+    }
+
+    # Client Certificate
+    if ($pp['UseClientCertificate']) {
+        if (!$pp['SslCaCert'] -or !$pp['SslClientCert'] -or !$pp['SslClientCertKey'] -or !$pp['SslClientCertArchive'] -or !$pp['SslClientCertPassword']) {
+            Write-Error "Must specify /SslCaCert, /SslClientCert, /SslClientCertKey, /SslClientCertArchive and /SslClientCertPassword"
+        }
+        $configOpts += @(
+            "--sslcacert", $pp['SslCaCert'],
+            "--sslclientcert", $pp['SslClientCert'],
+            "--sslclientcertkey", $pp['SslClientCertKey'],
+            "--sslclientcertarchive", $pp['SslClientCertArchive'],
+            "--sslclientcertpassword", $pp['SslClientCertPassword']
+        )
+    }
 }
 
 $packageArgs = @{
