@@ -32,9 +32,9 @@ function global:au_GetLatest {
 
     $version = $response.name.Substring(1)
 
-    $assets = Invoke-RestMethod -Method Get -Uri $response.assets_url
+    $assets = Invoke-RestMethod -Method Get -Uri $response.assets_url -Headers $headers
 
-    $assetsJson = Invoke-RestMethod -Method Get -Uri $assets[0].browser_download_url
+    $assetsJson = Invoke-RestMethod -Method Get -Uri $assets[0].browser_download_url -Headers $headers
 
     $asset32 = $assetsJson | Where-Object { $_.platform -eq "win-x86" }
     $asset64 = $assetsJson | Where-Object { $_.platform -eq "win-x64" }
