@@ -18,6 +18,8 @@ function global:au_GetLatest {
     }
     if ($token) {
         $headers['Authorization'] = ("token {0}" -f $token)
+    } else {
+        Write-Warning "No auth token"
     }
 
     $releasesUrl = "https://api.github.com/repos/Microsoft/azure-pipelines-agent/releases"

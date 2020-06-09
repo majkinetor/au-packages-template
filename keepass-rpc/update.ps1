@@ -17,6 +17,8 @@ function global:au_GetLatest {
     }
     if ($token) {
         $headers['Authorization'] = ("token {0}" -f $token)
+    } else {
+        Write-Warning "No auth token"
     }
     $response = Invoke-RestMethod -Method Get -Uri "https://api.github.com/repos/kee-org/keepassrpc/releases/latest" -Headers $headers
     
