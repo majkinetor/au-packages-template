@@ -5,7 +5,7 @@
     <id>ReSharper</id>
     <owners>JetBrains, flcdrg</owners>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/ReSharper</packageSourceUrl>
-    <version>2020.1.3</version>
+    <version>2020.2-EAP1</version>
     <title>JetBrains ReSharper</title>
     <authors>JetBrains</authors>
     <projectUrl>https://www.jetbrains.com/resharper</projectUrl>
@@ -45,7 +45,7 @@ Code style and formatting functionality with fine-grained, language-specific set
     </description>
     <releaseNotes>https://www.jetbrains.com/resharper/whatsnew/</releaseNotes>
     <dependencies>
-      <dependency id="resharper-platform" version="[201.0.20200515.121639]" />
+      <dependency id="resharper-platform" version="[202.0.20200602.224122-eap01]" />
       <dependency id="dotnet4.6.1" version="4.6.01055.20170308" />
     </dependencies>
   </metadata>
