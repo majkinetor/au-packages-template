@@ -41,6 +41,7 @@ The following package parameters can be set:
  * `/DeploymentGroupName:` - Used with /DeploymentGroup. Deployment group for the agent to join
  * `/DeploymentGroupTags:` - Used with /DeploymentGroup. A comma separated list of tags for the deployment group agent. For example "web, db".
  * `/EnvironmentName` - Used with /Environment. Name of the environment to add the VM/machine as a resource to.
+    NOTE: Environment resources can be tagged in Azure DevOps, but the command line argument (`--virtualmachineresourcetags`) for adding tags during registration does not seem to work (as of June 8, 2020)
  * `/AutoLogon` - Configure auto logon and run the agent on startup (The default if this is not specified, is to run the agent as a Windows Service)
  * `/LogonAccount:` - Account that agent should run as (either Windows Service or auto logon) - Specify the Windows user name in the format: domain\userName or userName@domain.com. To log in as Local System, use "NT AUTHORITY\SYSTEM". Defaults to NetworkService if not specified.
  * `/LogonPassword:` - Used with /LogonAccount. Windows logon password
