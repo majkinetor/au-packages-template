@@ -16,7 +16,9 @@ if ($pp['Url']) {
 
     $configOpts = @('configure', '--unattended', '--acceptTeeEula')
     $configOpts += @('--url', $pp['Url'])
-
+    if ($pp['CollectionName']) {
+        $configOpts += @('--CollectionName', $pp['CollectionName'])
+    }
     if ($pp['Token']) {
         $configOpts += @("--auth", "pat", "--token", $pp['Token'])
     }
