@@ -38,6 +38,7 @@ The following package parameters can be set:
  * `/DeploymentGroup` - Install as deployment agent (instead of a build agent)
  * `/Environment` - Install as an environment virtual machine (instead of a build agent)
  * `/ProjectName:` - Used with /DeploymentGroup or /Environment. Team project name
+ * `/CollectionName:` - Used with /DeploymentGroup or /Environment. Collection name
  * `/DeploymentGroupName:` - Used with /DeploymentGroup. Deployment group for the agent to join
  * `/DeploymentGroupTags:` - Used with /DeploymentGroup. A comma separated list of tags for the deployment group agent. For example "web, db".
  * `/EnvironmentName` - Used with /Environment. Name of the environment to add the VM/machine as a resource to.
