@@ -4,7 +4,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>ubiquiti-unifi-controller</id>
-    <version>5.12.72</version>
+    <version>5.13.29</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/ubiquiti-unifi-controller</packageSourceUrl>
     <owners>flcdrg</owners>
     <!-- ============================== -->
@@ -28,7 +28,7 @@
 UAP, UAP-AC, UAP-AC-EDU, UAP-AC-HD, UAP-AC-LITE, UAP-AC-LR, UAP-AC-M, UAP-AC-M-PRO, UAP-AC Outdoor, UAP-AC-PRO, UAP-IW, UAP-LR, UAP-Outdoor, UAP-Outdoor+, UAP-Outdoor5, UAP-PRO, US-16-150W, US‑16‑XG, US-24, US-24-250W, US-24-500W, US-48, US-48-500W, US-48-750W, US-8, US-8-150W, US-8-60W, USG, USG-PRO-4
 	Install script also configures appropriate Windows Firewall rules (for Windows 8/Server 2008 and above)
     </description>
-    <releaseNotes>https://community.ui.com/releases/UniFi-Network-Controller-5-12-72/9ac72983-5130-4f58-b3ba-909f4d4bb5f9</releaseNotes>
+    <releaseNotes>https://community.ui.com/releases/UniFi-Network-Controller-5-13-29/d7647910-77a2-4e61-bbfe-389206f2d6ad</releaseNotes>
     <!-- =============================== -->      
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
