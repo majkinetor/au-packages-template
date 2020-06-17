@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sqltoolbelt</id>
-    <version>2020.06.12</version>
+    <version>2020.06.15</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/sqltoolbelt</packageSourceUrl>
     <owners>kscelfo, flcdrg</owners>
     <title>SQL Toolbelt</title>
