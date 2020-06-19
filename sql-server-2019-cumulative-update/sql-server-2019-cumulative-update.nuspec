@@ -8,7 +8,7 @@
     <owners>flcdrg</owners>
     <title>Microsoft SQL Server 2019 Cumulative Update 4</title>
     <authors>Microsoft Corporation</authors>
-    <projectUrl>https://www.microsoft.com/en-us/download/details.aspx?id=56128</projectUrl>
+    <projectUrl>https://www.microsoft.com/en-us/download/details.aspx?id=100809</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/59ad5e2e32c52fd2a45a9735f95a81368f9e5e85/icons/microsoft-sql-server.svg</iconUrl>
     <copyright>2019 Microsoft Corporation</copyright>
     <licenseUrl>https://www.microsoft.com/en-us/sql-server/sql-server-2019-pricing</licenseUrl>
