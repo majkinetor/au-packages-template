@@ -5,9 +5,11 @@ $url        = 'https://download.microsoft.com/download/6/e/7/6e72dddf-dfa4-4889-
 $checksum   = '58d78ac13dd8bba0b5e17aafaa8fe38a9d9bbcd72dad480b66c914e6962db888'
 $softwareName = 'Hotfix 4033 for SQL Server 2019*(KB4548597)*'
 
+[bool] $runningAU = (Test-Path Function:\au_GetLatest)
+
 . $toolsDir\Get-PendingReboot.ps1
 
-if ([Version] (Get-CimInstance Win32_OperatingSystem).Version -lt [version] "10.0.0.0") {
+if (([Version] (Get-CimInstance Win32_OperatingSystem).Version -lt [version] "10.0.0.0") -and -not $runningAU) {
   Write-Error "SQL Server 2019 requires a minimum of Windows 10 or Windows Server 2016"
 }
 
