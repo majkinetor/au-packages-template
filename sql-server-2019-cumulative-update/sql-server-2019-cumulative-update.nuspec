@@ -56,6 +56,5 @@ choco install sql-server-2019-cumulative-update --params="'/IgnorePendingReboot'
   </metadata>
   <files>
     <file src="tools\*.ps1" target="tools" />
-    <file src="..\sql-server-2019\tools\Get-PendingReboot.ps1" target="tools" />
   </files>
 </package>
