@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sql-server-2019-cumulative-update</id>
-    <version>15.0.4043.16</version>
+    <version>15.0.4043.20200624</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/sql-server-2019-cumulative-update</packageSourceUrl>
     <owners>flcdrg</owners>
     <title>Microsoft SQL Server 2019 Cumulative Update 5</title>
