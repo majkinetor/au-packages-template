@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>n3dr</id>
+    <version>3.6.1</version>
+    <packageSourceUrl>https://github.com/digitalcoyote/chocolatey-packages/n3dr</packageSourceUrl>
+    <owners>CodingCoyote</owners>
+    <title>Nexus3 Disaster Recovery</title>
+    <authors>030</authors>
+    <projectUrl>https://github.com/030/n3dr</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/030/n3dr/master/logo/logo.png</iconUrl>
+    <licenseUrl>https://github.com/030/n3dr/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/030/n3dr</projectSourceUrl>
+    <docsUrl>https://github.com/030/n3dr/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/030/n3dr/issues</bugTrackerUrl>
+    <tags>nexus3 nexus n3dr backup restore migration</tags>
+    <summary>Nexus3 backup and recovery tool</summary>
+    <description>Download all artifacts at once or migrate automatically from Nexus to Nexus</description>
+<releaseNotes>https://github.com/030/n3dr/releases/</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
