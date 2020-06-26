@@ -2,10 +2,12 @@
 
 $InstallArgs = @{
     PackageName = $env:ChocolateyPackageName
-    FileFullPath = Join-Path (Join-Path $env:ChocolateyInstall (Join-Path 'lib' $env:ChocolateyPackageName)) 'docto.exe'
-    URL = 'https://github.com/tobya/DocTo/releases/download/V1.2/docto.exe'
-    Checksum = 'dc72bb998986400ce37a5f28f8545056179d665052d34ecea90673be64afb1c9b283966f2de87c54adf81819c272a21e0981f784b280e3ecbfe53994ab543981'
+    URL = 'https://github.com/tobya/DocTo/releases/download/V1.3/docto.zip'
+    UnzipLocation = Join-Path $env:ChocolateyInstall (Join-Path 'lib' $env:ChocolateyPackageName)
+    Checksum = '1bc5ad1da8a405d8b447ebf7a0cff01c63faa7b882ec0d605214770a12a85d25f0c1cc280e9a5bf6e593665cc2c786fede7714c879683f10c63ef32af8132bfd'
     ChecksumType = 'sha512'
 }
 
-Get-ChocolateyWebFile @InstallArgs
+
+
+Install-ChocolateyZipPackage @InstallArgs
