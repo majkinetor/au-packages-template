@@ -3,7 +3,7 @@
   <metadata>
     <id>n3dr</id>
     <version>3.6.1</version>
-    <packageSourceUrl>https://github.com/digitalcoyote/chocolatey-packages/n3dr</packageSourceUrl>
+    <packageSourceUrl>https://github.com/digitalcoyote/chocolatey-packages/tree/master/n3dr</packageSourceUrl>
     <owners>CodingCoyote</owners>
     <title>Nexus3 Disaster Recovery</title>
     <authors>030</authors>
