@@ -26,6 +26,8 @@ This repository contains [chocolatey automatic packages](https://chocolatey.org/
   * milkman plugins (7 plugins and a metpackage)
 * [Multipass](https://discourse.ubuntu.com/c/multipass)
 * [MyPaint](http://mypaint.org/)
+* [N3DR](https://github.com/030/n3dr)
+  * Download all artifacts at once or migrate automatically from Nexus to Nexus
 * [Oh-My-Posh](https://github.com/JanDeDobbeleer/oh-my-posh)
 * [Sampler](https://sampler.dev/)
 * [SideQuest](https://sidequestvr.com/)
