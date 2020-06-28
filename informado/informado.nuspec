@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>informado</id>
+    <version>0.0.1</version>
+    <packageSourceUrl>https://github.com/digitalcoyote/chocolatey-packages/tree/master/informado</packageSourceUrl>
+    <owners>CodingCoyote</owners>
+    <title>Informado</title>
+    <authors>030</authors>
+    <projectUrl>https://github.com/030/informado</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/030/informado/994d2221d4a31a4b1d3c07bbc02528ee0aa25471/logo/logo.png</iconUrl>
+    <licenseUrl>https://github.com/030/informado/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/030/informado</projectSourceUrl>
+    <docsUrl>https://github.com/030/informado/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/030/informado/issues</bugTrackerUrl>
+    <tags>informado rss atom reddit</tags>
+    <summary>A tool to read various RSS, Atom and Reddit feeds.</summary>
+    <description>Use this the tool written in GO to read various RSS feeds. Note that Atom and Reddit feeds can be parsed as well.
+
+## usage
+
+Create an informado.csv and add RSS URLs. Once the file has been created, one
+could run:
+
+```
+./informado -date="^(2020-05-17T[1-2][7-9]|.*17 May 2020 [1-2][7-9]).*$"
+```</description>
+<releaseNotes>https://github.com/030/informado/releases/</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
