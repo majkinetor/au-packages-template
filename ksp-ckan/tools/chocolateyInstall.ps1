@@ -5,9 +5,9 @@ $exePath = Join-Path $toolsDir "ckan.exe"
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   fileFullPath  = $exePath
-  url           = 'https://github.com/KSP-CKAN/CKAN/releases/download/v1.27.0/ckan.exe'
+  url           = 'https://github.com/KSP-CKAN/CKAN/releases/download/v1.28.0-PRE1/ckan.exe'
 
-  checksum      = 'f608acdfc3b957aad21d959b83e657e4e1ef0ba2de01a51fbd22d53244cd5ea0'
+  checksum      = 'efc68c275f837515b1ef40d4fe7d936dabc4b835189e2326206ec4ccdb1f0883'
   checksumType  = 'sha256'
 }
 
