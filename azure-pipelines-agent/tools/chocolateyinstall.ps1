@@ -134,6 +134,19 @@ if ($pp['Url']) {
             "--sslclientcertpassword", $pp['SslClientCertPassword']
         )
     }
+
+    # Proxy
+    if ($pp['ProxyUrl']) {
+        $configOpts += @("--proxyurl", $pp['ProxyUrl'])
+
+        if ($pp['ProxyUserName']) {
+            $configOpts += @("--proxyusername", $pp['ProxyUserName'])
+
+            if ($pp['ProxyPassword']) {
+                $configOpts += @("--proxypassword", $pp['ProxyPassword'])
+            }
+        }        
+    }
 }
 
 $packageArgs = @{
