@@ -3,13 +3,15 @@ import-module au
 $releases = "https://github.com/030/n3dr/releases/"
 
 function global:au_SearchReplace {
-  @{
-    ".\tools\chocolateyInstall.ps1" = @{
-      "(URL\s*=\s*)('.*')" = "`$1'$($Latest.URL)'"
-      "(Checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
-      "(ChecksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
-    }
-  }
+    @{
+        "tools\VERIFICATION.txt" = @{
+			"(?i)(\s+x32:).*" = "`${1} $($Latest.URL32)"
+		}
+	}
+}
+
+function global:au_BeforeUpdate() {
+	Get-RemoteFiles -Purge -NoSuffix -FileNameBase "n3dr"
 }
 
 function global:au_GetLatest {
@@ -18,7 +20,7 @@ function global:au_GetLatest {
   $url = $download_page.links | Where-Object href -match $regex | Select-Object -First 1 -expand href
   $version = $url -split '\/' | Select-Object -Last 1
   $url = "https://github.com/030/n3dr/releases/download/$version/n3dr-windows"
-  return @{ Version = $version; URL = $url; ChecksumType32 = 'sha512';}
+  return @{ Version = $version; URL32 = $url; ChecksumType32 = 'sha512'; FileType = 'exe';}
 }
 
-Update-Package -ChecksumFor 32
+Update-Package  -ChecksumFor none -nocheckchocoversion
