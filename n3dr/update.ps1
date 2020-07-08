@@ -23,4 +23,4 @@ function global:au_GetLatest {
   return @{ Version = $version; URL32 = $url; ChecksumType32 = 'sha512'; FileType = 'exe';}
 }
 
-Update-Package  -ChecksumFor none -nocheckchocoversion
+Update-Package  -ChecksumFor none
