@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>teamcity</id>
-    <version>2020.1.1</version>
+    <version>2020.1.2</version>
     <title>TeamCity Continuous Integration Server</title>
     <authors>JetBrains</authors>
     <owners>skyguy94, flcdrg</owners>
@@ -32,7 +32,7 @@ This package just downloads the TeamCity tar.gz file. Use one of the following r
 Earlier versions of this package depended on the Server-JRE8 package, but due to recent Java licensing changes that package is no longer working.
     </description>
 
-    <releaseNotes>https://confluence.jetbrains.com/display/TW/TeamCity+2020.1.1+(build+78657)+Release+Notes</releaseNotes>
+    <releaseNotes>https://confluence.jetbrains.com/display/TW/TeamCity+2020.1.2+(build+78726)+Release+Notes</releaseNotes>
     <tags>Testing Build Coding Compilation Continuous Integration CI jetbrains admin</tags>
   </metadata>
     <files>
