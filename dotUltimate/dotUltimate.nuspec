@@ -4,12 +4,12 @@
   <metadata>
     <id>dotUltimate</id>
     <version>2020.2-EAP7</version>
-    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/resharper-ultimate-all</packageSourceUrl>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/dotUltimate</packageSourceUrl>
     <owners>flcdrg</owners>
     <title>dotUltimate</title>
     <authors>JetBrains</authors>
     <projectUrl>http://www.jetbrains.com/dotnet/</projectUrl>
-    <iconUrl>http://raw.githubusercontent.com/flcdrg/au-packages/master/icons/logo.png</iconUrl>
+    <iconUrl>http://raw.githubusercontent.com/flcdrg/au-packages/master/dotUltimate/icons/logo.png</iconUrl>
     <copyright>JetBrains s.r.o</copyright>
     <licenseUrl>https://www.jetbrains.com/resharper/buy/index.jsp?product=ultimate</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
