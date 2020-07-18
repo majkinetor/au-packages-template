@@ -13,8 +13,11 @@ $urls = @{
     "Release-EAP" = @{
         Version = "https://download.jetbrains.com/resharper/resharper-version-eap.json"
         Updates = "https://download.jetbrains.com/resharper/resharper-updates-eap.json"
-        Hash = "https://download.jetbrains.com/resharper/ReSharperUltimate.VERSIONMARKETINGSTRING/JetBrains.ReSharperUltimate.VERSIONMARKETINGSTRING.Checked.exe.sha256"
-        Url = "https://download.jetbrains.com/resharper/ReSharperUltimate.VERSIONMARKETINGSTRING/JetBrains.ReSharperUltimate.VERSIONMARKETINGSTRING.Checked.exe"
+
+        # https://download.jetbrains.com/resharper/dotUltimate.2020.2.EAP7/JetBrains.dotUltimate.2020.2.EAP7.Checked.exe.sha256
+        # https://download.jetbrains.com/resharper/dotUltimate.2020.2.EAP7/JetBrains.dotUltimate.2020.2.EAP7.Checked.exe
+        Hash = "https://download.jetbrains.com/resharper/dotUltimate.VERSIONMARKETINGSTRING/JetBrains.dotUltimate.VERSIONMARKETINGSTRING.Checked.exe.sha256"
+        Url = "https://download.jetbrains.com/resharper/dotUltimate.VERSIONMARKETINGSTRING/JetBrains.dotUltimate.VERSIONMARKETINGSTRING.Checked.exe"
     }
 }
 

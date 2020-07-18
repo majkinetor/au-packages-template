@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>dotUltimate</id>
+    <version>2020.2-EAP6</version>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/resharper-ultimate-all</packageSourceUrl>
+    <owners>flcdrg</owners>
+    <title>dotUltimate</title>
+    <authors>JetBrains</authors>
+    <projectUrl>http://www.jetbrains.com/dotnet/</projectUrl>
+    <iconUrl>http://raw.githubusercontent.com/flcdrg/au-packages/master/icons/logo.png</iconUrl>
+    <copyright>JetBrains s.r.o</copyright>
+    <licenseUrl>https://www.jetbrains.com/resharper/buy/index.jsp?product=ultimate</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>http://www.jetbrains.com/resharper/documentation/</docsUrl>
+    <mailingListUrl>https://resharper-support.jetbrains.com/hc/en-us/community/topics</mailingListUrl>
+    <bugTrackerUrl>https://youtrack.jetbrains.com/issues/RSRP</bugTrackerUrl>
+    <tags>ReSharper JetBrains dotCover dotMemory dotPeek dotTrace TeamCity C++ Ultimate Rider admin</tags>
+    <summary>JetBrains dotUltimate</summary>
+    <description>
+This package installs all the components of JetBrains dotUltimate.
+
+The dotUltimate license will cover all paid .NET &amp; Visual Studio tools from JetBrains 
+(ReSharper, ReSharper C++, Rider, dotTrace, dotMemory, and dotCover). 
+It will cost the same as ReSharper Ultimate currently does, but will also include Rider. 
+Holders of active ReSharper Ultimate and ReSharper Ultimate+Rider licenses will be automatically transferred to the new dotUltimate, with all their continuity discounts preserved.
+
+### Package Specific
+
+If don't want C++ or TeamCity then there are parameters to exclude either or both of those.
+
+#### Package Parameters
+The following package parameters can be set:
+
+ * `/PerMachine` - install machine-wide (instead of per-user)
+ * `/NoCpp` - don't install ReSharper C++
+ * `/NoTeamCityAddin` - don't install TeamCity Addin
+
+These parameters can be passed to the installer with the use of `--params`.
+For example: `--params "'/PerMachine'"`.
+	</description>
+    <releaseNotes>ReSharper release notes: https://www.jetbrains.com/resharper/whatsnew</releaseNotes>
+    <dependencies>
+      <dependency id="resharper-platform" version="[202.0.20200708.185250-eap06]" />
+      <dependency id="chocolatey-core.extension" version="1.3.1" />
+      <dependency id="dotnet4.6.1" version="4.6.01055.20170308" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
