@@ -38,7 +38,7 @@ The following package parameters can be set:
  * `/NoTeamCityAddin` - don't install TeamCity Addin
 
 These parameters can be passed to the installer with the use of `--params`.
-For example: `--params "'/PerMachine'"`.
+For example: `--params "'/NoCpp /NoTeamCityAddin'"`.
 	</description>
     <releaseNotes>ReSharper release notes: https://www.jetbrains.com/resharper/whatsnew</releaseNotes>
     <dependencies>
