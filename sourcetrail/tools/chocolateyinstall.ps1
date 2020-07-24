@@ -1,5 +1,4 @@
 ﻿$ErrorActionPreference = 'Stop';
-
 $ZipFile = Join-Path (Join-Path $env:ChocolateyInstall (Join-Path 'lib' $env:ChocolateyPackageName)) 'Sourcetrail.zip'
 $InstallChocolateyZipPackageArgs = @{
     PackageName = $env:ChocolateyPackageName
@@ -9,7 +8,9 @@ $InstallChocolateyZipPackageArgs = @{
     CheckSumType64 = 'sha512'
 }
 
+If (Test-Path Sourcetrail.zip){Remove-Item $ZipFile -Recurse}
 $file = Install-ChocolateyZipPackage @InstallChocolateyZipPackageArgs
+"$file"
 
 $InstallFileArgs = @{
     PackageName = $env:ChocolateyPackageName
@@ -19,3 +20,5 @@ $InstallFileArgs = @{
 }
 
 Install-ChocolateyInstallPackage @InstallFileArgs
+
+Remove-Item $ZipFile -Recurse
