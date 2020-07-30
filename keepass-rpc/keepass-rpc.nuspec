@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>keepass-rpc</id>
-    <version>1.11.0</version>
+    <version>1.12.1</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/keepass-rpc</packageSourceUrl>
     <owners>flcdrg</owners>
     <title>KeePass RPC Plugin</title>
@@ -19,10 +19,9 @@
     <tags>keepass keefox keepassrpc plugin</tags>
     <summary>KeePassRPC plugin that needs to be installed inside KeePass in order for KeeFox to be able to connect your browser to your passwords</summary>
     <description>KeePassRPC plugin that needs to be installed inside KeePass in order for KeeFox to be able to connect your browser to your passwords </description>
-    <releaseNotes>* Read and write display name for fields
-* Set entry Title when updating an entry
-* Allow replacement of all URLs during entry update
-* Improve accuracy of some hostname matching with no Domain (also included in the earlier v1.10.0 pre-release)</releaseNotes>
+    <releaseNotes>This is a **critical security update**. Install it now!
+
+All the details are available at https://forum.kee.pm/t/a-critical-security-update-for-keepassrpc-is-available/3040/2</releaseNotes>
     <dependencies>
       <dependency id="keepass" version="2.0" />
     </dependencies>
