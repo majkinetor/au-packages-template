@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>dotnetdeveloperbundle</id>
-    <version>2020.07.13</version>
+    <version>2020.07.29</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/dotnetdeveloperbundle</packageSourceUrl>
     <owners>kscelfo, flcdrg</owners>
     <title>.NET Developer Bundle</title>
