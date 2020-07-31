@@ -46,4 +46,4 @@ function global:au_GetLatest {
     return $Latest
 }
 
-update
+update -NoReadme
