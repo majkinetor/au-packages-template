@@ -5,12 +5,12 @@
     <id>PDFXchangeEditor</id>
     <version>8.0.340.0</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/PDFXchangeEditor</packageSourceUrl>
-    <owners>flcdrg, calwell</owners>
+    <owners>flcdrg</owners>
     <title>PDF-XChange Editor</title>
     <authors>Tracker Software</authors>
     <projectUrl>https://www.tracker-software.com/product/pdf-xchange-editor</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/flcdrg/au-packages/master/PDFXchangeEditor/icons/pdfxchangeeditor.png</iconUrl>
-    <copyright>1997-2017 Tracker Software Products</copyright>
+    <copyright>1997-2020 Tracker Software Products - A wholly owned subsidiary of PDF-XChange Co Ltd. Registered in England: N0.11091579</copyright>
     <licenseUrl>https://www.tracker-software.com/licensing</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>http://help.tracker-software.com/EUM/default.aspx?pageid=Welcome</docsUrl>
