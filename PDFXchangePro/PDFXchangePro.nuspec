@@ -5,12 +5,12 @@
     <id>PDFXchangePro</id>
     <version>8.0.340.0</version>
     <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/PDFXchangePro</packageSourceUrl>
-    <owners>flcdrg, calwell</owners>
+    <owners>flcdrg</owners>
     <title>PDF-XChange Pro</title>
     <authors>Tracker Software</authors>
     <projectUrl>https://www.tracker-software.com/product/pdf-xchange-pro</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/flcdrg/au-packages/master/PDFXchangePro/icons/pdfxchangepro.png</iconUrl>
-    <copyright>1997-2017 Tracker Software Products</copyright>
+    <copyright>1997-2020 Tracker Software Products - A wholly owned subsidiary of PDF-XChange Co Ltd. Registered in England: N0.11091579</copyright>
     <licenseUrl>https://www.tracker-software.com/licensing</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>http://help.tracker-software.com/EUM/default.aspx?pageid=Welcome</docsUrl>
@@ -35,7 +35,7 @@ These parameters can be passed to the installer with the use of `-params`.
 For example: `-params '"/NoDesktopShortcuts"'`, `--params "/KeyFile:C:\Users\foo\Temp\PDFXChangeEditor.xcvault"`.
 
 </description>
-    <releaseNotes>https://www.tracker-software.com/product/pdf-xchange-editor/history</releaseNotes>
+    <releaseNotes>https://www.tracker-software.com/product/pdf-xchange-pro/history</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
