@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>PDFXchangePro</id>
+    <version>8.0.340.0</version>
+    <packageSourceUrl>https://github.com/flcdrg/au-packages/tree/master/PDFXchangePro</packageSourceUrl>
+    <owners>flcdrg, calwell</owners>
+    <title>PDF-XChange Pro</title>
+    <authors>Tracker Software</authors>
+    <projectUrl>https://www.tracker-software.com/product/pdf-xchange-pro</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/flcdrg/au-packages/master/PDFXchangePro/icons/pdfxchangepro.png</iconUrl>
+    <copyright>1997-2017 Tracker Software Products</copyright>
+    <licenseUrl>https://www.tracker-software.com/licensing</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>http://help.tracker-software.com/EUM/default.aspx?pageid=Welcome</docsUrl>
+    <mailingListUrl>https://www.tracker-software.com/forum3/viewforum.php?f=62</mailingListUrl>
+    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <tags>PDFXchangeEditor pdf reader editor ocr pdfxchangeviewer admin</tags>
+    <summary>The smallest, fastest, most feature-rich PDF editor/viewer available! Create, View, Edit, Annotate, OCR and Digitally Sign PDF files plus much more..</summary>
+    <description>
+Designed for anyone from home users to large corporate environments that wish to View/Edit/Modify and even OCR Image based PDF files on their Windows PC's. There is now a FREE pdf reader alternative to the Adobe Reader that truly raises the bar! The PDF-XChange Editor is smaller, faster and more feature rich than any other FREE PDF Reader/ PDF Viewer/ PDF Editor available on the market. This free pdf editor download also allows users to try the extended functionality offered by the licensed PDF-XChange Editor in evaluation mode - for free. No PDF reader or Viewer offers more features than PDF-XChange - or does so without compromising performance, quality or security.
+
+#### Package Parameters
+The following package parameters can be set:
+
+ * `/NoDesktopShortcuts` - Do not create shortcut on desktop.
+ * `/NoUpdater` - Do not install updater service.
+ * `/NoViewInBrowsers` - Do not configure to open PDF files inside browsers.
+ * `/NoSetAsDefault` - Do not set as default application for PDF files.
+ * `/NoProgramsMenuShortcuts` - Do not create program menu group for installed application and their components.
+ * `/KeyFile:[file]` - Pass [file] (which should be a .xcvault file downloaded from Tracker Software) in as your license file.
+
+These parameters can be passed to the installer with the use of `-params`.
+For example: `-params '"/NoDesktopShortcuts"'`, `--params "/KeyFile:C:\Users\foo\Temp\PDFXChangeEditor.xcvault"`.
+
+</description>
+    <releaseNotes>https://www.tracker-software.com/product/pdf-xchange-editor/history</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
