@@ -1,5 +1,5 @@
 1. Download binary at 
-   x32: https://github.com/030/n3dr/releases/download/5.0.0/n3dr-windows
+   x32: https://github.com/030/n3dr/releases/download/5.1.0/n3dr-windows
    
 2. Get checksums of downloaded binary and included binary
 
