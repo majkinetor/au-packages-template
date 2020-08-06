@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url           = 'https://github.com/kee-org/keepassrpc/releases/download/v1.12.1/KeePassRPC.plgx'
-$checksum      = '73468bcb57472ca6d17e45294136e4d2a4e69ac19e500225f71deab6ad3f1a5e'
+$url           = 'https://github.com/kee-org/keepassrpc/releases/download/v1.13.0/KeePassRPC.plgx'
+$checksum      = 'a2ec4c388ba33265136a034b328e0ecef5e4f3c0c33596f4bef43349920a4c87'
 
 $packagePath = $(Split-Path -parent $toolsDir)
 $downloadPath = Join-Path $packagePath "KeePassRPC.plgx"
