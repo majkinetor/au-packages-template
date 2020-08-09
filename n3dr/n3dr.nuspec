@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>n3dr</id>
-    <version>5.1.0</version>
+    <version>5.2.0</version>
     <packageSourceUrl>https://github.com/digitalcoyote/chocolatey-packages/tree/master/n3dr</packageSourceUrl>
     <owners>CodingCoyote</owners>
     <title>Nexus3 Disaster Recovery</title>
