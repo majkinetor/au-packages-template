@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 	<metadata>
 		<id>armagetronad</id>
-		<version>0.2.9.0</version>
+		<version>0.2.9.01</version>
 		<title>Armagetron Advanced</title>
 		<authors>davidfancella, guru3, z-man</authors>
 		<owners>MarcioC</owners>
