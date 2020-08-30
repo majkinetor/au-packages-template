@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>uiforetw</id>
-    <version>1.52</version>
+    <version>1.54</version>
     <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/uiforetw</packageSourceUrl>
     <owners>galeksandrp</owners>
     <title>UIforETW</title>
