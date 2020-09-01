@@ -70,7 +70,7 @@ Category 	| Supported output formats	| Compatible input formats
 
 *Note 3: The avi output file format encodes video using Xvid encoder for video and Mp3 encoder for audio.*
 </description>
-    <releaseNotes>https://raw.githubusercontent.com/CoatiSoftware/Sourcetrail/master/CHANGELOG.md</releaseNotes>
+    <releaseNotes>https://raw.githubusercontent.com/Tichau/FileConverter/master/CHANGELOG.md</releaseNotes>
     <!-- =============================== -->      
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
