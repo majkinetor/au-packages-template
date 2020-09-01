@@ -7,8 +7,10 @@ function global:au_SearchReplace {
 
     "$PackageName.nuspec" = @{
       "(\<dependency id=""milkman"" version=""\[).*(\]""\s*/>)" = "`${1}$($Latest.Version)`$2"
+      "(\<dependency id=""milkman-cassandra"" version=""\[).*(\]""\s*/>)" = "`${1}$($Latest.Version)`$2"
       "(\<dependency id=""milkman-explore"" version=""\[).*(\]""\s*/>)" = "`${1}$($Latest.Version)`$2"
       "(\<dependency id=""milkman-graphql"" version=""\[).*(\]""\s*/>)" = "`${1}$($Latest.Version)`$2"
+      "(\<dependency id=""milkman-grpc"" version=""\[).*(\]""\s*/>)" = "`${1}$($Latest.Version)`$2"
       "(\<dependency id=""milkman-jdbc"" version=""\[).*(\]""\s*/>)" = "`${1}$($Latest.Version)`$2"
       "(\<dependency id=""milkman-privatebin"" version=""\[).*(\]""\s*/>)" = "`${1}$($Latest.Version)`$2"
       "(\<dependency id=""milkman-scripting"" version=""\[).*(\]""\s*/>)" = "`${1}$($Latest.Version)`$2"
