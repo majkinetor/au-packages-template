@@ -1,5 +1,5 @@
 [![](https://ci.appveyor.com/api/projects/status/github/digitalcoyote/chocolatey-packages?svg=true)](https://ci.appveyor.com/project/digitalcoyote/chocolatey-packages)
-[![29](https://img.shields.io/badge/AU%20packages-29-red.svg)](#ok)
+[![33](https://img.shields.io/badge/AU%20packages-33-red.svg)](#ok)
 [![](http://transparent-favicon.info/favicon.ico)](#)
 [chocolatey/codingcoyote](https://chocolatey.org/profiles/codingcoyote)
 
@@ -20,10 +20,11 @@ This repository contains [chocolatey automatic packages](https://chocolatey.org/
 * ~[Jenkins CLI (jcli)](http://jcli.jenkins-zh.cn/)~
   * ~Alternative CLI for Jenkins that can be used to manage multiple servers~
   * On Hold pending Security Review of the binary that was pushed. Flagged 30/72 Virus Scanners on Chocolatey
+* [Informado](https://github.com/030/informado)
 * [Kind](https://kind.sigs.k8s.io/)
 * [LiteDB.Studio](https://github.com/mbdavid/LiteDB.Studio)
 * [Milkman](https://github.com/warmuuh/milkman)
-  * milkman plugins (7 plugins and a metpackage)
+  * milkman plugins (9 plugins and a metpackage)
 * [Multipass](https://discourse.ubuntu.com/c/multipass)
 * [MyPaint](http://mypaint.org/)
 * [N3DR](https://github.com/030/n3dr)
