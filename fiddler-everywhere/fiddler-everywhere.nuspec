@@ -29,6 +29,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <version>1.0.2</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>codingcoyote</owners>
+    <packageSourceUrl>https://github.com/digitalcoyote/chocolatey-packages</packageSourceUrl>
     <!-- ============================== -->
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
