@@ -36,14 +36,14 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- This section is about the software itself -->
     <title>Stride 3D Game Engine</title>
     <!-- projectUrl is required for the community feed -->
-    <projectUrl>https://www.stride3d.com/</projectUrl>
+    <projectUrl>https://www.stride3d.net/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/stride3d/stride/8df616e929e0d13f7bd551601d46e63747a882db/sources/data/images/Logo/stride-logo-readme.png</iconUrl>
     <!-- <copyright>Year Software Vendor</copyright> -->
     <!-- If there is a license Url available, it is required for the community feed -->
     <licenseUrl>https://raw.githubusercontent.com/stride3d/stride/master/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/stride3d/stride</projectSourceUrl>
-    <docsUrl>https://doc.stride3d.com/latest/en/</docsUrl>
+    <docsUrl>https://doc.stride3d.net/latest/en/</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
     <bugTrackerUrl>https://github.com/stride3d/stride/issues</bugTrackerUrl>
     <authors>Silicon Studio Corp. and Stride Contributors</authors>
@@ -57,7 +57,7 @@ In 2020, Xenko was renamed to Stride.
 
 ### Package Specific.
 
-This package is intended to allow automated management of Stride 3D versions and requires manual installation of the stride Launcher from [Stride3D.com](https://stride3d.com/download/) the launcher will install the necessary prerequisites and allow installing beta versions.
+This package is intended to allow automated management of Stride 3D versions and requires manual installation of the stride Launcher from [stride3d.net](https://stride3d.net/download/) the launcher will install the necessary prerequisites and allow installing beta versions.
 </description>
     <releaseNotes>https://doc.stride3d.net/latest/en/ReleaseNotes/ReleaseNotes.html</releaseNotes>
     <!-- =============================== -->      

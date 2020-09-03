@@ -6,5 +6,5 @@ nuget install stride -OutPutDirectory $GlobalCache -Version $Version -Framework 
 nuget install stride.GameStudio -OutPutDirectory $GlobalCache -Version $Version -Framework net472 -NoCache -NonInteractive -PreRelease -Force
 
 if($Null -ne (Get-Process "stride" -ea SilentlyContinue)){ 
-    Write-Host "stride Launcher will need to be closed and reopened to launch the new version"
+    Write-Host "Stride Launcher will need to be closed and reopened to launch the new version"
 }
