@@ -32,4 +32,5 @@ This repository contains [chocolatey automatic packages](https://chocolatey.org/
 * [Sampler](https://sampler.dev/)
 * [SideQuest](https://sidequestvr.com/)
 * [Sourcetrail](https://www.sourcetrail.com/)
-* [Xenko Game Engine](https://xenko.com/)
+* [Stride 3D Game Engine](https://stride3D.com/)
+  * Formerly Xenko Game Engine

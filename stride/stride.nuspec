@@ -22,11 +22,11 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- This section is about this package, although id and version have ties back to the software -->
     <!-- id is lowercase and if you want a good separator for words, use '-', not '.'. Dots are only acceptable as suffixes for certain types of packages, e.g. .install, .portable, .extension, .template -->
     <!-- If the software is cross-platform, attempt to use the same id as the debian/rpm package(s) if possible. -->
-    <id>xenko</id>
+    <id>stride</id>
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>3.1.0.1</version>
+    <version>4.0.0.1-beta04-1265</version>
     <packageSourceUrl>https://github.com/digitalcoyote/chocolatey-packages</packageSourceUrl>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>codingcoyote</owners>
@@ -34,27 +34,32 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
-    <title>Xenko Game Engine</title>
+    <title>Stride 3D Game Engine</title>
     <!-- projectUrl is required for the community feed -->
-    <projectUrl>https://www.xenko.com/</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/xenko3d/xenko/6d52ee5e2de94194475ecfa275c5297c92a44b5c/samples/Graphics/CustomEffect/Resources/LogoXenko.png</iconUrl>
+    <projectUrl>https://www.stride3d.com/</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/stride3d/stride/8df616e929e0d13f7bd551601d46e63747a882db/sources/data/images/Logo/stride-logo-readme.png</iconUrl>
     <!-- <copyright>Year Software Vendor</copyright> -->
     <!-- If there is a license Url available, it is required for the community feed -->
-    <licenseUrl>https://raw.githubusercontent.com/xenko3d/xenko/master/LICENSE.md</licenseUrl>
+    <licenseUrl>https://raw.githubusercontent.com/stride3d/stride/master/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/xenko3d/xenko</projectSourceUrl>
-    <docsUrl>https://doc.xenko.com/latest/en/</docsUrl>
+    <projectSourceUrl>https://github.com/stride3d/stride</projectSourceUrl>
+    <docsUrl>https://doc.stride3d.com/latest/en/</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
-    <bugTrackerUrl>https://github.com/CoatiSoftware/Sourcetrail/issues</bugTrackerUrl>
-    <authors>Silicon Studio Corp. and Xenko Contributors</authors>
-    <tags>xenko game development engine</tags>
-    <summary>Xenko an open-source C# game engine</summary>
-<description>Xenko is an open-source C# game engine for realistic rendering and VR. The engine is highly modular and aims at giving game makers more flexibility in their development. Xenko comes with an editor that allows you create and manage the content of your games or applications in a visual and intuitive way.
-### Package Specific
+    <bugTrackerUrl>https://github.com/stride3d/stride/issues</bugTrackerUrl>
+    <authors>Silicon Studio Corp. and Stride Contributors</authors>
+    <tags>xenko stride stride3d game development engine SiliconStudio</tags>
+    <summary>Stride 3D an open-source C# game engine</summary>
+<description>stride 3D is an open-source C# game engine for realistic rendering and VR. The engine is highly modular and aims at giving game makers more flexibility in their development. stride comes with an editor that allows you create and manage the content of your games or applications in a visual and intuitive way.
 
-This package is intended to allow automated management of Xenko versions and requires manual installation of the Xenko Launcher from [Xenko.com](https://xenko.com/download/) the launcher will install the necessary prerequisites and allow installing beta versions.
+In 2018, Silicon Studio turned Xenko into an independent open-source community-driven project.
+
+In 2020, Xenko was renamed to Stride.
+
+### Package Specific.
+
+This package is intended to allow automated management of Stride 3D versions and requires manual installation of the stride Launcher from [Stride3D.com](https://stride3d.com/download/) the launcher will install the necessary prerequisites and allow installing beta versions.
 </description>
-    <releaseNotes>https://doc.xenko.com/latest/en/ReleaseNotes/ReleaseNotes.html</releaseNotes>
+    <releaseNotes>https://doc.stride3d.net/latest/en/ReleaseNotes/ReleaseNotes.html</releaseNotes>
     <!-- =============================== -->      
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
