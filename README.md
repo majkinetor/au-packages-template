@@ -1,5 +1,5 @@
 [![](https://ci.appveyor.com/api/projects/status/github/digitalcoyote/chocolatey-packages?svg=true)](https://ci.appveyor.com/project/digitalcoyote/chocolatey-packages)
-[![33](https://img.shields.io/badge/AU%20packages-33-red.svg)](#ok)
+[![35](https://img.shields.io/badge/AU%20packages-35-red.svg)](#ok)
 [![](http://transparent-favicon.info/favicon.ico)](#)
 [chocolatey/codingcoyote](https://chocolatey.org/profiles/codingcoyote)
 
@@ -29,6 +29,8 @@ This repository contains [chocolatey automatic packages](https://chocolatey.org/
 * [MyPaint](http://mypaint.org/)
 * [N3DR](https://github.com/030/n3dr)
   * Download all artifacts at once or migrate automatically from Nexus to Nexus
+* [NuGetDefense](https://digitalcoyote.github.io/NuGetDefense/)
+  * A dotnet global tool variant of the build task to Scan for known Vulnerabilities in dependencies
 * [Oh-My-Posh](https://github.com/JanDeDobbeleer/oh-my-posh)
 * [Sampler](https://sampler.dev/)
 * [SideQuest](https://sidequestvr.com/)
