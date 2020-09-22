@@ -17,6 +17,9 @@
     <summary>Scan for known vulnerabilities in .Net projects</summary>
     <description>Installs the Global Tool for the NuGetDefense Package to allow scanning for dependencies manually or from a build server without building the code.</description>
 <releaseNotes>https://github.com/digitalcoyote/NuGetDefense/releases/</releaseNotes>
+    <dependencies>
+      <dependency id="dotnetcore-sdk" version="3.0.100" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
