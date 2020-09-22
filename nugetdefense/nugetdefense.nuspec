@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>nugetdefense</id>
+    <version>1.0</version>
+    <packageSourceUrl>https://github.com/digitalcoyote/chocolatey-packages/tree/master/nugetdefense</packageSourceUrl>
+    <owners>CodingCoyote</owners>
+    <title>NuGetDefense Global Tool</title>
+    <authors>Curtis Carter</authors>
+    <projectUrl>https://digitalcoyote.github.io/NuGetDefense/</projectUrl>
+    <licenseUrl>https://github.com/digitalcoyote/NuGetDefense/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/digitalcoyote/NuGetDefense/tree/DotNetTool</projectSourceUrl>
+    <docsUrl>https://digitalcoyote.github.io/NuGetDefense/</docsUrl>
+    <bugTrackerUrl>https://github.com/digitalcoyote/NuGetDefense/issues</bugTrackerUrl>
+    <tags>security dotnet nuget dependencies nugetdefense safenuget</tags>
+    <summary>Scan for known vulnerabilities in .Net projects</summary>
+    <description>Installs the Global Tool for the NuGetDefense Package to allow scanning for dependencies manually or from a build server without building the code.</description>
+<releaseNotes>https://github.com/digitalcoyote/NuGetDefense/releases/</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
