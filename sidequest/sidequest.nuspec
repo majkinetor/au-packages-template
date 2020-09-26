@@ -6,14 +6,14 @@
     <packageSourceUrl>https://github.com/digitalcoyote/chocolatey-packages</packageSourceUrl>
     <owners>CodingCoyote</owners>
     <title>SideQuest</title>
-    <authors>The Expanse VR</authors>
+    <authors>SideQuest VR</authors>
     <projectUrl>https://sidequestvr.com</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/the-expanse/SideQuest/e2d4912531fbf21fe95c5f1c2b4a6945600544c1/desktop-app/src/assets/images/new-logo.png</iconUrl>
-    <licenseUrl>https://github.com/the-expanse/SideQuest/blob/master/LICENSE</licenseUrl>
+    <iconUrl>https://rawcdn.githack.com/SideQuestVR/SideQuest/e84513bd054ad26f7701455185cbe5b78d09fd38/desktop-app/src/assets/images/logo.png</iconUrl>
+    <licenseUrl>https://github.com/SideQuestVR/SideQuest/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/the-expanse/SideQuest</projectSourceUrl>
+    <projectSourceUrl>https://github.com/SideQuestVR/SideQuest</projectSourceUrl>
     <docsUrl>https://sidequestvr.com/#/setup-howto</docsUrl>
-    <bugTrackerUrl>https://github.com/the-expanse/SideQuest/issues</bugTrackerUrl>
+    <bugTrackerUrl>https://github.com/SideQuestVR/SideQuest/issues</bugTrackerUrl>
     <tags>sidequest vr game store occulus android</tags>
     <summary>A open app store for mobile android based VR devices such as the Oculus Go, Oculus Quest or other android based devices.</summary>
     <description># SideQuest
@@ -41,7 +41,7 @@ VR apps dont work when launched from the app launcher currently, only 2d apps. T
 -   New installed apps manager with a backup system.
 -   Beat Saber song manager for patching songs onto the Oculus Quest - sorting, multi select, remove duplicates and drag and drop
 -   Auto downloading via the in-app browser - now works with beatsaver.com, bsaber.com and also any APK downloads too!</description>
-<releaseNotes>https://github.com/the-expanse/SideQuest/releases</releaseNotes>
+<releaseNotes>https://github.com/SideQuestVR/SideQuest/releases</releaseNotes>
 <dependencies>
       <dependency id="chocolatey-core.extension" version="1.1.0" />
     </dependencies>
