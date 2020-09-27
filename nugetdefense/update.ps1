@@ -5,7 +5,7 @@ $releases = "https://github.com/digitalcoyote/NuGetDefense/releases/"
 function global:au_SearchReplace {
     @{
         "tools\chocolateyinstall.ps1" = @{
-			"(.*--version\s)([0-9]{1,3}\.[0-9]{1,3}).*" = "`${1}$($Latest.Version)"
+			"(^.*--version\s)([0-9]{1,3}\.[0-9]{1,3}).*" = "`${1}$($Latest.Version)"
 		}
 	}
 }
