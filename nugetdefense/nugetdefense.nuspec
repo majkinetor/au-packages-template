@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>nugetdefense</id>
-    <version>1.0.9</version>
+    <version>1.0.10</version>
     <packageSourceUrl>https://github.com/digitalcoyote/chocolatey-packages/tree/master/nugetdefense</packageSourceUrl>
     <owners>CodingCoyote</owners>
     <title>NuGetDefense Global Tool</title>
