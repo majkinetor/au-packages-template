@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>yori</id>
+    <version>0</version>
+    <packageSourceUrl>https://github.com/digitalcoyote/chocolatey-packages/tree/master/yori</packageSourceUrl>
+    <owners>CodingCoyote</owners>
+    <title>Yori</title>
+    <authors>malxau</authors>
+    <projectUrl>https://github.com/malxau/yori</projectUrl>
+    <licenseUrl>https://github.com/malxau/yori/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/malxau/yori</projectSourceUrl>
+    <docsUrl>https://github.com/malxau/yori/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/malxau/yori/issues</bugTrackerUrl>
+    <tags>yori cmd shell</tags>
+    <summary>Yori is an alternative shell for Windows</summary>
+    <description>Yori is a CMD replacement shell that supports backquotes, job control, and improves tab completion, file matching, aliases, command history, and more. It includes a handful of native Win32 tools that implement commonly needed tasks which can be used with any shell.</description>
+<releaseNotes>https://github.com/malxau/yori/releases/</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
