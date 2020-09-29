@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>yori</id>
-    <version>0</version>
+    <version>1.30</version>
     <packageSourceUrl>https://github.com/digitalcoyote/chocolatey-packages/tree/master/yori</packageSourceUrl>
     <owners>CodingCoyote</owners>
     <title>Yori</title>
