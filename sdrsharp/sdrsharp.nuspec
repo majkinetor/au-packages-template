@@ -14,7 +14,7 @@
     <licenseUrl>https://github.com/cgommel/sdrsharp/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <docsUrl>https://airspy.com/quickstart/</docsUrl>
-    <bugTrackerUrl>https://airspy.groups.io/g/main</bugTrackerUrl>
+    <bugTrackerUrl>https://groups.io/g/airspy</bugTrackerUrl>
     <tags>sdr sdr-sharp sdrsharp rtlsdr rtl-sdr</tags>
     <summary>SDR# (SDRSharp) is a popular, simple, fast and extensible Software Defined Radio program</summary>
     <description>SDR# (SDRSharp) is a popular, simple, fast and extensible Software Defined Radio program written from scratch in C# to experiment new Digital Signal Processing techniques and push the Microsoft .NET Framework to its limits.
