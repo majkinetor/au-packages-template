@@ -7,11 +7,11 @@
     <owners>CodingCoyote</owners>
     <title>Yori</title>
     <authors>malxau</authors>
-    <projectUrl>https://github.com/malxau/yori</projectUrl>
+    <projectUrl>http://www.malsmith.net/yori/</projectUrl>
     <licenseUrl>https://github.com/malxau/yori/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/malxau/yori</projectSourceUrl>
-    <docsUrl>https://github.com/malxau/yori/blob/master/README.md</docsUrl>
+    <docsUrl>http://www.malsmith.net/yori/guide/</docsUrl>
     <bugTrackerUrl>https://github.com/malxau/yori/issues</bugTrackerUrl>
     <tags>yori cmd shell</tags>
     <summary>Yori is an alternative shell for Windows</summary>
