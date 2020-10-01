@@ -26,9 +26,9 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
   $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing  
-  $versionRegex = '\/mypaint\/mypaint\/releases\/tag\/v\d{1,3}\.\d{1,3}\.\d{1,3}.*'
-  $regex   = '.*mypaint-git-w32-\d{1,3}\.\d{1,3}\.\d{1,3}.*-installer\.exe'
-  $regex64   = '.*mypaint-git-w64-\d{1,3}\.\d{1,3}\.\d{1,3}.*-installer\.exe'
+  $versionRegex = '\/mypaint\/mypaint\/tree\/v\d{1,3}\.\d{1,3}\.\d{1,3}.*'
+  $regex   = '.*mypaint-w32-\d{1,3}\.\d{1,3}\.\d{1,3}.*-installer\.exe'
+  $regex64   = '.*mypaint-w64-\d{1,3}\.\d{1,3}\.\d{1,3}.*-installer\.exe'
   $versionurl = ($download_page.links | Where-Object href -match $versionRegex | Select-Object -First 1 -expand href)
   $version =  $versionurl -split '\/|v' | Select-Object -Last 1
   $url     = $download_page.links | Where-Object href -match $regex | Select-Object -First 1 -expand href
