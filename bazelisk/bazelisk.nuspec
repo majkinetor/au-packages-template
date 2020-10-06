@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>bazelisk</id>
-    <version>0.0.1</version>
+    <version>1.7.1</version>
     <packageSourceUrl>https://github.com/digitalcoyote/chocolatey-packages/tree/master/bazelisk</packageSourceUrl>
     <owners>CodingCoyote</owners>
     <title>Bazelisk</title>
@@ -27,15 +27,15 @@ Some ideas how to use it:
 - Install it as the `bazel` binary in your PATH (e.g. /usr/local/bin).
   Never worry about upgrading Bazel to the latest version again.
 - Check it into your repository and recommend users to build your software via `./bazelisk build //my:software`.
-  That way, even someone who has never used Bazel or doesn&apos;t have it installed can build your software.
+  That way, even someone who has never used Bazel or doesn't have it installed can build your software.
 - As a company using Bazel or as a project owner, add a `.bazelversion` file to your repository.
   This will tell Bazelisk to use the exact version specified in the file when running in your workspace.
-  The fact that it&apos;s versioned inside your repository will then allow for atomic upgrades of Bazel including all necessary changes.
+  The fact that it's versioned inside your repository will then allow for atomic upgrades of Bazel including all necessary changes.
   If you install Bazelisk as `bazel` on your CI machines, too, you can even test Bazel upgrades via a normal presubmit / pull request.
   It will also ensure that users will not try to build your project with an incompatible version of Bazel, which is often a cause for frustration and failing builds.
 
 Before Bazelisk was rewritten in Go, it was a Python script.
-This still works and has the advantage that you can run it on any platform that has a Python interpreter, but is currently unmaintained and it doesn&apos;t support as many features.
+This still works and has the advantage that you can run it on any platform that has a Python interpreter, but is currently unmaintained and it doesn't support as many features.
 The documentation below describes the newer Go version only.
 
 ## Where does Bazelisk get Bazel from?
