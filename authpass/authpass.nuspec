@@ -50,7 +50,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>authpass</authors>
     <tags>authpass keepass password manager</tags>
     <summary>AuthPass - Password Manager based on Flutter for all platforms. Keepass 2.x (kdbx 3.x) compatible.</summary>
-<description>AuthPass is a secure and open source password manager for mobile and desktop. It is compatible with the kdbx format from KeePass, so if you have already have an existing password file it is easy to reuse it.
+    <description>AuthPass is a secure and open source password manager for mobile and desktop. It is compatible with the kdbx format from KeePass, so if you have already have an existing password file it is easy to reuse it.
 
 You can also use AuthPass on one platform and another kdbx compliant application on Windows or Linux.</description>
     <releaseNotes>https://github.com/authpass/authpass/releases</releaseNotes>
