@@ -15,9 +15,9 @@
     <projectSourceUrl>https://github.com/jgraph/drawio-desktop</projectSourceUrl>
     <docsUrl>https://about.draw.io/draw-io-diagramming-in-confluence-cheat-sheets-for-beginners/</docsUrl>
     <bugTrackerUrl>https://github.com/jgraph/drawio-desktop/issues</bugTrackerUrl>
-    <tags>drawio</tags>
-    <summary>Desktop Version of popular draw.io diagramming software.</summary>
-    <description>Desktop Version of popular draw.io diagramming software.</description>
+    <tags>drawio draw.io diagramesnet diagrams.net</tags>
+    <summary>Desktop Version of popular diagrams.net diagramming software.</summary>
+    <description>drawio-desktop is a diagrams.net desktop app based on Electron. draw.io is the old name for diagrams.net, we just don't want the hassle of changing all the binary's names.</description>
     <dependencies>
       <dependency id="chocolatey-core.extension" version="1.1.0" />
     </dependencies>
