@@ -46,3 +46,6 @@ This repository contains [chocolatey automatic packages](https://chocolatey.org/
 * [Stride 3D Game Engine](https://stride3D.com/)
   * Formerly Xenko Game Engine
 * [Yori](http://www.malsmith.net/yori/)
+
+## Love it? Support it!
+You can sponsor this project on [Github](https://github.com/sponsors/digitalcoyote) and [Patreon](https://www.patreon.com/codingcoyote). The funds will be used to pay for software licenses and cloud/hardware costs that keep my projects running.
