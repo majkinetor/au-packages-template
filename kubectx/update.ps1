@@ -1,4 +1,5 @@
 ﻿import-module au
+
 $owner = "ahmetb"
 $repo = "kubectx"
 $releases = "https://github.com/$owner/$repo/releases"

@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>0.0.0</version>
+    <version>0.9.1</version>
     <packageSourceUrl>https://github.com/digitalcoyote/chocolatey-packages/tree/master/kubectx</packageSourceUrl>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>codingcoyote</owners>
@@ -47,8 +47,42 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <bugTrackerUrl>https://github.com/ahmetb/kubectx/issues</bugTrackerUrl>
     <authors>The kubectx Maintainers</authors>
     <tags>kubernetes kubectx kubectl kubectl-plugins kubectl-cluster kubens</tags>
-    <summary></summary>
-<description></description>
+    <summary>kubectx is a utility to manage and switch between kubectl(1) contexts.</summary>
+<description>kubectx is a utility to manage and switch between kubectl(1) contexts.
+
+```
+USAGE:
+  kubectx                   : list the contexts
+  kubectx &lt;NAME&gt;            : switch to context &lt;NAME&gt;
+  kubectx -                 : switch to the previous context
+  kubectx -c, --current     : show the current context name
+  kubectx &lt;NEW_NAME&gt;=&lt;NAME&gt; : rename context &lt;NAME&gt; to &lt;NEW_NAME&gt;
+  kubectx &lt;NEW_NAME&gt;=.      : rename current-context to &lt;NEW_NAME&gt;
+  kubectx -d &lt;NAME&gt;         : delete context &lt;NAME&gt; ('.' for current-context)
+                              (this command won't delete the user/cluster entry
+                              that is used by the context)
+  kubectx -u, --unset       : unset the current context
+```
+
+### Usage
+
+```sh
+$ kubectx minikube
+Switched to context "minikube".
+
+$ kubectx -
+Switched to context "oregon".
+
+$ kubectx -
+Switched to context "minikube".
+
+$ kubectx dublin=gke_ahmetb_europe-west1-b_dublin
+Context "dublin" set.
+Aliased "gke_ahmetb_europe-west1-b_dublin" as "dublin".
+```
+
+`kubectx` supports &lt;kbd&gt;Tab&lt;/kbd&gt; completion on bash/zsh/fish shells to help with
+long context names. You don't have to remember full context names anymore.</description>
     <releaseNotes>https://github.com/ahmetb/kubectx/releases</releaseNotes>
     <!-- =============================== -->      
 
