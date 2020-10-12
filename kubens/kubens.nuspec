@@ -36,15 +36,15 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- This section is about the software itself -->
     <title>kubens</title>
     <!-- projectUrl is required for the community feed -->
-    <projectUrl>https://github.com/ahmetb/kubens</projectUrl>
+    <projectUrl>https://github.com/ahmetb/kubectx</projectUrl>
     <!-- <copyright>Year Software Vendor</copyright> -->
     <!-- If there is a license Url available, it is required for the community feed -->
-    <licenseUrl>https://github.com/ahmetb/kubens/blob/master/LICENSE</licenseUrl>
+    <licenseUrl>https://github.com/ahmetb/kubectx/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/ahmetb/kubens</projectSourceUrl>
-    <docsUrl>https://github.com/ahmetb/kubens/blob/master/README.md</docsUrl>
+    <projectSourceUrl>https://github.com/ahmetb/kubectx</projectSourceUrl>
+    <docsUrl>https://github.com/ahmetb/kubectx/blob/master/README.md</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
-    <bugTrackerUrl>https://github.com/ahmetb/kubens/issues</bugTrackerUrl>
+    <bugTrackerUrl>https://github.com/ahmetb/kubectx/issues</bugTrackerUrl>
     <authors>The kubens Maintainers</authors>
     <tags>kubernetes kubens kubectl kubectl-plugins kubectl-cluster kubectx</tags>
     <summary>kubens is a utility to switch between Kubernetes namespaces.</summary>
@@ -72,7 +72,7 @@ Active namespace is "default".
 ```
 
 `kubens` also supports &lt;kbd&gt;Tab&lt;/kbd&gt; completion on bash/zsh/fish shells.</description>
-    <releaseNotes>https://github.com/ahmetb/kubens/releases</releaseNotes>
+    <releaseNotes>https://github.com/ahmetb/kubectx/releases</releaseNotes>
     <!-- =============================== -->      
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
