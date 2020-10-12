@@ -36,13 +36,13 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- This section is about the software itself -->
     <title>Jenkins CLI</title>
     <!-- projectUrl is required for the community feed -->
-    <projectUrl>http://jcli.jenkins-zh.cn/</projectUrl>
+    <projectUrl>https://jcli.jenkins-zh.cn/</projectUrl>
     <!-- <copyright>Year Software Vendor</copyright> -->
     <!-- If there is a license Url available, it is required for the community feed -->
     <licenseUrl>https://github.com/jenkins-zh/jenkins-cli/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/jenkins-zh/jenkins-cli</projectSourceUrl>
-    <docsUrl>http://jcli.jenkins-zh.cn/quickstart</docsUrl>
+    <docsUrl>https://jcli.jenkins-zh.cn/</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
     <bugTrackerUrl>https://github.com/jenkins-zh/jenkins-cli/issues</bugTrackerUrl>
     <authors>LinuxSuRen</authors>
