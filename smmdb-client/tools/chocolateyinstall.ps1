@@ -6,8 +6,8 @@ $UnzipLocation = Join-Path $env:ChocolateyInstall (Join-Path 'lib' $env:Chocolat
 $ChocoWebFileArgs = @{
     PackageName = $env:ChocolateyPackageName
     FileFullPath = (Join-Path $UnzipLocation 'smmdb-client-windows.tar.gz')
-    Url = 'https://github.com/Tarnadas/smmdb-client/releases/download/0.2.0/smmdb-client-windows.tar.gz'
-    CheckSum = '51e8cb46cee093bd4c6478f2a90d4f1340122a92aa4d182ffb9c6161076aab8a6dc73ec098e54e20a9c376f38f018c7da006f7a276920b546b0122632def60b9'
+    Url = 'https://github.com/Tarnadas/smmdb-client/releases/download/0.2.1/smmdb-client-windows.tar.gz'
+    CheckSum = '7eed82ff994916c4a4a128de96c0cc657ff5fcd23e63b513b58ac681a886c8eb1bf80195e3478df5d2ce1fe290cb712c350b7344df9a2833e1ec0e59ce7aa205'
     CheckSumType = 'sha512'
 }
 
