@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sidequest</id>
-    <version>0.10.14</version>
+    <version>0.10.15</version>
     <packageSourceUrl>https://github.com/digitalcoyote/chocolatey-packages</packageSourceUrl>
     <owners>CodingCoyote</owners>
     <title>SideQuest</title>
