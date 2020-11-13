@@ -22,9 +22,8 @@ This repository contains [chocolatey automatic packages](https://chocolatey.org/
 * [Ferdi](https://getferdi.com/)
 * [File Converter](https://file-converter.org/)
 * [gitb](https://github.com/vvatanabe/gitb)
-* ~[Jenkins CLI (jcli)](http://jcli.jenkins-zh.cn/)~
-  * ~Alternative CLI for Jenkins that can be used to manage multiple servers~
-  * On Hold pending Security Review of the binary that was pushed. Flagged 30/72 Virus Scanners on Chocolatey
+* [Jenkins CLI (jcli)](http://jcli.jenkins-zh.cn/)
+  * Alternative CLI for Jenkins that can be used to manage multiple servers
 * [Informado](https://github.com/030/informado)
 * [Kind](https://kind.sigs.k8s.io/)
 * [KubeCTX](https://github.com/ahmetb/kubectx)
