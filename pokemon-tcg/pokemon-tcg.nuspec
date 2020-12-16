@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
 	<metadata>
 		<id>pokemon-tcg</id>
-		<version>2.75.0.5043</version>
+		<version>2.76.0.5082</version>
 		<title>Pokémon Trading Card Game Online</title>
 		<authors>Nintendo</authors>
 		<owners>MarcioC</owners>
