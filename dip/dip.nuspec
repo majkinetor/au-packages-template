@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>dip</id>
-    <version>2.0.1</version>
+    <version>2.0.2</version>
     <packageSourceUrl>https://github.com/digitalcoyote/chocolatey-packages</packageSourceUrl>
     <owners>CodingCoyote</owners>
     <title>Docker Image Patrol (DIP)</title>
