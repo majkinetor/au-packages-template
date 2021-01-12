@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 $GlobalCache = "$env:HomePath\.nuget\packages";
 if($env:NUGET_HTTP_CACHE_PATH) {$GlobalCache = $env:NUGET_HTTP_CACHE_PATH}
-$Version = '4.0.0.1-beta04-1374'
+$Version = '4.0.1.1381-beta'
 nuget install stride -OutPutDirectory $GlobalCache -Version $Version -Framework net472 -NoCache -NonInteractive -PreRelease -Force
 nuget install stride.GameStudio -OutPutDirectory $GlobalCache -Version $Version -Framework net472 -NoCache -NonInteractive -PreRelease -Force
 
