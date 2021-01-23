@@ -40,7 +40,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <iconUrl>https://rawcdn.githack.com/denoland/deno_website2/714f954418e1b26ca59c1d4c02135341c19a35e1/public/images/deno_logo_3.svg</iconUrl>
     <!-- <copyright>Year Software Vendor</copyright> -->
     <!-- If there is a license Url available, it is required for the community feed -->
-    <licenseUrl>https://github.com/denoland/deno/blob/master/LICENSE</licenseUrl>
+    <licenseUrl>https://github.com/denoland/deno/blob/master/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/denoland/deno</projectSourceUrl>
     <docsUrl>https://deno.land/manual.html</docsUrl>
