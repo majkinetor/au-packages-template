@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$url64 = 'https://github.com/kubernetes-sigs/kind/releases/download/v0.9.0/kind-windows-amd64'
-$checksum64 = '81d9844091bdd96c499b1c4f8d6dbff9a01aa328af16471730a6b9c122beb59b076e1451681d0eb90040adf5a01dcfeb686da3a447c47e56fa7e0766882cc683'
+$url64 = 'https://github.com/kubernetes-sigs/kind/releases/download/v0.10.0/kind-windows-amd64'
+$checksum64 = 'a9d15420ac860e02a1ac7fe77c2a3ee7f24717ea64de982bdb89469f17646cc66e9f0caa33985a85f98a43db5e467a8760016ae983d67db27a9ee9e3c2c87bac'
 $checksumType64 = 'sha512'
 $File = Join-Path (Join-Path $env:ChocolateyInstall (Join-Path 'lib' $env:ChocolateyPackageName)) 'kind.exe'
 $file = Get-ChocolateyWebFile -PackageName $env:ChocolateyPackageName `
