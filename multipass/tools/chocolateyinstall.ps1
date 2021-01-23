@@ -22,7 +22,7 @@ $args = @{
   FileType = 'exe'
   SilentArgs = '/S'
   Url64bit = 'https://github.com/CanonicalLtd/multipass/releases/download/v1.5.0/multipass-1.5.0+win-win64.exe'
-  Checksum64 = 'ac1dcf11a3986abe88aecde896e5efd66245a282658d0c7238ff930d8f04dd1ccb7074e02209e4c1442bb6acdb62598241efccddad7fe9f84ce2a2fcc2f19f32'
+  Checksum64 = 'b5b7d0f171ad0a5a5ac123bd24d94fabe49b1a7bd88986fa0bfbf12f6a735c3d3658a41330bce60d084e5a506872eb213853852c42b3cb09160779ccf03929b7'
   ChecksumType64 = 'sha512'
 }
 

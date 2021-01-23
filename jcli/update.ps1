@@ -5,11 +5,11 @@ function global:au_SearchReplace {
   @{
     ".\tools\chocolateyInstall.ps1" = @{
       # "(Url\s*=\s*)('.*')"            = "`$1'$($Latest.URL)'"
-      "(Url\s*=\s*)('.*')"          = "`$1'$($Latest.URL64)'"
+      "(Url64\s*=\s*)('.*')"          = "`$1'$($Latest.URL64)'"
       # "(CheckSum\s*=\s*)('.*')"       = "`$1'$($Latest.Checksum32)'"     
-      "(CheckSum\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum64)'"
+      "(CheckSum64\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum64)'"
       # "(CheckSumType\s*=\s*)('.*')"   = "`$1'$($Latest.ChecksumType32)'"
-      "(CheckSumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
+      "(CheckSumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
     }
   }
 }
@@ -26,4 +26,4 @@ function global:au_GetLatest {
   return @{ Version = $version; URL64 = $url64; ChecksumType64 = 'sha512';}
 }
 
-Update-Package -ChecksumFor all
+Update-Package -ChecksumFor 64 -NoCheckChocoVersion
