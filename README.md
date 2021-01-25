@@ -1,5 +1,5 @@
 [![](https://ci.appveyor.com/api/projects/status/github/digitalcoyote/chocolatey-packages?svg=true)](https://ci.appveyor.com/project/digitalcoyote/chocolatey-packages)
-[![42](https://img.shields.io/badge/AU%20packages-42-red.svg)](#ok)
+[![42](https://img.shields.io/badge/AU%20packages-45-red.svg)](#ok)
 [![](http://transparent-favicon.info/favicon.ico)](#)
 [chocolatey/codingcoyote](https://chocolatey.org/profiles/codingcoyote)
 
@@ -33,6 +33,7 @@ This repository contains [chocolatey automatic packages](https://chocolatey.org/
   * milkman plugins (9 plugins and a metpackage)
 * [Multipass](https://discourse.ubuntu.com/c/multipass)
 * [MyPaint](http://mypaint.org/)
+* [Nethermind](https://nethermind.io/)
 * [Nexus 3 Disaster Recovery (N3DR)](https://github.com/030/n3dr)
   * Download all artifacts at once or migrate automatically from Nexus to Nexus
 * [NuGetDefense](https://digitalcoyote.github.io/NuGetDefense/)
@@ -42,6 +43,7 @@ This repository contains [chocolatey automatic packages](https://chocolatey.org/
 * [SideQuest](https://sidequestvr.com/)
 * [SMMDB-Client](https://github.com/Tarnadas/smmdb-client)
 * [Sourcetrail](https://www.sourcetrail.com/)
+* [syncplay](https://syncplay.pl/)
 * [Stride 3D Game Engine](https://stride3D.com/)
   * Formerly Xenko Game Engine
 * [Yori](http://www.malsmith.net/yori/)
