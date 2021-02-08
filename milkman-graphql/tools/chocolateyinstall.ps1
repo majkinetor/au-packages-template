@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$checksum64 = 'C703B4C0DEBF802D4EE0DB9D86C686E27CFC4746B747EF0B53A099C01B9DF3575D229AACF3F53510792CCFE8BDBB0A89B1BE5083C9EED9E28FBC32D982F83E81'
+$checksum64 = '0B01D43DD50CA7C109402EF0BF7860D338DF8FA55505631A7487B8091DF1A5543C6105B4940A5AE37B56CCCB8E53120A4F6A135E3738F3CF6CFBEEDA633DED44'
 $checksumType64 = 'sha512'
 $JarFile = Join-Path (Join-Path $env:ChocolateyInstall (Join-Path (Join-Path 'lib' $env:ChocolateyPackageName) 'tools')) "$env:ChocolateyPackageName.jar"
 Get-ChecksumValid -File $JarFile -CheckSum $checksum64 -CheckSumType $checksumType64

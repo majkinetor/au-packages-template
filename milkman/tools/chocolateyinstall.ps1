@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$url64 = 'https://github.com/warmuuh/milkman/releases/download/5.0.0/milkman-dist-win64-bin.zip'
-$checksum64 = '367103fa25316f8f748fd235180838ed40695f7cc947e2b53a4e741112444632d9a69de5cb76b81f859d2ed6934e0c2e0a967fd59292abf19ee143ea6588b40d'
+$url64 = 'https://github.com/warmuuh/milkman/releases/download/5.1.0/milkman-dist-win64-bin.zip'
+$checksum64 = 'c07c6015b8e0ec20ec2eb43d9f55115a1876ea86f727ef6fbe96c80a91dda33b6a33db4ea8a35ca5f661d7f6ad004b532ace92af994d8e5155edca55691cd8e0'
 $checksumType64 = 'sha512'
 $UnzipLocation = Join-Path $env:ChocolateyInstall (Join-Path 'lib' $env:ChocolateyPackageName)
 Install-ChocolateyZipPackage -PackageName $env:ChocolateyPackageName -Url64 $url64 -UnzipLocation $UnzipLocation -CheckSum64 $checksum64 -CheckSumType64 $checksumType64
