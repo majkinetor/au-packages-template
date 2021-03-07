@@ -57,10 +57,10 @@ if ($PROFILE -and (Test-Path $PROFILE)) {
   }
 
   Set-Content -path $profile -value $newProfile -Force
-  Write-Host "oh-my-posh has been added to your profile. You may wish to append 'Set-Theme paradox' to set a theme"
+  Write-Host "oh-my-posh has been added to your profile. You may wish to append 'Set-PoshPrompt paradox' to set a theme"
 }
 else{
-  Write-Host "No Powershell Profile was found. You may wish to create a Profile and append 'Import-Module posh-git', 'Import-Module oh-my-posh', and 'Set-Theme paradox' to enable oh-my-posh"
+  Write-Host "No Powershell Profile was found. You may wish to create a Profile and append 'Import-Module posh-git', 'Import-Module oh-my-posh', and 'Set-PoshPrompt paradox' to enable oh-my-posh"
 }
 
 Write-Host "You may need to change your Powershell Execution Policy to use $env:ChocolateyPackageName."

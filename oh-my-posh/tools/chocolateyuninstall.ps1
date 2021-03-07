@@ -21,7 +21,7 @@ if ($PROFILE -and (Test-Path $PROFILE)) {
         if($line -like 'Import-Module oh-my-posh') {
             continue
         }
-        if($line -like 'Set-Theme*') {
+        if($line -like 'Set-PoshPrompt*') {
             Write-Host "'$line' was setting a theme for your profile but is being removed."
             continue
         }
