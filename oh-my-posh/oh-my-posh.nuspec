@@ -58,7 +58,7 @@ This package appends the following lines to your Powershell Profile on Install i
 
 On uninstall, this package removes the following lines from your Powershell profile
  * 'Import-Module oh-my-posh' - Enables oh-my-posh
- * 'Set-Theme someTheme' - Any Themes set are removed from the profile.
+ * 'Set-PoshPrompt someTheme' - Any Themes set are removed from the profile.
  
 Posh-Git is not disabled on uninstall.
 
