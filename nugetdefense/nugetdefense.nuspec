@@ -10,7 +10,7 @@
     <projectUrl>https://digitalcoyote.github.io/NuGetDefense/</projectUrl>
     <licenseUrl>https://github.com/digitalcoyote/NuGetDefense/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/digitalcoyote/NuGetDefense/tree/DotNetTool</projectSourceUrl>
+    <projectSourceUrl>https://github.com/digitalcoyote/NuGetDefense/</projectSourceUrl>
     <docsUrl>https://digitalcoyote.github.io/NuGetDefense/</docsUrl>
     <bugTrackerUrl>https://github.com/digitalcoyote/NuGetDefense/issues</bugTrackerUrl>
     <tags>security dotnet nuget dependencies nugetdefense safenuget</tags>
