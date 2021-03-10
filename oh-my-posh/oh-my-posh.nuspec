@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <projectUrl>https://github.com/JanDeDobbeleer/oh-my-posh</projectUrl>
     <!-- <copyright>Year Software Vendor</copyright> -->
     <!-- If there is a license Url available, it is required for the community feed -->
-    <licenseUrl>https://github.com/JanDeDobbeleer/oh-my-posh/blob/master/LICENSE</licenseUrl>
+    <licenseUrl>https://github.com/JanDeDobbeleer/oh-my-posh/blob/main/COPYING</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/JanDeDobbeleer/oh-my-posh</projectSourceUrl>
     <docsUrl>https://github.com/JanDeDobbeleer/oh-my-posh/blob/master/README.md</docsUrl>

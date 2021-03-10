@@ -1,0 +1,3 @@
+Modules and binaries in the module folder can be verified by comparing the checksums of 
+each file to those available from https://www.powershellgallery.com/packages/oh-my-posh/ 
+or those directly available from https://github.com/JanDeDobbeleer/oh-my-posh/releases.
