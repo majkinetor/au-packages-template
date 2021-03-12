@@ -36,50 +36,51 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- This section is about the software itself -->
     <title>Oh-My-Posh</title>
     <!-- projectUrl is required for the community feed -->
-    <projectUrl>https://github.com/JanDeDobbeleer/oh-my-posh</projectUrl>
+    <projectUrl>https://ohmyposh.dev/</projectUrl>
     <!-- <copyright>Year Software Vendor</copyright> -->
     <!-- If there is a license Url available, it is required for the community feed -->
     <licenseUrl>https://github.com/JanDeDobbeleer/oh-my-posh/blob/main/COPYING</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/JanDeDobbeleer/oh-my-posh</projectSourceUrl>
-    <docsUrl>https://github.com/JanDeDobbeleer/oh-my-posh/blob/master/README.md</docsUrl>
+    <docsUrl>https://ohmyposh.dev/docs/</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
     <bugTrackerUrl>https://github.com/JanDeDobbeleer/oh-my-posh/issues</bugTrackerUrl>
     <authors>JanDeDobbeleer</authors>
     <tags>powershell oh-my-posh posh conemu</tags>
-    <summary>A theme engine for Powershell in ConEmu inspired by the work done by Chris Benti on PS-Config and Oh-My-ZSH on OSX and Linux (hence the name).</summary>
-    <description>ConEmu based Powershell theme engine.
+    <summary>Oh my Posh is a custom prompt engine for any shell that has the ability to adjust the prompt string with a function or variable.</summary>
+    <description>## Introduction
+Oh my Posh is a custom prompt engine for any shell that has the ability to adjust the prompt string with a function or variable.
 
-#### Package Specific
+## Oh my Posh 3 vs [Oh my Posh 2](https://ohmyposh.dev/docs/#oh-my-posh-3-vs-oh-my-posh-2)
+Oh my Posh 3 is the offspring of [Oh my Posh](https://github.com/JanDeDobbeleer/oh-my-posh2), a prompt theme engine for PowerShell. Oh my Posh started out by being inspired from tools like [oh my zsh](https://github.com/ohmyzsh/ohmyzsh) when nothing was available specifically for PowerShell.
 
-This package appends the following lines to your Powershell Profile on Install if they are not already there
- * 'Import-Module posh-git' - Enables posh-git (a requirement of oh-my-posh)
- * 'Import-Module oh-my-posh' - Enables oh-my-posh
+Over the years, I switched operating system/main shell quite a lot, even on Windows via the WSL. This made it so that my prompt wasn't portable enough, I wanted the same visual/functional experience regardless of the shell I was working in. Hello world Oh my Posh 3!
 
-On uninstall, this package removes the following lines from your Powershell profile
- * 'Import-Module oh-my-posh' - Enables oh-my-posh
- * 'Set-PoshPrompt someTheme' - Any Themes set are removed from the profile.
- 
-Posh-Git is not disabled on uninstall.
+## Concept
+Traditionally, prompt tools work with custom scripts per theme (just like Oh my Posh did) or a lot of CLI configuration switches to define what it looks like. With Oh my Posh, I wanted to start from a single configuration file that could easily be shared anywhere, removing the need to really grasp what goes on underneath.
 
-#### Features
+When you look at prompts like Agnoster or Paradox, you notice they usually consist of a few building blocks which contain one or more segments that display some sort of information. The configuration of Oh my Posh works exactly like that. Blocks are a combination of one or more segments.
 
- * Easy installation
- * Awesome prompt themes for PowerShell
- * Git status indications (powered by posh-git)
- * Failed command indication
- * Admin indication
- * Current session indications (admin, failed command, user)
- * Configurable
- * Easily create your own theme
- * Separate settings for oh-my-posh and posh-git
- * Does not mess with the default Powershell console
+The basic layout of the config file is as follows.
+```
+{
+    "blocks": []
+}
+```
+A [block](https://ohmyposh.dev/docs/configure#block) has properties that indicate its position and the [segments](https://ohmyposh.dev/docs/configure#segment) it will render.
+```
+{
+    "blocks": [
+        {
+            // positioning metadata (not shown)
+            "segments": []
+        }
+    ]
+}
+```
+A [segment](https://ohmyposh.dev/docs/configure#segment) renders a single context like showing the current folder, user information or git status when relevant. It can be styled any way you want, resulting in visualizing the prompt you are looking for.
 
-#### Prerequisites
-
- * posh-git (Must be installed manually or via PowershellGallery)
- * PSReadLine ≥ 2.0.0-beta1 (installed during installation) if using Powershell 6+
- * Ability to run unsigned scripts.
+For your convenience, the existing [themes](https://github.com/JanDeDobbeleer/oh-my-posh/tree/main/themes) from Oh my Posh have been added to version 3, so you can get started even without having to understand the theming. So, let's no longer waste time on theory, have a look at the [configuration guide](https://ohmyposh.dev/docs/configure) to get started right away!
 </description>
     <releaseNotes>https://github.com/JanDeDobbeleer/oh-my-posh/releases</releaseNotes>
     <!-- =============================== -->      
