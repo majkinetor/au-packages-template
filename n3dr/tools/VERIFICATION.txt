@@ -1,5 +1,5 @@
 1. Download binary at 
-   x32: https://github.com/030/n3dr/releases/download/6.0.4/n3dr-windows-2019
+   x32: https://github.com/030/n3dr/releases/download/6.0.5/n3dr-windows-2019
    
 2. Get checksums of downloaded binary and included binary
 
