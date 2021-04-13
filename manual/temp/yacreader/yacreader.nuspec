@@ -7,9 +7,9 @@
 	<title>YACReader</title>
 	<authors>Luis Ángel San Martín</authors>
 	<projectUrl>https://www.yacreader.com/</projectUrl>
-	<iconUrl>https://github.com/Aesara/chocolatey-packages/manual/assets/YACReader.svg</iconUrl>
+	<iconUrl>https://cdn.jsdelivr.net/gh/AesaraB/chocolatey-packages@YACReader/manual/assets/YACreader.svg</iconUrl>
 	<licenseUrl>https://github.com/YACReader/yacreader/blob/develop/COPYING.txt</licenseUrl>
-	<requireLicenseAcceptance>true</requireLicenseAcceptance>-->
+	<requireLicenseAcceptance>true</requireLicenseAcceptance>
 	<projectSourceUrl>https://github.com/YACReader/yacreader</projectSourceUrl>
 	<bugTrackerUrl>https://github.com/YACReader/yacreader/issues</bugTrackerUrl>
 	<tags>yacreader yac ecomic comic YACReaderLibrary manga foss image rar zip cbr cbz tar pdf 7z cb7 jpeg gif png tiff bmp</tags>
@@ -37,12 +37,18 @@
 * Search through your comic collection
 * Track your reading progress through comics
 * Tag your comics using Comic Vine
-	* Title, number, volumen, authors, and more.</description>
+	* Title, number, volumen, authors, and more.
+
+# Package Installation Details
+* This version includes the 64-bit version of yacreader, if you wish to continue using the 32-bit version you need to pass `--x86` when calling `choco install/update`
+* The default installation location will be in your 'Program Files' or 'Program Files (x86)' folder, for the 64 and 32 bit versions respectively.
+* If any setup command line paramaters need to be passed, please know that the installation system used is Inno Setup. The silent arguments used may be found in the package source repo.
+</description>
 	<releaseNotes>https://github.com/YACReader/yacreader/releases</releaseNotes>
 
 	<dependencies>
 	<dependency id="chocolatey-core.extension" version="1.1.0" />
-	</dependencies>-->
+	</dependencies>
 
   </metadata>
   <files>
