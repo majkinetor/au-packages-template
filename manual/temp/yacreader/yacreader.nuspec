@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+	<id>yacreader</id>
+	<version>9.7.1</version>
+	<owners>Aesara</owners>
+	<title>YACReader</title>
+	<authors>Luis Ángel San Martín</authors>
+	<projectUrl>https://www.yacreader.com/</projectUrl>
+	<iconUrl>https://github.com/Aesara/chocolatey-packages/manual/assets/YACReader.svg</iconUrl>
+	<licenseUrl>https://github.com/YACReader/yacreader/blob/develop/COPYING.txt</licenseUrl>
+	<requireLicenseAcceptance>true</requireLicenseAcceptance>-->
+	<projectSourceUrl>https://github.com/YACReader/yacreader</projectSourceUrl>
+	<bugTrackerUrl>https://github.com/YACReader/yacreader/issues</bugTrackerUrl>
+	<tags>yacreader yac ecomic comic YACReaderLibrary manga foss image rar zip cbr cbz tar pdf 7z cb7 jpeg gif png tiff bmp</tags>
+	<summary>A simple, yet versatile comic book library and reader."</summary>
+	<description>YACReader *(Yet Another Comic Reader) allows you to read, browse, and manage your comics collection.
+
+# Features
+* Browse a comic collections using beautiful, customizable and smooth "comic flow" transitions
+* Support for a wide variety of comic files and image types.
+	* rar, zip, cbr, cbz, tar, pdf, 7z, cb7, jpeg, gif, png, tiff, and bmp
+
+* Configurable page viewing options.
+	* Jump to page
+	* Double page mode
+	* Multiple page zoom modes
+	* Fullscreen mode
+	* Bookmarks
+	* Image rotation
+	* Customizable background color
+	* Various eye candy
+	* and more
+* Image adjustments and improvements with brightness, contrast, and gamma sliders.
+
+## YACReaderLibrary
+* Search through your comic collection
+* Track your reading progress through comics
+* Tag your comics using Comic Vine
+	* Title, number, volumen, authors, and more.</description>
+	<releaseNotes>https://github.com/YACReader/yacreader/releases</releaseNotes>
+
+	<dependencies>
+	<dependency id="chocolatey-core.extension" version="1.1.0" />
+	</dependencies>-->
+
+  </metadata>
+  <files>
+	<file src="tools\**" target="tools" />
+  </files>
+</package>
