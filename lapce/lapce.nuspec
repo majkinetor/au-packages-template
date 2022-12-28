@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>lapce</id>
+    <version>0.2.5</version>
+    <packageSourceUrl>https://github.com/Hattshire/chocolatey-packages/tree/master/lapce</packageSourceUrl>
+    <owners>Hattshire</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>Lapce</title>
+    <authors>Dongdong Zhou</authors>
+
+    <projectUrl>https://lapce.dev</projectUrl>
+    <projectSourceUrl>https://github.com/lapce/lapce</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/lapce/lapce/issues</bugTrackerUrl>
+    <docsUrl>https://docs.lapce.dev/</docsUrl>
+
+    <iconUrl>http://rawcdn.githack.com/lapce/lapce/master/extra/images/logo.png</iconUrl>
+
+    <licenseUrl>https://github.com/lapce/lapce/raw/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+
+    <copyright>Lapce</copyright>
+    <summary>Lightning-fast and Powerful Code Editor</summary>
+    <tags>lapce admin foss cross-platform development editor ide ssh rust code remote-admin remote-access</tags>
+
+    <description><![CDATA[Lapce is an open source code editor written in Rust. By utilising native GUI and GPU rendering, and with the performance Rust provides, Lapce is one of the fastest code editors out there.
+]]></description>
+    <releaseNotes>https://github.com/lapce/lapce/releases/tag/v0.2.5</releaseNotes>
+    <!-- =============================== -->
+    
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.8.21" />
+    </dependencies>
+
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
