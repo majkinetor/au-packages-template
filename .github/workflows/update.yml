@@ -1,0 +1,32 @@
+name: Update packages
+
+on:
+  schedule:
+    - cron: '30 19 * * *'
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    permissions:
+      contents: read
+      actions: read
+    name: Update packages
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Chocolatey
+        uses: crazy-max/ghaction-chocolatey@v2
+        with:
+          args: install au
+
+      - name: Run update_all.ps1
+        uses: Amadevus/pwsh-script@v2
+        id: script
+        with: 
+          script: |
+            $ErrorActionPreference = 'Continue'
+            ./update_all.ps1
