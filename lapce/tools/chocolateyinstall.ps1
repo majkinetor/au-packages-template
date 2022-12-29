@@ -6,7 +6,7 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'msi'
   url64bit       = 'https://github.com/lapce/lapce/releases/download/v0.2.5/Lapce-windows.msi'
-  checksum64     = '21E164D8F9BF829E1FE1A18DA26B24334232EB295905A98C50AD95DE3DD780DB'
+  checksum64     = '21e164d8f9bf829e1fe1a18da26b24334232eb295905a98c50ad95de3dd780db'
   checksumType64 = 'sha256'
 
   softwareName   = 'lapce*'
